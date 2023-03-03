@@ -1,21 +1,20 @@
 <template lang="pug">
 .docs
-  Menu.menu(width="auto")
-    h1.title() {{ $t('docs') }}
-      Icon.burger-icon(
-        type="md-menu"
-        :size="20"
-        @click="drawer = true"
-      )
-    .content-nav
-      FetchNav(v-slot="{ navigation }" target="docs")
-        Nav(:list="navigation.children")
-  .content
-    ContentDoc(:path="contentPath")
-      template(#not-found)
-        Alert(type="warning") Docs section not found
-  Drawer.drawer(v-model="drawer")
-    FetchNav(v-slot="{ navigation }" target="docs")
+  FetchNav(v-slot="{ navigation }" target="docs")
+    Menu.menu(width="auto")
+      h1.title() {{ $t('docs') }}
+        Icon.burger-icon(
+          type="md-menu"
+          :size="20"
+          @click="drawer = true"
+        )
+      .content-nav
+          Nav(:list="navigation.children")
+    .content
+      ContentDoc(:path="contentPath")
+        template(#not-found)
+          Alert(type="warning") Docs section not found
+    Drawer.drawer(v-model="drawer")
       Nav(:list="navigation.children")
 </template>
 

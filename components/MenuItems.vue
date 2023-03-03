@@ -1,5 +1,4 @@
 <template lang="pug">
-client-only.menu-items
 .menu-items
   MenuItem(name="docs", :to="localePath('/docs/')") {{ $t('docs') }}
   MenuItem(name="examples", :to="localePath('/examples')") {{ $t('examples') }}
