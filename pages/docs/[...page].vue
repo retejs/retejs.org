@@ -8,21 +8,22 @@
         @click="drawer = true"
       )
     .content-nav
-      ContentNavigation(v-slot="{ navigation }" :query="queryContent($i18n.locale, 'docs')")
-        Nav(:list="navigation[0].children[0].children")
+      FetchNav(v-slot="{ navigation }" target="docs")
+        Nav(:list="navigation.children")
   .content
     ContentDoc(:path="contentPath")
       template(#not-found)
         Alert(type="warning") Docs section not found
   Drawer.drawer(v-model="drawer")
-    ContentNavigation(v-slot="{ navigation }" :query="queryContent($i18n.locale, 'docs')")
-      Nav(:list="navigation[0].children[0].children")
+    FetchNav(v-slot="{ navigation }" target="docs")
+      Nav(:list="navigation.children")
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from 'vue';
 import Drawer from '@/components/shared/Drawer.vue';
 import Nav from '@/components/Nav.vue';
+import FetchNav from '@/components/FetchNav.vue';
 
 export default defineComponent({
   data() {
@@ -39,8 +40,10 @@ export default defineComponent({
     },
   },
   methods: {
+    log(...v) {
+      console.log(...v);
+    },
     sanitizePath(path) {
-      // eslint-disable-next-line no-underscore-dangle
       return this.localePath(this.omitLocale(path, this.locale));
     },
     omitLocale(path, locale) {
@@ -50,6 +53,7 @@ export default defineComponent({
   components: {
     Drawer,
     Nav,
+    FetchNav,
   },
 });
 </script>

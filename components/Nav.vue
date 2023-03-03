@@ -6,7 +6,7 @@ Menu(width="auto")
       :name="sanitizePath(item._path)"
       :to="sanitizePath(item._path)"
     ) {{ item.title }}
-    Submenu.submenu(v-if="item.children" :name="sanitizePath(item._path)" @mousemove="n(item._path)")
+    Submenu.submenu(v-if="item.children" :name="sanitizePath(item._path)")
       template(#title) {{ item.title }}
       Nav(:list="item.children")
 </template>
@@ -20,9 +20,6 @@ export default {
     },
     omitLocale(path, locale) {
       return path.replace(new RegExp(`^/${locale}`), '');
-    },
-    n(path) {
-      console.log('nnnn', path, this.sanitizePath(path), this.omitLocale(path, this.$i18n.locale));
     },
   },
   updated() {

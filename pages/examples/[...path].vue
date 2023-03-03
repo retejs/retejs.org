@@ -2,8 +2,8 @@
 .examples
   Menu.menu(width="auto")
     h1.title() {{ $t('examples') }}
-    ContentNavigation(v-slot="{ navigation }" :query="queryContent($i18n.locale, 'examples')")
-      Nav(:list="navigation[0].children[0].children")
+    FetchNav(v-slot="{ navigation }" target="examples")
+      Nav(:list="navigation.children")
   .content
     ContentDoc(:path="contentPath")
       template(#not-found)
@@ -14,6 +14,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Nav from '@/components/Nav.vue';
+import FetchNav from '@/components/FetchNav.vue';
 
 export default defineComponent({
   computed: {
@@ -31,6 +32,7 @@ export default defineComponent({
   },
   components: {
     Nav,
+    FetchNav,
   },
 });
 </script>
