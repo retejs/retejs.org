@@ -8,7 +8,7 @@ Drawer(
 </template>
 
 <script>
-import { Drawer } from 'view-ui-plus';
+import { Drawer } from 'view-ui-plus/dist/viewuiplus.min.esm';
 
 export default {
   props: {

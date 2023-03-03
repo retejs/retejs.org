@@ -4,7 +4,7 @@ IViewContent.content
 </template>
 
 <script>
-import { Content as IViewContent } from 'view-ui-plus';
+import { Content as IViewContent } from 'view-ui-plus/dist/viewuiplus.min.esm';
 
 export default {
   components: {

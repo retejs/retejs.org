@@ -8,7 +8,7 @@ IViewFooter.footer
 </template>
 
 <script>
-import { Footer as IViewFooter } from 'view-ui-plus';
+import { Footer as IViewFooter } from 'view-ui-plus/dist/viewuiplus.min.esm';
 import { license, author, release as releaseYear } from '@/consts/product.json';
 
 export default {
