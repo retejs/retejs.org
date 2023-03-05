@@ -9,9 +9,6 @@ iframe(:src="'https://codesandbox.io/embed/' + id + '?autoresize=1&hidedevtools=
 <script>
 export default {
   props: ['id', 'module'],
-  mounted() {
-    console.log(this.id, this.module);
-  },
 };
 </script>
 

@@ -22,8 +22,5 @@ export default {
       return path.replace(new RegExp(`^/${locale}`), '');
     },
   },
-  updated() {
-    console.log(this.list);
-  },
 };
 </script>

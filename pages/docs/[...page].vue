@@ -39,9 +39,6 @@ export default defineComponent({
     },
   },
   methods: {
-    log(...v) {
-      console.log(...v);
-    },
     sanitizePath(path) {
       return this.localePath(this.omitLocale(path, this.locale));
     },
