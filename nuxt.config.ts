@@ -1,4 +1,5 @@
 /// <reference types="nuxt" />
+import { isCI, isDevelopment } from 'std-env';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -7,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/i18n',
     'nuxt-purgecss',
+    '@vite-pwa/nuxt',
   ],
   telemetry: false,
   css: [
@@ -36,5 +38,55 @@ export default defineNuxtConfig({
     lazy: true,
     defaultLocale: 'en',
     langDir: '/locales',
+  },
+  app: {
+    head: {
+      viewport: 'width=device-width,initial-scale=1',
+      link: [
+        { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
+      ],
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      ],
+    },
+  },
+  routeRules: {
+    '/manifest.webmanifest': {
+      headers: {
+        'Content-Type': 'application/manifest+json',
+        'Cache-Control': 'public, max-age=0, must-revalidate',
+      },
+    },
+  },
+  pwa: {
+    mode: isCI ? 'production' : 'development',
+    disable: isDevelopment,
+    registerType: 'autoUpdate',
+    client: {
+      installPrompt: true,
+    },
+    manifest: {
+      name: 'Rete.js',
+      short_name: 'Rete.js',
+      theme_color: '#ffffff',
+      icons: [
+        {
+          src: '192x192.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          src: '512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+        },
+      ],
+    },
+    workbox: {
+      navigateFallback: '/',
+      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+    },
+    registerWebManifestInRouteRules: true,
+    writePlugin: true,
   },
 });

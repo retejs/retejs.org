@@ -1,5 +1,6 @@
 <template lang="pug">
 .app
+  VitePwaManifest
   Header
   Content
   Footer
