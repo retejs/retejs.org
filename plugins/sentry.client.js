@@ -1,10 +1,11 @@
-import * as Sentry from '@sentry/vue';
-import { BrowserTracing } from '@sentry/tracing';
 import { dsn } from '../config/sentry';
 
 // eslint-disable-next-line no-undef
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin(async (nuxtApp) => {
   const app = nuxtApp.vueApp;
+
+  const { BrowserTracing } = await import('@sentry/tracing');
+  const Sentry = await import('@sentry/vue');
 
   Sentry.init({
     app,

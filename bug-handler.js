@@ -1,7 +1,8 @@
-import * as Sentry from '@sentry/vue';
 import { dsn } from './config/sentry';
 
-export function openReportDialog(title) {
+export async function openReportDialog(title) {
+  const Sentry = await import('@sentry/vue');
+
   Sentry.showReportDialog({
     title,
     dsn,

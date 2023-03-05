@@ -4,7 +4,6 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import docsearch from '@docsearch/js';
 import '@docsearch/css';
 
 const appId = 'Q275UHBHP7';
@@ -18,8 +17,10 @@ export default defineComponent({
     },
   },
   methods: {
-    refresh() {
+    async refresh() {
       const t = (key: string) => this.$t(['docsearch', key].join('.'));
+
+      const { default: docsearch } = await import('@docsearch/js');
 
       docsearch({
         container: this.$refs.container,

@@ -1,4 +1,6 @@
-import ViewUIPlus from 'view-ui-plus';
+import {
+  Menu, MenuItem, Icon, Select, Submenu, Dropdown, Option, Drawer, Button,
+} from 'view-ui-plus/dist/viewuiplus.min.esm';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faDiscord, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -12,5 +14,14 @@ export default defineNuxtPlugin((nuxtApp) => {
   app.component('font-awesome-icon', FontAwesomeIcon);
 
   app.use(library);
-  app.use(ViewUIPlus);
+
+  app.component('Menu', Menu);
+  app.component('Icon', Icon);
+  app.component('MenuItem', MenuItem);
+  app.component('Submenu', Submenu);
+  app.component('Select', Select);
+  app.component('Dropdown', Dropdown);
+  app.component('Option', Option);
+  app.component('Drawer', Drawer);
+  app.component('Button', Button);
 });
