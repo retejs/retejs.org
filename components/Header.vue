@@ -6,7 +6,7 @@
     )
     MenuItem.logo(name="logo", :to="localePath('/')")
       Logo.icon.ivu-icon(:hover="true")
-      span Rete.js
+      span.title Rete.js
     .menu-burger(@click="drawer = true")
       Icon(type="md-menu" :size="20")
     .space
@@ -86,6 +86,11 @@ export default defineComponent({
   .icon
     height: 50px
     width: 50px
+    bottom: 0.1em
+    position: relative
+  .title
+    bottom: 0.2em
+    position: relative
   & > *
     vertical-align: middle
 
