@@ -1,11 +1,10 @@
 <template lang="pug">
-client-only
-  Drawer(
-    :value="value"
-    @input="$emit('input', $event)"
-    :placement="placement"
-  )
-    slot
+Drawer(
+  :value="value"
+  @input="$emit('input', $event)"
+  :placement="placement"
+)
+  slot
 </template>
 
 <script>
