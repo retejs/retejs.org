@@ -37,7 +37,7 @@ export default defineNuxtConfig({
     },
     lazy: true,
     defaultLocale: 'en',
-    langDir: '/locales',
+    langDir: 'locales',
   },
   app: {
     head: {
