@@ -1,5 +1,5 @@
 <template lang="pug">
-.search(ref="container")
+div(ref="container")
 </template>
 
 <script lang="ts">
@@ -89,8 +89,11 @@ export default defineComponent({
   border-radius: 4px
   background: white
   height: 32px
-  width: 205px
-  margin: 14px
+  display: inline-flex
+  vertical-align: middle
+  flex-direction: row-reverse
+  width: 100%
+  margin: 0
 
 .DocSearch-Button-Keys
   transform: scale(0.7)
@@ -103,8 +106,4 @@ export default defineComponent({
   --docsearch-text-color: grey
   transform: scale(0.6)
 
-.search > *
-  display: inline-flex
-  vertical-align: middle
-  flex-direction: row-reverse
 </style>

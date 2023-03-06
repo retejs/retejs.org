@@ -11,7 +11,7 @@
       Icon(type="md-menu" :size="20")
     .space
     Links.links
-    Search
+    Search.search
     .main-items
       MenuItems
     Language
@@ -93,5 +93,9 @@ export default defineComponent({
     position: relative
   & > *
     vertical-align: middle
+
+.search
+  padding: 0 14px
+  width: 200px
 
 </style>
