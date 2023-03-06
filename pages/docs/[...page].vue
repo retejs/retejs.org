@@ -2,7 +2,7 @@
 .docs
   FetchNav(v-slot="{ navigation }" target="docs")
     Menu.menu(width="auto")
-      h1.title() {{ $t('docs') }}
+      h1.title() {{ $t('documentation') }}
         Icon.burger-icon(
           type="md-menu"
           :size="20"
@@ -23,8 +23,12 @@ import { defineComponent } from 'vue';
 import Drawer from '@/components/shared/Drawer.vue';
 import Nav from '@/components/Nav.vue';
 import FetchNav from '@/components/FetchNav.vue';
+import { alterTitle } from '../../shared/title';
 
 export default defineComponent({
+  setup() {
+    alterTitle();
+  },
   data() {
     return {
       drawer: false,

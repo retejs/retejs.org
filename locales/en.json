@@ -1,5 +1,7 @@
 {
+  "name": "Rete.js",
   "docs": "Docs",
+  "documentation": "Documentation",
   "examples": "Examples",
   "components": "Components",
   "issues": "Issues",
@@ -24,6 +26,9 @@
         "description": "Customizable with diverse plugins and integrable with Angular, Vue.js, React.js, etc"
       }
     }
+  },
+  "examplesPage": {
+    "title": "{title} Example"
   },
   "docsearch": {
     "placeholder": "Search for",

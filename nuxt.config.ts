@@ -42,6 +42,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       viewport: 'width=device-width,initial-scale=1',
+      title: 'Rete.js',
       link: [
         { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
       ],

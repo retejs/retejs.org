@@ -1,5 +1,7 @@
 <template lang="pug">
 .support
+  Head
+    Title  {{ $t('support') }} - {{ $t('name') }}
   .section
     .title {{ $t('support') }} Rete.js
   .methods

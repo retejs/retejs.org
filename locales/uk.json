@@ -1,5 +1,7 @@
 {
+  "name": "Rete.js",
   "docs": "Документація",
+  "documentation": "Документація",
   "examples": "Приклади",
   "components": "Компоненти",
   "issues": "Проблеми",
@@ -24,6 +26,9 @@
         "description": "Налаштовується різноманітними плагінами та інтегрується з Angular, Vue.js, React.js тощо"
       }
     }
+  },
+  "examplesPage": {
+    "title": "Приклад {title}"
   },
   "docsearch": {
     "placeholder": "Шукати",

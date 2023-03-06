@@ -1,5 +1,7 @@
 <template lang="pug">
 .home
+  Head
+    Title {{ $t('name') }} - {{ $t('main.title') }}
   .section
     p.title {{ $t('main.title') }}
     p.description {{ $t('main.description') }}

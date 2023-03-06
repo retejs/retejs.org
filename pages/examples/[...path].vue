@@ -15,8 +15,12 @@
 import { defineComponent } from 'vue';
 import Nav from '@/components/Nav.vue';
 import FetchNav from '@/components/FetchNav.vue';
+import { alterTitle } from '../../shared/title';
 
 export default defineComponent({
+  setup() {
+    alterTitle('examplesPage.title');
+  },
   computed: {
     contentPath() {
       return `/${this.$i18n.locale}${this.omitLocale(this.$route.path, this.$i18n.locale)}`;
