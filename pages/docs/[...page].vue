@@ -2,14 +2,11 @@
 .docs
   FetchNav(v-slot="{ navigation }" target="docs")
     Menu.menu(width="auto")
-      h1.title() {{ $t('documentation') }}
-        Icon.burger-icon(
-          type="md-menu"
-          :size="20"
-          @click="drawer = true"
-        )
+      h1.title {{ $t('documentation') }}
+        .menu-burger(@click="drawer = true")
+          Icon(type="md-menu" :size="20")
       .content-nav
-          Nav(:list="navigation.children")
+        Nav(:list="navigation.children")
     .content
       ContentDoc(:path="contentPath")
         template(#not-found)
@@ -66,8 +63,9 @@ export default defineComponent({
   text-align: left
   .menu
     min-width: 200px
-    .burger-icon
+    .menu-burger
       display: none
+      margin: 0 0.1em
   +phone
     .menu
       text-align: right
@@ -75,7 +73,7 @@ export default defineComponent({
       z-index: 1
       position: absolute
       right: 0
-      .burger-icon
+      .menu-burger
         display: unset
       .content-nav
         display: none

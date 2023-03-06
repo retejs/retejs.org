@@ -1,18 +1,23 @@
 <template lang="pug">
 .examples
-  Menu.menu(width="auto")
-    h1.title() {{ $t('examples') }}
-    FetchNav(v-slot="{ navigation }" target="examples")
+  FetchNav(v-slot="{ navigation }" target="examples")
+    Menu.menu(width="auto")
+      h1.title {{ $t('examples') }}
+        .menu-burger(@click="drawer = true")
+          Icon(type="md-menu" :size="20")
+      .content-nav
+        Nav(:list="navigation.children")
+    .content
+      ContentDoc(:path="contentPath")
+        template(#not-found)
+          Alert(type="warning") Examples section not found
+    Drawer.drawer(v-model="drawer")
       Nav(:list="navigation.children")
-  .content
-    ContentDoc(:path="contentPath")
-      template(#not-found)
-        Alert(type="warning") Docs section not found
-
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Drawer from '@/components/shared/Drawer.vue';
 import Nav from '@/components/Nav.vue';
 import FetchNav from '@/components/FetchNav.vue';
 import { alterTitle } from '../../shared/title';
@@ -20,6 +25,11 @@ import { alterTitle } from '../../shared/title';
 export default defineComponent({
   setup() {
     alterTitle('examplesPage.title');
+  },
+  data() {
+    return {
+      drawer: false,
+    };
   },
   computed: {
     contentPath() {
@@ -35,6 +45,7 @@ export default defineComponent({
     },
   },
   components: {
+    Drawer,
     Nav,
     FetchNav,
   },
@@ -51,6 +62,20 @@ export default defineComponent({
     min-width:  200px
     .title
       margin: 1em
+    .menu-burger
+      display: none
+      margin: 0 0.1em
+  +phone
+    .menu
+      text-align: right
+      width: 100%
+      z-index: 1
+      position: absolute
+      right: 0
+      .menu-burger
+        display: unset
+      .content-nav
+        display: none
 
   .content
     flex: 1
