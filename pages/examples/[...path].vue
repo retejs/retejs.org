@@ -6,19 +6,19 @@
         .menu-burger(@click="drawer = true")
           Icon(type="md-menu" :size="20")
       .content-nav
-        Nav(:list="navigation.children")
+        ExamplesNav(:navigation="navigation")
     .content
       ContentDoc(:path="contentPath")
         template(#not-found)
           Alert(type="warning") Examples section not found
     Drawer.drawer(v-model="drawer")
-      Nav(:list="navigation.children")
+      ExamplesNav(:navigation="navigation")
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Drawer from '@/components/shared/Drawer.vue';
-import Nav from '@/components/Nav.vue';
+import ExamplesNav from '@/components/ExamplesNav.vue';
 import FetchNav from '@/components/FetchNav.vue';
 import { alterTitle } from '../../shared/title';
 
@@ -46,7 +46,7 @@ export default defineComponent({
   },
   components: {
     Drawer,
-    Nav,
+    ExamplesNav,
     FetchNav,
   },
 });

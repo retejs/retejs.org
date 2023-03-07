@@ -1,5 +1,6 @@
 import {
-  Menu, MenuItem, Icon, Select, Submenu, Dropdown, Option, Drawer, Button,
+  Menu, MenuItem, Icon, Select, Submenu, Dropdown, Option,
+  Drawer, Button, Alert, Tag,
 } from 'view-ui-plus/dist/viewuiplus.min.esm';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faDiscord, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -24,4 +25,6 @@ export default defineNuxtPlugin((nuxtApp) => {
   app.component('Option', Option);
   app.component('Drawer', Drawer);
   app.component('Button', Button);
+  app.component('Alert', Alert);
+  app.component('Tag', Tag);
 });
