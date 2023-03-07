@@ -5,7 +5,8 @@ Menu(width="auto")
       v-if="!item.children"
       :name="sanitizePath(item._path)"
       :to="sanitizePath(item._path)"
-    ) {{ item.title }}
+    )
+      slot(name="item" :data="item") {{ item.title }}
     Submenu.submenu(v-if="item.children" :name="sanitizePath(item._path)")
       template(#title) {{ item.title }}
       Nav(:list="item.children")
