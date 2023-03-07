@@ -34,6 +34,7 @@ $offset: 60px
   height: calc(100% - #{$offset})
 .ivu-drawer
   top: $offset
+  height: calc(100vh - $offset)
 .ivu-drawer-body
   padding: 0
 </style>
