@@ -1,5 +1,5 @@
 <template lang="pug">
-Nav(:list="navigation.children")
+Nav(:list="navigation.children" :active="$route.path")
   template.test(#item="{ data }")
     .item
       .title {{ data.title }}

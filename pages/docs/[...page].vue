@@ -6,13 +6,13 @@
         .menu-burger(@click="drawer = true")
           Icon(type="md-menu" :size="20")
       .content-nav
-        Nav(:list="navigation.children")
+        Nav(:list="navigation.children" :active="$route.path")
     .content
       ContentDoc(:path="contentPath")
         template(#not-found)
           Alert(type="warning") Docs section not found
     Drawer.drawer(v-model="drawer")
-      Nav(:list="navigation.children")
+      Nav(:list="navigation.children" :active="$route.path")
 </template>
 
 <script>
