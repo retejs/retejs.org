@@ -23,6 +23,8 @@ $offset: 60px
   min-width: 200px
   height: calc(100vh - $offset)
   overflow: auto
+  position: sticky
+  top: 60px
   .menu-burger
     display: none
     margin: 0 0.1em
