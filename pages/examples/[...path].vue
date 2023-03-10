@@ -1,12 +1,9 @@
 <template lang="pug">
 .examples
   FetchNav(v-slot="{ navigation }" target="examples")
-    Menu.menu(width="auto")
-      h1.title {{ $t('examples') }}
-        .menu-burger(@click="drawer = true")
-          Icon(type="md-menu" :size="20")
-      .content-nav
-        ExamplesNav(:navigation="navigation")
+    NavMenu(@open="drawer = true")
+      template(#title) {{ $t('examples') }}
+      ExamplesNav(:navigation="navigation")
     .content
       ContentDoc(:path="contentPath")
         template(#not-found)
@@ -20,6 +17,7 @@ import { defineComponent } from 'vue';
 import Drawer from '@/components/shared/Drawer.vue';
 import ExamplesNav from '@/components/ExamplesNav.vue';
 import FetchNav from '@/components/FetchNav.vue';
+import NavMenu from '@/components/shared/NavMenu.vue';
 import { alterTitle } from '../../shared/title';
 
 export default defineComponent({
@@ -48,6 +46,7 @@ export default defineComponent({
     Drawer,
     ExamplesNav,
     FetchNav,
+    NavMenu,
   },
 });
 </script>
@@ -58,24 +57,6 @@ export default defineComponent({
 .examples
   display: flex
   text-align: left
-  .menu
-    min-width:  200px
-    .title
-      margin: 1em
-    .menu-burger
-      display: none
-      margin: 0 0.1em
-  +phone
-    .menu
-      text-align: right
-      width: 100%
-      z-index: 1
-      position: absolute
-      right: 0
-      .menu-burger
-        display: unset
-      .content-nav
-        display: none
 
   .content
     flex: 1

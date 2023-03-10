@@ -1,12 +1,9 @@
 <template lang="pug">
 .docs
   FetchNav(v-slot="{ navigation }" target="docs")
-    Menu.menu(width="auto")
-      h1.title {{ $t('documentation') }}
-        .menu-burger(@click="drawer = true")
-          Icon(type="md-menu" :size="20")
-      .content-nav
-        Nav(:list="navigation.children" :active="$route.path")
+    NavMenu(@open="drawer = true")
+      template(#title) {{ $t('documentation') }}
+      Nav(:list="navigation.children" :active="$route.path")
     .content
       ContentDoc(:path="contentPath")
         template(#not-found)
@@ -20,6 +17,7 @@ import { defineComponent } from 'vue';
 import Drawer from '@/components/shared/Drawer.vue';
 import Nav from '@/components/Nav.vue';
 import FetchNav from '@/components/FetchNav.vue';
+import NavMenu from '@/components/shared/NavMenu.vue';
 import { alterTitle } from '../../shared/title';
 
 export default defineComponent({
@@ -51,36 +49,18 @@ export default defineComponent({
     Drawer,
     Nav,
     FetchNav,
+    NavMenu,
   },
 });
 </script>
 
 <style lang="sass" scoped>
 @import '@/assets/styles/media.sass'
+$offset: 60px
 
 .docs
   display: flex
   text-align: left
-  .menu
-    min-width: 200px
-    .menu-burger
-      display: none
-      margin: 0 0.1em
-  +phone
-    .menu
-      text-align: right
-      width: 100%
-      z-index: 1
-      position: absolute
-      right: 0
-      .menu-burger
-        display: unset
-      .content-nav
-        display: none
-  .title
-    margin: 1em
-    +phone
-      margin: 0.5em
   .content
     flex: 1
     position: relative
@@ -88,9 +68,6 @@ export default defineComponent({
     overflow: auto
     +phone
       padding: 5vw
-
-.burger-icon
-  margin: 0 0.5em
 </style>
 
 <style lang="sass">
