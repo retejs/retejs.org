@@ -65,7 +65,8 @@ $offset: 60px
     flex: 1
     position: relative
     padding: 2em
-    overflow: auto
+    // hide scroll for articles with editors without overflow
+    overflow: hidden
     +phone
       padding: 5vw
 </style>
