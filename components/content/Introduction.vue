@@ -26,10 +26,10 @@ import Pointer from '@/components/shared/Pointer.vue';
 const socket = new ClassicPreset.Socket('Number');
 
 class NumberNode extends ClassicPreset.Node {
-  constructor(initial) {
+  constructor(initial, change) {
     super('Number');
 
-    this.addControl('value', new ClassicPreset.InputControl('number', { initial }));
+    this.addControl('value', new ClassicPreset.InputControl('number', { initial, change }));
     this.addOutput('value', new ClassicPreset.Output(socket, 'Number'));
   }
 
@@ -89,14 +89,20 @@ export default {
 
     area.area.zoom(0.92);
 
-    const a = new NumberNode(1);
-    const b = new NumberNode(1);
-
     const add = new AddNode();
+
+    async function process() {
+      engine.reset();
+      await engine.fetch(add.id);
+      area.update('control', add.controls.value.id);
+    }
+
+    const a = new NumberNode(1, process);
+    const b = new NumberNode(1, process);
 
     editor.addPipe((context) => {
       if (context.type === 'connectioncreated' || context.type === 'connectionremoved') {
-        engine.fetch(add.id);
+        process();
       }
 
       return context;
