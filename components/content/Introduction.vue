@@ -1,15 +1,19 @@
 <template lang="pug">
-.container(ref="container")
-  Pointer.pointer(
-    v-for="pointer in pointers"
-    :length="pointer.len"
-    :size="16"
-    :x="pointer.x"
-    :y="pointer.y"
-    :rotate="pointer.r"
-    :title="pointer.title"
-    :scale="scale * 0.7 + 0.3"
-  )
+.canva
+  client-only
+    template(#placeholder)
+      img.placeholder(src="~/assets/images/introduction.png")
+  .container(ref="container")
+    Pointer.pointer(
+      v-for="pointer in pointers"
+      :length="pointer.len"
+      :size="16"
+      :x="pointer.x"
+      :y="pointer.y"
+      :rotate="pointer.r"
+      :title="pointer.title"
+      :scale="scale * 0.7 + 0.3"
+    )
 </template>
 
 <script>
@@ -71,6 +75,9 @@ export default {
     const render = new VueRenderPlugin();
     const engine = new DataflowEngine();
 
+    area.area.setZoomHandler(null);
+    area.container.style.overflow = 'initial';
+
     render.addPreset(Presets.classic.setup({ area }));
 
     editor.use(area);
@@ -79,6 +86,8 @@ export default {
 
     AreaExtensions.selectableNodes(area, AreaExtensions.selector(), { accumulating: AreaExtensions.accumulateOnCtrl() });
     AreaExtensions.simpleNodesOrder(area);
+
+    area.area.zoom(0.92);
 
     const a = new NumberNode(1);
     const b = new NumberNode(1);
@@ -104,6 +113,8 @@ export default {
     await area.translate(b.id, { x: 45, y: 240 });
     await area.translate(add.id, { x: 435, y: 20 });
 
+    // await area.area.translate(37, 108);
+
     area.emit({ type: 'nodepicked', data: { id: add.id } });
 
     this.updatePointers(area, a, add);
@@ -114,8 +125,6 @@ export default {
       }
       return ctx;
     });
-
-    area.area.zoom(0.92);
   },
   methods: {
     updatePointers(area, nodeA, nodeAdd) {
@@ -126,8 +135,8 @@ export default {
       this.pointers = [];
       this.pointers.push({
         len: 5,
-        x: k * (aPosition.x + 55) + x,
-        y: k * (aPosition.y + 95) + y,
+        x: k * (aPosition.x + 65) + x,
+        y: k * (aPosition.y + 92) + y,
         r: 125,
         title: 'Control',
       });
@@ -171,13 +180,27 @@ export default {
 
 </script>
 
-<style lang="sass">
-.container
-  width: 700px
-  height: 400px
-  line-height: 1.2em
+<style lang="sass" scoped>
+.canva
+  height: 350px
+  width: 650px
   position: relative
-  .pointer
-    z-index: 2
+
+  .container
+    position: absolute
+    width: 100vw
+    height: 100%
+    left: 0
+    top: 0
+    line-height: 1.2em
+    z-index: 0
+    overflow: hidden
+    .pointer
+      z-index: 2
+
+  img.placeholder
+    width: 100%
+    height: 100%
+    margin: 0
 
 </style>

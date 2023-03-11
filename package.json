@@ -26,7 +26,7 @@
     "qs": "^6.11.0",
     "register-service-worker": "^1.7.2",
     "rete": "^2.0.0-beta.2",
-    "rete-area-plugin": "^2.0.0-beta.1",
+    "rete-area-plugin": "^2.0.0-beta.2",
     "rete-engine": "^2.0.0-beta.1",
     "rete-render-utils": "^2.0.0-beta.1",
     "rete-vue-render-plugin": "^2.0.0-beta.4",
