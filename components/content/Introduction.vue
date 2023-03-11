@@ -1,5 +1,5 @@
 <template lang="pug">
-.canva
+.canva(ref="canva")
   client-only
     template(#placeholder)
       img.placeholder(src="~/assets/images/introduction.png")
@@ -12,7 +12,7 @@
       :y="pointer.y"
       :rotate="pointer.r"
       :title="pointer.title"
-      :scale="scale * 0.7 + 0.3"
+      :scale="scale"
     )
 </template>
 
@@ -87,7 +87,9 @@ export default {
     AreaExtensions.selectableNodes(area, AreaExtensions.selector(), { accumulating: AreaExtensions.accumulateOnCtrl() });
     AreaExtensions.simpleNodesOrder(area);
 
-    area.area.zoom(0.92);
+    this.resize(area);
+
+    window.addEventListener('resize', () => this.resize(area));
 
     const add = new AddNode();
 
@@ -119,8 +121,6 @@ export default {
     await area.translate(b.id, { x: 45, y: 240 });
     await area.translate(add.id, { x: 435, y: 20 });
 
-    // await area.area.translate(37, 108);
-
     area.emit({ type: 'nodepicked', data: { id: add.id } });
 
     this.updatePointers(area, a, add);
@@ -133,6 +133,11 @@ export default {
     });
   },
   methods: {
+    resize(area) {
+      const canvaWidth = this.$refs.canva.clientWidth;
+
+      area.area.zoom(0.92 * canvaWidth / 650);
+    },
     updatePointers(area, nodeA, nodeAdd) {
       const aPosition = area.nodeViews.get(nodeA.id).position;
       const addPosition = area.nodeViews.get(nodeAdd.id).position;
@@ -187,10 +192,20 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+@import '@/assets/styles/media.sass'
+
+$size: 650px
+$ratio: 350px / $size
+
 .canva
-  height: 350px
-  width: 650px
+  max-height: $size * $ratio
+  max-width: $size
+  height: $ratio * 65vw
+  width: 65vw
   position: relative
+  +phone
+    height: $ratio * 90vw
+    width: 90vw
 
   .container
     position: absolute
