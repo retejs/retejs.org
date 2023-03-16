@@ -18,6 +18,9 @@ export default defineNuxtConfig({
     highlight: {
       theme: 'one-dark-pro',
     },
+    markdown: {
+      remarkPlugins: ['remark-heading-id'],
+    },
   },
   purgecss: {
     enabled: !isDevelopment,
