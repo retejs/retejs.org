@@ -1,7 +1,8 @@
 <template lang="pug">
 Menu.menu(width="auto")
   h1.title
-    slot(name="title")
+    .text
+      slot(name="title")
     .menu-burger(@click="$emit('open')")
       Icon(type="md-menu" :size="20")
   .content-nav
@@ -32,11 +33,12 @@ $offset: 60px
 +phone
   .menu
     text-align: right
-    width: 100%
     z-index: 1
     position: absolute
     right: 0
+    width: auto
     height: auto
+    min-width: auto
     .menu-burger
       display: unset
     .content-nav
@@ -49,6 +51,10 @@ $offset: 60px
   top: 0
   background: linear-gradient(180deg, white 0%, white 70%, transparent)
   z-index: 2
+  .text
+    display: inline
   +phone
     padding: 0.5em
+    .text
+      display: none
 </style>
