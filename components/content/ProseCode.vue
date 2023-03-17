@@ -35,7 +35,7 @@ export default defineComponent({
 @import '@/assets/styles/vars.sass'
 
 code
-  padding: 0.2em 0.5em
+  padding: 0.1em 0.5em
   margin: 0.5em 0
   border-radius: 1em
   background: $code-background
