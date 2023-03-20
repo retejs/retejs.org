@@ -43,7 +43,7 @@ render.addPreset(Presets.reroute.setup({
 }));
 ```
 
-#### Выбираемые пины
+#### Выбираемые пины {#selectable}
 
 Как уже было описано в гайде [Selectable](./selectable), вы можете настроить выбор любого вида элементов.
 
