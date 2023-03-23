@@ -25,7 +25,7 @@ export default {
   height: calc(100vh - $top-offset)
   overflow: auto
   position: sticky
-  top: $top-offset
+  top: $header-height
   .menu-burger
     display: none
     margin: 0 0.1em
