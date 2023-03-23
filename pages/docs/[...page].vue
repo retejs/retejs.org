@@ -8,8 +8,9 @@
       ContentDoc(:path="contentPath")
         template(#not-found)
           Alert(type="warning") Docs section not found
-    Drawer.drawer(v-model="drawer")
-      Nav(:list="navigation.children" :active="$route.path")
+    Drawer(v-model="drawer")
+      .drawer-content
+        Nav(:list="navigation.children" :active="$route.path")
 </template>
 
 <script>
@@ -84,4 +85,7 @@ $offset: 60px
   img
     margin: 1em 0
     max-width: 100%
+
+.drawer-content
+  padding-bottom: 4em
 </style>

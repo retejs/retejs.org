@@ -8,8 +8,9 @@
       ContentDoc(:path="contentPath")
         template(#not-found)
           Alert(type="warning") Examples section not found
-    Drawer.drawer(v-model="drawer")
-      ExamplesNav(:navigation="navigation")
+    Drawer(v-model="drawer")
+      .drawer-content
+        ExamplesNav(:navigation="navigation")
 </template>
 
 <script lang="ts">
@@ -65,4 +66,6 @@ export default defineComponent({
     overflow: auto
     +phone
       padding: 5vw
+.drawer-content
+  padding-bottom: 4em
 </style>
