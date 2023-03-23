@@ -27,14 +27,14 @@ export default {
 </script>
 
 <style lang="sass">
-$offset: 60px
+@import '@/assets/styles/vars.sass'
 
 .ivu-drawer-mask
-  top: $offset
-  height: calc(100% - #{$offset})
+  top: $top-offset
+  height: calc(100% - #{$top-offset})
 .ivu-drawer
-  top: $offset
-  height: calc(100vh - $offset)
+  top: $top-offset
+  height: calc(100vh - $top-offset)
 .ivu-drawer-body
   padding: 0
 </style>

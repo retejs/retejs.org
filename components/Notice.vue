@@ -8,6 +8,8 @@
 </template>
 
 <style lang="sass" scoped>
+@import '@/assets/styles/vars.sass'
+
 .notice
   width: 100%
   background: #697984
@@ -16,6 +18,7 @@
   text-align: center
   font-weight: 100
   font-size: 0.9rem
+  height: $header-offset
   a
     color: wheat
 </style>

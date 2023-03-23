@@ -17,15 +17,15 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+@import '@/assets/styles/vars.sass'
 @import '@/assets/styles/media.sass'
-$offset: 60px
 
 .menu
   min-width: 200px
-  height: calc(100vh - $offset)
+  height: calc(100vh - $top-offset)
   overflow: auto
   position: sticky
-  top: 60px
+  top: $top-offset
   .menu-burger
     display: none
     margin: 0 0.1em
