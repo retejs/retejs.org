@@ -1,16 +1,16 @@
 # Comments
 
 ::alert
-Этот гайд основан на гайде [Basic](./basic). Желательно ознакомиться с ним для полноценного понимания текущего гайда
+This guide is based on the [Basic](./basic) guide. It is recommended to review it for a comprehensive understanding of this guide.
 ::
 
-#### Устанавливаем зависимости
+#### Install dependencies
 
 ```bash
 npm i rete-comment-plugin@next
 ```
 
-#### Подготавливаем узлы
+#### Prepare nodes
 
 ```ts
 class Node extends ClassicPreset.Node {
@@ -22,7 +22,7 @@ class Connection<N extends Node> extends ClassicPreset.Connection<N, N> {}
 type Schemes = GetSchemes<Node, Connection<Node>>;
 ```
 
-#### Подключаем плагин
+#### Connect the plugin
 
 ```ts
 import { CommentPlugin } from "rete-comment-plugin";
@@ -32,25 +32,25 @@ const comment = new CommentPlugin<Schemes, AreaExtra>();
 area.use(comment);
 ```
 
-#### Добавляем комментарии программно
+#### Add comments programmatically
 
-Adding inline comment
+Adding an inline comment
 
 ```ts
 comment.addInline("Inline comment text", [360, -20], node.dd);
 ```
 
-где `[360, -20]` это позиция комментария, поскольку он может быть размещен произвольно относительно узла `node`, к которому присоединяется
+where `[360, -20]` is the position of the comment, which can be placed freely in relation to the `node` it is attached to.
 
-Adding frame comment
+Adding a frame comment
 
 ```ts
 comment.addFrame("Frame comment text", [node.id]);
 ```
 
-где `[node.id]` это перечень узлов, которые покрывает этот комментарий
+where `[node.id]` refers to the nodes that are covered by this comment
 
-#### Выбираемые комментарии {#selectable}
+#### Selectable comments {#selectable}
 
 ```ts
 import { CommentExpressions } from "rete-comment-plugin";
@@ -63,7 +63,7 @@ CommentExpressions.selectable(comment, selector, accumulating);
 
 #### Edit comment text
 
-Чтобы изменить текст комментария, пользователь может вызвать контекстное меню. По умолчанию он увидит промпт с полем ввода, но вы можете кастомизировать это
+The comment text can be edited by RMB. By default, a prompt with an input field will be displayed, but you can customize this.
 
 ```ts
 const comment = new CommentPlugin<Schemes, AreaExtra>({
@@ -73,4 +73,6 @@ const comment = new CommentPlugin<Schemes, AreaExtra>({
 });
 ```
 
-где свойство `edit` должен принимать асинхронную функцию, которая возвращает текст комментария
+where the `edit` property must accept an asynchronous function that returns the text for the comment.
+
+Check out the complete result on the [Comments](/examples/comment) example page.

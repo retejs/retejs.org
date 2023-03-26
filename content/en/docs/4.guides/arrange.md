@@ -1,30 +1,26 @@
----
-title: Arrange nodes
----
-
 # Arrange nodes
 
 ::alert
-Этот гайд основан на гайде [Basic](./basic). Желательно ознакомиться с ним для полноценного понимания текущего гайда
+This guide is based on the [Basic](./basic) guide. It is recommended to review it for a comprehensive understanding of this guide.
 ::
 
-#### Устанавливаем зависимости
+#### Install dependencies
 
-Плагин снован на пир зависимости `elkjs`, поэтому его нужно установить отдельно
+Prior to using this plugin, `elkjs` peer dependency must be installed separately.
 
 ```bash
 npm i rete-auto-arrange-plugin@next elkjs
 ```
 
-Кроме этого, возможно вам потребуется установить `web-worker`, если данная зависимость не определяется в вашем сборщике
+Additionally, it may be necessary to install `web-worker` if your bundler doesn't recognize this dependency by default
 
 ```bash
 npm i web-worker
 ```
 
-#### Создаем основу узла
+#### Create the node base
 
-Нам необходимо задать ширину и высоту узла, без которых `elkjs` не сможет работать корректно, поскольку нередко размеры узлом могут отличаться
+The node's width and height need to be specified as `elkjs` requires these values, especially if the node sizes vary.
 
 ```ts
 class Node extends ClassicPreset.Node {
@@ -37,7 +33,7 @@ class Connection<N extends Node> extends ClassicPreset.Connection<N, N> {}
 type Schemes = GetSchemes<Node, Connection<Node>>;
 ```
 
-#### Подключаем плагин
+#### Connect the plugin
 
 ```ts
 import { AutoArrangePlugin } from "rete-auto-arrange-plugin";
@@ -47,10 +43,10 @@ const arrange = new AutoArrangePlugin<Schemes>();
 area.use(arrange);
 ```
 
-#### Упорядочить добавленные узлы
+#### Order added nodes
 
 ```ts
 await arrange.layout();
 ```
 
-Готовый результат вы можете найти на странице примера [Arrange](/examples/arrange)
+Check out the complete result on the [Arrange](/examples/arrange) example page.

@@ -1,19 +1,18 @@
 # Connection path
 
 ::alert
-Этот гайд основан на гайде [Basic](./basic). Желательно ознакомиться с ним для полноценного понимания текущего гайда
+This guide is based on the [Basic](./basic) guide. It is recommended to review it for a comprehensive understanding of this guide.
 ::
 
-#### Устанавливаем зависимости
+#### Install dependencies
 
 ```bash
 npm i rete-connection-path-plugin@next d3-shape
 ```
 
-#### Подключаем плагин
+#### Connect the plugin
 
-В данном случае все соединения будут использовать `curveStep`
-Также заметьте, что плагин подключается к рендер плагину, который должен выкидывать событие `connectionpath`
+The `curveStep` method is used for all connections in this example. Keep in mind that the plugin must be linked to the render plugin, which must emit the `connectionpath` event.
 
 ```ts
 import { ConnectionPathPlugin } from "rete-connection-path-plugin";
@@ -28,7 +27,7 @@ render.use(pathPlugin);
 
 #### Connection-specific path
 
-Опция `curve` принимает колбэк, первым параметром которого является экземпляр соединения, в котором вы можете задать тип пути
+The `curve` option takes a callback function with the connection instance as the first parameter, allowing you to customize the path type.
 
 ```ts
 import { curveStep, curveMonotoneX, curveLinear, CurveFactory } from "d3-shape";
@@ -51,4 +50,4 @@ monotoneConnection.curve = curveMonotoneX;
 linearConnection.curve = curveLinear;
 ```
 
-Готовый результат вы можете найти на странице примера [Connection path](/examples/connection-path)
+Check out the complete result on the [Connection path](/examples/connection-path) example page.
