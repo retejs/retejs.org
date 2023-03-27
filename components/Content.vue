@@ -1,6 +1,6 @@
 <template lang="pug">
 IViewContent.content
-  router-view
+  NuxtPage
 </template>
 
 <script>

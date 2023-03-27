@@ -3,7 +3,7 @@
   client-only
     Select.select.upper(
       :model-value="$i18n.locale"
-      @on-change="$i18n.setLocale($event)"
+      @on-change="setLocale($event)"
       size="small"
     )
       Option.upper(v-for="lang in $i18n.locales" :value="lang.code" :key="lang.code")
@@ -17,6 +17,11 @@ import { defineComponent } from 'vue';
 import SsrSelect from './ssr/SsrSelect.vue';
 
 export default defineComponent({
+  methods: {
+    setLocale(lang) {
+      this.$router.push(this.switchLocalePath(lang));
+    },
+  },
   components: {
     SsrSelect,
   },

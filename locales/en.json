@@ -72,5 +72,11 @@
         "reportMissingResultsLinkText": "Let us know."
       }
     }
+  },
+  "currentVersionNotice": {
+    "youAreBrowsing": "You're browsing Rete.js 2 Beta docs.",
+    "checkOut": "Check out",
+    "docsV1": "docs for Rete.js v1",
+    "orGetStarted": ", or get started with the current beta"
   }
 }

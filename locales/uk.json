@@ -72,5 +72,11 @@
         "reportMissingResultsLinkText": "Дайте нам знати."
       }
     }
+  },
+  "currentVersionNotice": {
+    "youAreBrowsing": "Ви проглядаєте документацію для Rete.js 2 Beta.",
+    "checkOut": "Перевірте",
+    "docsV1": "документацію для Rete.js v1",
+    "orGetStarted": ", або почніть з поточної бети"
   }
 }

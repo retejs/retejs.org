@@ -15,9 +15,9 @@
     margin: $v-margin $h-margin
 
 
-h1, h2
+h1, h2, h3, h4
   margin: 1em 0
-  font-weight: normal
+  scroll-margin-top: $top-offset
 h1
   font-size: 1.5em
   &:first-child
@@ -33,7 +33,6 @@ p
 
 h1 + p, h2 + p, p.indent
   text-indent: 1.5em
-
 
 
 .highlights
@@ -52,18 +51,6 @@ h1 + p, h2 + p, p.indent
   .step
     margin: 0 $h-margin
 
-
-code
-  padding: 0.2em 0.5em
-  margin: 0.5em 0
-  border-radius: 1em
-  background: $code-background
-  font-size: 0.9em
-  color: $code-foreround
-
-pre code
-  display: block
-  padding: 1em
 
 table
   border-collapse: collapse
