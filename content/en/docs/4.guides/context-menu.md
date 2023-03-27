@@ -1,18 +1,18 @@
 # Context menu
 
 ::alert
-Этот гайд основан на гайде [Basic](./basic). Желательно ознакомиться с ним для полноценного понимания текущего гайда
+This guide is based on the [Basic](./basic) guide. It is recommended to review it for a comprehensive understanding of this guide.
 ::
 
-#### Устанавливаем зависимости
+#### Install dependencies
 
 ```bash
 npm i rete-context-menu-plugin@next
 ```
 
-#### Подготавливаем узлы
+#### Prepare nodes
 
-Для удобства и переиспользования кода лучшим решением будет создать разные классы узлов, например
+To improve convenience and code reusability, it is recommended to create separate classes for nodes:
 
 ```ts
 class NodeA extends ClassicPreset.Node {
@@ -24,15 +24,15 @@ class NodeA extends ClassicPreset.Node {
   }
 }
 
-/// class NodeA extends ...
+/// class NodeB extends ...
 
 type Node = NodeA | NodeB;
 type Schemes = GetSchemes<Node, Connection<Node, Node>>;
 ```
 
-#### Подключение плагина
+#### Plugin connection
 
-Самый простой вариант это использовать классический пресет, которому вы можете задать список пунктов с метками и функцией, возвращающей необходимый узел
+For a simple solution, use the classic preset and specify a list of labeled items along with a function that returns the required node
 
 ```ts
 import { ContextMenuExtra, ContextMenuPlugin, Presets as ContextMenuPresets } from "rete-context-menu-plugin";
@@ -49,11 +49,11 @@ const contextMenu = new ContextMenuPlugin<Schemes, AreaExtra>({
 area.use(contextMenu);
 ```
 
-Но этого еще не достаточно, поскольку визуализацией заниматься рендер плагин
+But this is not sufficient as the render plugin is responsible for visualization
 
-#### Визуализируем контекстное меню
+#### Rendering the context menu
 
-На данный момент доступна визуализация контекстного меню только с помощью `rete-react-render-plugin`
+Currently, the visualization of the context menu is only possible using the `rete-react-render-plugin`
 
 ```ts
 import { ReactRenderPlugin, Presets } from "rete-react-render-plugin";
@@ -61,6 +61,6 @@ import { ReactRenderPlugin, Presets } from "rete-react-render-plugin";
 render.addPreset(Presets.contextMenu.setup());
 ```
 
-Теперь с помощью клика на свободной области вы можете вызвать меню со списком доступных для созданиях узлов, или удалить существующие при клике на узел.
+Clicking on the free space opens up a menu that displays the available nodes for creation, or simply click on an existing node to delete it.
 
-Готовый результат вы можете найти на странице примера [Context menu](/examples/context-menu)
+Check out the complete result on the [Context menu](/examples/context-menu) example page.

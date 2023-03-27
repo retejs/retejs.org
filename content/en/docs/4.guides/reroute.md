@@ -1,18 +1,17 @@
 # Reroute
 
-
 ::alert
-Этот гайд основан на гайде [Basic](./basic). Желательно ознакомиться с ним для полноценного понимания текущего гайда
+This guide is based on the [Basic](./basic) guide. It is recommended to review it for a comprehensive understanding of this guide.
 ::
 
 
-#### Устанавливаем зависимости
+#### Install dependencies
 
 ```bash
 npm i rete-connection-reroute-plugin@next
 ```
 
-#### Подключение плагина
+#### Plugin connection
 
 ```ts
 import { ReroutePlugin, RerouteExtra } from "rete-connection-reroute-plugin";
@@ -24,11 +23,11 @@ const reroutePlugin = new ReroutePlugin<Schemes, AreaExtra>();
 render.use(reroutePlugin)
 ```
 
-Плагин подключен, но еще нужно подключить пресет для визуализации
+The plugin is connected, but you need also connect a visualization preset to render the pins
 
-#### Визуализация
+#### Visualization
 
-На данный момент доступна визуализация контекстного меню только с помощью `rete-react-render-plugin`
+Currently, the visualization of the reroute pins is only possible using the `rete-react-render-plugin`
 
 ```ts
 render.addPreset(Presets.reroute.setup({
@@ -43,11 +42,11 @@ render.addPreset(Presets.reroute.setup({
 }));
 ```
 
-#### Выбираемые пины {#selectable}
+#### Selectable Pins {#selectable}
 
-Как уже было описано в гайде [Selectable](./selectable), вы можете настроить выбор любого вида элементов.
+As explained in the [Selectable](./selectable) guide, you can adjust the selection of all types of elements.
 
-Для добавления пинов в систему выбора нам нужен следующий код
+The following code must be used to incorporate pins to the selection system:
 
 ```ts
 import { RerouteExtensions } from "rete-connection-reroute-plugin";
@@ -68,8 +67,8 @@ render.addPreset(Presets.reroute.setup({
 
 ```
 
-где
-- `RerouteExtensions.selectablePins` это небольшое расширение, которое отвечает за добавление/удаление пинов в реестр выбранных их перемещение
-- `pointerdown` срабатывает при нажатии на пин и помечает его как выбранный
+where
+- `RerouteExtensions.selectablePins` is a compact extension that adds or removes pins to/from the registry of selected elements, and enables their movement.
+- `pointerdown` event is triggered upon clicking a pin and designates it as the selected pin
 
-Готовый результат вы можете найти на странице примера [Reroute](/examples/reroute)
+Check out the complete result on the [Reroute](/examples/reroute) example page.

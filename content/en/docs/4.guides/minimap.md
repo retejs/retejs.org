@@ -1,18 +1,18 @@
 # Minimap
 
 ::alert
-Этот гайд основан на гайде [Basic](./basic). Желательно ознакомиться с ним для полноценного понимания текущего гайда
+This guide is based on the [Basic](./basic) guide. It is recommended to review it for a comprehensive understanding of this guide.
 ::
 
-#### Устанавливаем зависимости
+#### Install dependencies
 
 ```bash
 npm i rete-minimap-plugin@next
 ```
 
-#### Подготавливаем узлы
+#### Prepare nodes
 
-Плагину миникарты необходимы предопределенные размеры узлов, поскольку на миникате они отображены с соблюдением размеров
+Predefined node sizes are necessary for the minimap plugin as they are displayed on the minimap with their respective dimensions.
 
 ```ts
 class Node extends ClassicPreset.Node {
@@ -24,7 +24,7 @@ class Connection<N extends Node> extends ClassicPreset.Connection<N, N> {}
 type Schemes = GetSchemes<Node, Connection<Node>>;
 ```
 
-#### Подключаем плагин
+#### Connect the plugin
 
 ```ts
 import { MinimapExtra, MinimapPlugin } from "rete-minimap-plugin";
@@ -34,11 +34,11 @@ const minimap = new MinimapPlugin<Schemes, AreaExtra>();
 area.use(minimap);
 ```
 
-Но этого еще не достаточно, поскольку визуализацией должен заниматься рендер плагин
+But this is not sufficient as the render plugin is responsible for visualization
 
-#### Визуализируем миникарту
+#### Rendering the minimap
 
-На данный момент доступна визуализация миникарты только с помощью `rete-react-render-plugin`
+Currently, the visualization of the minimap is only possible using the `rete-react-render-plugin`
 
 ```ts
 import { ReactRenderPlugin, Presets } from "rete-react-render-plugin";
@@ -46,4 +46,4 @@ import { ReactRenderPlugin, Presets } from "rete-react-render-plugin";
 render.addPreset(Presets.minimap.setup({ size: 200 }));
 ```
 
-Готовый результат вы можете найти на странице примера [Minimap](/examples/minimap)
+Check out the complete result on the [Minimap](/examples/minimap) example page.

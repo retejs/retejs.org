@@ -1,18 +1,18 @@
 # Dock menu
 
 ::alert
-Этот гайд основан на гайде [Basic](./basic). Желательно ознакомиться с ним для полноценного понимания текущего гайда
+This guide is based on the [Basic](./basic) guide. It is recommended to review it for a comprehensive understanding of this guide.
 ::
 
-#### Устанавливаем зависимости
+#### Install dependencies
 
 ```bash
 npm i rete-dock-plugin@next
 ```
 
-#### Подключение плагина
+#### Plugin connection
 
-На данный момент доступен только классический пресет, который позволяет добавлять узлы в редактор путем перетаскивания их превью в область редактора
+Currently, the only preset available is the classic preset, which enables adding nodes to the editor by dragging their previews into the editor area.
 
 ```ts
 import { DockPlugin, DockPresets } from "rete-dock-plugin";
@@ -24,26 +24,26 @@ dock.addPreset(DockPresets.classic.setup({ area, size: 100, scale: 0.6 }));
 area.use(dock);
 ```
 
-#### Добавляем узлы
+#### Adding nodes
 
-Передаем функцию, которая возвращаем экземпляр узла. Она вызывается на момент добавления узла в Док меню, а также каждый раз, когда узел перетаскивается на область редактора
+In order to display node previews, you need to specify a function that returns a node instance. This function is called when a node is added to the Dock menu or dragged onto the editor area.
 
 ```ts
 dock.add(() => new NodeA());
 dock.add(() => new NodeB());
 ```
 
-#### Добавляем на определенную позицию
+#### Add at a specific position
 
-Добавим узел на 3-ю позицию (2-й индекс)
+Inserting a node at the 3rd position (2nd index)
 
 ```ts
 dock.add(() => new NodeA(), 2);
 ```
 
-#### Удаляем узлы
+#### Remove nodes
 
-Чтобы удалить добавленный узел, нужно использовать ту же самую функцию, которая была передана в `add`
+Use the same function passed to `add` to remove the added node
 
 ```ts
 const createNodeA = () => new NodeA()
@@ -53,4 +53,4 @@ dock.add(createNodeA);
 dock.remove(createNodeA);
 ```
 
-Готовый результат вы можете найти на странице примера [Dock menu](/examples/dock)
+Check out the complete result on the [Dock menu](/examples/dock) example page.

@@ -1,13 +1,13 @@
 # Selectable
 
 ::alert
-Этот гайд основан на гайде [Basic](./basic). Желательно ознакомиться с ним для полноценного понимания текущего гайда
+This guide is based on the [Basic](./basic) guide. It is recommended to review it for a comprehensive understanding of this guide.
 ::
 
 
-#### Выбираемые узлы
+#### Selectable nodes
 
-Как уже было описано [в пункте](./basic#selectable-nodes), сделать узлы выбираемыми вы можете с помощью расширения `selectableNodes`
+As explained in the [Basic](./basic#selectable-nodes) guide, you can enable node selection by using the `selectableNodes` extension
 
 ```ts
 const selector = AreaExtensions.selector()
@@ -16,13 +16,13 @@ const accumulating = AreaExtensions.accumulateOnCtrl()
 AreaExtensions.selectableNodes(area, selector, { accumulating });
 ```
 
-Как ясно из кода, пользователь может выбрать несколько узлов при нажатии на клавишу Ctrl. Выбранные узлы можно перемещать вместе
+The code indicates that users can select multiple nodes by holding down the Ctrl key, then these nodes can be moved together
 
-#### Выбираемые кастомные элементы
+#### Selectable custom elements
 
-Любой вид элементов, которые вы добавите в область, может быть добавлен в селектор. Такие элементы могут вести себя как узлы: могут быть выбраны и перемещены совместно с остальными выбранными элементами.
+All elements added to the area can be added to the selector. They can act like nodes: can be selected and moved alongside other elements that are currently selected
 
-Рассмотрим пример как добавить элемент в селектор
+Let's take a look at an example of adding an element to the selector
 
 ```ts
 const id = 'element-id'
@@ -41,31 +41,30 @@ selector.add({
 }, accumulating.active())
 ```
 
-После этого `translate` будет вызываться при перемещении любого из выбранных узлов или других элементов.
+Once this step is completed, the `translate` function will be called every time a selected node or other element is moved.
 
-Чтобы при перемещении вашего элемента другие выбранные элементы также были перемещены, вам сперва нужно пометить элемент, с которым непосредственно взаимодействует пользователь
+Before making other selected elements move with the element being dragged, you need to mark the element that the user is directly interacting with.
 
 ```ts
 selector.pick({ id, label })
 ```
 
-Таким образом при срабатывании события, например `pointermove` вашего элемента, вы должны убедиться что это тот самый элемент, который был захвачен, и распространить смещение на все остальные
+When an event such as `pointermove` is triggered on your element, it's important to verify that it is a grabbed element, and then apply the offset to all the others.
 
 ```ts
 if (selector.isPicked({ id, label })) selector.translate(dx, dy)
 ```
-где `dx`, `dy` это смещение вашего элемента в координатах области. Имейте ввиду, что при `transform.k` отличном от 1 они будут отличаться от экранных координат
+where `dx`, `dy` is an offset of your element within the area's coordinates. Keep in mind that if `transform.k` isn't equal to 1, the values will deviate from the screen coordinates.
 
-Такой подход с `pick` + `isPicked` позволяет избежать зацикливания в случае, когда вместо прямой подписки на `pointermove` вы используете общий обработчик как для пользовательский взаимодействий, так и для программных, которые в том числе вызываются при срабатывании `translate` обработчика вызова `selector.add`
+This `pick` + `isPicked` approach prevents looping when calling `selector.translate` not only on the `pointermove` event, but also on any position changes of the element through other means."
 
-Чтобы удалить элемент из селектора, просто вызовите.
+Removing an element from the selector can be easily achieved by:
 
 ```ts
 selector.remove({ id, label })
 ```
 
-#### Другие примеры использования
+#### Other use cases
 
 - [Comments](./comments#selectable)
 - [Reroute](./reroute#selectable)
-

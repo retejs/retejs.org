@@ -1,21 +1,20 @@
 # Performance
 
-Чаще всего при работе с клиентскими приложениями вы можете столкнуться с двуми проблемами - ресурсоемкие операции и низкий ФПС. В первом случае причина в том, что синхронные операции такие как исполнение ресурсоемного JS кода или некоторые АПИ браузера блокируют основной поток. Во втором случае это чаще всего связано с непосредственным отображением элементов самим браузером - чем их более и они сложнее, тем больше времени ему требуется на формирование лейаута и их отрисовку.
+In client applications, you may frequently encounter two issues: resource-intensive operations and low FPS. The former is caused by synchronous operations such as executing resource-intensive JS code or some browser APIs that block the main thread. The latter is often attributed to the direct rendering of elements by the browser - the more complex and numerous they are, the more time it takes for the browser to create the layout and render them.
 
-Конкретно по отношению к данному фреймворку вы можете придерживаться следующих подходов, которые позволят минимизировать влияние вышеупомянутых подходов:
+In the context of this framework, the following approaches can be adopted to minimize the impact of the aforementioned issues:
 
-#### Подключать плагины только при необходимости
+## Connect plugins only when needed
 
-  Например, если вы занимаетесь преобразованием графа и на этом этапе не выполняется визуализация промежуточных результатов преобразования, то вы можете вовсе не подключать другие плагины, а результат преобразования просто скопировать в новых редактор, который уже имеет все необходимые подключенные плагины.
-
-
-#### Подменять узлы более простыми элементами при некотором уровне зум
-
-  Данный подход более полезен в случае, когда вы визуализируете большое количество узлов (несколько сотен или даже тысячу). В этом случае узким местом является непосредственно сам рендеринг елементов браузером, когда все узлы находятся во вьопорте. Как правило, если во вьюпорте отображается много узлов, значит уровень зума совсем небольшой и каждый из узлов занимает небольшую площадь пикселей. В свою очередь это значит, что такие узлы можно заменить, к примеру, на прямоугольники такого же размера, но без содержимого. Это значительно снизит затраты на отображение узлов без особого вреда для UX.
-
-  Такой подход применяется в визуализации 3D и называется LOD (Level of details). [Пример](/examples/lod) реализации такого подхода
+In the case of transforming a graph where intermediate results aren't visualized, it may be unnecessary to connect additional plugins. Instead, copy the transformed result to a new editor that already has all required plugins connected.
 
 
+## Simplifying nodes at a specific zoom level
 
+This technique is particularly useful when visualizing a large number of nodes. In such cases, the bottleneck is typically the browser's rendering of elements when all nodes are visible in the viewport
+
+Usually, if many nodes are displayed in the viewport, the zoom level is quite low and each node occupies a relatively small area. Consequently, these nodes can be replaced with content-free rectangles of the same size, reducing the cost of rendering while maintaining a good UX
+
+The LOD (Level of Detail) technique, commonly used in 3D visualization, can also be applied here. Check out the [LOD](/examples/lod) example.
 
 

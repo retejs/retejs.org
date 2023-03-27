@@ -1,16 +1,16 @@
 # Undo/Redo
 
 ::alert
-Этот гайд основан на гайде [Basic](./basic). Желательно ознакомиться с ним для полноценного понимания текущего гайда
+This guide is based on the [Basic](./basic) guide. It is recommended to review it for a comprehensive understanding of this guide.
 ::
 
-#### Устанавливаем зависимости
+#### Install dependencies
 
 ```bash
 npm i rete-history-plugin@next
 ```
 
-#### Подключаем плагин
+#### Connect the plugin
 
 ```ts
 import { HistoryPlugin } from "rete-history-plugin";
@@ -22,17 +22,19 @@ area.use(history);
 
 #### Usage
 
-По умолчанию плагин не отслеживает действия пользователя (например комбинации клавиш), и вы можете самостоятельно реализовать взаимодействие с пользователем, используя методы `undo`/`redo`
+The plugin doesn't track user actions by default, such as keyboard shortcuts. To enable user interaction, you can implement usage of `undo`/`redo` methods on your own
 
 ```ts
 await history.undo()
 await history.redo()
 ```
 
-Или использовать стандартное расширение, которое отслеживает комбинации клавиш `Ctrl+Z`/`Ctrl+Y`
+Alternatively, you can use the default extension that tracks the `Ctrl+Z`/`Ctrl+Y` shortcuts
 
 ```ts
 import { HistoryExtensions } from "rete-history-plugin";
 
 HistoryExtensions.keyboard(history);
 ```
+
+Check out the complete result on the [History](/examples/history) example page.
