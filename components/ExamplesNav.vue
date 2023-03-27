@@ -1,6 +1,6 @@
 <template lang="pug">
 Nav(:list="navigation.children" :active="$route.path")
-  template.test(#item="{ data }")
+  template(#item="{ data }")
     .item
       .title {{ data.title }}
       Tag.tag(v-if="data.pro" color="blue" size="6px") Pro

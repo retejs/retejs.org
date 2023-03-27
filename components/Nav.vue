@@ -3,7 +3,7 @@ client-only
   Menu(width="auto" :active-name="active" :open-names="cascadePaths")
     template(v-for="item in list")
       MenuItem(
-        v-if="!item.children"
+        v-if="!item.children && !item.placeholder"
         :name="sanitizePath(item._path)"
         :to="sanitizePath(item._path)"
       )
