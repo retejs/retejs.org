@@ -13,6 +13,8 @@ export default {
 </script>
 
 <style lang="sass">
-.collapse p
+.collapse p:first-child
   margin: 0
+.collapse p:last-child
+  margin-bottom: 0
 </style>

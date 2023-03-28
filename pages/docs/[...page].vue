@@ -77,7 +77,7 @@ $offset: 60px
 
 .docs .content
   ul
-    margin: 1em 3em
+    margin: 0 1.5em
     +phone
       margin: 0.5em 1.5em
     li
