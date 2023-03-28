@@ -1,5 +1,5 @@
 <template lang="pug">
-Collapse.collapse(accordion)
+Collapse.collapse(accordion v-model="target")
   slot
 </template>
 
@@ -7,7 +7,15 @@ Collapse.collapse(accordion)
 export default {
   data() {
     return {
+      target: this.$route.hash.split('#')[1],
     };
+  },
+  watch: {
+    target(value) {
+      const name = value[0];
+
+      window.history.pushState({}, '', `#${name}`);
+    },
   },
 };
 </script>

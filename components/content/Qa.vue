@@ -1,19 +1,21 @@
 <template lang="pug">
 client-only
-  Panel
-    | {{ question }}
+  Panel(:name="id" :id="id")
+    a(:href="'#' + id" @click.prevent="") {{ question }}
     template(#content)
       slot
   template(#placeholder)
-    SsrPanel(:text="question")
-      slot
+    SsrPanel(:id="id")
+      a(:href="'#' + id") {{ question }}
+      template(#content)
+        slot
 </template>
 
 <script>
 import SsrPanel from '../ssr/SsrPanel.vue';
 
 export default {
-  props: ['question'],
+  props: ['question', 'id'],
   components: {
     SsrPanel,
   },
