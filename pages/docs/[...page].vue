@@ -7,7 +7,7 @@
     .content
       ContentDoc(:path="contentPath")
         template(#not-found)
-          Alert(type="warning") Docs section not found
+          IViewAlert(type="warning") Docs section not found
     Drawer(v-model="drawer")
       .drawer-content
         Nav(:list="navigation.children" :active="$route.path")
@@ -77,7 +77,7 @@ $offset: 60px
 
 .docs .content
   ul
-    margin: 1em 3em
+    margin: 0 1.5em
     +phone
       margin: 0.5em 1.5em
     li

@@ -1,4 +1,4 @@
 <template lang="pug">
-Alert(type="warning")
+IViewAlert(type="warning")
   slot
 </template>

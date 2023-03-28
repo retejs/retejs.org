@@ -1,6 +1,6 @@
 import {
   Menu, MenuItem, Icon, Select, Submenu, Dropdown, Option,
-  Drawer, Button, Alert, Tag, Tooltip,
+  Drawer, Button, Alert, Tag, Tooltip, Collapse, Panel,
 } from 'view-ui-plus/dist/viewuiplus.min.esm';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faDiscord, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -25,9 +25,11 @@ export default defineNuxtPlugin((nuxtApp) => {
   app.component('Option', Option);
   app.component('Drawer', Drawer);
   app.component('Button', Button);
-  app.component('Alert', Alert);
+  app.component('IViewAlert', Alert);
   app.component('Tag', Tag);
   app.component('Tooltip', Tooltip);
+  app.component('Collapse', Collapse);
+  app.component('Panel', Panel);
 
   nuxtApp.$router.options.scrollBehavior = (to, from, savedPosition) => {
     if (savedPosition) return savedPosition;
