@@ -25,7 +25,7 @@ export default defineNuxtConfig({
   purgecss: {
     enabled: !isDevelopment,
     safelist: [
-      /^(?!ivu-calendar|ivu-avatar|vu-auth|ivu-space|ivu-cascader|ivu-skeleton|ivu-transfer|ivu-arti|ivu-table|ivu-col|ivu-tabs|ivu-rate|ivu-select-item-selected).*$/,
+      /^(?!ivu-calendar|ivu-avatar|vu-auth|ivu-space|ivu-cascader|ivu-skeleton|ivu-transfer|ivu-arti|ivu-table|ivu-col-|ivu-tabs|ivu-rate|ivu-select-item-selected).*$/,
     ],
     fontFace: true,
     keyframes: true,

@@ -17,7 +17,6 @@
 
 h1, h2, h3, h4
   margin: 1em 0
-  scroll-margin-top: $top-offset
 h1
   font-size: 1.5em
   &:first-child
@@ -34,6 +33,8 @@ p
 h1 + p, h2 + p, p.indent
   text-indent: 1.5em
 
+h1, h2, h3, h4, div
+  scroll-margin-top: $top-offset
 
 .highlights
   display: flex
