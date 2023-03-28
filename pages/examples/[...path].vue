@@ -7,7 +7,7 @@
     .content
       ContentDoc(:path="contentPath")
         template(#not-found)
-          Alert(type="warning") Examples section not found
+          IViewAlert(type="warning") Examples section not found
     Drawer(v-model="drawer")
       .drawer-content
         ExamplesNav(:navigation="navigation")

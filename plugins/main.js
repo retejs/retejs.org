@@ -25,7 +25,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   app.component('Option', Option);
   app.component('Drawer', Drawer);
   app.component('Button', Button);
-  app.component('Alert', Alert);
+  app.component('IViewAlert', Alert);
   app.component('Tag', Tag);
   app.component('Tooltip', Tooltip);
   app.component('Collapse', Collapse);

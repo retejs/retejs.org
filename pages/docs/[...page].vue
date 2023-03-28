@@ -7,7 +7,7 @@
     .content
       ContentDoc(:path="contentPath")
         template(#not-found)
-          Alert(type="warning") Docs section not found
+          IViewAlert(type="warning") Docs section not found
     Drawer(v-model="drawer")
       .drawer-content
         Nav(:list="navigation.children" :active="$route.path")
