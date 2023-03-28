@@ -6,9 +6,9 @@ div(ref="container")
 import { defineComponent } from 'vue';
 import '@docsearch/css';
 
-const appId = 'Q275UHBHP7';
-const indexName = 'rete-js';
-const apiKey = 'dac415d28248192348d29069416e0870';
+const appId = '47GZKZVKVE';
+const indexName = 'retejs';
+const apiKey = 'ab7a7d6c6c64359b03362fbbcf3d5135';
 
 export default defineComponent({
   watch: {
