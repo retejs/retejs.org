@@ -24,7 +24,7 @@ class AddNode extends ClassicPreset.Node {
   constructor() {
     super('Add');
 
-    this.addControl('value', new ClassicPreset.InputControl('number'));
+    this.addControl('value', new ClassicPreset.InputControl('number', { readonly: true }));
     this.addInput('a', new ClassicPreset.Input(socket, 'Left'));
     this.addInput('b', new ClassicPreset.Input(socket, 'Right'));
     this.addOutput('value', new ClassicPreset.Output(socket, 'Number'));
