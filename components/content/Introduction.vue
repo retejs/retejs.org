@@ -17,141 +17,31 @@
 </template>
 
 <script>
-import { NodeEditor, ClassicPreset } from 'rete';
-import { AreaPlugin, AreaExtensions } from 'rete-area-plugin';
-import { VueRenderPlugin, Presets } from 'rete-vue-render-plugin';
-import { DataflowEngine } from 'rete-engine';
+import { onMounted, onUnmounted, ref } from 'vue';
+import { createEditor } from '../../shared/editor';
 import Pointer from '@/components/shared/Pointer.vue';
 
-const socket = new ClassicPreset.Socket('Number');
-
-class NumberNode extends ClassicPreset.Node {
-  constructor(initial, change) {
-    super('Number');
-
-    this.addControl('value', new ClassicPreset.InputControl('number', { initial, change }));
-    this.addOutput('value', new ClassicPreset.Output(socket, 'Number'));
-  }
-
-  data() {
-    return {
-      value: this.controls.value.value,
-    };
-  }
-}
-
-class AddNode extends ClassicPreset.Node {
-  constructor() {
-    super('Add');
-
-    this.addControl('value', new ClassicPreset.InputControl('number'));
-    this.addInput('a', new ClassicPreset.Input(socket, 'Left'));
-    this.addInput('b', new ClassicPreset.Input(socket, 'Right'));
-    this.addOutput('value', new ClassicPreset.Output(socket, 'Number'));
-  }
-
-  data(inputs) {
-    const value = (inputs.a || [0])[0] + (inputs.b || [0])[0];
-
-    this.controls.value.setValue(value);
-
-    return {
-      value,
-    };
-  }
-}
 export default {
-  data() {
-    return {
-      pointers: [],
-      scale: 1,
-    };
-  },
-  async mounted() {
-    this.$refs.container.innterHTML = '';
+  setup() {
+    const canva = ref(null);
+    const container = ref(null);
+    const pointers = ref([]);
+    const scale = ref(1);
 
-    const editor = new NodeEditor();
-    const area = new AreaPlugin(this.$refs.container);
-    const render = new VueRenderPlugin();
-    const engine = new DataflowEngine();
-
-    area.area.setZoomHandler(null);
-    area.container.style.overflow = 'initial';
-
-    render.addPreset(Presets.classic.setup({ area }));
-
-    editor.use(area);
-    editor.use(engine);
-    area.use(render);
-
-    AreaExtensions.selectableNodes(area, AreaExtensions.selector(), { accumulating: AreaExtensions.accumulateOnCtrl() });
-    AreaExtensions.simpleNodesOrder(area);
-
-    this.resize(area);
-
-    window.addEventListener('resize', () => this.resize(area));
-
-    const add = new AddNode();
-
-    async function process() {
-      engine.reset();
-      await engine.fetch(add.id);
-      area.update('control', add.controls.value.id);
-    }
-
-    const a = new NumberNode(1, process);
-    const b = new NumberNode(1, process);
-
-    editor.addPipe((context) => {
-      if (context.type === 'connectioncreated' || context.type === 'connectionremoved') {
-        process();
-      }
-
-      return context;
-    });
-
-    await editor.addNode(a);
-    await editor.addNode(b);
-    await editor.addNode(add);
-
-    await editor.addConnection(new ClassicPreset.Connection(a, 'value', add, 'a'));
-    await editor.addConnection(new ClassicPreset.Connection(b, 'value', add, 'b'));
-
-    await area.translate(a.id, { x: 50, y: 20 });
-    await area.translate(b.id, { x: 45, y: 240 });
-    await area.translate(add.id, { x: 435, y: 20 });
-
-    area.emit({ type: 'nodepicked', data: { id: add.id } });
-
-    this.updatePointers(area, a, add);
-
-    area.addPipe((ctx) => {
-      if (ctx.type === 'zoomed' || ctx.type === 'translated' || ctx.type === 'nodetranslated') {
-        this.updatePointers(area, a, add);
-      }
-      return ctx;
-    });
-  },
-  methods: {
-    resize(area) {
-      const canvaWidth = this.$refs.canva.clientWidth;
-
-      area.area.zoom(0.92 * canvaWidth / 650);
-    },
-    updatePointers(area, nodeA, nodeAdd) {
+    function updatePointers(area, nodeA, nodeAdd) {
       const aPosition = area.nodeViews.get(nodeA.id).position;
       const addPosition = area.nodeViews.get(nodeAdd.id).position;
       const { k, x, y } = area.area.transform;
 
-      this.pointers = [];
-      this.pointers.push({
+      pointers.value = [];
+      pointers.value.push({
         len: 5,
         x: k * (aPosition.x + 65) + x,
         y: k * (aPosition.y + 92) + y,
         r: 125,
         title: 'Control',
       });
-      this.pointers.push({
+      pointers.value.push({
         len: 3,
         x: k * (aPosition.x + 185) + x,
         y: k * (aPosition.y + 60) + y,
@@ -159,7 +49,7 @@ export default {
         title: 'Socket',
       });
 
-      this.pointers.push({
+      pointers.value.push({
         len: 3,
         x: k * (addPosition.x + 185) + x,
         y: k * (addPosition.y + 50) + y,
@@ -167,22 +57,49 @@ export default {
         title: 'Output',
       });
 
-      this.pointers.push({
+      pointers.value.push({
         len: 3,
         x: k * (addPosition.x + -5) + x,
         y: k * (addPosition.y + 135) + y,
         r: 150,
         title: 'Input',
       });
-      this.pointers.push({
+      pointers.value.push({
         len: 8,
         x: k * (addPosition.x + 120) + x,
         y: k * (addPosition.y + 165) + y,
         r: 120,
         title: 'Node',
       });
-      this.scale = k;
-    },
+      scale.value = k;
+    }
+    let resizeHandler = null;
+
+    onMounted(async () => {
+      const { area, nodes, resize } = await createEditor(container.value);
+      resizeHandler = () => resize(canva.value.clientWidth);
+
+      resizeHandler();
+      updatePointers(area, nodes.a, nodes.add);
+
+      area.addPipe((ctx) => {
+        if (ctx.type === 'zoomed' || ctx.type === 'translated' || ctx.type === 'nodetranslated') {
+          updatePointers(area, nodes.a, nodes.add);
+        }
+        return ctx;
+      });
+
+      window.addEventListener('resize', resizeHandler);
+    });
+    onUnmounted(() => {
+      if (resizeHandler) window.removeEventListener('resize', resizeHandler);
+    });
+    return {
+      canva,
+      container,
+      pointers,
+      scale,
+    };
   },
   components: {
     Pointer,
