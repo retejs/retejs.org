@@ -5,7 +5,7 @@
       template(#title) {{ $t('examples') }}
       ExamplesNav(:navigation="navigation")
     .content
-      ContentDoc(:path="contentPath")
+      ContentDocFix(:path="contentPath")
         template(#not-found)
           IViewAlert(type="warning") Examples section not found
     Drawer(v-model="drawer")
@@ -18,6 +18,7 @@ import { defineComponent } from 'vue';
 import Drawer from '@/components/shared/Drawer.vue';
 import ExamplesNav from '@/components/ExamplesNav.vue';
 import FetchNav from '@/components/FetchNav.vue';
+import ContentDocFix from '@/components/ContentDocFix.vue';
 import NavMenu from '@/components/shared/NavMenu.vue';
 import { alterTitle } from '../../shared/title';
 
@@ -48,6 +49,7 @@ export default defineComponent({
     ExamplesNav,
     FetchNav,
     NavMenu,
+    ContentDocFix,
   },
 });
 </script>
