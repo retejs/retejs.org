@@ -1,6 +1,6 @@
 <template lang="pug">
 client-only
-  Menu(width="auto" :active-name="active" :open-names="cascadePaths")
+  Menu(width="auto" :active-name="activeName" :open-names="cascadePaths")
     template(v-for="item in list")
       MenuItem(
         v-if="!item.children && !item.placeholder"
@@ -10,9 +10,9 @@ client-only
         slot(name="item" :data="item") {{ item.title }}
       Submenu.submenu(v-if="item.children" :name="sanitizePath(item._path)")
         template(#title) {{ item.title }}
-        Nav(:list="item.children" :active="active")
+        Nav(:list="item.children" :active="activeName")
   template(#placeholder)
-    SsrNav(:list="list" :active="active")
+    SsrNav(:list="list" :active="activeName")
 </template>
 
 <script>
@@ -31,6 +31,9 @@ export default {
       }, []);
 
       return n;
+    },
+    activeName() {
+      return this.active.replace(/\/$/, '');
     },
   },
   methods: {
