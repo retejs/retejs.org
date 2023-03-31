@@ -3,4 +3,4 @@ navigation:
   placeholder: true
 ---
 
-# Посібники
+# Гайди
