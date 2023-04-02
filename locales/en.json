@@ -5,10 +5,11 @@
   "examples": "Examples",
   "components": "Components",
   "issues": "Issues",
-  "support": "Support",
+  "sponsor": "Sponsor",
   "learn": "Learning",
   "ecosystem": "Ecosystem",
   "report-bug": "Report a bug",
+  "benefits": "Benefits",
   "main": {
     "title": "JavaScript framework for visual programming",
     "description": "A tailorable TypeScript-first framework for creating processing-oriented node-based editors",
@@ -78,5 +79,19 @@
     "checkOut": "Check out",
     "docsV1": "docs for Rete.js v1",
     "orGetStarted": ", or get started with the current beta"
+  },
+  "sponsorPage": {
+    "title": "Sponsor Us",
+    "subtitle1": "Thank you for considering sponsoring Rete.js!",
+    "subtitle2": "Your sponsorship helps us maintain and improve our framework, so we can continue to provide a high-quality tool for developers.",
+    "patreon": {
+      "description": "By becoming a patron on Patreon, you can support us on a monthly basis and gain access to exclusive content and perks.",
+      "benefits": "access to the source code of Pro examples, prioritized feedback to issues"
+    },
+    "opencollective": {
+      "description": "If you prefer to make one-time or recurring donations with transparency, you can do so through OpenCollective.",
+      "benefits": "logo placement in the README of retejs/rete repository, prioritized feedback to issues"
+    },
+    "contacts": "If you have questions regarding payment methods, benefits or sponsor recognition, please contact us via"
   }
 }
