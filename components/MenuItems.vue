@@ -2,7 +2,7 @@
 .menu-items
   MenuItem(name="docs", :to="localePath('/docs/')") {{ $t('docs') }}
   MenuItem(name="examples", :to="localePath('/examples')") {{ $t('examples') }}
-  MenuItem(name="support", :to="localePath('/support')") {{ $t('support') }}
+  MenuItem(name="sponsor", :to="localePath('/sponsor')") {{ $t('sponsor') }}
 </template>
 
 <style lang="sass" scoped>

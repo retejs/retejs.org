@@ -3,14 +3,16 @@ import {
   Drawer, Button, Alert, Tag, Tooltip, Collapse, Panel,
 } from 'view-ui-plus/dist/viewuiplus.min.esm';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faDiscord, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
+import {
+  faDiscord, faTwitter, faGithub, faPatreon,
+} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 // eslint-disable-next-line no-undef
 export default defineNuxtPlugin((nuxtApp) => {
   const app = nuxtApp.vueApp;
 
-  library.add(faDiscord, faTwitter, faGithub);
+  library.add(faDiscord, faTwitter, faGithub, faPatreon);
 
   app.component('font-awesome-icon', FontAwesomeIcon);
 

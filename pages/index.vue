@@ -6,7 +6,10 @@
     p.title {{ $t('main.title') }}
     p.description {{ $t('main.description') }}
   .links
-    iframe(:src="gitHubBadge" frameborder="0" scrolling="0" width="160px" height="30px")
+    .star
+      iframe(:src="gitHubBadge" frameborder="0" scrolling="0")
+    a.origin(href="https://stand-with-ukraine.pp.ua" target="_blank")
+      img(:src="originBadge")
   Logo.logo(:hover="logoIsHovered" :zoomIn="false")
   .highlights.section
     .highlight
@@ -28,6 +31,7 @@ export default {
     return {
       logoIsHovered: false,
       gitHubBadge: 'https://ghbtns.com/github-btn.html?user=retejs&repo=rete&type=star&count=true&size=large',
+      originBadge: 'https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7',
     };
   },
   components: {
@@ -46,8 +50,17 @@ export default {
 
 .home
   .links
-    margin-top: 5vh
-    text-align: center
+    display: grid
+    grid-gap: 1em
+    grid-auto-flow: column
+    margin: 1.5em auto 0 auto
+    width: fit-content
+    align-items: center
+    .origin img
+      height: 26px
+    .star iframe
+      width: 142px
+      height: 30px
   .logo
     max-height: calc(15vh + 15vw)
     width: 70vw

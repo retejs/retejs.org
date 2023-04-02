@@ -4,12 +4,12 @@ In client applications, you may frequently encounter two issues: resource-intens
 
 In the context of this framework, the following approaches can be adopted to minimize the impact of the aforementioned issues:
 
-## Connect plugins only when needed
+## Connect plugins only when needed {#connect-plugins}
 
 In the case of transforming a graph where intermediate results aren't visualized, it may be unnecessary to connect additional plugins. Instead, copy the transformed result to a new editor that already has all required plugins connected.
 
 
-## Simplifying nodes at a specific zoom level
+## Simplifying nodes at a specific zoom level {#simplify-at-zoom}
 
 This technique is particularly useful when visualizing a large number of nodes. In such cases, the bottleneck is typically the browser's rendering of elements when all nodes are visible in the viewport
 
