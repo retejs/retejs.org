@@ -59,7 +59,7 @@ export default {
     .origin img
       height: 26px
     .star iframe
-      width: 142px
+      width: 150px
       height: 30px
   .logo
     max-height: calc(15vh + 15vw)
