@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'nuxt-purgecss',
     '@vite-pwa/nuxt',
+    'nuxt-gtag',
   ],
   telemetry: false,
   css: [
@@ -84,5 +85,8 @@ export default defineNuxtConfig({
     },
     registerWebManifestInRouteRules: true,
     writePlugin: true,
+  },
+  gtag: {
+    id: 'G-Q0DXJPL3FX',
   },
 });
