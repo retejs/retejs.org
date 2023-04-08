@@ -27,6 +27,9 @@ export default defineComponent({
         appId,
         indexName,
         apiKey,
+        searchParameters: {
+          facetFilters: [`lang:${this.$i18n.locale}`],
+        },
         placeholder: t('placeholder'),
         translations: {
           button: {
