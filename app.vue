@@ -14,13 +14,18 @@
 </template>
 
 <script>
+import { defineComponent } from 'vue';
 import Header from './components/Header.vue';
 import Content from './components/Content.vue';
 import Footer from './components/Footer.vue';
 import { openReportDialog } from './bug-handler';
+import { seoLang } from './shared/seoLang';
 
-export default {
+export default defineComponent({
   name: 'app',
+  setup() {
+    seoLang();
+  },
   components: {
     Header,
     Content,
@@ -29,7 +34,7 @@ export default {
   methods: {
     openReportDialog,
   },
-};
+});
 </script>
 
   <style lang="sass" scoped>
