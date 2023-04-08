@@ -13,6 +13,9 @@ export default defineComponent({
     // eslint-disable-next-line no-undef
     const { data } = await useAsyncData(props.path, () => queryContent(props.path).findOne());
 
+    // eslint-disable-next-line no-undef
+    useContentHead(data);
+
     return {
       data,
     };
