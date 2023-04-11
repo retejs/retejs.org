@@ -14,7 +14,6 @@
     color: rgba(50, 50, 50, .6)
     margin: $v-margin $h-margin
 
-
 h1, h2, h3, h4
   margin: 1em 0
 h1
@@ -34,7 +33,7 @@ h1 + p, h2 + p, p.indent
   text-indent: 1.5em
 
 h1, h2, h3, h4, div
-  scroll-margin-top: $top-offset
+  scroll-margin-top: var(--header-offset)
 
 .highlights
   display: flex
@@ -51,7 +50,6 @@ h1, h2, h3, h4, div
     margin: $v-margin $h-margin
   .step
     margin: 0 $h-margin
-
 
 table
   border-collapse: collapse

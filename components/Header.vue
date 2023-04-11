@@ -1,6 +1,6 @@
 <template lang="pug">
 Notice
-.header
+.header(ref="element")
   Menu.menu(
       mode="horizontal"
       width="100%"
@@ -26,7 +26,7 @@ Notice
 </template>
 
 <script>
-import { defineComponent } from 'vue';
+import { defineComponent, ref, onMounted } from 'vue';
 import Logo from './Logo.vue';
 import Language from './Language.vue';
 import MenuItems from './MenuItems.vue';
@@ -36,9 +36,20 @@ import Drawer from './shared/Drawer.vue';
 import Notice from './Notice.vue';
 
 export default defineComponent({
-  data() {
+  setup() {
+    const element = ref(null);
+
+    onMounted(() => {
+      window.addEventListener('scroll', () => {
+        if (!element.value) return;
+
+        const { bottom } = element.value.getBoundingClientRect();
+        document.body.style.setProperty('--header-offset', `${bottom}px`);
+      }, false);
+    });
     return {
-      drawer: false,
+      element,
+      drawer: ref(false),
     };
   },
   components: {
