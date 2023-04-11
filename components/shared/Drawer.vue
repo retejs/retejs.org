@@ -30,11 +30,11 @@ export default {
 @import '@/assets/styles/vars.sass'
 
 .ivu-drawer-mask
-  top: $top-offset
-  height: calc(100% - #{$top-offset})
+  top: var(--header-offset)
+  height: calc(100% - var(--header-offset))
 .ivu-drawer
-  top: $top-offset
-  height: calc(100vh - $top-offset)
+  top: var(--header-offset)
+  height: calc(100vh - var(--header-offset))
 .ivu-drawer-body
   padding: 0
 </style>

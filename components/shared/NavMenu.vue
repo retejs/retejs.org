@@ -22,10 +22,10 @@ export default {
 
 .menu
   min-width: 200px
-  height: calc(100vh - $top-offset)
+  height: calc(100vh - var(--header-offset))
   overflow: auto
   position: sticky
-  top: $header-height
+  top: var(--header-offset)
   .menu-burger
     display: none
     margin: 0 0.1em
@@ -34,7 +34,7 @@ export default {
   .menu
     text-align: right
     z-index: 1
-    position: absolute
+    position: fixed
     right: 0
     width: auto
     height: auto
