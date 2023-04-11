@@ -62,8 +62,15 @@ export default {
       width: 150px
       height: 30px
   .logo
-    max-height: calc(15vh + 15vw)
-    width: 70vw
+    display: inline-block
+    height: calc(15vh + 15vw)
+    width: calc(25vh + 25vw)
     max-width: 40em
-    margin: calc(1vw + 3vh)
+    margin: calc(3vw + 1vh)
+    +phone
+      $k: 1.2
+      height: calc(15vh * $k + 15vw * $k)
+      width: calc(25vh * $k + 25vw * $k)
+      max-width: 90vw
+
 </style>
