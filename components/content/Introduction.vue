@@ -18,7 +18,7 @@
 
 <script>
 import { onMounted, onUnmounted, ref } from 'vue';
-import { createEditor } from '../../shared/editor';
+import { createEditor, introductionGraph, selectNode } from '../../shared/editor';
 import Pointer from '@/components/shared/Pointer.vue';
 
 export default {
@@ -74,11 +74,18 @@ export default {
       scale.value = k;
     }
     let resizeHandler = null;
+    let instance = null;
 
     onMounted(async () => {
-      const { area, nodes, resize } = await createEditor(container.value);
-      resizeHandler = () => resize(canva.value.clientWidth);
+      instance = await createEditor(container.value, {
+        multiselect: true,
+        order: true,
+      });
+      const { area, resize } = instance;
+      const { nodes } = await introductionGraph(instance);
+      resizeHandler = () => resize(canva.value.clientWidth, 706);
 
+      selectNode(nodes.add.id, area);
       resizeHandler();
       updatePointers(area, nodes.a, nodes.add);
 
@@ -92,6 +99,7 @@ export default {
       window.addEventListener('resize', resizeHandler);
     });
     onUnmounted(() => {
+      if (instance) instance.area.destroy();
       if (resizeHandler) window.removeEventListener('resize', resizeHandler);
     });
     return {
