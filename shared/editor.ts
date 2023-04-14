@@ -48,7 +48,7 @@ class Connection<N extends NodeProps> extends ClassicPreset.Connection<N, N> {}
 type Schemes = GetSchemes<NodeProps, Connection<NodeProps>>
 type AreaExtra = VueArea2D<Schemes>
 
-export async function createEditor(container: HTMLElement) {
+export async function createEditor(container: HTMLElement, props: { multiselect: boolean, order: boolean }) {
   const editor = new NodeEditor<Schemes>();
   const area = new AreaPlugin<Schemes, AreaExtra>(container);
   const render = new VueRenderPlugin<Schemes>();
@@ -63,9 +63,30 @@ export async function createEditor(container: HTMLElement) {
   editor.use(engine);
   area.use(render);
 
-  AreaExtensions.selectableNodes(area, AreaExtensions.selector(), { accumulating: AreaExtensions.accumulateOnCtrl() });
-  AreaExtensions.simpleNodesOrder(area);
+  AreaExtensions.selectableNodes(area, AreaExtensions.selector(), {
+    accumulating: props.multiselect ? AreaExtensions.accumulateOnCtrl() : { active: () => false },
+  });
+  if (props.order) {
+    AreaExtensions.simpleNodesOrder(area);
+  }
 
+  return {
+    editor,
+    area,
+    engine,
+    resize(width: number, graphWidth: number) {
+      area.area.zoom(width / graphWidth);
+    },
+  };
+}
+
+export function selectNode(id: NodeId, area: AreaPlugin<Schemes, AreaExtra>) {
+  area.emit({ type: 'nodepicked', data: { id } });
+}
+
+type EditorInstance = Awaited<ReturnType<typeof createEditor>>
+
+export async function introductionGraph({ editor, area, engine }: EditorInstance) {
   const add = new AddNode();
 
   async function process() {
