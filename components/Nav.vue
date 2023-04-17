@@ -4,11 +4,11 @@ client-only
     template(v-for="item in list")
       MenuItem(
         v-if="!item.children && !item.placeholder"
-        :name="sanitizePath(item._path)"
-        :to="sanitizePath(item._path)"
+        :name="sanitize(item._path)"
+        :to="sanitize(item._path)"
       )
         slot(name="item" :data="item") {{ item.title }}
-      Submenu.submenu(v-if="item.children" :name="sanitizePath(item._path)")
+      Submenu.submenu(v-if="item.children" :name="sanitize(item._path)")
         template(#title) {{ item.title }}
         Nav(:list="item.children" :active="activeName")
   template(#placeholder)
@@ -17,9 +17,17 @@ client-only
 
 <script>
 import SsrNav from './ssr/SsrNav.vue';
+import { usePathSanitizer } from '../shared/route';
 
 export default {
   props: ['list', 'active'],
+  setup() {
+    const { sanitize } = usePathSanitizer();
+
+    return {
+      sanitize,
+    };
+  },
   computed: {
     cascadePaths() {
       const pathSegments = this.active.split('/');
@@ -34,14 +42,6 @@ export default {
     },
     activeName() {
       return this.active.replace(/\/$/, '');
-    },
-  },
-  methods: {
-    sanitizePath(path) {
-      return this.localePath(this.omitLocale(path, this.$i18n.locale));
-    },
-    omitLocale(path, locale) {
-      return path.replace(new RegExp(`^/${locale}`), '');
     },
   },
   components: {
