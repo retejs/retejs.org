@@ -21,6 +21,7 @@ import FetchNav from '@/components/FetchNav.vue';
 import ContentDocFix from '@/components/ContentDocFix.vue';
 import NavMenu from '@/components/shared/NavMenu.vue';
 import { alterTitle } from '../../shared/title';
+import { omitLocale } from '../../shared/route';
 
 export default defineComponent({
   setup() {
@@ -33,18 +34,10 @@ export default defineComponent({
   },
   computed: {
     contentPath() {
-      return `/${this.locale}${this.omitLocale(this.$route.path, this.locale)}`;
+      return `/${this.locale}${omitLocale(this.$route.path, this.locale)}`;
     },
     locale() {
       return this.$i18n.locale;
-    },
-  },
-  methods: {
-    sanitizePath(path) {
-      return this.localePath(this.omitLocale(path, this.locale));
-    },
-    omitLocale(path, locale) {
-      return path.replace(new RegExp(`^/${locale}`), '');
     },
   },
   components: {
