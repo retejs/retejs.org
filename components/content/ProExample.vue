@@ -1,5 +1,5 @@
 <template lang="pug">
-client-only
+BaseExample
   iframe(
     :src="src"
     title="Rete.js v2"
@@ -7,9 +7,14 @@ client-only
 </template>
 
 <script>
+import BaseExample from '../shared/BaseExample.vue';
+
 export default {
   props: {
     src: String,
+  },
+  components: {
+    BaseExample,
   },
 };
 </script>
@@ -18,14 +23,8 @@ export default {
 @import '@/assets/styles/media.sass'
 
 iframe
-  width: 80vw
-  height: 30vw
+  width: 100%
+  height: 100%
   border: none
   text-align: left
-  border: 2px solid #f3f3f3
-  border-radius: 0.7em
-  +phone
-    width: 100%
-    height: 80vh
-
 </style>
