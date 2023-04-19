@@ -4,7 +4,7 @@
     NavMenu(@open="drawer = true")
       template(#title) {{ $t('documentation') }}
       Nav(:list="navigation.children" :active="$route.path")
-    .content
+    .content.markdown
       ContentDocFix(:path="contentPath")
         template(#not-found)
           IViewAlert(type="warning") Docs section not found
