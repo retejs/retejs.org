@@ -29,7 +29,11 @@
     }
   },
   "examplesPage": {
-    "title": "Приклад {title}"
+    "title": "Приклад {title}",
+    "proExample": {
+      "getAccess": "Отримати доступ",
+      "alert": "Вихідний код для цього Pro прикладу доступний лише підписникам"
+    }
   },
   "docsearch": {
     "placeholder": "Шукати",
