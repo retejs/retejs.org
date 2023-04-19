@@ -4,7 +4,7 @@
     NavMenu(@open="drawer = true")
       template(#title) {{ $t('examples') }}
       ExamplesNav(:navigation="navigation")
-    .content
+    .content.markdown
       ContentDocFix(:path="contentPath")
         template(#not-found)
           IViewAlert(type="warning") Examples section not found
