@@ -10,7 +10,7 @@
   .section
     .methods
       .patreon.payment
-        a.button(href="https://www.patreon.com/bePatron?u=7890937" target="_blank")
+        a.button(:href="patreon.link" target="_blank")
           client-only
             font-awesome-icon.icon(:icon="['fa-brands', 'patreon']")
           .text Become a patron
@@ -20,8 +20,8 @@
           | !{' '}
           | {{ $t('sponsorPage.patreon.benefits') }}
       .opencollective.payment
-        a(href="https://opencollective.com/rete/donate" target="_blank")
-          img.button(src="https://opencollective.com/rete/donate/button@2x.png?color=blue")
+        a(:href="opencollective.link" target="_blank")
+          img.button(:src="opencollective.link + '/button@2x.png?color=blue'")
         p.description {{ $t('sponsorPage.opencollective.description') }}
         p.description
           b {{ $t('benefits') }}:
@@ -35,14 +35,13 @@
 </template>
 
 <script>
+import sponsor from '../../consts/sponsor.json';
 
 export default {
-  mounted() {
-    if (process.client) {
-      // const c = document.createElement('script')
-      // c.setAttribute('src', 'https://c6.patreon.com/becomePatronButton.bundle.js')
-      // document.head.appendChild(c)
-    }
+  data() {
+    return {
+      ...sponsor,
+    };
   },
 };
 </script>
