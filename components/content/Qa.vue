@@ -1,12 +1,14 @@
 <template lang="pug">
 client-only
-  Panel(:name="id" :id="id")
-    a(:href="'#' + id" @click.prevent="") {{ question }}
+  Panel(:name="id")
+    h2(:id="id")
+      a(:href="'#' + id" @click.prevent="") {{ question }}
     template(#content)
       slot
   template(#placeholder)
-    SsrPanel(:id="id")
-      a(:href="'#' + id") {{ question }}
+    SsrPanel
+      h2(:id="id")
+        a(:href="'#' + id") {{ question }}
       template(#content)
         slot
 </template>
@@ -21,3 +23,11 @@ export default {
   },
 };
 </script>
+
+<style lang="sass" scoped>
+h2
+  margin: 0
+  font-size: 1em
+  display: inline-block
+  font-weight: normal
+</style>
