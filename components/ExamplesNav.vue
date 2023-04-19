@@ -3,12 +3,17 @@ Nav(:list="navigation.children" :active="$route.path")
   template(#item="{ data }")
     .item
       .title {{ data.title }}
-      Tag.tag(v-if="data.pro" color="blue" size="6px") Pro
+      ProTag(v-if="data.pro")
 </template>
 
 <script>
+import ProTag from './shared/ProTag.vue';
+
 export default {
   props: ['navigation'],
+  components: {
+    ProTag,
+  },
 };
 </script>
 
@@ -17,9 +22,4 @@ export default {
   display: flex
   .title
     flex: 1
-  .tag
-    height: 1.4em
-    line-height: 1.3em
-    padding: 0 0.3em
-    margin-left: 1em
 </style>
