@@ -1,5 +1,5 @@
 <template lang="pug">
-client-only
+BaseExample
   iframe(
     :src="src"
     title="Rete.js v2"
@@ -11,6 +11,7 @@ client-only
 <script>
 import { computed } from 'vue';
 import qs from 'qs';
+import BaseExample from '../shared/BaseExample.vue';
 
 export default {
   props: {
@@ -32,6 +33,9 @@ export default {
     return {
       src: computed(() => `https://codesandbox.io/embed/${props.id}?${qs.stringify(params)}`),
     };
+  },
+  components: {
+    BaseExample,
   },
 };
 </script>

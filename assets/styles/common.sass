@@ -29,11 +29,18 @@ h1 + h2
 p
   margin: 1em 0
 
-h1 + p, h2 + p, p.indent
+p.indent
   text-indent: 1.5em
 
 h1, h2, h3, h4, div
   scroll-margin-top: var(--header-offset)
+
+ul
+  margin: 0 1.5em 1em 1.5em
+  +phone
+    margin: 0.5em 1.5em
+  li
+    margin: 0.2em 0
 
 .highlights
   display: flex

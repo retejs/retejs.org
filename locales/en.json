@@ -29,7 +29,11 @@
     }
   },
   "examplesPage": {
-    "title": "{title} Example"
+    "title": "{title} Example",
+    "proExample": {
+      "getAccess": "Get access",
+      "alert": "The source code for this Pro example is available only to subscribers"
+    }
   },
   "docsearch": {
     "placeholder": "Search for",

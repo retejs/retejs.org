@@ -7,11 +7,12 @@
           template(#title)
             .title
               .text {{ data.title }}
-              Tag.tag(v-if="data.pro" color="blue" size="6px") Pro
+              ProTag(v-if="data.pro")
           img.preview(:src="previewPath(data.preview)")
 </template>
 
 <script>
+import ProTag from '../shared/ProTag.vue';
 import { usePathSanitizer } from '../../shared/route';
 
 export default {
@@ -34,6 +35,9 @@ export default {
       return `https://raw.githubusercontent.com/retejs/retejs.org/assets/preview/${path}`;
     },
   },
+  components: {
+    ProTag,
+  },
 };
 </script>
 
@@ -48,11 +52,6 @@ export default {
     min-height: 1.4em
     .text
       flex: 1
-    .tag
-      height: 1.4em
-      line-height: 1.3em
-      padding: 0 0.3em
-      margin-left: 1em
   .preview
     width: 100%
     display: block

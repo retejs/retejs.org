@@ -13,6 +13,8 @@ client-only
         Nav(:list="item.children" :active="activeName")
   template(#placeholder)
     SsrNav(:list="list" :active="activeName")
+      template(#item="{ data }")
+        slot(name="item" :data="data") {{ data.title }}
 </template>
 
 <script>
