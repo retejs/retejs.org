@@ -71,12 +71,6 @@ $offset: 60px
 @import '@/assets/styles/media.sass'
 
 .docs .content
-  ul
-    margin: 0 1.5em
-    +phone
-      margin: 0.5em 1.5em
-    li
-      margin: 0.2em 0
   img
     margin: 1em 0
     max-width: 100%
