@@ -22,10 +22,12 @@ import ContentDocFix from '@/components/ContentDocFix.vue';
 import NavMenu from '@/components/shared/NavMenu.vue';
 import { alterTitle } from '../../shared/title';
 import { omitLocale } from '../../shared/route';
+import { useShareThis } from '../../shared/sharethis';
 
 export default defineComponent({
   setup() {
     alterTitle();
+    useShareThis();
   },
   data() {
     return {

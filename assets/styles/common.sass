@@ -75,3 +75,16 @@ table
 // iVIEW
 .ivu-card-head p
   margin: 0
+
+// ShareThis
+
+$types: "blogger", "buffer", "evernote", "facebook", "flipboard", "getpocket", "hackernews", "instapaper", "linkedin", "pinterest", "reddit", "trello", "tumblr", "twitter"
+
+.st-backdrop
+  background: rgba(255, 255, 255, 0.582) !important
+.st-btns > div
+  display: none !important
+  margin: 1.5em !important
+  @each $type in $types
+    &[data-network="#{$type}"]
+      display: inline-block !important
