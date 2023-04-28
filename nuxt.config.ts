@@ -50,6 +50,12 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
       ],
+      script: [
+        {
+          src: 'https://platform-api.sharethis.com/js/sharethis.js#property=644c11c3ac242f001bf9c4da&product=image-share-buttons',
+          async: true,
+        },
+      ],
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ],
