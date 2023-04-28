@@ -5,7 +5,6 @@
       template(#title) {{ $t('examples') }}
       ExamplesNav(:navigation="navigation")
     .content.markdown
-      .sharethis-sticky-share-buttons
       ContentDocFix(:path="contentPath")
         template(#not-found)
           IViewAlert(type="warning") Examples section not found
@@ -23,12 +22,10 @@ import ContentDocFix from '@/components/ContentDocFix.vue';
 import NavMenu from '@/components/shared/NavMenu.vue';
 import { alterTitle } from '../../shared/title';
 import { omitLocale } from '../../shared/route';
-import { useShareThis } from '../../shared/sharethis';
 
 export default defineComponent({
   setup() {
     alterTitle('examplesPage.title');
-    useShareThis();
   },
   data() {
     return {
