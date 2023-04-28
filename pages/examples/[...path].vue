@@ -5,6 +5,7 @@
       template(#title) {{ $t('examples') }}
       ExamplesNav(:navigation="navigation")
     .content.markdown
+      .sharethis-sticky-share-buttons
       ContentDocFix(:path="contentPath")
         template(#not-found)
           IViewAlert(type="warning") Examples section not found
