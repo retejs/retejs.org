@@ -20,11 +20,13 @@ import Content from './components/Content.vue';
 import Footer from './components/Footer.vue';
 import { openReportDialog } from './bug-handler';
 import { seoLang } from './shared/seoLang';
+import { useShareThis } from './shared/sharethis';
 
 export default defineComponent({
   name: 'app',
   setup() {
     seoLang();
+    useShareThis(['/examples', '/docs']);
   },
   components: {
     Header,
