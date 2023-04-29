@@ -2,7 +2,8 @@
 .app
   VitePwaManifest
   Header
-  Content
+  ShareThis
+    Content
   Footer
   .report-button(content="Report a bug" placement="left-start")
     Button(
@@ -20,18 +21,18 @@ import Content from './components/Content.vue';
 import Footer from './components/Footer.vue';
 import { openReportDialog } from './bug-handler';
 import { seoLang } from './shared/seoLang';
-import { useShareThis } from './shared/sharethis';
+import ShareThis from './components/ShareThis.vue';
 
 export default defineComponent({
   name: 'app',
   setup() {
     seoLang();
-    useShareThis(['/examples', '/docs']);
   },
   components: {
     Header,
     Content,
     Footer,
+    ShareThis,
   },
   methods: {
     openReportDialog,

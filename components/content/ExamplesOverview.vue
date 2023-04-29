@@ -8,12 +8,13 @@
             .title
               .text {{ data.title }}
               ProTag(v-if="data.pro")
-          img.preview(:src="previewPath(data.preview)")
+          img.preview(:src="getPreview(data.preview)")
 </template>
 
 <script>
 import ProTag from '../shared/ProTag.vue';
 import { usePathSanitizer } from '../../shared/route';
+import { getPreview } from '../../shared/assets';
 
 export default {
   setup() {
@@ -31,9 +32,7 @@ export default {
     };
   },
   methods: {
-    previewPath(path) {
-      return `https://raw.githubusercontent.com/retejs/retejs.org/assets/preview/${path}`;
-    },
+    getPreview,
   },
   components: {
     ProTag,

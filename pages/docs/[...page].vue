@@ -5,7 +5,7 @@
       template(#title) {{ $t('documentation') }}
       Nav(:list="navigation.children" :active="$route.path")
     .content.markdown
-      ContentDocFix(:path="contentPath")
+      RenderContent(:path="contentPath" :share="share")
         template(#not-found)
           IViewAlert(type="warning") Docs section not found
     Drawer(v-model="drawer")
@@ -18,7 +18,7 @@ import { defineComponent } from 'vue';
 import Drawer from '@/components/shared/Drawer.vue';
 import Nav from '@/components/Nav.vue';
 import FetchNav from '@/components/FetchNav.vue';
-import ContentDocFix from '@/components/ContentDocFix.vue';
+import RenderContent from '@/components/RenderContent.vue';
 import NavMenu from '@/components/shared/NavMenu.vue';
 import { alterTitle } from '../../shared/title';
 import { omitLocale } from '../../shared/route';
@@ -40,12 +40,17 @@ export default defineComponent({
       return this.$i18n.locale;
     },
   },
+  methods: {
+    share(data) {
+      return `${data.title}, ${this.$t('share.docs')}`;
+    },
+  },
   components: {
     Drawer,
     Nav,
     FetchNav,
     NavMenu,
-    ContentDocFix,
+    RenderContent,
   },
 });
 </script>
