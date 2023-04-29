@@ -6,16 +6,24 @@ ContentRenderer(:value="data")
 
 <script>
 import { defineComponent } from 'vue';
+import { getPreview, getAsset } from '../shared/assets';
 
 export default defineComponent({
   props: ['path'],
   async setup(props) {
     // eslint-disable-next-line no-undef
     const { data } = await useAsyncData(props.path, () => queryContent(props.path).findOne());
+    const { title, image, description } = data.value;
 
+    // should be reactive for ShareThis so useServerSeoMeta isn't an option
     // eslint-disable-next-line no-undef
-    useContentHead(data);
-
+    useSeoMeta({
+      title,
+      ogTitle: title,
+      description,
+      ogDescription: description,
+      ogImage: image ? getPreview(image.src) : getAsset('main.png'),
+    });
     return {
       data,
     };
