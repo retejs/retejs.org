@@ -1,29 +1,45 @@
-import { computed, watch } from 'vue';
-import { useRoute } from 'vue-router';
+import {
+  reactive, provide, inject, onUnmounted, onMounted, ref, computed,
+} from 'vue';
 
-export function useShareThis(routes: string[]) {
-  const route = useRoute();
-  const match = (path: string) => routes.some((r) => path.startsWith(r));
+export const key = Symbol('sharethis-di-key');
 
+export function provideShareThis() {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   useHead({
-    script: computed(() => (match(route.path) ? [
+    script: [
       {
         src: 'https://platform-api.sharethis.com/js/sharethis.js#property=644c11c3ac242f001bf9c4da',
         async: true,
       },
-    ] : [])),
+    ],
   });
 
-  watch(route, () => {
-    if (!match(route.path)) {
-      console.log('remove');
-      document.querySelector('.st-sticky-share-buttons')?.remove();
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
-      // eslint-disable-next-line no-underscore-dangle
-      window.__sharethis__ = null;
-    }
+  const consumers = ref(0);
+
+  const data = reactive({
+    consumers,
+    visible: computed(() => consumers.value > 0),
+    data: {
+      // 'data-title': 'title',
+      // 'data-message': 'message',
+      // 'data-description': 'description'
+    },
+  });
+
+  provide(key, data);
+
+  return data;
+}
+
+export function useShareThis() {
+  const sharethis: any = inject(key);
+
+  onMounted(() => {
+    sharethis.consumers++;
+  });
+  onUnmounted(() => {
+    sharethis.consumers--;
   });
 }
