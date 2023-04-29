@@ -18,7 +18,8 @@ export default defineComponent({
 
     // eslint-disable-next-line no-undef
     const { data } = await useAsyncData(props.path, () => queryContent(props.path).findOne());
-    const { title, image, description } = data.value;
+    const { image, description } = data.value;
+    const title = `${data.value.title} - Rete.js`;
     const imageSrc = image ? getPreview(image.src) : getAsset('main.png');
 
     dataRef.value = data.value;
