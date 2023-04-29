@@ -6,7 +6,7 @@ ContentRenderer(:value="data")
 
 <script>
 import { defineComponent, computed, ref } from 'vue';
-import { getPreview, getAsset } from '../shared/assets';
+import { getPreview, mainPreview } from '../shared/assets';
 import { useShareThis } from '../shared/sharethis';
 
 export default defineComponent({
@@ -22,7 +22,7 @@ export default defineComponent({
 
     const { image, description } = data.value;
     const title = `${data.value.title} - Rete.js`;
-    const imageSrc = image ? getPreview(image.src) : getAsset('main.png');
+    const imageSrc = image ? getPreview(image.src) : mainPreview;
 
     dataRef.value = data.value;
     // should be reactive for ShareThis so useServerSeoMeta isn't an option
