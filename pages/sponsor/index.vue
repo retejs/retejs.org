@@ -35,10 +35,28 @@
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n';
 import sponsor from '../../consts/sponsor.json';
+import { mainPreview } from '../../shared/assets';
 
 export default {
-  data() {
+  setup() {
+    const { t } = useI18n();
+    const title = `${t('sponsor')} - ${t('name')}`;
+    const description = `${t('sponsorPage.subtitle1')} ${t('sponsorPage.subtitle2')}`;
+
+    // eslint-disable-next-line no-undef
+    useSeoMeta({
+      title,
+      ogTitle: title,
+      description,
+      ogDescription: description,
+      ogImage: mainPreview,
+      twitterSite: 'rete_js',
+      twitterCreator: 'rete_js',
+      twitterImageSrc: mainPreview,
+    });
+
     return {
       ...sponsor,
     };

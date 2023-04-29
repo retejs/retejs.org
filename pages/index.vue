@@ -1,7 +1,7 @@
 <template lang="pug">
 .home
   Head
-    Title {{ $t('name') }} - {{ $t('main.title') }}
+    Title {{ title }}
   .section
     p.title {{ $t('main.title') }}
     p.description {{ $t('main.description') }}
@@ -24,12 +24,32 @@
 </template>
 
 <script>
+import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
 import Logo from '@/components/Logo.vue';
+import { mainPreview } from '../shared/assets';
 
 export default {
-  data() {
+  setup() {
+    const { t } = useI18n();
+    const title = `${t('name')} - ${t('main.title')}`;
+    const description = t('main.description');
+
+    // eslint-disable-next-line no-undef
+    useSeoMeta({
+      title,
+      ogTitle: title,
+      description,
+      ogDescription: description,
+      ogImage: mainPreview,
+      twitterSite: 'rete_js',
+      twitterCreator: 'rete_js',
+      twitterImageSrc: mainPreview,
+    });
+
     return {
-      logoIsHovered: false,
+      title,
+      logoIsHovered: ref(false),
       gitHubBadge: 'https://ghbtns.com/github-btn.html?user=retejs&repo=rete&type=star&count=true&size=large',
       originBadge: 'https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7',
     };
