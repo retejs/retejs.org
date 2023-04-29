@@ -5,3 +5,5 @@ export function getAsset(path: string) {
 export function getPreview(path: string) {
   return getAsset(`preview/${path}`);
 }
+
+export const mainPreview = getAsset('main.png');
