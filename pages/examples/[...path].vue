@@ -5,7 +5,7 @@
       template(#title) {{ $t('examples') }}
       ExamplesNav(:navigation="navigation")
     .content.markdown
-      ContentDocFix(:path="contentPath")
+      RenderContent(:path="contentPath" :share="share")
         template(#not-found)
           IViewAlert(type="warning") Examples section not found
     Drawer(v-model="drawer")
@@ -18,16 +18,14 @@ import { defineComponent } from 'vue';
 import Drawer from '@/components/shared/Drawer.vue';
 import ExamplesNav from '@/components/ExamplesNav.vue';
 import FetchNav from '@/components/FetchNav.vue';
-import ContentDocFix from '@/components/ContentDocFix.vue';
+import RenderContent from '@/components/RenderContent.vue';
 import NavMenu from '@/components/shared/NavMenu.vue';
 import { alterTitle } from '../../shared/title';
 import { omitLocale } from '../../shared/route';
-import { useShareThis } from '../../shared/sharethis';
 
 export default defineComponent({
   setup() {
     alterTitle('examplesPage.title');
-    useShareThis();
   },
   data() {
     return {
@@ -42,12 +40,18 @@ export default defineComponent({
       return this.$route.path;
     },
   },
+  methods: {
+    share(data) {
+      if (data.share) return data.share.title;
+      return `${data.title}, ${this.$t('share.example')}`;
+    },
+  },
   components: {
     Drawer,
     ExamplesNav,
     FetchNav,
     NavMenu,
-    ContentDocFix,
+    RenderContent,
   },
 });
 </script>

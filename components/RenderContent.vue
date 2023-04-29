@@ -5,17 +5,23 @@ ContentRenderer(:value="data")
 </template>
 
 <script>
-import { defineComponent } from 'vue';
+import { defineComponent, computed, ref } from 'vue';
 import { getPreview, getAsset } from '../shared/assets';
+import { useShareThis } from '../shared/sharethis';
 
 export default defineComponent({
-  props: ['path'],
+  props: ['path', 'share'],
   async setup(props) {
+    const dataRef = ref(null);
+    // workaround for https://github.com/vuejs/core/issues/1409
+    if (props.share) useShareThis(computed(() => dataRef.value && props.share(dataRef.value)));
+
     // eslint-disable-next-line no-undef
     const { data } = await useAsyncData(props.path, () => queryContent(props.path).findOne());
     const { title, image, description } = data.value;
     const imageSrc = image ? getPreview(image.src) : getAsset('main.png');
 
+    dataRef.value = data.value;
     // should be reactive for ShareThis so useServerSeoMeta isn't an option
     // eslint-disable-next-line no-undef
     useSeoMeta({
@@ -28,6 +34,7 @@ export default defineComponent({
       twitterCreator: 'rete_js',
       twitterImageSrc: imageSrc,
     });
+
     return {
       data,
     };

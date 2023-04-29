@@ -97,5 +97,9 @@
       "benefits": "logo placement in the README of retejs/rete repository, prioritized feedback to issues"
     },
     "contacts": "If you have questions regarding payment methods, benefits or sponsor recognition, please contact us via"
+  },
+  "share": {
+    "docs": "docs for Rete.js",
+    "example": "example powered by Rete.js"
   }
 }

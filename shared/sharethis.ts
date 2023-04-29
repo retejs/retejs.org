@@ -1,6 +1,13 @@
 import {
-  reactive, provide, inject, onUnmounted, onMounted, ref, computed,
+  reactive, provide, inject, onUnmounted, onMounted, ref, computed, Ref,
 } from 'vue';
+
+type Context = {
+  consumers: number
+  title: string | null
+  visible: boolean
+  data: Record<string, string | null>
+}
 
 export const key = Symbol('sharethis-di-key');
 
@@ -17,14 +24,15 @@ export function provideShareThis() {
   });
 
   const consumers = ref(0);
+  const title = ref(null);
 
-  const data = reactive({
+  const data: Context = reactive({
     consumers,
+    title,
     visible: computed(() => consumers.value > 0),
     data: {
-      // 'data-title': 'title',
-      // 'data-message': 'message',
-      // 'data-description': 'description'
+      'data-title': title,
+      'data-image': 'https://raw.githubusercontent.com/retejs/retejs.org/assets/preview/lod.png',
     },
   });
 
@@ -33,10 +41,13 @@ export function provideShareThis() {
   return data;
 }
 
-export function useShareThis() {
-  const sharethis: any = inject(key);
+export function useShareThis(title: string | Ref<string>) {
+  const sharethis: Context | undefined = inject(key);
+
+  if (!sharethis) throw new Error('cannot inject sharethis');
 
   onMounted(() => {
+    sharethis.title = typeof title === 'string' ? title : title.value;
     sharethis.consumers++;
   });
   onUnmounted(() => {
