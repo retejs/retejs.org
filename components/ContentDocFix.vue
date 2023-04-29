@@ -14,6 +14,7 @@ export default defineComponent({
     // eslint-disable-next-line no-undef
     const { data } = await useAsyncData(props.path, () => queryContent(props.path).findOne());
     const { title, image, description } = data.value;
+    const imageSrc = image ? getPreview(image.src) : getAsset('main.png');
 
     // should be reactive for ShareThis so useServerSeoMeta isn't an option
     // eslint-disable-next-line no-undef
@@ -22,7 +23,10 @@ export default defineComponent({
       ogTitle: title,
       description,
       ogDescription: description,
-      ogImage: image ? getPreview(image.src) : getAsset('main.png'),
+      ogImage: imageSrc,
+      twitterSite: 'rete_js',
+      twitterCreator: 'rete_js',
+      twitterImageSrc: imageSrc,
     });
     return {
       data,
