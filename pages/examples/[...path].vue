@@ -5,7 +5,11 @@
       template(#title) {{ $t('examples') }}
       ExamplesNav(:navigation="navigation")
     .content.markdown
-      RenderContent(:path="contentPath" :share="share")
+      RenderContent(
+        :path="contentPath"
+        :share="share"
+        :title="data => !data.overview && $t('examplesPage.title', { title: data.title })"
+      )
         template(#not-found)
           IViewAlert(type="warning") Examples section not found
     Drawer(v-model="drawer")
@@ -20,13 +24,9 @@ import ExamplesNav from '@/components/ExamplesNav.vue';
 import FetchNav from '@/components/FetchNav.vue';
 import RenderContent from '@/components/RenderContent.vue';
 import NavMenu from '@/components/shared/NavMenu.vue';
-import { alterTitle } from '../../shared/title';
 import { omitLocale } from '../../shared/route';
 
 export default defineComponent({
-  setup() {
-    alterTitle('examplesPage.title');
-  },
   data() {
     return {
       drawer: false,
