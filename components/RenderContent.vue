@@ -10,7 +10,7 @@ import { getPreview, mainPreview } from '../shared/assets';
 import { useShareThis } from '../shared/sharethis';
 
 export default defineComponent({
-  props: ['path', 'share'],
+  props: ['path', 'share', 'title'],
   async setup(props) {
     const path = props.path.replace(/\/$/, '');
     const dataRef = ref(null);
@@ -21,7 +21,7 @@ export default defineComponent({
     const { data } = await useAsyncData(path, () => queryContent(path).findOne());
 
     const { image, description } = data.value;
-    const title = `${data.value.title} - Rete.js`;
+    const title = computed(() => `${props.title ? props.title(data.value) || data.value.title : data.value.title} - Rete.js`);
     const imageSrc = image ? getPreview(image.src) : mainPreview;
 
     dataRef.value = data.value;

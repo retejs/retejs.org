@@ -20,13 +20,9 @@ import Nav from '@/components/Nav.vue';
 import FetchNav from '@/components/FetchNav.vue';
 import RenderContent from '@/components/RenderContent.vue';
 import NavMenu from '@/components/shared/NavMenu.vue';
-import { alterTitle } from '../../shared/title';
 import { omitLocale } from '../../shared/route';
 
 export default defineComponent({
-  setup() {
-    alterTitle();
-  },
   data() {
     return {
       drawer: false,

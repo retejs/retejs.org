@@ -29,7 +29,7 @@
     }
   },
   "examplesPage": {
-    "title": "{title} Example",
+    "title": "{title} example",
     "proExample": {
       "getAccess": "Get access",
       "alert": "The source code for this Pro example is available only to subscribers"
