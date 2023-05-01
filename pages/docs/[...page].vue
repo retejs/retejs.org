@@ -14,27 +14,22 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
 import Drawer from '@/components/shared/Drawer.vue';
 import Nav from '@/components/Nav.vue';
 import FetchNav from '@/components/FetchNav.vue';
 import RenderContent from '@/components/RenderContent.vue';
 import NavMenu from '@/components/shared/NavMenu.vue';
-import { omitLocale } from '../../shared/route';
+import { useContentPath } from '../../shared/content';
 
 export default defineComponent({
-  data() {
+  setup() {
+    const contentPath = useContentPath();
+
     return {
-      drawer: false,
+      contentPath,
+      drawer: ref(false),
     };
-  },
-  computed: {
-    contentPath() {
-      return `/${this.locale}${omitLocale(this.$route.path, this.locale)}`;
-    },
-    locale() {
-      return this.$i18n.locale;
-    },
   },
   methods: {
     share(data) {
