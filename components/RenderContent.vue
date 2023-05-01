@@ -10,7 +10,7 @@ import { getPreview, mainPreview } from '../shared/assets';
 import { useShareThis } from '../shared/sharethis';
 
 export default defineComponent({
-  props: ['path', 'share', 'title'],
+  props: ['path', 'share', 'title', 'largePreview'],
   async setup(props) {
     const path = props.path.replace(/\/$/, '');
     const dataRef = ref(null);
@@ -33,6 +33,9 @@ export default defineComponent({
       description,
       ogDescription: description,
       ogImage: imageSrc,
+      twitterCard: props.largePreview ? 'summary_large_image' : 'summary',
+      twitterTitle: title,
+      twitterDescription: description,
       twitterSite: 'rete_js',
       twitterCreator: 'rete_js',
       twitterImageSrc: imageSrc,

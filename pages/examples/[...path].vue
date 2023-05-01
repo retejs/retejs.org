@@ -9,6 +9,7 @@
         :path="contentPath"
         :share="share"
         :title="data => !data.overview && $t('examplesPage.title', { title: data.title })"
+        :largePreview="true"
       )
         template(#not-found)
           IViewAlert(type="warning") Examples section not found
