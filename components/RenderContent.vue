@@ -23,6 +23,10 @@ export default defineComponent({
     const { image, description } = data.value;
     const title = computed(() => `${props.title ? props.title(data.value) || data.value.title : data.value.title} - Rete.js`);
     const imageSrc = image ? getPreview(image.src) : mainPreview;
+    // eslint-disable-next-line no-nested-ternary
+    const twitterCard = props.largePreview
+      ? (imageSrc.endsWith('.gif') ? 'player' : 'summary_large_image')
+      : 'summary';
 
     dataRef.value = data.value;
     // should be reactive for ShareThis so useServerSeoMeta isn't an option
@@ -33,11 +37,14 @@ export default defineComponent({
       description,
       ogDescription: description,
       ogImage: imageSrc,
-      twitterCard: props.largePreview ? 'summary_large_image' : 'summary',
+      twitterCard,
       twitterTitle: title,
       twitterDescription: description,
       twitterSite: 'rete_js',
       twitterCreator: 'rete_js',
+      twitterPlayerWidth: 400,
+      twitterPlayerHeight: 400,
+      twitterPlayer: imageSrc,
       twitterImage: imageSrc,
       twitterImageSrc: imageSrc,
     });
