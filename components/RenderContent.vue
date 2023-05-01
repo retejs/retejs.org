@@ -38,6 +38,7 @@ export default defineComponent({
       twitterDescription: description,
       twitterSite: 'rete_js',
       twitterCreator: 'rete_js',
+      twitterImage: imageSrc,
       twitterImageSrc: imageSrc,
     });
 
