@@ -44,7 +44,7 @@ export default defineComponent({
       twitterSite: 'rete_js',
       twitterCreator: 'rete_js',
       twitterPlayerWidth: 500,
-      twitterPlayerHeight: 500 / (16 / 9),
+      twitterPlayerHeight: Math.ceil(500 / (16 / 9)),
       twitterPlayer: `${host.url}/preview/${path.split('/').filter(Boolean).reverse()[0]}`,
       twitterImage: imageSrc,
       twitterImageSrc: imageSrc,
