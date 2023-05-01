@@ -1,6 +1,6 @@
 <template lang="pug">
 IViewContent.content
-  NuxtPage
+  slot
 </template>
 
 <script>
