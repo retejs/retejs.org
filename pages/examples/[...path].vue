@@ -4,6 +4,7 @@
     NavMenu(@open="drawer = true")
       template(#title) {{ $t('examples') }}
       ExamplesNav(:navigation="navigation")
+    NuxtLink(:href="preview")
     .content.markdown
       RenderContent(
         :path="contentPath"
@@ -20,6 +21,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
+import { useRoute } from 'vue-router';
 import Drawer from '@/components/shared/Drawer.vue';
 import ExamplesNav from '@/components/ExamplesNav.vue';
 import FetchNav from '@/components/FetchNav.vue';
@@ -29,9 +31,11 @@ import { useContentPath } from '../../shared/content';
 
 export default defineComponent({
   setup() {
+    const route = useRoute();
     const contentPath = useContentPath();
 
     return {
+      preview: route.path.replace('/examples/', '/preview/'),
       contentPath,
       drawer: ref(false),
     };
