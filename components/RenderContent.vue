@@ -8,6 +8,7 @@ ContentRenderer(:value="data")
 import { defineComponent, computed, ref } from 'vue';
 import { getPreview, mainPreview } from '../shared/assets';
 import { useShareThis } from '../shared/sharethis';
+import host from '../consts/host.json';
 
 export default defineComponent({
   props: ['path', 'share', 'title', 'largePreview'],
@@ -42,9 +43,9 @@ export default defineComponent({
       twitterDescription: description,
       twitterSite: 'rete_js',
       twitterCreator: 'rete_js',
-      twitterPlayerWidth: 400,
-      twitterPlayerHeight: 400,
-      twitterPlayer: imageSrc,
+      twitterPlayerWidth: 500,
+      twitterPlayerHeight: 500 / (16 / 9),
+      twitterPlayer: `${host.url}/preview/${path.split('/').filter(Boolean).reverse()[0]}`,
       twitterImage: imageSrc,
       twitterImageSrc: imageSrc,
     });

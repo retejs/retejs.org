@@ -4,6 +4,7 @@
   Header
   ShareThis
     Content
+      slot
   Footer
   .report-button(content="Report a bug" placement="left-start")
     Button(
@@ -16,12 +17,12 @@
 
 <script>
 import { defineComponent } from 'vue';
-import Header from './components/Header.vue';
-import Content from './components/Content.vue';
-import Footer from './components/Footer.vue';
-import { openReportDialog } from './bug-handler';
-import { seoLang } from './shared/seoLang';
-import ShareThis from './components/ShareThis.vue';
+import Header from '../components/Header.vue';
+import Content from '../components/Content.vue';
+import Footer from '../components/Footer.vue';
+import { openReportDialog } from '../bug-handler';
+import { seoLang } from '../shared/seoLang';
+import ShareThis from '../components/ShareThis.vue';
 
 export default defineComponent({
   name: 'app',
