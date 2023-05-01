@@ -9,7 +9,7 @@
     .star
       iframe(:src="gitHubBadge" frameborder="0" scrolling="0")
     a.origin(href="https://stand-with-ukraine.pp.ua" target="_blank")
-      img(:src="originBadge")
+      img(:src="originBadge" alt="Stand with Ukraine")
   Logo.logo(:hover="logoIsHovered" :zoomIn="false")
   .highlights.section
     .highlight
