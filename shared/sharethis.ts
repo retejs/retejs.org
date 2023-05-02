@@ -1,6 +1,8 @@
 import {
   reactive, provide, inject, onUnmounted, onMounted, ref, computed, Ref,
 } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
+import host from '../consts/host.json';
 
 type Context = {
   consumers: number
@@ -22,6 +24,8 @@ export function provideShareThis() {
       },
     ],
   });
+  const route = useRoute();
+  const router = useRouter();
 
   const consumers = ref(0);
   const title = ref(null);
@@ -33,6 +37,7 @@ export function provideShareThis() {
     data: {
       'data-title': title,
       'data-image': 'https://raw.githubusercontent.com/retejs/retejs.org/assets/preview/lod.png',
+      'data-url': computed(() => `${host.url}${router.resolve(route).href}`),
     },
   });
 
