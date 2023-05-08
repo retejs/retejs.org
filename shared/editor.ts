@@ -70,13 +70,13 @@ type AreaExtra = VueArea2D<Schemes>
 export async function createEditor(container: HTMLElement, props: { multiselect: boolean, order: boolean }) {
   const editor = new NodeEditor<Schemes>();
   const area = new AreaPlugin<Schemes, AreaExtra>(container);
-  const render = new VueRenderPlugin<Schemes>();
+  const render = new VueRenderPlugin<Schemes, AreaExtra>();
   const engine = new DataflowEngine<Schemes>();
 
   area.area.setZoomHandler(null);
   area.container.style.overflow = 'initial';
 
-  render.addPreset(Presets.classic.setup({ area }));
+  render.addPreset(Presets.classic.setup());
 
   editor.use(area);
   editor.use(engine);
