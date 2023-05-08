@@ -36,7 +36,6 @@ export function provideShareThis() {
     visible: computed(() => consumers.value > 0),
     data: {
       'data-title': title,
-      'data-image': 'https://raw.githubusercontent.com/retejs/retejs.org/assets/preview/lod.png',
       'data-url': computed(() => `${host.url}${router.resolve(route).href}`),
     },
   });
