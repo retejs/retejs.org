@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/i18n',
     'nuxt-purgecss',
-    '@vite-pwa/nuxt',
+    // '@vite-pwa/nuxt',
     'nuxt-gtag',
   ],
   telemetry: false,
