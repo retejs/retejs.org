@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/i18n',
     'nuxt-purgecss',
-    // '@vite-pwa/nuxt',
+    '@vite-pwa/nuxt',
     'nuxt-gtag',
   ],
   telemetry: false,
@@ -58,10 +58,6 @@ export default defineNuxtConfig({
   pwa: {
     mode: isCI ? 'production' : 'development',
     disable: isDevelopment,
-    registerType: 'autoUpdate',
-    client: {
-      installPrompt: true,
-    },
     manifest: {
       name: 'Rete.js',
       short_name: 'Rete.js',
@@ -83,8 +79,9 @@ export default defineNuxtConfig({
       navigateFallback: '/404.html',
       globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
     },
-    registerWebManifestInRouteRules: true,
-    writePlugin: true,
+    strategies: 'injectManifest',
+    srcDir: 'src',
+    filename: 'sw.ts',
   },
   gtag: {
     id: 'G-Q0DXJPL3FX',
