@@ -21,12 +21,14 @@
     .highlight
       .title {{ $t('main.highlights.tailorable.title')}}
       .description {{ $t('main.highlights.tailorable.description') }}
+  Showcase
 </template>
 
 <script>
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import Logo from '@/components/Logo.vue';
+import Showcase from '@/components/Showcase.vue';
 import { mainPreview } from '../shared/assets';
 
 export default {
@@ -56,6 +58,7 @@ export default {
   },
   components: {
     Logo,
+    Showcase,
   },
   mounted() {
     setTimeout(() => { this.logoIsHovered = true; }, 1000);

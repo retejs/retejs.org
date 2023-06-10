@@ -13,13 +13,11 @@
 <script>
 import ExampleCard from '../shared/ExampleCard.vue';
 import { usePathSanitizer } from '../../shared/route';
+import { flat } from '../../shared/navigation';
 
 export default {
   props: ['top'],
   setup(props) {
-    function flat(list) {
-      return list.map((item) => (item.children && item.children.length ? flat(item.children) : item)).flat();
-    }
     const { sanitize } = usePathSanitizer();
 
     return {
