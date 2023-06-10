@@ -10,6 +10,7 @@
   "ecosystem": "Ecosystem",
   "report-bug": "Report a bug",
   "benefits": "Benefits",
+  "openNewTab": "Open in new tab",
   "main": {
     "title": "JavaScript framework for visual programming",
     "description": "A tailorable TypeScript-first framework for creating processing-oriented node-based editors",
