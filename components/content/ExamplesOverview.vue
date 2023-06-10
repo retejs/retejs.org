@@ -1,5 +1,5 @@
 <template lang="pug">
-.overview
+.overview(:class="{ top }")
   FetchNav(v-slot="{ navigation }" :target="target")
     template(v-for="data of getList(navigation)")
       NuxtLink(v-if="!data.noPreview && !data.placeholder" :to="sanitize(data._path)")
@@ -17,7 +17,8 @@ import { usePathSanitizer } from '../../shared/route';
 import { getPreview } from '../../shared/assets';
 
 export default {
-  setup() {
+  props: ['top'],
+  setup(props) {
     function flat(list) {
       return list.map((item) => (item.children && item.children.length ? flat(item.children) : item)).flat();
     }
@@ -26,7 +27,13 @@ export default {
     return {
       sanitize,
       getList(navigation) {
-        return flat(navigation.children);
+        const examples = flat(navigation.children);
+
+        if (typeof props.top === 'undefined') return examples;
+
+        return examples
+          .filter((item) => (props.top ? item.top : !item.top))
+          .sort((a, b) => (b.top || 0) - (a.top || 0));
       },
       target: 'examples',
     };
@@ -41,10 +48,23 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+@import '@/assets/styles/media.sass'
+
 .overview
   display: grid
   grid-gap: 1em
-  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr))
+  grid-template-columns: repeat(auto-fit, minmax(15em, max-content))
+  .item
+    max-width: 35em
+    +tablet
+      max-width: unset
+  &.top
+    grid-template-columns: repeat(auto-fit, minmax(20em, max-content))
+    .item
+      max-width: 30em
+      +tablet
+        max-width: unset
+
   .title
     display: flex
     align-items: center
