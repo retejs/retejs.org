@@ -3,18 +3,16 @@
   FetchNav(v-slot="{ navigation }" :target="target")
     template(v-for="data of getList(navigation)")
       NuxtLink(v-if="!data.noPreview && !data.placeholder" :to="sanitize(data._path)")
-        Card.item(:padding="0")
-          template(#title)
-            .title
-              .text {{ data.title }}
-              ProTag(v-if="data.pro")
-          img.preview(:src="getPreview(data.preview)")
+        ExampleCard.item(
+          :title="data.title"
+          :preview="data.preview"
+          :pro="data.pro"
+        )
 </template>
 
 <script>
-import ProTag from '../shared/ProTag.vue';
+import ExampleCard from '../shared/ExampleCard.vue';
 import { usePathSanitizer } from '../../shared/route';
-import { getPreview } from '../../shared/assets';
 
 export default {
   props: ['top'],
@@ -38,11 +36,8 @@ export default {
       target: 'examples',
     };
   },
-  methods: {
-    getPreview,
-  },
   components: {
-    ProTag,
+    ExampleCard,
   },
 };
 </script>
@@ -65,13 +60,4 @@ export default {
       +tablet
         max-width: unset
 
-  .title
-    display: flex
-    align-items: center
-    min-height: 1.4em
-    .text
-      flex: 1
-  .preview
-    width: 100%
-    display: block
 </style>
