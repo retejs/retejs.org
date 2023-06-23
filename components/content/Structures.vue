@@ -12,7 +12,7 @@ import {
   defineComponent, onMounted, onUnmounted, ref,
 } from 'vue';
 import {
-  createEditor, structuresGraph, structuresSubGraph, methodApplicant, selectNode,
+  createEditor, structuresGraph, structuresSubGraph, methodApplicant,
 } from '../../shared/editor';
 
 export default defineComponent({
@@ -60,7 +60,9 @@ export default defineComponent({
         multiselect: false,
         order: false,
       });
-      const { area, editor, resize } = instance;
+      const {
+        area, editor, resize, nodeSelector,
+      } = instance;
       const method = methodApplicant(editor, props.id);
 
       const { nodes } = method.graphType === 'default'
@@ -79,7 +81,7 @@ export default defineComponent({
       });
 
       if (props.pick) {
-        selectNode(nodes[props.pick].id, area);
+        nodeSelector.select(nodes[props.pick].id);
       } else {
         concealNodes(editor, area, method.execute());
       }
