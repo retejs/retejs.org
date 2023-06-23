@@ -18,7 +18,7 @@
 
 <script>
 import { onMounted, onUnmounted, ref } from 'vue';
-import { createEditor, introductionGraph, selectNode } from '../../shared/editor';
+import { createEditor, introductionGraph } from '../../shared/editor';
 import Pointer from '@/components/shared/Pointer.vue';
 
 export default {
@@ -81,11 +81,11 @@ export default {
         multiselect: true,
         order: true,
       });
-      const { area, resize } = instance;
+      const { area, resize, nodeSelector } = instance;
       const { nodes } = await introductionGraph(instance);
       resizeHandler = () => resize(canva.value.clientWidth, 706);
 
-      selectNode(nodes.add.id, area);
+      nodeSelector.select(nodes.add.id);
       resizeHandler();
       updatePointers(area, nodes.a, nodes.add);
 

@@ -62,7 +62,7 @@ class NamelessNode extends ClassicPreset.Node {
 
 type NodeProps = NumberNode | AddNode | NamelessNode
 
-class Connection<N extends NodeProps> extends ClassicPreset.Connection<N, N> {}
+class Connection<N extends NodeProps> extends ClassicPreset.Connection<N, N> { }
 
 type Schemes = GetSchemes<NodeProps, Connection<NodeProps>>
 type AreaExtra = VueArea2D<Schemes>
@@ -82,7 +82,7 @@ export async function createEditor(container: HTMLElement, props: { multiselect:
   editor.use(engine);
   area.use(render);
 
-  AreaExtensions.selectableNodes(area, AreaExtensions.selector(), {
+  const nodeSelector = AreaExtensions.selectableNodes(area, AreaExtensions.selector(), {
     accumulating: props.multiselect ? AreaExtensions.accumulateOnCtrl() : { active: () => false },
   });
   if (props.order) {
@@ -93,14 +93,11 @@ export async function createEditor(container: HTMLElement, props: { multiselect:
     editor,
     area,
     engine,
+    nodeSelector,
     resize(width: number, graphWidth: number) {
       area.area.zoom(width / graphWidth);
     },
   };
-}
-
-export function selectNode(id: NodeId, area: AreaPlugin<Schemes, AreaExtra>) {
-  area.emit({ type: 'nodepicked', data: { id } });
 }
 
 type EditorInstance = Awaited<ReturnType<typeof createEditor>>
