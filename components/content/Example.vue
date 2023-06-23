@@ -44,8 +44,8 @@ export default {
 @import '@/assets/styles/media.sass'
 
 iframe
-  width: 80vw
-  height: 30vw
+  width: 100%
+  height: 100%
   border: none
   text-align: left
   border: 2px solid #f3f3f3
