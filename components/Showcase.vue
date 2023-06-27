@@ -11,7 +11,7 @@
       Card.preview(:padding="0")
         .open
           Tooltip(:content="$t('openNewTab')" placement="top-end")
-            Button(:to="item.showcase.source" icon="ios-link" target="_blank")
+            Button(:to="item.showcase.link || item.showcase.source" icon="ios-link" target="_blank")
         client-only
           FrameExample(:src="item.showcase.source")
           template(#placeholder)
