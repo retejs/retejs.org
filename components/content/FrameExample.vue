@@ -3,6 +3,7 @@ BaseExample
   iframe(
     :src="src"
     title="Rete.js v2"
+    :loading="lazy ? 'lazy' : ''"
   )
 </template>
 
@@ -12,6 +13,7 @@ import BaseExample from '../shared/BaseExample.vue';
 export default {
   props: {
     src: String,
+    lazy: Boolean,
   },
   components: {
     BaseExample,
