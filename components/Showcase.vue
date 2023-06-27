@@ -13,7 +13,7 @@
           Tooltip(:content="$t('openNewTab')" placement="top-end")
             Button(:to="item.showcase.link || item.showcase.source" icon="ios-link" target="_blank")
         client-only
-          FrameExample(:src="item.showcase.source")
+          FrameExample(:src="item.showcase.source" :lazy="true")
           template(#placeholder)
             NuxtLink(:to="item._path")
               img(:src="getPreview(item.preview)")
