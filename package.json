@@ -20,6 +20,7 @@
     "@sentry/integrations": "^7.38.0",
     "@sentry/tracing": "^7.39.0",
     "@sentry/vue": "^7.39.0",
+    "@vueuse/core": "^10.2.1",
     "case": "^1.6.3",
     "clipboard-copy": "^4.0.1",
     "nuxt": "^3.3.1",

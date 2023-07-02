@@ -2,15 +2,19 @@
 .container
   client-only
     template(#placeholder)
-      .warn
-        Spin(size="large")
+      Loading
     slot
 </template>
 
 <script>
+import Loading from './Loading.vue';
+
 export default {
   props: {
     src: String,
+  },
+  components: {
+    Loading,
   },
 };
 </script>
@@ -27,11 +31,5 @@ export default {
   +phone
     width: 100%
     height: 80vh
-  .warn
-    display: flex
-    width: 100%
-    height: 100%
-    justify-content: center
-    align-items: center
 
 </style>
