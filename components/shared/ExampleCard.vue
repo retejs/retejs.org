@@ -1,10 +1,13 @@
 <template lang="pug">
-Card.example-card(:padding="0")
-  template(#title)
-    .title
-      .text {{ title }}
-      ProTag(v-if="pro")
-  img.preview(:src="getPreview(preview)")
+.container
+  Card.example-card(:padding="0")
+    template(#title)
+      .title
+        .text {{ title }}
+        ProTag(v-if="pro")
+    img.preview(:src="getPreview(preview)")
+  Card.stack.first(v-if="stack" :padding="0")
+  Card.stack.second(v-if="stack" :padding="0")
 </template>
 
 <script>
@@ -12,7 +15,7 @@ import ProTag from './ProTag.vue';
 import { getPreview } from '../../shared/assets';
 
 export default {
-  props: ['title', 'preview', 'pro'],
+  props: ['title', 'preview', 'pro', 'stack'],
   methods: {
     getPreview,
   },
@@ -40,15 +43,35 @@ $offset: 0.2
 </style>
 
 <style lang="sass" scoped>
-.example-card
-  .title
-    display: flex
-    align-items: center
-    min-height: 1.4em
-    .text
-      flex: 1
+.container
+  position: relative
 
-  .preview
+  &:hover
+    .stack
+      box-shadow: 0 1px 6px rgba(0,0,0,.2)
+
+  .example-card
+    .title
+      display: flex
+      align-items: center
+      min-height: 1.4em
+      .text
+        flex: 1
+
+    .preview
+      width: 100%
+      display: block
+
+  $stack-offset: 0.2em
+  .stack
+    position: absolute
     width: 100%
-    display: block
+    height: 100%
+    top: $stack-offset
+    left: $stack-offset
+    z-index: -1
+    &.second
+      top: $stack-offset * 2
+      left: $stack-offset * 2
+      z-index: -2
 </style>
