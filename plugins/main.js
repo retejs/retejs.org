@@ -1,11 +1,11 @@
 import {
   Menu, MenuItem, Icon, Select, Submenu, Dropdown, Option,
   Drawer, Button, Alert, Tag, Tooltip, Collapse, Panel,
-  Card, Spin,
+  Card, Spin, Modal,
 } from 'view-ui-plus/dist/viewuiplus.min.esm';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
-  faDiscord, faTwitter, faGithub, faPatreon,
+  faDiscord, faTwitter, faGithub, faPatreon, faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 export default defineNuxtPlugin((nuxtApp) => {
   const app = nuxtApp.vueApp;
 
-  library.add(faDiscord, faTwitter, faGithub, faPatreon);
+  library.add(faDiscord, faTwitter, faGithub, faPatreon, faYoutube);
 
   app.component('font-awesome-icon', FontAwesomeIcon);
 
@@ -35,6 +35,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   app.component('Panel', Panel);
   app.component('Card', Card);
   app.component('Spin', Spin);
+  app.component('Modal', Modal);
 
   nuxtApp.$router.options.scrollBehavior = (to, from, savedPosition) => {
     if (savedPosition) return savedPosition;
