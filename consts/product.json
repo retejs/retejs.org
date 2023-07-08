@@ -1,25 +1,30 @@
 {
-    "license": {
-        "name": "MIT License",
-        "link": "https://opensource.org/license/mit/"
+  "license": {
+    "name": "MIT License",
+    "link": "https://opensource.org/license/mit/"
+  },
+  "author": "Vitaliy Stoliarov",
+  "release": "2018",
+  "social": [
+    {
+      "title": "GitHub",
+      "icon": "fa-github",
+      "to": "https://github.com/retejs"
     },
-    "author": "Vitaliy Stoliarov",
-    "release": "2018",
-    "social": [
-        {
-          "title": "GitHub",
-          "icon": "fa-github",
-          "to": "https://github.com/retejs"
-        },
-        {
-          "title": "Twitter",
-          "icon": "fa-twitter",
-          "to": "https://twitter.com/rete_js"
-        },
-        {
-          "title": "Discord",
-          "icon": "fa-discord",
-          "to": "https://discord.gg/cxSFkPZdsV"
-        }
-    ]
+    {
+      "title": "YouTube",
+      "icon": "fa-youtube",
+      "to": "https://www.youtube.com/@rete_js"
+    },
+    {
+      "title": "Twitter",
+      "icon": "fa-twitter",
+      "to": "https://twitter.com/rete_js"
+    },
+    {
+      "title": "Discord",
+      "icon": "fa-discord",
+      "to": "https://discord.gg/cxSFkPZdsV"
+    }
+  ]
 }

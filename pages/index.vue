@@ -10,7 +10,9 @@
       iframe(:src="gitHubBadge" frameborder="0" scrolling="0")
     a.origin(href="https://stand-with-ukraine.pp.ua" target="_blank")
       img(:src="originBadge" alt="Stand with Ukraine")
-  Logo.logo(:hover="logoIsHovered" :zoomIn="false")
+  Logo.logo(v-if="!intro" :hover="logoIsHovered" :zoomIn="false")
+  Button.intro-button(v-if="!intro" shape="circle" type="primary" icon="logo-youtube" @click="intro = true") Intro
+  Intro.intro(:show="intro" :scroll="true" :autoplay="true")
   .highlights.section
     .highlight
       .title {{ $t('main.highlights.ts.title')}}
@@ -51,6 +53,7 @@ export default {
 
     return {
       title,
+      intro: ref(false),
       logoIsHovered: ref(false),
       gitHubBadge: 'https://ghbtns.com/github-btn.html?user=retejs&repo=rete&type=star&count=true&size=large',
       originBadge: 'https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7',
@@ -95,5 +98,9 @@ export default {
       height: calc(15vh * $k + 15vw * $k)
       width: calc(25vh * $k + 25vw * $k)
       max-width: 90vw
-
+  .intro-button
+    margin: auto
+    display: block
+  .intro
+    margin: 2em auto 0 auto
 </style>
