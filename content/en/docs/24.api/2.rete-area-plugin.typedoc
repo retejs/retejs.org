@@ -1,0 +1,6299 @@
+{
+	"id": 0,
+	"name": "rete-area-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 271,
+			"name": "AreaExtensions",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Area extensions"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "7"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 333,
+					"name": "Selector",
+					"variant": "declaration",
+					"kind": 128,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Selector class. Used to collect selected entities (nodes, connections, etc.) and synchronize them (select, unselect, translate, etc.).\nCan be extended to add custom functionality."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/selectable.ts",
+							"line": 40,
+							"character": 13,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L40"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 363,
+							"name": "E",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "src/extensions/selectable.ts",
+									"qualifiedName": "SelectorEntity"
+								},
+								"name": "SelectorEntity",
+								"package": "rete-area-plugin"
+							}
+						}
+					]
+				},
+				{
+					"id": 294,
+					"name": "Restrictor",
+					"variant": "declaration",
+					"kind": 4194304,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Restrictor extension parameters"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/restrictor.ts",
+							"line": 12,
+							"character": 12,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/restrictor.ts#L12"
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 295,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 296,
+									"name": "scaling",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The scaling range"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/extensions/restrictor.ts",
+											"line": 14,
+											"character": 2,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/restrictor.ts#L14"
+										}
+									],
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/extensions/restrictor.ts",
+													"qualifiedName": "ScaleRange"
+												},
+												"name": "ScaleRange",
+												"package": "rete-area-plugin"
+											},
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 297,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/extensions/restrictor.ts",
+															"line": 14,
+															"character": 26,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/restrictor.ts#L14"
+														}
+													],
+													"signatures": [
+														{
+															"id": 298,
+															"name": "__type",
+															"variant": "signature",
+															"kind": 4096,
+															"flags": {},
+															"type": {
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "src/extensions/restrictor.ts",
+																	"qualifiedName": "ScaleRange"
+																},
+																"name": "ScaleRange",
+																"package": "rete-area-plugin"
+															}
+														}
+													]
+												}
+											},
+											{
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										]
+									}
+								},
+								{
+									"id": 299,
+									"name": "translation",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The translation range"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/extensions/restrictor.ts",
+											"line": 16,
+											"character": 2,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/restrictor.ts#L16"
+										}
+									],
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/extensions/restrictor.ts",
+													"qualifiedName": "TranslateRange"
+												},
+												"name": "TranslateRange",
+												"package": "rete-area-plugin"
+											},
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 300,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/extensions/restrictor.ts",
+															"line": 16,
+															"character": 34,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/restrictor.ts#L16"
+														}
+													],
+													"signatures": [
+														{
+															"id": 301,
+															"name": "__type",
+															"variant": "signature",
+															"kind": 4096,
+															"flags": {},
+															"type": {
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "src/extensions/restrictor.ts",
+																	"qualifiedName": "TranslateRange"
+																},
+																"name": "TranslateRange",
+																"package": "rete-area-plugin"
+															}
+														}
+													]
+												}
+											},
+											{
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										]
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										296,
+										299
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/extensions/restrictor.ts",
+									"line": 12,
+									"character": 21,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/restrictor.ts#L12"
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 372,
+					"name": "SnapGrid",
+					"variant": "declaration",
+					"kind": 4194304,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Snap grid extension parameters"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/snap.ts",
+							"line": 8,
+							"character": 12,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/snap.ts#L8"
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 373,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 375,
+									"name": "dynamic",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Whether to snap on node drag"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/extensions/snap.ts",
+											"line": 12,
+											"character": 2,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/snap.ts#L12"
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								},
+								{
+									"id": 374,
+									"name": "size",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The grid size"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/extensions/snap.ts",
+											"line": 10,
+											"character": 2,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/snap.ts#L10"
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										375,
+										374
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/extensions/snap.ts",
+									"line": 8,
+									"character": 21,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/snap.ts#L8"
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 382,
+					"name": "ZoomAt",
+					"variant": "declaration",
+					"kind": 4194304,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Zoom extension parameters"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/extensions/zoom-at.ts",
+							"line": 11,
+							"character": 12,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/zoom-at.ts#L11"
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 383,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 384,
+									"name": "scale",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Set gap between nodes and the viewport border"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/extensions/zoom-at.ts",
+											"line": 13,
+											"character": 2,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/zoom-at.ts#L13"
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										384
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/extensions/zoom-at.ts",
+									"line": 11,
+									"character": 21,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/zoom-at.ts#L11"
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 308,
+					"name": "accumulateOnCtrl",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/extensions/selectable.ts",
+							"line": 10,
+							"character": 16,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L10"
+						}
+					],
+					"signatures": [
+						{
+							"id": 309,
+							"name": "accumulateOnCtrl",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Selector's accumulate function, activated when the ctrl key is pressed"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/extensions/selectable.ts",
+									"line": 10,
+									"character": 0,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L10"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 310,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 311,
+											"name": "active",
+											"variant": "declaration",
+											"kind": 2048,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/extensions/selectable.ts",
+													"line": 24,
+													"character": 4,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L24"
+												}
+											],
+											"signatures": [
+												{
+													"id": 312,
+													"name": "active",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/extensions/selectable.ts",
+															"line": 24,
+															"character": 4,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L24"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "boolean"
+													}
+												}
+											]
+										},
+										{
+											"id": 313,
+											"name": "destroy",
+											"variant": "declaration",
+											"kind": 2048,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/extensions/selectable.ts",
+													"line": 27,
+													"character": 4,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L27"
+												}
+											],
+											"signatures": [
+												{
+													"id": 314,
+													"name": "destroy",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/extensions/selectable.ts",
+															"line": 27,
+															"character": 4,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L27"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											]
+										}
+									],
+									"groups": [
+										{
+											"title": "Methods",
+											"children": [
+												311,
+												313
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/extensions/selectable.ts",
+											"line": 23,
+											"character": 9,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L23"
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 272,
+					"name": "getBoundingBox",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/extensions/bounding-box.ts",
+							"line": 14,
+							"character": 16,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/bounding-box.ts#L14"
+						}
+					],
+					"signatures": [
+						{
+							"id": 273,
+							"name": "getBoundingBox",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Get the bounding box of the given nodes"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "The bounding box"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/extensions/bounding-box.ts",
+									"line": 14,
+									"character": 0,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/bounding-box.ts#L14"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 274,
+									"name": "Schemes",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/src/types.ts",
+											"qualifiedName": "BaseSchemes"
+										},
+										"name": "BaseSchemes",
+										"package": "rete"
+									}
+								},
+								{
+									"id": 275,
+									"name": "K",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 276,
+									"name": "plugin",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The area plugin"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 207,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "BaseAreaPlugin",
+										"package": "rete-area-plugin"
+									}
+								},
+								{
+									"id": 277,
+									"name": "nodes",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The nodes to get the bounding box of"
+											}
+										]
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"target": {
+												"sourceFileName": "src/extensions/shared/types.ts",
+												"qualifiedName": "NodeRef"
+											},
+											"typeArguments": [
+												{
+													"type": "reference",
+													"target": -1,
+													"name": "Schemes",
+													"refersToTypeParameter": true
+												}
+											],
+											"name": "NodeRef",
+											"package": "rete-area-plugin"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 278,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 282,
+											"name": "bottom",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/utils.ts",
+													"line": 61,
+													"character": 4,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L61"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 285,
+											"name": "center",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/utils.ts",
+													"line": 64,
+													"character": 4,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L64"
+												}
+											],
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 286,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 287,
+															"name": "x",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "src/utils.ts",
+																	"line": 65,
+																	"character": 6,
+																	"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L65"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															},
+															"defaultValue": "..."
+														},
+														{
+															"id": 288,
+															"name": "y",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "src/utils.ts",
+																	"line": 66,
+																	"character": 6,
+																	"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L66"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															},
+															"defaultValue": "..."
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																287,
+																288
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/utils.ts",
+															"line": 64,
+															"character": 12,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L64"
+														}
+													]
+												}
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 284,
+											"name": "height",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/utils.ts",
+													"line": 63,
+													"character": 4,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L63"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 279,
+											"name": "left",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/utils.ts",
+													"line": 58,
+													"character": 4,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L58"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 280,
+											"name": "right",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/utils.ts",
+													"line": 59,
+													"character": 4,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L59"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 281,
+											"name": "top",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/utils.ts",
+													"line": 60,
+													"character": 4,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L60"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 283,
+											"name": "width",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/utils.ts",
+													"line": 62,
+													"character": 4,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L62"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "..."
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												282,
+												285,
+												284,
+												279,
+												280,
+												281,
+												283
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/utils.ts",
+											"line": 57,
+											"character": 9,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L57"
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 302,
+					"name": "restrictor",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/extensions/restrictor.ts",
+							"line": 27,
+							"character": 16,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/restrictor.ts#L27"
+						}
+					],
+					"signatures": [
+						{
+							"id": 303,
+							"name": "restrictor",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Restrictor extension. Restricts the area zoom and position"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "zoom"
+											}
+										]
+									},
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "zoomed"
+											}
+										]
+									},
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "translated"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/extensions/restrictor.ts",
+									"line": 27,
+									"character": 0,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/restrictor.ts#L27"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 304,
+									"name": "Schemes",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/src/types.ts",
+											"qualifiedName": "BaseSchemes"
+										},
+										"name": "BaseSchemes",
+										"package": "rete"
+									}
+								},
+								{
+									"id": 305,
+									"name": "K",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 306,
+									"name": "plugin",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The area plugin"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 23,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "AreaPlugin",
+										"package": "rete-area-plugin"
+									}
+								},
+								{
+									"id": 307,
+									"name": "params",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The restrictor parameters"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 294,
+										"name": "Params",
+										"package": "rete-area-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 315,
+					"name": "selectableNodes",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/extensions/selectable.ts",
+							"line": 112,
+							"character": 16,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L112"
+						}
+					],
+					"signatures": [
+						{
+							"id": 316,
+							"name": "selectableNodes",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Selectable nodes extension. Adds the ability to select nodes in the area."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "nodepicked"
+											}
+										]
+									},
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "nodetranslated"
+											}
+										]
+									},
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "pointerdown"
+											}
+										]
+									},
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "pointermove"
+											}
+										]
+									},
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "pointerup"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/extensions/selectable.ts",
+									"line": 112,
+									"character": 0,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L112"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 317,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 318,
+									"name": "base",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "BaseAreaPlugin instance"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 207,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/extensions/selectable.ts",
+													"qualifiedName": "Schemes"
+												},
+												"name": "Schemes",
+												"package": "rete-area-plugin"
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "T",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "BaseAreaPlugin",
+										"package": "rete-area-plugin"
+									}
+								},
+								{
+									"id": 319,
+									"name": "core",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Selectable instance"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 333,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/extensions/selectable.ts",
+													"qualifiedName": "SelectorEntity"
+												},
+												"name": "SelectorEntity",
+												"package": "rete-area-plugin"
+											}
+										],
+										"name": "Selector",
+										"package": "rete-area-plugin"
+									}
+								},
+								{
+									"id": 320,
+									"name": "options",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 321,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 322,
+													"name": "accumulating",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "Accumulating interface"
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "src/extensions/selectable.ts",
+															"line": 112,
+															"character": 98,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L112"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/extensions/selectable.ts",
+															"qualifiedName": "Accumulating"
+														},
+														"name": "Accumulating",
+														"package": "rete-area-plugin"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														322
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/extensions/selectable.ts",
+													"line": 112,
+													"character": 96,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L112"
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 323,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 324,
+											"name": "select",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/extensions/selectable.ts",
+													"line": 198,
+													"character": 4,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L198"
+												}
+											],
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 325,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/extensions/selectable.ts",
+															"line": 137,
+															"character": 11,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L137"
+														}
+													],
+													"signatures": [
+														{
+															"id": 326,
+															"name": "__type",
+															"variant": "signature",
+															"kind": 4096,
+															"flags": {},
+															"comment": {
+																"summary": [
+																	{
+																		"kind": "text",
+																		"text": "Select node programmatically"
+																	}
+																]
+															},
+															"sources": [
+																{
+																	"fileName": "src/extensions/selectable.ts",
+																	"line": 137,
+																	"character": 2,
+																	"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L137"
+																}
+															],
+															"parameters": [
+																{
+																	"id": 327,
+																	"name": "nodeId",
+																	"variant": "param",
+																	"kind": 32768,
+																	"flags": {},
+																	"comment": {
+																		"summary": [
+																			{
+																				"kind": "text",
+																				"text": "Node id"
+																			}
+																		]
+																	},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																},
+																{
+																	"id": 328,
+																	"name": "accumulate",
+																	"variant": "param",
+																	"kind": 32768,
+																	"flags": {},
+																	"comment": {
+																		"summary": [
+																			{
+																				"kind": "text",
+																				"text": "Whether to accumulate nodes on selection"
+																			}
+																		]
+																	},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "boolean"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													]
+												}
+											},
+											"defaultValue": "add"
+										},
+										{
+											"id": 329,
+											"name": "unselect",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/extensions/selectable.ts",
+													"line": 199,
+													"character": 4,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L199"
+												}
+											],
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 330,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/extensions/selectable.ts",
+															"line": 163,
+															"character": 11,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L163"
+														}
+													],
+													"signatures": [
+														{
+															"id": 331,
+															"name": "__type",
+															"variant": "signature",
+															"kind": 4096,
+															"flags": {},
+															"comment": {
+																"summary": [
+																	{
+																		"kind": "text",
+																		"text": "Unselect node programmatically"
+																	}
+																]
+															},
+															"sources": [
+																{
+																	"fileName": "src/extensions/selectable.ts",
+																	"line": 163,
+																	"character": 2,
+																	"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L163"
+																}
+															],
+															"parameters": [
+																{
+																	"id": 332,
+																	"name": "nodeId",
+																	"variant": "param",
+																	"kind": 32768,
+																	"flags": {},
+																	"comment": {
+																		"summary": [
+																			{
+																				"kind": "text",
+																				"text": "Node id"
+																			}
+																		]
+																	},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													]
+												}
+											},
+											"defaultValue": "remove"
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												324,
+												329
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/extensions/selectable.ts",
+											"line": 197,
+											"character": 9,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L197"
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 364,
+					"name": "selector",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/extensions/selectable.ts",
+							"line": 88,
+							"character": 16,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L88"
+						}
+					],
+					"signatures": [
+						{
+							"id": 365,
+							"name": "selector",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Selector factory, uses default Selector class"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Selector instance"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/extensions/selectable.ts",
+									"line": 88,
+									"character": 0,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L88"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 366,
+									"name": "E",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/extensions/selectable.ts",
+											"qualifiedName": "SelectorEntity"
+										},
+										"name": "SelectorEntity",
+										"package": "rete-area-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 333,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": -1,
+										"name": "E",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "Selector",
+								"package": "rete-area-plugin"
+							}
+						}
+					]
+				},
+				{
+					"id": 367,
+					"name": "showInputControl",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/extensions/show-input-control.ts",
+							"line": 15,
+							"character": 16,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/show-input-control.ts#L15"
+						}
+					],
+					"signatures": [
+						{
+							"id": 368,
+							"name": "showInputControl",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Show input control extension. It will show the input's control when there is no connection and hide it when there is a connection."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "connectioncreated"
+											}
+										]
+									},
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "connectionremoved"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/extensions/show-input-control.ts",
+									"line": 15,
+									"character": 0,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/show-input-control.ts#L15"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 369,
+									"name": "S",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/extensions/show-input-control.ts",
+											"qualifiedName": "Scheme"
+										},
+										"name": "Scheme",
+										"package": "rete-area-plugin"
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 370,
+									"name": "area",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The base area plugin"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 207,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											},
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
+										"name": "BaseAreaPlugin",
+										"package": "rete-area-plugin"
+									}
+								},
+								{
+									"id": 371,
+									"name": "visible",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The visible function"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/extensions/show-input-control.ts",
+											"qualifiedName": "Visible"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "S",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "Visible",
+										"package": "rete-area-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 289,
+					"name": "simpleNodesOrder",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/extensions/order.ts",
+							"line": 11,
+							"character": 16,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/order.ts#L11"
+						}
+					],
+					"signatures": [
+						{
+							"id": 290,
+							"name": "simpleNodesOrder",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Simple nodes order extension"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "nodepicked"
+											}
+										]
+									},
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "connectioncreated"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/extensions/order.ts",
+									"line": 11,
+									"character": 0,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/order.ts#L11"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 291,
+									"name": "Schemes",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/src/types.ts",
+											"qualifiedName": "BaseSchemes"
+										},
+										"name": "BaseSchemes",
+										"package": "rete"
+									}
+								},
+								{
+									"id": 292,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 293,
+									"name": "base",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The base area plugin"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 207,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "T",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "BaseAreaPlugin",
+										"package": "rete-area-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 376,
+					"name": "snapGrid",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/extensions/snap.ts",
+							"line": 22,
+							"character": 16,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/snap.ts#L22"
+						}
+					],
+					"signatures": [
+						{
+							"id": 377,
+							"name": "snapGrid",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Snap grid extension"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "nodetranslate"
+											}
+										]
+									},
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "nodedragged"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/extensions/snap.ts",
+									"line": 22,
+									"character": 0,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/snap.ts#L22"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 378,
+									"name": "Schemes",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/src/types.ts",
+											"qualifiedName": "BaseSchemes"
+										},
+										"name": "BaseSchemes",
+										"package": "rete"
+									}
+								},
+								{
+									"id": 379,
+									"name": "K",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 380,
+									"name": "base",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The base area plugin"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 207,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "BaseAreaPlugin",
+										"package": "rete-area-plugin"
+									}
+								},
+								{
+									"id": 381,
+									"name": "params",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The snap parameters"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 372,
+										"name": "Params",
+										"package": "rete-area-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 385,
+					"name": "zoomAt",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/extensions/zoom-at.ts",
+							"line": 23,
+							"character": 22,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/zoom-at.ts#L23"
+						}
+					],
+					"signatures": [
+						{
+							"id": 386,
+							"name": "zoomAt",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Zooms the area to fit the given nodes"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/extensions/zoom-at.ts",
+									"line": 23,
+									"character": 0,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/zoom-at.ts#L23"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 387,
+									"name": "Schemes",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/extensions/shared/types.ts",
+											"qualifiedName": "SchemesWithSizes"
+										},
+										"name": "SchemesWithSizes",
+										"package": "rete-area-plugin"
+									}
+								},
+								{
+									"id": 388,
+									"name": "K",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 389,
+									"name": "plugin",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The area plugin"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 23,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "AreaPlugin",
+										"package": "rete-area-plugin"
+									}
+								},
+								{
+									"id": 390,
+									"name": "nodes",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The nodes to fit"
+											}
+										]
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"target": {
+												"sourceFileName": "src/extensions/shared/types.ts",
+												"qualifiedName": "NodeRef"
+											},
+											"typeArguments": [
+												{
+													"type": "reference",
+													"target": -1,
+													"name": "Schemes",
+													"refersToTypeParameter": true
+												}
+											],
+											"name": "NodeRef",
+											"package": "rete-area-plugin"
+										}
+									}
+								},
+								{
+									"id": 391,
+									"name": "params",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The zoom parameters"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 382,
+										"name": "Params",
+										"package": "rete-area-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"children": [
+						333
+					]
+				},
+				{
+					"title": "Type Aliases",
+					"children": [
+						294,
+						372,
+						382
+					]
+				},
+				{
+					"title": "Functions",
+					"children": [
+						308,
+						272,
+						302,
+						315,
+						364,
+						367,
+						289,
+						376,
+						385
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/extensions/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 23,
+			"name": "AreaPlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "A plugin that provides a 2D area for nodes and connections"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "8"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "nodecreated"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "noderemoved"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "connectioncreated"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "connectionremoved"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "render"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "unmount"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 74,
+					"name": "destroy",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 203,
+							"character": 9,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L203"
+						}
+					],
+					"signatures": [
+						{
+							"id": 75,
+							"name": "destroy",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Destroy all views and remove all event listeners"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 203,
+									"character": 2,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L203"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"overwrites": {
+								"type": "reference",
+								"target": -1,
+								"name": "BaseAreaPlugin.destroy"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"target": -1,
+						"name": "BaseAreaPlugin.destroy"
+					}
+				},
+				{
+					"id": 65,
+					"name": "resize",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 183,
+							"character": 15,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L183"
+						}
+					],
+					"signatures": [
+						{
+							"id": 66,
+							"name": "resize",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Resize node"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 183,
+									"character": 2,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L183"
+								}
+							],
+							"parameters": [
+								{
+									"id": 67,
+									"name": "id",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Node id"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 68,
+									"name": "width",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Desired width"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 69,
+									"name": "height",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Desired height"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										]
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							},
+							"overwrites": {
+								"type": "reference",
+								"target": -1,
+								"name": "BaseAreaPlugin.resize"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"target": -1,
+						"name": "BaseAreaPlugin.resize"
+					}
+				},
+				{
+					"id": 70,
+					"name": "translate",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 194,
+							"character": 15,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L194"
+						}
+					],
+					"signatures": [
+						{
+							"id": 71,
+							"name": "translate",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Translate node to position"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 194,
+									"character": 2,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L194"
+								}
+							],
+							"parameters": [
+								{
+									"id": 72,
+									"name": "id",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Node id"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 73,
+									"name": "position",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Position"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/types.ts",
+											"qualifiedName": "Position"
+										},
+										"name": "Position",
+										"package": "rete-area-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										]
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							},
+							"overwrites": {
+								"type": "reference",
+								"target": -1,
+								"name": "BaseAreaPlugin.translate"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"target": -1,
+						"name": "BaseAreaPlugin.translate"
+					}
+				},
+				{
+					"id": 61,
+					"name": "update",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 171,
+							"character": 15,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L171"
+						}
+					],
+					"signatures": [
+						{
+							"id": 62,
+							"name": "update",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Force update rendered element by id (node, connection, etc.)"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@emits",
+										"content": [
+											{
+												"kind": "text",
+												"text": "render"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 171,
+									"character": 2,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L171"
+								}
+							],
+							"parameters": [
+								{
+									"id": 63,
+									"name": "type",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Element type"
+											}
+										]
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "literal",
+												"value": "node"
+											},
+											{
+												"type": "literal",
+												"value": "connection"
+											},
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "GetRenderTypes"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "ExtraSignals",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "GetRenderTypes",
+												"package": "rete-area-plugin"
+											}
+										]
+									}
+								},
+								{
+									"id": 64,
+									"name": "id",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Element id"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							},
+							"overwrites": {
+								"type": "reference",
+								"target": -1,
+								"name": "BaseAreaPlugin.update"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"target": -1,
+						"name": "BaseAreaPlugin.update"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"children": [
+						74,
+						65,
+						70,
+						61
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 45,
+					"character": 13,
+					"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L45"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 76,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				},
+				{
+					"id": 77,
+					"name": "ExtraSignals",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"default": {
+						"type": "intrinsic",
+						"name": "never"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": 207,
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": -1,
+							"name": "Schemes",
+							"refersToTypeParameter": true
+						},
+						{
+							"type": "union",
+							"types": [
+								{
+									"type": "reference",
+									"target": 1,
+									"typeArguments": [
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "Schemes",
+											"refersToTypeParameter": true
+										}
+									],
+									"name": "Area2D",
+									"package": "rete-area-plugin"
+								},
+								{
+									"type": "reference",
+									"target": -1,
+									"name": "ExtraSignals",
+									"refersToTypeParameter": true
+								}
+							]
+						}
+					],
+					"name": "BaseAreaPlugin",
+					"package": "rete-area-plugin"
+				}
+			]
+		},
+		{
+			"id": 207,
+			"name": "BaseAreaPlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {
+				"isAbstract": true
+			},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Base abstract class for area plugins that provides a common interface"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@abstract",
+						"content": []
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/base.ts",
+					"line": 54,
+					"character": 22,
+					"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L54"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 243,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				},
+				{
+					"id": 244,
+					"name": "Signals",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/src/scope.ts",
+						"qualifiedName": "Scope"
+					},
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": -1,
+							"name": "Signals",
+							"refersToTypeParameter": true
+						},
+						{
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "reference",
+									"target": {
+										"sourceFileName": "node_modules/src/editor.ts",
+										"qualifiedName": "Root"
+									},
+									"typeArguments": [
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "Schemes",
+											"refersToTypeParameter": true
+										}
+									],
+									"name": "Root",
+									"package": "rete"
+								}
+							]
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			],
+			"extendedBy": [
+				{
+					"type": "reference",
+					"target": 23,
+					"name": "AreaPlugin"
+				}
+			]
+		},
+		{
+			"id": 245,
+			"name": "Drag",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Drag handler, used to handle dragging of the area and nodes. Can be extended to add custom behavior."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/drag.ts",
+					"line": 23,
+					"character": 13,
+					"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/drag.ts#L23"
+				}
+			]
+		},
+		{
+			"id": 442,
+			"name": "Zoom",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Zoom class, used to handle zooming of the area. Can be extended to add custom behavior."
+					}
+				],
+				"modifierTags": [
+					"@internal"
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/zoom.ts",
+					"line": 12,
+					"character": 13,
+					"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/zoom.ts#L12"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "Area2D",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "A union of all possible signals that can be emitted by the area"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "9"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 25,
+					"character": 12,
+					"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L25"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 19,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"target": 137,
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": -1,
+								"name": "Schemes",
+								"refersToTypeParameter": true
+							}
+						],
+						"name": "BaseArea",
+						"package": "rete-area-plugin"
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 2,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 4,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 27,
+											"character": 25,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L27"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/area.ts",
+											"qualifiedName": "TranslateEventParams"
+										},
+										"name": "TranslateEventParams",
+										"package": "rete-area-plugin"
+									}
+								},
+								{
+									"id": 3,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 27,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L27"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "translate"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										4,
+										3
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 27,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L27"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 5,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 7,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 28,
+											"character": 26,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L28"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/area.ts",
+											"qualifiedName": "TranslateEventParams"
+										},
+										"name": "TranslateEventParams",
+										"package": "rete-area-plugin"
+									}
+								},
+								{
+									"id": 6,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 28,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L28"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "translated"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										7,
+										6
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 28,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L28"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 8,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 10,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 29,
+											"character": 20,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L29"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/area.ts",
+											"qualifiedName": "ZoomEventParams"
+										},
+										"name": "ZoomEventParams",
+										"package": "rete-area-plugin"
+									}
+								},
+								{
+									"id": 9,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 29,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L29"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "zoom"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										10,
+										9
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 29,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L29"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 11,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 13,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 30,
+											"character": 22,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L30"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/area.ts",
+											"qualifiedName": "ZoomEventParams"
+										},
+										"name": "ZoomEventParams",
+										"package": "rete-area-plugin"
+									}
+								},
+								{
+									"id": 12,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 30,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L30"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "zoomed"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										13,
+										12
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 30,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L30"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 14,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 16,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 31,
+											"character": 23,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L31"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 17,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 18,
+													"name": "event",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/index.ts",
+															"line": 31,
+															"character": 31,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L31"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+															"qualifiedName": "Event"
+														},
+														"name": "Event",
+														"package": "typescript"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														18
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/index.ts",
+													"line": 31,
+													"character": 29,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L31"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 15,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 31,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L31"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "resized"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										16,
+										15
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 31,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L31"
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": 137,
+			"name": "BaseArea",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "A union of all possible signals that can be emitted by any area plugin"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "10"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/base.ts",
+					"line": 34,
+					"character": 12,
+					"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L34"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 206,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 138,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 140,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 35,
+											"character": 26,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L35"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 141,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 142,
+													"name": "id",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/base.ts",
+															"line": 35,
+															"character": 34,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L35"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														142
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/base.ts",
+													"line": 35,
+													"character": 32,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L35"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 139,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 35,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L35"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "nodepicked"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										140,
+										139
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/base.ts",
+									"line": 35,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L35"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 143,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 145,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 36,
+											"character": 27,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L36"
+										}
+									],
+									"type": {
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "Node"
+										},
+										"objectType": {
+											"type": "reference",
+											"target": -1,
+											"name": "Schemes",
+											"refersToTypeParameter": true
+										}
+									}
+								},
+								{
+									"id": 144,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 36,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L36"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "nodedragged"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										145,
+										144
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/base.ts",
+									"line": 36,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L36"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 146,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 148,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 37,
+											"character": 29,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L37"
+										}
+									],
+									"type": {
+										"type": "intersection",
+										"types": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 149,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 150,
+															"name": "id",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "src/base.ts",
+																	"line": 37,
+																	"character": 37,
+																	"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L37"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																150
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/base.ts",
+															"line": 37,
+															"character": 35,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L37"
+														}
+													]
+												}
+											},
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/node-view.ts",
+													"qualifiedName": "NodeTranslateEventParams"
+												},
+												"name": "NodeTranslateEventParams",
+												"package": "rete-area-plugin"
+											}
+										]
+									}
+								},
+								{
+									"id": 147,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 37,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L37"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "nodetranslate"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										148,
+										147
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/base.ts",
+									"line": 37,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L37"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 151,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 153,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 38,
+											"character": 30,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L38"
+										}
+									],
+									"type": {
+										"type": "intersection",
+										"types": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 154,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 155,
+															"name": "id",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "src/base.ts",
+																	"line": 38,
+																	"character": 38,
+																	"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L38"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																155
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/base.ts",
+															"line": 38,
+															"character": 36,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L38"
+														}
+													]
+												}
+											},
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/node-view.ts",
+													"qualifiedName": "NodeTranslateEventParams"
+												},
+												"name": "NodeTranslateEventParams",
+												"package": "rete-area-plugin"
+											}
+										]
+									}
+								},
+								{
+									"id": 152,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 38,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L38"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "nodetranslated"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										153,
+										152
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/base.ts",
+									"line": 38,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L38"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 156,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 158,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 39,
+											"character": 27,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L39"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 159,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 161,
+													"name": "context",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/base.ts",
+															"line": 39,
+															"character": 54,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L39"
+														}
+													],
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "literal",
+																"value": "root"
+															},
+															{
+																"type": "indexedAccess",
+																"indexType": {
+																	"type": "literal",
+																	"value": "Node"
+																},
+																"objectType": {
+																	"type": "reference",
+																	"target": -1,
+																	"name": "Schemes",
+																	"refersToTypeParameter": true
+																}
+															},
+															{
+																"type": "indexedAccess",
+																"indexType": {
+																	"type": "literal",
+																	"value": "Connection"
+																},
+																"objectType": {
+																	"type": "reference",
+																	"target": -1,
+																	"name": "Schemes",
+																	"refersToTypeParameter": true
+																}
+															}
+														]
+													}
+												},
+												{
+													"id": 160,
+													"name": "event",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/base.ts",
+															"line": 39,
+															"character": 35,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L39"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+															"qualifiedName": "MouseEvent"
+														},
+														"name": "MouseEvent",
+														"package": "typescript"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														161,
+														160
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/base.ts",
+													"line": 39,
+													"character": 33,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L39"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 157,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 39,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L39"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "contextmenu"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										158,
+										157
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/base.ts",
+									"line": 39,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L39"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 162,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 164,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 40,
+											"character": 27,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L40"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 165,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 167,
+													"name": "event",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/base.ts",
+															"line": 40,
+															"character": 55,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L40"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+															"qualifiedName": "PointerEvent"
+														},
+														"name": "PointerEvent",
+														"package": "typescript"
+													}
+												},
+												{
+													"id": 166,
+													"name": "position",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/base.ts",
+															"line": 40,
+															"character": 35,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L40"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/types.ts",
+															"qualifiedName": "Position"
+														},
+														"name": "Position",
+														"package": "rete-area-plugin"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														167,
+														166
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/base.ts",
+													"line": 40,
+													"character": 33,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L40"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 163,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 40,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L40"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "pointerdown"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										164,
+										163
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/base.ts",
+									"line": 40,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L40"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 168,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 170,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 41,
+											"character": 27,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L41"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 171,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 173,
+													"name": "event",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/base.ts",
+															"line": 41,
+															"character": 55,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L41"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+															"qualifiedName": "PointerEvent"
+														},
+														"name": "PointerEvent",
+														"package": "typescript"
+													}
+												},
+												{
+													"id": 172,
+													"name": "position",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/base.ts",
+															"line": 41,
+															"character": 35,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L41"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/types.ts",
+															"qualifiedName": "Position"
+														},
+														"name": "Position",
+														"package": "rete-area-plugin"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														173,
+														172
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/base.ts",
+													"line": 41,
+													"character": 33,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L41"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 169,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 41,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L41"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "pointermove"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										170,
+										169
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/base.ts",
+									"line": 41,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L41"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 174,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 176,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 42,
+											"character": 25,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L42"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 177,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 179,
+													"name": "event",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/base.ts",
+															"line": 42,
+															"character": 53,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L42"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+															"qualifiedName": "PointerEvent"
+														},
+														"name": "PointerEvent",
+														"package": "typescript"
+													}
+												},
+												{
+													"id": 178,
+													"name": "position",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/base.ts",
+															"line": 42,
+															"character": 33,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L42"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/types.ts",
+															"qualifiedName": "Position"
+														},
+														"name": "Position",
+														"package": "rete-area-plugin"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														179,
+														178
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/base.ts",
+													"line": 42,
+													"character": 31,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L42"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 175,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 42,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L42"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "pointerup"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										176,
+										175
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/base.ts",
+									"line": 42,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L42"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 180,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 182,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 43,
+											"character": 26,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L43"
+										}
+									],
+									"type": {
+										"type": "intersection",
+										"types": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 183,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 184,
+															"name": "id",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "src/base.ts",
+																	"line": 43,
+																	"character": 34,
+																	"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L43"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																184
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/base.ts",
+															"line": 43,
+															"character": 32,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L43"
+														}
+													]
+												}
+											},
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/node-view.ts",
+													"qualifiedName": "NodeResizeEventParams"
+												},
+												"name": "NodeResizeEventParams",
+												"package": "rete-area-plugin"
+											}
+										]
+									}
+								},
+								{
+									"id": 181,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 43,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L43"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "noderesize"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										182,
+										181
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/base.ts",
+									"line": 43,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L43"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 185,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 187,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 44,
+											"character": 27,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L44"
+										}
+									],
+									"type": {
+										"type": "intersection",
+										"types": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 188,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 189,
+															"name": "id",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "src/base.ts",
+																	"line": 44,
+																	"character": 35,
+																	"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L44"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "string"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																189
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/base.ts",
+															"line": 44,
+															"character": 33,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L44"
+														}
+													]
+												}
+											},
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/node-view.ts",
+													"qualifiedName": "NodeResizeEventParams"
+												},
+												"name": "NodeResizeEventParams",
+												"package": "rete-area-plugin"
+											}
+										]
+									}
+								},
+								{
+									"id": 186,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 44,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L44"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "noderesized"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										187,
+										186
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/base.ts",
+									"line": 44,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L44"
+								}
+							]
+						}
+					},
+					{
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/types.ts",
+							"qualifiedName": "RenderSignal"
+						},
+						"typeArguments": [
+							{
+								"type": "literal",
+								"value": "node"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 190,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 191,
+											"name": "payload",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/base.ts",
+													"line": 45,
+													"character": 27,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L45"
+												}
+											],
+											"type": {
+												"type": "indexedAccess",
+												"indexType": {
+													"type": "literal",
+													"value": "Node"
+												},
+												"objectType": {
+													"type": "reference",
+													"target": -1,
+													"name": "Schemes",
+													"refersToTypeParameter": true
+												}
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												191
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 45,
+											"character": 25,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L45"
+										}
+									]
+								}
+							}
+						],
+						"name": "RenderSignal",
+						"package": "rete-area-plugin"
+					},
+					{
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/types.ts",
+							"qualifiedName": "RenderSignal"
+						},
+						"typeArguments": [
+							{
+								"type": "literal",
+								"value": "connection"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 192,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 195,
+											"name": "end",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"sources": [
+												{
+													"fileName": "src/base.ts",
+													"line": 46,
+													"character": 83,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L46"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "Position"
+												},
+												"name": "Position",
+												"package": "rete-area-plugin"
+											}
+										},
+										{
+											"id": 193,
+											"name": "payload",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/base.ts",
+													"line": 46,
+													"character": 33,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L46"
+												}
+											],
+											"type": {
+												"type": "indexedAccess",
+												"indexType": {
+													"type": "literal",
+													"value": "Connection"
+												},
+												"objectType": {
+													"type": "reference",
+													"target": -1,
+													"name": "Schemes",
+													"refersToTypeParameter": true
+												}
+											}
+										},
+										{
+											"id": 194,
+											"name": "start",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"sources": [
+												{
+													"fileName": "src/base.ts",
+													"line": 46,
+													"character": 65,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L46"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "Position"
+												},
+												"name": "Position",
+												"package": "rete-area-plugin"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												195,
+												193,
+												194
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 46,
+											"character": 31,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L46"
+										}
+									]
+								}
+							}
+						],
+						"name": "RenderSignal",
+						"package": "rete-area-plugin"
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 196,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 198,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 47,
+											"character": 23,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L47"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 199,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 200,
+													"name": "element",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/base.ts",
+															"line": 47,
+															"character": 31,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L47"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+															"qualifiedName": "HTMLElement"
+														},
+														"name": "HTMLElement",
+														"package": "typescript"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														200
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/base.ts",
+													"line": 47,
+													"character": 29,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L47"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 197,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 47,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L47"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "unmount"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										198,
+										197
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/base.ts",
+									"line": 47,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L47"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 201,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 203,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 48,
+											"character": 25,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L48"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 204,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 205,
+													"name": "element",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/base.ts",
+															"line": 48,
+															"character": 33,
+															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L48"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+															"qualifiedName": "HTMLElement"
+														},
+														"name": "HTMLElement",
+														"package": "typescript"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														205
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/base.ts",
+													"line": 48,
+													"character": 31,
+													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L48"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 202,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/base.ts",
+											"line": 48,
+											"character": 6,
+											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L48"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "reordered"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										203,
+										202
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/base.ts",
+									"line": 48,
+									"character": 4,
+									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L48"
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": 438,
+			"name": "usePointerListener",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/utils.ts",
+					"line": 16,
+					"character": 16,
+					"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L16"
+				}
+			],
+			"signatures": [
+				{
+					"id": 439,
+					"name": "usePointerListener",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "listen to pointerdown, window's pointermove and pointerup events,\nwhere last two not active before pointerdown triggered for performance reasons"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/utils.ts",
+							"line": 16,
+							"character": 0,
+							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L16"
+						}
+					],
+					"parameters": [
+						{
+							"id": 440,
+							"name": "element",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+									"qualifiedName": "HTMLElement"
+								},
+								"name": "HTMLElement",
+								"package": "typescript"
+							}
+						},
+						{
+							"id": 441,
+							"name": "handlers",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "src/utils.ts",
+									"qualifiedName": "PointerListenerHandlers"
+								},
+								"name": "PointerListenerHandlers",
+								"package": "rete-area-plugin"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/utils.ts",
+							"qualifiedName": "PointerListener"
+						},
+						"name": "PointerListener",
+						"package": "rete-area-plugin"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"children": [
+				271
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				23,
+				207,
+				245,
+				442
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				1,
+				137
+			]
+		},
+		{
+			"title": "Functions",
+			"children": [
+				438
+			]
+		}
+	],
+	"packageName": "rete-area-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js Area plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Zooming**: allows users to zoom in and out on the content of the graph\n- **Dragging**: enables users to move nodes or elements of the graph\n- **Extensions**:\n  - **selectable**: allows users to select nodes or elements of the graph\n  - **snap**: snaps nodes or elements of the graph to a grid or other predetermined alignment\n  - **restrictor**: limits a zooming and dragging of area\n  - **order**: brings selected nodes forward\n  - **zoom at**: focuses viewport on specific nodes of the graph\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/basic) and [example](https://retejs.org/examples) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/area-plugin/blob/master/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Area2D"
+		},
+		"2": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"3": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"4": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"5": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"6": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"7": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"8": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"9": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"10": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"11": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"12": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"13": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"14": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"15": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"16": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"17": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"18": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.event"
+		},
+		"19": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"23": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AreaPlugin"
+		},
+		"61": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AreaPlugin.update"
+		},
+		"62": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AreaPlugin.update"
+		},
+		"63": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "type"
+		},
+		"64": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "id"
+		},
+		"65": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AreaPlugin.resize"
+		},
+		"66": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AreaPlugin.resize"
+		},
+		"67": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "id"
+		},
+		"68": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "width"
+		},
+		"69": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "height"
+		},
+		"70": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AreaPlugin.translate"
+		},
+		"71": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AreaPlugin.translate"
+		},
+		"72": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "id"
+		},
+		"73": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__1"
+		},
+		"74": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AreaPlugin.destroy"
+		},
+		"75": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AreaPlugin.destroy"
+		},
+		"76": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AreaPlugin.Schemes"
+		},
+		"77": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AreaPlugin.ExtraSignals"
+		},
+		"137": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "BaseArea"
+		},
+		"138": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"139": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.type"
+		},
+		"140": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.data"
+		},
+		"141": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"142": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.id"
+		},
+		"143": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"144": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.type"
+		},
+		"145": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.data"
+		},
+		"146": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"147": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.type"
+		},
+		"148": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.data"
+		},
+		"149": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"150": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.id"
+		},
+		"151": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"152": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.type"
+		},
+		"153": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.data"
+		},
+		"154": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"155": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.id"
+		},
+		"156": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"157": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.type"
+		},
+		"158": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.data"
+		},
+		"159": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"160": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.event"
+		},
+		"161": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.context"
+		},
+		"162": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"163": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.type"
+		},
+		"164": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.data"
+		},
+		"165": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"166": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.position"
+		},
+		"167": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.event"
+		},
+		"168": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"169": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.type"
+		},
+		"170": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.data"
+		},
+		"171": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"172": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.position"
+		},
+		"173": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.event"
+		},
+		"174": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"175": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.type"
+		},
+		"176": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.data"
+		},
+		"177": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"178": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.position"
+		},
+		"179": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.event"
+		},
+		"180": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"181": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.type"
+		},
+		"182": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.data"
+		},
+		"183": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"184": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.id"
+		},
+		"185": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"186": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.type"
+		},
+		"187": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.data"
+		},
+		"188": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"189": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.id"
+		},
+		"190": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"191": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.payload"
+		},
+		"192": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"193": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.payload"
+		},
+		"194": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.start"
+		},
+		"195": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.end"
+		},
+		"196": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"197": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.type"
+		},
+		"198": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.data"
+		},
+		"199": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"200": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.element"
+		},
+		"201": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"202": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.type"
+		},
+		"203": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.data"
+		},
+		"204": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type"
+		},
+		"205": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "__type.element"
+		},
+		"206": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "Schemes"
+		},
+		"207": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "BaseAreaPlugin"
+		},
+		"243": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "BaseAreaPlugin.Schemes"
+		},
+		"244": {
+			"sourceFileName": "src/base.ts",
+			"qualifiedName": "BaseAreaPlugin.Signals"
+		},
+		"245": {
+			"sourceFileName": "src/drag.ts",
+			"qualifiedName": "Drag"
+		},
+		"271": {
+			"sourceFileName": "src/extensions/index.ts",
+			"qualifiedName": ""
+		},
+		"272": {
+			"sourceFileName": "src/extensions/bounding-box.ts",
+			"qualifiedName": "getBoundingBox"
+		},
+		"273": {
+			"sourceFileName": "src/extensions/bounding-box.ts",
+			"qualifiedName": "getBoundingBox"
+		},
+		"274": {
+			"sourceFileName": "src/extensions/bounding-box.ts",
+			"qualifiedName": "Schemes"
+		},
+		"275": {
+			"sourceFileName": "src/extensions/bounding-box.ts",
+			"qualifiedName": "K"
+		},
+		"276": {
+			"sourceFileName": "src/extensions/bounding-box.ts",
+			"qualifiedName": "plugin"
+		},
+		"277": {
+			"sourceFileName": "src/extensions/bounding-box.ts",
+			"qualifiedName": "nodes"
+		},
+		"278": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__object"
+		},
+		"279": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__object.left"
+		},
+		"280": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__object.right"
+		},
+		"281": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__object.top"
+		},
+		"282": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__object.bottom"
+		},
+		"283": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__object.width"
+		},
+		"284": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__object.height"
+		},
+		"285": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__object.center"
+		},
+		"286": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__object"
+		},
+		"287": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__object.x"
+		},
+		"288": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__object.y"
+		},
+		"289": {
+			"sourceFileName": "src/extensions/order.ts",
+			"qualifiedName": "simpleNodesOrder"
+		},
+		"290": {
+			"sourceFileName": "src/extensions/order.ts",
+			"qualifiedName": "simpleNodesOrder"
+		},
+		"291": {
+			"sourceFileName": "src/extensions/order.ts",
+			"qualifiedName": "Schemes"
+		},
+		"292": {
+			"sourceFileName": "src/extensions/order.ts",
+			"qualifiedName": "T"
+		},
+		"293": {
+			"sourceFileName": "src/extensions/order.ts",
+			"qualifiedName": "base"
+		},
+		"294": {
+			"sourceFileName": "src/extensions/restrictor.ts",
+			"qualifiedName": "Params"
+		},
+		"295": {
+			"sourceFileName": "src/extensions/restrictor.ts",
+			"qualifiedName": "__type"
+		},
+		"296": {
+			"sourceFileName": "src/extensions/restrictor.ts",
+			"qualifiedName": "__type.scaling"
+		},
+		"297": {
+			"sourceFileName": "src/extensions/restrictor.ts",
+			"qualifiedName": "__type"
+		},
+		"298": {
+			"sourceFileName": "src/extensions/restrictor.ts",
+			"qualifiedName": "__type"
+		},
+		"299": {
+			"sourceFileName": "src/extensions/restrictor.ts",
+			"qualifiedName": "__type.translation"
+		},
+		"300": {
+			"sourceFileName": "src/extensions/restrictor.ts",
+			"qualifiedName": "__type"
+		},
+		"301": {
+			"sourceFileName": "src/extensions/restrictor.ts",
+			"qualifiedName": "__type"
+		},
+		"302": {
+			"sourceFileName": "src/extensions/restrictor.ts",
+			"qualifiedName": "restrictor"
+		},
+		"303": {
+			"sourceFileName": "src/extensions/restrictor.ts",
+			"qualifiedName": "restrictor"
+		},
+		"304": {
+			"sourceFileName": "src/extensions/restrictor.ts",
+			"qualifiedName": "Schemes"
+		},
+		"305": {
+			"sourceFileName": "src/extensions/restrictor.ts",
+			"qualifiedName": "K"
+		},
+		"306": {
+			"sourceFileName": "src/extensions/restrictor.ts",
+			"qualifiedName": "plugin"
+		},
+		"307": {
+			"sourceFileName": "src/extensions/restrictor.ts",
+			"qualifiedName": "params"
+		},
+		"308": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "accumulateOnCtrl"
+		},
+		"309": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "accumulateOnCtrl"
+		},
+		"310": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "__object"
+		},
+		"311": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "__object.active"
+		},
+		"312": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "__object.active"
+		},
+		"313": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "__object.destroy"
+		},
+		"314": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "__object.destroy"
+		},
+		"315": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "selectableNodes"
+		},
+		"316": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "selectableNodes"
+		},
+		"317": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "T"
+		},
+		"318": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "base"
+		},
+		"319": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "core"
+		},
+		"320": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "options"
+		},
+		"321": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "__type"
+		},
+		"322": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "__type.accumulating"
+		},
+		"323": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "__object"
+		},
+		"324": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "__object.select"
+		},
+		"325": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "add"
+		},
+		"326": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "add"
+		},
+		"327": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "nodeId"
+		},
+		"328": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "accumulate"
+		},
+		"329": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "__object.unselect"
+		},
+		"330": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "remove"
+		},
+		"331": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "remove"
+		},
+		"332": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "nodeId"
+		},
+		"333": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "Selector"
+		},
+		"363": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "Selector.E"
+		},
+		"364": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "selector"
+		},
+		"365": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "selector"
+		},
+		"366": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "E"
+		},
+		"367": {
+			"sourceFileName": "src/extensions/show-input-control.ts",
+			"qualifiedName": "showInputControl"
+		},
+		"368": {
+			"sourceFileName": "src/extensions/show-input-control.ts",
+			"qualifiedName": "showInputControl"
+		},
+		"369": {
+			"sourceFileName": "src/extensions/show-input-control.ts",
+			"qualifiedName": "S"
+		},
+		"370": {
+			"sourceFileName": "src/extensions/show-input-control.ts",
+			"qualifiedName": "area"
+		},
+		"371": {
+			"sourceFileName": "src/extensions/show-input-control.ts",
+			"qualifiedName": "visible"
+		},
+		"372": {
+			"sourceFileName": "src/extensions/snap.ts",
+			"qualifiedName": "Params"
+		},
+		"373": {
+			"sourceFileName": "src/extensions/snap.ts",
+			"qualifiedName": "__type"
+		},
+		"374": {
+			"sourceFileName": "src/extensions/snap.ts",
+			"qualifiedName": "__type.size"
+		},
+		"375": {
+			"sourceFileName": "src/extensions/snap.ts",
+			"qualifiedName": "__type.dynamic"
+		},
+		"376": {
+			"sourceFileName": "src/extensions/snap.ts",
+			"qualifiedName": "snapGrid"
+		},
+		"377": {
+			"sourceFileName": "src/extensions/snap.ts",
+			"qualifiedName": "snapGrid"
+		},
+		"378": {
+			"sourceFileName": "src/extensions/snap.ts",
+			"qualifiedName": "Schemes"
+		},
+		"379": {
+			"sourceFileName": "src/extensions/snap.ts",
+			"qualifiedName": "K"
+		},
+		"380": {
+			"sourceFileName": "src/extensions/snap.ts",
+			"qualifiedName": "base"
+		},
+		"381": {
+			"sourceFileName": "src/extensions/snap.ts",
+			"qualifiedName": "params"
+		},
+		"382": {
+			"sourceFileName": "src/extensions/zoom-at.ts",
+			"qualifiedName": "Params"
+		},
+		"383": {
+			"sourceFileName": "src/extensions/zoom-at.ts",
+			"qualifiedName": "__type"
+		},
+		"384": {
+			"sourceFileName": "src/extensions/zoom-at.ts",
+			"qualifiedName": "__type.scale"
+		},
+		"385": {
+			"sourceFileName": "src/extensions/zoom-at.ts",
+			"qualifiedName": "zoomAt"
+		},
+		"386": {
+			"sourceFileName": "src/extensions/zoom-at.ts",
+			"qualifiedName": "zoomAt"
+		},
+		"387": {
+			"sourceFileName": "src/extensions/zoom-at.ts",
+			"qualifiedName": "Schemes"
+		},
+		"388": {
+			"sourceFileName": "src/extensions/zoom-at.ts",
+			"qualifiedName": "K"
+		},
+		"389": {
+			"sourceFileName": "src/extensions/zoom-at.ts",
+			"qualifiedName": "plugin"
+		},
+		"390": {
+			"sourceFileName": "src/extensions/zoom-at.ts",
+			"qualifiedName": "nodes"
+		},
+		"391": {
+			"sourceFileName": "src/extensions/zoom-at.ts",
+			"qualifiedName": "params"
+		},
+		"438": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "usePointerListener"
+		},
+		"439": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "usePointerListener"
+		},
+		"440": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "element"
+		},
+		"441": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "handlers"
+		},
+		"442": {
+			"sourceFileName": "src/zoom.ts",
+			"qualifiedName": "Zoom"
+		}
+	}
+}
