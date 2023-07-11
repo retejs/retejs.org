@@ -1,10 +1,12 @@
 /// <reference types="nuxt" />
 import { isCI, isDevelopment } from 'std-env';
+import TypeDoc from './typedoc/index.mjs';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   ssr: true,
   modules: [
+    TypeDoc,
     '@nuxt/content',
     '@nuxtjs/i18n',
     'nuxt-purgecss',
