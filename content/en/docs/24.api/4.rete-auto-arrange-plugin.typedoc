@@ -1,0 +1,1625 @@
+{
+	"id": 0,
+	"name": "rete-auto-arrange-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 83,
+			"name": "ArrangeAppliers",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"children": [
+				{
+					"id": 102,
+					"name": "StandardApplier",
+					"variant": "declaration",
+					"kind": 128,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Standard applier. Applies the layout to the nodes and their children immediately"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "appliers/list/standard.ts",
+							"line": 10,
+							"character": 13,
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/standard.ts#L10"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 136,
+							"name": "S",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "src/types.ts",
+									"qualifiedName": "ExpectedSchemes"
+								},
+								"name": "ExpectedSchemes",
+								"package": "rete-auto-arrange-plugin"
+							}
+						},
+						{
+							"id": 137,
+							"name": "K",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {}
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"target": {
+								"sourceFileName": "src/appliers/applier.ts",
+								"qualifiedName": "Applier"
+							},
+							"typeArguments": [
+								{
+									"type": "reference",
+									"target": -1,
+									"name": "S",
+									"refersToTypeParameter": true
+								},
+								{
+									"type": "reference",
+									"target": -1,
+									"name": "K",
+									"refersToTypeParameter": true
+								}
+							],
+							"name": "Applier",
+							"package": "rete-auto-arrange-plugin"
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"target": 138,
+							"name": "TransitionApplier"
+						}
+					]
+				},
+				{
+					"id": 138,
+					"name": "TransitionApplier",
+					"variant": "declaration",
+					"kind": 128,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Transition applier. Applies the layout to the nodes and their children with transition"
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 139,
+							"name": "constructor",
+							"variant": "declaration",
+							"kind": 512,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "appliers/list/transition/index.ts",
+									"line": 33,
+									"character": 2,
+									"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L33"
+								}
+							],
+							"signatures": [
+								{
+									"id": 140,
+									"name": "new TransitionApplier",
+									"variant": "signature",
+									"kind": 16384,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "appliers/list/transition/index.ts",
+											"line": 33,
+											"character": 2,
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L33"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 141,
+											"name": "S",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "ExpectedSchemes"
+												},
+												"name": "ExpectedSchemes",
+												"package": "rete-auto-arrange-plugin"
+											}
+										},
+										{
+											"id": 142,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {}
+										}
+									],
+									"parameters": [
+										{
+											"id": 143,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Transition applier props"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"target": 192,
+												"name": "Props",
+												"package": "rete-auto-arrange-plugin"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": 138,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "S",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "TransitionApplier",
+										"package": "rete-auto-arrange-plugin"
+									},
+									"overwrites": {
+										"type": "reference",
+										"target": -1,
+										"name": "StandardApplier<S, K>.constructor"
+									}
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"target": -1,
+								"name": "StandardApplier<S, K>.constructor"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								139
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "appliers/list/transition/index.ts",
+							"line": 25,
+							"character": 13,
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L25"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 190,
+							"name": "S",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "src/types.ts",
+									"qualifiedName": "ExpectedSchemes"
+								},
+								"name": "ExpectedSchemes",
+								"package": "rete-auto-arrange-plugin"
+							}
+						},
+						{
+							"id": 191,
+							"name": "K",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {}
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"target": 102,
+							"typeArguments": [
+								{
+									"type": "reference",
+									"target": -1,
+									"name": "S",
+									"refersToTypeParameter": true
+								},
+								{
+									"type": "reference",
+									"target": -1,
+									"name": "K",
+									"refersToTypeParameter": true
+								}
+							],
+							"name": "StandardApplier",
+							"package": "rete-auto-arrange-plugin"
+						}
+					]
+				},
+				{
+					"id": 192,
+					"name": "TransitionApplierProps",
+					"variant": "declaration",
+					"kind": 4194304,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Transition applier props"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "appliers/list/transition/index.ts",
+							"line": 11,
+							"character": 12,
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L11"
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 193,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 194,
+									"name": "duration",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Transition duration"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "appliers/list/transition/index.ts",
+											"line": 13,
+											"character": 2,
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L13"
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 203,
+									"name": "needsLayout",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {
+										"isOptional": true
+									},
+									"sources": [
+										{
+											"fileName": "appliers/list/transition/index.ts",
+											"line": 19,
+											"character": 2,
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L19"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 204,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "appliers/list/transition/index.ts",
+													"line": 19,
+													"character": 16,
+													"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L19"
+												}
+											],
+											"signatures": [
+												{
+													"id": 205,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "Callback specifying whether the node needs to be laid out"
+															}
+														]
+													},
+													"parameters": [
+														{
+															"id": 206,
+															"name": "id",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "node_modules/src/types.ts",
+																	"qualifiedName": "NodeId"
+																},
+																"name": "NodeId",
+																"package": "rete"
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "boolean"
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 199,
+									"name": "onTick",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {
+										"isOptional": true
+									},
+									"sources": [
+										{
+											"fileName": "appliers/list/transition/index.ts",
+											"line": 17,
+											"character": 2,
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L17"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 200,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "appliers/list/transition/index.ts",
+													"line": 17,
+													"character": 11,
+													"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L17"
+												}
+											],
+											"signatures": [
+												{
+													"id": 201,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "Callback for each tick (frame) of the transition"
+															}
+														]
+													},
+													"parameters": [
+														{
+															"id": 202,
+															"name": "t",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 195,
+									"name": "timingFunction",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {
+										"isOptional": true
+									},
+									"sources": [
+										{
+											"fileName": "appliers/list/transition/index.ts",
+											"line": 15,
+											"character": 2,
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L15"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 196,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "appliers/list/transition/index.ts",
+													"line": 15,
+													"character": 19,
+													"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L15"
+												}
+											],
+											"signatures": [
+												{
+													"id": 197,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "Transition timing function. Default is linear"
+															}
+														]
+													},
+													"parameters": [
+														{
+															"id": 198,
+															"name": "t",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										194,
+										203,
+										199,
+										195
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "appliers/list/transition/index.ts",
+									"line": 11,
+									"character": 20,
+									"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L11"
+								}
+							]
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"children": [
+						102,
+						138
+					]
+				},
+				{
+					"title": "Type Aliases",
+					"children": [
+						192
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "appliers/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 207,
+			"name": "Presets",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Built-in presets. Responsible for node port positioning."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 208,
+					"name": "classic",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 209,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic/index.ts",
+									"line": 7,
+									"character": 13,
+									"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/presets/classic/index.ts#L7"
+								}
+							],
+							"signatures": [
+								{
+									"id": 210,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Classic preset. Input ports are positioned on the left bottom side of the node, output ports are positioned on the right top side of the node."
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@priority",
+												"content": [
+													{
+														"kind": "text",
+														"text": "7"
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/classic/index.ts",
+											"line": 7,
+											"character": 21,
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/presets/classic/index.ts#L7"
+										}
+									],
+									"parameters": [
+										{
+											"id": 211,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 212,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 215,
+															"name": "bottom",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"sources": [
+																{
+																	"fileName": "presets/classic/index.ts",
+																	"line": 7,
+																	"character": 64,
+																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/presets/classic/index.ts#L7"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														},
+														{
+															"id": 213,
+															"name": "spacing",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"sources": [
+																{
+																	"fileName": "presets/classic/index.ts",
+																	"line": 7,
+																	"character": 32,
+																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/presets/classic/index.ts#L7"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														},
+														{
+															"id": 214,
+															"name": "top",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"sources": [
+																{
+																	"fileName": "presets/classic/index.ts",
+																	"line": 7,
+																	"character": 50,
+																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/presets/classic/index.ts#L7"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																215,
+																213,
+																214
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "presets/classic/index.ts",
+															"line": 7,
+															"character": 30,
+															"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/presets/classic/index.ts#L7"
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "Preset"
+										},
+										"name": "Preset",
+										"package": "rete-auto-arrange-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								209
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/classic/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/presets/classic/index.ts#L1"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Namespaces",
+					"children": [
+						208
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "presets/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/presets/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "AutoArrangePlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Auto arrange plugin. Layouts the graph using "
+					},
+					{
+						"kind": "code",
+						"text": "`elk.js`"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "10"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 9,
+					"name": "addPreset",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 36,
+							"character": 9,
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L36"
+						}
+					],
+					"signatures": [
+						{
+							"id": 10,
+							"name": "addPreset",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a preset to the plugin, which will be used to layout the node ports and customize the layout options"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 36,
+									"character": 2,
+									"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L36"
+								}
+							],
+							"parameters": [
+								{
+									"id": 11,
+									"name": "preset",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset to add"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "Preset"
+										},
+										"name": "Preset",
+										"package": "rete-auto-arrange-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 53,
+					"name": "layout",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 180,
+							"character": 8,
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L180"
+						}
+					],
+					"signatures": [
+						{
+							"id": 54,
+							"name": "layout",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Method to layout the graph"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Debug information about the layout"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 180,
+									"character": 2,
+									"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L180"
+								}
+							],
+							"parameters": [
+								{
+									"id": 55,
+									"name": "props",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Options for the layout"
+											}
+										]
+									},
+									"type": {
+										"type": "intersection",
+										"types": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 56,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 58,
+															"name": "applier",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"comment": {
+																"summary": [
+																	{
+																		"kind": "text",
+																		"text": "Layout applier. Responsible for applying node positions to the graph"
+																	}
+																]
+															},
+															"sources": [
+																{
+																	"fileName": "index.ts",
+																	"line": 180,
+																	"character": 50,
+																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L180"
+																}
+															],
+															"type": {
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "src/appliers/applier.ts",
+																	"qualifiedName": "Applier"
+																},
+																"typeArguments": [
+																	{
+																		"type": "reference",
+																		"target": -1,
+																		"name": "Schemes",
+																		"refersToTypeParameter": true
+																	},
+																	{
+																		"type": "reference",
+																		"target": -1,
+																		"name": "T",
+																		"refersToTypeParameter": true
+																	}
+																],
+																"name": "Applier",
+																"package": "rete-auto-arrange-plugin"
+															}
+														},
+														{
+															"id": 57,
+															"name": "options",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"comment": {
+																"summary": [
+																	{
+																		"kind": "text",
+																		"text": "elk.js options for the layout"
+																	}
+																]
+															},
+															"sources": [
+																{
+																	"fileName": "index.ts",
+																	"line": 180,
+																	"character": 25,
+																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L180"
+																}
+															],
+															"type": {
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "node_modules/elkjs/lib/elk-api.d.ts",
+																	"qualifiedName": "LayoutOptions"
+																},
+																"name": "LayoutOptions",
+																"package": "elkjs"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																58,
+																57
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 180,
+															"character": 23,
+															"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L180"
+														}
+													]
+												}
+											},
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+													"qualifiedName": "Partial"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/index.ts",
+															"qualifiedName": "Context"
+														},
+														"typeArguments": [
+															{
+																"type": "reference",
+																"target": -1,
+																"name": "Schemes",
+																"refersToTypeParameter": true
+															}
+														],
+														"name": "Context",
+														"package": "rete-auto-arrange-plugin"
+													}
+												],
+												"name": "Partial",
+												"package": "typescript"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 59,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 60,
+													"name": "demonstration",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 209,
+															"character": 8,
+															"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L209"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													},
+													"defaultValue": "..."
+												},
+												{
+													"id": 62,
+													"name": "result",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 211,
+															"character": 8,
+															"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L211"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/elkjs/lib/elk-api.d.ts",
+															"qualifiedName": "ElkNode"
+														},
+														"name": "ElkNode",
+														"package": "elkjs"
+													}
+												},
+												{
+													"id": 61,
+													"name": "source",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 210,
+															"character": 8,
+															"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L210"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														60,
+														62,
+														61
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 208,
+													"character": 13,
+													"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L208"
+												}
+											]
+										}
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"children": [
+						9,
+						53
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 23,
+					"character": 13,
+					"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L23"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 63,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/types.ts",
+							"qualifiedName": "ExpectedSchemes"
+						},
+						"name": "ExpectedSchemes",
+						"package": "rete-auto-arrange-plugin"
+					}
+				},
+				{
+					"id": 64,
+					"name": "T",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"default": {
+						"type": "intrinsic",
+						"name": "never"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/src/scope.ts",
+						"qualifiedName": "Scope"
+					},
+					"typeArguments": [
+						{
+							"type": "intrinsic",
+							"name": "never"
+						},
+						{
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "union",
+									"types": [
+										{
+											"type": "reference",
+											"target": {
+												"sourceFileName": "node_modules/src/base.ts",
+												"qualifiedName": "BaseArea"
+											},
+											"typeArguments": [
+												{
+													"type": "reference",
+													"target": -1,
+													"name": "Schemes",
+													"refersToTypeParameter": true
+												}
+											],
+											"name": "BaseArea",
+											"package": "rete-area-plugin"
+										},
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "T",
+											"refersToTypeParameter": true
+										}
+									]
+								},
+								{
+									"type": "reference",
+									"target": {
+										"sourceFileName": "node_modules/src/editor.ts",
+										"qualifiedName": "Root"
+									},
+									"typeArguments": [
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "Schemes",
+											"refersToTypeParameter": true
+										}
+									],
+									"name": "Root",
+									"package": "rete"
+								}
+							]
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"children": [
+				83,
+				207
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				1
+			]
+		}
+	],
+	"packageName": "rete-auto-arrange-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js Auto arrange plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Arrange nodes**: allows automatic arrangement of nodes, powered by "
+		},
+		{
+			"kind": "code",
+			"text": "`elkjs`"
+		},
+		{
+			"kind": "text",
+			"text": "\n- **Customization**: modify the placement of nodes by adjusting "
+		},
+		{
+			"kind": "code",
+			"text": "`elkjs`"
+		},
+		{
+			"kind": "text",
+			"text": " options\n- **Nested nodes**: supports nodes with a "
+		},
+		{
+			"kind": "code",
+			"text": "`parent`"
+		},
+		{
+			"kind": "text",
+			"text": " field, like in [Scopes plugin](https://github.com/retejs/scopes-plugin)\n- **Presets**: predefined configuration for the ports placement\n  - **Classic**: provides a classic ports placement (left bottom and right top relative to the node)\n- **Appliers**: enhance the layout features\n  - **Standard**: immediate change of a node's position\n  - **Transition**: enables use of animation\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/arrange) and [example](https://retejs.org/examples/arrange) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/auto-arrange-plugin/blob/master/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AutoArrangePlugin"
+		},
+		"9": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AutoArrangePlugin.addPreset"
+		},
+		"10": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AutoArrangePlugin.addPreset"
+		},
+		"11": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "preset"
+		},
+		"53": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AutoArrangePlugin.layout"
+		},
+		"54": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AutoArrangePlugin.layout"
+		},
+		"55": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "props"
+		},
+		"56": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"57": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.options"
+		},
+		"58": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.applier"
+		},
+		"59": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__object"
+		},
+		"60": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__object.demonstration"
+		},
+		"61": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__object.source"
+		},
+		"62": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__object.result"
+		},
+		"63": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AutoArrangePlugin.Schemes"
+		},
+		"64": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AutoArrangePlugin.T"
+		},
+		"83": {
+			"sourceFileName": "src/appliers/index.ts",
+			"qualifiedName": ""
+		},
+		"102": {
+			"sourceFileName": "src/appliers/list/standard.ts",
+			"qualifiedName": "StandardApplier"
+		},
+		"136": {
+			"sourceFileName": "src/appliers/list/standard.ts",
+			"qualifiedName": "StandardApplier.S"
+		},
+		"137": {
+			"sourceFileName": "src/appliers/list/standard.ts",
+			"qualifiedName": "StandardApplier.K"
+		},
+		"138": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "TransitionApplier"
+		},
+		"139": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "TransitionApplier.__constructor"
+		},
+		"140": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "TransitionApplier"
+		},
+		"141": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "TransitionApplier.S"
+		},
+		"142": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "TransitionApplier.K"
+		},
+		"143": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "props"
+		},
+		"190": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "TransitionApplier.S"
+		},
+		"191": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "TransitionApplier.K"
+		},
+		"192": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "Props"
+		},
+		"193": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "__type"
+		},
+		"194": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "__type.duration"
+		},
+		"195": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "__type.timingFunction"
+		},
+		"196": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "__type"
+		},
+		"197": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "__type"
+		},
+		"198": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "t"
+		},
+		"199": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "__type.onTick"
+		},
+		"200": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "__type"
+		},
+		"201": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "__type"
+		},
+		"202": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "t"
+		},
+		"203": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "__type.needsLayout"
+		},
+		"204": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "__type"
+		},
+		"205": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "__type"
+		},
+		"206": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "id"
+		},
+		"207": {
+			"sourceFileName": "src/presets/index.ts",
+			"qualifiedName": ""
+		},
+		"208": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": ""
+		},
+		"209": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "setup"
+		},
+		"210": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "setup"
+		},
+		"211": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "props"
+		},
+		"212": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__type"
+		},
+		"213": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__type.spacing"
+		},
+		"214": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__type.top"
+		},
+		"215": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__type.bottom"
+		}
+	}
+}

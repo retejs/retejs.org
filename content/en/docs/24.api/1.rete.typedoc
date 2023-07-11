@@ -1,0 +1,3722 @@
+{
+	"id": 0,
+	"name": "rete",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 1,
+			"name": "ClassicPreset",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Contains classes for classic scheme such as Node, Input, Output, Control, Socket, Connection"
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 53,
+					"name": "Control",
+					"variant": "declaration",
+					"kind": 128,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "General control class"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "presets/classic.ts",
+							"line": 62,
+							"character": 13,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/presets/classic.ts#L62"
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"target": 58,
+							"name": "InputControl"
+						}
+					]
+				},
+				{
+					"id": 20,
+					"name": "Input",
+					"variant": "declaration",
+					"kind": 128,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The input port class"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "presets/classic.ts",
+							"line": 36,
+							"character": 13,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/presets/classic.ts#L36"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 39,
+							"name": "S",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": 2,
+								"name": "Socket",
+								"package": "rete"
+							}
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"target": 7,
+							"typeArguments": [
+								{
+									"type": "reference",
+									"target": -1,
+									"name": "S",
+									"refersToTypeParameter": true
+								}
+							],
+							"name": "Port",
+							"package": "rete"
+						}
+					]
+				},
+				{
+					"id": 58,
+					"name": "InputControl",
+					"variant": "declaration",
+					"kind": 128,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The input control class"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nnew InputControl('text', { readonly: true, initial: 'hello' })\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "presets/classic.ts",
+							"line": 80,
+							"character": 13,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/presets/classic.ts#L80"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 74,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": "text"
+									},
+									{
+										"type": "literal",
+										"value": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 75,
+							"name": "N",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"default": {
+								"type": "conditional",
+								"checkType": {
+									"type": "reference",
+									"target": -1,
+									"name": "T",
+									"refersToTypeParameter": true
+								},
+								"extendsType": {
+									"type": "literal",
+									"value": "text"
+								},
+								"trueType": {
+									"type": "intrinsic",
+									"name": "string"
+								},
+								"falseType": {
+									"type": "intrinsic",
+									"name": "number"
+								}
+							}
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"target": 53,
+							"name": "Control",
+							"package": "rete"
+						}
+					]
+				},
+				{
+					"id": 76,
+					"name": "Node",
+					"variant": "declaration",
+					"kind": 128,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The node class"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nnew Node('math')\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "presets/classic.ts",
+							"line": 105,
+							"character": 13,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/presets/classic.ts#L105"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 131,
+							"name": "Inputs",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The inputs type"
+									}
+								]
+							},
+							"type": {
+								"type": "mapped",
+								"parameter": "key",
+								"parameterType": {
+									"type": "intrinsic",
+									"name": "string"
+								},
+								"templateType": {
+									"type": "reference",
+									"target": 2,
+									"name": "Socket",
+									"package": "rete"
+								},
+								"optionalModifier": "+"
+							},
+							"default": {
+								"type": "mapped",
+								"parameter": "key",
+								"parameterType": {
+									"type": "intrinsic",
+									"name": "string"
+								},
+								"templateType": {
+									"type": "reference",
+									"target": 2,
+									"name": "Socket",
+									"package": "rete"
+								},
+								"optionalModifier": "+"
+							}
+						},
+						{
+							"id": 132,
+							"name": "Outputs",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The outputs type"
+									}
+								]
+							},
+							"type": {
+								"type": "mapped",
+								"parameter": "key",
+								"parameterType": {
+									"type": "intrinsic",
+									"name": "string"
+								},
+								"templateType": {
+									"type": "reference",
+									"target": 2,
+									"name": "Socket",
+									"package": "rete"
+								},
+								"optionalModifier": "+"
+							},
+							"default": {
+								"type": "mapped",
+								"parameter": "key",
+								"parameterType": {
+									"type": "intrinsic",
+									"name": "string"
+								},
+								"templateType": {
+									"type": "reference",
+									"target": 2,
+									"name": "Socket",
+									"package": "rete"
+								},
+								"optionalModifier": "+"
+							}
+						},
+						{
+							"id": 133,
+							"name": "Controls",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The controls type"
+									}
+								]
+							},
+							"type": {
+								"type": "mapped",
+								"parameter": "key",
+								"parameterType": {
+									"type": "intrinsic",
+									"name": "string"
+								},
+								"templateType": {
+									"type": "reference",
+									"target": 53,
+									"name": "Control",
+									"package": "rete"
+								},
+								"optionalModifier": "+"
+							},
+							"default": {
+								"type": "mapped",
+								"parameter": "key",
+								"parameterType": {
+									"type": "intrinsic",
+									"name": "string"
+								},
+								"templateType": {
+									"type": "reference",
+									"target": 53,
+									"name": "Control",
+									"package": "rete"
+								},
+								"optionalModifier": "+"
+							}
+						}
+					],
+					"implementedTypes": [
+						{
+							"type": "reference",
+							"target": 359,
+							"name": "NodeBase",
+							"package": "rete"
+						}
+					]
+				},
+				{
+					"id": 40,
+					"name": "Output",
+					"variant": "declaration",
+					"kind": 128,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The output port class"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "presets/classic.ts",
+							"line": 53,
+							"character": 13,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/presets/classic.ts#L53"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 52,
+							"name": "S",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": 2,
+								"name": "Socket",
+								"package": "rete"
+							}
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"target": 7,
+							"typeArguments": [
+								{
+									"type": "reference",
+									"target": -1,
+									"name": "S",
+									"refersToTypeParameter": true
+								}
+							],
+							"name": "Port",
+							"package": "rete"
+						}
+					]
+				},
+				{
+					"id": 7,
+					"name": "Port",
+					"variant": "declaration",
+					"kind": 128,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "General port class"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "presets/classic.ts",
+							"line": 24,
+							"character": 13,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/presets/classic.ts#L24"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 19,
+							"name": "S",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": 2,
+								"name": "Socket",
+								"package": "rete"
+							}
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"target": 20,
+							"name": "Input"
+						},
+						{
+							"type": "reference",
+							"target": 40,
+							"name": "Output"
+						}
+					]
+				},
+				{
+					"id": 2,
+					"name": "Socket",
+					"variant": "declaration",
+					"kind": 128,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The socket class"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "presets/classic.ts",
+							"line": 15,
+							"character": 13,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/presets/classic.ts#L15"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"children": [
+						53,
+						20,
+						58,
+						76,
+						40,
+						7,
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "presets/classic.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/presets/classic.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 258,
+			"name": "NodeEditor",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "The NodeEditor class is the main class of the library. It is used to create and manage nodes and connections."
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "7"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 277,
+					"name": "addConnection",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "editor.ts",
+							"line": 98,
+							"character": 8,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L98"
+						}
+					],
+					"signatures": [
+						{
+							"id": 278,
+							"name": "addConnection",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Add a connection"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Whether the connection was added"
+											}
+										]
+									},
+									{
+										"tag": "@throws",
+										"content": [
+											{
+												"kind": "text",
+												"text": "If the connection has already been added"
+											}
+										]
+									},
+									{
+										"tag": "@emits",
+										"content": [
+											{
+												"kind": "text",
+												"text": "connectioncreate"
+											}
+										]
+									},
+									{
+										"tag": "@emits",
+										"content": [
+											{
+												"kind": "text",
+												"text": "connectioncreated"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 98,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L98"
+								}
+							],
+							"parameters": [
+								{
+									"id": 279,
+									"name": "data",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The connection data"
+											}
+										]
+									},
+									"type": {
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "Connection"
+										},
+										"objectType": {
+											"type": "reference",
+											"target": -1,
+											"name": "Scheme",
+											"refersToTypeParameter": true
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 274,
+					"name": "addNode",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "editor.ts",
+							"line": 79,
+							"character": 8,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L79"
+						}
+					],
+					"signatures": [
+						{
+							"id": 275,
+							"name": "addNode",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Add a node"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Whether the node was added"
+											}
+										]
+									},
+									{
+										"tag": "@throws",
+										"content": [
+											{
+												"kind": "text",
+												"text": "If the node has already been added"
+											}
+										]
+									},
+									{
+										"tag": "@emits",
+										"content": [
+											{
+												"kind": "text",
+												"text": "nodecreate"
+											}
+										]
+									},
+									{
+										"tag": "@emits",
+										"content": [
+											{
+												"kind": "text",
+												"text": "nodecreated"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 79,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L79"
+								}
+							],
+							"parameters": [
+								{
+									"id": 276,
+									"name": "data",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The node data"
+											}
+										]
+									},
+									"type": {
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "Node"
+										},
+										"objectType": {
+											"type": "reference",
+											"target": -1,
+											"name": "Scheme",
+											"refersToTypeParameter": true
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 286,
+					"name": "clear",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "editor.ts",
+							"line": 160,
+							"character": 8,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L160"
+						}
+					],
+					"signatures": [
+						{
+							"id": 287,
+							"name": "clear",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Clear all nodes and connections"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Whether the editor was cleared"
+											}
+										]
+									},
+									{
+										"tag": "@emits",
+										"content": [
+											{
+												"kind": "text",
+												"text": "clear"
+											}
+										]
+									},
+									{
+										"tag": "@emits",
+										"content": [
+											{
+												"kind": "text",
+												"text": "clearcancelled"
+											}
+										]
+									},
+									{
+										"tag": "@emits",
+										"content": [
+											{
+												"kind": "text",
+												"text": "cleared"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 160,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L160"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 271,
+					"name": "getConnection",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "editor.ts",
+							"line": 67,
+							"character": 9,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L67"
+						}
+					],
+					"signatures": [
+						{
+							"id": 272,
+							"name": "getConnection",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Get a connection by id"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "The connection or undefined"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 67,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L67"
+								}
+							],
+							"parameters": [
+								{
+									"id": 273,
+									"name": "id",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The connection id"
+											}
+										]
+									},
+									"type": {
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "id"
+										},
+										"objectType": {
+											"type": "indexedAccess",
+											"indexType": {
+												"type": "literal",
+												"value": "Connection"
+											},
+											"objectType": {
+												"type": "reference",
+												"target": -1,
+												"name": "Scheme",
+												"refersToTypeParameter": true
+											}
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "indexedAccess",
+								"indexType": {
+									"type": "literal",
+									"value": "Connection"
+								},
+								"objectType": {
+									"type": "reference",
+									"target": -1,
+									"name": "Scheme",
+									"refersToTypeParameter": true
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 269,
+					"name": "getConnections",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "editor.ts",
+							"line": 58,
+							"character": 9,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L58"
+						}
+					],
+					"signatures": [
+						{
+							"id": 270,
+							"name": "getConnections",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Get all connections"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "All connections"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 58,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L58"
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "indexedAccess",
+									"indexType": {
+										"type": "literal",
+										"value": "Connection"
+									},
+									"objectType": {
+										"type": "reference",
+										"target": -1,
+										"name": "Scheme",
+										"refersToTypeParameter": true
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 264,
+					"name": "getNode",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "editor.ts",
+							"line": 42,
+							"character": 9,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L42"
+						}
+					],
+					"signatures": [
+						{
+							"id": 265,
+							"name": "getNode",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Get a node by id"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "The node or undefined"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 42,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L42"
+								}
+							],
+							"parameters": [
+								{
+									"id": 266,
+									"name": "id",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The node id"
+											}
+										]
+									},
+									"type": {
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "id"
+										},
+										"objectType": {
+											"type": "indexedAccess",
+											"indexType": {
+												"type": "literal",
+												"value": "Node"
+											},
+											"objectType": {
+												"type": "reference",
+												"target": -1,
+												"name": "Scheme",
+												"refersToTypeParameter": true
+											}
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "indexedAccess",
+								"indexType": {
+									"type": "literal",
+									"value": "Node"
+								},
+								"objectType": {
+									"type": "reference",
+									"target": -1,
+									"name": "Scheme",
+									"refersToTypeParameter": true
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 267,
+					"name": "getNodes",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "editor.ts",
+							"line": 50,
+							"character": 9,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L50"
+						}
+					],
+					"signatures": [
+						{
+							"id": 268,
+							"name": "getNodes",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Get all nodes"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "All nodes"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 50,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L50"
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "indexedAccess",
+									"indexType": {
+										"type": "literal",
+										"value": "Node"
+									},
+									"objectType": {
+										"type": "reference",
+										"target": -1,
+										"name": "Scheme",
+										"refersToTypeParameter": true
+									}
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 283,
+					"name": "removeConnection",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "editor.ts",
+							"line": 139,
+							"character": 8,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L139"
+						}
+					],
+					"signatures": [
+						{
+							"id": 284,
+							"name": "removeConnection",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Remove a connection"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Whether the connection was removed"
+											}
+										]
+									},
+									{
+										"tag": "@throws",
+										"content": [
+											{
+												"kind": "text",
+												"text": "If the connection cannot be found"
+											}
+										]
+									},
+									{
+										"tag": "@emits",
+										"content": [
+											{
+												"kind": "text",
+												"text": "connectionremove"
+											}
+										]
+									},
+									{
+										"tag": "@emits",
+										"content": [
+											{
+												"kind": "text",
+												"text": "connectionremoved"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 139,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L139"
+								}
+							],
+							"parameters": [
+								{
+									"id": 285,
+									"name": "id",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The connection id"
+											}
+										]
+									},
+									"type": {
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "id"
+										},
+										"objectType": {
+											"type": "indexedAccess",
+											"indexType": {
+												"type": "literal",
+												"value": "Connection"
+											},
+											"objectType": {
+												"type": "reference",
+												"target": -1,
+												"name": "Scheme",
+												"refersToTypeParameter": true
+											}
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 280,
+					"name": "removeNode",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "editor.ts",
+							"line": 117,
+							"character": 8,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L117"
+						}
+					],
+					"signatures": [
+						{
+							"id": 281,
+							"name": "removeNode",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Remove a node"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Whether the node was removed"
+											}
+										]
+									},
+									{
+										"tag": "@throws",
+										"content": [
+											{
+												"kind": "text",
+												"text": "If the node cannot be found"
+											}
+										]
+									},
+									{
+										"tag": "@emits",
+										"content": [
+											{
+												"kind": "text",
+												"text": "noderemove"
+											}
+										]
+									},
+									{
+										"tag": "@emits",
+										"content": [
+											{
+												"kind": "text",
+												"text": "noderemoved"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 117,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L117"
+								}
+							],
+							"parameters": [
+								{
+									"id": 282,
+									"name": "id",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The node id"
+											}
+										]
+									},
+									"type": {
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "id"
+										},
+										"objectType": {
+											"type": "indexedAccess",
+											"indexType": {
+												"type": "literal",
+												"value": "Node"
+											},
+											"objectType": {
+												"type": "reference",
+												"target": -1,
+												"name": "Scheme",
+												"refersToTypeParameter": true
+											}
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"children": [
+						277,
+						274,
+						286,
+						271,
+						269,
+						264,
+						267,
+						283,
+						280
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "editor.ts",
+					"line": 29,
+					"character": 13,
+					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L29"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 356,
+					"name": "Scheme",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The scheme type"
+							}
+						]
+					},
+					"type": {
+						"type": "reference",
+						"target": 373,
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": 167,
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": 226,
+							"typeArguments": [
+								{
+									"type": "reference",
+									"target": -1,
+									"name": "Scheme",
+									"refersToTypeParameter": true
+								}
+							],
+							"name": "Root",
+							"package": "rete"
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			]
+		},
+		{
+			"id": 167,
+			"name": "Scope",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Base class for all plugins and the core. Provides a signals mechanism to modify the data"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "scope.ts",
+					"line": 83,
+					"character": 13,
+					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/scope.ts#L83"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 211,
+					"name": "Produces",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {}
+				},
+				{
+					"id": 212,
+					"name": "Parents",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "unknown"
+						}
+					},
+					"default": {
+						"type": "tuple"
+					}
+				}
+			],
+			"extendedBy": [
+				{
+					"type": "reference",
+					"target": 258,
+					"name": "NodeEditor"
+				}
+			]
+		},
+		{
+			"id": 213,
+			"name": "Signal",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "A signal is a middleware chain that can be used to modify the data"
+					}
+				],
+				"modifierTags": [
+					"@internal"
+				]
+			},
+			"sources": [
+				{
+					"fileName": "scope.ts",
+					"line": 57,
+					"character": 13,
+					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/scope.ts#L57"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 225,
+					"name": "T",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The data type"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": 373,
+			"name": "BaseSchemes",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "The base schemes"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "types.ts",
+					"line": 33,
+					"character": 12,
+					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L33"
+				}
+			],
+			"type": {
+				"type": "reference",
+				"target": 367,
+				"typeArguments": [
+					{
+						"type": "reference",
+						"target": 359,
+						"name": "NodeBase",
+						"package": "rete"
+					},
+					{
+						"type": "reference",
+						"target": 362,
+						"name": "ConnectionBase",
+						"package": "rete"
+					}
+				],
+				"name": "GetSchemes",
+				"package": "rete"
+			}
+		},
+		{
+			"id": 362,
+			"name": "ConnectionBase",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "The base connection type"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "types.ts",
+					"line": 20,
+					"character": 12,
+					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L20"
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 363,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"children": [
+						{
+							"id": 364,
+							"name": "id",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "types.ts",
+									"line": 20,
+									"character": 31,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L20"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 358,
+								"name": "ConnectionId",
+								"package": "rete"
+							}
+						},
+						{
+							"id": 365,
+							"name": "source",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "types.ts",
+									"line": 20,
+									"character": 49,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L20"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 357,
+								"name": "NodeId",
+								"package": "rete"
+							}
+						},
+						{
+							"id": 366,
+							"name": "target",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "types.ts",
+									"line": 20,
+									"character": 65,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L20"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 357,
+								"name": "NodeId",
+								"package": "rete"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								364,
+								365,
+								366
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "types.ts",
+							"line": 20,
+							"character": 29,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L20"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 358,
+			"name": "ConnectionId",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Connection id type"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "types.ts",
+					"line": 9,
+					"character": 12,
+					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L9"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "string"
+			}
+		},
+		{
+			"id": 367,
+			"name": "GetSchemes",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Get the schemes"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@example",
+						"content": [
+							{
+								"kind": "code",
+								"text": "```ts\nGetSchemes<Node & { myProp: number }, Connection>\n```"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "types.ts",
+					"line": 27,
+					"character": 12,
+					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L27"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 371,
+					"name": "NodeData",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": 359,
+						"name": "NodeBase",
+						"package": "rete"
+					}
+				},
+				{
+					"id": 372,
+					"name": "ConnectionData",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": 362,
+						"name": "ConnectionBase",
+						"package": "rete"
+					}
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 368,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"children": [
+						{
+							"id": 370,
+							"name": "Connection",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "types.ts",
+									"line": 27,
+									"character": 109,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L27"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": -1,
+								"name": "ConnectionData",
+								"refersToTypeParameter": true
+							}
+						},
+						{
+							"id": 369,
+							"name": "Node",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "types.ts",
+									"line": 27,
+									"character": 93,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L27"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": -1,
+								"name": "NodeData",
+								"refersToTypeParameter": true
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								370,
+								369
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "types.ts",
+							"line": 27,
+							"character": 91,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L27"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 156,
+			"name": "NestedScope",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Validate the Scope signals and replace the parameter type with an error message if they are not assignable"
+					}
+				],
+				"modifierTags": [
+					"@internal"
+				]
+			},
+			"sources": [
+				{
+					"fileName": "scope.ts",
+					"line": 33,
+					"character": 12,
+					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/scope.ts#L33"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 157,
+					"name": "S",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": 167,
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "any"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "any"
+								}
+							}
+						],
+						"name": "Scope",
+						"package": "rete"
+					}
+				},
+				{
+					"id": 158,
+					"name": "Current",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "any"
+						}
+					}
+				}
+			],
+			"type": {
+				"type": "conditional",
+				"checkType": {
+					"type": "indexedAccess",
+					"indexType": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"objectType": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/scope.ts",
+							"qualifiedName": "CanAssignEach"
+						},
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": -1,
+								"name": "Current",
+								"refersToTypeParameter": true
+							},
+							{
+								"type": "indexedAccess",
+								"indexType": {
+									"type": "literal",
+									"value": "parents"
+								},
+								"objectType": {
+									"type": "indexedAccess",
+									"indexType": {
+										"type": "literal",
+										"value": "__scope"
+									},
+									"objectType": {
+										"type": "reference",
+										"target": -1,
+										"name": "S",
+										"refersToTypeParameter": true
+									}
+								}
+							}
+						],
+						"name": "CanAssignEach",
+						"package": "rete"
+					}
+				},
+				"extendsType": {
+					"type": "literal",
+					"value": true
+				},
+				"trueType": {
+					"type": "reference",
+					"target": -1,
+					"name": "S",
+					"refersToTypeParameter": true
+				},
+				"falseType": {
+					"type": "literal",
+					"value": "Parent signals do not satisfy the connected scope. Please use `.debug($ => $) for detailed assignment error"
+				}
+			}
+		},
+		{
+			"id": 359,
+			"name": "NodeBase",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "The base node type"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "types.ts",
+					"line": 15,
+					"character": 12,
+					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L15"
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 360,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"children": [
+						{
+							"id": 361,
+							"name": "id",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "types.ts",
+									"line": 15,
+									"character": 25,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L15"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 357,
+								"name": "NodeId",
+								"package": "rete"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								361
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "types.ts",
+							"line": 15,
+							"character": 23,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L15"
+						}
+					]
+				}
+			},
+			"implementedBy": [
+				{
+					"type": "reference",
+					"target": 76,
+					"name": "Node"
+				}
+			]
+		},
+		{
+			"id": 357,
+			"name": "NodeId",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Node id type"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "types.ts",
+					"line": 4,
+					"character": 12,
+					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L4"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "string"
+			}
+		},
+		{
+			"id": 159,
+			"name": "Pipe",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "scope.ts",
+					"line": 15,
+					"character": 12,
+					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/scope.ts#L15"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 163,
+					"name": "T",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The data type"
+							}
+						]
+					}
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 160,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "scope.ts",
+							"line": 15,
+							"character": 22,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/scope.ts#L15"
+						}
+					],
+					"signatures": [
+						{
+							"id": 161,
+							"name": "__type",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "A middleware type that can modify the data"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "The modified data or undefined"
+											}
+										]
+									},
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\n(data) => data + 1\n```"
+											}
+										]
+									},
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```ts\n(data) => undefined // will stop the execution\n@internal\n```"
+											}
+										]
+									}
+								],
+								"modifierTags": [
+									"@internal"
+								]
+							},
+							"parameters": [
+								{
+									"id": 162,
+									"name": "data",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The data to be modified"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": -1,
+										"name": "T",
+										"refersToTypeParameter": true
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Promise"
+										},
+										"typeArguments": [
+											{
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													},
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "T",
+														"refersToTypeParameter": true
+													}
+												]
+											}
+										],
+										"name": "Promise",
+										"package": "typescript"
+									},
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "reference",
+										"target": -1,
+										"name": "T",
+										"refersToTypeParameter": true
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 226,
+			"name": "Root",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Signal types produced by NodeEditor instance"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "10"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "editor.ts",
+					"line": 10,
+					"character": 12,
+					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L10"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 257,
+					"name": "Scheme",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The scheme type"
+							}
+						]
+					},
+					"type": {
+						"type": "reference",
+						"target": 373,
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 227,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 229,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 11,
+											"character": 26,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L11"
+										}
+									],
+									"type": {
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "Node"
+										},
+										"objectType": {
+											"type": "reference",
+											"target": -1,
+											"name": "Scheme",
+											"refersToTypeParameter": true
+										}
+									}
+								},
+								{
+									"id": 228,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 11,
+											"character": 6,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L11"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "nodecreate"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										229,
+										228
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 11,
+									"character": 4,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L11"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 230,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 232,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 12,
+											"character": 27,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L12"
+										}
+									],
+									"type": {
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "Node"
+										},
+										"objectType": {
+											"type": "reference",
+											"target": -1,
+											"name": "Scheme",
+											"refersToTypeParameter": true
+										}
+									}
+								},
+								{
+									"id": 231,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 12,
+											"character": 6,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L12"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "nodecreated"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										232,
+										231
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 12,
+									"character": 4,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L12"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 233,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 235,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 13,
+											"character": 26,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L13"
+										}
+									],
+									"type": {
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "Node"
+										},
+										"objectType": {
+											"type": "reference",
+											"target": -1,
+											"name": "Scheme",
+											"refersToTypeParameter": true
+										}
+									}
+								},
+								{
+									"id": 234,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 13,
+											"character": 6,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L13"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "noderemove"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										235,
+										234
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 13,
+									"character": 4,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L13"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 236,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 238,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 14,
+											"character": 27,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L14"
+										}
+									],
+									"type": {
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "Node"
+										},
+										"objectType": {
+											"type": "reference",
+											"target": -1,
+											"name": "Scheme",
+											"refersToTypeParameter": true
+										}
+									}
+								},
+								{
+									"id": 237,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 14,
+											"character": 6,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L14"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "noderemoved"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										238,
+										237
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 14,
+									"character": 4,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L14"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 239,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 241,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 15,
+											"character": 32,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L15"
+										}
+									],
+									"type": {
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "Connection"
+										},
+										"objectType": {
+											"type": "reference",
+											"target": -1,
+											"name": "Scheme",
+											"refersToTypeParameter": true
+										}
+									}
+								},
+								{
+									"id": 240,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 15,
+											"character": 6,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L15"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "connectioncreate"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										241,
+										240
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 15,
+									"character": 4,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L15"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 242,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 244,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 16,
+											"character": 33,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L16"
+										}
+									],
+									"type": {
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "Connection"
+										},
+										"objectType": {
+											"type": "reference",
+											"target": -1,
+											"name": "Scheme",
+											"refersToTypeParameter": true
+										}
+									}
+								},
+								{
+									"id": 243,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 16,
+											"character": 6,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L16"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "connectioncreated"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										244,
+										243
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 16,
+									"character": 4,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L16"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 245,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 247,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 17,
+											"character": 32,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L17"
+										}
+									],
+									"type": {
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "Connection"
+										},
+										"objectType": {
+											"type": "reference",
+											"target": -1,
+											"name": "Scheme",
+											"refersToTypeParameter": true
+										}
+									}
+								},
+								{
+									"id": 246,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 17,
+											"character": 6,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L17"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "connectionremove"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										247,
+										246
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 17,
+									"character": 4,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L17"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 248,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 250,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 18,
+											"character": 33,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L18"
+										}
+									],
+									"type": {
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "Connection"
+										},
+										"objectType": {
+											"type": "reference",
+											"target": -1,
+											"name": "Scheme",
+											"refersToTypeParameter": true
+										}
+									}
+								},
+								{
+									"id": 249,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 18,
+											"character": 6,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L18"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "connectionremoved"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										250,
+										249
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 18,
+									"character": 4,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L18"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 251,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 252,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 19,
+											"character": 6,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L19"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "clear"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										252
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 19,
+									"character": 4,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L19"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 253,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 254,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 20,
+											"character": 6,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L20"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "clearcancelled"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										254
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 20,
+									"character": 4,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L20"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 255,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 256,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 21,
+											"character": 6,
+											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L21"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "cleared"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										256
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 21,
+									"character": 4,
+									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L21"
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": 374,
+			"name": "getUID",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "utils.ts",
+					"line": 10,
+					"character": 16,
+					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/utils.ts#L10"
+				}
+			],
+			"signatures": [
+				{
+					"id": 375,
+					"name": "getUID",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "A unique id"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "utils.ts",
+							"line": 10,
+							"character": 0,
+							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/utils.ts#L10"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Classes",
+			"children": [
+				167,
+				213
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				156,
+				357,
+				159
+			]
+		},
+		{
+			"title": "Functions",
+			"children": [
+				374
+			]
+		},
+		{
+			"title": "Primary",
+			"children": [
+				1,
+				258,
+				373,
+				362,
+				358,
+				367,
+				359,
+				226
+			]
+		}
+	],
+	"packageName": "rete",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**JavaScript framework for visual programming**\n\n![rete logo](https://raw.githubusercontent.com/retejs/rete/assets/preview.svg)\n\n#StandWithUkraine 💙💛\n----\n\n#RussiaInvadedUkraine on 24 of February 2022, at 5.00 AM the armed forces of the Russian Federation  attacked Ukraine. Please, Stand with Ukraine, stay tuned for updates on Ukraine’s official sources and channels in English and support Ukraine in its fight for freedom and democracy in Europe.\n\nHelp to defend Ukraine — donate to [Ukraine’s main charity fund](https://savelife.in.ua/en/donate/)\n\nHelp to defend Ukraine — donate to the [fund of the National Bank of Ukraine](https://ukraine.ua/news/donate-to-the-nbu-fund/)\n\n\nIntroduction\n----\n\n**Rete.js** is a framework for creating visual interfaces and workflows. It provides out-of-the-box solutions for visualization using various libraries and frameworks, as well as solutions for processing graphs based on dataflow and control flow approaches.\n\nDocumentation\n----\n\n- [Introduction](https://retejs.org/docs)\n- [Getting Started](https://retejs.org/docs/getting-started)\n- [Concepts](https://retejs.org/docs/concepts/plugin-system)\n- [Guides](https://retejs.org/docs/guides/basic)\n- [FAQ](https://retejs.org/docs/faq)\n- [Examples](https://retejs.org/examples)\n\n## Sponsors\n\nThank you to all our sponsors! [Become a sponsor](https://opencollective.com/rete#sponsor)\n\n<a href=\"https://opencollective.com/rete#sponsors\" target=\"_blank\"><img src=\"https://opencollective.com/rete/sponsors.svg?width=890\"></a>\n\n## Backers\n\nThank you to all our backers! [Become a backer](https://opencollective.com/rete#backer)\n\n<a href=\"https://opencollective.com/rete#backers\" target=\"_blank\"><img src=\"https://opencollective.com/rete/backers.svg?width=890\"></a>\n\n\n## Contributors\n\nThis project exists thanks to all the people who contribute. [Contribute](https://retejs.org/docs/contribution).\n\n<a href=\"https://github.com/retejs/rete/graphs/contributors\"><img src=\"https://opencollective.com/rete/contributors.svg?width=890\" /></a>\n\n## License\n\n[MIT](https://github.com/retejs/rete/blob/master/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": ""
+		},
+		"2": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Socket"
+		},
+		"7": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port"
+		},
+		"19": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port.S"
+		},
+		"20": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Input"
+		},
+		"39": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Input.S"
+		},
+		"40": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Output"
+		},
+		"52": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Output.S"
+		},
+		"53": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Control"
+		},
+		"58": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "InputControl"
+		},
+		"74": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "InputControl.T"
+		},
+		"75": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "InputControl.N"
+		},
+		"76": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Node"
+		},
+		"131": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Node.Inputs"
+		},
+		"132": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Node.Outputs"
+		},
+		"133": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Node.Controls"
+		},
+		"156": {
+			"sourceFileName": "src/scope.ts",
+			"qualifiedName": "NestedScope"
+		},
+		"157": {
+			"sourceFileName": "src/scope.ts",
+			"qualifiedName": "S"
+		},
+		"158": {
+			"sourceFileName": "src/scope.ts",
+			"qualifiedName": "Current"
+		},
+		"159": {
+			"sourceFileName": "src/scope.ts",
+			"qualifiedName": "Pipe"
+		},
+		"160": {
+			"sourceFileName": "src/scope.ts",
+			"qualifiedName": "__type"
+		},
+		"161": {
+			"sourceFileName": "src/scope.ts",
+			"qualifiedName": "__type"
+		},
+		"162": {
+			"sourceFileName": "src/scope.ts",
+			"qualifiedName": "data"
+		},
+		"163": {
+			"sourceFileName": "src/scope.ts",
+			"qualifiedName": "T"
+		},
+		"167": {
+			"sourceFileName": "src/scope.ts",
+			"qualifiedName": "Scope"
+		},
+		"211": {
+			"sourceFileName": "src/scope.ts",
+			"qualifiedName": "Scope.Produces"
+		},
+		"212": {
+			"sourceFileName": "src/scope.ts",
+			"qualifiedName": "Scope.Parents"
+		},
+		"213": {
+			"sourceFileName": "src/scope.ts",
+			"qualifiedName": "Signal"
+		},
+		"225": {
+			"sourceFileName": "src/scope.ts",
+			"qualifiedName": "Signal.T"
+		},
+		"226": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "Root"
+		},
+		"227": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type"
+		},
+		"228": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.type"
+		},
+		"229": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.data"
+		},
+		"230": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type"
+		},
+		"231": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.type"
+		},
+		"232": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.data"
+		},
+		"233": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type"
+		},
+		"234": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.type"
+		},
+		"235": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.data"
+		},
+		"236": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type"
+		},
+		"237": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.type"
+		},
+		"238": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.data"
+		},
+		"239": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type"
+		},
+		"240": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.type"
+		},
+		"241": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.data"
+		},
+		"242": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type"
+		},
+		"243": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.type"
+		},
+		"244": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.data"
+		},
+		"245": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type"
+		},
+		"246": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.type"
+		},
+		"247": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.data"
+		},
+		"248": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type"
+		},
+		"249": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.type"
+		},
+		"250": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.data"
+		},
+		"251": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type"
+		},
+		"252": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.type"
+		},
+		"253": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type"
+		},
+		"254": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.type"
+		},
+		"255": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type"
+		},
+		"256": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.type"
+		},
+		"257": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "Scheme"
+		},
+		"258": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor"
+		},
+		"264": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.getNode"
+		},
+		"265": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.getNode"
+		},
+		"266": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "id"
+		},
+		"267": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.getNodes"
+		},
+		"268": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.getNodes"
+		},
+		"269": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.getConnections"
+		},
+		"270": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.getConnections"
+		},
+		"271": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.getConnection"
+		},
+		"272": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.getConnection"
+		},
+		"273": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "id"
+		},
+		"274": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.addNode"
+		},
+		"275": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.addNode"
+		},
+		"276": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "data"
+		},
+		"277": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.addConnection"
+		},
+		"278": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.addConnection"
+		},
+		"279": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "data"
+		},
+		"280": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.removeNode"
+		},
+		"281": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.removeNode"
+		},
+		"282": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "id"
+		},
+		"283": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.removeConnection"
+		},
+		"284": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.removeConnection"
+		},
+		"285": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "id"
+		},
+		"286": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.clear"
+		},
+		"287": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.clear"
+		},
+		"356": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.Scheme"
+		},
+		"357": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "NodeId"
+		},
+		"358": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "ConnectionId"
+		},
+		"359": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "NodeBase"
+		},
+		"360": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type"
+		},
+		"361": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type.id"
+		},
+		"362": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "ConnectionBase"
+		},
+		"363": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type"
+		},
+		"364": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type.id"
+		},
+		"365": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type.source"
+		},
+		"366": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type.target"
+		},
+		"367": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "GetSchemes"
+		},
+		"368": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type"
+		},
+		"369": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type.Node"
+		},
+		"370": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type.Connection"
+		},
+		"371": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "NodeData"
+		},
+		"372": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "ConnectionData"
+		},
+		"373": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "BaseSchemes"
+		},
+		"374": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "getUID"
+		},
+		"375": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "getUID"
+		}
+	}
+}

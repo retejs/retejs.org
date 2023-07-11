@@ -1,0 +1,2454 @@
+{
+	"id": 0,
+	"name": "rete-connection-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 47,
+			"name": "Presets",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Built-in presets"
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 48,
+					"name": "classic",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 49,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 6,
+									"character": 16,
+									"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/presets/classic.ts#L6"
+								}
+							],
+							"signatures": [
+								{
+									"id": 50,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Classic preset. Uses "
+											},
+											{
+												"kind": "code",
+												"text": "`ClassicFlow`"
+											},
+											{
+												"kind": "text",
+												"text": " for managing connections by user"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/classic.ts",
+											"line": 6,
+											"character": 0,
+											"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/presets/classic.ts#L6"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 51,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "presets/classic.ts",
+													"line": 7,
+													"character": 9,
+													"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/presets/classic.ts#L7"
+												}
+											],
+											"signatures": [
+												{
+													"id": 52,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "presets/classic.ts",
+															"line": 7,
+															"character": 9,
+															"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/presets/classic.ts#L7"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": 150,
+														"typeArguments": [
+															{
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "src/types.ts",
+																	"qualifiedName": "ClassicScheme"
+																},
+																"name": "ClassicScheme",
+																"package": "rete-connection-plugin"
+															},
+															{
+																"type": "array",
+																"elementType": {
+																	"type": "intrinsic",
+																	"name": "any"
+																}
+															}
+														],
+														"name": "ClassicFlow",
+														"package": "rete-connection-plugin"
+													}
+												}
+											]
+										}
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								49
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/classic.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/presets/classic.ts#L1"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Namespaces",
+					"children": [
+						48
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "presets/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/presets/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 114,
+			"name": "BidirectFlow",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Bidirect flow. User can pick a socket and connect it by releasing mouse button.\nMore simple than classic flow, but less functional (can't remove connection by clicking on input socket)."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "flow/builtin/bidirect.ts",
+					"line": 63,
+					"character": 13,
+					"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/flow/builtin/bidirect.ts#L63"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 133,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/types.ts",
+							"qualifiedName": "ClassicScheme"
+						},
+						"name": "ClassicScheme",
+						"package": "rete-connection-plugin"
+					}
+				},
+				{
+					"id": 134,
+					"name": "K",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "any"
+						}
+					}
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "src/flow/utils.ts",
+						"qualifiedName": "StateContext"
+					},
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": -1,
+							"name": "Schemes",
+							"refersToTypeParameter": true
+						},
+						{
+							"type": "reference",
+							"target": -1,
+							"name": "K",
+							"refersToTypeParameter": true
+						}
+					],
+					"name": "StateContext",
+					"package": "rete-connection-plugin"
+				},
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "src/flow/base.ts",
+						"qualifiedName": "Flow"
+					},
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": -1,
+							"name": "Schemes",
+							"refersToTypeParameter": true
+						},
+						{
+							"type": "reference",
+							"target": -1,
+							"name": "K",
+							"refersToTypeParameter": true
+						}
+					],
+					"name": "Flow",
+					"package": "rete-connection-plugin"
+				}
+			]
+		},
+		{
+			"id": 150,
+			"name": "ClassicFlow",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Classic flow. User can pick/click a socket and connect it by releasing/clicking on another socket.\nIf connection already exists and user clicks on input socket, connection will be removed."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "flow/builtin/classic/index.ts",
+					"line": 135,
+					"character": 13,
+					"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/flow/builtin/classic/index.ts#L135"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 169,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/types.ts",
+							"qualifiedName": "ClassicScheme"
+						},
+						"name": "ClassicScheme",
+						"package": "rete-connection-plugin"
+					}
+				},
+				{
+					"id": 170,
+					"name": "K",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "any"
+						}
+					}
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "src/flow/utils.ts",
+						"qualifiedName": "StateContext"
+					},
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": -1,
+							"name": "Schemes",
+							"refersToTypeParameter": true
+						},
+						{
+							"type": "reference",
+							"target": -1,
+							"name": "K",
+							"refersToTypeParameter": true
+						}
+					],
+					"name": "StateContext",
+					"package": "rete-connection-plugin"
+				},
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "src/flow/base.ts",
+						"qualifiedName": "Flow"
+					},
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": -1,
+							"name": "Schemes",
+							"refersToTypeParameter": true
+						},
+						{
+							"type": "reference",
+							"target": -1,
+							"name": "K",
+							"refersToTypeParameter": true
+						}
+					],
+					"name": "Flow",
+					"package": "rete-connection-plugin"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "ConnectionPlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Connection plugin. Responsible for user interaction with connections (creation, deletion)"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "9"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "connectionpick"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "connectiondrop"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "pointermove"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "pointerup"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "render"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "unmount"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 28,
+					"name": "addPreset",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 51,
+							"character": 9,
+							"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/index.ts#L51"
+						}
+					],
+					"signatures": [
+						{
+							"id": 29,
+							"name": "addPreset",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Add preset to the plugin"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 51,
+									"character": 2,
+									"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/index.ts#L51"
+								}
+							],
+							"parameters": [
+								{
+									"id": 30,
+									"name": "preset",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset to add"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/types.ts",
+											"qualifiedName": "Preset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "Preset",
+										"package": "rete-connection-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 36,
+					"name": "drop",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 77,
+							"character": 2,
+							"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/index.ts#L77"
+						}
+					],
+					"signatures": [
+						{
+							"id": 37,
+							"name": "drop",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Drop pseudo-connection if exists"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@emits",
+										"content": [
+											{
+												"kind": "text",
+												"text": "connectiondrop"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 77,
+									"character": 2,
+									"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/index.ts#L77"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"children": [
+						28,
+						36
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 35,
+					"character": 13,
+					"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/index.ts#L35"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 45,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/types.ts",
+							"qualifiedName": "ClassicScheme"
+						},
+						"name": "ClassicScheme",
+						"package": "rete-connection-plugin"
+					}
+				},
+				{
+					"id": 46,
+					"name": "K",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"default": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/index.ts",
+							"qualifiedName": "Requires"
+						},
+						"name": "Requires",
+						"package": "rete-connection-plugin"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/src/scope.ts",
+						"qualifiedName": "Scope"
+					},
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": 74,
+							"name": "Connection",
+							"package": "rete-connection-plugin"
+						},
+						{
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "union",
+									"types": [
+										{
+											"type": "reference",
+											"target": {
+												"sourceFileName": "src/index.ts",
+												"qualifiedName": "Requires"
+											},
+											"name": "Requires",
+											"package": "rete-connection-plugin"
+										},
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "K",
+											"refersToTypeParameter": true
+										}
+									]
+								}
+							]
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			]
+		},
+		{
+			"id": 103,
+			"name": "BidirectParams",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Bidirect flow params"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "flow/builtin/bidirect.ts",
+					"line": 8,
+					"character": 12,
+					"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/flow/builtin/bidirect.ts#L8"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 113,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/types.ts",
+							"qualifiedName": "ClassicScheme"
+						},
+						"name": "ClassicScheme",
+						"package": "rete-connection-plugin"
+					}
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 104,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"children": [
+						{
+							"id": 106,
+							"name": "makeConnection",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "flow/builtin/bidirect.ts",
+									"line": 12,
+									"character": 2,
+									"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/flow/builtin/bidirect.ts#L12"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 107,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "flow/builtin/bidirect.ts",
+											"line": 12,
+											"character": 18,
+											"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/flow/builtin/bidirect.ts#L12"
+										}
+									],
+									"signatures": [
+										{
+											"id": 108,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Custom function to make connection"
+													}
+												]
+											},
+											"typeParameter": [
+												{
+													"id": 112,
+													"name": "K",
+													"variant": "typeParam",
+													"kind": 131072,
+													"flags": {},
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "intrinsic",
+															"name": "any"
+														}
+													}
+												}
+											],
+											"parameters": [
+												{
+													"id": 109,
+													"name": "from",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/types.ts",
+															"qualifiedName": "SocketData"
+														},
+														"name": "SocketData",
+														"package": "rete-connection-plugin"
+													}
+												},
+												{
+													"id": 110,
+													"name": "to",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/types.ts",
+															"qualifiedName": "SocketData"
+														},
+														"name": "SocketData",
+														"package": "rete-connection-plugin"
+													}
+												},
+												{
+													"id": 111,
+													"name": "context",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/flow/base.ts",
+															"qualifiedName": "Context"
+														},
+														"typeArguments": [
+															{
+																"type": "reference",
+																"target": -1,
+																"name": "Schemes",
+																"refersToTypeParameter": true
+															},
+															{
+																"type": "reference",
+																"target": -1,
+																"name": "K",
+																"refersToTypeParameter": true
+															}
+														],
+														"name": "Context",
+														"package": "rete-connection-plugin"
+													}
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "boolean"
+													},
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													}
+												]
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 105,
+							"name": "pickByClick",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "If true, user can pick a pseudo-connection by clicking on socket, not only by pointerdown"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "flow/builtin/bidirect.ts",
+									"line": 10,
+									"character": 2,
+									"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/flow/builtin/bidirect.ts#L10"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								106,
+								105
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "flow/builtin/bidirect.ts",
+							"line": 8,
+							"character": 60,
+							"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/flow/builtin/bidirect.ts#L8"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 135,
+			"name": "ClassicParams",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Classic flow params"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "flow/builtin/classic/index.ts",
+					"line": 12,
+					"character": 12,
+					"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/flow/builtin/classic/index.ts#L12"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 149,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/types.ts",
+							"qualifiedName": "ClassicScheme"
+						},
+						"name": "ClassicScheme",
+						"package": "rete-connection-plugin"
+					}
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 136,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"children": [
+						{
+							"id": 137,
+							"name": "canMakeConnection",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "flow/builtin/classic/index.ts",
+									"line": 14,
+									"character": 2,
+									"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/flow/builtin/classic/index.ts#L14"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 138,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "flow/builtin/classic/index.ts",
+											"line": 14,
+											"character": 21,
+											"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/flow/builtin/classic/index.ts#L14"
+										}
+									],
+									"signatures": [
+										{
+											"id": 139,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Custom function to check if connection can be made"
+													}
+												]
+											},
+											"parameters": [
+												{
+													"id": 140,
+													"name": "from",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/types.ts",
+															"qualifiedName": "SocketData"
+														},
+														"name": "SocketData",
+														"package": "rete-connection-plugin"
+													}
+												},
+												{
+													"id": 141,
+													"name": "to",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/types.ts",
+															"qualifiedName": "SocketData"
+														},
+														"name": "SocketData",
+														"package": "rete-connection-plugin"
+													}
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "boolean"
+													},
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													}
+												]
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 142,
+							"name": "makeConnection",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "flow/builtin/classic/index.ts",
+									"line": 16,
+									"character": 2,
+									"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/flow/builtin/classic/index.ts#L16"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 143,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "flow/builtin/classic/index.ts",
+											"line": 16,
+											"character": 18,
+											"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/flow/builtin/classic/index.ts#L16"
+										}
+									],
+									"signatures": [
+										{
+											"id": 144,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Custom function to make connection"
+													}
+												]
+											},
+											"typeParameter": [
+												{
+													"id": 148,
+													"name": "K",
+													"variant": "typeParam",
+													"kind": 131072,
+													"flags": {},
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "intrinsic",
+															"name": "any"
+														}
+													}
+												}
+											],
+											"parameters": [
+												{
+													"id": 145,
+													"name": "from",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/types.ts",
+															"qualifiedName": "SocketData"
+														},
+														"name": "SocketData",
+														"package": "rete-connection-plugin"
+													}
+												},
+												{
+													"id": 146,
+													"name": "to",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/types.ts",
+															"qualifiedName": "SocketData"
+														},
+														"name": "SocketData",
+														"package": "rete-connection-plugin"
+													}
+												},
+												{
+													"id": 147,
+													"name": "context",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/flow/base.ts",
+															"qualifiedName": "Context"
+														},
+														"typeArguments": [
+															{
+																"type": "reference",
+																"target": -1,
+																"name": "Schemes",
+																"refersToTypeParameter": true
+															},
+															{
+																"type": "reference",
+																"target": -1,
+																"name": "K",
+																"refersToTypeParameter": true
+															}
+														],
+														"name": "Context",
+														"package": "rete-connection-plugin"
+													}
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "boolean"
+													},
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													}
+												]
+											}
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								137,
+								142
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "flow/builtin/classic/index.ts",
+							"line": 12,
+							"character": 59,
+							"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/flow/builtin/classic/index.ts#L12"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 74,
+			"name": "Connection",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Signal types produced by ConnectionPlugin instance"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "10"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "types.ts",
+					"line": 29,
+					"character": 12,
+					"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/types.ts#L29"
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 75,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 77,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "types.ts",
+											"line": 30,
+											"character": 30,
+											"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/types.ts#L30"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 78,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 79,
+													"name": "socket",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "types.ts",
+															"line": 30,
+															"character": 38,
+															"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/types.ts#L30"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/types.ts",
+															"qualifiedName": "SocketData"
+														},
+														"name": "SocketData",
+														"package": "rete-connection-plugin"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														79
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "types.ts",
+													"line": 30,
+													"character": 36,
+													"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/types.ts#L30"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 76,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "types.ts",
+											"line": 30,
+											"character": 6,
+											"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/types.ts#L30"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "connectionpick"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										77,
+										76
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "types.ts",
+									"line": 30,
+									"character": 4,
+									"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/types.ts#L30"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 80,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 82,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "types.ts",
+											"line": 31,
+											"character": 30,
+											"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/types.ts#L31"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 83,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 86,
+													"name": "created",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "types.ts",
+															"line": 31,
+															"character": 86,
+															"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/types.ts#L31"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "boolean"
+													}
+												},
+												{
+													"id": 84,
+													"name": "initial",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "types.ts",
+															"line": 31,
+															"character": 38,
+															"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/types.ts#L31"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/types.ts",
+															"qualifiedName": "SocketData"
+														},
+														"name": "SocketData",
+														"package": "rete-connection-plugin"
+													}
+												},
+												{
+													"id": 85,
+													"name": "socket",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "types.ts",
+															"line": 31,
+															"character": 59,
+															"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/types.ts#L31"
+														}
+													],
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "src/types.ts",
+																	"qualifiedName": "SocketData"
+																},
+																"name": "SocketData",
+																"package": "rete-connection-plugin"
+															},
+															{
+																"type": "literal",
+																"value": null
+															}
+														]
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														86,
+														84,
+														85
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "types.ts",
+													"line": 31,
+													"character": 36,
+													"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/types.ts#L31"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 81,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "types.ts",
+											"line": 31,
+											"character": 6,
+											"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/types.ts#L31"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "connectiondrop"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										82,
+										81
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "types.ts",
+									"line": 31,
+									"character": 4,
+									"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/types.ts#L31"
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": 53,
+			"name": "createPseudoconnection",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "pseudoconnection.ts",
+					"line": 11,
+					"character": 16,
+					"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/pseudoconnection.ts#L11"
+				}
+			],
+			"signatures": [
+				{
+					"id": 54,
+					"name": "createPseudoconnection",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Create pseudoconnection. Used to trigger rendering of connection that is being created by user.\nHas additional "
+							},
+							{
+								"kind": "code",
+								"text": "`isPseudo`"
+							},
+							{
+								"kind": "text",
+								"text": " property in payload."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "pseudoconnection.ts",
+							"line": 11,
+							"character": 0,
+							"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/pseudoconnection.ts#L11"
+						}
+					],
+					"typeParameter": [
+						{
+							"id": 55,
+							"name": "Schemes",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "src/types.ts",
+									"qualifiedName": "ClassicScheme"
+								},
+								"name": "ClassicScheme",
+								"package": "rete-connection-plugin"
+							}
+						},
+						{
+							"id": 56,
+							"name": "K",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {}
+						}
+					],
+					"parameters": [
+						{
+							"id": 57,
+							"name": "extra",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Extra payload to add to connection"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Partial"
+								},
+								"typeArguments": [
+									{
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "Connection"
+										},
+										"objectType": {
+											"type": "reference",
+											"target": -1,
+											"name": "Schemes",
+											"refersToTypeParameter": true
+										}
+									}
+								],
+								"name": "Partial",
+								"package": "typescript"
+							}
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 58,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 61,
+									"name": "mount",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "pseudoconnection.ts",
+											"line": 31,
+											"character": 4,
+											"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/pseudoconnection.ts#L31"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 62,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "pseudoconnection.ts",
+													"line": 22,
+													"character": 11,
+													"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/pseudoconnection.ts#L22"
+												}
+											],
+											"signatures": [
+												{
+													"id": 63,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "pseudoconnection.ts",
+															"line": 22,
+															"character": 2,
+															"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/pseudoconnection.ts#L22"
+														}
+													],
+													"parameters": [
+														{
+															"id": 64,
+															"name": "areaPlugin",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "node_modules/src/base.ts",
+																	"qualifiedName": "BaseAreaPlugin"
+																},
+																"typeArguments": [
+																	{
+																		"type": "reference",
+																		"target": -1,
+																		"name": "Schemes",
+																		"refersToTypeParameter": true
+																	},
+																	{
+																		"type": "union",
+																		"types": [
+																			{
+																				"type": "reference",
+																				"target": -1,
+																				"name": "K",
+																				"refersToTypeParameter": true
+																			},
+																			{
+																				"type": "reference",
+																				"target": {
+																					"sourceFileName": "node_modules/src/base.ts",
+																					"qualifiedName": "BaseArea"
+																				},
+																				"typeArguments": [
+																					{
+																						"type": "reference",
+																						"target": -1,
+																						"name": "Schemes",
+																						"refersToTypeParameter": true
+																					}
+																				],
+																				"name": "BaseArea",
+																				"package": "rete-area-plugin"
+																			}
+																		]
+																	}
+																],
+																"name": "BaseAreaPlugin",
+																"package": "rete-area-plugin"
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 70,
+									"name": "unmount",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "pseudoconnection.ts",
+											"line": 72,
+											"character": 4,
+											"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/pseudoconnection.ts#L72"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 71,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "pseudoconnection.ts",
+													"line": 15,
+													"character": 11,
+													"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/pseudoconnection.ts#L15"
+												}
+											],
+											"signatures": [
+												{
+													"id": 72,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "pseudoconnection.ts",
+															"line": 15,
+															"character": 2,
+															"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/pseudoconnection.ts#L15"
+														}
+													],
+													"parameters": [
+														{
+															"id": 73,
+															"name": "areaPlugin",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "node_modules/src/base.ts",
+																	"qualifiedName": "BaseAreaPlugin"
+																},
+																"typeArguments": [
+																	{
+																		"type": "reference",
+																		"target": -1,
+																		"name": "Schemes",
+																		"refersToTypeParameter": true
+																	},
+																	{
+																		"type": "union",
+																		"types": [
+																			{
+																				"type": "reference",
+																				"target": -1,
+																				"name": "K",
+																				"refersToTypeParameter": true
+																			},
+																			{
+																				"type": "reference",
+																				"target": {
+																					"sourceFileName": "node_modules/src/base.ts",
+																					"qualifiedName": "BaseArea"
+																				},
+																				"typeArguments": [
+																					{
+																						"type": "reference",
+																						"target": -1,
+																						"name": "Schemes",
+																						"refersToTypeParameter": true
+																					}
+																				],
+																				"name": "BaseArea",
+																				"package": "rete-area-plugin"
+																			}
+																		]
+																	}
+																],
+																"name": "BaseAreaPlugin",
+																"package": "rete-area-plugin"
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 59,
+									"name": "isMounted",
+									"variant": "declaration",
+									"kind": 2048,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "pseudoconnection.ts",
+											"line": 28,
+											"character": 4,
+											"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/pseudoconnection.ts#L28"
+										}
+									],
+									"signatures": [
+										{
+											"id": 60,
+											"name": "isMounted",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "pseudoconnection.ts",
+													"line": 28,
+													"character": 4,
+													"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/pseudoconnection.ts#L28"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									]
+								},
+								{
+									"id": 65,
+									"name": "render",
+									"variant": "declaration",
+									"kind": 2048,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "pseudoconnection.ts",
+											"line": 33,
+											"character": 4,
+											"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/pseudoconnection.ts#L33"
+										}
+									],
+									"signatures": [
+										{
+											"id": 66,
+											"name": "render",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "pseudoconnection.ts",
+													"line": 33,
+													"character": 4,
+													"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/pseudoconnection.ts#L33"
+												}
+											],
+											"parameters": [
+												{
+													"id": 67,
+													"name": "areaPlugin",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/src/base.ts",
+															"qualifiedName": "BaseAreaPlugin"
+														},
+														"typeArguments": [
+															{
+																"type": "reference",
+																"target": -1,
+																"name": "Schemes",
+																"refersToTypeParameter": true
+															},
+															{
+																"type": "union",
+																"types": [
+																	{
+																		"type": "reference",
+																		"target": -1,
+																		"name": "K",
+																		"refersToTypeParameter": true
+																	},
+																	{
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "node_modules/src/base.ts",
+																			"qualifiedName": "BaseArea"
+																		},
+																		"typeArguments": [
+																			{
+																				"type": "reference",
+																				"target": -1,
+																				"name": "Schemes",
+																				"refersToTypeParameter": true
+																			}
+																		],
+																		"name": "BaseArea",
+																		"package": "rete-area-plugin"
+																	}
+																]
+															}
+														],
+														"name": "BaseAreaPlugin",
+														"package": "rete-area-plugin"
+													}
+												},
+												{
+													"id": 68,
+													"name": "__namedParameters",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/types.ts",
+															"qualifiedName": "Position"
+														},
+														"name": "Position",
+														"package": "rete-connection-plugin"
+													}
+												},
+												{
+													"id": 69,
+													"name": "data",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/types.ts",
+															"qualifiedName": "SocketData"
+														},
+														"name": "SocketData",
+														"package": "rete-connection-plugin"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										61,
+										70
+									]
+								},
+								{
+									"title": "Methods",
+									"children": [
+										59,
+										65
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "pseudoconnection.ts",
+									"line": 27,
+									"character": 9,
+									"url": "https://github.com/retejs/connection-plugin/blob/a669679/src/pseudoconnection.ts#L27"
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"children": [
+				47
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				114,
+				150,
+				1
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				103,
+				135,
+				74
+			]
+		},
+		{
+			"title": "Functions",
+			"children": [
+				53
+			]
+		}
+	],
+	"packageName": "rete-connection-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js Connection plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Interactive connection**: adding or removing connections with the cursor\n- **Swappable flows**: you can choose different ways to interact\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/basic#interactive-connections) and [example](https://retejs.org/examples) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/connection-plugin/blob/master/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ConnectionPlugin"
+		},
+		"28": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ConnectionPlugin.addPreset"
+		},
+		"29": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ConnectionPlugin.addPreset"
+		},
+		"30": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "preset"
+		},
+		"36": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ConnectionPlugin.drop"
+		},
+		"37": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ConnectionPlugin.drop"
+		},
+		"45": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ConnectionPlugin.Schemes"
+		},
+		"46": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ConnectionPlugin.K"
+		},
+		"47": {
+			"sourceFileName": "src/presets/index.ts",
+			"qualifiedName": ""
+		},
+		"48": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": ""
+		},
+		"49": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "setup"
+		},
+		"50": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "setup"
+		},
+		"51": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "__function"
+		},
+		"52": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "__function"
+		},
+		"53": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "createPseudoconnection"
+		},
+		"54": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "createPseudoconnection"
+		},
+		"55": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "Schemes"
+		},
+		"56": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "K"
+		},
+		"57": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "extra"
+		},
+		"58": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "__object"
+		},
+		"59": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "__object.isMounted"
+		},
+		"60": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "__object.isMounted"
+		},
+		"61": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "__object.mount"
+		},
+		"62": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "mount"
+		},
+		"63": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "mount"
+		},
+		"64": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "areaPlugin"
+		},
+		"65": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "__object.render"
+		},
+		"66": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "__object.render"
+		},
+		"67": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "areaPlugin"
+		},
+		"68": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "__1"
+		},
+		"69": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "data"
+		},
+		"70": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "__object.unmount"
+		},
+		"71": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "unmount"
+		},
+		"72": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "unmount"
+		},
+		"73": {
+			"sourceFileName": "src/pseudoconnection.ts",
+			"qualifiedName": "areaPlugin"
+		},
+		"74": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "Connection"
+		},
+		"75": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type"
+		},
+		"76": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type.type"
+		},
+		"77": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type.data"
+		},
+		"78": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type"
+		},
+		"79": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type.socket"
+		},
+		"80": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type"
+		},
+		"81": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type.type"
+		},
+		"82": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type.data"
+		},
+		"83": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type"
+		},
+		"84": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type.initial"
+		},
+		"85": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type.socket"
+		},
+		"86": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "__type.created"
+		},
+		"103": {
+			"sourceFileName": "src/flow/builtin/bidirect.ts",
+			"qualifiedName": "BidirectParams"
+		},
+		"104": {
+			"sourceFileName": "src/flow/builtin/bidirect.ts",
+			"qualifiedName": "__type"
+		},
+		"105": {
+			"sourceFileName": "src/flow/builtin/bidirect.ts",
+			"qualifiedName": "__type.pickByClick"
+		},
+		"106": {
+			"sourceFileName": "src/flow/builtin/bidirect.ts",
+			"qualifiedName": "__type.makeConnection"
+		},
+		"107": {
+			"sourceFileName": "src/flow/builtin/bidirect.ts",
+			"qualifiedName": "__type"
+		},
+		"108": {
+			"sourceFileName": "src/flow/builtin/bidirect.ts",
+			"qualifiedName": "__type"
+		},
+		"109": {
+			"sourceFileName": "src/flow/builtin/bidirect.ts",
+			"qualifiedName": "from"
+		},
+		"110": {
+			"sourceFileName": "src/flow/builtin/bidirect.ts",
+			"qualifiedName": "to"
+		},
+		"111": {
+			"sourceFileName": "src/flow/builtin/bidirect.ts",
+			"qualifiedName": "context"
+		},
+		"112": {
+			"sourceFileName": "src/flow/builtin/bidirect.ts",
+			"qualifiedName": "K"
+		},
+		"113": {
+			"sourceFileName": "src/flow/builtin/bidirect.ts",
+			"qualifiedName": "Schemes"
+		},
+		"114": {
+			"sourceFileName": "src/flow/builtin/bidirect.ts",
+			"qualifiedName": "BidirectFlow"
+		},
+		"133": {
+			"sourceFileName": "src/flow/builtin/bidirect.ts",
+			"qualifiedName": "BidirectFlow.Schemes"
+		},
+		"134": {
+			"sourceFileName": "src/flow/builtin/bidirect.ts",
+			"qualifiedName": "BidirectFlow.K"
+		},
+		"135": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "ClassicParams"
+		},
+		"136": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "__type"
+		},
+		"137": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "__type.canMakeConnection"
+		},
+		"138": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "__type"
+		},
+		"139": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "__type"
+		},
+		"140": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "from"
+		},
+		"141": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "to"
+		},
+		"142": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "__type.makeConnection"
+		},
+		"143": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "__type"
+		},
+		"144": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "__type"
+		},
+		"145": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "from"
+		},
+		"146": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "to"
+		},
+		"147": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "context"
+		},
+		"148": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "K"
+		},
+		"149": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"150": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "ClassicFlow"
+		},
+		"169": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "ClassicFlow.Schemes"
+		},
+		"170": {
+			"sourceFileName": "src/flow/builtin/classic/index.ts",
+			"qualifiedName": "ClassicFlow.K"
+		}
+	}
+}

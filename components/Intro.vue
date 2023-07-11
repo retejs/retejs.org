@@ -19,7 +19,7 @@ export default {
   props: ['show', 'scroll', 'autoplay'],
   setup(props: { show: boolean, scroll: boolean, autoplay: boolean }) {
     const introRef = ref<HTMLIFrameElement | null>(null);
-    console.log(props);
+
     watch(computed(() => props.scroll && props.show && introRef.value), () => {
       if (props.scroll && props.show && introRef.value) {
         const top = window.scrollY + introRef.value.getBoundingClientRect().top;
