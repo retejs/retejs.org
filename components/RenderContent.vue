@@ -5,7 +5,9 @@ ContentRenderer(:value="data")
 </template>
 
 <script>
-import { defineComponent, computed, ref } from 'vue';
+import {
+  defineComponent, computed, ref,
+} from 'vue';
 import { getPreview, mainPreview } from '../shared/assets';
 import { useShareThis } from '../shared/sharethis';
 import host from '../consts/host.json';
@@ -20,6 +22,8 @@ export default defineComponent({
 
     // eslint-disable-next-line no-undef
     const { data } = await useAsyncData(path, () => queryContent(path).findOne());
+
+    if (!data.value) return { data: null };
 
     const { image, description } = data.value;
     const title = computed(() => `${props.title ? props.title(data.value) || data.value.title : data.value.title} - Rete.js`);
