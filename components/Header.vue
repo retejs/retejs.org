@@ -1,5 +1,4 @@
 <template lang="pug">
-Notice
 .header(ref="element")
   Menu.menu(
       mode="horizontal"
@@ -33,7 +32,6 @@ import MenuItems from './MenuItems.vue';
 import Links from './Links.vue';
 import Search from './Search.vue';
 import Drawer from './shared/Drawer.vue';
-import Notice from './Notice.vue';
 
 export default defineComponent({
   setup() {
@@ -59,7 +57,6 @@ export default defineComponent({
     Search,
     Drawer,
     Links,
-    Notice,
   },
 });
 </script>
