@@ -50,7 +50,7 @@
 							"fileName": "src/extensions/selectable.ts",
 							"line": 40,
 							"character": 13,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L40"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L40"
 						}
 					],
 					"typeParameters": [
@@ -91,7 +91,7 @@
 							"fileName": "src/extensions/restrictor.ts",
 							"line": 12,
 							"character": 12,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/restrictor.ts#L12"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/restrictor.ts#L12"
 						}
 					],
 					"type": {
@@ -124,7 +124,7 @@
 											"fileName": "src/extensions/restrictor.ts",
 											"line": 14,
 											"character": 2,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/restrictor.ts#L14"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/restrictor.ts#L14"
 										}
 									],
 									"type": {
@@ -152,7 +152,7 @@
 															"fileName": "src/extensions/restrictor.ts",
 															"line": 14,
 															"character": 26,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/restrictor.ts#L14"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/restrictor.ts#L14"
 														}
 													],
 													"signatures": [
@@ -203,7 +203,7 @@
 											"fileName": "src/extensions/restrictor.ts",
 											"line": 16,
 											"character": 2,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/restrictor.ts#L16"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/restrictor.ts#L16"
 										}
 									],
 									"type": {
@@ -231,7 +231,7 @@
 															"fileName": "src/extensions/restrictor.ts",
 															"line": 16,
 															"character": 34,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/restrictor.ts#L16"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/restrictor.ts#L16"
 														}
 													],
 													"signatures": [
@@ -276,7 +276,7 @@
 									"fileName": "src/extensions/restrictor.ts",
 									"line": 12,
 									"character": 21,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/restrictor.ts#L12"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/restrictor.ts#L12"
 								}
 							]
 						}
@@ -301,7 +301,7 @@
 							"fileName": "src/extensions/snap.ts",
 							"line": 8,
 							"character": 12,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/snap.ts#L8"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/snap.ts#L8"
 						}
 					],
 					"type": {
@@ -334,7 +334,7 @@
 											"fileName": "src/extensions/snap.ts",
 											"line": 12,
 											"character": 2,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/snap.ts#L12"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/snap.ts#L12"
 										}
 									],
 									"type": {
@@ -363,7 +363,7 @@
 											"fileName": "src/extensions/snap.ts",
 											"line": 10,
 											"character": 2,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/snap.ts#L10"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/snap.ts#L10"
 										}
 									],
 									"type": {
@@ -386,7 +386,7 @@
 									"fileName": "src/extensions/snap.ts",
 									"line": 8,
 									"character": 21,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/snap.ts#L8"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/snap.ts#L8"
 								}
 							]
 						}
@@ -411,7 +411,7 @@
 							"fileName": "src/extensions/zoom-at.ts",
 							"line": 11,
 							"character": 12,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/zoom-at.ts#L11"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/zoom-at.ts#L11"
 						}
 					],
 					"type": {
@@ -444,7 +444,7 @@
 											"fileName": "src/extensions/zoom-at.ts",
 											"line": 13,
 											"character": 2,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/zoom-at.ts#L13"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/zoom-at.ts#L13"
 										}
 									],
 									"type": {
@@ -466,7 +466,7 @@
 									"fileName": "src/extensions/zoom-at.ts",
 									"line": 11,
 									"character": 21,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/zoom-at.ts#L11"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/zoom-at.ts#L11"
 								}
 							]
 						}
@@ -483,7 +483,7 @@
 							"fileName": "src/extensions/selectable.ts",
 							"line": 10,
 							"character": 16,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L10"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L10"
 						}
 					],
 					"signatures": [
@@ -506,7 +506,7 @@
 									"fileName": "src/extensions/selectable.ts",
 									"line": 10,
 									"character": 0,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L10"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L10"
 								}
 							],
 							"type": {
@@ -529,7 +529,7 @@
 													"fileName": "src/extensions/selectable.ts",
 													"line": 24,
 													"character": 4,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L24"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L24"
 												}
 											],
 											"signatures": [
@@ -544,7 +544,7 @@
 															"fileName": "src/extensions/selectable.ts",
 															"line": 24,
 															"character": 4,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L24"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L24"
 														}
 													],
 													"type": {
@@ -565,7 +565,7 @@
 													"fileName": "src/extensions/selectable.ts",
 													"line": 27,
 													"character": 4,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L27"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L27"
 												}
 											],
 											"signatures": [
@@ -580,7 +580,7 @@
 															"fileName": "src/extensions/selectable.ts",
 															"line": 27,
 															"character": 4,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L27"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L27"
 														}
 													],
 													"type": {
@@ -605,7 +605,7 @@
 											"fileName": "src/extensions/selectable.ts",
 											"line": 23,
 											"character": 9,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L23"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L23"
 										}
 									]
 								}
@@ -624,7 +624,7 @@
 							"fileName": "src/extensions/bounding-box.ts",
 							"line": 14,
 							"character": 16,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/bounding-box.ts#L14"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/bounding-box.ts#L14"
 						}
 					],
 					"signatures": [
@@ -658,7 +658,7 @@
 									"fileName": "src/extensions/bounding-box.ts",
 									"line": 14,
 									"character": 0,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/bounding-box.ts#L14"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/bounding-box.ts#L14"
 								}
 							],
 							"typeParameter": [
@@ -778,7 +778,7 @@
 													"fileName": "src/utils.ts",
 													"line": 61,
 													"character": 4,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L61"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/utils.ts#L61"
 												}
 											],
 											"type": {
@@ -797,7 +797,7 @@
 													"fileName": "src/utils.ts",
 													"line": 64,
 													"character": 4,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L64"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/utils.ts#L64"
 												}
 											],
 											"type": {
@@ -820,7 +820,7 @@
 																	"fileName": "src/utils.ts",
 																	"line": 65,
 																	"character": 6,
-																	"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L65"
+																	"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/utils.ts#L65"
 																}
 															],
 															"type": {
@@ -840,7 +840,7 @@
 																	"fileName": "src/utils.ts",
 																	"line": 66,
 																	"character": 6,
-																	"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L66"
+																	"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/utils.ts#L66"
 																}
 															],
 															"type": {
@@ -864,7 +864,7 @@
 															"fileName": "src/utils.ts",
 															"line": 64,
 															"character": 12,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L64"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/utils.ts#L64"
 														}
 													]
 												}
@@ -882,7 +882,7 @@
 													"fileName": "src/utils.ts",
 													"line": 63,
 													"character": 4,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L63"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/utils.ts#L63"
 												}
 											],
 											"type": {
@@ -902,7 +902,7 @@
 													"fileName": "src/utils.ts",
 													"line": 58,
 													"character": 4,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L58"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/utils.ts#L58"
 												}
 											],
 											"type": {
@@ -921,7 +921,7 @@
 													"fileName": "src/utils.ts",
 													"line": 59,
 													"character": 4,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L59"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/utils.ts#L59"
 												}
 											],
 											"type": {
@@ -940,7 +940,7 @@
 													"fileName": "src/utils.ts",
 													"line": 60,
 													"character": 4,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L60"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/utils.ts#L60"
 												}
 											],
 											"type": {
@@ -959,7 +959,7 @@
 													"fileName": "src/utils.ts",
 													"line": 62,
 													"character": 4,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L62"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/utils.ts#L62"
 												}
 											],
 											"type": {
@@ -988,7 +988,7 @@
 											"fileName": "src/utils.ts",
 											"line": 57,
 											"character": 9,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L57"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/utils.ts#L57"
 										}
 									]
 								}
@@ -1007,7 +1007,7 @@
 							"fileName": "src/extensions/restrictor.ts",
 							"line": 27,
 							"character": 16,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/restrictor.ts#L27"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/restrictor.ts#L27"
 						}
 					],
 					"signatures": [
@@ -1059,7 +1059,7 @@
 									"fileName": "src/extensions/restrictor.ts",
 									"line": 27,
 									"character": 0,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/restrictor.ts#L27"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/restrictor.ts#L27"
 								}
 							],
 							"typeParameter": [
@@ -1165,7 +1165,7 @@
 							"fileName": "src/extensions/selectable.ts",
 							"line": 112,
 							"character": 16,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L112"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L112"
 						}
 					],
 					"signatures": [
@@ -1235,7 +1235,7 @@
 									"fileName": "src/extensions/selectable.ts",
 									"line": 112,
 									"character": 0,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L112"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L112"
 								}
 							],
 							"typeParameter": [
@@ -1352,7 +1352,7 @@
 															"fileName": "src/extensions/selectable.ts",
 															"line": 112,
 															"character": 98,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L112"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L112"
 														}
 													],
 													"type": {
@@ -1379,7 +1379,7 @@
 													"fileName": "src/extensions/selectable.ts",
 													"line": 112,
 													"character": 96,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L112"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L112"
 												}
 											]
 										}
@@ -1406,7 +1406,7 @@
 													"fileName": "src/extensions/selectable.ts",
 													"line": 198,
 													"character": 4,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L198"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L198"
 												}
 											],
 											"type": {
@@ -1422,7 +1422,7 @@
 															"fileName": "src/extensions/selectable.ts",
 															"line": 137,
 															"character": 11,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L137"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L137"
 														}
 													],
 													"signatures": [
@@ -1445,7 +1445,7 @@
 																	"fileName": "src/extensions/selectable.ts",
 																	"line": 137,
 																	"character": 2,
-																	"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L137"
+																	"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L137"
 																}
 															],
 															"parameters": [
@@ -1509,7 +1509,7 @@
 													"fileName": "src/extensions/selectable.ts",
 													"line": 199,
 													"character": 4,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L199"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L199"
 												}
 											],
 											"type": {
@@ -1525,7 +1525,7 @@
 															"fileName": "src/extensions/selectable.ts",
 															"line": 163,
 															"character": 11,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L163"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L163"
 														}
 													],
 													"signatures": [
@@ -1548,7 +1548,7 @@
 																	"fileName": "src/extensions/selectable.ts",
 																	"line": 163,
 																	"character": 2,
-																	"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L163"
+																	"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L163"
 																}
 															],
 															"parameters": [
@@ -1597,7 +1597,7 @@
 											"fileName": "src/extensions/selectable.ts",
 											"line": 197,
 											"character": 9,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L197"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L197"
 										}
 									]
 								}
@@ -1616,7 +1616,7 @@
 							"fileName": "src/extensions/selectable.ts",
 							"line": 88,
 							"character": 16,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L88"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L88"
 						}
 					],
 					"signatures": [
@@ -1650,7 +1650,7 @@
 									"fileName": "src/extensions/selectable.ts",
 									"line": 88,
 									"character": 0,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/selectable.ts#L88"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/selectable.ts#L88"
 								}
 							],
 							"typeParameter": [
@@ -1699,7 +1699,7 @@
 							"fileName": "src/extensions/show-input-control.ts",
 							"line": 15,
 							"character": 16,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/show-input-control.ts#L15"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/show-input-control.ts#L15"
 						}
 					],
 					"signatures": [
@@ -1742,7 +1742,7 @@
 									"fileName": "src/extensions/show-input-control.ts",
 									"line": 15,
 									"character": 0,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/show-input-control.ts#L15"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/show-input-control.ts#L15"
 								}
 							],
 							"typeParameter": [
@@ -1853,7 +1853,7 @@
 							"fileName": "src/extensions/order.ts",
 							"line": 11,
 							"character": 16,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/order.ts#L11"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/order.ts#L11"
 						}
 					],
 					"signatures": [
@@ -1896,7 +1896,7 @@
 									"fileName": "src/extensions/order.ts",
 									"line": 11,
 									"character": 0,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/order.ts#L11"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/order.ts#L11"
 								}
 							],
 							"typeParameter": [
@@ -1979,7 +1979,7 @@
 							"fileName": "src/extensions/snap.ts",
 							"line": 22,
 							"character": 16,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/snap.ts#L22"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/snap.ts#L22"
 						}
 					],
 					"signatures": [
@@ -2022,7 +2022,7 @@
 									"fileName": "src/extensions/snap.ts",
 									"line": 22,
 									"character": 0,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/snap.ts#L22"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/snap.ts#L22"
 								}
 							],
 							"typeParameter": [
@@ -2128,7 +2128,7 @@
 							"fileName": "src/extensions/zoom-at.ts",
 							"line": 23,
 							"character": 22,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/zoom-at.ts#L23"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/zoom-at.ts#L23"
 						}
 					],
 					"signatures": [
@@ -2151,7 +2151,7 @@
 									"fileName": "src/extensions/zoom-at.ts",
 									"line": 23,
 									"character": 0,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/zoom-at.ts#L23"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/zoom-at.ts#L23"
 								}
 							],
 							"typeParameter": [
@@ -2328,7 +2328,7 @@
 					"fileName": "src/extensions/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/extensions/index.ts#L1"
+					"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/extensions/index.ts#L1"
 				}
 			]
 		},
@@ -2352,6 +2352,33 @@
 							{
 								"kind": "text",
 								"text": "8"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "render"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "rendered"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "unmount"
 							}
 						]
 					},
@@ -2390,24 +2417,6 @@
 								"text": "connectionremoved"
 							}
 						]
-					},
-					{
-						"tag": "@listens",
-						"content": [
-							{
-								"kind": "text",
-								"text": "render"
-							}
-						]
-					},
-					{
-						"tag": "@listens",
-						"content": [
-							{
-								"kind": "text",
-								"text": "unmount"
-							}
-						]
 					}
 				]
 			},
@@ -2423,9 +2432,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 203,
+							"line": 204,
 							"character": 9,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L203"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L204"
 						}
 					],
 					"signatures": [
@@ -2446,9 +2455,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 203,
+									"line": 204,
 									"character": 2,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L203"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L204"
 								}
 							],
 							"type": {
@@ -2479,9 +2488,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 183,
+							"line": 184,
 							"character": 15,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L183"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L184"
 						}
 					],
 					"signatures": [
@@ -2502,9 +2511,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 183,
+									"line": 184,
 									"character": 2,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L183"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L184"
 								}
 							],
 							"parameters": [
@@ -2614,9 +2623,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 194,
+							"line": 195,
 							"character": 15,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L194"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L195"
 						}
 					],
 					"signatures": [
@@ -2637,9 +2646,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 194,
+									"line": 195,
 									"character": 2,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L194"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L195"
 								}
 							],
 							"parameters": [
@@ -2735,9 +2744,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 171,
+							"line": 172,
 							"character": 15,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L171"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L172"
 						}
 					],
 					"signatures": [
@@ -2769,9 +2778,9 @@
 							"sources": [
 								{
 									"fileName": "src/index.ts",
-									"line": 171,
+									"line": 172,
 									"character": 2,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L171"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L172"
 								}
 							],
 							"parameters": [
@@ -2883,9 +2892,9 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 45,
+					"line": 46,
 					"character": 13,
-					"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L45"
+					"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L46"
 				}
 			],
 			"typeParameters": [
@@ -2986,7 +2995,7 @@
 					"fileName": "src/base.ts",
 					"line": 54,
 					"character": 22,
-					"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L54"
+					"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L54"
 				}
 			],
 			"typeParameters": [
@@ -3082,7 +3091,7 @@
 					"fileName": "src/drag.ts",
 					"line": 23,
 					"character": 13,
-					"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/drag.ts#L23"
+					"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/drag.ts#L23"
 				}
 			]
 		},
@@ -3108,7 +3117,7 @@
 					"fileName": "src/zoom.ts",
 					"line": 12,
 					"character": 13,
-					"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/zoom.ts#L12"
+					"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/zoom.ts#L12"
 				}
 			]
 		},
@@ -3142,7 +3151,7 @@
 					"fileName": "src/index.ts",
 					"line": 25,
 					"character": 12,
-					"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L25"
+					"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L25"
 				}
 			],
 			"typeParameters": [
@@ -3200,7 +3209,7 @@
 											"fileName": "src/index.ts",
 											"line": 27,
 											"character": 25,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L27"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L27"
 										}
 									],
 									"type": {
@@ -3224,7 +3233,7 @@
 											"fileName": "src/index.ts",
 											"line": 27,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L27"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L27"
 										}
 									],
 									"type": {
@@ -3247,7 +3256,7 @@
 									"fileName": "src/index.ts",
 									"line": 27,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L27"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L27"
 								}
 							]
 						}
@@ -3272,7 +3281,7 @@
 											"fileName": "src/index.ts",
 											"line": 28,
 											"character": 26,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L28"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L28"
 										}
 									],
 									"type": {
@@ -3296,7 +3305,7 @@
 											"fileName": "src/index.ts",
 											"line": 28,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L28"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L28"
 										}
 									],
 									"type": {
@@ -3319,7 +3328,7 @@
 									"fileName": "src/index.ts",
 									"line": 28,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L28"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L28"
 								}
 							]
 						}
@@ -3344,7 +3353,7 @@
 											"fileName": "src/index.ts",
 											"line": 29,
 											"character": 20,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L29"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L29"
 										}
 									],
 									"type": {
@@ -3368,7 +3377,7 @@
 											"fileName": "src/index.ts",
 											"line": 29,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L29"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L29"
 										}
 									],
 									"type": {
@@ -3391,7 +3400,7 @@
 									"fileName": "src/index.ts",
 									"line": 29,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L29"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L29"
 								}
 							]
 						}
@@ -3416,7 +3425,7 @@
 											"fileName": "src/index.ts",
 											"line": 30,
 											"character": 22,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L30"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L30"
 										}
 									],
 									"type": {
@@ -3440,7 +3449,7 @@
 											"fileName": "src/index.ts",
 											"line": 30,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L30"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L30"
 										}
 									],
 									"type": {
@@ -3463,7 +3472,7 @@
 									"fileName": "src/index.ts",
 									"line": 30,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L30"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L30"
 								}
 							]
 						}
@@ -3488,7 +3497,7 @@
 											"fileName": "src/index.ts",
 											"line": 31,
 											"character": 23,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L31"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L31"
 										}
 									],
 									"type": {
@@ -3511,7 +3520,7 @@
 															"fileName": "src/index.ts",
 															"line": 31,
 															"character": 31,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L31"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L31"
 														}
 													],
 													"type": {
@@ -3538,7 +3547,7 @@
 													"fileName": "src/index.ts",
 													"line": 31,
 													"character": 29,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L31"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L31"
 												}
 											]
 										}
@@ -3555,7 +3564,7 @@
 											"fileName": "src/index.ts",
 											"line": 31,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L31"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L31"
 										}
 									],
 									"type": {
@@ -3578,7 +3587,7 @@
 									"fileName": "src/index.ts",
 									"line": 31,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/index.ts#L31"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/index.ts#L31"
 								}
 							]
 						}
@@ -3616,7 +3625,7 @@
 					"fileName": "src/base.ts",
 					"line": 34,
 					"character": 12,
-					"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L34"
+					"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L34"
 				}
 			],
 			"typeParameters": [
@@ -3660,7 +3669,7 @@
 											"fileName": "src/base.ts",
 											"line": 35,
 											"character": 26,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L35"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L35"
 										}
 									],
 									"type": {
@@ -3683,7 +3692,7 @@
 															"fileName": "src/base.ts",
 															"line": 35,
 															"character": 34,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L35"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L35"
 														}
 													],
 													"type": {
@@ -3705,7 +3714,7 @@
 													"fileName": "src/base.ts",
 													"line": 35,
 													"character": 32,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L35"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L35"
 												}
 											]
 										}
@@ -3722,7 +3731,7 @@
 											"fileName": "src/base.ts",
 											"line": 35,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L35"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L35"
 										}
 									],
 									"type": {
@@ -3745,7 +3754,7 @@
 									"fileName": "src/base.ts",
 									"line": 35,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L35"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L35"
 								}
 							]
 						}
@@ -3770,7 +3779,7 @@
 											"fileName": "src/base.ts",
 											"line": 36,
 											"character": 27,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L36"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L36"
 										}
 									],
 									"type": {
@@ -3798,7 +3807,7 @@
 											"fileName": "src/base.ts",
 											"line": 36,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L36"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L36"
 										}
 									],
 									"type": {
@@ -3821,7 +3830,7 @@
 									"fileName": "src/base.ts",
 									"line": 36,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L36"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L36"
 								}
 							]
 						}
@@ -3846,7 +3855,7 @@
 											"fileName": "src/base.ts",
 											"line": 37,
 											"character": 29,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L37"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L37"
 										}
 									],
 									"type": {
@@ -3872,7 +3881,7 @@
 																	"fileName": "src/base.ts",
 																	"line": 37,
 																	"character": 37,
-																	"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L37"
+																	"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L37"
 																}
 															],
 															"type": {
@@ -3894,7 +3903,7 @@
 															"fileName": "src/base.ts",
 															"line": 37,
 															"character": 35,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L37"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L37"
 														}
 													]
 												}
@@ -3922,7 +3931,7 @@
 											"fileName": "src/base.ts",
 											"line": 37,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L37"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L37"
 										}
 									],
 									"type": {
@@ -3945,7 +3954,7 @@
 									"fileName": "src/base.ts",
 									"line": 37,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L37"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L37"
 								}
 							]
 						}
@@ -3970,7 +3979,7 @@
 											"fileName": "src/base.ts",
 											"line": 38,
 											"character": 30,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L38"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L38"
 										}
 									],
 									"type": {
@@ -3996,7 +4005,7 @@
 																	"fileName": "src/base.ts",
 																	"line": 38,
 																	"character": 38,
-																	"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L38"
+																	"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L38"
 																}
 															],
 															"type": {
@@ -4018,7 +4027,7 @@
 															"fileName": "src/base.ts",
 															"line": 38,
 															"character": 36,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L38"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L38"
 														}
 													]
 												}
@@ -4046,7 +4055,7 @@
 											"fileName": "src/base.ts",
 											"line": 38,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L38"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L38"
 										}
 									],
 									"type": {
@@ -4069,7 +4078,7 @@
 									"fileName": "src/base.ts",
 									"line": 38,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L38"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L38"
 								}
 							]
 						}
@@ -4094,7 +4103,7 @@
 											"fileName": "src/base.ts",
 											"line": 39,
 											"character": 27,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L39"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L39"
 										}
 									],
 									"type": {
@@ -4117,7 +4126,7 @@
 															"fileName": "src/base.ts",
 															"line": 39,
 															"character": 54,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L39"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L39"
 														}
 													],
 													"type": {
@@ -4167,7 +4176,7 @@
 															"fileName": "src/base.ts",
 															"line": 39,
 															"character": 35,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L39"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L39"
 														}
 													],
 													"type": {
@@ -4195,7 +4204,7 @@
 													"fileName": "src/base.ts",
 													"line": 39,
 													"character": 33,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L39"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L39"
 												}
 											]
 										}
@@ -4212,7 +4221,7 @@
 											"fileName": "src/base.ts",
 											"line": 39,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L39"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L39"
 										}
 									],
 									"type": {
@@ -4235,7 +4244,7 @@
 									"fileName": "src/base.ts",
 									"line": 39,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L39"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L39"
 								}
 							]
 						}
@@ -4260,7 +4269,7 @@
 											"fileName": "src/base.ts",
 											"line": 40,
 											"character": 27,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L40"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L40"
 										}
 									],
 									"type": {
@@ -4283,7 +4292,7 @@
 															"fileName": "src/base.ts",
 															"line": 40,
 															"character": 55,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L40"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L40"
 														}
 													],
 													"type": {
@@ -4307,7 +4316,7 @@
 															"fileName": "src/base.ts",
 															"line": 40,
 															"character": 35,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L40"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L40"
 														}
 													],
 													"type": {
@@ -4335,7 +4344,7 @@
 													"fileName": "src/base.ts",
 													"line": 40,
 													"character": 33,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L40"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L40"
 												}
 											]
 										}
@@ -4352,7 +4361,7 @@
 											"fileName": "src/base.ts",
 											"line": 40,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L40"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L40"
 										}
 									],
 									"type": {
@@ -4375,7 +4384,7 @@
 									"fileName": "src/base.ts",
 									"line": 40,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L40"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L40"
 								}
 							]
 						}
@@ -4400,7 +4409,7 @@
 											"fileName": "src/base.ts",
 											"line": 41,
 											"character": 27,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L41"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L41"
 										}
 									],
 									"type": {
@@ -4423,7 +4432,7 @@
 															"fileName": "src/base.ts",
 															"line": 41,
 															"character": 55,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L41"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L41"
 														}
 													],
 													"type": {
@@ -4447,7 +4456,7 @@
 															"fileName": "src/base.ts",
 															"line": 41,
 															"character": 35,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L41"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L41"
 														}
 													],
 													"type": {
@@ -4475,7 +4484,7 @@
 													"fileName": "src/base.ts",
 													"line": 41,
 													"character": 33,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L41"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L41"
 												}
 											]
 										}
@@ -4492,7 +4501,7 @@
 											"fileName": "src/base.ts",
 											"line": 41,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L41"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L41"
 										}
 									],
 									"type": {
@@ -4515,7 +4524,7 @@
 									"fileName": "src/base.ts",
 									"line": 41,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L41"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L41"
 								}
 							]
 						}
@@ -4540,7 +4549,7 @@
 											"fileName": "src/base.ts",
 											"line": 42,
 											"character": 25,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L42"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L42"
 										}
 									],
 									"type": {
@@ -4563,7 +4572,7 @@
 															"fileName": "src/base.ts",
 															"line": 42,
 															"character": 53,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L42"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L42"
 														}
 													],
 													"type": {
@@ -4587,7 +4596,7 @@
 															"fileName": "src/base.ts",
 															"line": 42,
 															"character": 33,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L42"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L42"
 														}
 													],
 													"type": {
@@ -4615,7 +4624,7 @@
 													"fileName": "src/base.ts",
 													"line": 42,
 													"character": 31,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L42"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L42"
 												}
 											]
 										}
@@ -4632,7 +4641,7 @@
 											"fileName": "src/base.ts",
 											"line": 42,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L42"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L42"
 										}
 									],
 									"type": {
@@ -4655,7 +4664,7 @@
 									"fileName": "src/base.ts",
 									"line": 42,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L42"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L42"
 								}
 							]
 						}
@@ -4680,7 +4689,7 @@
 											"fileName": "src/base.ts",
 											"line": 43,
 											"character": 26,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L43"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L43"
 										}
 									],
 									"type": {
@@ -4706,7 +4715,7 @@
 																	"fileName": "src/base.ts",
 																	"line": 43,
 																	"character": 34,
-																	"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L43"
+																	"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L43"
 																}
 															],
 															"type": {
@@ -4728,7 +4737,7 @@
 															"fileName": "src/base.ts",
 															"line": 43,
 															"character": 32,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L43"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L43"
 														}
 													]
 												}
@@ -4756,7 +4765,7 @@
 											"fileName": "src/base.ts",
 											"line": 43,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L43"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L43"
 										}
 									],
 									"type": {
@@ -4779,7 +4788,7 @@
 									"fileName": "src/base.ts",
 									"line": 43,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L43"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L43"
 								}
 							]
 						}
@@ -4804,7 +4813,7 @@
 											"fileName": "src/base.ts",
 											"line": 44,
 											"character": 27,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L44"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L44"
 										}
 									],
 									"type": {
@@ -4830,7 +4839,7 @@
 																	"fileName": "src/base.ts",
 																	"line": 44,
 																	"character": 35,
-																	"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L44"
+																	"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L44"
 																}
 															],
 															"type": {
@@ -4852,7 +4861,7 @@
 															"fileName": "src/base.ts",
 															"line": 44,
 															"character": 33,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L44"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L44"
 														}
 													]
 												}
@@ -4880,7 +4889,7 @@
 											"fileName": "src/base.ts",
 											"line": 44,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L44"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L44"
 										}
 									],
 									"type": {
@@ -4903,7 +4912,7 @@
 									"fileName": "src/base.ts",
 									"line": 44,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L44"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L44"
 								}
 							]
 						}
@@ -4939,7 +4948,7 @@
 													"fileName": "src/base.ts",
 													"line": 45,
 													"character": 27,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L45"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L45"
 												}
 											],
 											"type": {
@@ -4970,7 +4979,7 @@
 											"fileName": "src/base.ts",
 											"line": 45,
 											"character": 25,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L45"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L45"
 										}
 									]
 								}
@@ -5012,7 +5021,7 @@
 													"fileName": "src/base.ts",
 													"line": 46,
 													"character": 83,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L46"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L46"
 												}
 											],
 											"type": {
@@ -5036,7 +5045,7 @@
 													"fileName": "src/base.ts",
 													"line": 46,
 													"character": 33,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L46"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L46"
 												}
 											],
 											"type": {
@@ -5066,7 +5075,7 @@
 													"fileName": "src/base.ts",
 													"line": 46,
 													"character": 65,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L46"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L46"
 												}
 											],
 											"type": {
@@ -5095,7 +5104,7 @@
 											"fileName": "src/base.ts",
 											"line": 46,
 											"character": 31,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L46"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L46"
 										}
 									]
 								}
@@ -5124,7 +5133,7 @@
 											"fileName": "src/base.ts",
 											"line": 47,
 											"character": 23,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L47"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L47"
 										}
 									],
 									"type": {
@@ -5147,7 +5156,7 @@
 															"fileName": "src/base.ts",
 															"line": 47,
 															"character": 31,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L47"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L47"
 														}
 													],
 													"type": {
@@ -5174,7 +5183,7 @@
 													"fileName": "src/base.ts",
 													"line": 47,
 													"character": 29,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L47"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L47"
 												}
 											]
 										}
@@ -5191,7 +5200,7 @@
 											"fileName": "src/base.ts",
 											"line": 47,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L47"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L47"
 										}
 									],
 									"type": {
@@ -5214,7 +5223,7 @@
 									"fileName": "src/base.ts",
 									"line": 47,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L47"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L47"
 								}
 							]
 						}
@@ -5239,7 +5248,7 @@
 											"fileName": "src/base.ts",
 											"line": 48,
 											"character": 25,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L48"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L48"
 										}
 									],
 									"type": {
@@ -5262,7 +5271,7 @@
 															"fileName": "src/base.ts",
 															"line": 48,
 															"character": 33,
-															"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L48"
+															"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L48"
 														}
 													],
 													"type": {
@@ -5289,7 +5298,7 @@
 													"fileName": "src/base.ts",
 													"line": 48,
 													"character": 31,
-													"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L48"
+													"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L48"
 												}
 											]
 										}
@@ -5306,7 +5315,7 @@
 											"fileName": "src/base.ts",
 											"line": 48,
 											"character": 6,
-											"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L48"
+											"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L48"
 										}
 									],
 									"type": {
@@ -5329,7 +5338,7 @@
 									"fileName": "src/base.ts",
 									"line": 48,
 									"character": 4,
-									"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/base.ts#L48"
+									"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/base.ts#L48"
 								}
 							]
 						}
@@ -5348,7 +5357,7 @@
 					"fileName": "src/utils.ts",
 					"line": 16,
 					"character": 16,
-					"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L16"
+					"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/utils.ts#L16"
 				}
 			],
 			"signatures": [
@@ -5371,7 +5380,7 @@
 							"fileName": "src/utils.ts",
 							"line": 16,
 							"character": 0,
-							"url": "https://github.com/retejs/area-plugin/blob/e3ffbc9/src/utils.ts#L16"
+							"url": "https://github.com/retejs/area-plugin/blob/f862e2e/src/utils.ts#L16"
 						}
 					],
 					"parameters": [
@@ -5455,7 +5464,7 @@
 	"readme": [
 		{
 			"kind": "text",
-			"text": "Rete.js Area plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Zooming**: allows users to zoom in and out on the content of the graph\n- **Dragging**: enables users to move nodes or elements of the graph\n- **Extensions**:\n  - **selectable**: allows users to select nodes or elements of the graph\n  - **snap**: snaps nodes or elements of the graph to a grid or other predetermined alignment\n  - **restrictor**: limits a zooming and dragging of area\n  - **order**: brings selected nodes forward\n  - **zoom at**: focuses viewport on specific nodes of the graph\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/basic) and [example](https://retejs.org/examples) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/area-plugin/blob/master/LICENSE)"
+			"text": "Rete.js Area plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Zooming**: allows users to zoom in and out on the content of the graph\n- **Dragging**: enables users to move nodes or elements of the graph\n- **Extensions**:\n  - **selectable**: allows users to select nodes or elements of the graph\n  - **snap**: snaps nodes or elements of the graph to a grid or other predetermined alignment\n  - **restrictor**: limits a zooming and dragging of area\n  - **order**: brings selected nodes forward\n  - **zoom at**: focuses viewport on specific nodes of the graph\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/basic) and [example](https://retejs.org/examples) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/area-plugin/blob/main/LICENSE)"
 		}
 	],
 	"symbolIdMap": {
