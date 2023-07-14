@@ -103,4 +103,9 @@ export default {
     display: block
   .intro
     margin: 2em auto 0 auto
+    +phone
+      margin: 2em 0
+      width: 100%
+      padding-bottom: calc(100% / 16 * 9)
+      border-radius: 0
 </style>
