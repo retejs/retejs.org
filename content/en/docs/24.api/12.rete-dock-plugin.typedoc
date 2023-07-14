@@ -1,0 +1,838 @@
+{
+	"id": 0,
+	"name": "rete-dock-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 32,
+			"name": "DockPresets",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Presets for the dock plugin"
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 33,
+					"name": "classic",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 34,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic/index.ts",
+									"line": 63,
+									"character": 16,
+									"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/presets/classic/index.ts#L63"
+								}
+							],
+							"signatures": [
+								{
+									"id": 35,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Classic preset for the dock plugin.\nCreates container for list of nodes and containers each node."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/classic/index.ts",
+											"line": 63,
+											"character": 0,
+											"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/presets/classic/index.ts#L63"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 36,
+											"name": "T",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {}
+										}
+									],
+									"parameters": [
+										{
+											"id": 37,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Preset properties"
+													}
+												]
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 38,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 41,
+															"name": "area",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {},
+															"comment": {
+																"summary": [
+																	{
+																		"kind": "text",
+																		"text": "Area plugin instance"
+																	}
+																]
+															},
+															"sources": [
+																{
+																	"fileName": "presets/classic/index.ts",
+																	"line": 63,
+																	"character": 65,
+																	"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/presets/classic/index.ts#L63"
+																}
+															],
+															"type": {
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "node_modules/src/index.ts",
+																	"qualifiedName": "AreaPlugin"
+																},
+																"typeArguments": [
+																	{
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "node_modules/src/types.ts",
+																			"qualifiedName": "BaseSchemes"
+																		},
+																		"name": "BaseSchemes",
+																		"package": "rete"
+																	},
+																	{
+																		"type": "reference",
+																		"target": -1,
+																		"name": "T",
+																		"refersToTypeParameter": true
+																	}
+																],
+																"name": "AreaPlugin",
+																"package": "rete-area-plugin"
+															}
+														},
+														{
+															"id": 40,
+															"name": "scale",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"comment": {
+																"summary": [
+																	{
+																		"kind": "text",
+																		"text": "Scale of a node"
+																	}
+																]
+															},
+															"sources": [
+																{
+																	"fileName": "presets/classic/index.ts",
+																	"line": 63,
+																	"character": 49,
+																	"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/presets/classic/index.ts#L63"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														},
+														{
+															"id": 39,
+															"name": "size",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"comment": {
+																"summary": [
+																	{
+																		"kind": "text",
+																		"text": "Size of a node"
+																	}
+																]
+															},
+															"sources": [
+																{
+																	"fileName": "presets/classic/index.ts",
+																	"line": 63,
+																	"character": 34,
+																	"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/presets/classic/index.ts#L63"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																41,
+																40,
+																39
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "presets/classic/index.ts",
+															"line": 63,
+															"character": 32,
+															"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/presets/classic/index.ts#L63"
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "Preset"
+										},
+										"name": "Preset",
+										"package": "rete-dock-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								34
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/classic/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/presets/classic/index.ts#L1"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Namespaces",
+					"children": [
+						33
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "presets/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/presets/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "DockPlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Dock plugin. Allows to create nodes from the dock by dragging or clicking."
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "10"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "render"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 17,
+					"name": "add",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 41,
+							"character": 2,
+							"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L41"
+						}
+					],
+					"signatures": [
+						{
+							"id": 18,
+							"name": "add",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Add node to the dock."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 41,
+									"character": 2,
+									"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L41"
+								}
+							],
+							"parameters": [
+								{
+									"id": 19,
+									"name": "create",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Function that creates node."
+											}
+										]
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 20,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 41,
+													"character": 14,
+													"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L41"
+												}
+											],
+											"signatures": [
+												{
+													"id": 21,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 41,
+															"character": 14,
+															"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L41"
+														}
+													],
+													"type": {
+														"type": "indexedAccess",
+														"indexType": {
+															"type": "literal",
+															"value": "Node"
+														},
+														"objectType": {
+															"type": "reference",
+															"target": -1,
+															"name": "Schemes",
+															"refersToTypeParameter": true
+														}
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 22,
+									"name": "index",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Index of the node in the dock, optional."
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 28,
+					"name": "addPreset",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 81,
+							"character": 2,
+							"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L81"
+						}
+					],
+					"signatures": [
+						{
+							"id": 29,
+							"name": "addPreset",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Add preset to the dock plugin."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 81,
+									"character": 2,
+									"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L81"
+								}
+							],
+							"parameters": [
+								{
+									"id": 30,
+									"name": "preset",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset that will manage dock items."
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "Preset"
+										},
+										"name": "Preset",
+										"package": "rete-dock-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 23,
+					"name": "remove",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 69,
+							"character": 2,
+							"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L69"
+						}
+					],
+					"signatures": [
+						{
+							"id": 24,
+							"name": "remove",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Remove node from the dock."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 69,
+									"character": 2,
+									"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L69"
+								}
+							],
+							"parameters": [
+								{
+									"id": 25,
+									"name": "create",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Function that creates node. Must be the same as in "
+											},
+											{
+												"kind": "code",
+												"text": "`add`"
+											},
+											{
+												"kind": "text",
+												"text": " method."
+											}
+										]
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 26,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 69,
+													"character": 17,
+													"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L69"
+												}
+											],
+											"signatures": [
+												{
+													"id": 27,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 69,
+															"character": 17,
+															"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L69"
+														}
+													],
+													"type": {
+														"type": "indexedAccess",
+														"indexType": {
+															"type": "literal",
+															"value": "Node"
+														},
+														"objectType": {
+															"type": "reference",
+															"target": -1,
+															"name": "Schemes",
+															"refersToTypeParameter": true
+														}
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"children": [
+						17,
+						28,
+						23
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 16,
+					"character": 13,
+					"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L16"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 31,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/src/scope.ts",
+						"qualifiedName": "Scope"
+					},
+					"typeArguments": [
+						{
+							"type": "intrinsic",
+							"name": "never"
+						},
+						{
+							"type": "reference",
+							"target": {
+								"sourceFileName": "node_modules/src/index.ts",
+								"qualifiedName": "Area2DInherited"
+							},
+							"typeArguments": [
+								{
+									"type": "reference",
+									"target": -1,
+									"name": "Schemes",
+									"refersToTypeParameter": true
+								},
+								{
+									"type": "intrinsic",
+									"name": "never"
+								}
+							],
+							"name": "Area2DInherited",
+							"package": "rete-area-plugin"
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"children": [
+				32
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				1
+			]
+		}
+	],
+	"packageName": "rete-dock-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js Dock plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Dock menu**: provides a clickable/draggable preview of available nodes\n- **Presets**: predefined configurations for the appearance of the dock menu\n  - **Classic**: places the dock menu at the bottom of the area\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/dock-menu) and [example](https://retejs.org/examples/dock) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/dock-plugin/blob/main/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DockPlugin"
+		},
+		"17": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DockPlugin.add"
+		},
+		"18": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DockPlugin.add"
+		},
+		"19": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "create"
+		},
+		"20": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"21": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"22": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "index"
+		},
+		"23": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DockPlugin.remove"
+		},
+		"24": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DockPlugin.remove"
+		},
+		"25": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "create"
+		},
+		"26": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"27": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"28": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DockPlugin.addPreset"
+		},
+		"29": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DockPlugin.addPreset"
+		},
+		"30": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "preset"
+		},
+		"31": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "DockPlugin.Schemes"
+		},
+		"32": {
+			"sourceFileName": "src/presets/index.ts",
+			"qualifiedName": ""
+		},
+		"33": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": ""
+		},
+		"34": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "setup"
+		},
+		"35": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "setup"
+		},
+		"36": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "T"
+		},
+		"37": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "props"
+		},
+		"38": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__type"
+		},
+		"39": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__type.size"
+		},
+		"40": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__type.scale"
+		},
+		"41": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__type.area"
+		}
+	}
+}
