@@ -1,0 +1,901 @@
+{
+	"id": 0,
+	"name": "rete-context-menu-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 25,
+			"name": "Presets",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Presets that create items for root and node specific context menu."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 26,
+					"name": "classic",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 27,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic/index.ts",
+									"line": 18,
+									"character": 16,
+									"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/presets/classic/index.ts#L18"
+								}
+							],
+							"signatures": [
+								{
+									"id": 28,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Classic context menu preset.\nConfigures nodes/actions items for root and Delete/Clone items for nodes"
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@example",
+												"content": [
+													{
+														"kind": "code",
+														"text": "```ts\nPresets.classic.setup([\n [\"Math\", [\n   [\"Number\", () => new NumberNode()],\n ]]\n])\n```"
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/classic/index.ts",
+											"line": 18,
+											"character": 0,
+											"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/presets/classic/index.ts#L18"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 29,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/types.ts",
+													"qualifiedName": "BSchemes"
+												},
+												"name": "BSchemes",
+												"package": "rete-context-menu-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 30,
+											"name": "nodes",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "List of items"
+													}
+												]
+											},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"target": {
+														"sourceFileName": "src/presets/classic/types.ts",
+														"qualifiedName": "ItemDefinition"
+													},
+													"typeArguments": [
+														{
+															"type": "reference",
+															"target": -1,
+															"name": "Schemes",
+															"refersToTypeParameter": true
+														}
+													],
+													"name": "ItemDefinition",
+													"package": "rete-context-menu-plugin"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/types.ts",
+											"qualifiedName": "Items"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "Items",
+										"package": "rete-context-menu-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								27
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/classic/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/presets/classic/index.ts#L1"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Namespaces",
+					"children": [
+						26
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "presets/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/presets/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 15,
+			"name": "ContextMenuPlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Plugin for context menu.\nResponsible for initialing rendering of context menu with predefined items."
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "9"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "render"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "unmount"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "unmount"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "contextmenu"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "pointerdown"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 16,
+					"name": "constructor",
+					"variant": "declaration",
+					"kind": 512,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 50,
+							"character": 2,
+							"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L50"
+						}
+					],
+					"signatures": [
+						{
+							"id": 17,
+							"name": "new ContextMenuPlugin",
+							"variant": "signature",
+							"kind": 16384,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 50,
+									"character": 2,
+									"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L50"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 18,
+									"name": "Schemes",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/src/types.ts",
+											"qualifiedName": "BaseSchemes"
+										},
+										"name": "BaseSchemes",
+										"package": "rete"
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 19,
+									"name": "props",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Properties"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 1,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "Props",
+										"package": "rete-context-menu-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 15,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": -1,
+										"name": "Schemes",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "ContextMenuPlugin",
+								"package": "rete-context-menu-plugin"
+							},
+							"overwrites": {
+								"type": "reference",
+								"target": -1,
+								"name": "Scope<never, [Requires<Schemes> | ContextMenuExtra]>.constructor"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"target": -1,
+						"name": "Scope<never, [Requires<Schemes> | ContextMenuExtra]>.constructor"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						16
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 46,
+					"character": 13,
+					"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L46"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 24,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/src/scope.ts",
+						"qualifiedName": "Scope"
+					},
+					"typeArguments": [
+						{
+							"type": "intrinsic",
+							"name": "never"
+						},
+						{
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "union",
+									"types": [
+										{
+											"type": "reference",
+											"target": {
+												"sourceFileName": "src/index.ts",
+												"qualifiedName": "Requires"
+											},
+											"typeArguments": [
+												{
+													"type": "reference",
+													"target": -1,
+													"name": "Schemes",
+													"refersToTypeParameter": true
+												}
+											],
+											"name": "Requires",
+											"package": "rete-context-menu-plugin"
+										},
+										{
+											"type": "reference",
+											"target": 9,
+											"name": "ContextMenuExtra",
+											"package": "rete-context-menu-plugin"
+										}
+									]
+								}
+							]
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			]
+		},
+		{
+			"id": 9,
+			"name": "ContextMenuExtra",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Signal types produced by ContextMenuPlugin instance"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "10"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 24,
+					"character": 12,
+					"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L24"
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "RenderSignal"
+						},
+						"typeArguments": [
+							{
+								"type": "literal",
+								"value": "contextmenu"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 10,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 11,
+											"name": "items",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 26,
+													"character": 4,
+													"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L26"
+												}
+											],
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"target": {
+														"sourceFileName": "src/types.ts",
+														"qualifiedName": "Item"
+													},
+													"name": "Item",
+													"package": "rete-context-menu-plugin"
+												}
+											}
+										},
+										{
+											"id": 14,
+											"name": "searchBar",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {
+												"isOptional": true
+											},
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 28,
+													"character": 4,
+													"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L28"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										},
+										{
+											"id": 12,
+											"name": "onHide",
+											"variant": "declaration",
+											"kind": 2048,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 27,
+													"character": 4,
+													"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L27"
+												}
+											],
+											"signatures": [
+												{
+													"id": 13,
+													"name": "onHide",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 27,
+															"character": 4,
+															"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L27"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											]
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												11,
+												14
+											]
+										},
+										{
+											"title": "Methods",
+											"children": [
+												12
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 25,
+											"character": 32,
+											"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L25"
+										}
+									]
+								}
+							}
+						],
+						"name": "RenderSignal",
+						"package": "rete-area-plugin"
+					}
+				]
+			}
+		},
+		{
+			"id": 1,
+			"name": "Props",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Context menu plugin props"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "8"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 12,
+					"character": 12,
+					"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L12"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 5,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 2,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"children": [
+						{
+							"id": 3,
+							"name": "delay",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "delay before hiding context menu"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 14,
+									"character": 2,
+									"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L14"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 4,
+							"name": "items",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "menu items, can be produced by preset"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 16,
+									"character": 2,
+									"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L16"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "src/types.ts",
+									"qualifiedName": "Items"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": -1,
+										"name": "Schemes",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "Items",
+								"package": "rete-context-menu-plugin"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								3,
+								4
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 12,
+							"character": 49,
+							"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L12"
+						}
+					]
+				}
+			}
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"children": [
+				25
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				15
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				9,
+				1
+			]
+		}
+	],
+	"packageName": "rete-context-menu-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js Context menu plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Context menu**: enables the opening of a context menu for the area and nodes\n- **Presets**: predefined configuration for context menu content\n  - **Classic**: provides list of nodes for the area and Delete/Clone items for individual nodes\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/context-menu) and [example](https://retejs.org/examples/context-menu) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/context-menu-plugin/blob/main/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Props"
+		},
+		"2": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"3": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.delay"
+		},
+		"4": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.items"
+		},
+		"5": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"9": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ContextMenuExtra"
+		},
+		"10": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"11": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.items"
+		},
+		"12": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.onHide"
+		},
+		"13": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.onHide"
+		},
+		"14": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.searchBar"
+		},
+		"15": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ContextMenuPlugin"
+		},
+		"16": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ContextMenuPlugin.__constructor"
+		},
+		"17": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ContextMenuPlugin"
+		},
+		"18": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ContextMenuPlugin.Schemes"
+		},
+		"19": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "props"
+		},
+		"24": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ContextMenuPlugin.Schemes"
+		},
+		"25": {
+			"sourceFileName": "src/presets/index.ts",
+			"qualifiedName": ""
+		},
+		"26": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": ""
+		},
+		"27": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "setup"
+		},
+		"28": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "setup"
+		},
+		"29": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"30": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "nodes"
+		}
+	}
+}
