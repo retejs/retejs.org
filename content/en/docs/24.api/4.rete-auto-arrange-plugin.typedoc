@@ -31,7 +31,7 @@
 							"fileName": "appliers/list/standard.ts",
 							"line": 10,
 							"character": 13,
-							"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/standard.ts#L10"
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/standard.ts#L10"
 						}
 					],
 					"typeParameters": [
@@ -87,13 +87,13 @@
 					"extendedBy": [
 						{
 							"type": "reference",
-							"target": 138,
+							"target": 153,
 							"name": "TransitionApplier"
 						}
 					]
 				},
 				{
-					"id": 138,
+					"id": 153,
 					"name": "TransitionApplier",
 					"variant": "declaration",
 					"kind": 128,
@@ -108,7 +108,7 @@
 					},
 					"children": [
 						{
-							"id": 139,
+							"id": 154,
 							"name": "constructor",
 							"variant": "declaration",
 							"kind": 512,
@@ -118,12 +118,12 @@
 									"fileName": "appliers/list/transition/index.ts",
 									"line": 33,
 									"character": 2,
-									"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L33"
+									"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L33"
 								}
 							],
 							"signatures": [
 								{
-									"id": 140,
+									"id": 155,
 									"name": "new TransitionApplier",
 									"variant": "signature",
 									"kind": 16384,
@@ -133,12 +133,12 @@
 											"fileName": "appliers/list/transition/index.ts",
 											"line": 33,
 											"character": 2,
-											"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L33"
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L33"
 										}
 									],
 									"typeParameter": [
 										{
-											"id": 141,
+											"id": 156,
 											"name": "S",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -154,7 +154,7 @@
 											}
 										},
 										{
-											"id": 142,
+											"id": 157,
 											"name": "K",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -163,7 +163,7 @@
 									],
 									"parameters": [
 										{
-											"id": 143,
+											"id": 158,
 											"name": "props",
 											"variant": "param",
 											"kind": 32768,
@@ -180,7 +180,7 @@
 											},
 											"type": {
 												"type": "reference",
-												"target": 192,
+												"target": 138,
 												"name": "Props",
 												"package": "rete-auto-arrange-plugin"
 											}
@@ -188,7 +188,7 @@
 									],
 									"type": {
 										"type": "reference",
-										"target": 138,
+										"target": 153,
 										"typeArguments": [
 											{
 												"type": "reference",
@@ -224,7 +224,7 @@
 						{
 							"title": "Constructors",
 							"children": [
-								139
+								154
 							]
 						}
 					],
@@ -233,12 +233,12 @@
 							"fileName": "appliers/list/transition/index.ts",
 							"line": 25,
 							"character": 13,
-							"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L25"
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L25"
 						}
 					],
 					"typeParameters": [
 						{
-							"id": 190,
+							"id": 205,
 							"name": "S",
 							"variant": "typeParam",
 							"kind": 131072,
@@ -254,7 +254,7 @@
 							}
 						},
 						{
-							"id": 191,
+							"id": 206,
 							"name": "K",
 							"variant": "typeParam",
 							"kind": 131072,
@@ -285,7 +285,7 @@
 					]
 				},
 				{
-					"id": 192,
+					"id": 138,
 					"name": "TransitionApplierProps",
 					"variant": "declaration",
 					"kind": 4194304,
@@ -303,20 +303,20 @@
 							"fileName": "appliers/list/transition/index.ts",
 							"line": 11,
 							"character": 12,
-							"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L11"
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L11"
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 193,
+							"id": 139,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
 							"flags": {},
 							"children": [
 								{
-									"id": 194,
+									"id": 140,
 									"name": "duration",
 									"variant": "declaration",
 									"kind": 1024,
@@ -336,7 +336,7 @@
 											"fileName": "appliers/list/transition/index.ts",
 											"line": 13,
 											"character": 2,
-											"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L13"
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L13"
 										}
 									],
 									"type": {
@@ -345,7 +345,7 @@
 									}
 								},
 								{
-									"id": 203,
+									"id": 149,
 									"name": "needsLayout",
 									"variant": "declaration",
 									"kind": 1024,
@@ -357,13 +357,13 @@
 											"fileName": "appliers/list/transition/index.ts",
 											"line": 19,
 											"character": 2,
-											"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L19"
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L19"
 										}
 									],
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 204,
+											"id": 150,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -373,12 +373,12 @@
 													"fileName": "appliers/list/transition/index.ts",
 													"line": 19,
 													"character": 16,
-													"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L19"
+													"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L19"
 												}
 											],
 											"signatures": [
 												{
-													"id": 205,
+													"id": 151,
 													"name": "__type",
 													"variant": "signature",
 													"kind": 4096,
@@ -393,7 +393,7 @@
 													},
 													"parameters": [
 														{
-															"id": 206,
+															"id": 152,
 															"name": "id",
 															"variant": "param",
 															"kind": 32768,
@@ -419,7 +419,7 @@
 									}
 								},
 								{
-									"id": 199,
+									"id": 145,
 									"name": "onTick",
 									"variant": "declaration",
 									"kind": 1024,
@@ -431,13 +431,13 @@
 											"fileName": "appliers/list/transition/index.ts",
 											"line": 17,
 											"character": 2,
-											"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L17"
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L17"
 										}
 									],
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 200,
+											"id": 146,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -447,12 +447,12 @@
 													"fileName": "appliers/list/transition/index.ts",
 													"line": 17,
 													"character": 11,
-													"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L17"
+													"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L17"
 												}
 											],
 											"signatures": [
 												{
-													"id": 201,
+													"id": 147,
 													"name": "__type",
 													"variant": "signature",
 													"kind": 4096,
@@ -467,7 +467,7 @@
 													},
 													"parameters": [
 														{
-															"id": 202,
+															"id": 148,
 															"name": "t",
 															"variant": "param",
 															"kind": 32768,
@@ -488,7 +488,7 @@
 									}
 								},
 								{
-									"id": 195,
+									"id": 141,
 									"name": "timingFunction",
 									"variant": "declaration",
 									"kind": 1024,
@@ -500,13 +500,13 @@
 											"fileName": "appliers/list/transition/index.ts",
 											"line": 15,
 											"character": 2,
-											"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L15"
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L15"
 										}
 									],
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 196,
+											"id": 142,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
@@ -516,12 +516,12 @@
 													"fileName": "appliers/list/transition/index.ts",
 													"line": 15,
 													"character": 19,
-													"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L15"
+													"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L15"
 												}
 											],
 											"signatures": [
 												{
-													"id": 197,
+													"id": 143,
 													"name": "__type",
 													"variant": "signature",
 													"kind": 4096,
@@ -536,7 +536,7 @@
 													},
 													"parameters": [
 														{
-															"id": 198,
+															"id": 144,
 															"name": "t",
 															"variant": "param",
 															"kind": 32768,
@@ -561,10 +561,10 @@
 								{
 									"title": "Properties",
 									"children": [
-										194,
-										203,
-										199,
-										195
+										140,
+										149,
+										145,
+										141
 									]
 								}
 							],
@@ -573,7 +573,7 @@
 									"fileName": "appliers/list/transition/index.ts",
 									"line": 11,
 									"character": 20,
-									"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/list/transition/index.ts#L11"
+									"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L11"
 								}
 							]
 						}
@@ -585,13 +585,13 @@
 					"title": "Classes",
 					"children": [
 						102,
-						138
+						153
 					]
 				},
 				{
 					"title": "Type Aliases",
 					"children": [
-						192
+						138
 					]
 				}
 			],
@@ -600,7 +600,7 @@
 					"fileName": "appliers/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/appliers/index.ts#L1"
+					"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/index.ts#L1"
 				}
 			]
 		},
@@ -637,7 +637,7 @@
 									"fileName": "presets/classic/index.ts",
 									"line": 7,
 									"character": 13,
-									"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/presets/classic/index.ts#L7"
+									"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/presets/classic/index.ts#L7"
 								}
 							],
 							"signatures": [
@@ -671,7 +671,7 @@
 											"fileName": "presets/classic/index.ts",
 											"line": 7,
 											"character": 21,
-											"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/presets/classic/index.ts#L7"
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/presets/classic/index.ts#L7"
 										}
 									],
 									"parameters": [
@@ -705,7 +705,7 @@
 																	"fileName": "presets/classic/index.ts",
 																	"line": 7,
 																	"character": 64,
-																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/presets/classic/index.ts#L7"
+																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/presets/classic/index.ts#L7"
 																}
 															],
 															"type": {
@@ -726,7 +726,7 @@
 																	"fileName": "presets/classic/index.ts",
 																	"line": 7,
 																	"character": 32,
-																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/presets/classic/index.ts#L7"
+																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/presets/classic/index.ts#L7"
 																}
 															],
 															"type": {
@@ -747,7 +747,7 @@
 																	"fileName": "presets/classic/index.ts",
 																	"line": 7,
 																	"character": 50,
-																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/presets/classic/index.ts#L7"
+																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/presets/classic/index.ts#L7"
 																}
 															],
 															"type": {
@@ -771,7 +771,7 @@
 															"fileName": "presets/classic/index.ts",
 															"line": 7,
 															"character": 30,
-															"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/presets/classic/index.ts#L7"
+															"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/presets/classic/index.ts#L7"
 														}
 													]
 												}
@@ -804,7 +804,7 @@
 							"fileName": "presets/classic/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/presets/classic/index.ts#L1"
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/presets/classic/index.ts#L1"
 						}
 					]
 				}
@@ -822,7 +822,7 @@
 					"fileName": "presets/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/presets/index.ts#L1"
+					"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/presets/index.ts#L1"
 				}
 			]
 		},
@@ -869,7 +869,7 @@
 							"fileName": "index.ts",
 							"line": 36,
 							"character": 9,
-							"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L36"
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L36"
 						}
 					],
 					"signatures": [
@@ -892,7 +892,7 @@
 									"fileName": "index.ts",
 									"line": 36,
 									"character": 2,
-									"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L36"
+									"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L36"
 								}
 							],
 							"parameters": [
@@ -939,7 +939,7 @@
 							"fileName": "index.ts",
 							"line": 180,
 							"character": 8,
-							"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L180"
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L180"
 						}
 					],
 					"signatures": [
@@ -973,7 +973,7 @@
 									"fileName": "index.ts",
 									"line": 180,
 									"character": 2,
-									"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L180"
+									"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L180"
 								}
 							],
 							"parameters": [
@@ -1026,7 +1026,7 @@
 																	"fileName": "index.ts",
 																	"line": 180,
 																	"character": 50,
-																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L180"
+																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L180"
 																}
 															],
 															"type": {
@@ -1074,7 +1074,7 @@
 																	"fileName": "index.ts",
 																	"line": 180,
 																	"character": 25,
-																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L180"
+																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L180"
 																}
 															],
 															"type": {
@@ -1102,7 +1102,7 @@
 															"fileName": "index.ts",
 															"line": 180,
 															"character": 23,
-															"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L180"
+															"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L180"
 														}
 													]
 												}
@@ -1166,7 +1166,7 @@
 															"fileName": "index.ts",
 															"line": 209,
 															"character": 8,
-															"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L209"
+															"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L209"
 														}
 													],
 													"type": {
@@ -1186,7 +1186,7 @@
 															"fileName": "index.ts",
 															"line": 211,
 															"character": 8,
-															"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L211"
+															"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L211"
 														}
 													],
 													"type": {
@@ -1210,7 +1210,7 @@
 															"fileName": "index.ts",
 															"line": 210,
 															"character": 8,
-															"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L210"
+															"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L210"
 														}
 													],
 													"type": {
@@ -1234,7 +1234,7 @@
 													"fileName": "index.ts",
 													"line": 208,
 													"character": 13,
-													"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L208"
+													"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L208"
 												}
 											]
 										}
@@ -1261,7 +1261,7 @@
 					"fileName": "index.ts",
 					"line": 23,
 					"character": 13,
-					"url": "https://github.com/retejs/auto-arrange-plugin/blob/3de1ad2/src/index.ts#L23"
+					"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L23"
 				}
 			],
 			"typeParameters": [
@@ -1405,7 +1405,7 @@
 		},
 		{
 			"kind": "text",
-			"text": " field, like in [Scopes plugin](https://github.com/retejs/scopes-plugin)\n- **Presets**: predefined configuration for the ports placement\n  - **Classic**: provides a classic ports placement (left bottom and right top relative to the node)\n- **Appliers**: enhance the layout features\n  - **Standard**: immediate change of a node's position\n  - **Transition**: enables use of animation\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/arrange) and [example](https://retejs.org/examples/arrange) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/auto-arrange-plugin/blob/master/LICENSE)"
+			"text": " field, like in [Scopes plugin](https://github.com/retejs/scopes-plugin)\n- **Presets**: predefined configuration for the ports placement\n  - **Classic**: provides a classic ports placement (left bottom and right top relative to the node)\n- **Appliers**: enhance the layout features\n  - **Standard**: immediate change of a node's position\n  - **Transition**: enables use of animation\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/arrange) and [example](https://retejs.org/examples/arrange) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/auto-arrange-plugin/blob/main/LICENSE)"
 		}
 	],
 	"symbolIdMap": {
@@ -1495,95 +1495,95 @@
 		},
 		"138": {
 			"sourceFileName": "src/appliers/list/transition/index.ts",
-			"qualifiedName": "TransitionApplier"
+			"qualifiedName": "Props"
 		},
 		"139": {
 			"sourceFileName": "src/appliers/list/transition/index.ts",
-			"qualifiedName": "TransitionApplier.__constructor"
+			"qualifiedName": "__type"
 		},
 		"140": {
 			"sourceFileName": "src/appliers/list/transition/index.ts",
-			"qualifiedName": "TransitionApplier"
+			"qualifiedName": "__type.duration"
 		},
 		"141": {
 			"sourceFileName": "src/appliers/list/transition/index.ts",
-			"qualifiedName": "TransitionApplier.S"
+			"qualifiedName": "__type.timingFunction"
 		},
 		"142": {
 			"sourceFileName": "src/appliers/list/transition/index.ts",
-			"qualifiedName": "TransitionApplier.K"
+			"qualifiedName": "__type"
 		},
 		"143": {
 			"sourceFileName": "src/appliers/list/transition/index.ts",
-			"qualifiedName": "props"
-		},
-		"190": {
-			"sourceFileName": "src/appliers/list/transition/index.ts",
-			"qualifiedName": "TransitionApplier.S"
-		},
-		"191": {
-			"sourceFileName": "src/appliers/list/transition/index.ts",
-			"qualifiedName": "TransitionApplier.K"
-		},
-		"192": {
-			"sourceFileName": "src/appliers/list/transition/index.ts",
-			"qualifiedName": "Props"
-		},
-		"193": {
-			"sourceFileName": "src/appliers/list/transition/index.ts",
 			"qualifiedName": "__type"
 		},
-		"194": {
-			"sourceFileName": "src/appliers/list/transition/index.ts",
-			"qualifiedName": "__type.duration"
-		},
-		"195": {
-			"sourceFileName": "src/appliers/list/transition/index.ts",
-			"qualifiedName": "__type.timingFunction"
-		},
-		"196": {
-			"sourceFileName": "src/appliers/list/transition/index.ts",
-			"qualifiedName": "__type"
-		},
-		"197": {
-			"sourceFileName": "src/appliers/list/transition/index.ts",
-			"qualifiedName": "__type"
-		},
-		"198": {
+		"144": {
 			"sourceFileName": "src/appliers/list/transition/index.ts",
 			"qualifiedName": "t"
 		},
-		"199": {
+		"145": {
 			"sourceFileName": "src/appliers/list/transition/index.ts",
 			"qualifiedName": "__type.onTick"
 		},
-		"200": {
+		"146": {
 			"sourceFileName": "src/appliers/list/transition/index.ts",
 			"qualifiedName": "__type"
 		},
-		"201": {
+		"147": {
 			"sourceFileName": "src/appliers/list/transition/index.ts",
 			"qualifiedName": "__type"
 		},
-		"202": {
+		"148": {
 			"sourceFileName": "src/appliers/list/transition/index.ts",
 			"qualifiedName": "t"
 		},
-		"203": {
+		"149": {
 			"sourceFileName": "src/appliers/list/transition/index.ts",
 			"qualifiedName": "__type.needsLayout"
 		},
-		"204": {
+		"150": {
 			"sourceFileName": "src/appliers/list/transition/index.ts",
 			"qualifiedName": "__type"
+		},
+		"151": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "__type"
+		},
+		"152": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "id"
+		},
+		"153": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "TransitionApplier"
+		},
+		"154": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "TransitionApplier.__constructor"
+		},
+		"155": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "TransitionApplier"
+		},
+		"156": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "TransitionApplier.S"
+		},
+		"157": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "TransitionApplier.K"
+		},
+		"158": {
+			"sourceFileName": "src/appliers/list/transition/index.ts",
+			"qualifiedName": "props"
 		},
 		"205": {
 			"sourceFileName": "src/appliers/list/transition/index.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "TransitionApplier.S"
 		},
 		"206": {
 			"sourceFileName": "src/appliers/list/transition/index.ts",
-			"qualifiedName": "id"
+			"qualifiedName": "TransitionApplier.K"
 		},
 		"207": {
 			"sourceFileName": "src/presets/index.ts",
