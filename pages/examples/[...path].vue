@@ -13,7 +13,7 @@
         :largePreview="true"
       )
         template(#not-found)
-          IViewAlert(type="warning") Examples section not found
+          NotFound(:standalone="false")
     Drawer(v-model="drawer")
       .drawer-content
         ExamplesNav(:navigation="navigation")
@@ -28,6 +28,7 @@ import FetchNav from '@/components/FetchNav.vue';
 import RenderContent from '@/components/RenderContent.vue';
 import NavMenu from '@/components/shared/NavMenu.vue';
 import { useContentPath } from '../../shared/content';
+import NotFound from '@/components/shared/NotFound.vue';
 
 export default defineComponent({
   setup() {
@@ -52,6 +53,7 @@ export default defineComponent({
     FetchNav,
     NavMenu,
     RenderContent,
+    NotFound,
   },
 });
 </script>
