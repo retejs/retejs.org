@@ -23,6 +23,7 @@ function findChildren(root: ContainerReflection, id: number) {
 
 function getType(type: Type | undefined) {
   if (!type) return 'unknown';
+  fixTypeStringify(type);
   return type.stringify(TypeContext.none);
 }
 
@@ -95,7 +96,11 @@ async function typedocToMarkdown(data: ProjectReflection, children: DeclarationR
     }
   }
   function getSummary(decl: Reflection) {
-    return decl.comment?.summary.filter((item) => item.kind === 'text').map((item) => item.text) || [];
+    return (decl.comment?.summary
+      .map((item) => {
+        if (item.kind === 'code') return `\`${item.text}\``;
+        return item.text;
+      }) || []).join('');
   }
   function emits(ref: Reflection) {
     const emits = getSignatureBlocks(ref, '@emits');
@@ -111,6 +116,14 @@ async function typedocToMarkdown(data: ProjectReflection, children: DeclarationR
       markdown.push(`\n**Listens** ${listens.map((item) => `\`${item.text}\``).join(' ')}`);
     }
   }
+  function examples(ref: Reflection) {
+    const examples = getSignatureBlocks(ref, '@example').flat();
+
+    if (examples.length) {
+      markdown.push('\n**Examples**');
+      examples.forEach((example) => markdown.push(example.text));
+    }
+  }
   // eslint-disable-next-line no-restricted-syntax
   for (const item of children) {
     markdown.push(`${new Array(level + 1).fill('#').join('')} ${item.name} {#${getAnchor(data, item.id)}}`);
@@ -124,7 +137,7 @@ async function typedocToMarkdown(data: ProjectReflection, children: DeclarationR
     }
 
     if (item.comment) {
-      markdown.push(...getSummary(item));
+      markdown.push(getSummary(item));
     }
 
     if (item.kind === 4194304) {
@@ -133,13 +146,14 @@ async function typedocToMarkdown(data: ProjectReflection, children: DeclarationR
       markdown.push(await code(`type ${item.name}${parameters?.length ? `<${parameters.map((p) => (p.name + (p.type ? ` extends ${p.type}` : ''))).join(', ')}>` : ''} = ${getType(item.type)}`));
 
       typeParametersTable(parameters);
-    }
-    if (item.kind === 128) {
+    } else if (item.kind === 128) {
       const parameters = getTypeParameters(item);
 
       markdown.push(await code(`class ${item.name}${parameters?.length ? `<${parameters.map((p) => (p.name + (p.type ? ` extends ${p.type}` : ''))).join(', ')}>` : ''}`));
 
       typeParametersTable(parameters);
+    } else if (item.kind === 1024) {
+      markdown.push(await code(`${item.name}: ${getType(item.type)}`));
     }
 
     if (item.variant === 'declaration') {
@@ -155,33 +169,29 @@ async function typedocToMarkdown(data: ProjectReflection, children: DeclarationR
       if (item.implementedBy) {
         markdown.push(`\n**Implemented by** ${item.implementedBy.map((item) => link(data, item, getType(item))).join(', ')}`);
       }
-      const examples = getSignatureBlocks(item, '@example').flat();
-
-      if (examples.length) {
-        markdown.push('\n**Examples**');
-        examples.forEach((example) => markdown.push(example.text));
-      }
 
       emits(item);
       listens(item);
+      examples(item);
 
       if (item.signatures) {
         // eslint-disable-next-line no-restricted-syntax
         for (const signature of item.signatures) {
           if (signature.comment) {
-            markdown.push(...getSummary(signature));
+            markdown.push(getSummary(signature));
           }
           const returnType = getType(signature.type);
           const parameters = signature.parameters ? signature.parameters.map((parameter) => ({
             name: parameter.name,
             type: getType(parameter.type),
-            comment: getSummary(parameter).join('\n'),
+            comment: getSummary(parameter),
           })) : [];
 
           markdown.push(await code(`${item.name}(${parameters.map((p) => `${p.name}: ${p.type}`).join(', ')}): ${returnType}`));
 
           emits(signature);
           listens(signature);
+          examples(signature);
 
           if (parameters && parameters.length) {
             markdown.push('| Parameter | Type | Description |');
@@ -199,10 +209,31 @@ async function typedocToMarkdown(data: ProjectReflection, children: DeclarationR
         }
       }
     }
+
     if (item.children) {
       await typedocToMarkdown(data, item.children, markdown, level + 1);
     }
   }
+}
+
+function fixTypeStringify(type: Type) {
+  const visitor = makeRecursiveVisitor({
+    reflection(type) {
+      type.getTypeString = (function () {
+        if (!this.declaration.children && this.declaration.signatures) {
+          return stringifyFunction(this);
+        }
+        return stringifyObject(this);
+      }).bind(type);
+    },
+  });
+  type.visit(visitor);
+}
+
+function fixReflectionStringify(reflection: Reflection) {
+  reflection.traverse((item) => {
+    if (item.type) fixTypeStringify(item.type);
+  });
 }
 
 export default defineTransformer({
@@ -215,21 +246,7 @@ export default defineTransformer({
     const d = new Deserializer(app);
     const reflection = d.reviveProject(data);
 
-    const visitor = makeRecursiveVisitor({
-      reflection(type) {
-        type.getTypeString = (function () {
-          if (!this.declaration.children && this.declaration.signatures) {
-            return stringifyFunction(this);
-          }
-
-          return stringifyObject(this);
-        }).bind(type);
-      },
-    });
-
-    reflection.traverse((item) => {
-      if (item.type) item.type.visit(visitor);
-    });
+    fixReflectionStringify(reflection);
 
     const markdown = [`# API for \`${data.name}\` package`];
 
