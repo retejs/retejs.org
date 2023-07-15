@@ -15,6 +15,7 @@ export default defineNuxtConfig({
   ],
   telemetry: false,
   css: [
+    '~/assets/styles/global.css',
     'view-ui-plus/dist/styles/viewuiplus.css',
   ],
   content: {

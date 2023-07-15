@@ -7,7 +7,7 @@
     .content.markdown
       RenderContent(:path="contentPath" :share="share")
         template(#not-found)
-          IViewAlert(type="warning") Docs section not found
+          NotFound(:standalone="false")
     Drawer(v-model="drawer")
       .drawer-content
         Nav(:list="navigation.children" :active="$route.path")
@@ -21,6 +21,7 @@ import FetchNav from '@/components/FetchNav.vue';
 import RenderContent from '@/components/RenderContent.vue';
 import NavMenu from '@/components/shared/NavMenu.vue';
 import { useContentPath } from '../../shared/content';
+import NotFound from '@/components/shared/NotFound.vue';
 
 export default defineComponent({
   setup() {
@@ -42,6 +43,7 @@ export default defineComponent({
     FetchNav,
     NavMenu,
     RenderContent,
+    NotFound,
   },
 });
 </script>

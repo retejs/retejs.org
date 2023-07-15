@@ -6,6 +6,7 @@ import { VuePlugin, Presets, VueArea2D } from 'rete-vue-plugin';
 import { DataflowEngine } from 'rete-engine';
 
 import { structures } from 'rete-structures';
+import { SelectorEntity } from 'rete-area-plugin/_types/extensions/selectable';
 
 const socket = new ClassicPreset.Socket('Number');
 
@@ -60,6 +61,18 @@ class NamelessNode extends ClassicPreset.Node {
   }
 }
 
+type OnSelect = (label: string, id: string, accumulate: boolean) => void
+class Selector extends AreaExtensions.Selector<SelectorEntity> {
+  constructor(private onSelect?: OnSelect) {
+    super();
+  }
+
+  add(entity: SelectorEntity, accumulate: boolean): void {
+    super.add(entity, accumulate);
+    if (this.onSelect) this.onSelect(entity.label, entity.id, accumulate);
+  }
+}
+
 type NodeProps = NumberNode | AddNode | NamelessNode
 
 class Connection<N extends NodeProps> extends ClassicPreset.Connection<N, N> { }
@@ -67,7 +80,7 @@ class Connection<N extends NodeProps> extends ClassicPreset.Connection<N, N> { }
 type Schemes = GetSchemes<NodeProps, Connection<NodeProps>>
 type AreaExtra = VueArea2D<Schemes>
 
-export async function createEditor(container: HTMLElement, props: { multiselect: boolean, order: boolean }) {
+export async function createEditor(container: HTMLElement, props: { multiselect: boolean, order: boolean, onSelect?: OnSelect }) {
   const editor = new NodeEditor<Schemes>();
   const area = new AreaPlugin<Schemes, AreaExtra>(container);
   const render = new VuePlugin<Schemes, AreaExtra>();
@@ -82,7 +95,8 @@ export async function createEditor(container: HTMLElement, props: { multiselect:
   editor.use(engine);
   area.use(render);
 
-  const nodeSelector = AreaExtensions.selectableNodes(area, AreaExtensions.selector(), {
+  const selector = new Selector(props.onSelect);
+  const nodeSelector = AreaExtensions.selectableNodes(area, selector, {
     accumulating: props.multiselect ? AreaExtensions.accumulateOnCtrl() : { active: () => false },
   });
   if (props.order) {
