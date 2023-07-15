@@ -6,7 +6,7 @@ import shikiParser from '@nuxt/content/transformers/shiki/index';
 import remarkHeadingPlugin from 'remark-heading-id';
 import {
   makeRecursiveVisitor, Deserializer, Application, TypeContext, DeclarationReflection,
-  ReflectionType, Type, ProjectReflection, ContainerReflection, Reflection, CommentDisplayPart,
+  ReflectionType, Type, ProjectReflection, ContainerReflection, Reflection, CommentDisplayPart, CommentTag,
 } from 'typedoc';
 import prettier from 'prettier';
 
@@ -45,11 +45,20 @@ function getSignatureBlocks(ref: Reflection, tag: string) {
 
   return arr;
 }
+function stringifyContent(comments?: CommentDisplayPart[]) {
+  return (comments?.map((item) => {
+    if (item.kind === 'code') return `\`${item.text}\``;
+    return item.text;
+  }) || []).join('');
+}
+function getSummary(decl: Reflection) {
+  return stringifyContent(decl.comment?.summary);
+}
 function getTypeParameters(item: DeclarationReflection) {
   const parameters = item.typeParameters ? item.typeParameters.map((parameter) => ({
     name: parameter.name,
     type: getType(parameter.type),
-    comment: parameter.comment?.summary.filter((item) => item.kind === 'text').map((item) => item.text) || '',
+    comment: getSummary(parameter),
   })) : [];
 
   return parameters;
@@ -81,11 +90,13 @@ function stringifyFunction(type: ReflectionType) {
 
   return `(${params}) => ${getType(signature.type)}`;
 }
+function getPriority(item: Reflection) {
+  const tags = item.comment?.blockTags || [];
+
+  return +(tags.find((item) => item.tag === '@priority')?.content[0].text || 0);
+}
 
 async function typedocToMarkdown(data: ProjectReflection, children: DeclarationReflection[] | undefined = [], markdown: string[] = [], level = 0) {
-  function getPriority(item) {
-    return +(item.comment?.blockTags || []).find((item) => item.tag === '@priority')?.content[0].text || 0;
-  }
   children.sort((a, b) => getPriority(b) - getPriority(a));
 
   function typeParametersTable(parameters) {
@@ -95,12 +106,12 @@ async function typedocToMarkdown(data: ProjectReflection, children: DeclarationR
       parameters.forEach(({ name, type, comment }) => markdown.push(`| ${name} | \`${type || 'any'}\` | ${comment} |`));
     }
   }
-  function getSummary(decl: Reflection) {
-    return (decl.comment?.summary
-      .map((item) => {
-        if (item.kind === 'code') return `\`${item.text}\``;
-        return item.text;
-      }) || []).join('');
+  function throws(ref: Reflection) {
+    const throws = getSignatureBlocks(ref, '@throws');
+
+    if (throws.length) {
+      markdown.push(`\n**Throws** ${stringifyContent(throws)}`);
+    }
   }
   function emits(ref: Reflection) {
     const emits = getSignatureBlocks(ref, '@emits');
@@ -172,6 +183,7 @@ async function typedocToMarkdown(data: ProjectReflection, children: DeclarationR
 
       emits(item);
       listens(item);
+      throws(item);
       examples(item);
 
       if (item.signatures) {
@@ -191,6 +203,7 @@ async function typedocToMarkdown(data: ProjectReflection, children: DeclarationR
 
           emits(signature);
           listens(signature);
+          throws(signature);
           examples(signature);
 
           if (parameters && parameters.length) {
