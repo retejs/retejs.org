@@ -59,6 +59,10 @@ export default defineComponent({
       instance = await createEditor(container.value, {
         multiselect: false,
         order: false,
+        onSelect(label, id) {
+          // eslint-disable-next-line no-use-before-define
+          concealNodes(editor, area, method.execute(id));
+        },
       });
       const {
         area, editor, resize, nodeSelector,
@@ -72,13 +76,6 @@ export default defineComponent({
 
       area.area.setDragHandler(null);
       resizeHandler();
-
-      area.addPipe((context) => {
-        if (context.type === 'nodepicked') {
-          concealNodes(editor, area, method.execute(context.data.id));
-        }
-        return context;
-      });
 
       if (props.pick) {
         nodeSelector.select(nodes[props.pick].id);
