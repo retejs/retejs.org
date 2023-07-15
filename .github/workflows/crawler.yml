@@ -1,8 +1,10 @@
 name: Trigger Algolia Crawler
 
 on:
-  push:
-    branches: ["main"]
+  workflow_run:
+    workflows: ["Deploy"]
+    types:
+      - completed
 
   workflow_dispatch:
 
