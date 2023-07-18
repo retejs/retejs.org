@@ -78,14 +78,14 @@ export default {
 .overview
   display: grid
   grid-gap: 1em
-  grid-template-columns: repeat(auto-fit, minmax(15em, max-content))
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr))
   margin-bottom: 2em
   .item
     max-width: 35em
     +tablet
       max-width: unset
   &.top
-    grid-template-columns: repeat(auto-fit, minmax(20em, max-content))
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr))
     .item
       max-width: 30em
       +tablet
