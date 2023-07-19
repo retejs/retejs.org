@@ -1,0 +1,1139 @@
+{
+	"id": 0,
+	"name": "rete-connection-path-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 48,
+			"name": "Transformers",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Built-in transformers, defining the auxiliary points for the path."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 51,
+					"name": "classic",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "transformers.ts",
+							"line": 29,
+							"character": 13,
+							"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/transformers.ts#L29"
+						}
+					],
+					"signatures": [
+						{
+							"id": 52,
+							"name": "classic",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Classic transformer. Returns four points: start, auxiliary start, auxiliary end, end."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Four points"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "transformers.ts",
+									"line": 29,
+									"character": 23,
+									"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/transformers.ts#L29"
+								}
+							],
+							"parameters": [
+								{
+									"id": 53,
+									"name": "options",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Options"
+											}
+										]
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 54,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 56,
+													"name": "curvature",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "The curvature of the path. Default: "
+															},
+															{
+																"kind": "code",
+																"text": "`0.3`"
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "transformers.ts",
+															"line": 29,
+															"character": 55,
+															"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/transformers.ts#L29"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 55,
+													"name": "vertical",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "If true, the auxiliary points will be placed vertically. Default: "
+															},
+															{
+																"kind": "code",
+																"text": "`false`"
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "transformers.ts",
+															"line": 29,
+															"character": 35,
+															"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/transformers.ts#L29"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "boolean"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														56,
+														55
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "transformers.ts",
+													"line": 29,
+													"character": 33,
+													"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/transformers.ts#L29"
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "src/types.ts",
+									"qualifiedName": "Transformer"
+								},
+								"name": "Transformer",
+								"package": "rete-connection-path-plugin"
+							}
+						}
+					]
+				},
+				{
+					"id": 49,
+					"name": "linear",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "transformers.ts",
+							"line": 13,
+							"character": 13,
+							"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/transformers.ts#L13"
+						}
+					],
+					"signatures": [
+						{
+							"id": 50,
+							"name": "linear",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Linear transformer. Returns the same points."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Two points"
+											}
+										]
+									},
+									{
+										"tag": "@throws",
+										"content": [
+											{
+												"kind": "text",
+												"text": "Error if number of points is not equal to 2"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "transformers.ts",
+									"line": 13,
+									"character": 22,
+									"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/transformers.ts#L13"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "src/types.ts",
+									"qualifiedName": "Transformer"
+								},
+								"name": "Transformer",
+								"package": "rete-connection-path-plugin"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"children": [
+						51,
+						49
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "transformers.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/transformers.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 19,
+			"name": "ConnectionPathPlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Connection path plugin. Allows to customize connection path and arrow."
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "connectionpath"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "rendered"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 20,
+					"name": "constructor",
+					"variant": "declaration",
+					"kind": 512,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 37,
+							"character": 2,
+							"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/index.ts#L37"
+						}
+					],
+					"signatures": [
+						{
+							"id": 21,
+							"name": "new ConnectionPathPlugin",
+							"variant": "signature",
+							"kind": 16384,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 37,
+									"character": 2,
+									"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/index.ts#L37"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 22,
+									"name": "Schemes",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/src/types.ts",
+											"qualifiedName": "BaseSchemes"
+										},
+										"name": "BaseSchemes",
+										"package": "rete"
+									}
+								},
+								{
+									"id": 23,
+									"name": "K",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 24,
+									"name": "props",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Connection path plugin props"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 1,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "Props",
+										"package": "rete-connection-path-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 19,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": -1,
+										"name": "Schemes",
+										"refersToTypeParameter": true
+									},
+									{
+										"type": "reference",
+										"target": -1,
+										"name": "K",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "ConnectionPathPlugin",
+								"package": "rete-connection-path-plugin"
+							},
+							"overwrites": {
+								"type": "reference",
+								"target": -1,
+								"name": "Scope<never, [RenderProduces<Schemes>, ...Area2DInherited<Schemes, K>]>.constructor"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"target": -1,
+						"name": "Scope<never, [RenderProduces<Schemes>, ...Area2DInherited<Schemes, K>]>.constructor"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						20
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 32,
+					"character": 13,
+					"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/index.ts#L32"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 46,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				},
+				{
+					"id": 47,
+					"name": "K",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/src/scope.ts",
+						"qualifiedName": "Scope"
+					},
+					"typeArguments": [
+						{
+							"type": "intrinsic",
+							"name": "never"
+						},
+						{
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "reference",
+									"target": {
+										"sourceFileName": "src/index.ts",
+										"qualifiedName": "RenderProduces"
+									},
+									"typeArguments": [
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "Schemes",
+											"refersToTypeParameter": true
+										}
+									],
+									"name": "RenderProduces",
+									"package": "rete-connection-path-plugin"
+								},
+								{
+									"type": "rest",
+									"elementType": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/src/index.ts",
+											"qualifiedName": "Area2DInherited"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "Area2DInherited",
+										"package": "rete-area-plugin"
+									}
+								}
+							]
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "Props",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Connection path plugin props"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 18,
+					"character": 12,
+					"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/index.ts#L18"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 18,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 2,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"children": [
+						{
+							"id": 11,
+							"name": "arrow",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 24,
+									"character": 2,
+									"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/index.ts#L24"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 12,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 24,
+											"character": 10,
+											"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/index.ts#L24"
+										}
+									],
+									"signatures": [
+										{
+											"id": 13,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Customize/enable arrow. Allows to change arrow color (default: "
+													},
+													{
+														"kind": "code",
+														"text": "`steelblue`"
+													},
+													{
+														"kind": "text",
+														"text": ") and marker (default: "
+													},
+													{
+														"kind": "code",
+														"text": "`M-5,-10 L-5,10 L20,0 z)`"
+													}
+												]
+											},
+											"parameters": [
+												{
+													"id": 17,
+													"name": "connection",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "indexedAccess",
+														"indexType": {
+															"type": "literal",
+															"value": "Connection"
+														},
+														"objectType": {
+															"type": "reference",
+															"target": -1,
+															"name": "Schemes",
+															"refersToTypeParameter": true
+														}
+													}
+												}
+											],
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "boolean"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 14,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"children": [
+																{
+																	"id": 15,
+																	"name": "color",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {
+																		"isOptional": true
+																	},
+																	"sources": [
+																		{
+																			"fileName": "index.ts",
+																			"line": 24,
+																			"character": 61,
+																			"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/index.ts#L24"
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																},
+																{
+																	"id": 16,
+																	"name": "marker",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {
+																		"isOptional": true
+																	},
+																	"sources": [
+																		{
+																			"fileName": "index.ts",
+																			"line": 24,
+																			"character": 77,
+																			"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/index.ts#L24"
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"children": [
+																		15,
+																		16
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "index.ts",
+																	"line": 24,
+																	"character": 59,
+																	"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/index.ts#L24"
+																}
+															]
+														}
+													}
+												]
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 7,
+							"name": "curve",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 22,
+									"character": 2,
+									"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/index.ts#L22"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 8,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 22,
+											"character": 11,
+											"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/index.ts#L22"
+										}
+									],
+									"signatures": [
+										{
+											"id": 9,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The curve factory function that defines the shape of the path. Default: "
+													},
+													{
+														"kind": "code",
+														"text": "`curveBundle.beta(0.9)`"
+													}
+												]
+											},
+											"parameters": [
+												{
+													"id": 10,
+													"name": "connection",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "indexedAccess",
+														"indexType": {
+															"type": "literal",
+															"value": "Connection"
+														},
+														"objectType": {
+															"type": "reference",
+															"target": -1,
+															"name": "Schemes",
+															"refersToTypeParameter": true
+														}
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/@types/d3-shape/index.d.ts",
+													"qualifiedName": "CurveFactoryLineOnly"
+												},
+												"name": "CurveFactoryLineOnly",
+												"package": "@types/d3-shape"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 3,
+							"name": "transformer",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 20,
+									"character": 2,
+									"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/index.ts#L20"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 4,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 20,
+											"character": 17,
+											"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/index.ts#L20"
+										}
+									],
+									"signatures": [
+										{
+											"id": 5,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "The transformer function that defines auxiliary points for the path. Default: "
+													},
+													{
+														"kind": "code",
+														"text": "`Transformers.classic({})`"
+													}
+												]
+											},
+											"parameters": [
+												{
+													"id": 6,
+													"name": "connection",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "indexedAccess",
+														"indexType": {
+															"type": "literal",
+															"value": "Connection"
+														},
+														"objectType": {
+															"type": "reference",
+															"target": -1,
+															"name": "Schemes",
+															"refersToTypeParameter": true
+														}
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "Transformer"
+												},
+												"name": "Transformer",
+												"package": "rete-connection-path-plugin"
+											}
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								11,
+								7,
+								3
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 18,
+							"character": 49,
+							"url": "https://github.com/retejs/connection-path-plugin/blob/c87cbf0/src/index.ts#L18"
+						}
+					]
+				}
+			}
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"children": [
+				48
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				19
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				1
+			]
+		}
+	],
+	"packageName": "rete-connection-path-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js Connection path plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Change connection path**: application of different types of paths using the "
+		},
+		{
+			"kind": "code",
+			"text": "`d3-shape`"
+		},
+		{
+			"kind": "text",
+			"text": " library\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/connection-path) and [example](https://retejs.org/examples/connection-path) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/connection-path-plugin/blob/main/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Props"
+		},
+		"2": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"3": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.transformer"
+		},
+		"4": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"5": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"6": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "connection"
+		},
+		"7": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.curve"
+		},
+		"8": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"9": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"10": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "connection"
+		},
+		"11": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.arrow"
+		},
+		"12": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"13": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"14": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"15": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.color"
+		},
+		"16": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.marker"
+		},
+		"17": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "connection"
+		},
+		"18": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"19": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ConnectionPathPlugin"
+		},
+		"20": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ConnectionPathPlugin.__constructor"
+		},
+		"21": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ConnectionPathPlugin"
+		},
+		"22": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ConnectionPathPlugin.Schemes"
+		},
+		"23": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ConnectionPathPlugin.K"
+		},
+		"24": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "props"
+		},
+		"46": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ConnectionPathPlugin.Schemes"
+		},
+		"47": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ConnectionPathPlugin.K"
+		},
+		"48": {
+			"sourceFileName": "src/transformers.ts",
+			"qualifiedName": ""
+		},
+		"49": {
+			"sourceFileName": "src/transformers.ts",
+			"qualifiedName": "linear"
+		},
+		"50": {
+			"sourceFileName": "src/transformers.ts",
+			"qualifiedName": "linear"
+		},
+		"51": {
+			"sourceFileName": "src/transformers.ts",
+			"qualifiedName": "classic"
+		},
+		"52": {
+			"sourceFileName": "src/transformers.ts",
+			"qualifiedName": "classic"
+		},
+		"53": {
+			"sourceFileName": "src/transformers.ts",
+			"qualifiedName": "options"
+		},
+		"54": {
+			"sourceFileName": "src/transformers.ts",
+			"qualifiedName": "__type"
+		},
+		"55": {
+			"sourceFileName": "src/transformers.ts",
+			"qualifiedName": "__type.vertical"
+		},
+		"56": {
+			"sourceFileName": "src/transformers.ts",
+			"qualifiedName": "__type.curvature"
+		}
+	}
+}
