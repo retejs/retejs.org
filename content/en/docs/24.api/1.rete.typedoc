@@ -21,6 +21,596 @@
 			},
 			"children": [
 				{
+					"id": 134,
+					"name": "Connection",
+					"variant": "declaration",
+					"kind": 128,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The connection class"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@priority",
+								"content": [
+									{
+										"kind": "text",
+										"text": "9"
+									}
+								]
+							}
+						]
+					},
+					"children": [
+						{
+							"id": 135,
+							"name": "constructor",
+							"variant": "declaration",
+							"kind": 512,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 274,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L274"
+								}
+							],
+							"signatures": [
+								{
+									"id": 136,
+									"name": "new Connection",
+									"variant": "signature",
+									"kind": 16384,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "presets/classic.ts",
+											"line": 274,
+											"character": 2,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L274"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 137,
+											"name": "Source",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": 76,
+												"typeArguments": [
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 138,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "presets/classic.ts",
+																	"line": 174,
+																	"character": 48,
+																	"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L174"
+																}
+															]
+														}
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 139,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "presets/classic.ts",
+																	"line": 175,
+																	"character": 49,
+																	"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L175"
+																}
+															]
+														}
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 140,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "presets/classic.ts",
+																	"line": 176,
+																	"character": 51,
+																	"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L176"
+																}
+															]
+														}
+													},
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "Source",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "Node",
+												"package": "rete"
+											}
+										},
+										{
+											"id": 141,
+											"name": "Target",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": 76,
+												"typeArguments": [
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 142,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "presets/classic.ts",
+																	"line": 174,
+																	"character": 48,
+																	"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L174"
+																}
+															]
+														}
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 143,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "presets/classic.ts",
+																	"line": 175,
+																	"character": 49,
+																	"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L175"
+																}
+															]
+														}
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 144,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "presets/classic.ts",
+																	"line": 176,
+																	"character": 51,
+																	"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L176"
+																}
+															]
+														}
+													},
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "Target",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "Node",
+												"package": "rete"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 145,
+											"name": "source",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Source node instance"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"target": -1,
+												"name": "Source",
+												"refersToTypeParameter": true
+											}
+										},
+										{
+											"id": 146,
+											"name": "sourceOutput",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Source node output key"
+													}
+												]
+											},
+											"type": {
+												"type": "typeOperator",
+												"operator": "keyof",
+												"target": {
+													"type": "indexedAccess",
+													"indexType": {
+														"type": "literal",
+														"value": "outputs"
+													},
+													"objectType": {
+														"type": "reference",
+														"target": -1,
+														"name": "Source",
+														"refersToTypeParameter": true
+													}
+												}
+											}
+										},
+										{
+											"id": 147,
+											"name": "target",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Target node instance"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"target": -1,
+												"name": "Target",
+												"refersToTypeParameter": true
+											}
+										},
+										{
+											"id": 148,
+											"name": "targetInput",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Target node input key"
+													}
+												]
+											},
+											"type": {
+												"type": "typeOperator",
+												"operator": "keyof",
+												"target": {
+													"type": "indexedAccess",
+													"indexType": {
+														"type": "literal",
+														"value": "inputs"
+													},
+													"objectType": {
+														"type": "reference",
+														"target": -1,
+														"name": "Target",
+														"refersToTypeParameter": true
+													}
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": 134,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Source",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Target",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "Connection",
+										"package": "rete"
+									}
+								}
+							]
+						},
+						{
+							"id": 149,
+							"name": "id",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Connection id, unique string generated by "
+									},
+									{
+										"kind": "code",
+										"text": "`getUID`"
+									},
+									{
+										"kind": "text",
+										"text": " function"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 257,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L257"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"implementationOf": {
+								"type": "reference",
+								"target": -1,
+								"name": "ConnectionBase.id"
+							}
+						},
+						{
+							"id": 150,
+							"name": "source",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Source node id"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 261,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L261"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"implementationOf": {
+								"type": "reference",
+								"target": -1,
+								"name": "ConnectionBase.source"
+							}
+						},
+						{
+							"id": 152,
+							"name": "sourceOutput",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isPublic": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Source node output key"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 276,
+									"character": 11,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L276"
+								}
+							],
+							"type": {
+								"type": "typeOperator",
+								"operator": "keyof",
+								"target": {
+									"type": "indexedAccess",
+									"indexType": {
+										"type": "literal",
+										"value": "outputs"
+									},
+									"objectType": {
+										"type": "reference",
+										"target": -1,
+										"name": "Source",
+										"refersToTypeParameter": true
+									}
+								}
+							}
+						},
+						{
+							"id": 151,
+							"name": "target",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Target node id"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 265,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L265"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"implementationOf": {
+								"type": "reference",
+								"target": -1,
+								"name": "ConnectionBase.target"
+							}
+						},
+						{
+							"id": 153,
+							"name": "targetInput",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isPublic": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Target node input key"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 278,
+									"character": 11,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L278"
+								}
+							],
+							"type": {
+								"type": "typeOperator",
+								"operator": "keyof",
+								"target": {
+									"type": "indexedAccess",
+									"indexType": {
+										"type": "literal",
+										"value": "inputs"
+									},
+									"objectType": {
+										"type": "reference",
+										"target": -1,
+										"name": "Target",
+										"refersToTypeParameter": true
+									}
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								135
+							]
+						},
+						{
+							"title": "Properties",
+							"children": [
+								149,
+								150,
+								152,
+								151,
+								153
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/classic.ts",
+							"line": 250,
+							"character": 13,
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L250"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 154,
+							"name": "Source",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": 76,
+								"name": "Node",
+								"package": "rete"
+							}
+						},
+						{
+							"id": 155,
+							"name": "Target",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": 76,
+								"name": "Node",
+								"package": "rete"
+							}
+						}
+					],
+					"implementedTypes": [
+						{
+							"type": "reference",
+							"target": 365,
+							"name": "ConnectionBase",
+							"package": "rete"
+						}
+					]
+				},
+				{
 					"id": 53,
 					"name": "Control",
 					"variant": "declaration",
@@ -32,14 +622,104 @@
 								"kind": "text",
 								"text": "General control class"
 							}
+						],
+						"blockTags": [
+							{
+								"tag": "@priority",
+								"content": [
+									{
+										"kind": "text",
+										"text": "5"
+									}
+								]
+							}
 						]
 					},
+					"children": [
+						{
+							"id": 56,
+							"name": "id",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Control id, unique string generated by "
+									},
+									{
+										"kind": "code",
+										"text": "`getUID`"
+									},
+									{
+										"kind": "text",
+										"text": " function"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 115,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L115"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 57,
+							"name": "index",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Control index, used for sorting controls. Default is "
+									},
+									{
+										"kind": "code",
+										"text": "`0`"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 119,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L119"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								56,
+								57
+							]
+						}
+					],
 					"sources": [
 						{
 							"fileName": "presets/classic.ts",
-							"line": 62,
+							"line": 111,
 							"character": 13,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/presets/classic.ts#L62"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L111"
 						}
 					],
 					"extendedBy": [
@@ -62,14 +742,563 @@
 								"kind": "text",
 								"text": "The input port class"
 							}
+						],
+						"blockTags": [
+							{
+								"tag": "@priority",
+								"content": [
+									{
+										"kind": "text",
+										"text": "6"
+									}
+								]
+							}
 						]
 					},
+					"children": [
+						{
+							"id": 21,
+							"name": "constructor",
+							"variant": "declaration",
+							"kind": 512,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 70,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L70"
+								}
+							],
+							"signatures": [
+								{
+									"id": 22,
+									"name": "new Input",
+									"variant": "signature",
+									"kind": 16384,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "presets/classic.ts",
+											"line": 70,
+											"character": 2,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L70"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 23,
+											"name": "S",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": 2,
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "S",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "Socket",
+												"package": "rete"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 24,
+											"name": "socket",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Socket instance"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"target": -1,
+												"name": "S",
+												"refersToTypeParameter": true
+											}
+										},
+										{
+											"id": 25,
+											"name": "label",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Label of the input port"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 26,
+											"name": "multipleConnections",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Whether the output port can have multiple connections. Default is "
+													},
+													{
+														"kind": "code",
+														"text": "`false`"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": 20,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "S",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "Input",
+										"package": "rete"
+									},
+									"overwrites": {
+										"type": "reference",
+										"target": 9,
+										"name": "Port.constructor"
+									}
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"target": 8,
+								"name": "Port.constructor"
+							}
+						},
+						{
+							"id": 27,
+							"name": "control",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Control instance"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 58,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L58"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 53,
+								"name": "Control",
+								"package": "rete"
+							},
+							"defaultValue": "null"
+						},
+						{
+							"id": 37,
+							"name": "id",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Port id, unique string generated by "
+									},
+									{
+										"kind": "code",
+										"text": "`getUID`"
+									},
+									{
+										"kind": "text",
+										"text": " function"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 33,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L33"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 14,
+								"name": "Port.id"
+							}
+						},
+						{
+							"id": 38,
+							"name": "index",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Port index, used for sorting ports. Default is "
+									},
+									{
+										"kind": "code",
+										"text": "`0`"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 37,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L37"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 15,
+								"name": "Port.index"
+							}
+						},
+						{
+							"id": 30,
+							"name": "label",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isPublic": true,
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Label of the input port"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 70,
+									"character": 39,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L70"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 17,
+								"name": "Port.label"
+							}
+						},
+						{
+							"id": 31,
+							"name": "multipleConnections",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isPublic": true,
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Whether the output port can have multiple connections. Default is "
+									},
+									{
+										"kind": "code",
+										"text": "`false`"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 70,
+									"character": 62,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L70"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 18,
+								"name": "Port.multipleConnections"
+							}
+						},
+						{
+							"id": 28,
+							"name": "showControl",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Whether the control is visible. Can be managed dynamically by extensions. Default is "
+									},
+									{
+										"kind": "code",
+										"text": "`true`"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 62,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L62"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							},
+							"defaultValue": "true"
+						},
+						{
+							"id": 29,
+							"name": "socket",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isPublic": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Socket instance"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 70,
+									"character": 21,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L70"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": -1,
+								"name": "S",
+								"refersToTypeParameter": true
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 16,
+								"name": "Port.socket"
+							}
+						},
+						{
+							"id": 32,
+							"name": "addControl",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 78,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L78"
+								}
+							],
+							"signatures": [
+								{
+									"id": 33,
+									"name": "addControl",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Add control to the input port"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/classic.ts",
+											"line": 78,
+											"character": 2,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L78"
+										}
+									],
+									"parameters": [
+										{
+											"id": 34,
+											"name": "control",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Control instance"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"target": 53,
+												"name": "Control",
+												"package": "rete"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 35,
+							"name": "removeControl",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 86,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L86"
+								}
+							],
+							"signatures": [
+								{
+									"id": 36,
+									"name": "removeControl",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Remove control from the input port"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/classic.ts",
+											"line": 86,
+											"character": 2,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L86"
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								21
+							]
+						},
+						{
+							"title": "Properties",
+							"children": [
+								27,
+								37,
+								38,
+								30,
+								31,
+								28,
+								29
+							]
+						},
+						{
+							"title": "Methods",
+							"children": [
+								32,
+								35
+							]
+						}
+					],
 					"sources": [
 						{
 							"fileName": "presets/classic.ts",
-							"line": 36,
+							"line": 54,
 							"character": 13,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/presets/classic.ts#L36"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L54"
 						}
 					],
 					"typeParameters": [
@@ -129,12 +1358,451 @@
 							}
 						]
 					},
+					"children": [
+						{
+							"id": 59,
+							"name": "constructor",
+							"variant": "declaration",
+							"kind": 512,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 150,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L150"
+								}
+							],
+							"signatures": [
+								{
+									"id": 60,
+									"name": "new InputControl",
+									"variant": "signature",
+									"kind": 16384,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "presets/classic.ts",
+											"line": 150,
+											"character": 2,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L150"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 61,
+											"name": "T",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "literal",
+														"value": "number"
+													},
+													{
+														"type": "literal",
+														"value": "text"
+													}
+												]
+											}
+										},
+										{
+											"id": 62,
+											"name": "N",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"default": {
+												"type": "conditional",
+												"checkType": {
+													"type": "reference",
+													"target": -1,
+													"name": "T",
+													"refersToTypeParameter": true
+												},
+												"extendsType": {
+													"type": "literal",
+													"value": "text"
+												},
+												"trueType": {
+													"type": "intrinsic",
+													"name": "string"
+												},
+												"falseType": {
+													"type": "intrinsic",
+													"name": "number"
+												}
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 63,
+											"name": "type",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Type of the control: "
+													},
+													{
+														"kind": "code",
+														"text": "`text`"
+													},
+													{
+														"kind": "text",
+														"text": " or "
+													},
+													{
+														"kind": "code",
+														"text": "`number`"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"target": -1,
+												"name": "T",
+												"refersToTypeParameter": true
+											}
+										},
+										{
+											"id": 64,
+											"name": "options",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Control options"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic.ts",
+													"qualifiedName": "InputControlOptions"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "N",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "InputControlOptions",
+												"package": "rete"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": 58,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "T",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "N",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "InputControl",
+										"package": "rete"
+									},
+									"overwrites": {
+										"type": "reference",
+										"target": -1,
+										"name": "Control.constructor"
+									}
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"target": -1,
+								"name": "Control.constructor"
+							}
+						},
+						{
+							"id": 72,
+							"name": "id",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Control id, unique string generated by "
+									},
+									{
+										"kind": "code",
+										"text": "`getUID`"
+									},
+									{
+										"kind": "text",
+										"text": " function"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 115,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L115"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 56,
+								"name": "Control.id"
+							}
+						},
+						{
+							"id": 73,
+							"name": "index",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Control index, used for sorting controls. Default is "
+									},
+									{
+										"kind": "code",
+										"text": "`0`"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 119,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L119"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 57,
+								"name": "Control.index"
+							}
+						},
+						{
+							"id": 68,
+							"name": "options",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isPublic": true,
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Control options"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 150,
+									"character": 37,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L150"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "src/presets/classic.ts",
+									"qualifiedName": "InputControlOptions"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": -1,
+										"name": "N",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "InputControlOptions",
+								"package": "rete"
+							}
+						},
+						{
+							"id": 67,
+							"name": "type",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isPublic": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Type of the control: "
+									},
+									{
+										"kind": "code",
+										"text": "`text`"
+									},
+									{
+										"kind": "text",
+										"text": " or "
+									},
+									{
+										"kind": "code",
+										"text": "`number`"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 150,
+									"character": 21,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L150"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": -1,
+								"name": "T",
+								"refersToTypeParameter": true
+							}
+						},
+						{
+							"id": 69,
+							"name": "setValue",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 162,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L162"
+								}
+							],
+							"signatures": [
+								{
+									"id": 70,
+									"name": "setValue",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Set control value"
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/classic.ts",
+											"line": 162,
+											"character": 2,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L162"
+										}
+									],
+									"parameters": [
+										{
+											"id": 71,
+											"name": "value",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Value to set"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"target": -1,
+												"name": "N",
+												"refersToTypeParameter": true
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								59
+							]
+						},
+						{
+							"title": "Properties",
+							"children": [
+								72,
+								73,
+								68,
+								67
+							]
+						},
+						{
+							"title": "Methods",
+							"children": [
+								69
+							]
+						}
+					],
 					"sources": [
 						{
 							"fileName": "presets/classic.ts",
-							"line": 80,
+							"line": 141,
 							"character": 13,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/presets/classic.ts#L80"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L141"
 						}
 					],
 					"typeParameters": [
@@ -211,6 +1879,15 @@
 						],
 						"blockTags": [
 							{
+								"tag": "@priority",
+								"content": [
+									{
+										"kind": "text",
+										"text": "10"
+									}
+								]
+							},
+							{
 								"tag": "@example",
 								"content": [
 									{
@@ -221,12 +1898,297 @@
 							}
 						]
 					},
+					"children": [
+						{
+							"id": 92,
+							"name": "controls",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Node controls"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 193,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L193"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": -1,
+								"name": "Controls",
+								"refersToTypeParameter": true
+							},
+							"defaultValue": "..."
+						},
+						{
+							"id": 89,
+							"name": "id",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Node id, unique string generated by "
+									},
+									{
+										"kind": "code",
+										"text": "`getUID`"
+									},
+									{
+										"kind": "text",
+										"text": " function"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 181,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L181"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"implementationOf": {
+								"type": "reference",
+								"target": -1,
+								"name": "NodeBase.id"
+							}
+						},
+						{
+							"id": 90,
+							"name": "inputs",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Node inputs"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 185,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L185"
+								}
+							],
+							"type": {
+								"type": "mapped",
+								"parameter": "key",
+								"parameterType": {
+									"type": "union",
+									"types": [
+										{
+											"type": "intrinsic",
+											"name": "string"
+										},
+										{
+											"type": "intrinsic",
+											"name": "number"
+										},
+										{
+											"type": "intrinsic",
+											"name": "symbol"
+										}
+									]
+								},
+								"templateType": {
+									"type": "reference",
+									"target": 20,
+									"typeArguments": [
+										{
+											"type": "reference",
+											"target": {
+												"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+												"qualifiedName": "Exclude"
+											},
+											"typeArguments": [
+												{
+													"type": "indexedAccess",
+													"indexType": {
+														"type": "reference",
+														"target": -1,
+														"name": "key",
+														"refersToTypeParameter": true
+													},
+													"objectType": {
+														"type": "reference",
+														"target": -1,
+														"name": "Inputs",
+														"refersToTypeParameter": true
+													}
+												},
+												{
+													"type": "intrinsic",
+													"name": "undefined"
+												}
+											],
+											"name": "Exclude",
+											"package": "typescript"
+										}
+									],
+									"name": "Input",
+									"package": "rete"
+								},
+								"optionalModifier": "+"
+							},
+							"defaultValue": "{}"
+						},
+						{
+							"id": 91,
+							"name": "outputs",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Node outputs"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 189,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L189"
+								}
+							],
+							"type": {
+								"type": "mapped",
+								"parameter": "key",
+								"parameterType": {
+									"type": "union",
+									"types": [
+										{
+											"type": "intrinsic",
+											"name": "string"
+										},
+										{
+											"type": "intrinsic",
+											"name": "number"
+										},
+										{
+											"type": "intrinsic",
+											"name": "symbol"
+										}
+									]
+								},
+								"templateType": {
+									"type": "reference",
+									"target": 40,
+									"typeArguments": [
+										{
+											"type": "reference",
+											"target": {
+												"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+												"qualifiedName": "Exclude"
+											},
+											"typeArguments": [
+												{
+													"type": "indexedAccess",
+													"indexType": {
+														"type": "reference",
+														"target": -1,
+														"name": "key",
+														"refersToTypeParameter": true
+													},
+													"objectType": {
+														"type": "reference",
+														"target": -1,
+														"name": "Outputs",
+														"refersToTypeParameter": true
+													}
+												},
+												{
+													"type": "intrinsic",
+													"name": "undefined"
+												}
+											],
+											"name": "Exclude",
+											"package": "typescript"
+										}
+									],
+									"name": "Output",
+									"package": "rete"
+								},
+								"optionalModifier": "+"
+							},
+							"defaultValue": "{}"
+						},
+						{
+							"id": 93,
+							"name": "selected",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Whether the node is selected. Default is "
+									},
+									{
+										"kind": "code",
+										"text": "`false`"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 197,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L197"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								92,
+								89,
+								90,
+								91,
+								93
+							]
+						}
+					],
 					"sources": [
 						{
 							"fileName": "presets/classic.ts",
-							"line": 105,
+							"line": 173,
 							"character": 13,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/presets/classic.ts#L105"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L173"
 						}
 					],
 					"typeParameters": [
@@ -236,14 +2198,6 @@
 							"variant": "typeParam",
 							"kind": 131072,
 							"flags": {},
-							"comment": {
-								"summary": [
-									{
-										"kind": "text",
-										"text": "The inputs type"
-									}
-								]
-							},
 							"type": {
 								"type": "mapped",
 								"parameter": "key",
@@ -281,14 +2235,6 @@
 							"variant": "typeParam",
 							"kind": 131072,
 							"flags": {},
-							"comment": {
-								"summary": [
-									{
-										"kind": "text",
-										"text": "The outputs type"
-									}
-								]
-							},
 							"type": {
 								"type": "mapped",
 								"parameter": "key",
@@ -326,14 +2272,6 @@
 							"variant": "typeParam",
 							"kind": 131072,
 							"flags": {},
-							"comment": {
-								"summary": [
-									{
-										"kind": "text",
-										"text": "The controls type"
-									}
-								]
-							},
 							"type": {
 								"type": "mapped",
 								"parameter": "key",
@@ -369,7 +2307,7 @@
 					"implementedTypes": [
 						{
 							"type": "reference",
-							"target": 359,
+							"target": 362,
 							"name": "NodeBase",
 							"package": "rete"
 						}
@@ -387,14 +2325,377 @@
 								"kind": "text",
 								"text": "The output port class"
 							}
+						],
+						"blockTags": [
+							{
+								"tag": "@priority",
+								"content": [
+									{
+										"kind": "text",
+										"text": "5"
+									}
+								]
+							}
 						]
 					},
+					"children": [
+						{
+							"id": 41,
+							"name": "constructor",
+							"variant": "declaration",
+							"kind": 512,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 102,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L102"
+								}
+							],
+							"signatures": [
+								{
+									"id": 42,
+									"name": "new Output",
+									"variant": "signature",
+									"kind": 16384,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "presets/classic.ts",
+											"line": 102,
+											"character": 2,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L102"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 43,
+											"name": "S",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": 2,
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "S",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "Socket",
+												"package": "rete"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 44,
+											"name": "socket",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Socket instance"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"target": -1,
+												"name": "S",
+												"refersToTypeParameter": true
+											}
+										},
+										{
+											"id": 45,
+											"name": "label",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Label of the output port"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 46,
+											"name": "multipleConnections",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Whether the output port can have multiple connections. Default is "
+													},
+													{
+														"kind": "code",
+														"text": "`true`"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": 40,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "S",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "Output",
+										"package": "rete"
+									},
+									"overwrites": {
+										"type": "reference",
+										"target": 9,
+										"name": "Port.constructor"
+									}
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"target": 8,
+								"name": "Port.constructor"
+							}
+						},
+						{
+							"id": 47,
+							"name": "id",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Port id, unique string generated by "
+									},
+									{
+										"kind": "code",
+										"text": "`getUID`"
+									},
+									{
+										"kind": "text",
+										"text": " function"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 33,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L33"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 14,
+								"name": "Port.id"
+							}
+						},
+						{
+							"id": 48,
+							"name": "index",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Port index, used for sorting ports. Default is "
+									},
+									{
+										"kind": "code",
+										"text": "`0`"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 37,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L37"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 15,
+								"name": "Port.index"
+							}
+						},
+						{
+							"id": 50,
+							"name": "label",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isPublic": true,
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Label of the port"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 45,
+									"character": 39,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L45"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 17,
+								"name": "Port.label"
+							}
+						},
+						{
+							"id": 51,
+							"name": "multipleConnections",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isPublic": true,
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Whether the output port can have multiple connections"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 45,
+									"character": 62,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L45"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 18,
+								"name": "Port.multipleConnections"
+							}
+						},
+						{
+							"id": 49,
+							"name": "socket",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isPublic": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Socket instance"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 45,
+									"character": 21,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L45"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": -1,
+								"name": "S",
+								"refersToTypeParameter": true
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 16,
+								"name": "Port.socket"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								41
+							]
+						},
+						{
+							"title": "Properties",
+							"children": [
+								47,
+								48,
+								50,
+								51,
+								49
+							]
+						}
+					],
 					"sources": [
 						{
 							"fileName": "presets/classic.ts",
-							"line": 53,
+							"line": 95,
 							"character": 13,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/presets/classic.ts#L53"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L95"
 						}
 					],
 					"typeParameters": [
@@ -443,12 +2744,325 @@
 							}
 						]
 					},
+					"children": [
+						{
+							"id": 8,
+							"name": "constructor",
+							"variant": "declaration",
+							"kind": 512,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 45,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L45"
+								}
+							],
+							"signatures": [
+								{
+									"id": 9,
+									"name": "new Port",
+									"variant": "signature",
+									"kind": 16384,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "presets/classic.ts",
+											"line": 45,
+											"character": 2,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L45"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 10,
+											"name": "S",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": 2,
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "S",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "Socket",
+												"package": "rete"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 11,
+											"name": "socket",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Socket instance"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"target": -1,
+												"name": "S",
+												"refersToTypeParameter": true
+											}
+										},
+										{
+											"id": 12,
+											"name": "label",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Label of the port"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 13,
+											"name": "multipleConnections",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Whether the output port can have multiple connections"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": 7,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "S",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "Port",
+										"package": "rete"
+									}
+								}
+							]
+						},
+						{
+							"id": 14,
+							"name": "id",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Port id, unique string generated by "
+									},
+									{
+										"kind": "code",
+										"text": "`getUID`"
+									},
+									{
+										"kind": "text",
+										"text": " function"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 33,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L33"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 15,
+							"name": "index",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Port index, used for sorting ports. Default is "
+									},
+									{
+										"kind": "code",
+										"text": "`0`"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 37,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L37"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 17,
+							"name": "label",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isPublic": true,
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Label of the port"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 45,
+									"character": 39,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L45"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 18,
+							"name": "multipleConnections",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isPublic": true,
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Whether the output port can have multiple connections"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 45,
+									"character": 62,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L45"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						},
+						{
+							"id": 16,
+							"name": "socket",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isPublic": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Socket instance"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 45,
+									"character": 21,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L45"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": -1,
+								"name": "S",
+								"refersToTypeParameter": true
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								8
+							]
+						},
+						{
+							"title": "Properties",
+							"children": [
+								14,
+								15,
+								17,
+								18,
+								16
+							]
+						}
+					],
 					"sources": [
 						{
 							"fileName": "presets/classic.ts",
-							"line": 24,
+							"line": 29,
 							"character": 13,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/presets/classic.ts#L24"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L29"
 						}
 					],
 					"typeParameters": [
@@ -491,14 +3105,129 @@
 								"kind": "text",
 								"text": "The socket class"
 							}
+						],
+						"blockTags": [
+							{
+								"tag": "@priority",
+								"content": [
+									{
+										"kind": "text",
+										"text": "7"
+									}
+								]
+							}
 						]
 					},
+					"children": [
+						{
+							"id": 3,
+							"name": "constructor",
+							"variant": "declaration",
+							"kind": 512,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 21,
+									"character": 2,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L21"
+								}
+							],
+							"signatures": [
+								{
+									"id": 4,
+									"name": "new Socket",
+									"variant": "signature",
+									"kind": 16384,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "presets/classic.ts",
+											"line": 21,
+											"character": 2,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L21"
+										}
+									],
+									"parameters": [
+										{
+											"id": 5,
+											"name": "name",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Name of the socket"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": 2,
+										"name": "Socket",
+										"package": "rete"
+									}
+								}
+							]
+						},
+						{
+							"id": 6,
+							"name": "name",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isPublic": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Name of the socket"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "presets/classic.ts",
+									"line": 21,
+									"character": 21,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L21"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"children": [
+								3
+							]
+						},
+						{
+							"title": "Properties",
+							"children": [
+								6
+							]
+						}
+					],
 					"sources": [
 						{
 							"fileName": "presets/classic.ts",
-							"line": 15,
+							"line": 16,
 							"character": 13,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/presets/classic.ts#L15"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L16"
 						}
 					]
 				}
@@ -507,6 +3236,7 @@
 				{
 					"title": "Classes",
 					"children": [
+						134,
 						53,
 						20,
 						58,
@@ -522,12 +3252,12 @@
 					"fileName": "presets/classic.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/presets/classic.ts#L1"
+					"url": "https://github.com/retejs/rete/blob/f77e567/src/presets/classic.ts#L1"
 				}
 			]
 		},
 		{
-			"id": 258,
+			"id": 261,
 			"name": "NodeEditor",
 			"variant": "declaration",
 			"kind": 128,
@@ -536,7 +3266,7 @@
 				"summary": [
 					{
 						"kind": "text",
-						"text": "The NodeEditor class is the main class of the library. It is used to create and manage nodes and connections."
+						"text": "The NodeEditor class is the entry class. It is used to create and manage nodes and connections."
 					}
 				],
 				"blockTags": [
@@ -553,7 +3283,7 @@
 			},
 			"children": [
 				{
-					"id": 277,
+					"id": 280,
 					"name": "addConnection",
 					"variant": "declaration",
 					"kind": 2048,
@@ -563,12 +3293,12 @@
 							"fileName": "editor.ts",
 							"line": 98,
 							"character": 8,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L98"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L98"
 						}
 					],
 					"signatures": [
 						{
-							"id": 278,
+							"id": 281,
 							"name": "addConnection",
 							"variant": "signature",
 							"kind": 4096,
@@ -624,12 +3354,12 @@
 									"fileName": "editor.ts",
 									"line": 98,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L98"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L98"
 								}
 							],
 							"parameters": [
 								{
-									"id": 279,
+									"id": 282,
 									"name": "data",
 									"variant": "param",
 									"kind": 32768,
@@ -676,7 +3406,7 @@
 					]
 				},
 				{
-					"id": 274,
+					"id": 277,
 					"name": "addNode",
 					"variant": "declaration",
 					"kind": 2048,
@@ -686,12 +3416,12 @@
 							"fileName": "editor.ts",
 							"line": 79,
 							"character": 8,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L79"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L79"
 						}
 					],
 					"signatures": [
 						{
-							"id": 275,
+							"id": 278,
 							"name": "addNode",
 							"variant": "signature",
 							"kind": 4096,
@@ -747,12 +3477,12 @@
 									"fileName": "editor.ts",
 									"line": 79,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L79"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L79"
 								}
 							],
 							"parameters": [
 								{
-									"id": 276,
+									"id": 279,
 									"name": "data",
 									"variant": "param",
 									"kind": 32768,
@@ -799,7 +3529,7 @@
 					]
 				},
 				{
-					"id": 286,
+					"id": 289,
 					"name": "clear",
 					"variant": "declaration",
 					"kind": 2048,
@@ -809,12 +3539,12 @@
 							"fileName": "editor.ts",
 							"line": 160,
 							"character": 8,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L160"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L160"
 						}
 					],
 					"signatures": [
 						{
-							"id": 287,
+							"id": 290,
 							"name": "clear",
 							"variant": "signature",
 							"kind": 4096,
@@ -870,7 +3600,7 @@
 									"fileName": "editor.ts",
 									"line": 160,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L160"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L160"
 								}
 							],
 							"type": {
@@ -892,7 +3622,7 @@
 					]
 				},
 				{
-					"id": 271,
+					"id": 274,
 					"name": "getConnection",
 					"variant": "declaration",
 					"kind": 2048,
@@ -904,12 +3634,12 @@
 							"fileName": "editor.ts",
 							"line": 67,
 							"character": 9,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L67"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L67"
 						}
 					],
 					"signatures": [
 						{
-							"id": 272,
+							"id": 275,
 							"name": "getConnection",
 							"variant": "signature",
 							"kind": 4096,
@@ -938,12 +3668,12 @@
 									"fileName": "editor.ts",
 									"line": 67,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L67"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L67"
 								}
 							],
 							"parameters": [
 								{
-									"id": 273,
+									"id": 276,
 									"name": "id",
 									"variant": "param",
 									"kind": 32768,
@@ -995,7 +3725,7 @@
 					]
 				},
 				{
-					"id": 269,
+					"id": 272,
 					"name": "getConnections",
 					"variant": "declaration",
 					"kind": 2048,
@@ -1007,12 +3737,12 @@
 							"fileName": "editor.ts",
 							"line": 58,
 							"character": 9,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L58"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L58"
 						}
 					],
 					"signatures": [
 						{
-							"id": 270,
+							"id": 273,
 							"name": "getConnections",
 							"variant": "signature",
 							"kind": 4096,
@@ -1041,7 +3771,7 @@
 									"fileName": "editor.ts",
 									"line": 58,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L58"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L58"
 								}
 							],
 							"type": {
@@ -1064,7 +3794,7 @@
 					]
 				},
 				{
-					"id": 264,
+					"id": 267,
 					"name": "getNode",
 					"variant": "declaration",
 					"kind": 2048,
@@ -1076,12 +3806,12 @@
 							"fileName": "editor.ts",
 							"line": 42,
 							"character": 9,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L42"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L42"
 						}
 					],
 					"signatures": [
 						{
-							"id": 265,
+							"id": 268,
 							"name": "getNode",
 							"variant": "signature",
 							"kind": 4096,
@@ -1110,12 +3840,12 @@
 									"fileName": "editor.ts",
 									"line": 42,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L42"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L42"
 								}
 							],
 							"parameters": [
 								{
-									"id": 266,
+									"id": 269,
 									"name": "id",
 									"variant": "param",
 									"kind": 32768,
@@ -1167,7 +3897,7 @@
 					]
 				},
 				{
-					"id": 267,
+					"id": 270,
 					"name": "getNodes",
 					"variant": "declaration",
 					"kind": 2048,
@@ -1179,12 +3909,12 @@
 							"fileName": "editor.ts",
 							"line": 50,
 							"character": 9,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L50"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L50"
 						}
 					],
 					"signatures": [
 						{
-							"id": 268,
+							"id": 271,
 							"name": "getNodes",
 							"variant": "signature",
 							"kind": 4096,
@@ -1213,7 +3943,7 @@
 									"fileName": "editor.ts",
 									"line": 50,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L50"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L50"
 								}
 							],
 							"type": {
@@ -1236,7 +3966,7 @@
 					]
 				},
 				{
-					"id": 283,
+					"id": 286,
 					"name": "removeConnection",
 					"variant": "declaration",
 					"kind": 2048,
@@ -1246,12 +3976,12 @@
 							"fileName": "editor.ts",
 							"line": 139,
 							"character": 8,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L139"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L139"
 						}
 					],
 					"signatures": [
 						{
-							"id": 284,
+							"id": 287,
 							"name": "removeConnection",
 							"variant": "signature",
 							"kind": 4096,
@@ -1307,12 +4037,12 @@
 									"fileName": "editor.ts",
 									"line": 139,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L139"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L139"
 								}
 							],
 							"parameters": [
 								{
-									"id": 285,
+									"id": 288,
 									"name": "id",
 									"variant": "param",
 									"kind": 32768,
@@ -1366,7 +4096,7 @@
 					]
 				},
 				{
-					"id": 280,
+					"id": 283,
 					"name": "removeNode",
 					"variant": "declaration",
 					"kind": 2048,
@@ -1376,12 +4106,12 @@
 							"fileName": "editor.ts",
 							"line": 117,
 							"character": 8,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L117"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L117"
 						}
 					],
 					"signatures": [
 						{
-							"id": 281,
+							"id": 284,
 							"name": "removeNode",
 							"variant": "signature",
 							"kind": 4096,
@@ -1437,12 +4167,12 @@
 									"fileName": "editor.ts",
 									"line": 117,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L117"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L117"
 								}
 							],
 							"parameters": [
 								{
-									"id": 282,
+									"id": 285,
 									"name": "id",
 									"variant": "param",
 									"kind": 32768,
@@ -1500,15 +4230,15 @@
 				{
 					"title": "Methods",
 					"children": [
+						280,
 						277,
+						289,
 						274,
-						286,
-						271,
-						269,
-						264,
+						272,
 						267,
-						283,
-						280
+						270,
+						286,
+						283
 					]
 				}
 			],
@@ -1517,12 +4247,12 @@
 					"fileName": "editor.ts",
 					"line": 29,
 					"character": 13,
-					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L29"
+					"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L29"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 356,
+					"id": 359,
 					"name": "Scheme",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -1537,7 +4267,7 @@
 					},
 					"type": {
 						"type": "reference",
-						"target": 373,
+						"target": 376,
 						"name": "BaseSchemes",
 						"package": "rete"
 					}
@@ -1546,11 +4276,11 @@
 			"extendedTypes": [
 				{
 					"type": "reference",
-					"target": 167,
+					"target": 170,
 					"typeArguments": [
 						{
 							"type": "reference",
-							"target": 226,
+							"target": 229,
 							"typeArguments": [
 								{
 									"type": "reference",
@@ -1569,7 +4299,7 @@
 			]
 		},
 		{
-			"id": 167,
+			"id": 170,
 			"name": "Scope",
 			"variant": "declaration",
 			"kind": 128,
@@ -1585,21 +4315,21 @@
 			"sources": [
 				{
 					"fileName": "scope.ts",
-					"line": 83,
+					"line": 85,
 					"character": 13,
-					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/scope.ts#L83"
+					"url": "https://github.com/retejs/rete/blob/f77e567/src/scope.ts#L85"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 211,
+					"id": 214,
 					"name": "Produces",
 					"variant": "typeParam",
 					"kind": 131072,
 					"flags": {}
 				},
 				{
-					"id": 212,
+					"id": 215,
 					"name": "Parents",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -1619,13 +4349,13 @@
 			"extendedBy": [
 				{
 					"type": "reference",
-					"target": 258,
+					"target": 261,
 					"name": "NodeEditor"
 				}
 			]
 		},
 		{
-			"id": 213,
+			"id": 216,
 			"name": "Signal",
 			"variant": "declaration",
 			"kind": 128,
@@ -1644,14 +4374,14 @@
 			"sources": [
 				{
 					"fileName": "scope.ts",
-					"line": 57,
+					"line": 59,
 					"character": 13,
-					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/scope.ts#L57"
+					"url": "https://github.com/retejs/rete/blob/f77e567/src/scope.ts#L59"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 225,
+					"id": 228,
 					"name": "T",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -1668,7 +4398,7 @@
 			]
 		},
 		{
-			"id": 373,
+			"id": 376,
 			"name": "BaseSchemes",
 			"variant": "declaration",
 			"kind": 4194304,
@@ -1686,22 +4416,22 @@
 					"fileName": "types.ts",
 					"line": 33,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L33"
+					"url": "https://github.com/retejs/rete/blob/f77e567/src/types.ts#L33"
 				}
 			],
 			"type": {
 				"type": "reference",
-				"target": 367,
+				"target": 370,
 				"typeArguments": [
 					{
 						"type": "reference",
-						"target": 359,
+						"target": 362,
 						"name": "NodeBase",
 						"package": "rete"
 					},
 					{
 						"type": "reference",
-						"target": 362,
+						"target": 365,
 						"name": "ConnectionBase",
 						"package": "rete"
 					}
@@ -1711,7 +4441,7 @@
 			}
 		},
 		{
-			"id": 362,
+			"id": 365,
 			"name": "ConnectionBase",
 			"variant": "declaration",
 			"kind": 4194304,
@@ -1729,20 +4459,20 @@
 					"fileName": "types.ts",
 					"line": 20,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L20"
+					"url": "https://github.com/retejs/rete/blob/f77e567/src/types.ts#L20"
 				}
 			],
 			"type": {
 				"type": "reflection",
 				"declaration": {
-					"id": 363,
+					"id": 366,
 					"name": "__type",
 					"variant": "declaration",
 					"kind": 65536,
 					"flags": {},
 					"children": [
 						{
-							"id": 364,
+							"id": 367,
 							"name": "id",
 							"variant": "declaration",
 							"kind": 1024,
@@ -1752,18 +4482,18 @@
 									"fileName": "types.ts",
 									"line": 20,
 									"character": 31,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L20"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/types.ts#L20"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": 358,
+								"target": 361,
 								"name": "ConnectionId",
 								"package": "rete"
 							}
 						},
 						{
-							"id": 365,
+							"id": 368,
 							"name": "source",
 							"variant": "declaration",
 							"kind": 1024,
@@ -1773,18 +4503,18 @@
 									"fileName": "types.ts",
 									"line": 20,
 									"character": 49,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L20"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/types.ts#L20"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": 357,
+								"target": 360,
 								"name": "NodeId",
 								"package": "rete"
 							}
 						},
 						{
-							"id": 366,
+							"id": 369,
 							"name": "target",
 							"variant": "declaration",
 							"kind": 1024,
@@ -1794,12 +4524,12 @@
 									"fileName": "types.ts",
 									"line": 20,
 									"character": 65,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L20"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/types.ts#L20"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": 357,
+								"target": 360,
 								"name": "NodeId",
 								"package": "rete"
 							}
@@ -1809,9 +4539,9 @@
 						{
 							"title": "Properties",
 							"children": [
-								364,
-								365,
-								366
+								367,
+								368,
+								369
 							]
 						}
 					],
@@ -1820,14 +4550,21 @@
 							"fileName": "types.ts",
 							"line": 20,
 							"character": 29,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L20"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/types.ts#L20"
 						}
 					]
 				}
-			}
+			},
+			"implementedBy": [
+				{
+					"type": "reference",
+					"target": 134,
+					"name": "Connection"
+				}
+			]
 		},
 		{
-			"id": 358,
+			"id": 361,
 			"name": "ConnectionId",
 			"variant": "declaration",
 			"kind": 4194304,
@@ -1845,7 +4582,7 @@
 					"fileName": "types.ts",
 					"line": 9,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L9"
+					"url": "https://github.com/retejs/rete/blob/f77e567/src/types.ts#L9"
 				}
 			],
 			"type": {
@@ -1854,7 +4591,7 @@
 			}
 		},
 		{
-			"id": 367,
+			"id": 370,
 			"name": "GetSchemes",
 			"variant": "declaration",
 			"kind": 4194304,
@@ -1883,32 +4620,32 @@
 					"fileName": "types.ts",
 					"line": 27,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L27"
+					"url": "https://github.com/retejs/rete/blob/f77e567/src/types.ts#L27"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 371,
+					"id": 374,
 					"name": "NodeData",
 					"variant": "typeParam",
 					"kind": 131072,
 					"flags": {},
 					"type": {
 						"type": "reference",
-						"target": 359,
+						"target": 362,
 						"name": "NodeBase",
 						"package": "rete"
 					}
 				},
 				{
-					"id": 372,
+					"id": 375,
 					"name": "ConnectionData",
 					"variant": "typeParam",
 					"kind": 131072,
 					"flags": {},
 					"type": {
 						"type": "reference",
-						"target": 362,
+						"target": 365,
 						"name": "ConnectionBase",
 						"package": "rete"
 					}
@@ -1917,14 +4654,14 @@
 			"type": {
 				"type": "reflection",
 				"declaration": {
-					"id": 368,
+					"id": 371,
 					"name": "__type",
 					"variant": "declaration",
 					"kind": 65536,
 					"flags": {},
 					"children": [
 						{
-							"id": 370,
+							"id": 373,
 							"name": "Connection",
 							"variant": "declaration",
 							"kind": 1024,
@@ -1934,7 +4671,7 @@
 									"fileName": "types.ts",
 									"line": 27,
 									"character": 109,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L27"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/types.ts#L27"
 								}
 							],
 							"type": {
@@ -1945,7 +4682,7 @@
 							}
 						},
 						{
-							"id": 369,
+							"id": 372,
 							"name": "Node",
 							"variant": "declaration",
 							"kind": 1024,
@@ -1955,7 +4692,7 @@
 									"fileName": "types.ts",
 									"line": 27,
 									"character": 93,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L27"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/types.ts#L27"
 								}
 							],
 							"type": {
@@ -1970,8 +4707,8 @@
 						{
 							"title": "Properties",
 							"children": [
-								370,
-								369
+								373,
+								372
 							]
 						}
 					],
@@ -1980,14 +4717,14 @@
 							"fileName": "types.ts",
 							"line": 27,
 							"character": 91,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L27"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/types.ts#L27"
 						}
 					]
 				}
 			}
 		},
 		{
-			"id": 156,
+			"id": 159,
 			"name": "NestedScope",
 			"variant": "declaration",
 			"kind": 4194304,
@@ -2006,21 +4743,21 @@
 			"sources": [
 				{
 					"fileName": "scope.ts",
-					"line": 33,
+					"line": 35,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/scope.ts#L33"
+					"url": "https://github.com/retejs/rete/blob/f77e567/src/scope.ts#L35"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 157,
+					"id": 160,
 					"name": "S",
 					"variant": "typeParam",
 					"kind": 131072,
 					"flags": {},
 					"type": {
 						"type": "reference",
-						"target": 167,
+						"target": 170,
 						"typeArguments": [
 							{
 								"type": "intrinsic",
@@ -2039,7 +4776,7 @@
 					}
 				},
 				{
-					"id": 158,
+					"id": 161,
 					"name": "Current",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -2116,7 +4853,7 @@
 			}
 		},
 		{
-			"id": 359,
+			"id": 362,
 			"name": "NodeBase",
 			"variant": "declaration",
 			"kind": 4194304,
@@ -2134,20 +4871,20 @@
 					"fileName": "types.ts",
 					"line": 15,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L15"
+					"url": "https://github.com/retejs/rete/blob/f77e567/src/types.ts#L15"
 				}
 			],
 			"type": {
 				"type": "reflection",
 				"declaration": {
-					"id": 360,
+					"id": 363,
 					"name": "__type",
 					"variant": "declaration",
 					"kind": 65536,
 					"flags": {},
 					"children": [
 						{
-							"id": 361,
+							"id": 364,
 							"name": "id",
 							"variant": "declaration",
 							"kind": 1024,
@@ -2157,12 +4894,12 @@
 									"fileName": "types.ts",
 									"line": 15,
 									"character": 25,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L15"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/types.ts#L15"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": 357,
+								"target": 360,
 								"name": "NodeId",
 								"package": "rete"
 							}
@@ -2172,7 +4909,7 @@
 						{
 							"title": "Properties",
 							"children": [
-								361
+								364
 							]
 						}
 					],
@@ -2181,7 +4918,7 @@
 							"fileName": "types.ts",
 							"line": 15,
 							"character": 23,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L15"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/types.ts#L15"
 						}
 					]
 				}
@@ -2195,7 +4932,7 @@
 			]
 		},
 		{
-			"id": 357,
+			"id": 360,
 			"name": "NodeId",
 			"variant": "declaration",
 			"kind": 4194304,
@@ -2213,7 +4950,7 @@
 					"fileName": "types.ts",
 					"line": 4,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/types.ts#L4"
+					"url": "https://github.com/retejs/rete/blob/f77e567/src/types.ts#L4"
 				}
 			],
 			"type": {
@@ -2222,7 +4959,7 @@
 			}
 		},
 		{
-			"id": 159,
+			"id": 162,
 			"name": "Pipe",
 			"variant": "declaration",
 			"kind": 4194304,
@@ -2230,14 +4967,14 @@
 			"sources": [
 				{
 					"fileName": "scope.ts",
-					"line": 15,
+					"line": 17,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/scope.ts#L15"
+					"url": "https://github.com/retejs/rete/blob/f77e567/src/scope.ts#L17"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 163,
+					"id": 166,
 					"name": "T",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -2255,7 +4992,7 @@
 			"type": {
 				"type": "reflection",
 				"declaration": {
-					"id": 160,
+					"id": 163,
 					"name": "__type",
 					"variant": "declaration",
 					"kind": 65536,
@@ -2263,14 +5000,14 @@
 					"sources": [
 						{
 							"fileName": "scope.ts",
-							"line": 15,
+							"line": 17,
 							"character": 22,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/scope.ts#L15"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/scope.ts#L17"
 						}
 					],
 					"signatures": [
 						{
-							"id": 161,
+							"id": 164,
 							"name": "__type",
 							"variant": "signature",
 							"kind": 4096,
@@ -2317,7 +5054,7 @@
 							},
 							"parameters": [
 								{
-									"id": 162,
+									"id": 165,
 									"name": "data",
 									"variant": "param",
 									"kind": 32768,
@@ -2385,7 +5122,7 @@
 			}
 		},
 		{
-			"id": 226,
+			"id": 229,
 			"name": "Root",
 			"variant": "declaration",
 			"kind": 4194304,
@@ -2414,12 +5151,12 @@
 					"fileName": "editor.ts",
 					"line": 10,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L10"
+					"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L10"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 257,
+					"id": 260,
 					"name": "Scheme",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -2434,7 +5171,7 @@
 					},
 					"type": {
 						"type": "reference",
-						"target": 373,
+						"target": 376,
 						"name": "BaseSchemes",
 						"package": "rete"
 					}
@@ -2443,82 +5180,6 @@
 			"type": {
 				"type": "union",
 				"types": [
-					{
-						"type": "reflection",
-						"declaration": {
-							"id": 227,
-							"name": "__type",
-							"variant": "declaration",
-							"kind": 65536,
-							"flags": {},
-							"children": [
-								{
-									"id": 229,
-									"name": "data",
-									"variant": "declaration",
-									"kind": 1024,
-									"flags": {},
-									"sources": [
-										{
-											"fileName": "editor.ts",
-											"line": 11,
-											"character": 26,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L11"
-										}
-									],
-									"type": {
-										"type": "indexedAccess",
-										"indexType": {
-											"type": "literal",
-											"value": "Node"
-										},
-										"objectType": {
-											"type": "reference",
-											"target": -1,
-											"name": "Scheme",
-											"refersToTypeParameter": true
-										}
-									}
-								},
-								{
-									"id": 228,
-									"name": "type",
-									"variant": "declaration",
-									"kind": 1024,
-									"flags": {},
-									"sources": [
-										{
-											"fileName": "editor.ts",
-											"line": 11,
-											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L11"
-										}
-									],
-									"type": {
-										"type": "literal",
-										"value": "nodecreate"
-									}
-								}
-							],
-							"groups": [
-								{
-									"title": "Properties",
-									"children": [
-										229,
-										228
-									]
-								}
-							],
-							"sources": [
-								{
-									"fileName": "editor.ts",
-									"line": 11,
-									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L11"
-								}
-							]
-						}
-					},
 					{
 						"type": "reflection",
 						"declaration": {
@@ -2537,9 +5198,9 @@
 									"sources": [
 										{
 											"fileName": "editor.ts",
-											"line": 12,
-											"character": 27,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L12"
+											"line": 11,
+											"character": 26,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L11"
 										}
 									],
 									"type": {
@@ -2565,14 +5226,14 @@
 									"sources": [
 										{
 											"fileName": "editor.ts",
-											"line": 12,
+											"line": 11,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L12"
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L11"
 										}
 									],
 									"type": {
 										"type": "literal",
-										"value": "nodecreated"
+										"value": "nodecreate"
 									}
 								}
 							],
@@ -2588,9 +5249,9 @@
 							"sources": [
 								{
 									"fileName": "editor.ts",
-									"line": 12,
+									"line": 11,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L12"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L11"
 								}
 							]
 						}
@@ -2613,9 +5274,9 @@
 									"sources": [
 										{
 											"fileName": "editor.ts",
-											"line": 13,
-											"character": 26,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L13"
+											"line": 12,
+											"character": 27,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L12"
 										}
 									],
 									"type": {
@@ -2641,14 +5302,14 @@
 									"sources": [
 										{
 											"fileName": "editor.ts",
-											"line": 13,
+											"line": 12,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L13"
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L12"
 										}
 									],
 									"type": {
 										"type": "literal",
-										"value": "noderemove"
+										"value": "nodecreated"
 									}
 								}
 							],
@@ -2664,9 +5325,9 @@
 							"sources": [
 								{
 									"fileName": "editor.ts",
-									"line": 13,
+									"line": 12,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L13"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L12"
 								}
 							]
 						}
@@ -2689,9 +5350,9 @@
 									"sources": [
 										{
 											"fileName": "editor.ts",
-											"line": 14,
-											"character": 27,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L14"
+											"line": 13,
+											"character": 26,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L13"
 										}
 									],
 									"type": {
@@ -2717,14 +5378,14 @@
 									"sources": [
 										{
 											"fileName": "editor.ts",
-											"line": 14,
+											"line": 13,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L14"
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L13"
 										}
 									],
 									"type": {
 										"type": "literal",
-										"value": "noderemoved"
+										"value": "noderemove"
 									}
 								}
 							],
@@ -2740,9 +5401,9 @@
 							"sources": [
 								{
 									"fileName": "editor.ts",
-									"line": 14,
+									"line": 13,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L14"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L13"
 								}
 							]
 						}
@@ -2765,16 +5426,16 @@
 									"sources": [
 										{
 											"fileName": "editor.ts",
-											"line": 15,
-											"character": 32,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L15"
+											"line": 14,
+											"character": 27,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L14"
 										}
 									],
 									"type": {
 										"type": "indexedAccess",
 										"indexType": {
 											"type": "literal",
-											"value": "Connection"
+											"value": "Node"
 										},
 										"objectType": {
 											"type": "reference",
@@ -2793,14 +5454,14 @@
 									"sources": [
 										{
 											"fileName": "editor.ts",
-											"line": 15,
+											"line": 14,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L15"
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L14"
 										}
 									],
 									"type": {
 										"type": "literal",
-										"value": "connectioncreate"
+										"value": "noderemoved"
 									}
 								}
 							],
@@ -2816,9 +5477,9 @@
 							"sources": [
 								{
 									"fileName": "editor.ts",
-									"line": 15,
+									"line": 14,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L15"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L14"
 								}
 							]
 						}
@@ -2841,9 +5502,9 @@
 									"sources": [
 										{
 											"fileName": "editor.ts",
-											"line": 16,
-											"character": 33,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L16"
+											"line": 15,
+											"character": 32,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L15"
 										}
 									],
 									"type": {
@@ -2869,14 +5530,14 @@
 									"sources": [
 										{
 											"fileName": "editor.ts",
-											"line": 16,
+											"line": 15,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L16"
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L15"
 										}
 									],
 									"type": {
 										"type": "literal",
-										"value": "connectioncreated"
+										"value": "connectioncreate"
 									}
 								}
 							],
@@ -2892,9 +5553,9 @@
 							"sources": [
 								{
 									"fileName": "editor.ts",
-									"line": 16,
+									"line": 15,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L16"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L15"
 								}
 							]
 						}
@@ -2917,9 +5578,9 @@
 									"sources": [
 										{
 											"fileName": "editor.ts",
-											"line": 17,
-											"character": 32,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L17"
+											"line": 16,
+											"character": 33,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L16"
 										}
 									],
 									"type": {
@@ -2945,14 +5606,14 @@
 									"sources": [
 										{
 											"fileName": "editor.ts",
-											"line": 17,
+											"line": 16,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L17"
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L16"
 										}
 									],
 									"type": {
 										"type": "literal",
-										"value": "connectionremove"
+										"value": "connectioncreated"
 									}
 								}
 							],
@@ -2968,9 +5629,9 @@
 							"sources": [
 								{
 									"fileName": "editor.ts",
-									"line": 17,
+									"line": 16,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L17"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L16"
 								}
 							]
 						}
@@ -2993,9 +5654,9 @@
 									"sources": [
 										{
 											"fileName": "editor.ts",
-											"line": 18,
-											"character": 33,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L18"
+											"line": 17,
+											"character": 32,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L17"
 										}
 									],
 									"type": {
@@ -3021,14 +5682,14 @@
 									"sources": [
 										{
 											"fileName": "editor.ts",
-											"line": 18,
+											"line": 17,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L18"
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L17"
 										}
 									],
 									"type": {
 										"type": "literal",
-										"value": "connectionremoved"
+										"value": "connectionremove"
 									}
 								}
 							],
@@ -3044,9 +5705,9 @@
 							"sources": [
 								{
 									"fileName": "editor.ts",
-									"line": 18,
+									"line": 17,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L18"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L17"
 								}
 							]
 						}
@@ -3061,7 +5722,83 @@
 							"flags": {},
 							"children": [
 								{
+									"id": 253,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 18,
+											"character": 33,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L18"
+										}
+									],
+									"type": {
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "Connection"
+										},
+										"objectType": {
+											"type": "reference",
+											"target": -1,
+											"name": "Scheme",
+											"refersToTypeParameter": true
+										}
+									}
+								},
+								{
 									"id": 252,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "editor.ts",
+											"line": 18,
+											"character": 6,
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L18"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "connectionremoved"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										253,
+										252
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "editor.ts",
+									"line": 18,
+									"character": 4,
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L18"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 254,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 255,
 									"name": "type",
 									"variant": "declaration",
 									"kind": 1024,
@@ -3071,7 +5808,7 @@
 											"fileName": "editor.ts",
 											"line": 19,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L19"
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L19"
 										}
 									],
 									"type": {
@@ -3084,7 +5821,7 @@
 								{
 									"title": "Properties",
 									"children": [
-										252
+										255
 									]
 								}
 							],
@@ -3093,7 +5830,7 @@
 									"fileName": "editor.ts",
 									"line": 19,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L19"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L19"
 								}
 							]
 						}
@@ -3101,14 +5838,14 @@
 					{
 						"type": "reflection",
 						"declaration": {
-							"id": 253,
+							"id": 256,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
 							"flags": {},
 							"children": [
 								{
-									"id": 254,
+									"id": 257,
 									"name": "type",
 									"variant": "declaration",
 									"kind": 1024,
@@ -3118,7 +5855,7 @@
 											"fileName": "editor.ts",
 											"line": 20,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L20"
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L20"
 										}
 									],
 									"type": {
@@ -3131,7 +5868,7 @@
 								{
 									"title": "Properties",
 									"children": [
-										254
+										257
 									]
 								}
 							],
@@ -3140,7 +5877,7 @@
 									"fileName": "editor.ts",
 									"line": 20,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L20"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L20"
 								}
 							]
 						}
@@ -3148,14 +5885,14 @@
 					{
 						"type": "reflection",
 						"declaration": {
-							"id": 255,
+							"id": 258,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
 							"flags": {},
 							"children": [
 								{
-									"id": 256,
+									"id": 259,
 									"name": "type",
 									"variant": "declaration",
 									"kind": 1024,
@@ -3165,7 +5902,7 @@
 											"fileName": "editor.ts",
 											"line": 21,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L21"
+											"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L21"
 										}
 									],
 									"type": {
@@ -3178,7 +5915,7 @@
 								{
 									"title": "Properties",
 									"children": [
-										256
+										259
 									]
 								}
 							],
@@ -3187,7 +5924,7 @@
 									"fileName": "editor.ts",
 									"line": 21,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/e06fd1b/src/editor.ts#L21"
+									"url": "https://github.com/retejs/rete/blob/f77e567/src/editor.ts#L21"
 								}
 							]
 						}
@@ -3196,7 +5933,7 @@
 			}
 		},
 		{
-			"id": 374,
+			"id": 377,
 			"name": "getUID",
 			"variant": "declaration",
 			"kind": 64,
@@ -3206,12 +5943,12 @@
 					"fileName": "utils.ts",
 					"line": 10,
 					"character": 16,
-					"url": "https://github.com/retejs/rete/blob/e06fd1b/src/utils.ts#L10"
+					"url": "https://github.com/retejs/rete/blob/f77e567/src/utils.ts#L10"
 				}
 			],
 			"signatures": [
 				{
-					"id": 375,
+					"id": 378,
 					"name": "getUID",
 					"variant": "signature",
 					"kind": 4096,
@@ -3235,7 +5972,7 @@
 							"fileName": "utils.ts",
 							"line": 10,
 							"character": 0,
-							"url": "https://github.com/retejs/rete/blob/e06fd1b/src/utils.ts#L10"
+							"url": "https://github.com/retejs/rete/blob/f77e567/src/utils.ts#L10"
 						}
 					],
 					"type": {
@@ -3250,35 +5987,35 @@
 		{
 			"title": "Classes",
 			"children": [
-				167,
-				213
+				170,
+				216
 			]
 		},
 		{
 			"title": "Type Aliases",
 			"children": [
-				156,
-				357,
-				159
+				159,
+				360,
+				162
 			]
 		},
 		{
 			"title": "Functions",
 			"children": [
-				374
+				377
 			]
 		},
 		{
 			"title": "Primary",
 			"children": [
 				1,
-				258,
-				373,
+				261,
+				376,
+				365,
+				361,
+				370,
 				362,
-				358,
-				367,
-				359,
-				226
+				229
 			]
 		}
 	],
@@ -3286,7 +6023,15 @@
 	"readme": [
 		{
 			"kind": "text",
-			"text": "Rete.js\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**JavaScript framework for visual programming**\n\n![rete logo](https://raw.githubusercontent.com/retejs/rete/assets/preview.svg)\n\n#StandWithUkraine 💙💛\n----\n\n#RussiaInvadedUkraine on 24 of February 2022, at 5.00 AM the armed forces of the Russian Federation  attacked Ukraine. Please, Stand with Ukraine, stay tuned for updates on Ukraine’s official sources and channels in English and support Ukraine in its fight for freedom and democracy in Europe.\n\nHelp to defend Ukraine — donate to [Ukraine’s main charity fund](https://savelife.in.ua/en/donate/)\n\nHelp to defend Ukraine — donate to the [fund of the National Bank of Ukraine](https://ukraine.ua/news/donate-to-the-nbu-fund/)\n\n\nIntroduction\n----\n\n**Rete.js** is a framework for creating visual interfaces and workflows. It provides out-of-the-box solutions for visualization using various libraries and frameworks, as well as solutions for processing graphs based on dataflow and control flow approaches.\n\nDocumentation\n----\n\n- [Introduction](https://retejs.org/docs)\n- [Getting Started](https://retejs.org/docs/getting-started)\n- [Concepts](https://retejs.org/docs/concepts/plugin-system)\n- [Guides](https://retejs.org/docs/guides/basic)\n- [FAQ](https://retejs.org/docs/faq)\n- [Examples](https://retejs.org/examples)\n\n## Sponsors\n\nThank you to all our sponsors! [Become a sponsor](https://opencollective.com/rete#sponsor)\n\n<a href=\"https://opencollective.com/rete#sponsors\" target=\"_blank\"><img src=\"https://opencollective.com/rete/sponsors.svg?width=890\"></a>\n\n## Backers\n\nThank you to all our backers! [Become a backer](https://opencollective.com/rete#backer)\n\n<a href=\"https://opencollective.com/rete#backers\" target=\"_blank\"><img src=\"https://opencollective.com/rete/backers.svg?width=890\"></a>\n\n\n## Contributors\n\nThis project exists thanks to all the people who contribute. [Contribute](https://retejs.org/docs/contribution).\n\n<a href=\"https://github.com/retejs/rete/graphs/contributors\"><img src=\"https://opencollective.com/rete/contributors.svg?width=890\" /></a>\n\n## License\n\n[MIT](https://github.com/retejs/rete/blob/master/LICENSE)"
+			"text": "Rete.js\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**JavaScript framework for visual programming**\n\n![rete logo](https://raw.githubusercontent.com/retejs/rete/assets/preview.svg)\n\n#StandWithUkraine 💙💛\n----\n\n#RussiaInvadedUkraine on 24 of February 2022, at 5.00 AM the armed forces of the Russian Federation  attacked Ukraine. Please, Stand with Ukraine, stay tuned for updates on Ukraine’s official sources and channels in English and support Ukraine in its fight for freedom and democracy in Europe.\n\nHelp to defend Ukraine — donate to [Ukraine’s main charity fund](https://savelife.in.ua/en/donate/)\n\nHelp to defend Ukraine — donate to the [fund of the National Bank of Ukraine](https://ukraine.ua/news/donate-to-the-nbu-fund/)\n\n\nIntroduction [🎥](https://youtu.be/xqPLa6P194A)\n----\n\n**Rete.js** is a framework for creating visual interfaces and workflows. It provides out-of-the-box solutions for visualization using various libraries and frameworks, as well as solutions for processing graphs based on dataflow and control flow approaches.\n\n\nGetting started\n----\n\nUse [Rete Kit](https://retejs.org/docs/development/rete-kit) to quickly set up a Rete.js application. It lets you select a stack (React.js, Vue.js or Angular, Svelte) and the set of features\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```bash\nnpx rete-kit app\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nAlternatively, you can follow the [complete guide](https://retejs.org/docs/getting-started/)\n\nDocumentation\n----\n\n- [Introduction](https://retejs.org/docs)\n- [Guides](https://retejs.org/docs/guides/basic)\n- [Examples](https://retejs.org/examples)\n\n## Sponsors\n\nThank you to all our sponsors! [Become a sponsor](https://opencollective.com/rete#sponsor)\n\n<a href=\"https://opencollective.com/rete#sponsors\" target=\"_blank\"><img src=\"https://opencollective.com/rete/sponsors.svg?width=890\"></a>\n\n## Backers\n\nThank you to all our backers! [Become a backer](https://opencollective.com/rete#backer)\n\n<a href=\"https://opencollective.com/rete#backers\" target=\"_blank\"><img src=\"https://opencollective.com/rete/backers.svg?width=890\"></a>\n\n\n## Contributors\n\nThis project exists thanks to all the people who contribute. [Contribute](https://retejs.org/docs/contribution).\n\n<a href=\"https://github.com/retejs/rete/graphs/contributors\"><img src=\"https://opencollective.com/rete/contributors.svg?width=890\" /></a>\n\n## License\n\n[MIT](https://github.com/retejs/rete/blob/main/LICENSE)"
 		}
 	],
 	"symbolIdMap": {
@@ -3302,9 +6047,69 @@
 			"sourceFileName": "src/presets/classic.ts",
 			"qualifiedName": "Socket"
 		},
+		"3": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Socket.__constructor"
+		},
+		"4": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Socket"
+		},
+		"5": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "name"
+		},
+		"6": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Socket.name"
+		},
 		"7": {
 			"sourceFileName": "src/presets/classic.ts",
 			"qualifiedName": "Port"
+		},
+		"8": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port.__constructor"
+		},
+		"9": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port"
+		},
+		"10": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port.S"
+		},
+		"11": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "socket"
+		},
+		"12": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "label"
+		},
+		"13": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "multipleConnections"
+		},
+		"14": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port.id"
+		},
+		"15": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port.index"
+		},
+		"16": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port.socket"
+		},
+		"17": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port.label"
+		},
+		"18": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port.multipleConnections"
 		},
 		"19": {
 			"sourceFileName": "src/presets/classic.ts",
@@ -3314,6 +6119,78 @@
 			"sourceFileName": "src/presets/classic.ts",
 			"qualifiedName": "Input"
 		},
+		"21": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Input.__constructor"
+		},
+		"22": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Input"
+		},
+		"23": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Input.S"
+		},
+		"24": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "socket"
+		},
+		"25": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "label"
+		},
+		"26": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "multipleConnections"
+		},
+		"27": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Input.control"
+		},
+		"28": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Input.showControl"
+		},
+		"29": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Input.socket"
+		},
+		"30": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Input.label"
+		},
+		"31": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Input.multipleConnections"
+		},
+		"32": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Input.addControl"
+		},
+		"33": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Input.addControl"
+		},
+		"34": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "control"
+		},
+		"35": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Input.removeControl"
+		},
+		"36": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Input.removeControl"
+		},
+		"37": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port.id"
+		},
+		"38": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port.index"
+		},
 		"39": {
 			"sourceFileName": "src/presets/classic.ts",
 			"qualifiedName": "Input.S"
@@ -3321,6 +6198,50 @@
 		"40": {
 			"sourceFileName": "src/presets/classic.ts",
 			"qualifiedName": "Output"
+		},
+		"41": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Output.__constructor"
+		},
+		"42": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Output"
+		},
+		"43": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Output.S"
+		},
+		"44": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "socket"
+		},
+		"45": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "label"
+		},
+		"46": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "multipleConnections"
+		},
+		"47": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port.id"
+		},
+		"48": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port.index"
+		},
+		"49": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port.socket"
+		},
+		"50": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port.label"
+		},
+		"51": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Port.multipleConnections"
 		},
 		"52": {
 			"sourceFileName": "src/presets/classic.ts",
@@ -3330,9 +6251,69 @@
 			"sourceFileName": "src/presets/classic.ts",
 			"qualifiedName": "Control"
 		},
+		"56": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Control.id"
+		},
+		"57": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Control.index"
+		},
 		"58": {
 			"sourceFileName": "src/presets/classic.ts",
 			"qualifiedName": "InputControl"
+		},
+		"59": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "InputControl.__constructor"
+		},
+		"60": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "InputControl"
+		},
+		"61": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "InputControl.T"
+		},
+		"62": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "InputControl.N"
+		},
+		"63": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "type"
+		},
+		"64": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "options"
+		},
+		"67": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "InputControl.type"
+		},
+		"68": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "InputControl.options"
+		},
+		"69": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "InputControl.setValue"
+		},
+		"70": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "InputControl.setValue"
+		},
+		"71": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "value"
+		},
+		"72": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Control.id"
+		},
+		"73": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Control.index"
 		},
 		"74": {
 			"sourceFileName": "src/presets/classic.ts",
@@ -3346,6 +6327,26 @@
 			"sourceFileName": "src/presets/classic.ts",
 			"qualifiedName": "Node"
 		},
+		"89": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Node.id"
+		},
+		"90": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Node.inputs"
+		},
+		"91": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Node.outputs"
+		},
+		"92": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Node.controls"
+		},
+		"93": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Node.selected"
+		},
 		"131": {
 			"sourceFileName": "src/presets/classic.ts",
 			"qualifiedName": "Node.Inputs"
@@ -3358,73 +6359,149 @@
 			"sourceFileName": "src/presets/classic.ts",
 			"qualifiedName": "Node.Controls"
 		},
-		"156": {
-			"sourceFileName": "src/scope.ts",
-			"qualifiedName": "NestedScope"
+		"134": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Connection"
 		},
-		"157": {
-			"sourceFileName": "src/scope.ts",
-			"qualifiedName": "S"
+		"135": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Connection.__constructor"
 		},
-		"158": {
-			"sourceFileName": "src/scope.ts",
-			"qualifiedName": "Current"
+		"136": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Connection"
+		},
+		"137": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Connection.Source"
+		},
+		"138": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "__type"
+		},
+		"139": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "__type"
+		},
+		"140": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "__type"
+		},
+		"141": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Connection.Target"
+		},
+		"142": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "__type"
+		},
+		"143": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "__type"
+		},
+		"144": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "__type"
+		},
+		"145": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "source"
+		},
+		"146": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "sourceOutput"
+		},
+		"147": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "target"
+		},
+		"148": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "targetInput"
+		},
+		"149": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Connection.id"
+		},
+		"150": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Connection.source"
+		},
+		"151": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Connection.target"
+		},
+		"152": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Connection.sourceOutput"
+		},
+		"153": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Connection.targetInput"
+		},
+		"154": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Connection.Source"
+		},
+		"155": {
+			"sourceFileName": "src/presets/classic.ts",
+			"qualifiedName": "Connection.Target"
 		},
 		"159": {
 			"sourceFileName": "src/scope.ts",
-			"qualifiedName": "Pipe"
+			"qualifiedName": "NestedScope"
 		},
 		"160": {
 			"sourceFileName": "src/scope.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "S"
 		},
 		"161": {
 			"sourceFileName": "src/scope.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "Current"
 		},
 		"162": {
 			"sourceFileName": "src/scope.ts",
-			"qualifiedName": "data"
+			"qualifiedName": "Pipe"
 		},
 		"163": {
 			"sourceFileName": "src/scope.ts",
+			"qualifiedName": "__type"
+		},
+		"164": {
+			"sourceFileName": "src/scope.ts",
+			"qualifiedName": "__type"
+		},
+		"165": {
+			"sourceFileName": "src/scope.ts",
+			"qualifiedName": "data"
+		},
+		"166": {
+			"sourceFileName": "src/scope.ts",
 			"qualifiedName": "T"
 		},
-		"167": {
+		"170": {
 			"sourceFileName": "src/scope.ts",
 			"qualifiedName": "Scope"
 		},
-		"211": {
+		"214": {
 			"sourceFileName": "src/scope.ts",
 			"qualifiedName": "Scope.Produces"
 		},
-		"212": {
+		"215": {
 			"sourceFileName": "src/scope.ts",
 			"qualifiedName": "Scope.Parents"
 		},
-		"213": {
+		"216": {
 			"sourceFileName": "src/scope.ts",
 			"qualifiedName": "Signal"
 		},
-		"225": {
+		"228": {
 			"sourceFileName": "src/scope.ts",
 			"qualifiedName": "Signal.T"
 		},
-		"226": {
-			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "Root"
-		},
-		"227": {
-			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "__type"
-		},
-		"228": {
-			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "__type.type"
-		},
 		"229": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "__type.data"
+			"qualifiedName": "Root"
 		},
 		"230": {
 			"sourceFileName": "src/editor.ts",
@@ -3520,87 +6597,87 @@
 		},
 		"253": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "__type.data"
 		},
 		"254": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "__type.type"
+			"qualifiedName": "__type"
 		},
 		"255": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "__type.type"
 		},
 		"256": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "__type.type"
+			"qualifiedName": "__type"
 		},
 		"257": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "Scheme"
+			"qualifiedName": "__type.type"
 		},
 		"258": {
 			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type"
+		},
+		"259": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "__type.type"
+		},
+		"260": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "Scheme"
+		},
+		"261": {
+			"sourceFileName": "src/editor.ts",
 			"qualifiedName": "NodeEditor"
-		},
-		"264": {
-			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.getNode"
-		},
-		"265": {
-			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.getNode"
-		},
-		"266": {
-			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "id"
 		},
 		"267": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.getNodes"
+			"qualifiedName": "NodeEditor.getNode"
 		},
 		"268": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.getNodes"
+			"qualifiedName": "NodeEditor.getNode"
 		},
 		"269": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.getConnections"
+			"qualifiedName": "id"
 		},
 		"270": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.getConnections"
+			"qualifiedName": "NodeEditor.getNodes"
 		},
 		"271": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.getConnection"
+			"qualifiedName": "NodeEditor.getNodes"
 		},
 		"272": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.getConnection"
+			"qualifiedName": "NodeEditor.getConnections"
 		},
 		"273": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "id"
+			"qualifiedName": "NodeEditor.getConnections"
 		},
 		"274": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.addNode"
+			"qualifiedName": "NodeEditor.getConnection"
 		},
 		"275": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.addNode"
+			"qualifiedName": "NodeEditor.getConnection"
 		},
 		"276": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "data"
+			"qualifiedName": "id"
 		},
 		"277": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.addConnection"
+			"qualifiedName": "NodeEditor.addNode"
 		},
 		"278": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.addConnection"
+			"qualifiedName": "NodeEditor.addNode"
 		},
 		"279": {
 			"sourceFileName": "src/editor.ts",
@@ -3608,23 +6685,23 @@
 		},
 		"280": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.removeNode"
+			"qualifiedName": "NodeEditor.addConnection"
 		},
 		"281": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.removeNode"
+			"qualifiedName": "NodeEditor.addConnection"
 		},
 		"282": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "id"
+			"qualifiedName": "data"
 		},
 		"283": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.removeConnection"
+			"qualifiedName": "NodeEditor.removeNode"
 		},
 		"284": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.removeConnection"
+			"qualifiedName": "NodeEditor.removeNode"
 		},
 		"285": {
 			"sourceFileName": "src/editor.ts",
@@ -3632,39 +6709,39 @@
 		},
 		"286": {
 			"sourceFileName": "src/editor.ts",
-			"qualifiedName": "NodeEditor.clear"
+			"qualifiedName": "NodeEditor.removeConnection"
 		},
 		"287": {
 			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.removeConnection"
+		},
+		"288": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "id"
+		},
+		"289": {
+			"sourceFileName": "src/editor.ts",
 			"qualifiedName": "NodeEditor.clear"
 		},
-		"356": {
+		"290": {
+			"sourceFileName": "src/editor.ts",
+			"qualifiedName": "NodeEditor.clear"
+		},
+		"359": {
 			"sourceFileName": "src/editor.ts",
 			"qualifiedName": "NodeEditor.Scheme"
 		},
-		"357": {
+		"360": {
 			"sourceFileName": "src/types.ts",
 			"qualifiedName": "NodeId"
 		},
-		"358": {
+		"361": {
 			"sourceFileName": "src/types.ts",
 			"qualifiedName": "ConnectionId"
 		},
-		"359": {
-			"sourceFileName": "src/types.ts",
-			"qualifiedName": "NodeBase"
-		},
-		"360": {
-			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type"
-		},
-		"361": {
-			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type.id"
-		},
 		"362": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "ConnectionBase"
+			"qualifiedName": "NodeBase"
 		},
 		"363": {
 			"sourceFileName": "src/types.ts",
@@ -3676,45 +6753,57 @@
 		},
 		"365": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type.source"
+			"qualifiedName": "ConnectionBase"
 		},
 		"366": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type.target"
+			"qualifiedName": "__type"
 		},
 		"367": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "GetSchemes"
+			"qualifiedName": "__type.id"
 		},
 		"368": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "__type.source"
 		},
 		"369": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type.Node"
+			"qualifiedName": "__type.target"
 		},
 		"370": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "__type.Connection"
+			"qualifiedName": "GetSchemes"
 		},
 		"371": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "NodeData"
+			"qualifiedName": "__type"
 		},
 		"372": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "ConnectionData"
+			"qualifiedName": "__type.Node"
 		},
 		"373": {
 			"sourceFileName": "src/types.ts",
-			"qualifiedName": "BaseSchemes"
+			"qualifiedName": "__type.Connection"
 		},
 		"374": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "NodeData"
+		},
+		"375": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "ConnectionData"
+		},
+		"376": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "BaseSchemes"
+		},
+		"377": {
 			"sourceFileName": "src/utils.ts",
 			"qualifiedName": "getUID"
 		},
-		"375": {
+		"378": {
 			"sourceFileName": "src/utils.ts",
 			"qualifiedName": "getUID"
 		}
