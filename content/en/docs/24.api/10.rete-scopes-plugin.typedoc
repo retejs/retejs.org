@@ -1,0 +1,1185 @@
+{
+	"id": 0,
+	"name": "rete-scopes-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 64,
+			"name": "Presets",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Presets for scopes plugin."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 65,
+					"name": "classic",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 66,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic/index.ts",
+									"line": 13,
+									"character": 16,
+									"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/presets/classic/index.ts#L13"
+								}
+							],
+							"signatures": [
+								{
+									"id": 67,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Classic preset allowing capturing a node by long-pressing it and dropping it onto another node to make it a nested."
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@returns",
+												"content": [
+													{
+														"kind": "text",
+														"text": "Preset"
+													}
+												]
+											},
+											{
+												"tag": "@listens",
+												"content": [
+													{
+														"kind": "text",
+														"text": "nodepicked"
+													}
+												]
+											},
+											{
+												"tag": "@listens",
+												"content": [
+													{
+														"kind": "text",
+														"text": "nodetranslated"
+													}
+												]
+											},
+											{
+												"tag": "@listens",
+												"content": [
+													{
+														"kind": "text",
+														"text": "nodedragged"
+													}
+												]
+											},
+											{
+												"tag": "@emits",
+												"content": [
+													{
+														"kind": "text",
+														"text": "scopepicked"
+													}
+												]
+											},
+											{
+												"tag": "@emits",
+												"content": [
+													{
+														"kind": "text",
+														"text": "scopereleased"
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/classic/index.ts",
+											"line": 13,
+											"character": 0,
+											"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/presets/classic/index.ts#L13"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "Preset"
+										},
+										"name": "Preset",
+										"package": "rete-scopes-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								66
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/classic/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/presets/classic/index.ts#L1"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Namespaces",
+					"children": [
+						65
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "presets/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/presets/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 31,
+			"name": "ScopesPlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Scope plugin. Responsible for user interaction with scopes (nested nodes, groups)"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "9"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "nodetranslated"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "noderemoved"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "scopepicked"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "scopereleased"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 56,
+					"name": "addPreset",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 125,
+							"character": 9,
+							"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L125"
+						}
+					],
+					"signatures": [
+						{
+							"id": 57,
+							"name": "addPreset",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a preset to the plugin."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 125,
+									"character": 2,
+									"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L125"
+								}
+							],
+							"parameters": [
+								{
+									"id": 58,
+									"name": "preset",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset that is responsible for user interactions with scopes (e.g. assigning nodes to scopes)"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "Preset"
+										},
+										"name": "Preset",
+										"package": "rete-scopes-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"children": [
+						56
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 45,
+					"character": 13,
+					"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L45"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 62,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/types.ts",
+							"qualifiedName": "ExpectedScheme"
+						},
+						"name": "ExpectedScheme",
+						"package": "rete-scopes-plugin"
+					}
+				},
+				{
+					"id": 63,
+					"name": "T",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"default": {
+						"type": "intrinsic",
+						"name": "never"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/src/scope.ts",
+						"qualifiedName": "Scope"
+					},
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": 20,
+							"name": "Scopes",
+							"package": "rete-scopes-plugin"
+						},
+						{
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "reference",
+									"target": {
+										"sourceFileName": "src/index.ts",
+										"qualifiedName": "Requires"
+									},
+									"typeArguments": [
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "Schemes",
+											"refersToTypeParameter": true
+										}
+									],
+									"name": "Requires",
+									"package": "rete-scopes-plugin"
+								},
+								{
+									"type": "reference",
+									"target": {
+										"sourceFileName": "node_modules/src/editor.ts",
+										"qualifiedName": "Root"
+									},
+									"typeArguments": [
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "Schemes",
+											"refersToTypeParameter": true
+										}
+									],
+									"name": "Root",
+									"package": "rete"
+								}
+							]
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "Props",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Props for "
+					},
+					{
+						"kind": "code",
+						"text": "`ScopesPlugin`"
+					},
+					{
+						"kind": "text",
+						"text": " class."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 17,
+					"character": 12,
+					"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L17"
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 6,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"children": [
+						{
+							"id": 11,
+							"name": "exclude",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 21,
+									"character": 2,
+									"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L21"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 12,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 21,
+											"character": 12,
+											"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L21"
+										}
+									],
+									"signatures": [
+										{
+											"id": 13,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Determines whether the nested node should be excluded from affecting the scope's size, etc. Default is "
+													},
+													{
+														"kind": "code",
+														"text": "`() => false`"
+													}
+												]
+											},
+											"parameters": [
+												{
+													"id": 14,
+													"name": "id",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/src/types.ts",
+															"qualifiedName": "NodeId"
+														},
+														"name": "NodeId",
+														"package": "rete"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 7,
+							"name": "padding",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 19,
+									"character": 2,
+									"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L19"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 8,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 19,
+											"character": 12,
+											"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L19"
+										}
+									],
+									"signatures": [
+										{
+											"id": 9,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Padding (space) between the scope's border and its children. Default is "
+													},
+													{
+														"kind": "code",
+														"text": "`() => ({ top: 40, left: 20, right: 20, bottom: 20 })`"
+													}
+												]
+											},
+											"parameters": [
+												{
+													"id": 10,
+													"name": "id",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/src/types.ts",
+															"qualifiedName": "NodeId"
+														},
+														"name": "NodeId",
+														"package": "rete"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "Padding"
+												},
+												"name": "Padding",
+												"package": "rete-scopes-plugin"
+											}
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 15,
+							"name": "size",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 23,
+									"character": 2,
+									"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L23"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 16,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 23,
+											"character": 9,
+											"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L23"
+										}
+									],
+									"signatures": [
+										{
+											"id": 17,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Customizes the size of the node which is recognized as a parent. Default is "
+													},
+													{
+														"kind": "code",
+														"text": "`(id, size) => size`"
+													}
+												]
+											},
+											"parameters": [
+												{
+													"id": 18,
+													"name": "id",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/src/types.ts",
+															"qualifiedName": "NodeId"
+														},
+														"name": "NodeId",
+														"package": "rete"
+													}
+												},
+												{
+													"id": 19,
+													"name": "size",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/types.ts",
+															"qualifiedName": "Size"
+														},
+														"name": "Size",
+														"package": "rete-scopes-plugin"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "Size"
+												},
+												"name": "Size",
+												"package": "rete-scopes-plugin"
+											}
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								11,
+								7,
+								15
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 17,
+							"character": 20,
+							"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L17"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 20,
+			"name": "Scopes",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Signal types produced by ConnectionPlugin instance"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "10"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 33,
+					"character": 12,
+					"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L33"
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 21,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 23,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 34,
+											"character": 27,
+											"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L34"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 24,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 25,
+													"name": "ids",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 34,
+															"character": 35,
+															"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L34"
+														}
+													],
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "reference",
+															"target": {
+																"sourceFileName": "node_modules/src/types.ts",
+																"qualifiedName": "NodeId"
+															},
+															"name": "NodeId",
+															"package": "rete"
+														}
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														25
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 34,
+													"character": 33,
+													"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L34"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 22,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 34,
+											"character": 6,
+											"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L34"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "scopepicked"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										23,
+										22
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 34,
+									"character": 4,
+									"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L34"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 26,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 28,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 35,
+											"character": 29,
+											"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L35"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 29,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 30,
+													"name": "ids",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 35,
+															"character": 37,
+															"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L35"
+														}
+													],
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "reference",
+															"target": {
+																"sourceFileName": "node_modules/src/types.ts",
+																"qualifiedName": "NodeId"
+															},
+															"name": "NodeId",
+															"package": "rete"
+														}
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														30
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 35,
+													"character": 35,
+													"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L35"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 27,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 35,
+											"character": 6,
+											"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L35"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "scopereleased"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										28,
+										27
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 35,
+									"character": 4,
+									"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L35"
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"children": [
+				64
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				31
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				5,
+				20
+			]
+		}
+	],
+	"packageName": "rete-scopes-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js Scopes plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js advanced plugin**\n\n## Key features\n\n- **Nested nodes**: nodes may have parent nodes at one or more levels of depth\n- **Drag-and-drop nesting**: user can easily re-organize nodes by drag-and-drop them to different parent nodes\n- **Presets**: predefined configuration for nesting nodes by drag and drop or other methods\n  -  **Classic**: assigning nodes by long-pressing a node and releasing over the parent node\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/scopes) and [example](https://retejs.org/examples/scopes) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[CC BY-NC-SA 4.0](./LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"5": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Props"
+		},
+		"6": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"7": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.padding"
+		},
+		"8": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"9": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"10": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "id"
+		},
+		"11": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.exclude"
+		},
+		"12": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"13": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"14": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "id"
+		},
+		"15": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.size"
+		},
+		"16": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"17": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"18": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "id"
+		},
+		"19": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "size"
+		},
+		"20": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Scopes"
+		},
+		"21": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"22": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"23": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"24": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"25": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.ids"
+		},
+		"26": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"27": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"28": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"29": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"30": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.ids"
+		},
+		"31": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ScopesPlugin"
+		},
+		"56": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ScopesPlugin.addPreset"
+		},
+		"57": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ScopesPlugin.addPreset"
+		},
+		"58": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "preset"
+		},
+		"62": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ScopesPlugin.Schemes"
+		},
+		"63": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ScopesPlugin.T"
+		},
+		"64": {
+			"sourceFileName": "src/presets/index.ts",
+			"qualifiedName": ""
+		},
+		"65": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": ""
+		},
+		"66": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "setup"
+		},
+		"67": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "setup"
+		}
+	}
+}
