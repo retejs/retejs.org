@@ -1,0 +1,882 @@
+{
+	"id": 0,
+	"name": "rete-minimap-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 21,
+			"name": "MinimapPlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Minimap plugin, triggers rendering of the minimap"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "9"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "nodetranslated"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "nodecreated"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "noderemoved"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "translated"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "resized"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "noderesized"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "zoomed"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "render"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 22,
+					"name": "constructor",
+					"variant": "declaration",
+					"kind": 512,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 60,
+							"character": 2,
+							"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L60"
+						}
+					],
+					"signatures": [
+						{
+							"id": 23,
+							"name": "new MinimapPlugin",
+							"variant": "signature",
+							"kind": 16384,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 60,
+									"character": 2,
+									"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L60"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 24,
+									"name": "Schemes",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/index.ts",
+											"qualifiedName": "ExpectedScheme"
+										},
+										"name": "ExpectedScheme",
+										"package": "rete-minimap-plugin"
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 25,
+									"name": "props",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Plugin properties"
+											}
+										]
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 26,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 29,
+													"name": "boundViewport",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "whether to bound the mini-viewport to the minimap. Default is "
+															},
+															{
+																"kind": "code",
+																"text": "`false`"
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 60,
+															"character": 70,
+															"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L60"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "boolean"
+													}
+												},
+												{
+													"id": 27,
+													"name": "minDistance",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "minimap minimum distance. Default is "
+															},
+															{
+																"kind": "code",
+																"text": "`2000`"
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 60,
+															"character": 32,
+															"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L60"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 28,
+													"name": "ratio",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "minimap ratio. Default is "
+															},
+															{
+																"kind": "code",
+																"text": "`1`"
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 60,
+															"character": 54,
+															"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L60"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														29,
+														27,
+														28
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 60,
+													"character": 30,
+													"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L60"
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 21,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": -1,
+										"name": "Schemes",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "MinimapPlugin",
+								"package": "rete-minimap-plugin"
+							},
+							"overwrites": {
+								"type": "reference",
+								"target": -1,
+								"name": "Scope<never, [Area2D<Schemes> | MinimapExtra, Root<Schemes>]>.constructor"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"target": -1,
+						"name": "Scope<never, [Area2D<Schemes> | MinimapExtra, Root<Schemes>]>.constructor"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						22
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 44,
+					"character": 13,
+					"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L44"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 76,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/index.ts",
+							"qualifiedName": "ExpectedScheme"
+						},
+						"name": "ExpectedScheme",
+						"package": "rete-minimap-plugin"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/src/scope.ts",
+						"qualifiedName": "Scope"
+					},
+					"typeArguments": [
+						{
+							"type": "intrinsic",
+							"name": "never"
+						},
+						{
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "union",
+									"types": [
+										{
+											"type": "reference",
+											"target": {
+												"sourceFileName": "node_modules/src/index.ts",
+												"qualifiedName": "Area2D"
+											},
+											"typeArguments": [
+												{
+													"type": "reference",
+													"target": -1,
+													"name": "Schemes",
+													"refersToTypeParameter": true
+												}
+											],
+											"name": "Area2D",
+											"package": "rete-area-plugin"
+										},
+										{
+											"type": "reference",
+											"target": 6,
+											"name": "MinimapExtra",
+											"package": "rete-minimap-plugin"
+										}
+									]
+								},
+								{
+									"type": "reference",
+									"target": {
+										"sourceFileName": "node_modules/src/editor.ts",
+										"qualifiedName": "Root"
+									},
+									"typeArguments": [
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "Schemes",
+											"refersToTypeParameter": true
+										}
+									],
+									"name": "Root",
+									"package": "rete"
+								}
+							]
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			]
+		},
+		{
+			"id": 6,
+			"name": "MinimapExtra",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Extra signal types for minimap rendering"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "10"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 22,
+					"character": 12,
+					"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L22"
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "RenderSignal"
+						},
+						"typeArguments": [
+							{
+								"type": "literal",
+								"value": "minimap"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 7,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 9,
+											"name": "nodes",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 25,
+													"character": 4,
+													"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L25"
+												}
+											],
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"target": {
+														"sourceFileName": "src/types.ts",
+														"qualifiedName": "Rect"
+													},
+													"name": "Rect",
+													"package": "rete-minimap-plugin"
+												}
+											}
+										},
+										{
+											"id": 8,
+											"name": "ratio",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 24,
+													"character": 4,
+													"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L24"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 10,
+											"name": "viewport",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 26,
+													"character": 4,
+													"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L26"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "Rect"
+												},
+												"name": "Rect",
+												"package": "rete-minimap-plugin"
+											}
+										},
+										{
+											"id": 17,
+											"name": "point",
+											"variant": "declaration",
+											"kind": 2048,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 29,
+													"character": 4,
+													"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L29"
+												}
+											],
+											"signatures": [
+												{
+													"id": 18,
+													"name": "point",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 29,
+															"character": 4,
+															"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L29"
+														}
+													],
+													"parameters": [
+														{
+															"id": 19,
+															"name": "x",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														},
+														{
+															"id": 20,
+															"name": "y",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											]
+										},
+										{
+											"id": 11,
+											"name": "start",
+											"variant": "declaration",
+											"kind": 2048,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 27,
+													"character": 4,
+													"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L27"
+												}
+											],
+											"signatures": [
+												{
+													"id": 12,
+													"name": "start",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 27,
+															"character": 4,
+															"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L27"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/index.ts",
+															"qualifiedName": "Transform"
+														},
+														"name": "Transform",
+														"package": "rete-minimap-plugin"
+													}
+												}
+											]
+										},
+										{
+											"id": 13,
+											"name": "translate",
+											"variant": "declaration",
+											"kind": 2048,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 28,
+													"character": 4,
+													"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L28"
+												}
+											],
+											"signatures": [
+												{
+													"id": 14,
+													"name": "translate",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 28,
+															"character": 4,
+															"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L28"
+														}
+													],
+													"parameters": [
+														{
+															"id": 15,
+															"name": "dx",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														},
+														{
+															"id": 16,
+															"name": "dy",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											]
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												9,
+												8,
+												10
+											]
+										},
+										{
+											"title": "Methods",
+											"children": [
+												17,
+												11,
+												13
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 23,
+											"character": 28,
+											"url": "https://github.com/retejs/minimap-plugin/blob/3c4ca92/src/index.ts#L23"
+										}
+									]
+								}
+							}
+						],
+						"name": "RenderSignal",
+						"package": "rete-area-plugin"
+					}
+				]
+			}
+		}
+	],
+	"groups": [
+		{
+			"title": "Classes",
+			"children": [
+				21
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				6
+			]
+		}
+	],
+	"packageName": "rete-minimap-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js Minimap plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Minimap**: provides data for visualization of the minimap using any of the render plugins\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/minimap) and [example](https://retejs.org/examples/minimap) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/minimap-plugin/blob/main/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"6": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "MinimapExtra"
+		},
+		"7": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"8": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.ratio"
+		},
+		"9": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.nodes"
+		},
+		"10": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.viewport"
+		},
+		"11": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.start"
+		},
+		"12": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.start"
+		},
+		"13": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.translate"
+		},
+		"14": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.translate"
+		},
+		"15": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "dx"
+		},
+		"16": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "dy"
+		},
+		"17": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.point"
+		},
+		"18": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.point"
+		},
+		"19": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "x"
+		},
+		"20": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "y"
+		},
+		"21": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "MinimapPlugin"
+		},
+		"22": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "MinimapPlugin.__constructor"
+		},
+		"23": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "MinimapPlugin"
+		},
+		"24": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "MinimapPlugin.Schemes"
+		},
+		"25": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "props"
+		},
+		"26": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"27": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.minDistance"
+		},
+		"28": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.ratio"
+		},
+		"29": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.boundViewport"
+		},
+		"76": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "MinimapPlugin.Schemes"
+		}
+	}
+}
