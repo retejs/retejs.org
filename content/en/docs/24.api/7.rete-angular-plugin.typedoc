@@ -1,0 +1,1932 @@
+{
+	"id": 0,
+	"name": "rete-angular-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 1,
+			"name": "Presets",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Built-in presets, responsible for rendering different parts of the editor."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 2,
+					"name": "classic",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 3,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/presets/classic/index.ts",
+									"line": 29,
+									"character": 16,
+									"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/classic/index.ts#L29"
+								}
+							],
+							"signatures": [
+								{
+									"id": 4,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Classic preset for rendering nodes, connections, controls and sockets."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/presets/classic/index.ts",
+											"line": 29,
+											"character": 0,
+											"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/classic/index.ts#L29"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 5,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/types.ts",
+													"qualifiedName": "ClassicScheme"
+												},
+												"name": "ClassicScheme",
+												"package": "rete-angular-plugin"
+											}
+										},
+										{
+											"id": 6,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/types.ts",
+													"qualifiedName": "AngularArea2D"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "Schemes",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "AngularArea2D",
+												"package": "rete-angular-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 7,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/index.ts",
+													"qualifiedName": "ClassicProps"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "Schemes",
+														"refersToTypeParameter": true
+													},
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "K",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "ClassicProps",
+												"package": "rete-angular-plugin"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-angular-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								3
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/presets/classic/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/classic/index.ts#L1"
+						}
+					]
+				},
+				{
+					"id": 8,
+					"name": "contextMenu",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 9,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/presets/context-menu/index.ts",
+									"line": 10,
+									"character": 16,
+									"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/index.ts#L10"
+								}
+							],
+							"signatures": [
+								{
+									"id": 10,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset for rendering context menu."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/presets/context-menu/index.ts",
+											"line": 10,
+											"character": 0,
+											"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/index.ts#L10"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 11,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											}
+										},
+										{
+											"id": 12,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "RenderSignal"
+												},
+												"typeArguments": [
+													{
+														"type": "literal",
+														"value": "contextmenu"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 13,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"children": [
+																{
+																	"id": 14,
+																	"name": "items",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "src/presets/context-menu/types.ts",
+																			"line": 11,
+																			"character": 34,
+																			"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/types.ts#L11"
+																		}
+																	],
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "reference",
+																			"target": {
+																				"sourceFileName": "src/presets/context-menu/types.ts",
+																				"qualifiedName": "Item"
+																			},
+																			"name": "Item",
+																			"package": "rete-angular-plugin"
+																		}
+																	}
+																},
+																{
+																	"id": 17,
+																	"name": "searchBar",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {
+																		"isOptional": true
+																	},
+																	"sources": [
+																		{
+																			"fileName": "src/presets/context-menu/types.ts",
+																			"line": 11,
+																			"character": 65,
+																			"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/types.ts#L11"
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "boolean"
+																	}
+																},
+																{
+																	"id": 15,
+																	"name": "onHide",
+																	"variant": "declaration",
+																	"kind": 2048,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "src/presets/context-menu/types.ts",
+																			"line": 11,
+																			"character": 49,
+																			"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/types.ts#L11"
+																		}
+																	],
+																	"signatures": [
+																		{
+																			"id": 16,
+																			"name": "onHide",
+																			"variant": "signature",
+																			"kind": 4096,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/presets/context-menu/types.ts",
+																					"line": 11,
+																					"character": 49,
+																					"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/types.ts#L11"
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "void"
+																			}
+																		}
+																	]
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"children": [
+																		14,
+																		17
+																	]
+																},
+																{
+																	"title": "Methods",
+																	"children": [
+																		15
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "src/presets/context-menu/types.ts",
+																	"line": 11,
+																	"character": 32,
+																	"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/types.ts#L11"
+																}
+															]
+														}
+													}
+												],
+												"name": "RenderSignal",
+												"package": "rete-angular-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 18,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 19,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 20,
+															"name": "delay",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"sources": [
+																{
+																	"fileName": "src/presets/context-menu/index.ts",
+																	"line": 10,
+																	"character": 90,
+																	"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/index.ts#L10"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																20
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/presets/context-menu/index.ts",
+															"line": 10,
+															"character": 88,
+															"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/index.ts#L10"
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-angular-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								9
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/presets/context-menu/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/index.ts#L1"
+						}
+					]
+				},
+				{
+					"id": 21,
+					"name": "minimap",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 22,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/presets/minimap/index.ts",
+									"line": 10,
+									"character": 16,
+									"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/minimap/index.ts#L10"
+								}
+							],
+							"signatures": [
+								{
+									"id": 23,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset for rendering minimap."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/presets/minimap/index.ts",
+											"line": 10,
+											"character": 0,
+											"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/minimap/index.ts#L10"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 24,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											}
+										},
+										{
+											"id": 25,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "RenderSignal"
+												},
+												"typeArguments": [
+													{
+														"type": "literal",
+														"value": "minimap"
+													},
+													{
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/presets/minimap/types.ts",
+															"qualifiedName": "MinimapData"
+														},
+														"name": "MinimapData",
+														"package": "rete-angular-plugin"
+													}
+												],
+												"name": "RenderSignal",
+												"package": "rete-angular-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 26,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 27,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 28,
+															"name": "size",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"sources": [
+																{
+																	"fileName": "src/presets/minimap/index.ts",
+																	"line": 10,
+																	"character": 86,
+																	"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/minimap/index.ts#L10"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																28
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/presets/minimap/index.ts",
+															"line": 10,
+															"character": 84,
+															"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/minimap/index.ts#L10"
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-angular-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								22
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/presets/minimap/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/minimap/index.ts#L1"
+						}
+					]
+				},
+				{
+					"id": 29,
+					"name": "reroute",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 30,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/presets/reroute/index.ts",
+									"line": 17,
+									"character": 16,
+									"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/reroute/index.ts#L17"
+								}
+							],
+							"signatures": [
+								{
+									"id": 31,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset for rendering pins."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/presets/reroute/index.ts",
+											"line": 17,
+											"character": 0,
+											"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/reroute/index.ts#L17"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 32,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											}
+										},
+										{
+											"id": 33,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "RenderSignal"
+												},
+												"typeArguments": [
+													{
+														"type": "literal",
+														"value": "reroute-pins"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 34,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"children": [
+																{
+																	"id": 35,
+																	"name": "data",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "src/presets/reroute/types.ts",
+																			"line": 19,
+																			"character": 35,
+																			"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/reroute/types.ts#L19"
+																		}
+																	],
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "src/presets/reroute/types.ts",
+																			"qualifiedName": "PinData"
+																		},
+																		"name": "PinData",
+																		"package": "rete-angular-plugin"
+																	}
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"children": [
+																		35
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "src/presets/reroute/types.ts",
+																	"line": 19,
+																	"character": 33,
+																	"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/reroute/types.ts#L19"
+																}
+															]
+														}
+													}
+												],
+												"name": "RenderSignal",
+												"package": "rete-angular-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 36,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/reroute/index.ts",
+													"qualifiedName": "Props"
+												},
+												"name": "Props",
+												"package": "rete-angular-plugin"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-angular-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								30
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/presets/reroute/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/reroute/index.ts#L1"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Namespaces",
+					"children": [
+						2,
+						8,
+						21,
+						29
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/presets/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 470,
+			"name": "AngularPlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Angular plugin. Renders nodes, connections and other elements using React."
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "9"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "connectionpath"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "render"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "unmount"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 471,
+					"name": "constructor",
+					"variant": "declaration",
+					"kind": 512,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/core.ts",
+							"line": 86,
+							"character": 2,
+							"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L86"
+						}
+					],
+					"signatures": [
+						{
+							"id": 472,
+							"name": "new AngularPlugin",
+							"variant": "signature",
+							"kind": 16384,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/core.ts",
+									"line": 86,
+									"character": 2,
+									"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L86"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 473,
+									"name": "Schemes",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/src/types.ts",
+											"qualifiedName": "BaseSchemes"
+										},
+										"name": "BaseSchemes",
+										"package": "rete"
+									}
+								},
+								{
+									"id": 474,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"default": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/core.ts",
+											"qualifiedName": "Requires"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "Requires",
+										"package": "rete-angular-plugin"
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 475,
+									"name": "params",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Plugin properties"
+											}
+										]
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 476,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 477,
+													"name": "injector",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "Angular's Injector instance"
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "src/core.ts",
+															"line": 86,
+															"character": 32,
+															"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L86"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/@angular/core/core.d.ts",
+															"qualifiedName": "Injector"
+														},
+														"name": "Injector",
+														"package": "@angular/core"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														477
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/core.ts",
+													"line": 86,
+													"character": 30,
+													"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L86"
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 470,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": -1,
+										"name": "Schemes",
+										"refersToTypeParameter": true
+									},
+									{
+										"type": "reference",
+										"target": -1,
+										"name": "T",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "AngularPlugin",
+								"package": "rete-angular-plugin"
+							},
+							"overwrites": {
+								"type": "reference",
+								"target": -1,
+								"name": "Scope<Produces<Schemes>, [Requires<Schemes> | T]>.constructor"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"target": -1,
+						"name": "Scope<Produces<Schemes>, [Requires<Schemes> | T]>.constructor"
+					}
+				},
+				{
+					"id": 494,
+					"name": "addPreset",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/core.ts",
+							"line": 160,
+							"character": 9,
+							"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L160"
+						}
+					],
+					"signatures": [
+						{
+							"id": 495,
+							"name": "addPreset",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a preset to the plugin."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/core.ts",
+									"line": 160,
+									"character": 2,
+									"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L160"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 496,
+									"name": "K",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 497,
+									"name": "preset",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset that can render nodes, connections and other elements."
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "conditional",
+												"checkType": {
+													"type": "reference",
+													"target": {
+														"sourceFileName": "node_modules/src/utility-types.ts",
+														"qualifiedName": "CanAssignEachTupleElemmentToAnyOf"
+													},
+													"typeArguments": [
+														{
+															"type": "reference",
+															"target": -1,
+															"name": "T",
+															"refersToTypeParameter": true
+														},
+														{
+															"type": "reference",
+															"target": {
+																"sourceFileName": "node_modules/src/utility-types.ts",
+																"qualifiedName": "UnionToTuple"
+															},
+															"typeArguments": [
+																{
+																	"type": "reference",
+																	"target": -1,
+																	"name": "K",
+																	"refersToTypeParameter": true
+																}
+															],
+															"name": "UnionToTuple",
+															"package": "rete"
+														}
+													],
+													"name": "CanAssignEachTupleElemmentToAnyOf",
+													"package": "rete"
+												},
+												"extendsType": {
+													"type": "literal",
+													"value": true
+												},
+												"trueType": {
+													"type": "reference",
+													"target": -1,
+													"name": "K",
+													"refersToTypeParameter": true
+												},
+												"falseType": {
+													"type": "literal",
+													"value": "Cannot apply preset. Provided signals are not compatible"
+												}
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-angular-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						471
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						494
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/core.ts",
+					"line": 76,
+					"character": 13,
+					"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L76"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 498,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				},
+				{
+					"id": 499,
+					"name": "T",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"default": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/core.ts",
+							"qualifiedName": "Requires"
+						},
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": -1,
+								"name": "Schemes",
+								"refersToTypeParameter": true
+							}
+						],
+						"name": "Requires",
+						"package": "rete-angular-plugin"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/src/scope.ts",
+						"qualifiedName": "Scope"
+					},
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": 461,
+							"typeArguments": [
+								{
+									"type": "reference",
+									"target": -1,
+									"name": "Schemes",
+									"refersToTypeParameter": true
+								}
+							],
+							"name": "Produces",
+							"package": "rete-angular-plugin"
+						},
+						{
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "union",
+									"types": [
+										{
+											"type": "reference",
+											"target": {
+												"sourceFileName": "src/core.ts",
+												"qualifiedName": "Requires"
+											},
+											"typeArguments": [
+												{
+													"type": "reference",
+													"target": -1,
+													"name": "Schemes",
+													"refersToTypeParameter": true
+												}
+											],
+											"name": "Requires",
+											"package": "rete-angular-plugin"
+										},
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "T",
+											"refersToTypeParameter": true
+										}
+									]
+								}
+							]
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			]
+		},
+		{
+			"id": 461,
+			"name": "Produces",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Signals that can be emitted by the plugin"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "10"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/core.ts",
+					"line": 61,
+					"character": 12,
+					"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L61"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 469,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 462,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 464,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/core.ts",
+											"line": 62,
+											"character": 30,
+											"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L62"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 465,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 467,
+													"name": "path",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/core.ts",
+															"line": 62,
+															"character": 70,
+															"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L62"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 466,
+													"name": "payload",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/core.ts",
+															"line": 62,
+															"character": 38,
+															"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L62"
+														}
+													],
+													"type": {
+														"type": "indexedAccess",
+														"indexType": {
+															"type": "literal",
+															"value": "Connection"
+														},
+														"objectType": {
+															"type": "reference",
+															"target": -1,
+															"name": "Schemes",
+															"refersToTypeParameter": true
+														}
+													}
+												},
+												{
+													"id": 468,
+													"name": "points",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/core.ts",
+															"line": 62,
+															"character": 85,
+															"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L62"
+														}
+													],
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "reference",
+															"target": {
+																"sourceFileName": "src/types.ts",
+																"qualifiedName": "Position"
+															},
+															"name": "Position",
+															"package": "rete-angular-plugin"
+														}
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														467,
+														466,
+														468
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/core.ts",
+													"line": 62,
+													"character": 36,
+													"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L62"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 463,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/core.ts",
+											"line": 62,
+											"character": 6,
+											"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L62"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "connectionpath"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										464,
+										463
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/core.ts",
+									"line": 62,
+									"character": 4,
+									"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L62"
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"children": [
+				1
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				470
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				461
+			]
+		}
+	],
+	"packageName": "rete-angular-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js Angular plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Render elements**: visualize an elements such as nodes and connections using Angular components\n- **Customization**: modify appearance and behavior for a personalized workflow\n- **Presets**: predefined Angular components for different types of features\n  -  **[Classic](https://retejs.org/docs/guides/renderers/angular#connect-plugin)**: provides a classic visualization of nodes, connections, and controls\n  -  **[Context menu](https://retejs.org/docs/guides/context-menu#render-context-menu)**: provides a classic appearance for "
+		},
+		{
+			"kind": "code",
+			"text": "`rete-context-menu-plugin`"
+		},
+		{
+			"kind": "text",
+			"text": "\n  -  **[Minimap](https://retejs.org/docs/guides/minimap#render)**: provides a classic appearance for "
+		},
+		{
+			"kind": "code",
+			"text": "`rete-minimap-plugin`"
+		},
+		{
+			"kind": "text",
+			"text": "\n  -  **[Reroute](https://retejs.org/docs/guides/reroute#rendering)**: provides a classic appearance for "
+		},
+		{
+			"kind": "code",
+			"text": "`rete-connection-reroute-plugin`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/renderers/angular) and [example](https://retejs.org/examples/angular/basic) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/angular-render-plugin/blob/main/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/presets/index.ts",
+			"qualifiedName": ""
+		},
+		"2": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": ""
+		},
+		"3": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "setup"
+		},
+		"4": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "setup"
+		},
+		"5": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"6": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "K"
+		},
+		"7": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "props"
+		},
+		"8": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": ""
+		},
+		"9": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "setup"
+		},
+		"10": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "setup"
+		},
+		"11": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"12": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "K"
+		},
+		"13": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type"
+		},
+		"14": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.items"
+		},
+		"15": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.onHide"
+		},
+		"16": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.onHide"
+		},
+		"17": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.searchBar"
+		},
+		"18": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "props"
+		},
+		"19": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "__type"
+		},
+		"20": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "__type.delay"
+		},
+		"21": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": ""
+		},
+		"22": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "setup"
+		},
+		"23": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "setup"
+		},
+		"24": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"25": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "K"
+		},
+		"26": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "props"
+		},
+		"27": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "__type"
+		},
+		"28": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "__type.size"
+		},
+		"29": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": ""
+		},
+		"30": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "setup"
+		},
+		"31": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "setup"
+		},
+		"32": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"33": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "K"
+		},
+		"34": {
+			"sourceFileName": "src/presets/reroute/types.ts",
+			"qualifiedName": "__type"
+		},
+		"35": {
+			"sourceFileName": "src/presets/reroute/types.ts",
+			"qualifiedName": "__type.data"
+		},
+		"36": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "props"
+		},
+		"461": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "Produces"
+		},
+		"462": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "__type"
+		},
+		"463": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "__type.type"
+		},
+		"464": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "__type.data"
+		},
+		"465": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "__type"
+		},
+		"466": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "__type.payload"
+		},
+		"467": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "__type.path"
+		},
+		"468": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "__type.points"
+		},
+		"469": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "Schemes"
+		},
+		"470": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "AngularPlugin"
+		},
+		"471": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "AngularPlugin.__constructor"
+		},
+		"472": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "AngularPlugin"
+		},
+		"473": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "AngularPlugin.Schemes"
+		},
+		"474": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "AngularPlugin.T"
+		},
+		"475": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "params"
+		},
+		"476": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "__type"
+		},
+		"477": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "__type.injector"
+		},
+		"494": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "AngularPlugin.addPreset"
+		},
+		"495": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "AngularPlugin.addPreset"
+		},
+		"496": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "K"
+		},
+		"497": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "preset"
+		},
+		"498": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "AngularPlugin.Schemes"
+		},
+		"499": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "AngularPlugin.T"
+		}
+	}
+}
