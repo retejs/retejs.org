@@ -5,7 +5,7 @@ import {
 } from 'view-ui-plus/dist/viewuiplus.min.esm';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
-  faDiscord, faTwitter, faGithub, faPatreon, faYoutube,
+  faDiscord, faTwitter, faGithub, faPatreon, faYoutube, faNpm,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 export default defineNuxtPlugin((nuxtApp) => {
   const app = nuxtApp.vueApp;
 
-  library.add(faDiscord, faTwitter, faGithub, faPatreon, faYoutube);
+  library.add(faDiscord, faTwitter, faGithub, faPatreon, faYoutube, faNpm);
 
   app.component('font-awesome-icon', FontAwesomeIcon);
 
