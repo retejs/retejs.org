@@ -1,0 +1,2411 @@
+{
+	"id": 0,
+	"name": "rete-comment-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 291,
+			"name": "CommentExtensions",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Comment plugin extensions"
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 292,
+					"name": "selectable",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "extensions/selectable.ts",
+							"line": 13,
+							"character": 16,
+							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/extensions/selectable.ts#L13"
+						}
+					],
+					"signatures": [
+						{
+							"id": 293,
+							"name": "selectable",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Enables synchronization between comments and the selector"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "extensions/selectable.ts",
+									"line": 13,
+									"character": 0,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/extensions/selectable.ts#L13"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 294,
+									"name": "S",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/types.ts",
+											"qualifiedName": "ExpectedSchemes"
+										},
+										"name": "ExpectedSchemes",
+										"package": "rete-comment-plugin"
+									}
+								},
+								{
+									"id": 295,
+									"name": "K",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 296,
+									"name": "plugin",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Comment plugin instance"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 37,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "S",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "CommentPlugin",
+										"package": "rete-comment-plugin"
+									}
+								},
+								{
+									"id": 297,
+									"name": "selector",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Selector instance"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/src/extensions/selectable.ts",
+											"qualifiedName": "Selector"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/src/extensions/selectable.ts",
+													"qualifiedName": "SelectorEntity"
+												},
+												"name": "SelectorEntity",
+												"package": "rete-area-plugin"
+											}
+										],
+										"name": "Selector",
+										"package": "rete-area-plugin"
+									}
+								},
+								{
+									"id": 298,
+									"name": "accumulating",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Accumulating state"
+											}
+										]
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 299,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 300,
+													"name": "active",
+													"variant": "declaration",
+													"kind": 2048,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "extensions/selectable.ts",
+															"line": 13,
+															"character": 122,
+															"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/extensions/selectable.ts#L13"
+														}
+													],
+													"signatures": [
+														{
+															"id": 301,
+															"name": "active",
+															"variant": "signature",
+															"kind": 4096,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "extensions/selectable.ts",
+																	"line": 13,
+																	"character": 122,
+																	"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/extensions/selectable.ts#L13"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "boolean"
+															}
+														}
+													]
+												}
+											],
+											"groups": [
+												{
+													"title": "Methods",
+													"children": [
+														300
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "extensions/selectable.ts",
+													"line": 13,
+													"character": 120,
+													"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/extensions/selectable.ts#L13"
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"children": [
+						292
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "extensions/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/extensions/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 37,
+			"name": "CommentPlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "A plugin that provides comments for nodes"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "8"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 38,
+					"name": "constructor",
+					"variant": "declaration",
+					"kind": 512,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 50,
+							"character": 2,
+							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L50"
+						}
+					],
+					"signatures": [
+						{
+							"id": 39,
+							"name": "new CommentPlugin",
+							"variant": "signature",
+							"kind": 16384,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 50,
+									"character": 2,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L50"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 40,
+									"name": "Schemes",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/types.ts",
+											"qualifiedName": "ExpectedSchemes"
+										},
+										"name": "ExpectedSchemes",
+										"package": "rete-comment-plugin"
+									}
+								},
+								{
+									"id": 41,
+									"name": "K",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"default": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/src/base.ts",
+											"qualifiedName": "BaseArea"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "BaseArea",
+										"package": "rete-area-plugin"
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 42,
+									"name": "props",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Optional comment plugin properties"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 31,
+										"name": "Props",
+										"package": "rete-comment-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 37,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": -1,
+										"name": "Schemes",
+										"refersToTypeParameter": true
+									},
+									{
+										"type": "reference",
+										"target": -1,
+										"name": "K",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "CommentPlugin",
+								"package": "rete-comment-plugin"
+							},
+							"overwrites": {
+								"type": "reference",
+								"target": -1,
+								"name": "Scope<Produces, [BaseArea<Schemes> | K]>.constructor"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"target": -1,
+						"name": "Scope<Produces, [BaseArea<Schemes> | K]>.constructor"
+					}
+				},
+				{
+					"id": 58,
+					"name": "addFrame",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 202,
+							"character": 9,
+							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L202"
+						}
+					],
+					"signatures": [
+						{
+							"id": 59,
+							"name": "addFrame",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a frame comment. Represents a rectangle with a text and nodes linked to it.\nWhen user translates a comment, all linked nodes will be translated as well.\nWhen user drops a node on a comment, the node will be linked to the comment."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 202,
+									"character": 2,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L202"
+								}
+							],
+							"parameters": [
+								{
+									"id": 60,
+									"name": "text",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Comment text"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 61,
+									"name": "links",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "List of node IDs the comment is linked with"
+											}
+										]
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									},
+									"defaultValue": "[]"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 53,
+					"name": "addInline",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 178,
+							"character": 9,
+							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L178"
+						}
+					],
+					"signatures": [
+						{
+							"id": 54,
+							"name": "addInline",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds an inline comment which is represented by a block with text at certain position, which is attached to the node.\nWhen user translates a node, the comment will be translated as well.\nWhen user drops a comment on a node, the comment will be linked to the node."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 178,
+									"character": 2,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L178"
+								}
+							],
+							"parameters": [
+								{
+									"id": 55,
+									"name": "text",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Comment text"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 56,
+									"name": "position",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Comment position"
+											}
+										]
+									},
+									"type": {
+										"type": "tuple",
+										"elements": [
+											{
+												"type": "intrinsic",
+												"name": "number"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								},
+								{
+									"id": 57,
+									"name": "link",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Node ID the comment is linked with"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 79,
+					"name": "clear",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 286,
+							"character": 9,
+							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L286"
+						}
+					],
+					"signatures": [
+						{
+							"id": 80,
+							"name": "clear",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Removes all comments"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 286,
+									"character": 2,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L286"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 65,
+					"name": "delete",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 230,
+							"character": 9,
+							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L230"
+						}
+					],
+					"signatures": [
+						{
+							"id": 66,
+							"name": "delete",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Removes a comment"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 230,
+									"character": 2,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L230"
+								}
+							],
+							"parameters": [
+								{
+									"id": 67,
+									"name": "id",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Comment id"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 50,
+					"name": "editComment",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 157,
+							"character": 8,
+							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L157"
+						}
+					],
+					"signatures": [
+						{
+							"id": 51,
+							"name": "editComment",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Trigger edit form for a comment"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 157,
+									"character": 2,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L157"
+								}
+							],
+							"parameters": [
+								{
+									"id": 52,
+									"name": "id",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Comment id"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 73,
+					"name": "select",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 261,
+							"character": 9,
+							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L261"
+						}
+					],
+					"signatures": [
+						{
+							"id": 74,
+							"name": "select",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Selects a comment"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 261,
+									"character": 2,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L261"
+								}
+							],
+							"parameters": [
+								{
+									"id": 75,
+									"name": "id",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Comment id"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 68,
+					"name": "translate",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 249,
+							"character": 9,
+							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L249"
+						}
+					],
+					"signatures": [
+						{
+							"id": 69,
+							"name": "translate",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Translates a comment"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 249,
+									"character": 2,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L249"
+								}
+							],
+							"parameters": [
+								{
+									"id": 70,
+									"name": "id",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Comment id"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 71,
+									"name": "dx",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Delta x"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 72,
+									"name": "dy",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Delta y"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 76,
+					"name": "unselect",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 274,
+							"character": 9,
+							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L274"
+						}
+					],
+					"signatures": [
+						{
+							"id": 77,
+							"name": "unselect",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Unselects a comment"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 274,
+									"character": 2,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L274"
+								}
+							],
+							"parameters": [
+								{
+									"id": 78,
+									"name": "id",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Comment id"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						38
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						58,
+						53,
+						79,
+						65,
+						50,
+						73,
+						68,
+						76
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 41,
+					"character": 13,
+					"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L41"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 81,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/types.ts",
+							"qualifiedName": "ExpectedSchemes"
+						},
+						"name": "ExpectedSchemes",
+						"package": "rete-comment-plugin"
+					}
+				},
+				{
+					"id": 82,
+					"name": "K",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"default": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/base.ts",
+							"qualifiedName": "BaseArea"
+						},
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": -1,
+								"name": "Schemes",
+								"refersToTypeParameter": true
+							}
+						],
+						"name": "BaseArea",
+						"package": "rete-area-plugin"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/src/scope.ts",
+						"qualifiedName": "Scope"
+					},
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": 1,
+							"name": "Produces",
+							"package": "rete-comment-plugin"
+						},
+						{
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "union",
+									"types": [
+										{
+											"type": "reference",
+											"target": {
+												"sourceFileName": "node_modules/src/base.ts",
+												"qualifiedName": "BaseArea"
+											},
+											"typeArguments": [
+												{
+													"type": "reference",
+													"target": -1,
+													"name": "Schemes",
+													"refersToTypeParameter": true
+												}
+											],
+											"name": "BaseArea",
+											"package": "rete-area-plugin"
+										},
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "K",
+											"refersToTypeParameter": true
+										}
+									]
+								}
+							]
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "Produces",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "A union of all possible signals that can be emitted by the comment plugin"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "9"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 20,
+					"character": 12,
+					"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L20"
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 2,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 4,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 21,
+											"character": 30,
+											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L21"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/comment.ts",
+											"qualifiedName": "Comment"
+										},
+										"name": "Comment",
+										"package": "rete-comment-plugin"
+									}
+								},
+								{
+									"id": 3,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 21,
+											"character": 6,
+											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L21"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "commentcreated"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										4,
+										3
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 21,
+									"character": 4,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L21"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 5,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 7,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 22,
+											"character": 30,
+											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L22"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/comment.ts",
+											"qualifiedName": "Comment"
+										},
+										"name": "Comment",
+										"package": "rete-comment-plugin"
+									}
+								},
+								{
+									"id": 6,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 22,
+											"character": 6,
+											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L22"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "commentremoved"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										7,
+										6
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 22,
+									"character": 4,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L22"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 8,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 10,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 23,
+											"character": 27,
+											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L23"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/comment.ts",
+											"qualifiedName": "Comment"
+										},
+										"name": "Comment",
+										"package": "rete-comment-plugin"
+									}
+								},
+								{
+									"id": 9,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 23,
+											"character": 6,
+											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L23"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "editcomment"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										10,
+										9
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 23,
+									"character": 4,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L23"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 11,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 13,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 24,
+											"character": 31,
+											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L24"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/comment.ts",
+											"qualifiedName": "Comment"
+										},
+										"name": "Comment",
+										"package": "rete-comment-plugin"
+									}
+								},
+								{
+									"id": 12,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 24,
+											"character": 6,
+											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L24"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "commentselected"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										13,
+										12
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 24,
+									"character": 4,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L24"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 14,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 16,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 25,
+											"character": 33,
+											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L25"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/comment.ts",
+											"qualifiedName": "Comment"
+										},
+										"name": "Comment",
+										"package": "rete-comment-plugin"
+									}
+								},
+								{
+									"id": 15,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 25,
+											"character": 6,
+											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L25"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "commentunselected"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										16,
+										15
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 25,
+									"character": 4,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L25"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 17,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 19,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 26,
+											"character": 33,
+											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L26"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 20,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 22,
+													"name": "dx",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 26,
+															"character": 60,
+															"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L26"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 23,
+													"name": "dy",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 26,
+															"character": 72,
+															"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L26"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 21,
+													"name": "id",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 26,
+															"character": 41,
+															"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L26"
+														}
+													],
+													"type": {
+														"type": "indexedAccess",
+														"indexType": {
+															"type": "literal",
+															"value": "id"
+														},
+														"objectType": {
+															"type": "reference",
+															"target": {
+																"sourceFileName": "src/comment.ts",
+																"qualifiedName": "Comment"
+															},
+															"name": "Comment",
+															"package": "rete-comment-plugin"
+														}
+													}
+												},
+												{
+													"id": 24,
+													"name": "sources",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 26,
+															"character": 84,
+															"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L26"
+														}
+													],
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "reference",
+															"target": {
+																"sourceFileName": "node_modules/src/types.ts",
+																"qualifiedName": "NodeId"
+															},
+															"name": "NodeId",
+															"package": "rete"
+														}
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														22,
+														23,
+														21,
+														24
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 26,
+													"character": 39,
+													"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L26"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 18,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 26,
+											"character": 6,
+											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L26"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "commenttranslated"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										19,
+										18
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 26,
+									"character": 4,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L26"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 25,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 27,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 27,
+											"character": 36,
+											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L27"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 28,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 29,
+													"name": "id",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 27,
+															"character": 44,
+															"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L27"
+														}
+													],
+													"type": {
+														"type": "indexedAccess",
+														"indexType": {
+															"type": "literal",
+															"value": "id"
+														},
+														"objectType": {
+															"type": "reference",
+															"target": {
+																"sourceFileName": "src/comment.ts",
+																"qualifiedName": "Comment"
+															},
+															"name": "Comment",
+															"package": "rete-comment-plugin"
+														}
+													}
+												},
+												{
+													"id": 30,
+													"name": "link",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 27,
+															"character": 63,
+															"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L27"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														29,
+														30
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 27,
+													"character": 42,
+													"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L27"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 26,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 27,
+											"character": 6,
+											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L27"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "commentlinktranslate"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										27,
+										26
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 27,
+									"character": 4,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L27"
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": 31,
+			"name": "Props",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Comment plugin properties"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 32,
+					"character": 12,
+					"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L32"
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 32,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"children": [
+						{
+							"id": 33,
+							"name": "edit",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 34,
+									"character": 2,
+									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L34"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 34,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 34,
+											"character": 9,
+											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L34"
+										}
+									],
+									"signatures": [
+										{
+											"id": 35,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Edit comment callback"
+													}
+												]
+											},
+											"parameters": [
+												{
+													"id": 36,
+													"name": "comment",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/comment.ts",
+															"qualifiedName": "Comment"
+														},
+														"name": "Comment",
+														"package": "rete-comment-plugin"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+													"qualifiedName": "Promise"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													}
+												],
+												"name": "Promise",
+												"package": "typescript"
+											}
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								33
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 32,
+							"character": 20,
+							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L32"
+						}
+					]
+				}
+			}
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"children": [
+				291
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				37
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				1,
+				31
+			]
+		}
+	],
+	"packageName": "rete-comment-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js Comment plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Inline and frame comments**: adding comments to the area\n- **Extensions**:\n  - **Selectable**: enables the selection of comments\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/comments) and [example](https://retejs.org/examples/comments) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/comment-plugin/blob/main/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Produces"
+		},
+		"2": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"3": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"4": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"5": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"6": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"7": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"8": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"9": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"10": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"11": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"12": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"13": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"14": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"15": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"16": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"17": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"18": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"19": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"20": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"21": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.id"
+		},
+		"22": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.dx"
+		},
+		"23": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.dy"
+		},
+		"24": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.sources"
+		},
+		"25": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"26": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"27": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"28": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"29": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.id"
+		},
+		"30": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.link"
+		},
+		"31": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Props"
+		},
+		"32": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"33": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.edit"
+		},
+		"34": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"35": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"36": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "comment"
+		},
+		"37": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin"
+		},
+		"38": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.__constructor"
+		},
+		"39": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin"
+		},
+		"40": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.Schemes"
+		},
+		"41": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.K"
+		},
+		"42": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "props"
+		},
+		"50": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.editComment"
+		},
+		"51": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.editComment"
+		},
+		"52": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "id"
+		},
+		"53": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.addInline"
+		},
+		"54": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.addInline"
+		},
+		"55": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "text"
+		},
+		"56": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__1"
+		},
+		"57": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "link"
+		},
+		"58": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.addFrame"
+		},
+		"59": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.addFrame"
+		},
+		"60": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "text"
+		},
+		"61": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "links"
+		},
+		"65": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.delete"
+		},
+		"66": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.delete"
+		},
+		"67": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "id"
+		},
+		"68": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.translate"
+		},
+		"69": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.translate"
+		},
+		"70": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "id"
+		},
+		"71": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "dx"
+		},
+		"72": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "dy"
+		},
+		"73": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.select"
+		},
+		"74": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.select"
+		},
+		"75": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "id"
+		},
+		"76": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.unselect"
+		},
+		"77": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.unselect"
+		},
+		"78": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "id"
+		},
+		"79": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.clear"
+		},
+		"80": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.clear"
+		},
+		"81": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.Schemes"
+		},
+		"82": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "CommentPlugin.K"
+		},
+		"291": {
+			"sourceFileName": "src/extensions/index.ts",
+			"qualifiedName": ""
+		},
+		"292": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "selectable"
+		},
+		"293": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "selectable"
+		},
+		"294": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "S"
+		},
+		"295": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "K"
+		},
+		"296": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "plugin"
+		},
+		"297": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "selector"
+		},
+		"298": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "accumulating"
+		},
+		"299": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "__type"
+		},
+		"300": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "__type.active"
+		},
+		"301": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "__type.active"
+		}
+	}
+}
