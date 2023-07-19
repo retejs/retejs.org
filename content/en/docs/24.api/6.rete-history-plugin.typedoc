@@ -1,0 +1,1509 @@
+{
+	"id": 0,
+	"name": "rete-history-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 44,
+			"name": "HistoryExtensions",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "History plugin extensions"
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 45,
+					"name": "keyboard",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "extensions/keyboard.ts",
+							"line": 10,
+							"character": 16,
+							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/extensions/keyboard.ts#L10"
+						}
+					],
+					"signatures": [
+						{
+							"id": 46,
+							"name": "keyboard",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds keyboard shortcuts for history undo/redo"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "extensions/keyboard.ts",
+									"line": 10,
+									"character": 0,
+									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/extensions/keyboard.ts#L10"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 47,
+									"name": "Schemes",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/src/types.ts",
+											"qualifiedName": "BaseSchemes"
+										},
+										"name": "BaseSchemes",
+										"package": "rete"
+									}
+								},
+								{
+									"id": 48,
+									"name": "A",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 39,
+										"name": "Action",
+										"package": "rete-history-plugin"
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 49,
+									"name": "plugin",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "History plugin instance"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 1,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "A",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "HistoryPlugin",
+										"package": "rete-history-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"children": [
+						45
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "extensions/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/extensions/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 50,
+			"name": "Presets",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Presets for the history plugin"
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 51,
+					"name": "classic",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 52,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic/index.ts",
+									"line": 121,
+									"character": 16,
+									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/classic/index.ts#L121"
+								}
+							],
+							"signatures": [
+								{
+									"id": 53,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Classic preset for the history plugin. Tracks node adding/removing/translating, connection adding/removing."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/classic/index.ts",
+											"line": 121,
+											"character": 0,
+											"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/classic/index.ts#L121"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 54,
+											"name": "S",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 55,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 56,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 57,
+															"name": "timing",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"sources": [
+																{
+																	"fileName": "presets/classic/index.ts",
+																	"line": 121,
+																	"character": 55,
+																	"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/classic/index.ts#L121"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																57
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "presets/classic/index.ts",
+															"line": 121,
+															"character": 53,
+															"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/classic/index.ts#L121"
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "Preset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "S",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/index.ts",
+													"qualifiedName": "HistoryActions"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "S",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "HistoryActions",
+												"package": "rete-history-plugin"
+											}
+										],
+										"name": "Preset",
+										"package": "rete-history-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								52
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/classic/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/classic/index.ts#L1"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Namespaces",
+					"children": [
+						51
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "presets/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "HistoryPlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "History plugin. Allows to undo/redo actions such as adding/removing nodes, connections, etc."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 2,
+					"name": "constructor",
+					"variant": "declaration",
+					"kind": 512,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 30,
+							"character": 2,
+							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L30"
+						}
+					],
+					"signatures": [
+						{
+							"id": 3,
+							"name": "new HistoryPlugin",
+							"variant": "signature",
+							"kind": 16384,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 30,
+									"character": 2,
+									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L30"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 4,
+									"name": "Schemes",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/src/types.ts",
+											"qualifiedName": "BaseSchemes"
+										},
+										"name": "BaseSchemes",
+										"package": "rete"
+									}
+								},
+								{
+									"id": 5,
+									"name": "A",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 39,
+										"name": "Action",
+										"package": "rete-history-plugin"
+									},
+									"default": {
+										"type": "reference",
+										"target": 39,
+										"name": "Action",
+										"package": "rete-history-plugin"
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 6,
+									"name": "props",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "History plugin properties"
+											}
+										]
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 7,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 8,
+													"name": "timing",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "Time in ms between actions to be considered as one action"
+															}
+														]
+													},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 30,
+															"character": 24,
+															"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L30"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														8
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 30,
+													"character": 22,
+													"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L30"
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 1,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": -1,
+										"name": "Schemes",
+										"refersToTypeParameter": true
+									},
+									{
+										"type": "reference",
+										"target": -1,
+										"name": "A",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "HistoryPlugin",
+								"package": "rete-history-plugin"
+							},
+							"overwrites": {
+								"type": "reference",
+								"target": -1,
+								"name": "Scope<never, [BaseArea<Schemes>, Root<Schemes>]>.constructor"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"target": -1,
+						"name": "Scope<never, [BaseArea<Schemes>, Root<Schemes>]>.constructor"
+					}
+				},
+				{
+					"id": 21,
+					"name": "add",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 65,
+							"character": 9,
+							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L65"
+						}
+					],
+					"signatures": [
+						{
+							"id": 22,
+							"name": "add",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds an action to the history"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 65,
+									"character": 2,
+									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L65"
+								}
+							],
+							"parameters": [
+								{
+									"id": 23,
+									"name": "action",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Action instance"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": -1,
+										"name": "A",
+										"refersToTypeParameter": true
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 17,
+					"name": "addPreset",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 56,
+							"character": 9,
+							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L56"
+						}
+					],
+					"signatures": [
+						{
+							"id": 18,
+							"name": "addPreset",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a preset to the history plugin"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 56,
+									"character": 2,
+									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L56"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 19,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 39,
+										"name": "Action",
+										"package": "rete-history-plugin"
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 20,
+									"name": "preset",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset that manages some actions, e.g. classic preset for adding/removing nodes, connections, etc."
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "Preset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "T",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "Preset",
+										"package": "rete-history-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 29,
+					"name": "clear",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 89,
+							"character": 9,
+							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L89"
+						}
+					],
+					"signatures": [
+						{
+							"id": 30,
+							"name": "clear",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Clear history"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 89,
+									"character": 2,
+									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L89"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 24,
+					"name": "getHistorySnapshot",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 73,
+							"character": 9,
+							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L73"
+						}
+					],
+					"signatures": [
+						{
+							"id": 25,
+							"name": "getHistorySnapshot",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Get produced history records"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "History snapshot"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 73,
+									"character": 2,
+									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L73"
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"target": {
+										"sourceFileName": "src/history.ts",
+										"qualifiedName": "HistoryRecord"
+									},
+									"typeArguments": [
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "A",
+											"refersToTypeParameter": true
+										}
+									],
+									"name": "HistoryRecord",
+									"package": "rete-history-plugin"
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 26,
+					"name": "getRecent",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 82,
+							"character": 9,
+							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L82"
+						}
+					],
+					"signatures": [
+						{
+							"id": 27,
+							"name": "getRecent",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Get recent history records produced in the last "
+									},
+									{
+										"kind": "code",
+										"text": "`ms`"
+									},
+									{
+										"kind": "text",
+										"text": " milliseconds"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "History records produced in the last "
+											},
+											{
+												"kind": "code",
+												"text": "`ms`"
+											},
+											{
+												"kind": "text",
+												"text": " milliseconds"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 82,
+									"character": 2,
+									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L82"
+								}
+							],
+							"parameters": [
+								{
+									"id": 28,
+									"name": "ms",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Delta time in milliseconds"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"target": {
+										"sourceFileName": "src/history.ts",
+										"qualifiedName": "HistoryRecord"
+									},
+									"typeArguments": [
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "A",
+											"refersToTypeParameter": true
+										}
+									],
+									"name": "HistoryRecord",
+									"package": "rete-history-plugin"
+								}
+							}
+						}
+					]
+				},
+				{
+					"id": 35,
+					"name": "redo",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 120,
+							"character": 15,
+							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L120"
+						}
+					],
+					"signatures": [
+						{
+							"id": 36,
+							"name": "redo",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Asynchronously redoes an actions until the "
+									},
+									{
+										"kind": "code",
+										"text": "`separated`"
+									},
+									{
+										"kind": "text",
+										"text": " flag is encountered or the time between the current and previous action exceeds "
+									},
+									{
+										"kind": "code",
+										"text": "`timing`"
+									},
+									{
+										"kind": "text",
+										"text": " property which is 200ms by default"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 120,
+									"character": 2,
+									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L120"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 31,
+					"name": "separate",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 96,
+							"character": 9,
+							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L96"
+						}
+					],
+					"signatures": [
+						{
+							"id": 32,
+							"name": "separate",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 96,
+									"character": 2,
+									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L96"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 33,
+					"name": "undo",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 105,
+							"character": 15,
+							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L105"
+						}
+					],
+					"signatures": [
+						{
+							"id": 34,
+							"name": "undo",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Asynchronously undoes an actions until the "
+									},
+									{
+										"kind": "code",
+										"text": "`separated`"
+									},
+									{
+										"kind": "text",
+										"text": " flag is encountered or the time between the current and previous action exceeds "
+									},
+									{
+										"kind": "code",
+										"text": "`timing`"
+									},
+									{
+										"kind": "text",
+										"text": " property which is 200ms by default"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 105,
+									"character": 2,
+									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L105"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						2
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						21,
+						17,
+						29,
+						24,
+						26,
+						35,
+						31,
+						33
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 17,
+					"character": 13,
+					"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L17"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 37,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				},
+				{
+					"id": 38,
+					"name": "A",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": 39,
+						"name": "Action",
+						"package": "rete-history-plugin"
+					},
+					"default": {
+						"type": "reference",
+						"target": 39,
+						"name": "Action",
+						"package": "rete-history-plugin"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/src/scope.ts",
+						"qualifiedName": "Scope"
+					},
+					"typeArguments": [
+						{
+							"type": "intrinsic",
+							"name": "never"
+						},
+						{
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "reference",
+									"target": {
+										"sourceFileName": "node_modules/src/base.ts",
+										"qualifiedName": "BaseArea"
+									},
+									"typeArguments": [
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "Schemes",
+											"refersToTypeParameter": true
+										}
+									],
+									"name": "BaseArea",
+									"package": "rete-area-plugin"
+								},
+								{
+									"type": "reference",
+									"target": {
+										"sourceFileName": "node_modules/src/editor.ts",
+										"qualifiedName": "Root"
+									},
+									"typeArguments": [
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "Schemes",
+											"refersToTypeParameter": true
+										}
+									],
+									"name": "Root",
+									"package": "rete"
+								}
+							]
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			]
+		},
+		{
+			"id": 39,
+			"name": "HistoryAction",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Base interface for all actions"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@example",
+						"content": [
+							{
+								"kind": "code",
+								"text": "```ts\nexport class CustomAction<S extends BaseSchemes> implements HistoryAction {\n async undo() {\n   // undo logic\n }\n async redo() {\n   // redo logic\n }\n}\n```"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "types.ts",
+					"line": 12,
+					"character": 17,
+					"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/types.ts#L12"
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"children": [
+				44,
+				50
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				1
+			]
+		},
+		{
+			"title": "Interfaces",
+			"children": [
+				39
+			]
+		}
+	],
+	"packageName": "rete-history-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js History plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Undo/Redo**: provides the ability to undo or redo changes made to the editor\n- **Extensions**:\n  - **Keyboard**: enables the use of keyboard shortcuts to perform undo/redo actions\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/undo-redo) and [example](https://retejs.org/examples/history) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/history-plugin/blob/main/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin"
+		},
+		"2": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.__constructor"
+		},
+		"3": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin"
+		},
+		"4": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.Schemes"
+		},
+		"5": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.A"
+		},
+		"6": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "props"
+		},
+		"7": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"8": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.timing"
+		},
+		"17": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.addPreset"
+		},
+		"18": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.addPreset"
+		},
+		"19": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "T"
+		},
+		"20": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "preset"
+		},
+		"21": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.add"
+		},
+		"22": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.add"
+		},
+		"23": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "action"
+		},
+		"24": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.getHistorySnapshot"
+		},
+		"25": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.getHistorySnapshot"
+		},
+		"26": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.getRecent"
+		},
+		"27": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.getRecent"
+		},
+		"28": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ms"
+		},
+		"29": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.clear"
+		},
+		"30": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.clear"
+		},
+		"31": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.separate"
+		},
+		"32": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.separate"
+		},
+		"33": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.undo"
+		},
+		"34": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.undo"
+		},
+		"35": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.redo"
+		},
+		"36": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.redo"
+		},
+		"37": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.Schemes"
+		},
+		"38": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.A"
+		},
+		"39": {
+			"sourceFileName": "src/types.ts",
+			"qualifiedName": "Action"
+		},
+		"44": {
+			"sourceFileName": "src/extensions/index.ts",
+			"qualifiedName": ""
+		},
+		"45": {
+			"sourceFileName": "src/extensions/keyboard.ts",
+			"qualifiedName": "keyboard"
+		},
+		"46": {
+			"sourceFileName": "src/extensions/keyboard.ts",
+			"qualifiedName": "keyboard"
+		},
+		"47": {
+			"sourceFileName": "src/extensions/keyboard.ts",
+			"qualifiedName": "Schemes"
+		},
+		"48": {
+			"sourceFileName": "src/extensions/keyboard.ts",
+			"qualifiedName": "A"
+		},
+		"49": {
+			"sourceFileName": "src/extensions/keyboard.ts",
+			"qualifiedName": "plugin"
+		},
+		"50": {
+			"sourceFileName": "src/presets/index.ts",
+			"qualifiedName": ""
+		},
+		"51": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": ""
+		},
+		"52": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "setup"
+		},
+		"53": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "setup"
+		},
+		"54": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "S"
+		},
+		"55": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "props"
+		},
+		"56": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__type"
+		},
+		"57": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__type.timing"
+		}
+	}
+}
