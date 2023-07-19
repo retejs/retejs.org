@@ -1,0 +1,292 @@
+{
+	"id": 0,
+	"name": "rete-readonly-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 1,
+			"name": "ReadonlyPlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Readonly plugin, disables all user interactions"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "9"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "nodecreate"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "connectioncreate"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "nodetranslate"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "connectionpick"
+							}
+						]
+					},
+					{
+						"tag": "@example",
+						"content": [
+							{
+								"kind": "code",
+								"text": "```ts\nconst readonly = new ReadonlyPlugin<Schemes>();\neditor.use(readonly.root);\neditor.use(area);\narea.use(readonly.area);\narea.use(render);\nconnection.use(readonly.connection);\narea.use(connection);\n```"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 8,
+					"name": "enabled",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Readonly mode state"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 28,
+							"character": 2,
+							"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L28"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 11,
+					"name": "disable",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 59,
+							"character": 9,
+							"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L59"
+						}
+					],
+					"signatures": [
+						{
+							"id": 12,
+							"name": "disable",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Disable the readonly mode"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 59,
+									"character": 2,
+									"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L59"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 9,
+					"name": "enable",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 52,
+							"character": 9,
+							"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L52"
+						}
+					],
+					"signatures": [
+						{
+							"id": 10,
+							"name": "enable",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Enable the readonly mode"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 52,
+									"character": 2,
+									"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L52"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						8
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						11,
+						9
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 20,
+					"character": 13,
+					"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L20"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 13,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Classes",
+			"children": [
+				1
+			]
+		}
+	],
+	"packageName": "rete-readonly-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js Readonly plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Prevent changes**: provides the ability to set the editor as readonly, preventing any changes to the graph\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/readonly) and [example](https://retejs.org/examples/readonly) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/readonly-plugin/blob/main/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReadonlyPlugin"
+		},
+		"8": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReadonlyPlugin.enabled"
+		},
+		"9": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReadonlyPlugin.enable"
+		},
+		"10": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReadonlyPlugin.enable"
+		},
+		"11": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReadonlyPlugin.disable"
+		},
+		"12": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReadonlyPlugin.disable"
+		},
+		"13": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReadonlyPlugin.Schemes"
+		}
+	}
+}
