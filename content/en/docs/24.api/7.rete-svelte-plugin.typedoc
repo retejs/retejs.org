@@ -1,0 +1,1985 @@
+{
+	"id": 0,
+	"name": "rete-svelte-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 35,
+			"name": "Presets",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Built-in presets, responsible for rendering different parts of the editor."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 36,
+					"name": "classic",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 37,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic/index.ts",
+									"line": 37,
+									"character": 16,
+									"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/classic/index.ts#L37"
+								}
+							],
+							"signatures": [
+								{
+									"id": 38,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Classic preset for rendering nodes, connections, controls and sockets."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/classic/index.ts",
+											"line": 37,
+											"character": 0,
+											"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/classic/index.ts#L37"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 39,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/types.ts",
+													"qualifiedName": "ClassicScheme"
+												},
+												"name": "ClassicScheme",
+												"package": "rete-svelte-plugin"
+											}
+										},
+										{
+											"id": 40,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/types.ts",
+													"qualifiedName": "SvelteArea2D"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "Schemes",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "SvelteArea2D",
+												"package": "rete-svelte-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 41,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/index.ts",
+													"qualifiedName": "ClassicProps"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "Schemes",
+														"refersToTypeParameter": true
+													},
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "K",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "ClassicProps",
+												"package": "rete-svelte-plugin"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-svelte-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								37
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/classic/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/classic/index.ts#L1"
+						}
+					]
+				},
+				{
+					"id": 42,
+					"name": "contextMenu",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 43,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/context-menu/index.ts",
+									"line": 10,
+									"character": 16,
+									"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/index.ts#L10"
+								}
+							],
+							"signatures": [
+								{
+									"id": 44,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset for rendering context menu."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/context-menu/index.ts",
+											"line": 10,
+											"character": 0,
+											"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/index.ts#L10"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 45,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											}
+										},
+										{
+											"id": 46,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "RenderSignal"
+												},
+												"typeArguments": [
+													{
+														"type": "literal",
+														"value": "contextmenu"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 47,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"children": [
+																{
+																	"id": 48,
+																	"name": "items",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/context-menu/types.ts",
+																			"line": 11,
+																			"character": 34,
+																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/types.ts#L11"
+																		}
+																	],
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "reference",
+																			"target": {
+																				"sourceFileName": "src/presets/context-menu/types.ts",
+																				"qualifiedName": "Item"
+																			},
+																			"name": "Item",
+																			"package": "rete-svelte-plugin"
+																		}
+																	}
+																},
+																{
+																	"id": 51,
+																	"name": "searchBar",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {
+																		"isOptional": true
+																	},
+																	"sources": [
+																		{
+																			"fileName": "presets/context-menu/types.ts",
+																			"line": 11,
+																			"character": 65,
+																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/types.ts#L11"
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "boolean"
+																	}
+																},
+																{
+																	"id": 49,
+																	"name": "onHide",
+																	"variant": "declaration",
+																	"kind": 2048,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/context-menu/types.ts",
+																			"line": 11,
+																			"character": 49,
+																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/types.ts#L11"
+																		}
+																	],
+																	"signatures": [
+																		{
+																			"id": 50,
+																			"name": "onHide",
+																			"variant": "signature",
+																			"kind": 4096,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "presets/context-menu/types.ts",
+																					"line": 11,
+																					"character": 49,
+																					"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/types.ts#L11"
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "void"
+																			}
+																		}
+																	]
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"children": [
+																		48,
+																		51
+																	]
+																},
+																{
+																	"title": "Methods",
+																	"children": [
+																		49
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "presets/context-menu/types.ts",
+																	"line": 11,
+																	"character": 32,
+																	"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/types.ts#L11"
+																}
+															]
+														}
+													}
+												],
+												"name": "RenderSignal",
+												"package": "rete-svelte-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 52,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 53,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 54,
+															"name": "delay",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"sources": [
+																{
+																	"fileName": "presets/context-menu/index.ts",
+																	"line": 10,
+																	"character": 90,
+																	"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/index.ts#L10"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																54
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "presets/context-menu/index.ts",
+															"line": 10,
+															"character": 88,
+															"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/index.ts#L10"
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-svelte-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								43
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/context-menu/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/index.ts#L1"
+						}
+					]
+				},
+				{
+					"id": 55,
+					"name": "minimap",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 56,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/minimap/index.ts",
+									"line": 10,
+									"character": 16,
+									"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/index.ts#L10"
+								}
+							],
+							"signatures": [
+								{
+									"id": 57,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset for rendering minimap."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/minimap/index.ts",
+											"line": 10,
+											"character": 0,
+											"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/index.ts#L10"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 58,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											}
+										},
+										{
+											"id": 59,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "RenderSignal"
+												},
+												"typeArguments": [
+													{
+														"type": "literal",
+														"value": "minimap"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 60,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"children": [
+																{
+																	"id": 62,
+																	"name": "nodes",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 19,
+																			"character": 4,
+																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L19"
+																		}
+																	],
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "reference",
+																			"target": {
+																				"sourceFileName": "src/presets/minimap/types.ts",
+																				"qualifiedName": "Rect"
+																			},
+																			"name": "Rect",
+																			"package": "rete-svelte-plugin"
+																		}
+																	}
+																},
+																{
+																	"id": 61,
+																	"name": "ratio",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 18,
+																			"character": 4,
+																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L18"
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	}
+																},
+																{
+																	"id": 66,
+																	"name": "translate",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 22,
+																			"character": 4,
+																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L22"
+																		}
+																	],
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "src/presets/minimap/types.ts",
+																			"qualifiedName": "Translate"
+																		},
+																		"name": "Translate",
+																		"package": "rete-svelte-plugin"
+																	}
+																},
+																{
+																	"id": 63,
+																	"name": "viewport",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 20,
+																			"character": 4,
+																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L20"
+																		}
+																	],
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "src/presets/minimap/types.ts",
+																			"qualifiedName": "Rect"
+																		},
+																		"name": "Rect",
+																		"package": "rete-svelte-plugin"
+																	}
+																},
+																{
+																	"id": 67,
+																	"name": "point",
+																	"variant": "declaration",
+																	"kind": 2048,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 23,
+																			"character": 4,
+																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L23"
+																		}
+																	],
+																	"signatures": [
+																		{
+																			"id": 68,
+																			"name": "point",
+																			"variant": "signature",
+																			"kind": 4096,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "presets/minimap/types.ts",
+																					"line": 23,
+																					"character": 4,
+																					"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L23"
+																				}
+																			],
+																			"parameters": [
+																				{
+																					"id": 69,
+																					"name": "x",
+																					"variant": "param",
+																					"kind": 32768,
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "number"
+																					}
+																				},
+																				{
+																					"id": 70,
+																					"name": "y",
+																					"variant": "param",
+																					"kind": 32768,
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "number"
+																					}
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "void"
+																			}
+																		}
+																	]
+																},
+																{
+																	"id": 64,
+																	"name": "start",
+																	"variant": "declaration",
+																	"kind": 2048,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 21,
+																			"character": 4,
+																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L21"
+																		}
+																	],
+																	"signatures": [
+																		{
+																			"id": 65,
+																			"name": "start",
+																			"variant": "signature",
+																			"kind": 4096,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "presets/minimap/types.ts",
+																					"line": 21,
+																					"character": 4,
+																					"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L21"
+																				}
+																			],
+																			"type": {
+																				"type": "reference",
+																				"target": {
+																					"sourceFileName": "src/presets/minimap/types.ts",
+																					"qualifiedName": "Transform"
+																				},
+																				"name": "Transform",
+																				"package": "rete-svelte-plugin"
+																			}
+																		}
+																	]
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"children": [
+																		62,
+																		61,
+																		66,
+																		63
+																	]
+																},
+																{
+																	"title": "Methods",
+																	"children": [
+																		67,
+																		64
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "presets/minimap/types.ts",
+																	"line": 17,
+																	"character": 28,
+																	"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L17"
+																}
+															]
+														}
+													}
+												],
+												"name": "RenderSignal",
+												"package": "rete-svelte-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 71,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 72,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 73,
+															"name": "size",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"sources": [
+																{
+																	"fileName": "presets/minimap/index.ts",
+																	"line": 10,
+																	"character": 86,
+																	"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/index.ts#L10"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																73
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "presets/minimap/index.ts",
+															"line": 10,
+															"character": 84,
+															"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/index.ts#L10"
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-svelte-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								56
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/minimap/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/index.ts#L1"
+						}
+					]
+				},
+				{
+					"id": 74,
+					"name": "reroute",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 75,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/reroute/index.ts",
+									"line": 17,
+									"character": 16,
+									"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/reroute/index.ts#L17"
+								}
+							],
+							"signatures": [
+								{
+									"id": 76,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset for rendering pins."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/reroute/index.ts",
+											"line": 17,
+											"character": 0,
+											"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/reroute/index.ts#L17"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 77,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											}
+										},
+										{
+											"id": 78,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "RenderSignal"
+												},
+												"typeArguments": [
+													{
+														"type": "literal",
+														"value": "reroute-pins"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 79,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"children": [
+																{
+																	"id": 80,
+																	"name": "data",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/reroute/types.ts",
+																			"line": 22,
+																			"character": 35,
+																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/reroute/types.ts#L22"
+																		}
+																	],
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "src/presets/reroute/types.ts",
+																			"qualifiedName": "PinData"
+																		},
+																		"name": "PinData",
+																		"package": "rete-svelte-plugin"
+																	}
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"children": [
+																		80
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "presets/reroute/types.ts",
+																	"line": 22,
+																	"character": 33,
+																	"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/reroute/types.ts#L22"
+																}
+															]
+														}
+													}
+												],
+												"name": "RenderSignal",
+												"package": "rete-svelte-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 81,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/reroute/index.ts",
+													"qualifiedName": "Props"
+												},
+												"name": "Props",
+												"package": "rete-svelte-plugin"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-svelte-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								75
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/reroute/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/reroute/index.ts#L1"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Namespaces",
+					"children": [
+						36,
+						42,
+						55,
+						74
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "presets/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 10,
+			"name": "SveltePlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Svelte plugin. Renders nodes, connections and other elements using React."
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "9"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "connectionpath"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "render"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "unmount"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 29,
+					"name": "addPreset",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 118,
+							"character": 9,
+							"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L118"
+						}
+					],
+					"signatures": [
+						{
+							"id": 30,
+							"name": "addPreset",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a preset to the plugin."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 118,
+									"character": 2,
+									"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L118"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 31,
+									"name": "K",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 32,
+									"name": "preset",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset that can render nodes, connections and other elements."
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "conditional",
+												"checkType": {
+													"type": "reference",
+													"target": {
+														"sourceFileName": "node_modules/src/utility-types.ts",
+														"qualifiedName": "CanAssignEachTupleElemmentToAnyOf"
+													},
+													"typeArguments": [
+														{
+															"type": "reference",
+															"target": -1,
+															"name": "T",
+															"refersToTypeParameter": true
+														},
+														{
+															"type": "reference",
+															"target": {
+																"sourceFileName": "node_modules/src/utility-types.ts",
+																"qualifiedName": "UnionToTuple"
+															},
+															"typeArguments": [
+																{
+																	"type": "reference",
+																	"target": -1,
+																	"name": "K",
+																	"refersToTypeParameter": true
+																}
+															],
+															"name": "UnionToTuple",
+															"package": "rete"
+														}
+													],
+													"name": "CanAssignEachTupleElemmentToAnyOf",
+													"package": "rete"
+												},
+												"extendsType": {
+													"type": "literal",
+													"value": true
+												},
+												"trueType": {
+													"type": "reference",
+													"target": -1,
+													"name": "K",
+													"refersToTypeParameter": true
+												},
+												"falseType": {
+													"type": "literal",
+													"value": "Cannot apply preset. Provided signals are not compatible"
+												}
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-svelte-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"children": [
+						29
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 32,
+					"character": 13,
+					"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L32"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 33,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				},
+				{
+					"id": 34,
+					"name": "T",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"default": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/index.ts",
+							"qualifiedName": "Requires"
+						},
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": -1,
+								"name": "Schemes",
+								"refersToTypeParameter": true
+							}
+						],
+						"name": "Requires",
+						"package": "rete-svelte-plugin"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/src/scope.ts",
+						"qualifiedName": "Scope"
+					},
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": 1,
+							"typeArguments": [
+								{
+									"type": "reference",
+									"target": -1,
+									"name": "Schemes",
+									"refersToTypeParameter": true
+								}
+							],
+							"name": "Produces",
+							"package": "rete-svelte-plugin"
+						},
+						{
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "union",
+									"types": [
+										{
+											"type": "reference",
+											"target": {
+												"sourceFileName": "src/index.ts",
+												"qualifiedName": "Requires"
+											},
+											"typeArguments": [
+												{
+													"type": "reference",
+													"target": -1,
+													"name": "Schemes",
+													"refersToTypeParameter": true
+												}
+											],
+											"name": "Requires",
+											"package": "rete-svelte-plugin"
+										},
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "T",
+											"refersToTypeParameter": true
+										}
+									]
+								}
+							]
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "Produces",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Signals that can be emitted by the plugin"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "10"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 17,
+					"character": 12,
+					"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L17"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 9,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 2,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 4,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 18,
+											"character": 30,
+											"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L18"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 5,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 7,
+													"name": "path",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 18,
+															"character": 70,
+															"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L18"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 6,
+													"name": "payload",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 18,
+															"character": 38,
+															"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L18"
+														}
+													],
+													"type": {
+														"type": "indexedAccess",
+														"indexType": {
+															"type": "literal",
+															"value": "Connection"
+														},
+														"objectType": {
+															"type": "reference",
+															"target": -1,
+															"name": "Schemes",
+															"refersToTypeParameter": true
+														}
+													}
+												},
+												{
+													"id": 8,
+													"name": "points",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 18,
+															"character": 85,
+															"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L18"
+														}
+													],
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "reference",
+															"target": {
+																"sourceFileName": "src/types.ts",
+																"qualifiedName": "Position"
+															},
+															"name": "Position",
+															"package": "rete-svelte-plugin"
+														}
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														7,
+														6,
+														8
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 18,
+													"character": 36,
+													"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L18"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 3,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 18,
+											"character": 6,
+											"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L18"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "connectionpath"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										4,
+										3
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 18,
+									"character": 4,
+									"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L18"
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"children": [
+				35
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				10
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				1
+			]
+		}
+	],
+	"packageName": "rete-svelte-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js Svelte plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Render elements**: visualize an elements such as nodes and connections using Svelte components\n- **Customization**: modify appearance and behavior for a personalized workflow\n- **Presets**: predefined Svelte components for different types of features\n  -  **[Classic](https://retejs.org/docs/guides/renderers/svelte#connect-plugin)**: provides a classic visualization of nodes, connections, and controls\n  -  **[Context menu](https://retejs.org/docs/guides/context-menu#render-context-menu)**: provides a classic appearance for "
+		},
+		{
+			"kind": "code",
+			"text": "`rete-context-menu-plugin`"
+		},
+		{
+			"kind": "text",
+			"text": "\n  -  **[Minimap](https://retejs.org/docs/guides/minimap#render)**: provides a classic appearance for "
+		},
+		{
+			"kind": "code",
+			"text": "`rete-minimap-plugin`"
+		},
+		{
+			"kind": "text",
+			"text": "\n  -  **[Reroute](https://retejs.org/docs/guides/reroute#rendering)**: provides a classic appearance for "
+		},
+		{
+			"kind": "code",
+			"text": "`rete-connection-reroute-plugin`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/renderers/svelte) and [example](https://retejs.org/examples/svelte) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/svelte-plugin/blob/main/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Produces"
+		},
+		"2": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"3": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"4": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"5": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"6": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.payload"
+		},
+		"7": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.path"
+		},
+		"8": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.points"
+		},
+		"9": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"10": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SveltePlugin"
+		},
+		"29": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SveltePlugin.addPreset"
+		},
+		"30": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SveltePlugin.addPreset"
+		},
+		"31": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "K"
+		},
+		"32": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "preset"
+		},
+		"33": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SveltePlugin.Schemes"
+		},
+		"34": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SveltePlugin.T"
+		},
+		"35": {
+			"sourceFileName": "src/presets/index.ts",
+			"qualifiedName": ""
+		},
+		"36": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": ""
+		},
+		"37": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "setup"
+		},
+		"38": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "setup"
+		},
+		"39": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"40": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "K"
+		},
+		"41": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "props"
+		},
+		"42": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": ""
+		},
+		"43": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "setup"
+		},
+		"44": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "setup"
+		},
+		"45": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"46": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "K"
+		},
+		"47": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type"
+		},
+		"48": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.items"
+		},
+		"49": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.onHide"
+		},
+		"50": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.onHide"
+		},
+		"51": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.searchBar"
+		},
+		"52": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "props"
+		},
+		"53": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "__type"
+		},
+		"54": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "__type.delay"
+		},
+		"55": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": ""
+		},
+		"56": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "setup"
+		},
+		"57": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "setup"
+		},
+		"58": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"59": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "K"
+		},
+		"60": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type"
+		},
+		"61": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.ratio"
+		},
+		"62": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.nodes"
+		},
+		"63": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.viewport"
+		},
+		"64": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.start"
+		},
+		"65": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.start"
+		},
+		"66": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.translate"
+		},
+		"67": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.point"
+		},
+		"68": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.point"
+		},
+		"69": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "x"
+		},
+		"70": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "y"
+		},
+		"71": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "props"
+		},
+		"72": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "__type"
+		},
+		"73": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "__type.size"
+		},
+		"74": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": ""
+		},
+		"75": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "setup"
+		},
+		"76": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "setup"
+		},
+		"77": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"78": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "K"
+		},
+		"79": {
+			"sourceFileName": "src/presets/reroute/types.ts",
+			"qualifiedName": "__type"
+		},
+		"80": {
+			"sourceFileName": "src/presets/reroute/types.ts",
+			"qualifiedName": "__type.data"
+		},
+		"81": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "props"
+		}
+	}
+}
