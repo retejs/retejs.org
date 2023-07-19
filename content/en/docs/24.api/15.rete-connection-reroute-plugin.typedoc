@@ -1,0 +1,1922 @@
+{
+	"id": 0,
+	"name": "rete-connection-reroute-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 87,
+			"name": "RerouteExtensions",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Extensions for the connection reroute plugin"
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 88,
+					"name": "selectablePins",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "extensions/selectable.ts",
+							"line": 17,
+							"character": 16,
+							"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/extensions/selectable.ts#L17"
+						}
+					],
+					"signatures": [
+						{
+							"id": 89,
+							"name": "selectablePins",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Enables synchronization between pins and the selector"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "pinselected"
+											}
+										]
+									},
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "pinunselected"
+											}
+										]
+									},
+									{
+										"tag": "@listens",
+										"content": [
+											{
+												"kind": "text",
+												"text": "pintranslated"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "extensions/selectable.ts",
+									"line": 17,
+									"character": 0,
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/extensions/selectable.ts#L17"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 90,
+									"name": "S",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/src/types.ts",
+											"qualifiedName": "BaseSchemes"
+										},
+										"name": "BaseSchemes",
+										"package": "rete"
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 91,
+									"name": "reroutePlugin",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Reroute plugin instance"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 27,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "S",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "ReroutePlugin",
+										"package": "rete-connection-reroute-plugin"
+									}
+								},
+								{
+									"id": 92,
+									"name": "selector",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Selector instance"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/src/extensions/selectable.ts",
+											"qualifiedName": "Selector"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/src/extensions/selectable.ts",
+													"qualifiedName": "SelectorEntity"
+												},
+												"name": "SelectorEntity",
+												"package": "rete-area-plugin"
+											}
+										],
+										"name": "Selector",
+										"package": "rete-area-plugin"
+									}
+								},
+								{
+									"id": 93,
+									"name": "accumulating",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Accumulating state"
+											}
+										]
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 94,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 95,
+													"name": "active",
+													"variant": "declaration",
+													"kind": 2048,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "extensions/selectable.ts",
+															"line": 17,
+															"character": 123,
+															"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/extensions/selectable.ts#L17"
+														}
+													],
+													"signatures": [
+														{
+															"id": 96,
+															"name": "active",
+															"variant": "signature",
+															"kind": 4096,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "extensions/selectable.ts",
+																	"line": 17,
+																	"character": 123,
+																	"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/extensions/selectable.ts#L17"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "boolean"
+															}
+														}
+													]
+												}
+											],
+											"groups": [
+												{
+													"title": "Methods",
+													"children": [
+														95
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "extensions/selectable.ts",
+													"line": 17,
+													"character": 121,
+													"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/extensions/selectable.ts#L17"
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"children": [
+						88
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "extensions/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/extensions/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 27,
+			"name": "ReroutePlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Reroute plugin"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "rendered"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "unmount"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "reordered"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "connectionpath"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "pointerdown"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "pintranslated"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "pinselected"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "pinunselected"
+							}
+						]
+					},
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "9"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 64,
+					"name": "add",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 165,
+							"character": 9,
+							"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L165"
+						}
+					],
+					"signatures": [
+						{
+							"id": 65,
+							"name": "add",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Add a new pin to the connection"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 165,
+									"character": 2,
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L165"
+								}
+							],
+							"parameters": [
+								{
+									"id": 66,
+									"name": "connectionId",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Connection id"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 67,
+									"name": "position",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Pin position"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/types.ts",
+											"qualifiedName": "Position"
+										},
+										"name": "Position",
+										"package": "rete-connection-reroute-plugin"
+									}
+								},
+								{
+									"id": 68,
+									"name": "index",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Pin index, if not specified, the pin will be added to the end"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 74,
+					"name": "remove",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 194,
+							"character": 15,
+							"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L194"
+						}
+					],
+					"signatures": [
+						{
+							"id": 75,
+							"name": "remove",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Remove pin"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 194,
+									"character": 2,
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L194"
+								}
+							],
+							"parameters": [
+								{
+									"id": 76,
+									"name": "pinId",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Pin id"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 77,
+					"name": "select",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 207,
+							"character": 15,
+							"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L207"
+						}
+					],
+					"signatures": [
+						{
+							"id": 78,
+							"name": "select",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Select pin"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 207,
+									"character": 2,
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L207"
+								}
+							],
+							"parameters": [
+								{
+									"id": 79,
+									"name": "pinId",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Pin id"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 69,
+					"name": "translate",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 181,
+							"character": 15,
+							"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L181"
+						}
+					],
+					"signatures": [
+						{
+							"id": 70,
+							"name": "translate",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Translate pin"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 181,
+									"character": 2,
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L181"
+								}
+							],
+							"parameters": [
+								{
+									"id": 71,
+									"name": "pinId",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Pin id"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 72,
+									"name": "dx",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Delta x"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 73,
+									"name": "dy",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Delta y"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 80,
+					"name": "unselect",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 221,
+							"character": 15,
+							"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L221"
+						}
+					],
+					"signatures": [
+						{
+							"id": 81,
+							"name": "unselect",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Unselect pin"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 221,
+									"character": 2,
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L221"
+								}
+							],
+							"parameters": [
+								{
+									"id": 82,
+									"name": "pinId",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Pin id"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 83,
+					"name": "update",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 235,
+							"character": 9,
+							"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L235"
+						}
+					],
+					"signatures": [
+						{
+							"id": 84,
+							"name": "update",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Update connection for the pin"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 235,
+									"character": 2,
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L235"
+								}
+							],
+							"parameters": [
+								{
+									"id": 85,
+									"name": "pin",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Pin id or pin record"
+											}
+										]
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/storage.ts",
+													"qualifiedName": "PinStorageRecord"
+												},
+												"name": "PinStorageRecord",
+												"package": "rete-connection-reroute-plugin"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"children": [
+						64,
+						74,
+						77,
+						69,
+						80,
+						83
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 42,
+					"character": 13,
+					"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L42"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 86,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/src/scope.ts",
+						"qualifiedName": "Scope"
+					},
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": 9,
+							"name": "RerouteProduces",
+							"package": "rete-connection-reroute-plugin"
+						},
+						{
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "reference",
+									"target": {
+										"sourceFileName": "src/index.ts",
+										"qualifiedName": "Requires"
+									},
+									"typeArguments": [
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "Schemes",
+											"refersToTypeParameter": true
+										}
+									],
+									"name": "Requires",
+									"package": "rete-connection-reroute-plugin"
+								},
+								{
+									"type": "union",
+									"types": [
+										{
+											"type": "reference",
+											"target": {
+												"sourceFileName": "node_modules/src/base.ts",
+												"qualifiedName": "BaseArea"
+											},
+											"typeArguments": [
+												{
+													"type": "reference",
+													"target": -1,
+													"name": "Schemes",
+													"refersToTypeParameter": true
+												}
+											],
+											"name": "BaseArea",
+											"package": "rete-area-plugin"
+										},
+										{
+											"type": "reference",
+											"target": 1,
+											"name": "RerouteExtra",
+											"package": "rete-connection-reroute-plugin"
+										}
+									]
+								}
+							]
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "RerouteExtra",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Signal types consumed by the plugin"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 14,
+					"character": 12,
+					"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L14"
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "RenderSignal"
+						},
+						"typeArguments": [
+							{
+								"type": "literal",
+								"value": "reroute-pins"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 2,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 3,
+											"name": "data",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 15,
+													"character": 35,
+													"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L15"
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "PinData"
+												},
+												"name": "PinData",
+												"package": "rete-connection-reroute-plugin"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												3
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 15,
+											"character": 33,
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L15"
+										}
+									]
+								}
+							}
+						],
+						"name": "RenderSignal",
+						"package": "rete-area-plugin"
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 4,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 6,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 16,
+											"character": 23,
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L16"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 7,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 8,
+													"name": "element",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 16,
+															"character": 31,
+															"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L16"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+															"qualifiedName": "HTMLElement"
+														},
+														"name": "HTMLElement",
+														"package": "typescript"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														8
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 16,
+													"character": 29,
+													"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L16"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 5,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 16,
+											"character": 6,
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L16"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "unmount"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										6,
+										5
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 16,
+									"character": 4,
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L16"
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": 9,
+			"name": "RerouteProduces",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Signal types produced by the plugin"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "10"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 25,
+					"character": 12,
+					"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L25"
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 10,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 12,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 26,
+											"character": 29,
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L26"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 13,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 15,
+													"name": "dx",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 26,
+															"character": 49,
+															"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L26"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 16,
+													"name": "dy",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 26,
+															"character": 61,
+															"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L26"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 14,
+													"name": "id",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 26,
+															"character": 37,
+															"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L26"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														15,
+														16,
+														14
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 26,
+													"character": 35,
+													"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L26"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 11,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 26,
+											"character": 6,
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L26"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "pintranslated"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										12,
+										11
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 26,
+									"character": 4,
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L26"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 17,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 19,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 27,
+											"character": 27,
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L27"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 20,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 21,
+													"name": "id",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 27,
+															"character": 35,
+															"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L27"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														21
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 27,
+													"character": 33,
+													"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L27"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 18,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 27,
+											"character": 6,
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L27"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "pinselected"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										19,
+										18
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 27,
+									"character": 4,
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L27"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 22,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 24,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 28,
+											"character": 29,
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L28"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 25,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 26,
+													"name": "id",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 28,
+															"character": 37,
+															"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L28"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														26
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 28,
+													"character": 35,
+													"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L28"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 23,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 28,
+											"character": 6,
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L28"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "pinunselected"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										24,
+										23
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 28,
+									"character": 4,
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L28"
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"children": [
+				87
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				27
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				1,
+				9
+			]
+		}
+	],
+	"packageName": "rete-connection-reroute-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js Connection reroute plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Change connection routing**: provides the ability to route connections using pins\n- **Extensions**:\n  - **Selectable**: enables the selection of pins\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/reroute) and [example](https://retejs.org/examples/reroute) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/connection-reroute-plugin/blob/main/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "RerouteExtra"
+		},
+		"2": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"3": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"4": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"5": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"6": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"7": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"8": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.element"
+		},
+		"9": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "RerouteProduces"
+		},
+		"10": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"11": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"12": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"13": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"14": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.id"
+		},
+		"15": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.dx"
+		},
+		"16": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.dy"
+		},
+		"17": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"18": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"19": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"20": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"21": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.id"
+		},
+		"22": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"23": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"24": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"25": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"26": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.id"
+		},
+		"27": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReroutePlugin"
+		},
+		"64": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReroutePlugin.add"
+		},
+		"65": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReroutePlugin.add"
+		},
+		"66": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "connectionId"
+		},
+		"67": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "position"
+		},
+		"68": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "index"
+		},
+		"69": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReroutePlugin.translate"
+		},
+		"70": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReroutePlugin.translate"
+		},
+		"71": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "pinId"
+		},
+		"72": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "dx"
+		},
+		"73": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "dy"
+		},
+		"74": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReroutePlugin.remove"
+		},
+		"75": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReroutePlugin.remove"
+		},
+		"76": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "pinId"
+		},
+		"77": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReroutePlugin.select"
+		},
+		"78": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReroutePlugin.select"
+		},
+		"79": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "pinId"
+		},
+		"80": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReroutePlugin.unselect"
+		},
+		"81": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReroutePlugin.unselect"
+		},
+		"82": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "pinId"
+		},
+		"83": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReroutePlugin.update"
+		},
+		"84": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReroutePlugin.update"
+		},
+		"85": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "pin"
+		},
+		"86": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ReroutePlugin.Schemes"
+		},
+		"87": {
+			"sourceFileName": "src/extensions/index.ts",
+			"qualifiedName": ""
+		},
+		"88": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "selectablePins"
+		},
+		"89": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "selectablePins"
+		},
+		"90": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "S"
+		},
+		"91": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "reroutePlugin"
+		},
+		"92": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "selector"
+		},
+		"93": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "accumulating"
+		},
+		"94": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "__type"
+		},
+		"95": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "__type.active"
+		},
+		"96": {
+			"sourceFileName": "src/extensions/selectable.ts",
+			"qualifiedName": "__type.active"
+		}
+	}
+}
