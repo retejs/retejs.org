@@ -1,0 +1,2205 @@
+{
+	"id": 0,
+	"name": "rete-render-utils",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 15,
+			"name": "BaseSocketPosition",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {
+				"isAbstract": true
+			},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Abstract class for socket position calculation. It can be extended to implement custom socket position calculation."
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@abstract",
+						"content": []
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "render"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "rendered"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "unmount"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "nodetranslated"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "noderesized"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 29,
+					"name": "attach",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "sockets-position/base-socket-position.ts",
+							"line": 42,
+							"character": 2,
+							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L42"
+						}
+					],
+					"signatures": [
+						{
+							"id": 30,
+							"name": "attach",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Attach the watcher to the area's child scope."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "sockets-position/base-socket-position.ts",
+									"line": 42,
+									"character": 2,
+									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L42"
+								}
+							],
+							"parameters": [
+								{
+									"id": 31,
+									"name": "scope",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Scope of the watcher that should be a child of "
+											},
+											{
+												"kind": "code",
+												"text": "`BaseAreaPlugin`"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/src/scope.ts",
+											"qualifiedName": "Scope"
+										},
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "never"
+											},
+											{
+												"type": "tuple",
+												"elements": [
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "K",
+														"refersToTypeParameter": true
+													}
+												]
+											}
+										],
+										"name": "Scope",
+										"package": "rete"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"implementationOf": {
+								"type": "reference",
+								"target": -1,
+								"name": "SocketPositionWatcher.attach"
+							}
+						}
+					],
+					"implementationOf": {
+						"type": "reference",
+						"target": -1,
+						"name": "SocketPositionWatcher.attach"
+					}
+				},
+				{
+					"id": 23,
+					"name": "calculatePosition",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isAbstract": true
+					},
+					"sources": [
+						{
+							"fileName": "sockets-position/base-socket-position.ts",
+							"line": 36,
+							"character": 11,
+							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L36"
+						}
+					],
+					"signatures": [
+						{
+							"id": 24,
+							"name": "calculatePosition",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The method needs to be implemented that calculates the position of the socket."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "sockets-position/base-socket-position.ts",
+									"line": 36,
+									"character": 2,
+									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L36"
+								}
+							],
+							"parameters": [
+								{
+									"id": 25,
+									"name": "nodeId",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Node ID"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 26,
+									"name": "side",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Side of the socket, 'input' or 'output'"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/types.ts",
+											"qualifiedName": "Side"
+										},
+										"name": "Side",
+										"package": "rete-render-utils"
+									}
+								},
+								{
+									"id": 27,
+									"name": "key",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Socket key"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 28,
+									"name": "element",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Socket element"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+											"qualifiedName": "HTMLElement"
+										},
+										"name": "HTMLElement",
+										"package": "typescript"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "literal",
+												"value": null
+											},
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "Position"
+												},
+												"name": "Position",
+												"package": "rete-render-utils"
+											}
+										]
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 32,
+					"name": "listen",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "sockets-position/base-socket-position.ts",
+							"line": 94,
+							"character": 2,
+							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L94"
+						}
+					],
+					"signatures": [
+						{
+							"id": 33,
+							"name": "listen",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Listen to socket position changes. Usually used by rendering plugins to update the start/end of the connection."
+									}
+								],
+								"modifierTags": [
+									"@internal"
+								]
+							},
+							"sources": [
+								{
+									"fileName": "sockets-position/base-socket-position.ts",
+									"line": 94,
+									"character": 2,
+									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L94"
+								}
+							],
+							"parameters": [
+								{
+									"id": 34,
+									"name": "nodeId",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Node ID"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 35,
+									"name": "side",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Side of the socket, 'input' or 'output'"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/types.ts",
+											"qualifiedName": "Side"
+										},
+										"name": "Side",
+										"package": "rete-render-utils"
+									}
+								},
+								{
+									"id": 36,
+									"name": "key",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Socket key"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 37,
+									"name": "change",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Callback function that is called when the socket position changes"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/sockets-position/types.ts",
+											"qualifiedName": "OnChange"
+										},
+										"name": "OnChange",
+										"package": "rete-render-utils"
+									}
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 38,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "utils.ts",
+											"line": 45,
+											"character": 11,
+											"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L45"
+										}
+									],
+									"signatures": [
+										{
+											"id": 39,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "utils.ts",
+													"line": 45,
+													"character": 11,
+													"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L45"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							},
+							"implementationOf": {
+								"type": "reference",
+								"target": -1,
+								"name": "SocketPositionWatcher.listen"
+							}
+						}
+					],
+					"implementationOf": {
+						"type": "reference",
+						"target": -1,
+						"name": "SocketPositionWatcher.listen"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"children": [
+						29,
+						23,
+						32
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "sockets-position/base-socket-position.ts",
+					"line": 24,
+					"character": 22,
+					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L24"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 40,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				},
+				{
+					"id": 41,
+					"name": "K",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {}
+				}
+			],
+			"extendedBy": [
+				{
+					"type": "reference",
+					"target": 42,
+					"name": "DOMSocketPosition"
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"target": 1,
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": {
+								"sourceFileName": "node_modules/src/scope.ts",
+								"qualifiedName": "Scope"
+							},
+							"typeArguments": [
+								{
+									"type": "intrinsic",
+									"name": "never"
+								},
+								{
+									"type": "tuple",
+									"elements": [
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "K",
+											"refersToTypeParameter": true
+										}
+									]
+								}
+							],
+							"name": "Scope",
+							"package": "rete"
+						}
+					],
+					"name": "SocketPositionWatcher",
+					"package": "rete-render-utils"
+				}
+			]
+		},
+		{
+			"id": 42,
+			"name": "DOMSocketPosition",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Class for socket position calculation based on DOM elements. It uses "
+					},
+					{
+						"kind": "code",
+						"text": "`getElementCenter`"
+					},
+					{
+						"kind": "text",
+						"text": " function to calculate the position."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 58,
+					"name": "attach",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "sockets-position/base-socket-position.ts",
+							"line": 42,
+							"character": 2,
+							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L42"
+						}
+					],
+					"signatures": [
+						{
+							"id": 59,
+							"name": "attach",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Attach the watcher to the area's child scope."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "sockets-position/base-socket-position.ts",
+									"line": 42,
+									"character": 2,
+									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L42"
+								}
+							],
+							"parameters": [
+								{
+									"id": 60,
+									"name": "scope",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Scope of the watcher that should be a child of "
+											},
+											{
+												"kind": "code",
+												"text": "`BaseAreaPlugin`"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/src/scope.ts",
+											"qualifiedName": "Scope"
+										},
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "never"
+											},
+											{
+												"type": "tuple",
+												"elements": [
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "K",
+														"refersToTypeParameter": true
+													}
+												]
+											}
+										],
+										"name": "Scope",
+										"package": "rete"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 30,
+								"name": "BaseSocketPosition.attach"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": 29,
+						"name": "BaseSocketPosition.attach"
+					}
+				},
+				{
+					"id": 61,
+					"name": "listen",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "sockets-position/base-socket-position.ts",
+							"line": 94,
+							"character": 2,
+							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L94"
+						}
+					],
+					"signatures": [
+						{
+							"id": 62,
+							"name": "listen",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Listen to socket position changes. Usually used by rendering plugins to update the start/end of the connection."
+									}
+								],
+								"modifierTags": [
+									"@internal"
+								]
+							},
+							"sources": [
+								{
+									"fileName": "sockets-position/base-socket-position.ts",
+									"line": 94,
+									"character": 2,
+									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L94"
+								}
+							],
+							"parameters": [
+								{
+									"id": 63,
+									"name": "nodeId",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Node ID"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 64,
+									"name": "side",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Side of the socket, 'input' or 'output'"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/types.ts",
+											"qualifiedName": "Side"
+										},
+										"name": "Side",
+										"package": "rete-render-utils"
+									}
+								},
+								{
+									"id": 65,
+									"name": "key",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Socket key"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 66,
+									"name": "change",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Callback function that is called when the socket position changes"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/sockets-position/types.ts",
+											"qualifiedName": "OnChange"
+										},
+										"name": "OnChange",
+										"package": "rete-render-utils"
+									}
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 67,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "utils.ts",
+											"line": 45,
+											"character": 11,
+											"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L45"
+										}
+									],
+									"signatures": [
+										{
+											"id": 68,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "utils.ts",
+													"line": 45,
+													"character": 11,
+													"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L45"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": 33,
+								"name": "BaseSocketPosition.listen"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": 32,
+						"name": "BaseSocketPosition.listen"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"children": [
+						58,
+						61
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "sockets-position/dom-socket-position.ts",
+					"line": 25,
+					"character": 13,
+					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/dom-socket-position.ts#L25"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 69,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				},
+				{
+					"id": 70,
+					"name": "K",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": 15,
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": -1,
+							"name": "Schemes",
+							"refersToTypeParameter": true
+						},
+						{
+							"type": "reference",
+							"target": -1,
+							"name": "K",
+							"refersToTypeParameter": true
+						}
+					],
+					"name": "BaseSocketPosition",
+					"package": "rete-render-utils"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "SocketPositionWatcher",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Interface for socket position watcher."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "sockets-position/types.ts",
+					"line": 10,
+					"character": 12,
+					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L10"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 14,
+					"name": "ChildScope",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {}
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 2,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"children": [
+						{
+							"id": 3,
+							"name": "attach",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "sockets-position/types.ts",
+									"line": 12,
+									"character": 2,
+									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L12"
+								}
+							],
+							"signatures": [
+								{
+									"id": 4,
+									"name": "attach",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Attach the watcher to the area's child scope."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "sockets-position/types.ts",
+											"line": 12,
+											"character": 2,
+											"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L12"
+										}
+									],
+									"parameters": [
+										{
+											"id": 5,
+											"name": "area",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": -1,
+												"name": "ChildScope",
+												"refersToTypeParameter": true
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						},
+						{
+							"id": 6,
+							"name": "listen",
+							"variant": "declaration",
+							"kind": 2048,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "sockets-position/types.ts",
+									"line": 21,
+									"character": 2,
+									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L21"
+								}
+							],
+							"signatures": [
+								{
+									"id": 7,
+									"name": "listen",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Listen to the socket position changes."
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@returns",
+												"content": [
+													{
+														"kind": "text",
+														"text": "Function that removes the listener"
+													}
+												]
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "sockets-position/types.ts",
+											"line": 21,
+											"character": 2,
+											"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L21"
+										}
+									],
+									"parameters": [
+										{
+											"id": 8,
+											"name": "nodeId",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Node ID"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 9,
+											"name": "side",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Side of the socket, 'input' or 'output'"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "Side"
+												},
+												"name": "Side",
+												"package": "rete-render-utils"
+											}
+										},
+										{
+											"id": 10,
+											"name": "key",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Socket key"
+													}
+												]
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 11,
+											"name": "onChange",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Callback that is called when the socket position changes"
+													}
+												]
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/sockets-position/types.ts",
+													"qualifiedName": "OnChange"
+												},
+												"name": "OnChange",
+												"package": "rete-render-utils"
+											}
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 12,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "sockets-position/types.ts",
+													"line": 21,
+													"character": 72,
+													"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L21"
+												}
+											],
+											"signatures": [
+												{
+													"id": 13,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "sockets-position/types.ts",
+															"line": 21,
+															"character": 72,
+															"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L21"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											]
+										}
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Methods",
+							"children": [
+								3,
+								6
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "sockets-position/types.ts",
+							"line": 10,
+							"character": 48,
+							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L10"
+						}
+					]
+				}
+			},
+			"implementedBy": [
+				{
+					"type": "reference",
+					"target": 15,
+					"name": "BaseSocketPosition"
+				}
+			]
+		},
+		{
+			"id": 83,
+			"name": "classicConnectionPath",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "connection.ts",
+					"line": 8,
+					"character": 16,
+					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/connection.ts#L8"
+				}
+			],
+			"signatures": [
+				{
+					"id": 84,
+					"name": "classicConnectionPath",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Get classic SVG path for a connection between two points."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "connection.ts",
+							"line": 8,
+							"character": 0,
+							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/connection.ts#L8"
+						}
+					],
+					"parameters": [
+						{
+							"id": 85,
+							"name": "points",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Array of two points"
+									}
+								]
+							},
+							"type": {
+								"type": "tuple",
+								"elements": [
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/types.ts",
+											"qualifiedName": "Position"
+										},
+										"name": "Position",
+										"package": "rete-render-utils"
+									},
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/types.ts",
+											"qualifiedName": "Position"
+										},
+										"name": "Position",
+										"package": "rete-render-utils"
+									}
+								]
+							}
+						},
+						{
+							"id": 86,
+							"name": "curvature",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Curvature of the connection"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 71,
+			"name": "getDOMSocketPosition",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "sockets-position/dom-socket-position.ts",
+					"line": 49,
+					"character": 16,
+					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/dom-socket-position.ts#L49"
+				}
+			],
+			"signatures": [
+				{
+					"id": 72,
+					"name": "getDOMSocketPosition",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Wrapper function for "
+							},
+							{
+								"kind": "code",
+								"text": "`DOMSocketPosition`"
+							},
+							{
+								"kind": "text",
+								"text": " class."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "sockets-position/dom-socket-position.ts",
+							"line": 49,
+							"character": 0,
+							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/dom-socket-position.ts#L49"
+						}
+					],
+					"typeParameter": [
+						{
+							"id": 73,
+							"name": "Schemes",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/src/types.ts",
+									"qualifiedName": "BaseSchemes"
+								},
+								"name": "BaseSchemes",
+								"package": "rete"
+							}
+						},
+						{
+							"id": 74,
+							"name": "K",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {}
+						}
+					],
+					"parameters": [
+						{
+							"id": 75,
+							"name": "props",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Props for "
+									},
+									{
+										"kind": "code",
+										"text": "`DOMSocketPosition`"
+									},
+									{
+										"kind": "text",
+										"text": " class"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "src/sockets-position/dom-socket-position.ts",
+									"qualifiedName": "Props"
+								},
+								"name": "Props",
+								"package": "rete-render-utils"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": 42,
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": -1,
+								"name": "Schemes",
+								"refersToTypeParameter": true
+							},
+							{
+								"type": "reference",
+								"target": -1,
+								"name": "K",
+								"refersToTypeParameter": true
+							}
+						],
+						"name": "DOMSocketPosition",
+						"package": "rete-render-utils"
+					}
+				}
+			]
+		},
+		{
+			"id": 76,
+			"name": "getElementCenter",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "utils.ts",
+					"line": 11,
+					"character": 22,
+					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L11"
+				}
+			],
+			"signatures": [
+				{
+					"id": 77,
+					"name": "getElementCenter",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Calculates the center coordinates of a child element relative to a parent element."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@async",
+								"content": []
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Position of the child element's center"
+									}
+								]
+							},
+							{
+								"tag": "@throws",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Error if the child element has a null offsetParent."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "utils.ts",
+							"line": 11,
+							"character": 0,
+							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L11"
+						}
+					],
+					"parameters": [
+						{
+							"id": 78,
+							"name": "child",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The child element whose center coordinates need to be calculated."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+									"qualifiedName": "HTMLElement"
+								},
+								"name": "HTMLElement",
+								"package": "typescript"
+							}
+						},
+						{
+							"id": 79,
+							"name": "parent",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The parent element relative to which the child element's center is calculated."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+									"qualifiedName": "HTMLElement"
+								},
+								"name": "HTMLElement",
+								"package": "typescript"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Promise"
+						},
+						"typeArguments": [
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 80,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 81,
+											"name": "x",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "utils.ts",
+													"line": 31,
+													"character": 4,
+													"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L31"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "..."
+										},
+										{
+											"id": 82,
+											"name": "y",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "utils.ts",
+													"line": 32,
+													"character": 4,
+													"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L32"
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "..."
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												81,
+												82
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "utils.ts",
+											"line": 30,
+											"character": 9,
+											"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L30"
+										}
+									]
+								}
+							}
+						],
+						"name": "Promise",
+						"package": "typescript"
+					}
+				}
+			]
+		},
+		{
+			"id": 87,
+			"name": "loopConnectionPath",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "connection.ts",
+					"line": 23,
+					"character": 16,
+					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/connection.ts#L23"
+				}
+			],
+			"signatures": [
+				{
+					"id": 88,
+					"name": "loopConnectionPath",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Get loop SVG path for a connection between two points."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "connection.ts",
+							"line": 23,
+							"character": 0,
+							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/connection.ts#L23"
+						}
+					],
+					"parameters": [
+						{
+							"id": 89,
+							"name": "points",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Array of two points"
+									}
+								]
+							},
+							"type": {
+								"type": "tuple",
+								"elements": [
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/types.ts",
+											"qualifiedName": "Position"
+										},
+										"name": "Position",
+										"package": "rete-render-utils"
+									},
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/types.ts",
+											"qualifiedName": "Position"
+										},
+										"name": "Position",
+										"package": "rete-render-utils"
+									}
+								]
+							}
+						},
+						{
+							"id": 90,
+							"name": "curvature",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Curvature of the loop"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 91,
+							"name": "size",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Size of the loop"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Classes",
+			"children": [
+				15,
+				42
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				1
+			]
+		},
+		{
+			"title": "Functions",
+			"children": [
+				83,
+				71,
+				76,
+				87
+			]
+		}
+	],
+	"packageName": "rete-render-utils",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js Render utils\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js utils**\n\n## Key features\n\n- **Basic connection paths**: provides the classic and loop SVG paths\n- **Sockets position**: enables the calculation of socket positions\n  - **DOM-based**: calculates the position of sockets using "
+		},
+		{
+			"kind": "code",
+			"text": "`offsetTop`"
+		},
+		{
+			"kind": "text",
+			"text": "/"
+		},
+		{
+			"kind": "code",
+			"text": "`offsetLeft`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## Getting Started\n\nBefore using this package, make sure to install it as a **peer** and **dev** dependency into your the render plugin.\n\nThis package exposes "
+		},
+		{
+			"kind": "code",
+			"text": "`getDOMSocketPosition`"
+		},
+		{
+			"kind": "text",
+			"text": ", which is a "
+		},
+		{
+			"kind": "code",
+			"text": "`SocketPositionWatcher`"
+		},
+		{
+			"kind": "text",
+			"text": " type and used by default in render plugins.\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\nimport { getDOMSocketPosition } from 'rete-render-utils';\n\nconst socketsPositionWatcher = getDOMSocketPosition<Schemes, AreaExtra>(area)\n\nsocketPositionWatcher.attach(area)\n\nconst unwatch = positionWatcher.listen(nodeId, portSide, portKey, (position) => {\n  /// called when the socket position changes\n})\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nThe render plugins also use its default implementations for rendering connection paths using "
+		},
+		{
+			"kind": "code",
+			"text": "`classicConnectionPath`"
+		},
+		{
+			"kind": "text",
+			"text": " and "
+		},
+		{
+			"kind": "code",
+			"text": "`loopConnectionPath`"
+		},
+		{
+			"kind": "text",
+			"text": ".\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\nimport { classicConnectionPath } from 'rete-render-utils';\n\nconst curvature = 0.3\nconst points = [sourcePoint, targetPoint] // should contain two points\nconst svgPath = classicConnectionPath(points, curvature)\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/render-utils-plugin/blob/main/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/sockets-position/types.ts",
+			"qualifiedName": "SocketPositionWatcher"
+		},
+		"2": {
+			"sourceFileName": "src/sockets-position/types.ts",
+			"qualifiedName": "__type"
+		},
+		"3": {
+			"sourceFileName": "src/sockets-position/types.ts",
+			"qualifiedName": "__type.attach"
+		},
+		"4": {
+			"sourceFileName": "src/sockets-position/types.ts",
+			"qualifiedName": "__type.attach"
+		},
+		"5": {
+			"sourceFileName": "src/sockets-position/types.ts",
+			"qualifiedName": "area"
+		},
+		"6": {
+			"sourceFileName": "src/sockets-position/types.ts",
+			"qualifiedName": "__type.listen"
+		},
+		"7": {
+			"sourceFileName": "src/sockets-position/types.ts",
+			"qualifiedName": "__type.listen"
+		},
+		"8": {
+			"sourceFileName": "src/sockets-position/types.ts",
+			"qualifiedName": "nodeId"
+		},
+		"9": {
+			"sourceFileName": "src/sockets-position/types.ts",
+			"qualifiedName": "side"
+		},
+		"10": {
+			"sourceFileName": "src/sockets-position/types.ts",
+			"qualifiedName": "key"
+		},
+		"11": {
+			"sourceFileName": "src/sockets-position/types.ts",
+			"qualifiedName": "onChange"
+		},
+		"12": {
+			"sourceFileName": "src/sockets-position/types.ts",
+			"qualifiedName": "__type"
+		},
+		"13": {
+			"sourceFileName": "src/sockets-position/types.ts",
+			"qualifiedName": "__type"
+		},
+		"14": {
+			"sourceFileName": "src/sockets-position/types.ts",
+			"qualifiedName": "ChildScope"
+		},
+		"15": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "BaseSocketPosition"
+		},
+		"23": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "BaseSocketPosition.calculatePosition"
+		},
+		"24": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "BaseSocketPosition.calculatePosition"
+		},
+		"25": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "nodeId"
+		},
+		"26": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "side"
+		},
+		"27": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "key"
+		},
+		"28": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "element"
+		},
+		"29": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "BaseSocketPosition.attach"
+		},
+		"30": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "BaseSocketPosition.attach"
+		},
+		"31": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "scope"
+		},
+		"32": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "BaseSocketPosition.listen"
+		},
+		"33": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "BaseSocketPosition.listen"
+		},
+		"34": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "nodeId"
+		},
+		"35": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "side"
+		},
+		"36": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "key"
+		},
+		"37": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "change"
+		},
+		"38": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__function"
+		},
+		"39": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__function"
+		},
+		"40": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "BaseSocketPosition.Schemes"
+		},
+		"41": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "BaseSocketPosition.K"
+		},
+		"42": {
+			"sourceFileName": "src/sockets-position/dom-socket-position.ts",
+			"qualifiedName": "DOMSocketPosition"
+		},
+		"58": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "BaseSocketPosition.attach"
+		},
+		"59": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "BaseSocketPosition.attach"
+		},
+		"60": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "scope"
+		},
+		"61": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "BaseSocketPosition.listen"
+		},
+		"62": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "BaseSocketPosition.listen"
+		},
+		"63": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "nodeId"
+		},
+		"64": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "side"
+		},
+		"65": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "key"
+		},
+		"66": {
+			"sourceFileName": "src/sockets-position/base-socket-position.ts",
+			"qualifiedName": "change"
+		},
+		"67": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__function"
+		},
+		"68": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__function"
+		},
+		"69": {
+			"sourceFileName": "src/sockets-position/dom-socket-position.ts",
+			"qualifiedName": "DOMSocketPosition.Schemes"
+		},
+		"70": {
+			"sourceFileName": "src/sockets-position/dom-socket-position.ts",
+			"qualifiedName": "DOMSocketPosition.K"
+		},
+		"71": {
+			"sourceFileName": "src/sockets-position/dom-socket-position.ts",
+			"qualifiedName": "getDOMSocketPosition"
+		},
+		"72": {
+			"sourceFileName": "src/sockets-position/dom-socket-position.ts",
+			"qualifiedName": "getDOMSocketPosition"
+		},
+		"73": {
+			"sourceFileName": "src/sockets-position/dom-socket-position.ts",
+			"qualifiedName": "Schemes"
+		},
+		"74": {
+			"sourceFileName": "src/sockets-position/dom-socket-position.ts",
+			"qualifiedName": "K"
+		},
+		"75": {
+			"sourceFileName": "src/sockets-position/dom-socket-position.ts",
+			"qualifiedName": "props"
+		},
+		"76": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "getElementCenter"
+		},
+		"77": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "getElementCenter"
+		},
+		"78": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "child"
+		},
+		"79": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "parent"
+		},
+		"80": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__object"
+		},
+		"81": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__object.x"
+		},
+		"82": {
+			"sourceFileName": "src/utils.ts",
+			"qualifiedName": "__object.y"
+		},
+		"83": {
+			"sourceFileName": "src/connection.ts",
+			"qualifiedName": "classicConnectionPath"
+		},
+		"84": {
+			"sourceFileName": "src/connection.ts",
+			"qualifiedName": "classicConnectionPath"
+		},
+		"85": {
+			"sourceFileName": "src/connection.ts",
+			"qualifiedName": "points"
+		},
+		"86": {
+			"sourceFileName": "src/connection.ts",
+			"qualifiedName": "curvature"
+		},
+		"87": {
+			"sourceFileName": "src/connection.ts",
+			"qualifiedName": "loopConnectionPath"
+		},
+		"88": {
+			"sourceFileName": "src/connection.ts",
+			"qualifiedName": "loopConnectionPath"
+		},
+		"89": {
+			"sourceFileName": "src/connection.ts",
+			"qualifiedName": "points"
+		},
+		"90": {
+			"sourceFileName": "src/connection.ts",
+			"qualifiedName": "curvature"
+		},
+		"91": {
+			"sourceFileName": "src/connection.ts",
+			"qualifiedName": "size"
+		}
+	}
+}
