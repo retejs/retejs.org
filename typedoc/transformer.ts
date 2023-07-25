@@ -6,7 +6,7 @@ import shikiParser from '@nuxt/content/transformers/shiki/index';
 import remarkHeadingPlugin from 'remark-heading-id';
 import {
   makeRecursiveVisitor, Deserializer, Application, TypeContext, DeclarationReflection,
-  ReflectionType, Type, ProjectReflection, ContainerReflection, Reflection, CommentDisplayPart, CommentTag,
+  ReflectionType, Type, ProjectReflection, ContainerReflection, Reflection, CommentDisplayPart, CommentTag, SourceReference,
 } from 'typedoc';
 import prettier from 'prettier';
 
@@ -249,6 +249,33 @@ function fixReflectionStringify(reflection: Reflection) {
   });
 }
 
+function getSources(project: DeclarationReflection): SourceReference[] {
+  return [
+    ...(project.sources || []),
+    ...(project.children?.map((child) => getSources(child)).flat() || []),
+  ];
+}
+function getRepositoryURL(url: string) {
+  const regex = /https?:\/\/([^/]+)\/([^/]+\/[^/]+)/;
+  const match = url.match(regex);
+
+  if (match && match.length >= 3) {
+    return `https://${match[1]}/${match[2]}`;
+  }
+  return null;
+}
+
+function extractRepositoryURL(project: ProjectReflection): string | null {
+  if (!project.children?.length) return null;
+
+  const sources = project.children.map(getSources).flat();
+  const someSourceUrl = sources.find((source) => source.url)?.url;
+
+  if (!someSourceUrl) return null;
+
+  return getRepositoryURL(someSourceUrl);
+}
+
 export default defineTransformer({
   name: 'typedoc-transformer',
   extensions: ['.typedoc'],
@@ -292,6 +319,7 @@ export default defineTransformer({
       ...highlighed,
       navigation: {
         title: data.name,
+        repository: extractRepositoryURL(reflection),
       },
       _id,
     };
