@@ -4,9 +4,12 @@
     Card.item(v-for="data of getList(navigation)", :key="data._path")
       template(#title)
         NuxtLink(:to="sanitize(data._path)") {{ data.title }}
-        Tooltip(content="Open on npm", placement="right")
+        Tooltip(content="Open on NPM", placement="top")
           NuxtLink(:to="'https://www.npmjs.com/package/' + data.title", target="_blank", @click.stop="")
-            font-awesome-icon.icon(:icon="['fa-brands', 'npm']")
+            font-awesome-icon.npm.icon(:icon="['fa-brands', 'npm']")
+        Tooltip(v-if="data.repository" content="Open repository", placement="top")
+          NuxtLink(:to="data.repository", target="_blank", @click.stop="")
+            font-awesome-icon.gh.icon(:icon="['fa-brands', 'github']")
 </template>
 
 <script>
@@ -65,9 +68,14 @@ export default {
 
     .icon
       vertical-align: middle
-      width: 2em
-      height: 2em
       margin: 0 0.5em
-      color: #c20000
+      &.npm
+        width: 2em
+        height: 2em
+        color: #c20000
+      &.gh
+        width: 1.5em
+        height: 1.5em
+        color: #000
 
 </style>
