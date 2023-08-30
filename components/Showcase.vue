@@ -15,16 +15,22 @@
         client-only
           FrameExample(:src="item.showcase.source" :lazy="true")
           template(#placeholder)
-            NuxtLink(:to="item._path")
+            NuxtLink(:to="pathSanitizer.sanitize(item._path)")
               img(:src="getPreview(item.preview)")
 
 </template>
 
-<script>
+<script lang="ts">
 import { flat } from '../shared/navigation';
 import { getPreview } from '../shared/assets';
+import { usePathSanitizer } from '../shared/route';
 
 export default {
+  setup() {
+    return {
+      pathSanitizer: usePathSanitizer()
+    }
+  },
   methods: {
     getPreview,
     getList(navigation) {

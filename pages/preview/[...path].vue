@@ -4,7 +4,7 @@ img(:src="src")
 
 <script setup>
 import { useContentPath } from '../../shared/content';
-import { getPreview } from '../../shared/assets';
+import { getPreview, mainPreview } from '../../shared/assets';
 
 const contentPath = useContentPath();
 const path = contentPath.value.replace('/preview/', '/examples/');
@@ -15,7 +15,8 @@ definePageMeta({
   layout: 'preview',
 });
 
-const src = getPreview(data.value.image.src);
+const image = data.value?.image?.src
+const src = image ? getPreview(image) : mainPreview;
 </script>
 
 <style lang="sass" scoped>
