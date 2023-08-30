@@ -2,7 +2,6 @@
 /* eslint-disable no-shadow */
 import { defineTransformer } from '@nuxt/content/transformers/utils';
 import markdownParser from '@nuxt/content/transformers/markdown';
-import shikiParser from '@nuxt/content/transformers/shiki/index';
 import remarkHeadingPlugin from 'remark-heading-id';
 import {
   makeRecursiveVisitor, Deserializer, Application, TypeContext, DeclarationReflection,
@@ -296,27 +295,8 @@ export default defineTransformer({
       remarkPlugins: [{ instance: remarkHeadingPlugin }],
     });
 
-    const highlighed = await shikiParser.transform(md, {
-      theme: 'one-dark-pro',
-      preload: [
-        'json',
-        'js',
-        'ts',
-        'html',
-        'css',
-        'vue',
-        'diff',
-        'shell',
-        'markdown',
-        'yaml',
-        'bash',
-        'ini',
-      ],
-      apiURL: '/api/_content/highlight',
-    });
-
     return {
-      ...highlighed,
+      ...md,
       navigation: {
         title: data.name,
         repository: extractRepositoryURL(reflection),
