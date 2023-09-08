@@ -33,6 +33,7 @@
     "title": "{title} example",
     "proExample": {
       "getAccess": "Get access",
+      "info": "Subscribe to Contributor tier on Patreon and DM your GitHub username",
       "alert": "The source code for this Pro example is available only to subscribers"
     }
   },
