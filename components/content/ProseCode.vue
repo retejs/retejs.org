@@ -57,6 +57,8 @@ code
   font-size: 0.9em
   color: $code-foreround
   overflow: auto
+.block > pre
+  background: transparent
 pre code
   display: block
   padding: 1em
