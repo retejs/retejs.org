@@ -56,6 +56,13 @@ export default defineNuxtConfig({
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ],
+      script: [
+        {
+          defer: true,
+          src: 'https://cdn.jsdelivr.net/gh/sidiDev/devhunt-banner/indexV0.js',
+          'data-url': 'https://devhunt.org/tool/retejs'
+        }
+      ]
     },
   },
   pwa: {
