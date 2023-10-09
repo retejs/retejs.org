@@ -1,4 +1,6 @@
 ---
+description: Explore examples of custom controls for various UI libraries and frameworks
+keywords: custom controls,intergrations,ui libraries,ui frameworks
 navigation:
   placeholder: true
   overviewGroup: true

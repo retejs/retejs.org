@@ -1,4 +1,6 @@
 ---
+description: Explore examples of custom nodes for various UI libraries and frameworks
+keywords: custom nodes,intergrations,ui libraries,ui frameworks
 navigation:
   placeholder: true
   overviewGroup: true

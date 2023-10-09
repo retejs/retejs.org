@@ -1,4 +1,6 @@
 ---
+description: Explore examples of basic editor setups for various UI libraries and frameworks
+keywords: basic editors,intergrations,ui libraries,ui frameworks
 navigation:
   placeholder: true
   overviewGroup: true
