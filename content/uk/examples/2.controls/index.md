@@ -1,4 +1,6 @@
 ---
+description: Ознайомтеся з прикладами кастомних контролів для різних UI бібліотек і фреймворків
+keywords: кастомні контроли,інтеграції,ui бібліотеки,ui фреймворки
 navigation:
   placeholder: true
   overviewGroup: true

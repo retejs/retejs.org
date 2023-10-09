@@ -1,4 +1,6 @@
 ---
+description: Ознайомтеся з прикладами базових налаштувань редактора для різних UI бібліотек і фреймворків
+keywords: базові редактори,інтеграції,ui бібліотеки,ui фреймворки
 navigation:
   placeholder: true
   overviewGroup: true
