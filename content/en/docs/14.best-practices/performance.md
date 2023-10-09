@@ -1,3 +1,8 @@
+---
+description: Discover how to optimize performance in client applications. Learn about minimizing the impact of synchronous operations and direct rendering of elements by the browser
+keywords: performance,optimization
+---
+
 # Performance
 
 ::references

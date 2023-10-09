@@ -28,7 +28,7 @@ if (props.share) useShareThis(computed(() => dataRef.value && props.share(dataRe
 const { data } = await useAsyncData(path, () => queryContent(path).findOne());
 
 if (data.value) {
-  const { image, description } = data.value;
+  const { image, description, keywords } = data.value;
   const title = computed(() => `${props.title ? props.title(data.value) || data.value.title : data.value.title} - Rete.js`);
   const imageSrc = image ? getPreview(image.src) : mainPreview;
   // eslint-disable-next-line no-nested-ternary
@@ -43,6 +43,7 @@ if (data.value) {
     title,
     ogTitle: title,
     description,
+    keywords: [keywords, 'rete.js'].filter(Boolean).join(','),
     ogDescription: description,
     ogImage: imageSrc,
     twitterCard,
