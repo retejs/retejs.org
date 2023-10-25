@@ -6,7 +6,9 @@ keywords: performance,optimization
 # Performance
 
 ::references
+:ref-example{title="Performance" link="/examples/performance"}
 :ref-example{title="LOD" link="/examples/lod"}
+:ref-example{title="LOD GPU" link="/examples/lod-gpu"}
 ::
 
 In client applications, you may frequently encounter two issues: resource-intensive operations and low FPS. The former is caused by synchronous operations such as executing resource-intensive JS code or some browser APIs that block the main thread. The latter is often attributed to the direct rendering of elements by the browser - the more complex and numerous they are, the more time it takes for the browser to create the layout and render them.

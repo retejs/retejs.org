@@ -31,3 +31,9 @@ node_modules
 .output
 .env
 dist
+
+_export
+*.dtmp
+*.bkp
+public/diagrams/*.svg
+public/diagrams/**/*.svg
