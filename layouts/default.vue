@@ -1,6 +1,7 @@
 <template lang="pug">
 .app
   VitePwaManifest
+  DevHuntBanner
   Header
   ShareThis
     Content
@@ -11,6 +12,7 @@
 <script>
 import { defineComponent } from 'vue';
 import Header from '../components/Header.vue';
+import DevHuntBanner from '../components/DevHuntBanner.vue';
 import Content from '../components/Content.vue';
 import Footer from '../components/Footer.vue';
 import { seoLang } from '../shared/seoLang';
@@ -23,6 +25,7 @@ export default defineComponent({
   },
   components: {
     Header,
+    DevHuntBanner,
     Content,
     Footer,
     ShareThis,
@@ -30,7 +33,7 @@ export default defineComponent({
 });
 </script>
 
-  <style lang="sass" scoped>
+<style lang="sass" scoped>
   @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700')
 
   .app
