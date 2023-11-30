@@ -28,17 +28,19 @@ import FetchNav from '@/components/FetchNav.vue';
 import RenderContent from '@/components/RenderContent.vue';
 import NavMenu from '@/components/shared/NavMenu.vue';
 import { useContentPath } from '../../shared/content';
+import { useDrawer } from '../../shared/drawer';
 import NotFound from '@/components/shared/NotFound.vue';
 
 export default defineComponent({
   setup() {
     const route = useRoute();
     const contentPath = useContentPath();
+    const drawer = useDrawer();
 
     return {
       preview: route.path.replace('/examples/', '/preview/'),
       contentPath,
-      drawer: ref(false),
+      drawer: drawer.active
     };
   },
   methods: {

@@ -1,9 +1,9 @@
 <template lang="pug">
 .header(ref="element")
   Menu.menu(
-      mode="horizontal"
-      width="100%"
-    )
+    mode="horizontal"
+    width="100%"
+  )
     MenuItem.logo(name="logo", :to="localePath('/')")
       Logo.icon.ivu-icon(:hover="true")
       span.title Rete.js
@@ -26,6 +26,7 @@
 
 <script>
 import { defineComponent, ref, onMounted } from 'vue';
+import { useDrawer } from '../shared/drawer';
 import Logo from './Logo.vue';
 import Language from './Language.vue';
 import MenuItems from './MenuItems.vue';
@@ -36,6 +37,7 @@ import Drawer from './shared/Drawer.vue';
 export default defineComponent({
   setup() {
     const element = ref(null);
+    const drawer = useDrawer();
 
     onMounted(() => {
       window.addEventListener('scroll', () => {
@@ -47,7 +49,7 @@ export default defineComponent({
     });
     return {
       element,
-      drawer: ref(false),
+      drawer: drawer.active
     };
   },
   components: {
