@@ -31,7 +31,7 @@
 							"fileName": "extensions/keyboard.ts",
 							"line": 10,
 							"character": 16,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/extensions/keyboard.ts#L10"
+							"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/extensions/keyboard.ts#L10"
 						}
 					],
 					"signatures": [
@@ -54,7 +54,7 @@
 									"fileName": "extensions/keyboard.ts",
 									"line": 10,
 									"character": 0,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/extensions/keyboard.ts#L10"
+									"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/extensions/keyboard.ts#L10"
 								}
 							],
 							"typeParameter": [
@@ -146,7 +146,7 @@
 					"fileName": "extensions/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/extensions/index.ts#L1"
+					"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/extensions/index.ts#L1"
 				}
 			]
 		},
@@ -183,7 +183,7 @@
 									"fileName": "presets/classic/index.ts",
 									"line": 121,
 									"character": 16,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/classic/index.ts#L121"
+									"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/presets/classic/index.ts#L121"
 								}
 							],
 							"signatures": [
@@ -206,7 +206,7 @@
 											"fileName": "presets/classic/index.ts",
 											"line": 121,
 											"character": 0,
-											"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/classic/index.ts#L121"
+											"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/presets/classic/index.ts#L121"
 										}
 									],
 									"typeParameter": [
@@ -258,7 +258,7 @@
 																	"fileName": "presets/classic/index.ts",
 																	"line": 121,
 																	"character": 55,
-																	"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/classic/index.ts#L121"
+																	"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/presets/classic/index.ts#L121"
 																}
 															],
 															"type": {
@@ -280,7 +280,7 @@
 															"fileName": "presets/classic/index.ts",
 															"line": 121,
 															"character": 53,
-															"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/classic/index.ts#L121"
+															"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/presets/classic/index.ts#L121"
 														}
 													]
 												}
@@ -338,7 +338,7 @@
 							"fileName": "presets/classic/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/classic/index.ts#L1"
+							"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/presets/classic/index.ts#L1"
 						}
 					]
 				}
@@ -356,7 +356,7 @@
 					"fileName": "presets/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/index.ts#L1"
+					"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/presets/index.ts#L1"
 				}
 			]
 		},
@@ -386,7 +386,7 @@
 							"fileName": "index.ts",
 							"line": 30,
 							"character": 2,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L30"
+							"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L30"
 						}
 					],
 					"signatures": [
@@ -401,7 +401,7 @@
 									"fileName": "index.ts",
 									"line": 30,
 									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L30"
+									"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L30"
 								}
 							],
 							"typeParameter": [
@@ -488,7 +488,7 @@
 															"fileName": "index.ts",
 															"line": 30,
 															"character": 24,
-															"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L30"
+															"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L30"
 														}
 													],
 													"type": {
@@ -510,7 +510,7 @@
 													"fileName": "index.ts",
 													"line": 30,
 													"character": 22,
-													"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L30"
+													"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L30"
 												}
 											]
 										}
@@ -563,7 +563,7 @@
 							"fileName": "index.ts",
 							"line": 65,
 							"character": 9,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L65"
+							"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L65"
 						}
 					],
 					"signatures": [
@@ -586,7 +586,7 @@
 									"fileName": "index.ts",
 									"line": 65,
 									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L65"
+									"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L65"
 								}
 							],
 							"parameters": [
@@ -632,7 +632,7 @@
 							"fileName": "index.ts",
 							"line": 56,
 							"character": 9,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L56"
+							"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L56"
 						}
 					],
 					"signatures": [
@@ -655,7 +655,7 @@
 									"fileName": "index.ts",
 									"line": 56,
 									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L56"
+									"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L56"
 								}
 							],
 							"typeParameter": [
@@ -733,7 +733,7 @@
 							"fileName": "index.ts",
 							"line": 89,
 							"character": 9,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L89"
+							"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L89"
 						}
 					],
 					"signatures": [
@@ -756,7 +756,7 @@
 									"fileName": "index.ts",
 									"line": 89,
 									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L89"
+									"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L89"
 								}
 							],
 							"type": {
@@ -779,7 +779,7 @@
 							"fileName": "index.ts",
 							"line": 73,
 							"character": 9,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L73"
+							"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L73"
 						}
 					],
 					"signatures": [
@@ -813,7 +813,7 @@
 									"fileName": "index.ts",
 									"line": 73,
 									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L73"
+									"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L73"
 								}
 							],
 							"type": {
@@ -852,7 +852,7 @@
 							"fileName": "index.ts",
 							"line": 82,
 							"character": 9,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L82"
+							"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L82"
 						}
 					],
 					"signatures": [
@@ -902,7 +902,7 @@
 									"fileName": "index.ts",
 									"line": 82,
 									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L82"
+									"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L82"
 								}
 							],
 							"parameters": [
@@ -962,7 +962,7 @@
 							"fileName": "index.ts",
 							"line": 120,
 							"character": 15,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L120"
+							"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L120"
 						}
 					],
 					"signatures": [
@@ -1001,7 +1001,7 @@
 									"fileName": "index.ts",
 									"line": 120,
 									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L120"
+									"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L120"
 								}
 							],
 							"type": {
@@ -1035,7 +1035,7 @@
 							"fileName": "index.ts",
 							"line": 96,
 							"character": 9,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L96"
+							"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L96"
 						}
 					],
 					"signatures": [
@@ -1050,7 +1050,7 @@
 									"fileName": "index.ts",
 									"line": 96,
 									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L96"
+									"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L96"
 								}
 							],
 							"type": {
@@ -1073,7 +1073,7 @@
 							"fileName": "index.ts",
 							"line": 105,
 							"character": 15,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L105"
+							"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L105"
 						}
 					],
 					"signatures": [
@@ -1112,7 +1112,7 @@
 									"fileName": "index.ts",
 									"line": 105,
 									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L105"
+									"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L105"
 								}
 							],
 							"type": {
@@ -1160,7 +1160,7 @@
 					"fileName": "index.ts",
 					"line": 17,
 					"character": 13,
-					"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L17"
+					"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/index.ts#L17"
 				}
 			],
 			"typeParameters": [
@@ -1287,7 +1287,7 @@
 					"fileName": "types.ts",
 					"line": 12,
 					"character": 17,
-					"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/types.ts#L12"
+					"url": "https://github.com/retejs/history-plugin/blob/51a2817/src/types.ts#L12"
 				}
 			]
 		}
