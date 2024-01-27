@@ -31,7 +31,7 @@
 							"fileName": "extensions/selectable.ts",
 							"line": 17,
 							"character": 16,
-							"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/extensions/selectable.ts#L17"
+							"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/extensions/selectable.ts#L17"
 						}
 					],
 					"signatures": [
@@ -83,7 +83,7 @@
 									"fileName": "extensions/selectable.ts",
 									"line": 17,
 									"character": 0,
-									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/extensions/selectable.ts#L17"
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/extensions/selectable.ts#L17"
 								}
 							],
 							"typeParameter": [
@@ -203,7 +203,7 @@
 															"fileName": "extensions/selectable.ts",
 															"line": 17,
 															"character": 123,
-															"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/extensions/selectable.ts#L17"
+															"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/extensions/selectable.ts#L17"
 														}
 													],
 													"signatures": [
@@ -218,7 +218,7 @@
 																	"fileName": "extensions/selectable.ts",
 																	"line": 17,
 																	"character": 123,
-																	"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/extensions/selectable.ts#L17"
+																	"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/extensions/selectable.ts#L17"
 																}
 															],
 															"type": {
@@ -242,7 +242,7 @@
 													"fileName": "extensions/selectable.ts",
 													"line": 17,
 													"character": 121,
-													"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/extensions/selectable.ts#L17"
+													"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/extensions/selectable.ts#L17"
 												}
 											]
 										}
@@ -270,7 +270,7 @@
 					"fileName": "extensions/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/extensions/index.ts#L1"
+					"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/extensions/index.ts#L1"
 				}
 			]
 		},
@@ -385,7 +385,7 @@
 							"fileName": "index.ts",
 							"line": 165,
 							"character": 9,
-							"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L165"
+							"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L165"
 						}
 					],
 					"signatures": [
@@ -408,7 +408,7 @@
 									"fileName": "index.ts",
 									"line": 165,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L165"
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L165"
 								}
 							],
 							"parameters": [
@@ -497,7 +497,7 @@
 							"fileName": "index.ts",
 							"line": 194,
 							"character": 15,
-							"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L194"
+							"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L194"
 						}
 					],
 					"signatures": [
@@ -520,7 +520,7 @@
 									"fileName": "index.ts",
 									"line": 194,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L194"
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L194"
 								}
 							],
 							"parameters": [
@@ -575,7 +575,7 @@
 							"fileName": "index.ts",
 							"line": 207,
 							"character": 15,
-							"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L207"
+							"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L207"
 						}
 					],
 					"signatures": [
@@ -598,7 +598,7 @@
 									"fileName": "index.ts",
 									"line": 207,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L207"
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L207"
 								}
 							],
 							"parameters": [
@@ -653,7 +653,7 @@
 							"fileName": "index.ts",
 							"line": 181,
 							"character": 15,
-							"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L181"
+							"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L181"
 						}
 					],
 					"signatures": [
@@ -676,7 +676,7 @@
 									"fileName": "index.ts",
 									"line": 181,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L181"
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L181"
 								}
 							],
 							"parameters": [
@@ -769,7 +769,7 @@
 							"fileName": "index.ts",
 							"line": 221,
 							"character": 15,
-							"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L221"
+							"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L221"
 						}
 					],
 					"signatures": [
@@ -792,7 +792,7 @@
 									"fileName": "index.ts",
 									"line": 221,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L221"
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L221"
 								}
 							],
 							"parameters": [
@@ -847,7 +847,7 @@
 							"fileName": "index.ts",
 							"line": 235,
 							"character": 9,
-							"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L235"
+							"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L235"
 						}
 					],
 					"signatures": [
@@ -870,7 +870,7 @@
 									"fileName": "index.ts",
 									"line": 235,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L235"
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L235"
 								}
 							],
 							"parameters": [
@@ -934,7 +934,7 @@
 					"fileName": "index.ts",
 					"line": 42,
 					"character": 13,
-					"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L42"
+					"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L42"
 				}
 			],
 			"typeParameters": [
@@ -1044,7 +1044,7 @@
 					"fileName": "index.ts",
 					"line": 14,
 					"character": 12,
-					"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L14"
+					"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L14"
 				}
 			],
 			"type": {
@@ -1081,7 +1081,7 @@
 													"fileName": "index.ts",
 													"line": 15,
 													"character": 35,
-													"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L15"
+													"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L15"
 												}
 											],
 											"type": {
@@ -1108,7 +1108,7 @@
 											"fileName": "index.ts",
 											"line": 15,
 											"character": 33,
-											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L15"
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L15"
 										}
 									]
 								}
@@ -1137,7 +1137,7 @@
 											"fileName": "index.ts",
 											"line": 16,
 											"character": 23,
-											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L16"
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L16"
 										}
 									],
 									"type": {
@@ -1160,7 +1160,7 @@
 															"fileName": "index.ts",
 															"line": 16,
 															"character": 31,
-															"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L16"
+															"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L16"
 														}
 													],
 													"type": {
@@ -1187,7 +1187,7 @@
 													"fileName": "index.ts",
 													"line": 16,
 													"character": 29,
-													"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L16"
+													"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L16"
 												}
 											]
 										}
@@ -1204,7 +1204,7 @@
 											"fileName": "index.ts",
 											"line": 16,
 											"character": 6,
-											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L16"
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L16"
 										}
 									],
 									"type": {
@@ -1227,7 +1227,7 @@
 									"fileName": "index.ts",
 									"line": 16,
 									"character": 4,
-									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L16"
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L16"
 								}
 							]
 						}
@@ -1265,7 +1265,7 @@
 					"fileName": "index.ts",
 					"line": 25,
 					"character": 12,
-					"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L25"
+					"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L25"
 				}
 			],
 			"type": {
@@ -1291,7 +1291,7 @@
 											"fileName": "index.ts",
 											"line": 26,
 											"character": 29,
-											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L26"
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L26"
 										}
 									],
 									"type": {
@@ -1314,7 +1314,7 @@
 															"fileName": "index.ts",
 															"line": 26,
 															"character": 49,
-															"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L26"
+															"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L26"
 														}
 													],
 													"type": {
@@ -1333,7 +1333,7 @@
 															"fileName": "index.ts",
 															"line": 26,
 															"character": 61,
-															"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L26"
+															"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L26"
 														}
 													],
 													"type": {
@@ -1352,7 +1352,7 @@
 															"fileName": "index.ts",
 															"line": 26,
 															"character": 37,
-															"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L26"
+															"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L26"
 														}
 													],
 													"type": {
@@ -1376,7 +1376,7 @@
 													"fileName": "index.ts",
 													"line": 26,
 													"character": 35,
-													"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L26"
+													"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L26"
 												}
 											]
 										}
@@ -1393,7 +1393,7 @@
 											"fileName": "index.ts",
 											"line": 26,
 											"character": 6,
-											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L26"
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L26"
 										}
 									],
 									"type": {
@@ -1416,7 +1416,7 @@
 									"fileName": "index.ts",
 									"line": 26,
 									"character": 4,
-									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L26"
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L26"
 								}
 							]
 						}
@@ -1441,7 +1441,7 @@
 											"fileName": "index.ts",
 											"line": 27,
 											"character": 27,
-											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L27"
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L27"
 										}
 									],
 									"type": {
@@ -1464,7 +1464,7 @@
 															"fileName": "index.ts",
 															"line": 27,
 															"character": 35,
-															"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L27"
+															"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L27"
 														}
 													],
 													"type": {
@@ -1486,7 +1486,7 @@
 													"fileName": "index.ts",
 													"line": 27,
 													"character": 33,
-													"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L27"
+													"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L27"
 												}
 											]
 										}
@@ -1503,7 +1503,7 @@
 											"fileName": "index.ts",
 											"line": 27,
 											"character": 6,
-											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L27"
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L27"
 										}
 									],
 									"type": {
@@ -1526,7 +1526,7 @@
 									"fileName": "index.ts",
 									"line": 27,
 									"character": 4,
-									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L27"
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L27"
 								}
 							]
 						}
@@ -1551,7 +1551,7 @@
 											"fileName": "index.ts",
 											"line": 28,
 											"character": 29,
-											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L28"
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L28"
 										}
 									],
 									"type": {
@@ -1574,7 +1574,7 @@
 															"fileName": "index.ts",
 															"line": 28,
 															"character": 37,
-															"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L28"
+															"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L28"
 														}
 													],
 													"type": {
@@ -1596,7 +1596,7 @@
 													"fileName": "index.ts",
 													"line": 28,
 													"character": 35,
-													"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L28"
+													"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L28"
 												}
 											]
 										}
@@ -1613,7 +1613,7 @@
 											"fileName": "index.ts",
 											"line": 28,
 											"character": 6,
-											"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L28"
+											"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L28"
 										}
 									],
 									"type": {
@@ -1636,7 +1636,7 @@
 									"fileName": "index.ts",
 									"line": 28,
 									"character": 4,
-									"url": "https://github.com/retejs/connection-reroute-plugin/blob/a53d4a7/src/index.ts#L28"
+									"url": "https://github.com/retejs/connection-reroute-plugin/blob/bb11980/src/index.ts#L28"
 								}
 							]
 						}
