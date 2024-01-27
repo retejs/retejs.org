@@ -65,7 +65,7 @@
 									"fileName": "extensions/forms/node/geometry.ts",
 									"line": 10,
 									"character": 12,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/node/geometry.ts#L10"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/node/geometry.ts#L10"
 								}
 							],
 							"type": {
@@ -98,7 +98,7 @@
 													"fileName": "extensions/forms/node/geometry.ts",
 													"line": 20,
 													"character": 2,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/node/geometry.ts#L20"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/node/geometry.ts#L20"
 												}
 											],
 											"type": {
@@ -127,7 +127,7 @@
 													"fileName": "extensions/forms/node/geometry.ts",
 													"line": 16,
 													"character": 2,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/node/geometry.ts#L16"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/node/geometry.ts#L16"
 												}
 											],
 											"type": {
@@ -156,7 +156,7 @@
 													"fileName": "extensions/forms/node/geometry.ts",
 													"line": 18,
 													"character": 2,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/node/geometry.ts#L18"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/node/geometry.ts#L18"
 												}
 											],
 											"type": {
@@ -185,7 +185,7 @@
 													"fileName": "extensions/forms/node/geometry.ts",
 													"line": 14,
 													"character": 2,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/node/geometry.ts#L14"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/node/geometry.ts#L14"
 												}
 											],
 											"type": {
@@ -214,7 +214,7 @@
 													"fileName": "extensions/forms/node/geometry.ts",
 													"line": 12,
 													"character": 2,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/node/geometry.ts#L12"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/node/geometry.ts#L12"
 												}
 											],
 											"type": {
@@ -240,7 +240,7 @@
 											"fileName": "extensions/forms/node/geometry.ts",
 											"line": 10,
 											"character": 21,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/node/geometry.ts#L10"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/node/geometry.ts#L10"
 										}
 									]
 								}
@@ -265,7 +265,7 @@
 									"fileName": "extensions/forms/connection/index.ts",
 									"line": 18,
 									"character": 12,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/connection/index.ts#L18"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/connection/index.ts#L18"
 								}
 							],
 							"type": {
@@ -290,7 +290,7 @@
 													"fileName": "extensions/forms/connection/index.ts",
 													"line": 20,
 													"character": 2,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/connection/index.ts#L20"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/connection/index.ts#L20"
 												}
 											],
 											"type": {
@@ -306,7 +306,7 @@
 															"fileName": "extensions/forms/connection/index.ts",
 															"line": 20,
 															"character": 14,
-															"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/connection/index.ts#L20"
+															"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/connection/index.ts#L20"
 														}
 													],
 													"signatures": [
@@ -365,7 +365,7 @@
 											"fileName": "extensions/forms/connection/index.ts",
 											"line": 18,
 											"character": 20,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/connection/index.ts#L18"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/connection/index.ts#L18"
 										}
 									]
 								}
@@ -390,7 +390,7 @@
 									"fileName": "extensions/forms/node/index.ts",
 									"line": 13,
 									"character": 12,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/node/index.ts#L13"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/node/index.ts#L13"
 								}
 							],
 							"typeParameters": [
@@ -433,7 +433,7 @@
 													"fileName": "extensions/forms/node/index.ts",
 													"line": 15,
 													"character": 2,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/node/index.ts#L15"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/node/index.ts#L15"
 												}
 											],
 											"type": {
@@ -449,7 +449,7 @@
 															"fileName": "extensions/forms/node/index.ts",
 															"line": 15,
 															"character": 14,
-															"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/node/index.ts#L15"
+															"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/node/index.ts#L15"
 														}
 													],
 													"signatures": [
@@ -517,7 +517,7 @@
 											"fileName": "extensions/forms/node/index.ts",
 											"line": 13,
 											"character": 45,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/node/index.ts#L13"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/node/index.ts#L13"
 										}
 									]
 								}
@@ -534,7 +534,7 @@
 									"fileName": "extensions/forms/comment.ts",
 									"line": 40,
 									"character": 16,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/comment.ts#L40"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/comment.ts#L40"
 								}
 							],
 							"signatures": [
@@ -557,7 +557,7 @@
 											"fileName": "extensions/forms/comment.ts",
 											"line": 40,
 											"character": 0,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/comment.ts#L40"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/comment.ts#L40"
 										}
 									],
 									"typeParameter": [
@@ -669,7 +669,7 @@
 									"fileName": "extensions/forms/connection/index.ts",
 									"line": 28,
 									"character": 16,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/connection/index.ts#L28"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/connection/index.ts#L28"
 								}
 							],
 							"signatures": [
@@ -692,7 +692,7 @@
 											"fileName": "extensions/forms/connection/index.ts",
 											"line": 28,
 											"character": 0,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/connection/index.ts#L28"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/connection/index.ts#L28"
 										}
 									],
 									"typeParameter": [
@@ -798,7 +798,7 @@
 																					"fileName": "extensions/forms/connection/index.ts",
 																					"line": 13,
 																					"character": 30,
-																					"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/connection/index.ts#L13"
+																					"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/connection/index.ts#L13"
 																				}
 																			],
 																			"type": {
@@ -823,7 +823,7 @@
 																									"fileName": "extensions/forms/connection/index.ts",
 																									"line": 13,
 																									"character": 70,
-																									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/connection/index.ts#L13"
+																									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/connection/index.ts#L13"
 																								}
 																							],
 																							"type": {
@@ -842,7 +842,7 @@
 																									"fileName": "extensions/forms/connection/index.ts",
 																									"line": 13,
 																									"character": 38,
-																									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/connection/index.ts#L13"
+																									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/connection/index.ts#L13"
 																								}
 																							],
 																							"type": {
@@ -870,7 +870,7 @@
 																									"fileName": "extensions/forms/connection/index.ts",
 																									"line": 13,
 																									"character": 85,
-																									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/connection/index.ts#L13"
+																									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/connection/index.ts#L13"
 																								}
 																							],
 																							"type": {
@@ -902,7 +902,7 @@
 																							"fileName": "extensions/forms/connection/index.ts",
 																							"line": 13,
 																							"character": 36,
-																							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/connection/index.ts#L13"
+																							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/connection/index.ts#L13"
 																						}
 																					]
 																				}
@@ -919,7 +919,7 @@
 																					"fileName": "extensions/forms/connection/index.ts",
 																					"line": 13,
 																					"character": 6,
-																					"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/connection/index.ts#L13"
+																					"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/connection/index.ts#L13"
 																				}
 																			],
 																			"type": {
@@ -942,7 +942,7 @@
 																			"fileName": "extensions/forms/connection/index.ts",
 																			"line": 13,
 																			"character": 4,
-																			"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/connection/index.ts#L13"
+																			"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/connection/index.ts#L13"
 																		}
 																	]
 																}
@@ -996,7 +996,7 @@
 									"fileName": "extensions/forms/connection/geometry.ts",
 									"line": 16,
 									"character": 16,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/connection/geometry.ts#L16"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/connection/geometry.ts#L16"
 								}
 							],
 							"signatures": [
@@ -1038,7 +1038,7 @@
 											"fileName": "extensions/forms/connection/geometry.ts",
 											"line": 16,
 											"character": 0,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/connection/geometry.ts#L16"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/connection/geometry.ts#L16"
 										}
 									],
 									"parameters": [
@@ -1087,17 +1087,6 @@
 											"sourceFileName": "node_modules/@types/three/src/core/BufferGeometry.d.ts",
 											"qualifiedName": "BufferGeometry"
 										},
-										"typeArguments": [
-											{
-												"type": "reference",
-												"target": {
-													"sourceFileName": "node_modules/@types/three/src/core/BufferGeometry.d.ts",
-													"qualifiedName": "NormalBufferAttributes"
-												},
-												"name": "NormalBufferAttributes",
-												"package": "@types/three"
-											}
-										],
 										"name": "BufferGeometry",
 										"package": "@types/three"
 									}
@@ -1115,7 +1104,7 @@
 									"fileName": "extensions/forms/node/geometry.ts",
 									"line": 30,
 									"character": 16,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/node/geometry.ts#L30"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/node/geometry.ts#L30"
 								}
 							],
 							"signatures": [
@@ -1149,7 +1138,7 @@
 											"fileName": "extensions/forms/node/geometry.ts",
 											"line": 30,
 											"character": 0,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/node/geometry.ts#L30"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/node/geometry.ts#L30"
 										}
 									],
 									"parameters": [
@@ -1207,17 +1196,6 @@
 											"sourceFileName": "node_modules/@types/three/src/core/BufferGeometry.d.ts",
 											"qualifiedName": "BufferGeometry"
 										},
-										"typeArguments": [
-											{
-												"type": "reference",
-												"target": {
-													"sourceFileName": "node_modules/@types/three/src/core/BufferGeometry.d.ts",
-													"qualifiedName": "NormalBufferAttributes"
-												},
-												"name": "NormalBufferAttributes",
-												"package": "@types/three"
-											}
-										],
 										"name": "BufferGeometry",
 										"package": "@types/three"
 									}
@@ -1235,7 +1213,7 @@
 									"fileName": "extensions/forms/node/index.ts",
 									"line": 23,
 									"character": 16,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/node/index.ts#L23"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/node/index.ts#L23"
 								}
 							],
 							"signatures": [
@@ -1258,7 +1236,7 @@
 											"fileName": "extensions/forms/node/index.ts",
 											"line": 23,
 											"character": 0,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/node/index.ts#L23"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/node/index.ts#L23"
 										}
 									],
 									"typeParameter": [
@@ -1372,7 +1350,7 @@
 									"fileName": "extensions/forms/reroute.ts",
 									"line": 26,
 									"character": 16,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/reroute.ts#L26"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/reroute.ts#L26"
 								}
 							],
 							"signatures": [
@@ -1395,7 +1373,7 @@
 											"fileName": "extensions/forms/reroute.ts",
 											"line": 26,
 											"character": 0,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/reroute.ts#L26"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/reroute.ts#L26"
 										}
 									],
 									"typeParameter": [
@@ -1518,7 +1496,7 @@
 																							"fileName": "extensions/forms/reroute.ts",
 																							"line": 20,
 																							"character": 35,
-																							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/reroute.ts#L20"
+																							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/reroute.ts#L20"
 																						}
 																					],
 																					"type": {
@@ -1545,7 +1523,7 @@
 																					"fileName": "extensions/forms/reroute.ts",
 																					"line": 20,
 																					"character": 33,
-																					"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/reroute.ts#L20"
+																					"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/reroute.ts#L20"
 																				}
 																			]
 																		}
@@ -1596,7 +1574,7 @@
 							"fileName": "extensions/forms/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/forms/index.ts#L1"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/forms/index.ts#L1"
 						}
 					]
 				},
@@ -1627,7 +1605,7 @@
 							"fileName": "extensions/lookAt.ts",
 							"line": 10,
 							"character": 12,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/lookAt.ts#L10"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/lookAt.ts#L10"
 						}
 					],
 					"type": {
@@ -1660,7 +1638,7 @@
 											"fileName": "extensions/lookAt.ts",
 											"line": 12,
 											"character": 2,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/lookAt.ts#L12"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/lookAt.ts#L12"
 										}
 									],
 									"type": {
@@ -1682,7 +1660,7 @@
 									"fileName": "extensions/lookAt.ts",
 									"line": 10,
 									"character": 21,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/lookAt.ts#L10"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/lookAt.ts#L10"
 								}
 							]
 						}
@@ -1699,7 +1677,7 @@
 							"fileName": "extensions/animate.ts",
 							"line": 11,
 							"character": 16,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/animate.ts#L11"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/animate.ts#L11"
 						}
 					],
 					"signatures": [
@@ -1746,7 +1724,7 @@
 									"fileName": "extensions/animate.ts",
 									"line": 11,
 									"character": 0,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/animate.ts#L11"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/animate.ts#L11"
 								}
 							],
 							"typeParameter": [
@@ -1839,7 +1817,7 @@
 													"fileName": "extensions/animate.ts",
 													"line": 11,
 													"character": 85,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/animate.ts#L11"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/animate.ts#L11"
 												}
 											],
 											"signatures": [
@@ -1854,7 +1832,7 @@
 															"fileName": "extensions/animate.ts",
 															"line": 11,
 															"character": 85,
-															"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/animate.ts#L11"
+															"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/animate.ts#L11"
 														}
 													],
 													"parameters": [
@@ -1898,7 +1876,7 @@
 							"fileName": "extensions/lookAt.ts",
 							"line": 23,
 							"character": 16,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/lookAt.ts#L23"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/lookAt.ts#L23"
 						}
 					],
 					"signatures": [
@@ -1941,7 +1919,7 @@
 									"fileName": "extensions/lookAt.ts",
 									"line": 23,
 									"character": 0,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/lookAt.ts#L23"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/lookAt.ts#L23"
 								}
 							],
 							"typeParameter": [
@@ -2094,7 +2072,7 @@
 					"fileName": "extensions/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/extensions/index.ts#L1"
+					"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/extensions/index.ts#L1"
 				}
 			]
 		},
@@ -2124,9 +2102,9 @@
 					"sources": [
 						{
 							"fileName": "area.ts",
-							"line": 52,
+							"line": 53,
 							"character": 9,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/area.ts#L52"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/area.ts#L53"
 						}
 					],
 					"signatures": [
@@ -2147,9 +2125,9 @@
 							"sources": [
 								{
 									"fileName": "area.ts",
-									"line": 52,
+									"line": 53,
 									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/area.ts#L52"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/area.ts#L53"
 								}
 							],
 							"type": {
@@ -2169,10 +2147,10 @@
 											{
 												"type": "reference",
 												"target": {
-													"sourceFileName": "node_modules/@types/three/src/core/EventDispatcher.d.ts",
-													"qualifiedName": "Event"
+													"sourceFileName": "node_modules/@types/three/src/core/Object3D.d.ts",
+													"qualifiedName": "Object3DEventMap"
 												},
-												"name": "Event",
+												"name": "Object3DEventMap",
 												"package": "@types/three"
 											}
 										],
@@ -2195,9 +2173,9 @@
 					"sources": [
 						{
 							"fileName": "area.ts",
-							"line": 89,
+							"line": 90,
 							"character": 9,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/area.ts#L89"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/area.ts#L90"
 						}
 					],
 					"signatures": [
@@ -2218,9 +2196,9 @@
 							"sources": [
 								{
 									"fileName": "area.ts",
-									"line": 89,
+									"line": 90,
 									"character": 18,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/area.ts#L89"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/area.ts#L90"
 								}
 							],
 							"parameters": [
@@ -2267,9 +2245,9 @@
 					"sources": [
 						{
 							"fileName": "area.ts",
-							"line": 59,
+							"line": 60,
 							"character": 9,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/area.ts#L59"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/area.ts#L60"
 						}
 					],
 					"signatures": [
@@ -2298,9 +2276,9 @@
 							"sources": [
 								{
 									"fileName": "area.ts",
-									"line": 59,
+									"line": 60,
 									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/area.ts#L59"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/area.ts#L60"
 								}
 							],
 							"parameters": [
@@ -2342,9 +2320,9 @@
 			"sources": [
 				{
 					"fileName": "area.ts",
-					"line": 24,
+					"line": 25,
 					"character": 13,
-					"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/area.ts#L24"
+					"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/area.ts#L25"
 				}
 			],
 			"typeParameters": [
@@ -2394,7 +2372,7 @@
 							"fileName": "index.ts",
 							"line": 46,
 							"character": 2,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L46"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L46"
 						}
 					],
 					"signatures": [
@@ -2409,7 +2387,7 @@
 									"fileName": "index.ts",
 									"line": 46,
 									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L46"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L46"
 								}
 							],
 							"typeParameter": [
@@ -2521,7 +2499,7 @@
 							"fileName": "index.ts",
 							"line": 37,
 							"character": 9,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L37"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L37"
 						}
 					],
 					"type": {
@@ -2569,7 +2547,7 @@
 							"fileName": "index.ts",
 							"line": 213,
 							"character": 2,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L213"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L213"
 						}
 					],
 					"signatures": [
@@ -2592,7 +2570,7 @@
 									"fileName": "index.ts",
 									"line": 213,
 									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L213"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L213"
 								}
 							],
 							"type": {
@@ -2625,7 +2603,7 @@
 							"fileName": "index.ts",
 							"line": 192,
 							"character": 15,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L192"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L192"
 						}
 					],
 					"signatures": [
@@ -2648,7 +2626,7 @@
 									"fileName": "index.ts",
 									"line": 192,
 									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L192"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L192"
 								}
 							],
 							"parameters": [
@@ -2758,7 +2736,7 @@
 							"fileName": "index.ts",
 							"line": 77,
 							"character": 2,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L77"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L77"
 						}
 					],
 					"signatures": [
@@ -2792,7 +2770,7 @@
 									"fileName": "index.ts",
 									"line": 77,
 									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L77"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L77"
 								}
 							],
 							"type": {
@@ -2831,7 +2809,7 @@
 							"fileName": "index.ts",
 							"line": 180,
 							"character": 15,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L180"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L180"
 						}
 					],
 					"signatures": [
@@ -2854,7 +2832,7 @@
 									"fileName": "index.ts",
 									"line": 180,
 									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L180"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L180"
 								}
 							],
 							"parameters": [
@@ -2952,7 +2930,7 @@
 							"fileName": "index.ts",
 							"line": 204,
 							"character": 15,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L204"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L204"
 						}
 					],
 					"signatures": [
@@ -2986,7 +2964,7 @@
 									"fileName": "index.ts",
 									"line": 204,
 									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L204"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L204"
 								}
 							],
 							"parameters": [
@@ -3113,7 +3091,7 @@
 					"fileName": "index.ts",
 					"line": 33,
 					"character": 13,
-					"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L33"
+					"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L33"
 				}
 			],
 			"typeParameters": [
@@ -3224,7 +3202,7 @@
 							"fileName": "scene/HybridRenderer.ts",
 							"line": 9,
 							"character": 2,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/scene/HybridRenderer.ts#L9"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/scene/HybridRenderer.ts#L9"
 						}
 					],
 					"type": {
@@ -3256,7 +3234,7 @@
 							"fileName": "scene/HybridRenderer.ts",
 							"line": 11,
 							"character": 2,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/scene/HybridRenderer.ts#L11"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/scene/HybridRenderer.ts#L11"
 						}
 					],
 					"type": {
@@ -3284,7 +3262,7 @@
 					"fileName": "scene/HybridRenderer.ts",
 					"line": 7,
 					"character": 13,
-					"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/scene/HybridRenderer.ts#L7"
+					"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/scene/HybridRenderer.ts#L7"
 				}
 			]
 		},
@@ -3314,9 +3292,9 @@
 					"sources": [
 						{
 							"fileName": "scene/index.ts",
-							"line": 113,
+							"line": 115,
 							"character": 9,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/scene/index.ts#L113"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/scene/index.ts#L115"
 						}
 					],
 					"signatures": [
@@ -3345,9 +3323,9 @@
 							"sources": [
 								{
 									"fileName": "scene/index.ts",
-									"line": 113,
+									"line": 115,
 									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/scene/index.ts#L113"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/scene/index.ts#L115"
 								}
 							],
 							"type": {
@@ -3369,9 +3347,9 @@
 			"sources": [
 				{
 					"fileName": "scene/index.ts",
-					"line": 19,
+					"line": 21,
 					"character": 13,
-					"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/scene/index.ts#L19"
+					"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/scene/index.ts#L21"
 				}
 			],
 			"typeParameters": [
@@ -3414,7 +3392,7 @@
 					"fileName": "index.ts",
 					"line": 21,
 					"character": 12,
-					"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L21"
+					"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L21"
 				}
 			],
 			"typeParameters": [
@@ -3475,7 +3453,7 @@
 											"fileName": "index.ts",
 											"line": 23,
 											"character": 25,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L23"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L23"
 										}
 									],
 									"type": {
@@ -3499,7 +3477,7 @@
 											"fileName": "index.ts",
 											"line": 23,
 											"character": 6,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L23"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L23"
 										}
 									],
 									"type": {
@@ -3522,7 +3500,7 @@
 									"fileName": "index.ts",
 									"line": 23,
 									"character": 4,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L23"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L23"
 								}
 							]
 						}
@@ -3547,7 +3525,7 @@
 											"fileName": "index.ts",
 											"line": 24,
 											"character": 27,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L24"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L24"
 										}
 									],
 									"type": {
@@ -3571,7 +3549,7 @@
 											"fileName": "index.ts",
 											"line": 24,
 											"character": 6,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L24"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L24"
 										}
 									],
 									"type": {
@@ -3594,7 +3572,7 @@
 									"fileName": "index.ts",
 									"line": 24,
 									"character": 4,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L24"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L24"
 								}
 							]
 						}
@@ -3619,7 +3597,7 @@
 											"fileName": "index.ts",
 											"line": 25,
 											"character": 23,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L25"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L25"
 										}
 									],
 									"type": {
@@ -3642,7 +3620,7 @@
 															"fileName": "index.ts",
 															"line": 25,
 															"character": 31,
-															"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L25"
+															"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L25"
 														}
 													],
 													"type": {
@@ -3669,7 +3647,7 @@
 													"fileName": "index.ts",
 													"line": 25,
 													"character": 29,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L25"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L25"
 												}
 											]
 										}
@@ -3686,7 +3664,7 @@
 											"fileName": "index.ts",
 											"line": 25,
 											"character": 6,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L25"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L25"
 										}
 									],
 									"type": {
@@ -3709,7 +3687,7 @@
 									"fileName": "index.ts",
 									"line": 25,
 									"character": 4,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/2f3b4c8/src/index.ts#L25"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/246df6c/src/index.ts#L25"
 								}
 							]
 						}
