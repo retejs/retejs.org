@@ -31,7 +31,7 @@
 							"fileName": "appliers/list/standard.ts",
 							"line": 10,
 							"character": 13,
-							"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/standard.ts#L10"
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/appliers/list/standard.ts#L10"
 						}
 					],
 					"typeParameters": [
@@ -118,7 +118,7 @@
 									"fileName": "appliers/list/transition/index.ts",
 									"line": 33,
 									"character": 2,
-									"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L33"
+									"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/appliers/list/transition/index.ts#L33"
 								}
 							],
 							"signatures": [
@@ -133,7 +133,7 @@
 											"fileName": "appliers/list/transition/index.ts",
 											"line": 33,
 											"character": 2,
-											"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L33"
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/appliers/list/transition/index.ts#L33"
 										}
 									],
 									"typeParameter": [
@@ -233,7 +233,7 @@
 							"fileName": "appliers/list/transition/index.ts",
 							"line": 25,
 							"character": 13,
-							"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L25"
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/appliers/list/transition/index.ts#L25"
 						}
 					],
 					"typeParameters": [
@@ -303,7 +303,7 @@
 							"fileName": "appliers/list/transition/index.ts",
 							"line": 11,
 							"character": 12,
-							"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L11"
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/appliers/list/transition/index.ts#L11"
 						}
 					],
 					"type": {
@@ -336,7 +336,7 @@
 											"fileName": "appliers/list/transition/index.ts",
 											"line": 13,
 											"character": 2,
-											"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L13"
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/appliers/list/transition/index.ts#L13"
 										}
 									],
 									"type": {
@@ -357,7 +357,7 @@
 											"fileName": "appliers/list/transition/index.ts",
 											"line": 19,
 											"character": 2,
-											"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L19"
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/appliers/list/transition/index.ts#L19"
 										}
 									],
 									"type": {
@@ -373,7 +373,7 @@
 													"fileName": "appliers/list/transition/index.ts",
 													"line": 19,
 													"character": 16,
-													"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L19"
+													"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/appliers/list/transition/index.ts#L19"
 												}
 											],
 											"signatures": [
@@ -431,7 +431,7 @@
 											"fileName": "appliers/list/transition/index.ts",
 											"line": 17,
 											"character": 2,
-											"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L17"
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/appliers/list/transition/index.ts#L17"
 										}
 									],
 									"type": {
@@ -447,7 +447,7 @@
 													"fileName": "appliers/list/transition/index.ts",
 													"line": 17,
 													"character": 11,
-													"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L17"
+													"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/appliers/list/transition/index.ts#L17"
 												}
 											],
 											"signatures": [
@@ -500,7 +500,7 @@
 											"fileName": "appliers/list/transition/index.ts",
 											"line": 15,
 											"character": 2,
-											"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L15"
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/appliers/list/transition/index.ts#L15"
 										}
 									],
 									"type": {
@@ -516,7 +516,7 @@
 													"fileName": "appliers/list/transition/index.ts",
 													"line": 15,
 													"character": 19,
-													"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L15"
+													"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/appliers/list/transition/index.ts#L15"
 												}
 											],
 											"signatures": [
@@ -573,7 +573,7 @@
 									"fileName": "appliers/list/transition/index.ts",
 									"line": 11,
 									"character": 20,
-									"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/list/transition/index.ts#L11"
+									"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/appliers/list/transition/index.ts#L11"
 								}
 							]
 						}
@@ -600,7 +600,7 @@
 					"fileName": "appliers/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/appliers/index.ts#L1"
+					"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/appliers/index.ts#L1"
 				}
 			]
 		},
@@ -637,7 +637,7 @@
 									"fileName": "presets/classic/index.ts",
 									"line": 7,
 									"character": 13,
-									"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/presets/classic/index.ts#L7"
+									"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/presets/classic/index.ts#L7"
 								}
 							],
 							"signatures": [
@@ -671,7 +671,7 @@
 											"fileName": "presets/classic/index.ts",
 											"line": 7,
 											"character": 21,
-											"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/presets/classic/index.ts#L7"
+											"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/presets/classic/index.ts#L7"
 										}
 									],
 									"parameters": [
@@ -705,7 +705,7 @@
 																	"fileName": "presets/classic/index.ts",
 																	"line": 7,
 																	"character": 64,
-																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/presets/classic/index.ts#L7"
+																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/presets/classic/index.ts#L7"
 																}
 															],
 															"type": {
@@ -726,7 +726,7 @@
 																	"fileName": "presets/classic/index.ts",
 																	"line": 7,
 																	"character": 32,
-																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/presets/classic/index.ts#L7"
+																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/presets/classic/index.ts#L7"
 																}
 															],
 															"type": {
@@ -747,7 +747,7 @@
 																	"fileName": "presets/classic/index.ts",
 																	"line": 7,
 																	"character": 50,
-																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/presets/classic/index.ts#L7"
+																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/presets/classic/index.ts#L7"
 																}
 															],
 															"type": {
@@ -771,7 +771,7 @@
 															"fileName": "presets/classic/index.ts",
 															"line": 7,
 															"character": 30,
-															"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/presets/classic/index.ts#L7"
+															"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/presets/classic/index.ts#L7"
 														}
 													]
 												}
@@ -804,7 +804,7 @@
 							"fileName": "presets/classic/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/presets/classic/index.ts#L1"
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/presets/classic/index.ts#L1"
 						}
 					]
 				}
@@ -822,7 +822,7 @@
 					"fileName": "presets/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/presets/index.ts#L1"
+					"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/presets/index.ts#L1"
 				}
 			]
 		},
@@ -869,7 +869,7 @@
 							"fileName": "index.ts",
 							"line": 36,
 							"character": 9,
-							"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L36"
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/index.ts#L36"
 						}
 					],
 					"signatures": [
@@ -892,7 +892,7 @@
 									"fileName": "index.ts",
 									"line": 36,
 									"character": 2,
-									"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L36"
+									"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/index.ts#L36"
 								}
 							],
 							"parameters": [
@@ -939,7 +939,7 @@
 							"fileName": "index.ts",
 							"line": 180,
 							"character": 8,
-							"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L180"
+							"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/index.ts#L180"
 						}
 					],
 					"signatures": [
@@ -973,7 +973,7 @@
 									"fileName": "index.ts",
 									"line": 180,
 									"character": 2,
-									"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L180"
+									"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/index.ts#L180"
 								}
 							],
 							"parameters": [
@@ -1026,7 +1026,7 @@
 																	"fileName": "index.ts",
 																	"line": 180,
 																	"character": 50,
-																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L180"
+																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/index.ts#L180"
 																}
 															],
 															"type": {
@@ -1074,7 +1074,7 @@
 																	"fileName": "index.ts",
 																	"line": 180,
 																	"character": 25,
-																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L180"
+																	"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/index.ts#L180"
 																}
 															],
 															"type": {
@@ -1102,7 +1102,7 @@
 															"fileName": "index.ts",
 															"line": 180,
 															"character": 23,
-															"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L180"
+															"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/index.ts#L180"
 														}
 													]
 												}
@@ -1166,7 +1166,7 @@
 															"fileName": "index.ts",
 															"line": 209,
 															"character": 8,
-															"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L209"
+															"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/index.ts#L209"
 														}
 													],
 													"type": {
@@ -1186,7 +1186,7 @@
 															"fileName": "index.ts",
 															"line": 211,
 															"character": 8,
-															"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L211"
+															"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/index.ts#L211"
 														}
 													],
 													"type": {
@@ -1210,7 +1210,7 @@
 															"fileName": "index.ts",
 															"line": 210,
 															"character": 8,
-															"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L210"
+															"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/index.ts#L210"
 														}
 													],
 													"type": {
@@ -1234,7 +1234,7 @@
 													"fileName": "index.ts",
 													"line": 208,
 													"character": 13,
-													"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L208"
+													"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/index.ts#L208"
 												}
 											]
 										}
@@ -1261,7 +1261,7 @@
 					"fileName": "index.ts",
 					"line": 23,
 					"character": 13,
-					"url": "https://github.com/retejs/auto-arrange-plugin/blob/bc4a09f/src/index.ts#L23"
+					"url": "https://github.com/retejs/auto-arrange-plugin/blob/d7084ee/src/index.ts#L23"
 				}
 			],
 			"typeParameters": [
