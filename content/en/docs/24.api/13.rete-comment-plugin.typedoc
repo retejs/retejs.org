@@ -31,7 +31,7 @@
 							"fileName": "extensions/selectable.ts",
 							"line": 13,
 							"character": 16,
-							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/extensions/selectable.ts#L13"
+							"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/extensions/selectable.ts#L13"
 						}
 					],
 					"signatures": [
@@ -54,7 +54,7 @@
 									"fileName": "extensions/selectable.ts",
 									"line": 13,
 									"character": 0,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/extensions/selectable.ts#L13"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/extensions/selectable.ts#L13"
 								}
 							],
 							"typeParameter": [
@@ -187,7 +187,7 @@
 															"fileName": "extensions/selectable.ts",
 															"line": 13,
 															"character": 122,
-															"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/extensions/selectable.ts#L13"
+															"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/extensions/selectable.ts#L13"
 														}
 													],
 													"signatures": [
@@ -202,7 +202,7 @@
 																	"fileName": "extensions/selectable.ts",
 																	"line": 13,
 																	"character": 122,
-																	"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/extensions/selectable.ts#L13"
+																	"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/extensions/selectable.ts#L13"
 																}
 															],
 															"type": {
@@ -226,7 +226,7 @@
 													"fileName": "extensions/selectable.ts",
 													"line": 13,
 													"character": 120,
-													"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/extensions/selectable.ts#L13"
+													"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/extensions/selectable.ts#L13"
 												}
 											]
 										}
@@ -254,7 +254,7 @@
 					"fileName": "extensions/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/extensions/index.ts#L1"
+					"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/extensions/index.ts#L1"
 				}
 			]
 		},
@@ -295,7 +295,7 @@
 							"fileName": "index.ts",
 							"line": 50,
 							"character": 2,
-							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L50"
+							"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L50"
 						}
 					],
 					"signatures": [
@@ -310,7 +310,7 @@
 									"fileName": "index.ts",
 									"line": 50,
 									"character": 2,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L50"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L50"
 								}
 							],
 							"typeParameter": [
@@ -426,7 +426,7 @@
 							"fileName": "index.ts",
 							"line": 202,
 							"character": 9,
-							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L202"
+							"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L202"
 						}
 					],
 					"signatures": [
@@ -449,7 +449,7 @@
 									"fileName": "index.ts",
 									"line": 202,
 									"character": 2,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L202"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L202"
 								}
 							],
 							"parameters": [
@@ -516,7 +516,7 @@
 							"fileName": "index.ts",
 							"line": 178,
 							"character": 9,
-							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L178"
+							"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L178"
 						}
 					],
 					"signatures": [
@@ -539,7 +539,7 @@
 									"fileName": "index.ts",
 									"line": 178,
 									"character": 2,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L178"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L178"
 								}
 							],
 							"parameters": [
@@ -632,7 +632,7 @@
 							"fileName": "index.ts",
 							"line": 286,
 							"character": 9,
-							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L286"
+							"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L286"
 						}
 					],
 					"signatures": [
@@ -655,7 +655,7 @@
 									"fileName": "index.ts",
 									"line": 286,
 									"character": 2,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L286"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L286"
 								}
 							],
 							"type": {
@@ -678,7 +678,7 @@
 							"fileName": "index.ts",
 							"line": 230,
 							"character": 9,
-							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L230"
+							"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L230"
 						}
 					],
 					"signatures": [
@@ -701,7 +701,7 @@
 									"fileName": "index.ts",
 									"line": 230,
 									"character": 2,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L230"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L230"
 								}
 							],
 							"parameters": [
@@ -743,7 +743,7 @@
 							"fileName": "index.ts",
 							"line": 157,
 							"character": 8,
-							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L157"
+							"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L157"
 						}
 					],
 					"signatures": [
@@ -766,7 +766,7 @@
 									"fileName": "index.ts",
 									"line": 157,
 									"character": 2,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L157"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L157"
 								}
 							],
 							"parameters": [
@@ -821,7 +821,7 @@
 							"fileName": "index.ts",
 							"line": 261,
 							"character": 9,
-							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L261"
+							"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L261"
 						}
 					],
 					"signatures": [
@@ -844,7 +844,7 @@
 									"fileName": "index.ts",
 									"line": 261,
 									"character": 2,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L261"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L261"
 								}
 							],
 							"parameters": [
@@ -888,7 +888,7 @@
 							"fileName": "index.ts",
 							"line": 249,
 							"character": 9,
-							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L249"
+							"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L249"
 						}
 					],
 					"signatures": [
@@ -911,7 +911,7 @@
 									"fileName": "index.ts",
 									"line": 249,
 									"character": 2,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L249"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L249"
 								}
 							],
 							"parameters": [
@@ -993,7 +993,7 @@
 							"fileName": "index.ts",
 							"line": 274,
 							"character": 9,
-							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L274"
+							"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L274"
 						}
 					],
 					"signatures": [
@@ -1016,7 +1016,7 @@
 									"fileName": "index.ts",
 									"line": 274,
 									"character": 2,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L274"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L274"
 								}
 							],
 							"parameters": [
@@ -1074,7 +1074,7 @@
 					"fileName": "index.ts",
 					"line": 41,
 					"character": 13,
-					"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L41"
+					"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L41"
 				}
 			],
 			"typeParameters": [
@@ -1202,7 +1202,7 @@
 					"fileName": "index.ts",
 					"line": 20,
 					"character": 12,
-					"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L20"
+					"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L20"
 				}
 			],
 			"type": {
@@ -1228,7 +1228,7 @@
 											"fileName": "index.ts",
 											"line": 21,
 											"character": 30,
-											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L21"
+											"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L21"
 										}
 									],
 									"type": {
@@ -1252,7 +1252,7 @@
 											"fileName": "index.ts",
 											"line": 21,
 											"character": 6,
-											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L21"
+											"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L21"
 										}
 									],
 									"type": {
@@ -1275,7 +1275,7 @@
 									"fileName": "index.ts",
 									"line": 21,
 									"character": 4,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L21"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L21"
 								}
 							]
 						}
@@ -1300,7 +1300,7 @@
 											"fileName": "index.ts",
 											"line": 22,
 											"character": 30,
-											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L22"
+											"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L22"
 										}
 									],
 									"type": {
@@ -1324,7 +1324,7 @@
 											"fileName": "index.ts",
 											"line": 22,
 											"character": 6,
-											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L22"
+											"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L22"
 										}
 									],
 									"type": {
@@ -1347,7 +1347,7 @@
 									"fileName": "index.ts",
 									"line": 22,
 									"character": 4,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L22"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L22"
 								}
 							]
 						}
@@ -1372,7 +1372,7 @@
 											"fileName": "index.ts",
 											"line": 23,
 											"character": 27,
-											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L23"
+											"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L23"
 										}
 									],
 									"type": {
@@ -1396,7 +1396,7 @@
 											"fileName": "index.ts",
 											"line": 23,
 											"character": 6,
-											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L23"
+											"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L23"
 										}
 									],
 									"type": {
@@ -1419,7 +1419,7 @@
 									"fileName": "index.ts",
 									"line": 23,
 									"character": 4,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L23"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L23"
 								}
 							]
 						}
@@ -1444,7 +1444,7 @@
 											"fileName": "index.ts",
 											"line": 24,
 											"character": 31,
-											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L24"
+											"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L24"
 										}
 									],
 									"type": {
@@ -1468,7 +1468,7 @@
 											"fileName": "index.ts",
 											"line": 24,
 											"character": 6,
-											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L24"
+											"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L24"
 										}
 									],
 									"type": {
@@ -1491,7 +1491,7 @@
 									"fileName": "index.ts",
 									"line": 24,
 									"character": 4,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L24"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L24"
 								}
 							]
 						}
@@ -1516,7 +1516,7 @@
 											"fileName": "index.ts",
 											"line": 25,
 											"character": 33,
-											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L25"
+											"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L25"
 										}
 									],
 									"type": {
@@ -1540,7 +1540,7 @@
 											"fileName": "index.ts",
 											"line": 25,
 											"character": 6,
-											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L25"
+											"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L25"
 										}
 									],
 									"type": {
@@ -1563,7 +1563,7 @@
 									"fileName": "index.ts",
 									"line": 25,
 									"character": 4,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L25"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L25"
 								}
 							]
 						}
@@ -1588,7 +1588,7 @@
 											"fileName": "index.ts",
 											"line": 26,
 											"character": 33,
-											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L26"
+											"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L26"
 										}
 									],
 									"type": {
@@ -1611,7 +1611,7 @@
 															"fileName": "index.ts",
 															"line": 26,
 															"character": 60,
-															"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L26"
+															"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L26"
 														}
 													],
 													"type": {
@@ -1630,7 +1630,7 @@
 															"fileName": "index.ts",
 															"line": 26,
 															"character": 72,
-															"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L26"
+															"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L26"
 														}
 													],
 													"type": {
@@ -1649,7 +1649,7 @@
 															"fileName": "index.ts",
 															"line": 26,
 															"character": 41,
-															"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L26"
+															"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L26"
 														}
 													],
 													"type": {
@@ -1682,7 +1682,7 @@
 															"fileName": "index.ts",
 															"line": 26,
 															"character": 84,
-															"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L26"
+															"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L26"
 														}
 													],
 													"type": {
@@ -1715,7 +1715,7 @@
 													"fileName": "index.ts",
 													"line": 26,
 													"character": 39,
-													"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L26"
+													"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L26"
 												}
 											]
 										}
@@ -1732,7 +1732,7 @@
 											"fileName": "index.ts",
 											"line": 26,
 											"character": 6,
-											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L26"
+											"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L26"
 										}
 									],
 									"type": {
@@ -1755,7 +1755,7 @@
 									"fileName": "index.ts",
 									"line": 26,
 									"character": 4,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L26"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L26"
 								}
 							]
 						}
@@ -1780,7 +1780,7 @@
 											"fileName": "index.ts",
 											"line": 27,
 											"character": 36,
-											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L27"
+											"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L27"
 										}
 									],
 									"type": {
@@ -1803,7 +1803,7 @@
 															"fileName": "index.ts",
 															"line": 27,
 															"character": 44,
-															"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L27"
+															"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L27"
 														}
 													],
 													"type": {
@@ -1834,7 +1834,7 @@
 															"fileName": "index.ts",
 															"line": 27,
 															"character": 63,
-															"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L27"
+															"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L27"
 														}
 													],
 													"type": {
@@ -1857,7 +1857,7 @@
 													"fileName": "index.ts",
 													"line": 27,
 													"character": 42,
-													"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L27"
+													"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L27"
 												}
 											]
 										}
@@ -1874,7 +1874,7 @@
 											"fileName": "index.ts",
 											"line": 27,
 											"character": 6,
-											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L27"
+											"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L27"
 										}
 									],
 									"type": {
@@ -1897,7 +1897,7 @@
 									"fileName": "index.ts",
 									"line": 27,
 									"character": 4,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L27"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L27"
 								}
 							]
 						}
@@ -1924,7 +1924,7 @@
 					"fileName": "index.ts",
 					"line": 32,
 					"character": 12,
-					"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L32"
+					"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L32"
 				}
 			],
 			"type": {
@@ -1949,7 +1949,7 @@
 									"fileName": "index.ts",
 									"line": 34,
 									"character": 2,
-									"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L34"
+									"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L34"
 								}
 							],
 							"type": {
@@ -1965,7 +1965,7 @@
 											"fileName": "index.ts",
 											"line": 34,
 											"character": 9,
-											"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L34"
+											"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L34"
 										}
 									],
 									"signatures": [
@@ -2035,7 +2035,7 @@
 							"fileName": "index.ts",
 							"line": 32,
 							"character": 20,
-							"url": "https://github.com/retejs/comment-plugin/blob/51a5da1/src/index.ts#L32"
+							"url": "https://github.com/retejs/comment-plugin/blob/b8d7b7e/src/index.ts#L32"
 						}
 					]
 				}
