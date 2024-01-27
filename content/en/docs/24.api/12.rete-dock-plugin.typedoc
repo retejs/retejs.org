@@ -38,7 +38,7 @@
 									"fileName": "presets/classic/index.ts",
 									"line": 63,
 									"character": 16,
-									"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/presets/classic/index.ts#L63"
+									"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/presets/classic/index.ts#L63"
 								}
 							],
 							"signatures": [
@@ -61,7 +61,7 @@
 											"fileName": "presets/classic/index.ts",
 											"line": 63,
 											"character": 0,
-											"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/presets/classic/index.ts#L63"
+											"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/presets/classic/index.ts#L63"
 										}
 									],
 									"typeParameter": [
@@ -116,7 +116,7 @@
 																	"fileName": "presets/classic/index.ts",
 																	"line": 63,
 																	"character": 65,
-																	"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/presets/classic/index.ts#L63"
+																	"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/presets/classic/index.ts#L63"
 																}
 															],
 															"type": {
@@ -167,7 +167,7 @@
 																	"fileName": "presets/classic/index.ts",
 																	"line": 63,
 																	"character": 49,
-																	"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/presets/classic/index.ts#L63"
+																	"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/presets/classic/index.ts#L63"
 																}
 															],
 															"type": {
@@ -196,7 +196,7 @@
 																	"fileName": "presets/classic/index.ts",
 																	"line": 63,
 																	"character": 34,
-																	"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/presets/classic/index.ts#L63"
+																	"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/presets/classic/index.ts#L63"
 																}
 															],
 															"type": {
@@ -220,7 +220,7 @@
 															"fileName": "presets/classic/index.ts",
 															"line": 63,
 															"character": 32,
-															"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/presets/classic/index.ts#L63"
+															"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/presets/classic/index.ts#L63"
 														}
 													]
 												}
@@ -253,7 +253,7 @@
 							"fileName": "presets/classic/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/presets/classic/index.ts#L1"
+							"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/presets/classic/index.ts#L1"
 						}
 					]
 				}
@@ -271,7 +271,7 @@
 					"fileName": "presets/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/presets/index.ts#L1"
+					"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/presets/index.ts#L1"
 				}
 			]
 		},
@@ -321,7 +321,7 @@
 							"fileName": "index.ts",
 							"line": 41,
 							"character": 2,
-							"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L41"
+							"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/index.ts#L41"
 						}
 					],
 					"signatures": [
@@ -344,7 +344,7 @@
 									"fileName": "index.ts",
 									"line": 41,
 									"character": 2,
-									"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L41"
+									"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/index.ts#L41"
 								}
 							],
 							"parameters": [
@@ -375,7 +375,7 @@
 													"fileName": "index.ts",
 													"line": 41,
 													"character": 14,
-													"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L41"
+													"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/index.ts#L41"
 												}
 											],
 											"signatures": [
@@ -390,7 +390,7 @@
 															"fileName": "index.ts",
 															"line": 41,
 															"character": 14,
-															"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L41"
+															"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/index.ts#L41"
 														}
 													],
 													"type": {
@@ -451,7 +451,7 @@
 							"fileName": "index.ts",
 							"line": 81,
 							"character": 2,
-							"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L81"
+							"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/index.ts#L81"
 						}
 					],
 					"signatures": [
@@ -474,7 +474,7 @@
 									"fileName": "index.ts",
 									"line": 81,
 									"character": 2,
-									"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L81"
+									"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/index.ts#L81"
 								}
 							],
 							"parameters": [
@@ -521,7 +521,7 @@
 							"fileName": "index.ts",
 							"line": 69,
 							"character": 2,
-							"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L69"
+							"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/index.ts#L69"
 						}
 					],
 					"signatures": [
@@ -544,7 +544,7 @@
 									"fileName": "index.ts",
 									"line": 69,
 									"character": 2,
-									"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L69"
+									"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/index.ts#L69"
 								}
 							],
 							"parameters": [
@@ -583,7 +583,7 @@
 													"fileName": "index.ts",
 													"line": 69,
 													"character": 17,
-													"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L69"
+													"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/index.ts#L69"
 												}
 											],
 											"signatures": [
@@ -598,7 +598,7 @@
 															"fileName": "index.ts",
 															"line": 69,
 															"character": 17,
-															"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L69"
+															"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/index.ts#L69"
 														}
 													],
 													"type": {
@@ -643,7 +643,7 @@
 					"fileName": "index.ts",
 					"line": 16,
 					"character": 13,
-					"url": "https://github.com/retejs/dock-plugin/blob/a904b97/src/index.ts#L16"
+					"url": "https://github.com/retejs/dock-plugin/blob/bfb8a2e/src/index.ts#L16"
 				}
 			],
 			"typeParameters": [
