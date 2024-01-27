@@ -84,7 +84,7 @@
 							"fileName": "sockets-position/base-socket-position.ts",
 							"line": 42,
 							"character": 2,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L42"
+							"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/base-socket-position.ts#L42"
 						}
 					],
 					"signatures": [
@@ -107,7 +107,7 @@
 									"fileName": "sockets-position/base-socket-position.ts",
 									"line": 42,
 									"character": 2,
-									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L42"
+									"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/base-socket-position.ts#L42"
 								}
 							],
 							"parameters": [
@@ -187,7 +187,7 @@
 							"fileName": "sockets-position/base-socket-position.ts",
 							"line": 36,
 							"character": 11,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L36"
+							"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/base-socket-position.ts#L36"
 						}
 					],
 					"signatures": [
@@ -210,7 +210,7 @@
 									"fileName": "sockets-position/base-socket-position.ts",
 									"line": 36,
 									"character": 2,
-									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L36"
+									"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/base-socket-position.ts#L36"
 								}
 							],
 							"parameters": [
@@ -344,7 +344,7 @@
 							"fileName": "sockets-position/base-socket-position.ts",
 							"line": 94,
 							"character": 2,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L94"
+							"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/base-socket-position.ts#L94"
 						}
 					],
 					"signatures": [
@@ -370,7 +370,7 @@
 									"fileName": "sockets-position/base-socket-position.ts",
 									"line": 94,
 									"character": 2,
-									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L94"
+									"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/base-socket-position.ts#L94"
 								}
 							],
 							"parameters": [
@@ -474,7 +474,7 @@
 											"fileName": "utils.ts",
 											"line": 45,
 											"character": 11,
-											"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L45"
+											"url": "https://github.com/retejs/render-utils/blob/88bd179/src/utils.ts#L45"
 										}
 									],
 									"signatures": [
@@ -489,7 +489,7 @@
 													"fileName": "utils.ts",
 													"line": 45,
 													"character": 11,
-													"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L45"
+													"url": "https://github.com/retejs/render-utils/blob/88bd179/src/utils.ts#L45"
 												}
 											],
 											"type": {
@@ -529,7 +529,7 @@
 					"fileName": "sockets-position/base-socket-position.ts",
 					"line": 24,
 					"character": 22,
-					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L24"
+					"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/base-socket-position.ts#L24"
 				}
 			],
 			"typeParameters": [
@@ -635,7 +635,7 @@
 							"fileName": "sockets-position/base-socket-position.ts",
 							"line": 42,
 							"character": 2,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L42"
+							"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/base-socket-position.ts#L42"
 						}
 					],
 					"signatures": [
@@ -658,7 +658,7 @@
 									"fileName": "sockets-position/base-socket-position.ts",
 									"line": 42,
 									"character": 2,
-									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L42"
+									"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/base-socket-position.ts#L42"
 								}
 							],
 							"parameters": [
@@ -736,7 +736,7 @@
 							"fileName": "sockets-position/base-socket-position.ts",
 							"line": 94,
 							"character": 2,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L94"
+							"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/base-socket-position.ts#L94"
 						}
 					],
 					"signatures": [
@@ -762,7 +762,7 @@
 									"fileName": "sockets-position/base-socket-position.ts",
 									"line": 94,
 									"character": 2,
-									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L94"
+									"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/base-socket-position.ts#L94"
 								}
 							],
 							"parameters": [
@@ -866,7 +866,7 @@
 											"fileName": "utils.ts",
 											"line": 45,
 											"character": 11,
-											"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L45"
+											"url": "https://github.com/retejs/render-utils/blob/88bd179/src/utils.ts#L45"
 										}
 									],
 									"signatures": [
@@ -881,7 +881,7 @@
 													"fileName": "utils.ts",
 													"line": 45,
 													"character": 11,
-													"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L45"
+													"url": "https://github.com/retejs/render-utils/blob/88bd179/src/utils.ts#L45"
 												}
 											],
 											"type": {
@@ -920,7 +920,7 @@
 					"fileName": "sockets-position/dom-socket-position.ts",
 					"line": 25,
 					"character": 13,
-					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/dom-socket-position.ts#L25"
+					"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/dom-socket-position.ts#L25"
 				}
 			],
 			"typeParameters": [
@@ -990,7 +990,7 @@
 					"fileName": "sockets-position/types.ts",
 					"line": 10,
 					"character": 12,
-					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L10"
+					"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/types.ts#L10"
 				}
 			],
 			"typeParameters": [
@@ -1022,7 +1022,7 @@
 									"fileName": "sockets-position/types.ts",
 									"line": 12,
 									"character": 2,
-									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L12"
+									"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/types.ts#L12"
 								}
 							],
 							"signatures": [
@@ -1045,7 +1045,7 @@
 											"fileName": "sockets-position/types.ts",
 											"line": 12,
 											"character": 2,
-											"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L12"
+											"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/types.ts#L12"
 										}
 									],
 									"parameters": [
@@ -1081,7 +1081,7 @@
 									"fileName": "sockets-position/types.ts",
 									"line": 21,
 									"character": 2,
-									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L21"
+									"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/types.ts#L21"
 								}
 							],
 							"signatures": [
@@ -1115,7 +1115,7 @@
 											"fileName": "sockets-position/types.ts",
 											"line": 21,
 											"character": 2,
-											"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L21"
+											"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/types.ts#L21"
 										}
 									],
 									"parameters": [
@@ -1219,7 +1219,7 @@
 													"fileName": "sockets-position/types.ts",
 													"line": 21,
 													"character": 72,
-													"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L21"
+													"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/types.ts#L21"
 												}
 											],
 											"signatures": [
@@ -1234,7 +1234,7 @@
 															"fileName": "sockets-position/types.ts",
 															"line": 21,
 															"character": 72,
-															"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L21"
+															"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/types.ts#L21"
 														}
 													],
 													"type": {
@@ -1263,7 +1263,7 @@
 							"fileName": "sockets-position/types.ts",
 							"line": 10,
 							"character": 48,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L10"
+							"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/types.ts#L10"
 						}
 					]
 				}
@@ -1287,7 +1287,7 @@
 					"fileName": "connection.ts",
 					"line": 8,
 					"character": 16,
-					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/connection.ts#L8"
+					"url": "https://github.com/retejs/render-utils/blob/88bd179/src/connection.ts#L8"
 				}
 			],
 			"signatures": [
@@ -1310,7 +1310,7 @@
 							"fileName": "connection.ts",
 							"line": 8,
 							"character": 0,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/connection.ts#L8"
+							"url": "https://github.com/retejs/render-utils/blob/88bd179/src/connection.ts#L8"
 						}
 					],
 					"parameters": [
@@ -1390,7 +1390,7 @@
 					"fileName": "sockets-position/dom-socket-position.ts",
 					"line": 49,
 					"character": 16,
-					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/dom-socket-position.ts#L49"
+					"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/dom-socket-position.ts#L49"
 				}
 			],
 			"signatures": [
@@ -1421,7 +1421,7 @@
 							"fileName": "sockets-position/dom-socket-position.ts",
 							"line": 49,
 							"character": 0,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/dom-socket-position.ts#L49"
+							"url": "https://github.com/retejs/render-utils/blob/88bd179/src/sockets-position/dom-socket-position.ts#L49"
 						}
 					],
 					"typeParameter": [
@@ -1519,7 +1519,7 @@
 					"fileName": "utils.ts",
 					"line": 11,
 					"character": 22,
-					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L11"
+					"url": "https://github.com/retejs/render-utils/blob/88bd179/src/utils.ts#L11"
 				}
 			],
 			"signatures": [
@@ -1566,7 +1566,7 @@
 							"fileName": "utils.ts",
 							"line": 11,
 							"character": 0,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L11"
+							"url": "https://github.com/retejs/render-utils/blob/88bd179/src/utils.ts#L11"
 						}
 					],
 					"parameters": [
@@ -1646,7 +1646,7 @@
 													"fileName": "utils.ts",
 													"line": 31,
 													"character": 4,
-													"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L31"
+													"url": "https://github.com/retejs/render-utils/blob/88bd179/src/utils.ts#L31"
 												}
 											],
 											"type": {
@@ -1666,7 +1666,7 @@
 													"fileName": "utils.ts",
 													"line": 32,
 													"character": 4,
-													"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L32"
+													"url": "https://github.com/retejs/render-utils/blob/88bd179/src/utils.ts#L32"
 												}
 											],
 											"type": {
@@ -1690,7 +1690,7 @@
 											"fileName": "utils.ts",
 											"line": 30,
 											"character": 9,
-											"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L30"
+											"url": "https://github.com/retejs/render-utils/blob/88bd179/src/utils.ts#L30"
 										}
 									]
 								}
@@ -1713,7 +1713,7 @@
 					"fileName": "connection.ts",
 					"line": 23,
 					"character": 16,
-					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/connection.ts#L23"
+					"url": "https://github.com/retejs/render-utils/blob/88bd179/src/connection.ts#L23"
 				}
 			],
 			"signatures": [
@@ -1736,7 +1736,7 @@
 							"fileName": "connection.ts",
 							"line": 23,
 							"character": 0,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/connection.ts#L23"
+							"url": "https://github.com/retejs/render-utils/blob/88bd179/src/connection.ts#L23"
 						}
 					],
 					"parameters": [
