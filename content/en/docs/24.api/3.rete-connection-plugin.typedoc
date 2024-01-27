@@ -38,7 +38,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 6,
 									"character": 16,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/presets/classic.ts#L6"
+									"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/presets/classic.ts#L6"
 								}
 							],
 							"signatures": [
@@ -69,7 +69,7 @@
 											"fileName": "presets/classic.ts",
 											"line": 6,
 											"character": 0,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/presets/classic.ts#L6"
+											"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/presets/classic.ts#L6"
 										}
 									],
 									"type": {
@@ -85,7 +85,7 @@
 													"fileName": "presets/classic.ts",
 													"line": 7,
 													"character": 9,
-													"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/presets/classic.ts#L7"
+													"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/presets/classic.ts#L7"
 												}
 											],
 											"signatures": [
@@ -100,7 +100,7 @@
 															"fileName": "presets/classic.ts",
 															"line": 7,
 															"character": 9,
-															"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/presets/classic.ts#L7"
+															"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/presets/classic.ts#L7"
 														}
 													],
 													"type": {
@@ -148,7 +148,7 @@
 							"fileName": "presets/classic.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/presets/classic.ts#L1"
+							"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/presets/classic.ts#L1"
 						}
 					]
 				}
@@ -166,7 +166,7 @@
 					"fileName": "presets/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/presets/index.ts#L1"
+					"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/presets/index.ts#L1"
 				}
 			]
 		},
@@ -189,7 +189,7 @@
 					"fileName": "flow/builtin/bidirect.ts",
 					"line": 63,
 					"character": 13,
-					"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/bidirect.ts#L63"
+					"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/flow/builtin/bidirect.ts#L63"
 				}
 			],
 			"typeParameters": [
@@ -292,7 +292,7 @@
 					"fileName": "flow/builtin/classic/index.ts",
 					"line": 135,
 					"character": 13,
-					"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/classic/index.ts#L135"
+					"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/flow/builtin/classic/index.ts#L135"
 				}
 			],
 			"typeParameters": [
@@ -469,7 +469,7 @@
 							"fileName": "index.ts",
 							"line": 51,
 							"character": 9,
-							"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/index.ts#L51"
+							"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/index.ts#L51"
 						}
 					],
 					"signatures": [
@@ -492,7 +492,7 @@
 									"fileName": "index.ts",
 									"line": 51,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/index.ts#L51"
+									"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/index.ts#L51"
 								}
 							],
 							"parameters": [
@@ -547,7 +547,7 @@
 							"fileName": "index.ts",
 							"line": 77,
 							"character": 2,
-							"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/index.ts#L77"
+							"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/index.ts#L77"
 						}
 					],
 					"signatures": [
@@ -581,7 +581,7 @@
 									"fileName": "index.ts",
 									"line": 77,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/index.ts#L77"
+									"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/index.ts#L77"
 								}
 							],
 							"type": {
@@ -606,7 +606,7 @@
 					"fileName": "index.ts",
 					"line": 35,
 					"character": 13,
-					"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/index.ts#L35"
+					"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/index.ts#L35"
 				}
 			],
 			"typeParameters": [
@@ -707,7 +707,7 @@
 					"fileName": "flow/builtin/bidirect.ts",
 					"line": 8,
 					"character": 12,
-					"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/bidirect.ts#L8"
+					"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/flow/builtin/bidirect.ts#L8"
 				}
 			],
 			"typeParameters": [
@@ -748,7 +748,7 @@
 									"fileName": "flow/builtin/bidirect.ts",
 									"line": 12,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/bidirect.ts#L12"
+									"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/flow/builtin/bidirect.ts#L12"
 								}
 							],
 							"type": {
@@ -764,7 +764,7 @@
 											"fileName": "flow/builtin/bidirect.ts",
 											"line": 12,
 											"character": 18,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/bidirect.ts#L12"
+											"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/flow/builtin/bidirect.ts#L12"
 										}
 									],
 									"signatures": [
@@ -899,7 +899,7 @@
 									"fileName": "flow/builtin/bidirect.ts",
 									"line": 10,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/bidirect.ts#L10"
+									"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/flow/builtin/bidirect.ts#L10"
 								}
 							],
 							"type": {
@@ -922,7 +922,7 @@
 							"fileName": "flow/builtin/bidirect.ts",
 							"line": 8,
 							"character": 60,
-							"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/bidirect.ts#L8"
+							"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/flow/builtin/bidirect.ts#L8"
 						}
 					]
 				}
@@ -947,7 +947,7 @@
 					"fileName": "flow/builtin/classic/index.ts",
 					"line": 12,
 					"character": 12,
-					"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/classic/index.ts#L12"
+					"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/flow/builtin/classic/index.ts#L12"
 				}
 			],
 			"typeParameters": [
@@ -988,7 +988,7 @@
 									"fileName": "flow/builtin/classic/index.ts",
 									"line": 14,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/classic/index.ts#L14"
+									"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/flow/builtin/classic/index.ts#L14"
 								}
 							],
 							"type": {
@@ -1004,7 +1004,7 @@
 											"fileName": "flow/builtin/classic/index.ts",
 											"line": 14,
 											"character": 21,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/classic/index.ts#L14"
+											"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/flow/builtin/classic/index.ts#L14"
 										}
 									],
 									"signatures": [
@@ -1085,7 +1085,7 @@
 									"fileName": "flow/builtin/classic/index.ts",
 									"line": 16,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/classic/index.ts#L16"
+									"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/flow/builtin/classic/index.ts#L16"
 								}
 							],
 							"type": {
@@ -1101,7 +1101,7 @@
 											"fileName": "flow/builtin/classic/index.ts",
 											"line": 16,
 											"character": 18,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/classic/index.ts#L16"
+											"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/flow/builtin/classic/index.ts#L16"
 										}
 									],
 									"signatures": [
@@ -1232,7 +1232,7 @@
 							"fileName": "flow/builtin/classic/index.ts",
 							"line": 12,
 							"character": 59,
-							"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/classic/index.ts#L12"
+							"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/flow/builtin/classic/index.ts#L12"
 						}
 					]
 				}
@@ -1268,7 +1268,7 @@
 					"fileName": "types.ts",
 					"line": 29,
 					"character": 12,
-					"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L29"
+					"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/types.ts#L29"
 				}
 			],
 			"type": {
@@ -1294,7 +1294,7 @@
 											"fileName": "types.ts",
 											"line": 30,
 											"character": 30,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L30"
+											"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/types.ts#L30"
 										}
 									],
 									"type": {
@@ -1317,7 +1317,7 @@
 															"fileName": "types.ts",
 															"line": 30,
 															"character": 38,
-															"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L30"
+															"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/types.ts#L30"
 														}
 													],
 													"type": {
@@ -1344,7 +1344,7 @@
 													"fileName": "types.ts",
 													"line": 30,
 													"character": 36,
-													"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L30"
+													"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/types.ts#L30"
 												}
 											]
 										}
@@ -1361,7 +1361,7 @@
 											"fileName": "types.ts",
 											"line": 30,
 											"character": 6,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L30"
+											"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/types.ts#L30"
 										}
 									],
 									"type": {
@@ -1384,7 +1384,7 @@
 									"fileName": "types.ts",
 									"line": 30,
 									"character": 4,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L30"
+									"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/types.ts#L30"
 								}
 							]
 						}
@@ -1409,7 +1409,7 @@
 											"fileName": "types.ts",
 											"line": 31,
 											"character": 30,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L31"
+											"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/types.ts#L31"
 										}
 									],
 									"type": {
@@ -1432,7 +1432,7 @@
 															"fileName": "types.ts",
 															"line": 31,
 															"character": 86,
-															"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L31"
+															"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/types.ts#L31"
 														}
 													],
 													"type": {
@@ -1451,7 +1451,7 @@
 															"fileName": "types.ts",
 															"line": 31,
 															"character": 38,
-															"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L31"
+															"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/types.ts#L31"
 														}
 													],
 													"type": {
@@ -1475,7 +1475,7 @@
 															"fileName": "types.ts",
 															"line": 31,
 															"character": 59,
-															"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L31"
+															"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/types.ts#L31"
 														}
 													],
 													"type": {
@@ -1513,7 +1513,7 @@
 													"fileName": "types.ts",
 													"line": 31,
 													"character": 36,
-													"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L31"
+													"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/types.ts#L31"
 												}
 											]
 										}
@@ -1530,7 +1530,7 @@
 											"fileName": "types.ts",
 											"line": 31,
 											"character": 6,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L31"
+											"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/types.ts#L31"
 										}
 									],
 									"type": {
@@ -1553,7 +1553,7 @@
 									"fileName": "types.ts",
 									"line": 31,
 									"character": 4,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L31"
+									"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/types.ts#L31"
 								}
 							]
 						}
@@ -1572,7 +1572,7 @@
 					"fileName": "pseudoconnection.ts",
 					"line": 11,
 					"character": 16,
-					"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L11"
+					"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/pseudoconnection.ts#L11"
 				}
 			],
 			"signatures": [
@@ -1603,7 +1603,7 @@
 							"fileName": "pseudoconnection.ts",
 							"line": 11,
 							"character": 0,
-							"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L11"
+							"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/pseudoconnection.ts#L11"
 						}
 					],
 					"typeParameter": [
@@ -1694,7 +1694,7 @@
 											"fileName": "pseudoconnection.ts",
 											"line": 31,
 											"character": 4,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L31"
+											"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/pseudoconnection.ts#L31"
 										}
 									],
 									"type": {
@@ -1710,7 +1710,7 @@
 													"fileName": "pseudoconnection.ts",
 													"line": 22,
 													"character": 11,
-													"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L22"
+													"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/pseudoconnection.ts#L22"
 												}
 											],
 											"signatures": [
@@ -1725,7 +1725,7 @@
 															"fileName": "pseudoconnection.ts",
 															"line": 22,
 															"character": 2,
-															"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L22"
+															"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/pseudoconnection.ts#L22"
 														}
 													],
 													"parameters": [
@@ -1802,7 +1802,7 @@
 											"fileName": "pseudoconnection.ts",
 											"line": 72,
 											"character": 4,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L72"
+											"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/pseudoconnection.ts#L72"
 										}
 									],
 									"type": {
@@ -1818,7 +1818,7 @@
 													"fileName": "pseudoconnection.ts",
 													"line": 15,
 													"character": 11,
-													"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L15"
+													"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/pseudoconnection.ts#L15"
 												}
 											],
 											"signatures": [
@@ -1833,7 +1833,7 @@
 															"fileName": "pseudoconnection.ts",
 															"line": 15,
 															"character": 2,
-															"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L15"
+															"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/pseudoconnection.ts#L15"
 														}
 													],
 													"parameters": [
@@ -1910,7 +1910,7 @@
 											"fileName": "pseudoconnection.ts",
 											"line": 28,
 											"character": 4,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L28"
+											"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/pseudoconnection.ts#L28"
 										}
 									],
 									"signatures": [
@@ -1925,7 +1925,7 @@
 													"fileName": "pseudoconnection.ts",
 													"line": 28,
 													"character": 4,
-													"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L28"
+													"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/pseudoconnection.ts#L28"
 												}
 											],
 											"type": {
@@ -1946,7 +1946,7 @@
 											"fileName": "pseudoconnection.ts",
 											"line": 33,
 											"character": 4,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L33"
+											"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/pseudoconnection.ts#L33"
 										}
 									],
 									"signatures": [
@@ -1961,7 +1961,7 @@
 													"fileName": "pseudoconnection.ts",
 													"line": 33,
 													"character": 4,
-													"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L33"
+													"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/pseudoconnection.ts#L33"
 												}
 											],
 											"parameters": [
@@ -2079,7 +2079,7 @@
 									"fileName": "pseudoconnection.ts",
 									"line": 27,
 									"character": 9,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L27"
+									"url": "https://github.com/retejs/connection-plugin/blob/8453c60/src/pseudoconnection.ts#L27"
 								}
 							]
 						}
