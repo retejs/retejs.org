@@ -95,7 +95,7 @@
 							"fileName": "index.ts",
 							"line": 28,
 							"character": 2,
-							"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L28"
+							"url": "https://github.com/retejs/readonly-plugin/blob/f5617e8/src/index.ts#L28"
 						}
 					],
 					"type": {
@@ -117,7 +117,7 @@
 							"fileName": "index.ts",
 							"line": 59,
 							"character": 9,
-							"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L59"
+							"url": "https://github.com/retejs/readonly-plugin/blob/f5617e8/src/index.ts#L59"
 						}
 					],
 					"signatures": [
@@ -140,7 +140,7 @@
 									"fileName": "index.ts",
 									"line": 59,
 									"character": 2,
-									"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L59"
+									"url": "https://github.com/retejs/readonly-plugin/blob/f5617e8/src/index.ts#L59"
 								}
 							],
 							"type": {
@@ -163,7 +163,7 @@
 							"fileName": "index.ts",
 							"line": 52,
 							"character": 9,
-							"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L52"
+							"url": "https://github.com/retejs/readonly-plugin/blob/f5617e8/src/index.ts#L52"
 						}
 					],
 					"signatures": [
@@ -186,7 +186,7 @@
 									"fileName": "index.ts",
 									"line": 52,
 									"character": 2,
-									"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L52"
+									"url": "https://github.com/retejs/readonly-plugin/blob/f5617e8/src/index.ts#L52"
 								}
 							],
 							"type": {
@@ -217,7 +217,7 @@
 					"fileName": "index.ts",
 					"line": 20,
 					"character": 13,
-					"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L20"
+					"url": "https://github.com/retejs/readonly-plugin/blob/f5617e8/src/index.ts#L20"
 				}
 			],
 			"typeParameters": [
