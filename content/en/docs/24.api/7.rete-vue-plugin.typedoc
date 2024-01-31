@@ -6,7 +6,7 @@
 	"flags": {},
 	"children": [
 		{
-			"id": 34,
+			"id": 41,
 			"name": "Presets",
 			"variant": "declaration",
 			"kind": 4,
@@ -21,14 +21,14 @@
 			},
 			"children": [
 				{
-					"id": 35,
+					"id": 42,
 					"name": "classic",
 					"variant": "declaration",
 					"kind": 4,
 					"flags": {},
 					"children": [
 						{
-							"id": 36,
+							"id": 43,
 							"name": "setup",
 							"variant": "declaration",
 							"kind": 64,
@@ -36,14 +36,14 @@
 							"sources": [
 								{
 									"fileName": "presets/classic/index.ts",
-									"line": 38,
+									"line": 37,
 									"character": 16,
-									"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/classic/index.ts#L38"
+									"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/classic/index.ts#L37"
 								}
 							],
 							"signatures": [
 								{
-									"id": 37,
+									"id": 44,
 									"name": "setup",
 									"variant": "signature",
 									"kind": 4096,
@@ -59,14 +59,14 @@
 									"sources": [
 										{
 											"fileName": "presets/classic/index.ts",
-											"line": 38,
+											"line": 37,
 											"character": 0,
-											"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/classic/index.ts#L38"
+											"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/classic/index.ts#L37"
 										}
 									],
 									"typeParameter": [
 										{
-											"id": 38,
+											"id": 45,
 											"name": "Schemes",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -82,7 +82,7 @@
 											}
 										},
 										{
-											"id": 39,
+											"id": 46,
 											"name": "K",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -108,7 +108,7 @@
 									],
 									"parameters": [
 										{
-											"id": 40,
+											"id": 47,
 											"name": "props",
 											"variant": "param",
 											"kind": 32768,
@@ -171,7 +171,7 @@
 						{
 							"title": "Functions",
 							"children": [
-								36
+								43
 							]
 						}
 					],
@@ -180,19 +180,19 @@
 							"fileName": "presets/classic/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/classic/index.ts#L1"
+							"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/classic/index.ts#L1"
 						}
 					]
 				},
 				{
-					"id": 45,
+					"id": 52,
 					"name": "contextMenu",
 					"variant": "declaration",
 					"kind": 4,
 					"flags": {},
 					"children": [
 						{
-							"id": 46,
+							"id": 53,
 							"name": "setup",
 							"variant": "declaration",
 							"kind": 64,
@@ -202,12 +202,12 @@
 									"fileName": "presets/context-menu/index.ts",
 									"line": 10,
 									"character": 16,
-									"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/context-menu/index.ts#L10"
+									"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/context-menu/index.ts#L10"
 								}
 							],
 							"signatures": [
 								{
-									"id": 47,
+									"id": 54,
 									"name": "setup",
 									"variant": "signature",
 									"kind": 4096,
@@ -225,12 +225,12 @@
 											"fileName": "presets/context-menu/index.ts",
 											"line": 10,
 											"character": 0,
-											"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/context-menu/index.ts#L10"
+											"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/context-menu/index.ts#L10"
 										}
 									],
 									"typeParameter": [
 										{
-											"id": 48,
+											"id": 55,
 											"name": "Schemes",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -246,7 +246,7 @@
 											}
 										},
 										{
-											"id": 49,
+											"id": 56,
 											"name": "K",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -265,14 +265,14 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 50,
+															"id": 57,
 															"name": "__type",
 															"variant": "declaration",
 															"kind": 65536,
 															"flags": {},
 															"children": [
 																{
-																	"id": 51,
+																	"id": 58,
 																	"name": "items",
 																	"variant": "declaration",
 																	"kind": 1024,
@@ -282,7 +282,7 @@
 																			"fileName": "presets/context-menu/types.ts",
 																			"line": 11,
 																			"character": 34,
-																			"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/context-menu/types.ts#L11"
+																			"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/context-menu/types.ts#L11"
 																		}
 																	],
 																	"type": {
@@ -299,7 +299,7 @@
 																	}
 																},
 																{
-																	"id": 54,
+																	"id": 61,
 																	"name": "searchBar",
 																	"variant": "declaration",
 																	"kind": 1024,
@@ -311,7 +311,7 @@
 																			"fileName": "presets/context-menu/types.ts",
 																			"line": 11,
 																			"character": 65,
-																			"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/context-menu/types.ts#L11"
+																			"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/context-menu/types.ts#L11"
 																		}
 																	],
 																	"type": {
@@ -320,7 +320,7 @@
 																	}
 																},
 																{
-																	"id": 52,
+																	"id": 59,
 																	"name": "onHide",
 																	"variant": "declaration",
 																	"kind": 2048,
@@ -330,12 +330,12 @@
 																			"fileName": "presets/context-menu/types.ts",
 																			"line": 11,
 																			"character": 49,
-																			"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/context-menu/types.ts#L11"
+																			"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/context-menu/types.ts#L11"
 																		}
 																	],
 																	"signatures": [
 																		{
-																			"id": 53,
+																			"id": 60,
 																			"name": "onHide",
 																			"variant": "signature",
 																			"kind": 4096,
@@ -345,7 +345,7 @@
 																					"fileName": "presets/context-menu/types.ts",
 																					"line": 11,
 																					"character": 49,
-																					"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/context-menu/types.ts#L11"
+																					"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/context-menu/types.ts#L11"
 																				}
 																			],
 																			"type": {
@@ -360,14 +360,14 @@
 																{
 																	"title": "Properties",
 																	"children": [
-																		51,
-																		54
+																		58,
+																		61
 																	]
 																},
 																{
 																	"title": "Methods",
 																	"children": [
-																		52
+																		59
 																	]
 																}
 															],
@@ -376,7 +376,7 @@
 																	"fileName": "presets/context-menu/types.ts",
 																	"line": 11,
 																	"character": 32,
-																	"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/context-menu/types.ts#L11"
+																	"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/context-menu/types.ts#L11"
 																}
 															]
 														}
@@ -389,7 +389,7 @@
 									],
 									"parameters": [
 										{
-											"id": 55,
+											"id": 62,
 											"name": "props",
 											"variant": "param",
 											"kind": 32768,
@@ -399,14 +399,14 @@
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 56,
+													"id": 63,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
 													"flags": {},
 													"children": [
 														{
-															"id": 57,
+															"id": 64,
 															"name": "delay",
 															"variant": "declaration",
 															"kind": 1024,
@@ -418,7 +418,7 @@
 																	"fileName": "presets/context-menu/index.ts",
 																	"line": 10,
 																	"character": 90,
-																	"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/context-menu/index.ts#L10"
+																	"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/context-menu/index.ts#L10"
 																}
 															],
 															"type": {
@@ -431,7 +431,7 @@
 														{
 															"title": "Properties",
 															"children": [
-																57
+																64
 															]
 														}
 													],
@@ -440,7 +440,7 @@
 															"fileName": "presets/context-menu/index.ts",
 															"line": 10,
 															"character": 88,
-															"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/context-menu/index.ts#L10"
+															"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/context-menu/index.ts#L10"
 														}
 													]
 												}
@@ -478,7 +478,7 @@
 						{
 							"title": "Functions",
 							"children": [
-								46
+								53
 							]
 						}
 					],
@@ -487,19 +487,19 @@
 							"fileName": "presets/context-menu/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/context-menu/index.ts#L1"
+							"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/context-menu/index.ts#L1"
 						}
 					]
 				},
 				{
-					"id": 58,
+					"id": 65,
 					"name": "minimap",
 					"variant": "declaration",
 					"kind": 4,
 					"flags": {},
 					"children": [
 						{
-							"id": 59,
+							"id": 66,
 							"name": "setup",
 							"variant": "declaration",
 							"kind": 64,
@@ -509,12 +509,12 @@
 									"fileName": "presets/minimap/index.ts",
 									"line": 10,
 									"character": 16,
-									"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/minimap/index.ts#L10"
+									"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/minimap/index.ts#L10"
 								}
 							],
 							"signatures": [
 								{
-									"id": 60,
+									"id": 67,
 									"name": "setup",
 									"variant": "signature",
 									"kind": 4096,
@@ -532,12 +532,12 @@
 											"fileName": "presets/minimap/index.ts",
 											"line": 10,
 											"character": 0,
-											"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/minimap/index.ts#L10"
+											"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/minimap/index.ts#L10"
 										}
 									],
 									"typeParameter": [
 										{
-											"id": 61,
+											"id": 68,
 											"name": "Schemes",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -553,7 +553,7 @@
 											}
 										},
 										{
-											"id": 62,
+											"id": 69,
 											"name": "K",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -572,14 +572,14 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 63,
+															"id": 70,
 															"name": "__type",
 															"variant": "declaration",
 															"kind": 65536,
 															"flags": {},
 															"children": [
 																{
-																	"id": 65,
+																	"id": 72,
 																	"name": "nodes",
 																	"variant": "declaration",
 																	"kind": 1024,
@@ -589,7 +589,7 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 19,
 																			"character": 4,
-																			"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/minimap/types.ts#L19"
+																			"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/minimap/types.ts#L19"
 																		}
 																	],
 																	"type": {
@@ -606,7 +606,7 @@
 																	}
 																},
 																{
-																	"id": 64,
+																	"id": 71,
 																	"name": "ratio",
 																	"variant": "declaration",
 																	"kind": 1024,
@@ -616,7 +616,7 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 18,
 																			"character": 4,
-																			"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/minimap/types.ts#L18"
+																			"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/minimap/types.ts#L18"
 																		}
 																	],
 																	"type": {
@@ -625,7 +625,7 @@
 																	}
 																},
 																{
-																	"id": 69,
+																	"id": 76,
 																	"name": "translate",
 																	"variant": "declaration",
 																	"kind": 1024,
@@ -635,7 +635,7 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 22,
 																			"character": 4,
-																			"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/minimap/types.ts#L22"
+																			"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/minimap/types.ts#L22"
 																		}
 																	],
 																	"type": {
@@ -649,7 +649,7 @@
 																	}
 																},
 																{
-																	"id": 66,
+																	"id": 73,
 																	"name": "viewport",
 																	"variant": "declaration",
 																	"kind": 1024,
@@ -659,7 +659,7 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 20,
 																			"character": 4,
-																			"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/minimap/types.ts#L20"
+																			"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/minimap/types.ts#L20"
 																		}
 																	],
 																	"type": {
@@ -673,7 +673,7 @@
 																	}
 																},
 																{
-																	"id": 70,
+																	"id": 77,
 																	"name": "point",
 																	"variant": "declaration",
 																	"kind": 2048,
@@ -683,12 +683,12 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 23,
 																			"character": 4,
-																			"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/minimap/types.ts#L23"
+																			"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/minimap/types.ts#L23"
 																		}
 																	],
 																	"signatures": [
 																		{
-																			"id": 71,
+																			"id": 78,
 																			"name": "point",
 																			"variant": "signature",
 																			"kind": 4096,
@@ -698,12 +698,12 @@
 																					"fileName": "presets/minimap/types.ts",
 																					"line": 23,
 																					"character": 4,
-																					"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/minimap/types.ts#L23"
+																					"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/minimap/types.ts#L23"
 																				}
 																			],
 																			"parameters": [
 																				{
-																					"id": 72,
+																					"id": 79,
 																					"name": "x",
 																					"variant": "param",
 																					"kind": 32768,
@@ -714,7 +714,7 @@
 																					}
 																				},
 																				{
-																					"id": 73,
+																					"id": 80,
 																					"name": "y",
 																					"variant": "param",
 																					"kind": 32768,
@@ -733,7 +733,7 @@
 																	]
 																},
 																{
-																	"id": 67,
+																	"id": 74,
 																	"name": "start",
 																	"variant": "declaration",
 																	"kind": 2048,
@@ -743,12 +743,12 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 21,
 																			"character": 4,
-																			"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/minimap/types.ts#L21"
+																			"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/minimap/types.ts#L21"
 																		}
 																	],
 																	"signatures": [
 																		{
-																			"id": 68,
+																			"id": 75,
 																			"name": "start",
 																			"variant": "signature",
 																			"kind": 4096,
@@ -758,7 +758,7 @@
 																					"fileName": "presets/minimap/types.ts",
 																					"line": 21,
 																					"character": 4,
-																					"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/minimap/types.ts#L21"
+																					"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/minimap/types.ts#L21"
 																				}
 																			],
 																			"type": {
@@ -778,17 +778,17 @@
 																{
 																	"title": "Properties",
 																	"children": [
-																		65,
-																		64,
-																		69,
-																		66
+																		72,
+																		71,
+																		76,
+																		73
 																	]
 																},
 																{
 																	"title": "Methods",
 																	"children": [
-																		70,
-																		67
+																		77,
+																		74
 																	]
 																}
 															],
@@ -797,7 +797,7 @@
 																	"fileName": "presets/minimap/types.ts",
 																	"line": 17,
 																	"character": 28,
-																	"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/minimap/types.ts#L17"
+																	"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/minimap/types.ts#L17"
 																}
 															]
 														}
@@ -810,7 +810,7 @@
 									],
 									"parameters": [
 										{
-											"id": 74,
+											"id": 81,
 											"name": "props",
 											"variant": "param",
 											"kind": 32768,
@@ -820,14 +820,14 @@
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 75,
+													"id": 82,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
 													"flags": {},
 													"children": [
 														{
-															"id": 76,
+															"id": 83,
 															"name": "size",
 															"variant": "declaration",
 															"kind": 1024,
@@ -839,7 +839,7 @@
 																	"fileName": "presets/minimap/index.ts",
 																	"line": 10,
 																	"character": 86,
-																	"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/minimap/index.ts#L10"
+																	"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/minimap/index.ts#L10"
 																}
 															],
 															"type": {
@@ -852,7 +852,7 @@
 														{
 															"title": "Properties",
 															"children": [
-																76
+																83
 															]
 														}
 													],
@@ -861,7 +861,7 @@
 															"fileName": "presets/minimap/index.ts",
 															"line": 10,
 															"character": 84,
-															"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/minimap/index.ts#L10"
+															"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/minimap/index.ts#L10"
 														}
 													]
 												}
@@ -899,7 +899,7 @@
 						{
 							"title": "Functions",
 							"children": [
-								59
+								66
 							]
 						}
 					],
@@ -908,19 +908,19 @@
 							"fileName": "presets/minimap/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/minimap/index.ts#L1"
+							"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/minimap/index.ts#L1"
 						}
 					]
 				},
 				{
-					"id": 77,
+					"id": 84,
 					"name": "reroute",
 					"variant": "declaration",
 					"kind": 4,
 					"flags": {},
 					"children": [
 						{
-							"id": 78,
+							"id": 85,
 							"name": "setup",
 							"variant": "declaration",
 							"kind": 64,
@@ -930,12 +930,12 @@
 									"fileName": "presets/reroute/index.ts",
 									"line": 17,
 									"character": 16,
-									"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/reroute/index.ts#L17"
+									"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/reroute/index.ts#L17"
 								}
 							],
 							"signatures": [
 								{
-									"id": 79,
+									"id": 86,
 									"name": "setup",
 									"variant": "signature",
 									"kind": 4096,
@@ -953,12 +953,12 @@
 											"fileName": "presets/reroute/index.ts",
 											"line": 17,
 											"character": 0,
-											"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/reroute/index.ts#L17"
+											"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/reroute/index.ts#L17"
 										}
 									],
 									"typeParameter": [
 										{
-											"id": 80,
+											"id": 87,
 											"name": "Schemes",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -974,7 +974,7 @@
 											}
 										},
 										{
-											"id": 81,
+											"id": 88,
 											"name": "K",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -993,14 +993,14 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 82,
+															"id": 89,
 															"name": "__type",
 															"variant": "declaration",
 															"kind": 65536,
 															"flags": {},
 															"children": [
 																{
-																	"id": 83,
+																	"id": 90,
 																	"name": "data",
 																	"variant": "declaration",
 																	"kind": 1024,
@@ -1010,7 +1010,7 @@
 																			"fileName": "presets/reroute/types.ts",
 																			"line": 20,
 																			"character": 35,
-																			"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/reroute/types.ts#L20"
+																			"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/reroute/types.ts#L20"
 																		}
 																	],
 																	"type": {
@@ -1028,7 +1028,7 @@
 																{
 																	"title": "Properties",
 																	"children": [
-																		83
+																		90
 																	]
 																}
 															],
@@ -1037,7 +1037,7 @@
 																	"fileName": "presets/reroute/types.ts",
 																	"line": 20,
 																	"character": 33,
-																	"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/reroute/types.ts#L20"
+																	"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/reroute/types.ts#L20"
 																}
 															]
 														}
@@ -1050,7 +1050,7 @@
 									],
 									"parameters": [
 										{
-											"id": 84,
+											"id": 91,
 											"name": "props",
 											"variant": "param",
 											"kind": 32768,
@@ -1099,7 +1099,7 @@
 						{
 							"title": "Functions",
 							"children": [
-								78
+								85
 							]
 						}
 					],
@@ -1108,7 +1108,7 @@
 							"fileName": "presets/reroute/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/reroute/index.ts#L1"
+							"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/reroute/index.ts#L1"
 						}
 					]
 				}
@@ -1117,10 +1117,10 @@
 				{
 					"title": "Namespaces",
 					"children": [
-						35,
-						45,
-						58,
-						77
+						42,
+						52,
+						65,
+						84
 					]
 				}
 			],
@@ -1129,12 +1129,12 @@
 					"fileName": "presets/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/presets/index.ts#L1"
+					"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/presets/index.ts#L1"
 				}
 			]
 		},
 		{
-			"id": 10,
+			"id": 16,
 			"name": "VuePlugin",
 			"variant": "declaration",
 			"kind": 128,
@@ -1187,7 +1187,7 @@
 			},
 			"children": [
 				{
-					"id": 28,
+					"id": 35,
 					"name": "addPreset",
 					"variant": "declaration",
 					"kind": 2048,
@@ -1197,14 +1197,14 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 114,
+							"line": 127,
 							"character": 9,
-							"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/index.ts#L114"
+							"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/index.ts#L127"
 						}
 					],
 					"signatures": [
 						{
-							"id": 29,
+							"id": 36,
 							"name": "addPreset",
 							"variant": "signature",
 							"kind": 4096,
@@ -1220,14 +1220,14 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 114,
+									"line": 127,
 									"character": 2,
-									"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/index.ts#L114"
+									"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/index.ts#L127"
 								}
 							],
 							"typeParameter": [
 								{
-									"id": 30,
+									"id": 37,
 									"name": "K",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -1236,7 +1236,7 @@
 							],
 							"parameters": [
 								{
-									"id": 31,
+									"id": 38,
 									"name": "preset",
 									"variant": "param",
 									"kind": 32768,
@@ -1331,21 +1331,21 @@
 				{
 					"title": "Methods",
 					"children": [
-						28
+						35
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "index.ts",
-					"line": 31,
+					"line": 44,
 					"character": 13,
-					"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/index.ts#L31"
+					"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/index.ts#L44"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 32,
+					"id": 39,
 					"name": "Schemes",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -1361,7 +1361,7 @@
 					}
 				},
 				{
-					"id": 33,
+					"id": 40,
 					"name": "T",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -1474,9 +1474,9 @@
 			"sources": [
 				{
 					"fileName": "index.ts",
-					"line": 16,
+					"line": 17,
 					"character": 12,
-					"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/index.ts#L16"
+					"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/index.ts#L17"
 				}
 			],
 			"typeParameters": [
@@ -1518,9 +1518,9 @@
 									"sources": [
 										{
 											"fileName": "index.ts",
-											"line": 17,
+											"line": 18,
 											"character": 30,
-											"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/index.ts#L17"
+											"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/index.ts#L18"
 										}
 									],
 									"type": {
@@ -1543,9 +1543,9 @@
 													"sources": [
 														{
 															"fileName": "index.ts",
-															"line": 17,
+															"line": 18,
 															"character": 70,
-															"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/index.ts#L17"
+															"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/index.ts#L18"
 														}
 													],
 													"type": {
@@ -1562,9 +1562,9 @@
 													"sources": [
 														{
 															"fileName": "index.ts",
-															"line": 17,
+															"line": 18,
 															"character": 38,
-															"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/index.ts#L17"
+															"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/index.ts#L18"
 														}
 													],
 													"type": {
@@ -1590,9 +1590,9 @@
 													"sources": [
 														{
 															"fileName": "index.ts",
-															"line": 17,
+															"line": 18,
 															"character": 85,
-															"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/index.ts#L17"
+															"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/index.ts#L18"
 														}
 													],
 													"type": {
@@ -1622,9 +1622,9 @@
 											"sources": [
 												{
 													"fileName": "index.ts",
-													"line": 17,
+													"line": 18,
 													"character": 36,
-													"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/index.ts#L17"
+													"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/index.ts#L18"
 												}
 											]
 										}
@@ -1639,9 +1639,9 @@
 									"sources": [
 										{
 											"fileName": "index.ts",
-											"line": 17,
+											"line": 18,
 											"character": 6,
-											"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/index.ts#L17"
+											"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/index.ts#L18"
 										}
 									],
 									"type": {
@@ -1662,14 +1662,163 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 17,
+									"line": 18,
 									"character": 4,
-									"url": "https://github.com/retejs/vue-plugin/blob/88d2e89/src/index.ts#L17"
+									"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/index.ts#L18"
 								}
 							]
 						}
 					}
 				]
+			}
+		},
+		{
+			"id": 10,
+			"name": "Props",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Vue plugin options used to setup vue instance(s) used by retejs."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 28,
+					"character": 12,
+					"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/index.ts#L28"
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 11,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"children": [
+						{
+							"id": 12,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 34,
+									"character": 2,
+									"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/index.ts#L34"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 13,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 34,
+											"character": 10,
+											"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/index.ts#L34"
+										}
+									],
+									"signatures": [
+										{
+											"id": 14,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Use this to setup vue."
+													}
+												],
+												"blockTags": [
+													{
+														"tag": "@returns",
+														"content": [
+															{
+																"kind": "text",
+																"text": "app / vue instance."
+															}
+														]
+													}
+												]
+											},
+											"parameters": [
+												{
+													"id": 15,
+													"name": "context",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "to be used for createApp({ ...context }) or new Vue({ ...context })"
+															}
+														]
+													},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/vuecompat/types.ts",
+															"qualifiedName": "Context"
+														},
+														"name": "Context",
+														"package": "rete-vue-plugin"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/vuecompat/types.ts",
+													"qualifiedName": "Instance"
+												},
+												"name": "Instance",
+												"package": "rete-vue-plugin"
+											}
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								12
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 28,
+							"character": 20,
+							"url": "https://github.com/retejs/vue-plugin/blob/a1ae872/src/index.ts#L28"
+						}
+					]
+				}
 			}
 		}
 	],
@@ -1677,19 +1826,20 @@
 		{
 			"title": "Namespaces",
 			"children": [
-				34
+				41
 			]
 		},
 		{
 			"title": "Classes",
 			"children": [
-				10
+				16
 			]
 		},
 		{
 			"title": "Type Aliases",
 			"children": [
-				1
+				1,
+				10
 			]
 		}
 	],
@@ -1767,217 +1917,241 @@
 		},
 		"10": {
 			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Props"
+		},
+		"11": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"12": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.setup"
+		},
+		"13": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"14": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"15": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "context"
+		},
+		"16": {
+			"sourceFileName": "src/index.ts",
 			"qualifiedName": "VuePlugin"
 		},
-		"28": {
+		"35": {
 			"sourceFileName": "src/index.ts",
 			"qualifiedName": "VuePlugin.addPreset"
 		},
-		"29": {
+		"36": {
 			"sourceFileName": "src/index.ts",
 			"qualifiedName": "VuePlugin.addPreset"
 		},
-		"30": {
+		"37": {
 			"sourceFileName": "src/index.ts",
 			"qualifiedName": "K"
 		},
-		"31": {
+		"38": {
 			"sourceFileName": "src/index.ts",
 			"qualifiedName": "preset"
 		},
-		"32": {
+		"39": {
 			"sourceFileName": "src/index.ts",
 			"qualifiedName": "VuePlugin.Schemes"
 		},
-		"33": {
+		"40": {
 			"sourceFileName": "src/index.ts",
 			"qualifiedName": "VuePlugin.T"
 		},
-		"34": {
+		"41": {
 			"sourceFileName": "src/presets/index.ts",
 			"qualifiedName": ""
 		},
-		"35": {
+		"42": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": ""
 		},
-		"36": {
+		"43": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": "setup"
 		},
-		"37": {
+		"44": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": "setup"
 		},
-		"38": {
+		"45": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": "Schemes"
 		},
-		"39": {
+		"46": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": "K"
 		},
-		"40": {
+		"47": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": "props"
 		},
-		"45": {
+		"52": {
 			"sourceFileName": "src/presets/context-menu/index.ts",
 			"qualifiedName": ""
 		},
-		"46": {
-			"sourceFileName": "src/presets/context-menu/index.ts",
-			"qualifiedName": "setup"
-		},
-		"47": {
-			"sourceFileName": "src/presets/context-menu/index.ts",
-			"qualifiedName": "setup"
-		},
-		"48": {
-			"sourceFileName": "src/presets/context-menu/index.ts",
-			"qualifiedName": "Schemes"
-		},
-		"49": {
-			"sourceFileName": "src/presets/context-menu/index.ts",
-			"qualifiedName": "K"
-		},
-		"50": {
-			"sourceFileName": "src/presets/context-menu/types.ts",
-			"qualifiedName": "__type"
-		},
-		"51": {
-			"sourceFileName": "src/presets/context-menu/types.ts",
-			"qualifiedName": "__type.items"
-		},
-		"52": {
-			"sourceFileName": "src/presets/context-menu/types.ts",
-			"qualifiedName": "__type.onHide"
-		},
 		"53": {
-			"sourceFileName": "src/presets/context-menu/types.ts",
-			"qualifiedName": "__type.onHide"
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "setup"
 		},
 		"54": {
-			"sourceFileName": "src/presets/context-menu/types.ts",
-			"qualifiedName": "__type.searchBar"
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "setup"
 		},
 		"55": {
 			"sourceFileName": "src/presets/context-menu/index.ts",
-			"qualifiedName": "props"
+			"qualifiedName": "Schemes"
 		},
 		"56": {
 			"sourceFileName": "src/presets/context-menu/index.ts",
-			"qualifiedName": "__type"
-		},
-		"57": {
-			"sourceFileName": "src/presets/context-menu/index.ts",
-			"qualifiedName": "__type.delay"
-		},
-		"58": {
-			"sourceFileName": "src/presets/minimap/index.ts",
-			"qualifiedName": ""
-		},
-		"59": {
-			"sourceFileName": "src/presets/minimap/index.ts",
-			"qualifiedName": "setup"
-		},
-		"60": {
-			"sourceFileName": "src/presets/minimap/index.ts",
-			"qualifiedName": "setup"
-		},
-		"61": {
-			"sourceFileName": "src/presets/minimap/index.ts",
-			"qualifiedName": "Schemes"
-		},
-		"62": {
-			"sourceFileName": "src/presets/minimap/index.ts",
 			"qualifiedName": "K"
 		},
+		"57": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type"
+		},
+		"58": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.items"
+		},
+		"59": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.onHide"
+		},
+		"60": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.onHide"
+		},
+		"61": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.searchBar"
+		},
+		"62": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "props"
+		},
 		"63": {
-			"sourceFileName": "src/presets/minimap/types.ts",
+			"sourceFileName": "src/presets/context-menu/index.ts",
 			"qualifiedName": "__type"
 		},
 		"64": {
-			"sourceFileName": "src/presets/minimap/types.ts",
-			"qualifiedName": "__type.ratio"
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "__type.delay"
 		},
 		"65": {
-			"sourceFileName": "src/presets/minimap/types.ts",
-			"qualifiedName": "__type.nodes"
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": ""
 		},
 		"66": {
-			"sourceFileName": "src/presets/minimap/types.ts",
-			"qualifiedName": "__type.viewport"
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "setup"
 		},
 		"67": {
-			"sourceFileName": "src/presets/minimap/types.ts",
-			"qualifiedName": "__type.start"
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "setup"
 		},
 		"68": {
-			"sourceFileName": "src/presets/minimap/types.ts",
-			"qualifiedName": "__type.start"
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "Schemes"
 		},
 		"69": {
-			"sourceFileName": "src/presets/minimap/types.ts",
-			"qualifiedName": "__type.translate"
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "K"
 		},
 		"70": {
 			"sourceFileName": "src/presets/minimap/types.ts",
-			"qualifiedName": "__type.point"
+			"qualifiedName": "__type"
 		},
 		"71": {
 			"sourceFileName": "src/presets/minimap/types.ts",
-			"qualifiedName": "__type.point"
+			"qualifiedName": "__type.ratio"
 		},
 		"72": {
 			"sourceFileName": "src/presets/minimap/types.ts",
-			"qualifiedName": "x"
+			"qualifiedName": "__type.nodes"
 		},
 		"73": {
 			"sourceFileName": "src/presets/minimap/types.ts",
-			"qualifiedName": "y"
+			"qualifiedName": "__type.viewport"
 		},
 		"74": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.start"
+		},
+		"75": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.start"
+		},
+		"76": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.translate"
+		},
+		"77": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.point"
+		},
+		"78": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.point"
+		},
+		"79": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "x"
+		},
+		"80": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "y"
+		},
+		"81": {
 			"sourceFileName": "src/presets/minimap/index.ts",
 			"qualifiedName": "props"
 		},
-		"75": {
-			"sourceFileName": "src/presets/minimap/index.ts",
-			"qualifiedName": "__type"
-		},
-		"76": {
-			"sourceFileName": "src/presets/minimap/index.ts",
-			"qualifiedName": "__type.size"
-		},
-		"77": {
-			"sourceFileName": "src/presets/reroute/index.ts",
-			"qualifiedName": ""
-		},
-		"78": {
-			"sourceFileName": "src/presets/reroute/index.ts",
-			"qualifiedName": "setup"
-		},
-		"79": {
-			"sourceFileName": "src/presets/reroute/index.ts",
-			"qualifiedName": "setup"
-		},
-		"80": {
-			"sourceFileName": "src/presets/reroute/index.ts",
-			"qualifiedName": "Schemes"
-		},
-		"81": {
-			"sourceFileName": "src/presets/reroute/index.ts",
-			"qualifiedName": "K"
-		},
 		"82": {
-			"sourceFileName": "src/presets/reroute/types.ts",
+			"sourceFileName": "src/presets/minimap/index.ts",
 			"qualifiedName": "__type"
 		},
 		"83": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "__type.size"
+		},
+		"84": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": ""
+		},
+		"85": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "setup"
+		},
+		"86": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "setup"
+		},
+		"87": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"88": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "K"
+		},
+		"89": {
+			"sourceFileName": "src/presets/reroute/types.ts",
+			"qualifiedName": "__type"
+		},
+		"90": {
 			"sourceFileName": "src/presets/reroute/types.ts",
 			"qualifiedName": "__type.data"
 		},
-		"84": {
+		"91": {
 			"sourceFileName": "src/presets/reroute/index.ts",
 			"qualifiedName": "props"
 		}
