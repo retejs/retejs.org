@@ -4,18 +4,23 @@ import { dsn } from '../config/sentry';
 export default defineNuxtPlugin(async (nuxtApp) => {
   const app = nuxtApp.vueApp;
 
-  const { BrowserTracing } = await import('@sentry/tracing');
+  const { BrowserTracing } = await import('@sentry/browser');
   const Sentry = await import('@sentry/vue');
 
   Sentry.init({
     app,
     dsn,
+    environment: window.location.hostname === 'localhost' ? 'localhost' : 'production',
     integrations: [
       new BrowserTracing({
         routingInstrumentation: Sentry.vueRouterInstrumentation(nuxtApp.$router),
         tracePropagationTargets: ['localhost', 'rete.js.org', /^\//],
       }),
+      new Sentry.BrowserProfilingIntegration(),
+      Sentry.replayIntegration(),
     ],
-    tracesSampleRate: 1.0, /// process.env.NODE_ENV === 'production'
+    replaysSessionSampleRate: 0.25,
+    replaysOnErrorSampleRate: 1.0,
+    tracesSampleRate: 1.0,
   });
 });
