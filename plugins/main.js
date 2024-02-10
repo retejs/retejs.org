@@ -2,7 +2,7 @@ import {
   Menu, MenuItem, Icon, Select, Submenu, Dropdown, Option,
   Drawer, Button, Alert, Tag, Tooltip, Collapse, Panel,
   Card, Spin, Modal,
-} from 'view-ui-plus/dist/viewuiplus.min.esm';
+} from 'view-ui-plus-es';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faDiscord, faTwitter, faGithub, faPatreon, faYoutube, faNpm,

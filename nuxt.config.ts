@@ -1,6 +1,6 @@
 /// <reference types="nuxt" />
 import { isCI, isDevelopment } from 'std-env';
-import { version as iViewVersion } from 'view-ui-plus/package.json';
+import { version as iViewVersion } from 'view-ui-plus-es/package.json';
 import TypeDoc from './typedoc/index.mjs';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
