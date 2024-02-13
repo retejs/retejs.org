@@ -64,7 +64,7 @@ export default defineNuxtConfig({
   },
   pwa: {
     mode: isCI ? 'production' : 'development',
-    disable: isDevelopment,
+    disable: true,
     manifest: {
       name: 'Rete.js',
       short_name: 'Rete.js',
