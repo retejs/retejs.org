@@ -91,6 +91,6 @@ export default defineNuxtConfig({
     filename: 'sw.ts',
   },
   gtag: {
-    id: 'G-Q0DXJPL3FX',
+    id: process.env.GTAG_ID,
   },
 });
