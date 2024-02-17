@@ -16,7 +16,8 @@
           FrameExample(:src="item.showcase.source" :lazy="true")
           template(#placeholder)
             NuxtLink(:to="pathSanitizer.sanitize(item._path)")
-              img(:src="getPreview(item.preview)")
+              noscript
+                img(:src="getPreview(item.preview)" loading="lazy")
 
 </template>
 
