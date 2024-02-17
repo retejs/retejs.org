@@ -31,8 +31,6 @@ export default defineComponent({
 </script>
 
 <style lang="sass" scoped>
-  @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700')
-
   .app
     display: flex
     min-height: 100vh
