@@ -2,9 +2,9 @@
 BaseExample
   Loading(v-if="loading")
   iframe(
-    :src="isVisible || !lazy ? src : null"
+    :src="iframeSrc"
     title="Rete.js v2"
-    @load="loading = false"
+    @load="loading = iframeSrc === null ? true : false"
   )
 </template>
 
@@ -19,7 +19,7 @@ export default {
     src: String,
     lazy: Boolean,
   },
-  setup() {
+  setup(props) {
     const loading = ref(true);
     const target = useCurrentElement();
     const isVisible = ref(false);
@@ -33,6 +33,7 @@ export default {
     return {
       loading,
       target,
+      iframeSrc: computed(() => (isVisible.value || !props.lazy ? props.src : null)),
       isVisible: computed(() => (isVisible.value === true ? true : debouncedVisible.value)),
     };
   },
