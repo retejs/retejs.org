@@ -54,7 +54,6 @@
     "eslint-plugin-vue": "^9.21.1",
     "eslint-plugin-vuejs-accessibility": "^2.2.1",
     "nuxt": "^3.10.1",
-    "nuxt-gtag": "^1.2.0",
     "nuxt-purgecss": "^2.0.0",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",

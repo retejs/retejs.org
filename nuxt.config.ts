@@ -12,7 +12,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'nuxt-purgecss',
     '@vite-pwa/nuxt',
-    'nuxt-gtag',
   ],
   telemetry: false,
   css: [
@@ -101,8 +100,5 @@ export default defineNuxtConfig({
     strategies: 'injectManifest',
     srcDir: 'src',
     filename: 'sw.ts',
-  },
-  gtag: {
-    id: process.env.GTAG_ID,
   },
 });
