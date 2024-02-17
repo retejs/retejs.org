@@ -4,6 +4,8 @@ import {
 import { useRoute, useRouter } from 'vue-router';
 import host from '../consts/host.json';
 
+declare let process: NodeJS.Process & { client: boolean };
+
 type Context = {
   consumers: number
   title: string | null
@@ -13,7 +15,8 @@ type Context = {
 
 export const key = Symbol('sharethis-di-key');
 
-export function provideShareThis() {
+export function provideShareThis(): undefined | Context {
+  if (!process.client) return undefined;
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   useHead({
@@ -46,6 +49,7 @@ export function provideShareThis() {
 }
 
 export function useShareThis(title: string | Ref<string>) {
+  if (!process.client) return;
   const sharethis: Context | undefined = inject(key);
 
   if (!sharethis) throw new Error('cannot inject sharethis');
