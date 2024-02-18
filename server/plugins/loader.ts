@@ -11,7 +11,7 @@ export default defineNitroPlugin((nitroApp) => {
           document.querySelector('#${id}').style.display = 'none';
         });
       </script>
-      <div id="${id}"></div>
+      <span id="${id}"></span>
       <style>
         #${id} {
           display: inline-block;

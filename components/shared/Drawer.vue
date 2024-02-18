@@ -29,12 +29,13 @@ export default {
 <style lang="sass">
 @import '@/assets/styles/vars.sass'
 
-.ivu-drawer-mask
-  top: var(--header-offset)
-  height: calc(100% - var(--header-offset))
-.ivu-drawer
-  top: var(--header-offset)
-  height: calc(100vh - var(--header-offset))
-.ivu-drawer-body
-  padding: 0
+body
+  .ivu-drawer-mask
+    top: var(--header-offset)
+    height: calc(100% - var(--header-offset))
+  .ivu-drawer
+    top: var(--header-offset)
+    height: calc(100vh - var(--header-offset))
+  .ivu-drawer-body
+    padding: 0
 </style>
