@@ -1,26 +1,14 @@
 import {
-  Menu, MenuItem, Icon, Select, Submenu, Dropdown, Option,
+  Menu, MenuItem, Select, Submenu, Dropdown, Option,
   Drawer, Button, Alert, Tag, Tooltip, Collapse, Panel,
   Card, Spin, Modal, SkeletonItem,
 } from 'view-ui-plus-es';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import {
-  faDiscord, faTwitter, faGithub, faPatreon, faYoutube, faNpm,
-} from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 // eslint-disable-next-line no-undef
 export default defineNuxtPlugin((nuxtApp) => {
   const app = nuxtApp.vueApp;
 
-  library.add(faDiscord, faTwitter, faGithub, faPatreon, faYoutube, faNpm);
-
-  app.component('font-awesome-icon', FontAwesomeIcon);
-
-  app.use(library);
-
   app.component('Menu', Menu);
-  app.component('Icon', Icon);
   app.component('MenuItem', MenuItem);
   app.component('Submenu', Submenu);
   app.component('Select', Select);

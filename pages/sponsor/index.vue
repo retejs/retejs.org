@@ -11,8 +11,7 @@
     .methods
       .patreon.payment
         a.button(:href="patreon.link" target="_blank")
-          client-only
-            font-awesome-icon.icon(:icon="['fa-brands', 'patreon']")
+          Icon.icon(name="simple-icons:patreon")
           .text Become a patron
         p.description {{ $t('sponsorPage.patreon.description') }}
         p.description

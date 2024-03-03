@@ -8,7 +8,7 @@ IViewAlert.alert(show-icon)
       Button(type="text" shape="circle" icon="ios-help-circle-outline")
     Button.button(:to="patreon.link" target="_blank") {{ $t('examplesPage.proExample.getAccess') }}
   template(#icon)
-    Icon.icon(type="md-finger-print")
+    Icon.icon(name="ion:finger-print")
 BaseExample
   iframe(
     :src="src"

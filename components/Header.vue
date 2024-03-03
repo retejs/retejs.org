@@ -8,7 +8,7 @@
       Logo.icon.ivu-icon(:hover="true")
       span.title Rete.js
     .menu-burger(@click="drawer = true")
-      Icon(type="md-menu" :size="20")
+      Icon(name="mdi:hamburger-menu" :size="20")
     .space
     Links.links
     Search.search
@@ -78,6 +78,8 @@ export default defineComponent({
     background: none
     .menu-burger
       display: none
+      & > *
+        vertical-align: sub
     .space
       flex: 1
     +tablet

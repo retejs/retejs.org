@@ -8,22 +8,22 @@
   "social": [
     {
       "title": "GitHub",
-      "icon": "fa-github",
+      "icon": "fa6-brands:github",
       "to": "https://github.com/retejs"
     },
     {
       "title": "YouTube",
-      "icon": "fa-youtube",
+      "icon": "fa6-brands:youtube",
       "to": "https://www.youtube.com/@rete_js"
     },
     {
       "title": "Twitter",
-      "icon": "fa-twitter",
+      "icon": "fa6-brands:twitter",
       "to": "https://twitter.com/rete_js"
     },
     {
       "title": "Discord",
-      "icon": "fa-discord",
+      "icon": "fa6-brands:discord",
       "to": "https://discord.gg/cxSFkPZdsV"
     }
   ]

@@ -14,9 +14,6 @@
   "dependencies": {
     "@docsearch/css": "^3.5.2",
     "@docsearch/js": "^3.5.2",
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
-    "@fortawesome/free-brands-svg-icons": "^6.5.1",
-    "@fortawesome/vue-fontawesome": "^3.0.6",
     "@nuxt/content": "^2.11.0",
     "@sentry/browser": "^7.100.1",
     "@sentry/integrations": "^7.100.1",
@@ -54,6 +51,7 @@
     "eslint-plugin-vue": "^9.21.1",
     "eslint-plugin-vuejs-accessibility": "^2.2.1",
     "nuxt": "^3.10.1",
+    "nuxt-icon": "^0.6.8",
     "nuxt-purgecss": "^2.0.0",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",

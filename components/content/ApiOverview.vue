@@ -6,10 +6,10 @@
         NuxtLink(:to="sanitize(data._path)") {{ data.title }}
         Tooltip(content="Open on NPM", placement="top")
           NuxtLink(:to="'https://www.npmjs.com/package/' + data.title", target="_blank", @click.stop="")
-            font-awesome-icon.npm.icon(:icon="['fa-brands', 'npm']")
+            Icon.npm.icon(name="ion:logo-npm")
         Tooltip(v-if="data.repository" content="Open repository", placement="top")
           NuxtLink(:to="data.repository", target="_blank", @click.stop="")
-            font-awesome-icon.gh.icon(:icon="['fa-brands', 'github']")
+            Icon.gh.icon(name="ion:logo-github")
 </template>
 
 <script>
@@ -74,8 +74,8 @@ export default {
         height: 2em
         color: #c20000
       &.gh
-        width: 1.5em
-        height: 1.5em
+        width: 1.6em
+        height: 1.6em
         color: #000
 
 </style>

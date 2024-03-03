@@ -4,7 +4,7 @@ Menu.menu(width="auto")
     .text
       slot(name="title")
     .menu-burger(@click="$emit('open')")
-      Icon(type="md-menu" :size="20")
+      Icon(name="mdi:hamburger-menu" :size="20")
   .content-nav
     slot
 </template>
@@ -29,6 +29,8 @@ export default {
   .menu-burger
     display: none
     margin: 0 0.1em
+    & > *
+      vertical-align: sub
 
 +phone
   .menu
