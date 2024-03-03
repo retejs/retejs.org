@@ -73,10 +73,10 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
         {
-          rel: 'preload', href: './fonts/Ubuntu-Regular.woff2', as: 'font', type: 'font/woff2', crossorigin: '',
+          rel: 'preload', href: '/fonts/Ubuntu-Regular.woff2', as: 'font', type: 'font/woff2', crossorigin: '',
         },
         {
-          rel: 'preload', href: './fonts/Ubuntu-Bold.woff2', as: 'font', type: 'font/woff2', crossorigin: '',
+          rel: 'preload', href: '/fonts/Ubuntu-Bold.woff2', as: 'font', type: 'font/woff2', crossorigin: '',
         },
       ],
       meta: [
