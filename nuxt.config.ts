@@ -1,6 +1,5 @@
 /// <reference types="nuxt" />
 import { isCI, isDevelopment } from 'std-env';
-import { version as iViewVersion } from 'view-ui-plus-es/package.json';
 import TypeDoc from './typedoc/index.mjs';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
@@ -16,6 +15,7 @@ export default defineNuxtConfig({
   telemetry: false,
   css: [
     '~/assets/styles/global.css',
+    resolve(__dirname, 'node_modules/view-ui-plus-es/dist/styles/viewuiplus.css'),
   ],
   content: {
     highlight: {
@@ -51,7 +51,6 @@ export default defineNuxtConfig({
       title: 'Rete.js',
       link: [
         { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
-        { rel: 'stylesheet', href: `https://cdn.jsdelivr.net/npm/view-ui-plus@${iViewVersion}/dist/styles/viewuiplus.css` },
         {
           rel: 'preload', href: './fonts/Ubuntu-Regular.woff2', as: 'font', type: 'font/woff2', crossorigin: '',
         },
