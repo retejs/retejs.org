@@ -51,18 +51,12 @@ export default defineNuxtConfig({
       title: 'Rete.js',
       link: [
         { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
-        { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com/', crossorigin: '' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap' },
         { rel: 'stylesheet', href: `https://cdn.jsdelivr.net/npm/view-ui-plus@${iViewVersion}/dist/styles/viewuiplus.css` },
         {
-          rel: 'preload', href: 'https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKfw72.woff2', as: 'font', type: 'font/woff2', crossorigin: '',
+          rel: 'preload', href: './fonts/Ubuntu-Regular.woff2', as: 'font', type: 'font/woff2', crossorigin: '',
         },
         {
-          rel: 'preload', href: 'https://cdn.jsdelivr.net/npm/view-ui-plus@1.3.16/dist/styles/fonts/ionicons.woff2?v=3.0.0', as: 'font', type: 'font/woff2', crossorigin: '',
-        },
-        {
-          rel: 'preload', href: 'https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvjsGyN.woff2', as: 'font', type: 'font/woff2', crossorigin: '',
+          rel: 'preload', href: './fonts/Ubuntu-Bold.woff2', as: 'font', type: 'font/woff2', crossorigin: '',
         },
       ],
       meta: [
