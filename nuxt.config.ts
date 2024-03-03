@@ -1,6 +1,7 @@
 /// <reference types="nuxt" />
 import { resolve } from 'path';
 import { isCI, isDevelopment } from 'std-env';
+import { splitVendorChunkPlugin } from 'vite';
 import TypeDoc from './typedoc/index.mjs';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
@@ -19,6 +20,24 @@ export default defineNuxtConfig({
     '~/assets/styles/global.css',
     resolve(__dirname, 'node_modules/view-ui-plus-es/dist/styles/viewuiplus.css'),
   ],
+  vite: {
+    plugins: [
+      splitVendorChunkPlugin(),
+    ],
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id: string) {
+            if (id.endsWith('.css') || id.includes('&lang.sass') || id.includes('&lang.scss') || id.includes('&lang.css')) {
+              return 'styles';
+            }
+
+            return 'app';
+          },
+        },
+      },
+    },
+  },
   content: {
     highlight: {
       theme: 'one-dark-pro',
