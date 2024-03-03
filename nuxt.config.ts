@@ -1,4 +1,5 @@
 /// <reference types="nuxt" />
+import { resolve } from 'path';
 import { isCI, isDevelopment } from 'std-env';
 import TypeDoc from './typedoc/index.mjs';
 
