@@ -11,7 +11,9 @@
     a.origin(href="https://stand-with-ukraine.pp.ua" target="_blank")
       img(:src="originBadge" alt="Stand with Ukraine")
   Logo.logo(v-if="!intro" :hover="logoIsHovered" :zoomIn="false")
-  Button.intro-button(v-if="!intro" shape="circle" type="primary" icon="logo-youtube" @click="intro = true") Intro
+  Button.intro-button(v-if="!intro" shape="circle" type="primary" @click="intro = true")
+    Icon.icon(name="fa6-brands:youtube")
+    | Intro
   Intro.intro(:show="intro" :scroll="true" :autoplay="true")
   .highlights.section
     .highlight
@@ -101,6 +103,10 @@ export default {
   .intro-button
     margin: auto
     display: block
+    .icon
+      font-size: 1.2em
+      margin-right: 0.3em
+      vertical-align: text-top
   .intro
     margin: 2em auto 0 auto
     +phone

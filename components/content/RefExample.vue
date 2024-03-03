@@ -1,16 +1,18 @@
 <template lang="pug">
-Button(
-  shape="circle"
-  size="small"
-  icon="ios-code"
+RefButton(
+  :title="title"
+  icon="fa6-solid:code"
   :to="link"
 )
-  | {{title}}
 </template>
 
 <script>
+import RefButton from '../shared/RefButton.vue';
 
 export default {
+  components: {
+    RefButton,
+  },
   props: ['title', 'link'],
 };
 </script>

@@ -5,7 +5,8 @@ IViewAlert.alert(show-icon)
     Tooltip(placement="top")
       template(#content)
         .tooltip {{ $t('examplesPage.proExample.info') }}
-      Button(type="text" shape="circle" icon="ios-help-circle-outline")
+      Button.question(type="text" shape="circle")
+        Icon.icon(name="f7:question-circle")
     Button.button(:to="patreon.link" target="_blank") {{ $t('examplesPage.proExample.getAccess') }}
   template(#icon)
     Icon.icon(name="ion:finger-print")
@@ -52,6 +53,10 @@ export default {
       text-wrap: wrap
   .icon
     font-size: 1.25em
+  .question
+    padding: 0.2em 0.5em
+    .icon
+      vertical-align: text-top
 
 iframe
   width: 100%

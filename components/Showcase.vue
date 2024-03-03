@@ -6,12 +6,17 @@
         h2.title {{ item.showcase.title }}
         .description {{ item.showcase.description }}
         .links
-          Button(:to="localePath('/examples')" icon="ios-code" shape="circle" type="primary") {{$t('examples')}}
-          Button(:to="localePath('/docs/')" icon="ios-book" shape="circle" type="primary") {{$t('docs')}}
+          Button.button(:to="localePath('/examples')" shape="circle" type="primary")
+            Icon.icon(name="fa6-solid:code")
+            | {{$t('examples')}}
+          Button.button(:to="localePath('/docs/')" shape="circle" type="primary")
+            Icon.icon(name="fa6-solid:book-open")
+            | {{$t('docs')}}
       Card.preview(:padding="0")
         .open
           Tooltip(:content="$t('openNewTab')" placement="top-end")
-            Button(:to="item.showcase.link || item.showcase.source" icon="ios-link" target="_blank")
+            Button.link(:to="item.showcase.link || item.showcase.source" target="_blank")
+              Icon(name="f7:link")
         client-only
           FrameExample(:src="item.showcase.source" :lazy="true")
           template(#placeholder)
@@ -86,6 +91,11 @@ export default {
       +phone
         flex-direction: row
         justify-content: center
+      .button
+        .icon
+          vertical-align: text-top
+          margin-right: 0.3em
+          size: 1.05em
 
   .preview
     width: 80%
@@ -103,6 +113,7 @@ export default {
         border-radius: 1.8em 0 0 0
         border-bottom: 0
         border-right: 0
+        padding: 0.1em 0.6em
     img
       display: block
       width: 100%
