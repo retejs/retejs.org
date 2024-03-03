@@ -1,7 +1,7 @@
 import {
   Menu, MenuItem, Icon, Select, Submenu, Dropdown, Option,
   Drawer, Button, Alert, Tag, Tooltip, Collapse, Panel,
-  Card, Spin, Modal,
+  Card, Spin, Modal, SkeletonItem,
 } from 'view-ui-plus-es';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
@@ -36,6 +36,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   app.component('Card', Card);
   app.component('Spin', Spin);
   app.component('Modal', Modal);
+  app.component('SkeletonItem', SkeletonItem);
 
   nuxtApp.$router.options.scrollBehavior = (to, from, savedPosition) => {
     if (savedPosition) return savedPosition;

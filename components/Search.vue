@@ -1,5 +1,12 @@
 <template lang="pug">
-div(ref="container")
+.search
+  client-only
+    div(ref="container")
+    template(#placeholder)
+      SkeletonItem.skeleton(
+        animated
+        type="rect"
+      )
 </template>
 
 <script lang="ts">
@@ -86,6 +93,11 @@ export default defineComponent({
 :root
   --docsearch-primary-color: #ffd92c
   --docsearch-highlight-color: #8ba0ff
+
+.search
+  .skeleton
+    width: 100%
+    vertical-align: middle
 
 .DocSearch-Button
   border: 1px solid #dcdee2
