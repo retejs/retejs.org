@@ -38,7 +38,7 @@
 									"fileName": "presets/classic/index.ts",
 									"line": 18,
 									"character": 16,
-									"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/presets/classic/index.ts#L18"
+									"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/presets/classic/index.ts#L18"
 								}
 							],
 							"signatures": [
@@ -72,7 +72,7 @@
 											"fileName": "presets/classic/index.ts",
 											"line": 18,
 											"character": 0,
-											"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/presets/classic/index.ts#L18"
+											"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/presets/classic/index.ts#L18"
 										}
 									],
 									"typeParameter": [
@@ -164,7 +164,7 @@
 							"fileName": "presets/classic/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/presets/classic/index.ts#L1"
+							"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/presets/classic/index.ts#L1"
 						}
 					]
 				}
@@ -182,7 +182,7 @@
 					"fileName": "presets/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/presets/index.ts#L1"
+					"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/presets/index.ts#L1"
 				}
 			]
 		},
@@ -268,7 +268,7 @@
 							"fileName": "index.ts",
 							"line": 50,
 							"character": 2,
-							"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L50"
+							"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/index.ts#L50"
 						}
 					],
 					"signatures": [
@@ -283,7 +283,7 @@
 									"fileName": "index.ts",
 									"line": 50,
 									"character": 2,
-									"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L50"
+									"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/index.ts#L50"
 								}
 							],
 							"typeParameter": [
@@ -376,7 +376,7 @@
 					"fileName": "index.ts",
 					"line": 46,
 					"character": 13,
-					"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L46"
+					"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/index.ts#L46"
 				}
 			],
 			"typeParameters": [
@@ -478,7 +478,7 @@
 					"fileName": "index.ts",
 					"line": 24,
 					"character": 12,
-					"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L24"
+					"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/index.ts#L24"
 				}
 			],
 			"type": {
@@ -515,7 +515,7 @@
 													"fileName": "index.ts",
 													"line": 26,
 													"character": 4,
-													"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L26"
+													"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/index.ts#L26"
 												}
 											],
 											"type": {
@@ -544,7 +544,7 @@
 													"fileName": "index.ts",
 													"line": 28,
 													"character": 4,
-													"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L28"
+													"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/index.ts#L28"
 												}
 											],
 											"type": {
@@ -563,7 +563,7 @@
 													"fileName": "index.ts",
 													"line": 27,
 													"character": 4,
-													"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L27"
+													"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/index.ts#L27"
 												}
 											],
 											"signatures": [
@@ -578,7 +578,7 @@
 															"fileName": "index.ts",
 															"line": 27,
 															"character": 4,
-															"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L27"
+															"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/index.ts#L27"
 														}
 													],
 													"type": {
@@ -609,7 +609,7 @@
 											"fileName": "index.ts",
 											"line": 25,
 											"character": 32,
-											"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L25"
+											"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/index.ts#L25"
 										}
 									]
 								}
@@ -651,7 +651,7 @@
 					"fileName": "index.ts",
 					"line": 12,
 					"character": 12,
-					"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L12"
+					"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/index.ts#L12"
 				}
 			],
 			"typeParameters": [
@@ -702,7 +702,7 @@
 									"fileName": "index.ts",
 									"line": 14,
 									"character": 2,
-									"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L14"
+									"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/index.ts#L14"
 								}
 							],
 							"type": {
@@ -729,7 +729,7 @@
 									"fileName": "index.ts",
 									"line": 16,
 									"character": 2,
-									"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L16"
+									"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/index.ts#L16"
 								}
 							],
 							"type": {
@@ -765,7 +765,7 @@
 							"fileName": "index.ts",
 							"line": 12,
 							"character": 49,
-							"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L12"
+							"url": "https://github.com/retejs/context-menu-plugin/blob/462a2ac/src/index.ts#L12"
 						}
 					]
 				}
