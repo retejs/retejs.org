@@ -1,5 +1,5 @@
 <template lang="pug">
-Menu.menu(width="auto")
+Menu.menu(width="17em")
   h1.title
     .text
       slot(name="title")
@@ -24,6 +24,7 @@ export default {
   min-width: 200px
   height: calc(100vh - var(--header-offset))
   overflow: auto
+  overflow-x: hidden
   position: sticky
   top: var(--header-offset)
   .menu-burger

@@ -1,20 +1,23 @@
 <template lang="pug">
 client-only
-  Menu(width="auto" :active-name="activeName" :open-names="cascadePaths")
+  Menu(width="100%" :active-name="activeName" :open-names="cascadePaths")
     template(v-for="item in list")
       MenuItem(
         v-if="!item.children && !item.placeholder"
         :name="sanitize(item._path)"
         :to="sanitize(item._path)"
       )
-        slot(name="item" :data="item") {{ item.title }}
+        slot(name="item" :data="item")
+          .title {{ item.title }}
       Submenu.submenu(v-if="item.children" :name="sanitize(item._path)")
-        template(#title) {{ item.title }}
+        template(#title)
+          .title {{ item.title }}
         Nav(:list="item.children" :active="activeName")
   template(#placeholder)
     SsrNav(:list="list" :active="activeName")
       template(#item="{ data }")
-        slot(name="item" :data="data") {{ data.title }}
+        slot(name="item" :data="data")
+          .title {{ data.title }}
 </template>
 
 <script>
@@ -51,3 +54,11 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+</style>
