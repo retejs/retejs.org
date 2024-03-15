@@ -1,5 +1,5 @@
 <template lang="pug">
-Menu.menu(width="17em")
+Menu.menu(width="var(--menu-width)")
   h1.title
     .text
       slot(name="title")
@@ -35,13 +35,15 @@ export default {
 
 +phone
   .menu
+    --menu-width: auto
     text-align: right
-    z-index: 1
+    z-index: 2
     position: fixed
     right: 0
     width: auto
     height: auto
     min-width: auto
+    border-radius: 0 0 0 1em
     .menu-burger
       display: unset
     .content-nav
