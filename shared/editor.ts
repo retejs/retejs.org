@@ -47,7 +47,7 @@ class AddNode extends ClassicPreset.Node {
 }
 
 class NamelessNode extends ClassicPreset.Node {
-  parent?: string
+  parent?: string;
 
   constructor(public width = 180, public height = 100) {
     super('');
@@ -80,7 +80,9 @@ class Connection<N extends NodeProps> extends ClassicPreset.Connection<N, N> { }
 type Schemes = GetSchemes<NodeProps, Connection<NodeProps>>
 type AreaExtra = VueArea2D<Schemes>
 
-export async function createEditor(container: HTMLElement, props: { multiselect: boolean, order: boolean, onSelect?: OnSelect }) {
+export async function createEditor(container: HTMLElement, props: {
+  multiselect: boolean, order: boolean, onSelect?: OnSelect
+}) {
   const editor = new NodeEditor<Schemes>();
   const area = new AreaPlugin<Schemes, AreaExtra>(container);
   const render = new VuePlugin<Schemes, AreaExtra>();

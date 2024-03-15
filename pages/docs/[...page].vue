@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { defineComponent, ref } from 'vue';
+import { defineComponent } from 'vue';
 import Drawer from '@/components/shared/Drawer.vue';
 import Nav from '@/components/Nav.vue';
 import FetchNav from '@/components/FetchNav.vue';
@@ -31,7 +31,7 @@ export default defineComponent({
 
     return {
       contentPath,
-      drawer: drawer.active
+      drawer: drawer.active,
     };
   },
   methods: {

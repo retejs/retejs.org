@@ -7,8 +7,8 @@ figure.diagram
 
 <script>
 export default {
-  props: ['name', 'caption']
-}
+  props: ['name', 'caption'],
+};
 </script>
 
 <style lang="sass" scoped>
@@ -28,4 +28,3 @@ export default {
     font-size: 0.8em
     font-style: italic
 </style>
-

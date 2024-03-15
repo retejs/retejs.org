@@ -1,21 +1,21 @@
 <template>
-<div class="root" :style="rootStyles">
-  <svg :width="size * length" :height="size" :style="svgStyles" xmlns="http://www.w3.org/2000/svg">
-  <g id="Layer_1">
-    <title>Layer 1</title>
-    <ellipse filter="url(#blur)" :ry="r" :rx="r" :cy="cy" :cx="cx" fill="#fff"/>
-    <path  filter="url(#blur)" :d="path" fill="#fff"/>
-    <ellipse :ry="r" :rx="r" :cy="cy" :cx="cx" fill="#6a6a6a"/>
-    <path  :d="path" fill="#6a6a6a"/>
-  </g>
-  <defs>
-    <filter height="200%" width="200%" y="-50%" x="-50%" id="blur">
-    <feGaussianBlur :stdDeviation="size * 0.2" in="SourceGraphic"/>
-    </filter>
-  </defs>
-  </svg>
-<div class="title" :style="titleStyles">{{title}}</div>
-</div>
+  <div class="root" :style="rootStyles">
+    <svg :width="size * length" :height="size" :style="svgStyles" xmlns="http://www.w3.org/2000/svg">
+      <g id="Layer_1">
+        <title>Layer 1</title>
+        <ellipse filter="url(#blur)" :ry="r" :rx="r" :cy="cy" :cx="cx" fill="#fff" />
+        <path filter="url(#blur)" :d="path" fill="#fff" />
+        <ellipse :ry="r" :rx="r" :cy="cy" :cx="cx" fill="#6a6a6a" />
+        <path :d="path" fill="#6a6a6a" />
+      </g>
+      <defs>
+        <filter height="200%" width="200%" y="-50%" x="-50%" id="blur">
+          <feGaussianBlur :stdDeviation="size * 0.2" in="SourceGraphic" />
+        </filter>
+      </defs>
+    </svg>
+    <div class="title" :style="titleStyles">{{title}}</div>
+  </div>
 </template>
 
 <script>

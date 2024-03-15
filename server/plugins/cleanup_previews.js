@@ -1,5 +1,6 @@
 // remove unnecessary script and assets from /preview/ pages
 
+// eslint-disable-next-line no-undef
 export default defineNitroPlugin((nitroApp) => {
   nitroApp.hooks.hook('render:html', (html, { event }) => {
     if (event.node.req.url.match(/^(\/\w+)?\/preview\//)) {

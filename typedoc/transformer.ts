@@ -5,7 +5,8 @@ import markdownParser from '@nuxt/content/transformers/markdown';
 import remarkHeadingPlugin from 'remark-heading-id';
 import {
   makeRecursiveVisitor, Deserializer, Application, TypeContext, DeclarationReflection,
-  ReflectionType, Type, ProjectReflection, ContainerReflection, Reflection, CommentDisplayPart, CommentTag, SourceReference,
+  ReflectionType, Type, ProjectReflection, ContainerReflection, Reflection, CommentDisplayPart,
+  SourceReference,
 } from 'typedoc';
 import prettier from 'prettier';
 
@@ -22,6 +23,7 @@ function findChildren(root: ContainerReflection, id: number) {
 
 function getType(type: Type | undefined) {
   if (!type) return 'unknown';
+  // eslint-disable-next-line no-use-before-define
   fixTypeStringify(type);
   return type.stringify(TypeContext.none);
 }
@@ -95,7 +97,12 @@ function getPriority(item: Reflection) {
   return +(tags.find((item) => item.tag === '@priority')?.content[0].text || 0);
 }
 
-async function typedocToMarkdown(data: ProjectReflection, children: DeclarationReflection[] | undefined = [], markdown: string[] = [], level = 0) {
+async function typedocToMarkdown(
+  data: ProjectReflection,
+  children: DeclarationReflection[] | undefined = [],
+  markdown: string[] = [],
+  level = 0,
+) {
   children.sort((a, b) => getPriority(b) - getPriority(a));
 
   function typeParametersTable(parameters) {

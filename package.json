@@ -7,6 +7,7 @@
     "dev": "nuxt dev",
     "analyze": "npx nuxi analyze",
     "generate": "nuxt generate",
+    "lint": "eslint --ignore-path .gitignore .",
     "preview": "nuxt preview",
     "update-diagrams": "bash ./scripts/update-diagrams.bash -it",
     "update-diagrams:ci": "bash ./scripts/update-diagrams.bash"

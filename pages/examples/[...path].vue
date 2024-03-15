@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
+import { defineComponent } from 'vue';
 import { useRoute } from 'vue-router';
 import Drawer from '@/components/shared/Drawer.vue';
 import ExamplesNav from '@/components/ExamplesNav.vue';
@@ -40,7 +40,7 @@ export default defineComponent({
     return {
       preview: route.path.replace('/examples/', '/preview/'),
       contentPath,
-      drawer: drawer.active
+      drawer: drawer.active,
     };
   },
   methods: {

@@ -34,8 +34,8 @@ import { usePathSanitizer } from '../shared/route';
 export default {
   setup() {
     return {
-      pathSanitizer: usePathSanitizer()
-    }
+      pathSanitizer: usePathSanitizer(),
+    };
   },
   methods: {
     getPreview,

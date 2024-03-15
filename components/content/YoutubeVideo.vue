@@ -9,18 +9,18 @@ SharedVideo.video(
 
 <script lang="ts" setup>
 import SharedVideo from '../shared/Video.vue';
-import media from '../../consts/media.json'
+import media from '../../consts/media.json';
 
 const props = defineProps({
   name: {
     type: String as () => keyof typeof media.youtube,
-    required: true
-  }
+    required: true,
+  },
 });
 
-const video = media.youtube[props.name]
-const title = video.title
-const url = `https://www.youtube.com/embed/${video.id}?autoplay=0`
+const video = media.youtube[props.name];
+const { title } = video;
+const url = `https://www.youtube.com/embed/${video.id}?autoplay=0`;
 </script>
 
 <style lang="sass" scoped>

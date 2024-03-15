@@ -15,7 +15,7 @@ definePageMeta({
   layout: 'preview',
 });
 
-const image = data.value?.image?.src
+const image = data.value?.image?.src;
 const src = image ? getPreview(image) : mainPreview;
 </script>
 

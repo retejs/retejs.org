@@ -49,7 +49,7 @@ export default defineComponent({
     });
     return {
       element,
-      drawer: drawer.active
+      drawer: drawer.active,
     };
   },
   components: {

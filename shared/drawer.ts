@@ -10,6 +10,6 @@ export function useDrawer() {
   });
 
   return {
-    active
-  }
+    active,
+  };
 }

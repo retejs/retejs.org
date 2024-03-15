@@ -4,7 +4,6 @@ ContentRenderer(:value="data")
     slot(name="not-found")
 </template>
 
-
 <script setup>
 // workaround for https://github.com/nuxt/nuxt/issues/23074
 import { computed, ref } from 'vue';
@@ -16,7 +15,7 @@ const props = defineProps({
   path: String,
   share: Function,
   title: Function,
-  largePreview: Boolean
+  largePreview: Boolean,
 });
 
 const path = props.path.replace(/\/$/, '');

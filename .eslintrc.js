@@ -8,9 +8,11 @@ module.exports = {
     'plugin:vue/vue3-essential',
     '@vue/airbnb',
     '@vue/typescript/recommended',
+    '@vue/eslint-config-typescript',
   ],
   parserOptions: {
-    ecmaVersion: 2020,
+    sourceType: 'module',
+    ecmaVersion: 2022,
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
@@ -29,5 +31,8 @@ module.exports = {
     'max-classes-per-file': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/no-cycle': 'off',
+    'import/extensions': 'off',
+    'vue/no-reserved-component-names': 'warn',
+    'vue/require-default-prop': 'warn',
   },
 };
