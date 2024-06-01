@@ -6,7 +6,7 @@
 	"flags": {},
 	"children": [
 		{
-			"id": 64,
+			"id": 72,
 			"name": "Presets",
 			"variant": "declaration",
 			"kind": 4,
@@ -21,14 +21,14 @@
 			},
 			"children": [
 				{
-					"id": 65,
+					"id": 73,
 					"name": "classic",
 					"variant": "declaration",
 					"kind": 4,
 					"flags": {},
 					"children": [
 						{
-							"id": 66,
+							"id": 74,
 							"name": "setup",
 							"variant": "declaration",
 							"kind": 64,
@@ -38,12 +38,12 @@
 									"fileName": "presets/classic/index.ts",
 									"line": 13,
 									"character": 16,
-									"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/presets/classic/index.ts#L13"
+									"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/presets/classic/index.ts#L13"
 								}
 							],
 							"signatures": [
 								{
-									"id": 67,
+									"id": 75,
 									"name": "setup",
 									"variant": "signature",
 									"kind": 4096,
@@ -117,7 +117,7 @@
 											"fileName": "presets/classic/index.ts",
 											"line": 13,
 											"character": 0,
-											"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/presets/classic/index.ts#L13"
+											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/presets/classic/index.ts#L13"
 										}
 									],
 									"type": {
@@ -137,7 +137,7 @@
 						{
 							"title": "Functions",
 							"children": [
-								66
+								74
 							]
 						}
 					],
@@ -146,7 +146,7 @@
 							"fileName": "presets/classic/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/presets/classic/index.ts#L1"
+							"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/presets/classic/index.ts#L1"
 						}
 					]
 				}
@@ -155,7 +155,7 @@
 				{
 					"title": "Namespaces",
 					"children": [
-						65
+						73
 					]
 				}
 			],
@@ -164,12 +164,12 @@
 					"fileName": "presets/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/presets/index.ts#L1"
+					"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/presets/index.ts#L1"
 				}
 			]
 		},
 		{
-			"id": 31,
+			"id": 36,
 			"name": "ScopesPlugin",
 			"variant": "declaration",
 			"kind": 128,
@@ -231,7 +231,7 @@
 			},
 			"children": [
 				{
-					"id": 56,
+					"id": 61,
 					"name": "addPreset",
 					"variant": "declaration",
 					"kind": 2048,
@@ -241,14 +241,14 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 125,
+							"line": 133,
 							"character": 9,
-							"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L125"
+							"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L133"
 						}
 					],
 					"signatures": [
 						{
-							"id": 57,
+							"id": 62,
 							"name": "addPreset",
 							"variant": "signature",
 							"kind": 4096,
@@ -264,14 +264,14 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 125,
+									"line": 133,
 									"character": 2,
-									"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L125"
+									"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L133"
 								}
 							],
 							"parameters": [
 								{
-									"id": 58,
+									"id": 63,
 									"name": "preset",
 									"variant": "param",
 									"kind": 32768,
@@ -307,21 +307,21 @@
 				{
 					"title": "Methods",
 					"children": [
-						56
+						61
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "index.ts",
-					"line": 45,
+					"line": 46,
 					"character": 13,
-					"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L45"
+					"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L46"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 62,
+					"id": 70,
 					"name": "Schemes",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -337,7 +337,7 @@
 					}
 				},
 				{
-					"id": 63,
+					"id": 71,
 					"name": "T",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -434,7 +434,7 @@
 					"fileName": "index.ts",
 					"line": 17,
 					"character": 12,
-					"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L17"
+					"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L17"
 				}
 			],
 			"type": {
@@ -459,7 +459,7 @@
 									"fileName": "index.ts",
 									"line": 21,
 									"character": 2,
-									"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L21"
+									"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L21"
 								}
 							],
 							"type": {
@@ -475,7 +475,7 @@
 											"fileName": "index.ts",
 											"line": 21,
 											"character": 12,
-											"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L21"
+											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L21"
 										}
 									],
 									"signatures": [
@@ -537,7 +537,7 @@
 									"fileName": "index.ts",
 									"line": 19,
 									"character": 2,
-									"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L19"
+									"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L19"
 								}
 							],
 							"type": {
@@ -553,7 +553,7 @@
 											"fileName": "index.ts",
 											"line": 19,
 											"character": 12,
-											"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L19"
+											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L19"
 										}
 									],
 									"signatures": [
@@ -620,7 +620,7 @@
 									"fileName": "index.ts",
 									"line": 23,
 									"character": 2,
-									"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L23"
+									"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L23"
 								}
 							],
 							"type": {
@@ -636,7 +636,7 @@
 											"fileName": "index.ts",
 											"line": 23,
 											"character": 9,
-											"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L23"
+											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L23"
 										}
 									],
 									"signatures": [
@@ -722,7 +722,7 @@
 							"fileName": "index.ts",
 							"line": 17,
 							"character": 20,
-							"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L17"
+							"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L17"
 						}
 					]
 				}
@@ -758,7 +758,7 @@
 					"fileName": "index.ts",
 					"line": 33,
 					"character": 12,
-					"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L33"
+					"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L33"
 				}
 			],
 			"type": {
@@ -784,7 +784,7 @@
 											"fileName": "index.ts",
 											"line": 34,
 											"character": 27,
-											"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L34"
+											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L34"
 										}
 									],
 									"type": {
@@ -807,7 +807,7 @@
 															"fileName": "index.ts",
 															"line": 34,
 															"character": 35,
-															"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L34"
+															"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L34"
 														}
 													],
 													"type": {
@@ -837,7 +837,7 @@
 													"fileName": "index.ts",
 													"line": 34,
 													"character": 33,
-													"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L34"
+													"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L34"
 												}
 											]
 										}
@@ -854,7 +854,7 @@
 											"fileName": "index.ts",
 											"line": 34,
 											"character": 6,
-											"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L34"
+											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L34"
 										}
 									],
 									"type": {
@@ -877,7 +877,7 @@
 									"fileName": "index.ts",
 									"line": 34,
 									"character": 4,
-									"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L34"
+									"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L34"
 								}
 							]
 						}
@@ -902,7 +902,7 @@
 											"fileName": "index.ts",
 											"line": 35,
 											"character": 29,
-											"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L35"
+											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L35"
 										}
 									],
 									"type": {
@@ -925,7 +925,7 @@
 															"fileName": "index.ts",
 															"line": 35,
 															"character": 37,
-															"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L35"
+															"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L35"
 														}
 													],
 													"type": {
@@ -955,7 +955,7 @@
 													"fileName": "index.ts",
 													"line": 35,
 													"character": 35,
-													"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L35"
+													"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L35"
 												}
 											]
 										}
@@ -972,7 +972,7 @@
 											"fileName": "index.ts",
 											"line": 35,
 											"character": 6,
-											"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L35"
+											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L35"
 										}
 									],
 									"type": {
@@ -995,7 +995,122 @@
 									"fileName": "index.ts",
 									"line": 35,
 									"character": 4,
-									"url": "https://github.com/retejs/scopes-plugin/blob/11fbb8e/src/index.ts#L35"
+									"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L35"
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 31,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 33,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 36,
+											"character": 28,
+											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L36"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 34,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 35,
+													"name": "id",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 36,
+															"character": 36,
+															"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L36"
+														}
+													],
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/src/types.ts",
+															"qualifiedName": "NodeId"
+														},
+														"name": "NodeId",
+														"package": "rete"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														35
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 36,
+													"character": 34,
+													"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L36"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 32,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 36,
+											"character": 6,
+											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L36"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "scopeupdated"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										33,
+										32
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 36,
+									"character": 4,
+									"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L36"
 								}
 							]
 						}
@@ -1008,13 +1123,13 @@
 		{
 			"title": "Namespaces",
 			"children": [
-				64
+				72
 			]
 		},
 		{
 			"title": "Classes",
 			"children": [
-				31
+				36
 			]
 		},
 		{
@@ -1143,41 +1258,61 @@
 		},
 		"31": {
 			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"32": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"33": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"34": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"35": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.id"
+		},
+		"36": {
+			"sourceFileName": "src/index.ts",
 			"qualifiedName": "ScopesPlugin"
 		},
-		"56": {
+		"61": {
 			"sourceFileName": "src/index.ts",
 			"qualifiedName": "ScopesPlugin.addPreset"
-		},
-		"57": {
-			"sourceFileName": "src/index.ts",
-			"qualifiedName": "ScopesPlugin.addPreset"
-		},
-		"58": {
-			"sourceFileName": "src/index.ts",
-			"qualifiedName": "preset"
 		},
 		"62": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "ScopesPlugin.Schemes"
+			"qualifiedName": "ScopesPlugin.addPreset"
 		},
 		"63": {
 			"sourceFileName": "src/index.ts",
+			"qualifiedName": "preset"
+		},
+		"70": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "ScopesPlugin.Schemes"
+		},
+		"71": {
+			"sourceFileName": "src/index.ts",
 			"qualifiedName": "ScopesPlugin.T"
 		},
-		"64": {
+		"72": {
 			"sourceFileName": "src/presets/index.ts",
 			"qualifiedName": ""
 		},
-		"65": {
+		"73": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": ""
 		},
-		"66": {
+		"74": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": "setup"
 		},
-		"67": {
+		"75": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": "setup"
 		}
