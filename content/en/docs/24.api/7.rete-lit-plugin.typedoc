@@ -1,0 +1,1985 @@
+{
+	"id": 0,
+	"name": "@retejs/lit-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 49,
+			"name": "Presets",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Built-in presets, responsible for rendering different parts of the editor."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 50,
+					"name": "classic",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 51,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic/index.tsx",
+									"line": 41,
+									"character": 16,
+									"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/classic/index.tsx#L41"
+								}
+							],
+							"signatures": [
+								{
+									"id": 52,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Classic preset for rendering nodes, connections, controls and sockets."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/classic/index.tsx",
+											"line": 41,
+											"character": 0,
+											"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/classic/index.tsx#L41"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 53,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/types.ts",
+													"qualifiedName": "ClassicScheme"
+												},
+												"name": "ClassicScheme",
+												"package": "@retejs/lit-plugin"
+											}
+										},
+										{
+											"id": 54,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/types.ts",
+													"qualifiedName": "LitArea2D"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "Schemes",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "LitArea2D",
+												"package": "@retejs/lit-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 55,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/index.tsx",
+													"qualifiedName": "ClassicProps"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "Schemes",
+														"refersToTypeParameter": true
+													},
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "K",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "ClassicProps",
+												"package": "@retejs/lit-plugin"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "@retejs/lit-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								51
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/classic/index.tsx",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/classic/index.tsx#L1"
+						}
+					]
+				},
+				{
+					"id": 84,
+					"name": "contextMenu",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 85,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/context-menu/index.ts",
+									"line": 14,
+									"character": 16,
+									"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/index.ts#L14"
+								}
+							],
+							"signatures": [
+								{
+									"id": 86,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset for rendering context menu."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/context-menu/index.ts",
+											"line": 14,
+											"character": 0,
+											"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/index.ts#L14"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 87,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											}
+										},
+										{
+											"id": 88,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "RenderSignal"
+												},
+												"typeArguments": [
+													{
+														"type": "literal",
+														"value": "contextmenu"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 89,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"children": [
+																{
+																	"id": 90,
+																	"name": "items",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/context-menu/types.ts",
+																			"line": 11,
+																			"character": 34,
+																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/types.ts#L11"
+																		}
+																	],
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "reference",
+																			"target": {
+																				"sourceFileName": "src/presets/context-menu/types.ts",
+																				"qualifiedName": "Item"
+																			},
+																			"name": "Item",
+																			"package": "@retejs/lit-plugin"
+																		}
+																	}
+																},
+																{
+																	"id": 93,
+																	"name": "searchBar",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {
+																		"isOptional": true
+																	},
+																	"sources": [
+																		{
+																			"fileName": "presets/context-menu/types.ts",
+																			"line": 11,
+																			"character": 65,
+																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/types.ts#L11"
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "boolean"
+																	}
+																},
+																{
+																	"id": 91,
+																	"name": "onHide",
+																	"variant": "declaration",
+																	"kind": 2048,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/context-menu/types.ts",
+																			"line": 11,
+																			"character": 49,
+																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/types.ts#L11"
+																		}
+																	],
+																	"signatures": [
+																		{
+																			"id": 92,
+																			"name": "onHide",
+																			"variant": "signature",
+																			"kind": 4096,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "presets/context-menu/types.ts",
+																					"line": 11,
+																					"character": 49,
+																					"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/types.ts#L11"
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "void"
+																			}
+																		}
+																	]
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"children": [
+																		90,
+																		93
+																	]
+																},
+																{
+																	"title": "Methods",
+																	"children": [
+																		91
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "presets/context-menu/types.ts",
+																	"line": 11,
+																	"character": 32,
+																	"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/types.ts#L11"
+																}
+															]
+														}
+													}
+												],
+												"name": "RenderSignal",
+												"package": "@retejs/lit-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 94,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 95,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 96,
+															"name": "delay",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"sources": [
+																{
+																	"fileName": "presets/context-menu/index.ts",
+																	"line": 14,
+																	"character": 90,
+																	"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/index.ts#L14"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																96
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "presets/context-menu/index.ts",
+															"line": 14,
+															"character": 88,
+															"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/index.ts#L14"
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "@retejs/lit-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								85
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/context-menu/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/index.ts#L1"
+						}
+					]
+				},
+				{
+					"id": 97,
+					"name": "minimap",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 98,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/minimap/index.ts",
+									"line": 13,
+									"character": 16,
+									"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/index.ts#L13"
+								}
+							],
+							"signatures": [
+								{
+									"id": 99,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset for rendering minimap."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/minimap/index.ts",
+											"line": 13,
+											"character": 0,
+											"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/index.ts#L13"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 100,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											}
+										},
+										{
+											"id": 101,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "RenderSignal"
+												},
+												"typeArguments": [
+													{
+														"type": "literal",
+														"value": "minimap"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 102,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"children": [
+																{
+																	"id": 104,
+																	"name": "nodes",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 19,
+																			"character": 4,
+																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L19"
+																		}
+																	],
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "reference",
+																			"target": {
+																				"sourceFileName": "src/presets/minimap/types.ts",
+																				"qualifiedName": "Rect"
+																			},
+																			"name": "Rect",
+																			"package": "@retejs/lit-plugin"
+																		}
+																	}
+																},
+																{
+																	"id": 103,
+																	"name": "ratio",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 18,
+																			"character": 4,
+																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L18"
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	}
+																},
+																{
+																	"id": 108,
+																	"name": "translate",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 22,
+																			"character": 4,
+																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L22"
+																		}
+																	],
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "src/presets/minimap/types.ts",
+																			"qualifiedName": "Translate"
+																		},
+																		"name": "Translate",
+																		"package": "@retejs/lit-plugin"
+																	}
+																},
+																{
+																	"id": 105,
+																	"name": "viewport",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 20,
+																			"character": 4,
+																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L20"
+																		}
+																	],
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "src/presets/minimap/types.ts",
+																			"qualifiedName": "Rect"
+																		},
+																		"name": "Rect",
+																		"package": "@retejs/lit-plugin"
+																	}
+																},
+																{
+																	"id": 109,
+																	"name": "point",
+																	"variant": "declaration",
+																	"kind": 2048,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 23,
+																			"character": 4,
+																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L23"
+																		}
+																	],
+																	"signatures": [
+																		{
+																			"id": 110,
+																			"name": "point",
+																			"variant": "signature",
+																			"kind": 4096,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "presets/minimap/types.ts",
+																					"line": 23,
+																					"character": 4,
+																					"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L23"
+																				}
+																			],
+																			"parameters": [
+																				{
+																					"id": 111,
+																					"name": "x",
+																					"variant": "param",
+																					"kind": 32768,
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "number"
+																					}
+																				},
+																				{
+																					"id": 112,
+																					"name": "y",
+																					"variant": "param",
+																					"kind": 32768,
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "number"
+																					}
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "void"
+																			}
+																		}
+																	]
+																},
+																{
+																	"id": 106,
+																	"name": "start",
+																	"variant": "declaration",
+																	"kind": 2048,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 21,
+																			"character": 4,
+																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L21"
+																		}
+																	],
+																	"signatures": [
+																		{
+																			"id": 107,
+																			"name": "start",
+																			"variant": "signature",
+																			"kind": 4096,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "presets/minimap/types.ts",
+																					"line": 21,
+																					"character": 4,
+																					"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L21"
+																				}
+																			],
+																			"type": {
+																				"type": "reference",
+																				"target": {
+																					"sourceFileName": "src/presets/minimap/types.ts",
+																					"qualifiedName": "Transform"
+																				},
+																				"name": "Transform",
+																				"package": "@retejs/lit-plugin"
+																			}
+																		}
+																	]
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"children": [
+																		104,
+																		103,
+																		108,
+																		105
+																	]
+																},
+																{
+																	"title": "Methods",
+																	"children": [
+																		109,
+																		106
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "presets/minimap/types.ts",
+																	"line": 17,
+																	"character": 28,
+																	"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L17"
+																}
+															]
+														}
+													}
+												],
+												"name": "RenderSignal",
+												"package": "@retejs/lit-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 113,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 114,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 115,
+															"name": "size",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"sources": [
+																{
+																	"fileName": "presets/minimap/index.ts",
+																	"line": 13,
+																	"character": 86,
+																	"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/index.ts#L13"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																115
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "presets/minimap/index.ts",
+															"line": 13,
+															"character": 84,
+															"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/index.ts#L13"
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "@retejs/lit-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								98
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/minimap/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/index.ts#L1"
+						}
+					]
+				},
+				{
+					"id": 116,
+					"name": "reroute",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 117,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/reroute/index.ts",
+									"line": 19,
+									"character": 16,
+									"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/reroute/index.ts#L19"
+								}
+							],
+							"signatures": [
+								{
+									"id": 118,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset for rendering pins."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/reroute/index.ts",
+											"line": 19,
+											"character": 0,
+											"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/reroute/index.ts#L19"
+										}
+									],
+									"typeParameter": [
+										{
+											"id": 119,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											}
+										},
+										{
+											"id": 120,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "RenderSignal"
+												},
+												"typeArguments": [
+													{
+														"type": "literal",
+														"value": "reroute-pins"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 121,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"children": [
+																{
+																	"id": 122,
+																	"name": "data",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/reroute/types.ts",
+																			"line": 23,
+																			"character": 35,
+																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/reroute/types.ts#L23"
+																		}
+																	],
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "src/presets/reroute/types.ts",
+																			"qualifiedName": "PinData"
+																		},
+																		"name": "PinData",
+																		"package": "@retejs/lit-plugin"
+																	}
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"children": [
+																		122
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "presets/reroute/types.ts",
+																	"line": 23,
+																	"character": 33,
+																	"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/reroute/types.ts#L23"
+																}
+															]
+														}
+													}
+												],
+												"name": "RenderSignal",
+												"package": "@retejs/lit-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 123,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/reroute/index.ts",
+													"qualifiedName": "Props"
+												},
+												"name": "Props",
+												"package": "@retejs/lit-plugin"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "K",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "@retejs/lit-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								117
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/reroute/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/reroute/index.ts#L1"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Namespaces",
+					"children": [
+						50,
+						84,
+						97,
+						116
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "presets/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 23,
+			"name": "LitPlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "React plugin. Renders nodes, connections and other elements using React."
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "10"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "connectionpath"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "render"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "unmount"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 43,
+					"name": "addPreset",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.tsx",
+							"line": 117,
+							"character": 9,
+							"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L117"
+						}
+					],
+					"signatures": [
+						{
+							"id": 44,
+							"name": "addPreset",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a preset to the plugin."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.tsx",
+									"line": 117,
+									"character": 2,
+									"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L117"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 45,
+									"name": "K",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 46,
+									"name": "preset",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset that can render nodes, connections and other elements."
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "conditional",
+												"checkType": {
+													"type": "reference",
+													"target": {
+														"sourceFileName": "node_modules/src/utility-types.ts",
+														"qualifiedName": "CanAssignEachTupleElemmentToAnyOf"
+													},
+													"typeArguments": [
+														{
+															"type": "reference",
+															"target": -1,
+															"name": "T",
+															"refersToTypeParameter": true
+														},
+														{
+															"type": "reference",
+															"target": {
+																"sourceFileName": "node_modules/src/utility-types.ts",
+																"qualifiedName": "UnionToTuple"
+															},
+															"typeArguments": [
+																{
+																	"type": "reference",
+																	"target": -1,
+																	"name": "K",
+																	"refersToTypeParameter": true
+																}
+															],
+															"name": "UnionToTuple",
+															"package": "rete"
+														}
+													],
+													"name": "CanAssignEachTupleElemmentToAnyOf",
+													"package": "rete"
+												},
+												"extendsType": {
+													"type": "literal",
+													"value": true
+												},
+												"trueType": {
+													"type": "reference",
+													"target": -1,
+													"name": "K",
+													"refersToTypeParameter": true
+												},
+												"falseType": {
+													"type": "literal",
+													"value": "Cannot apply preset. Provided signals are not compatible"
+												}
+											}
+										],
+										"name": "RenderPreset",
+										"package": "@retejs/lit-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"children": [
+						43
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.tsx",
+					"line": 31,
+					"character": 13,
+					"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L31"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 47,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				},
+				{
+					"id": 48,
+					"name": "T",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"default": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/index.tsx",
+							"qualifiedName": "Requires"
+						},
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": -1,
+								"name": "Schemes",
+								"refersToTypeParameter": true
+							}
+						],
+						"name": "Requires",
+						"package": "@retejs/lit-plugin"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/src/scope.ts",
+						"qualifiedName": "Scope"
+					},
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": 1,
+							"typeArguments": [
+								{
+									"type": "reference",
+									"target": -1,
+									"name": "Schemes",
+									"refersToTypeParameter": true
+								}
+							],
+							"name": "Produces",
+							"package": "@retejs/lit-plugin"
+						},
+						{
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "union",
+									"types": [
+										{
+											"type": "reference",
+											"target": {
+												"sourceFileName": "src/index.tsx",
+												"qualifiedName": "Requires"
+											},
+											"typeArguments": [
+												{
+													"type": "reference",
+													"target": -1,
+													"name": "Schemes",
+													"refersToTypeParameter": true
+												}
+											],
+											"name": "Requires",
+											"package": "@retejs/lit-plugin"
+										},
+										{
+											"type": "reference",
+											"target": -1,
+											"name": "T",
+											"refersToTypeParameter": true
+										}
+									]
+								}
+							]
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "Produces",
+			"variant": "declaration",
+			"kind": 4194304,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Signals that can be emitted by the plugin"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "9"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "index.tsx",
+					"line": 16,
+					"character": 12,
+					"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L16"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 9,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 2,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 4,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.tsx",
+											"line": 17,
+											"character": 30,
+											"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L17"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 5,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 7,
+													"name": "path",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "index.tsx",
+															"line": 17,
+															"character": 70,
+															"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L17"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 6,
+													"name": "payload",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.tsx",
+															"line": 17,
+															"character": 38,
+															"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L17"
+														}
+													],
+													"type": {
+														"type": "indexedAccess",
+														"indexType": {
+															"type": "literal",
+															"value": "Connection"
+														},
+														"objectType": {
+															"type": "reference",
+															"target": -1,
+															"name": "Schemes",
+															"refersToTypeParameter": true
+														}
+													}
+												},
+												{
+													"id": 8,
+													"name": "points",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.tsx",
+															"line": 17,
+															"character": 85,
+															"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L17"
+														}
+													],
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "reference",
+															"target": {
+																"sourceFileName": "src/types.ts",
+																"qualifiedName": "Position"
+															},
+															"name": "Position",
+															"package": "@retejs/lit-plugin"
+														}
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														7,
+														6,
+														8
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "index.tsx",
+													"line": 17,
+													"character": 36,
+													"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L17"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 3,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.tsx",
+											"line": 17,
+											"character": 6,
+											"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L17"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "connectionpath"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										4,
+										3
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.tsx",
+									"line": 17,
+									"character": 4,
+									"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L17"
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"children": [
+				49
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				23
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				1
+			]
+		}
+	],
+	"packageName": "@retejs/lit-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js Lit plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Render elements**: visualize an elements such as nodes and connections using Lit components\n- **Customization**: modify appearance and behavior for a personalized workflow\n- **Presets**: predefined Lit components for different types of features\n  -  **[Classic](https://retejs.org/docs/guides/renderers/lit#connect-plugin)**: provides a classic visualization of nodes, connections, and controls\n  -  **[Context menu](https://retejs.org/docs/guides/context-menu#render-context-menu)**: provides a classic appearance for "
+		},
+		{
+			"kind": "code",
+			"text": "`rete-context-menu-plugin`"
+		},
+		{
+			"kind": "text",
+			"text": "\n  -  **[Minimap](https://retejs.org/docs/guides/minimap#render)**: provides a classic appearance for "
+		},
+		{
+			"kind": "code",
+			"text": "`rete-minimap-plugin`"
+		},
+		{
+			"kind": "text",
+			"text": "\n  -  **[Reroute](https://retejs.org/docs/guides/reroute#rendering)**: provides a classic appearance for "
+		},
+		{
+			"kind": "code",
+			"text": "`rete-connection-reroute-plugin`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/renderers/lit) and [example](https://retejs.org/examples/lit) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/lit-plugin/blob/main/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "Produces"
+		},
+		"2": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type"
+		},
+		"3": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type.type"
+		},
+		"4": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type.data"
+		},
+		"5": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type"
+		},
+		"6": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type.payload"
+		},
+		"7": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type.path"
+		},
+		"8": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type.points"
+		},
+		"9": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "Schemes"
+		},
+		"23": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "LitPlugin"
+		},
+		"43": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "LitPlugin.addPreset"
+		},
+		"44": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "LitPlugin.addPreset"
+		},
+		"45": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "K"
+		},
+		"46": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "preset"
+		},
+		"47": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "LitPlugin.Schemes"
+		},
+		"48": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "LitPlugin.T"
+		},
+		"49": {
+			"sourceFileName": "src/presets/index.ts",
+			"qualifiedName": ""
+		},
+		"50": {
+			"sourceFileName": "src/presets/classic/index.tsx",
+			"qualifiedName": ""
+		},
+		"51": {
+			"sourceFileName": "src/presets/classic/index.tsx",
+			"qualifiedName": "setup"
+		},
+		"52": {
+			"sourceFileName": "src/presets/classic/index.tsx",
+			"qualifiedName": "setup"
+		},
+		"53": {
+			"sourceFileName": "src/presets/classic/index.tsx",
+			"qualifiedName": "Schemes"
+		},
+		"54": {
+			"sourceFileName": "src/presets/classic/index.tsx",
+			"qualifiedName": "K"
+		},
+		"55": {
+			"sourceFileName": "src/presets/classic/index.tsx",
+			"qualifiedName": "props"
+		},
+		"84": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": ""
+		},
+		"85": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "setup"
+		},
+		"86": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "setup"
+		},
+		"87": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"88": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "K"
+		},
+		"89": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type"
+		},
+		"90": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.items"
+		},
+		"91": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.onHide"
+		},
+		"92": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.onHide"
+		},
+		"93": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.searchBar"
+		},
+		"94": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "props"
+		},
+		"95": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "__type"
+		},
+		"96": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "__type.delay"
+		},
+		"97": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": ""
+		},
+		"98": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "setup"
+		},
+		"99": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "setup"
+		},
+		"100": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"101": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "K"
+		},
+		"102": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type"
+		},
+		"103": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.ratio"
+		},
+		"104": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.nodes"
+		},
+		"105": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.viewport"
+		},
+		"106": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.start"
+		},
+		"107": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.start"
+		},
+		"108": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.translate"
+		},
+		"109": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.point"
+		},
+		"110": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.point"
+		},
+		"111": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "x"
+		},
+		"112": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "y"
+		},
+		"113": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "props"
+		},
+		"114": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "__type"
+		},
+		"115": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "__type.size"
+		},
+		"116": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": ""
+		},
+		"117": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "setup"
+		},
+		"118": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "setup"
+		},
+		"119": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"120": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "K"
+		},
+		"121": {
+			"sourceFileName": "src/presets/reroute/types.ts",
+			"qualifiedName": "__type"
+		},
+		"122": {
+			"sourceFileName": "src/presets/reroute/types.ts",
+			"qualifiedName": "__type.data"
+		},
+		"123": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "props"
+		}
+	}
+}
