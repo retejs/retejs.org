@@ -38,7 +38,7 @@
 									"fileName": "presets/classic/index.ts",
 									"line": 18,
 									"character": 16,
-									"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/presets/classic/index.ts#L18"
+									"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/presets/classic/index.ts#L18"
 								}
 							],
 							"signatures": [
@@ -71,11 +71,11 @@
 										{
 											"fileName": "presets/classic/index.ts",
 											"line": 18,
-											"character": 0,
-											"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/presets/classic/index.ts#L18"
+											"character": 16,
+											"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/presets/classic/index.ts#L18"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 29,
 											"name": "Schemes",
@@ -119,8 +119,9 @@
 													"typeArguments": [
 														{
 															"type": "reference",
-															"target": -1,
+															"target": 29,
 															"name": "Schemes",
+															"package": "rete-context-menu-plugin",
 															"refersToTypeParameter": true
 														}
 													],
@@ -131,21 +132,252 @@
 										}
 									],
 									"type": {
-										"type": "reference",
-										"target": {
-											"sourceFileName": "src/types.ts",
-											"qualifiedName": "Items"
-										},
-										"typeArguments": [
-											{
-												"type": "reference",
-												"target": -1,
-												"name": "Schemes",
-												"refersToTypeParameter": true
-											}
-										],
-										"name": "Items",
-										"package": "rete-context-menu-plugin"
+										"type": "reflection",
+										"declaration": {
+											"id": 31,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "presets/classic/index.ts",
+													"line": 19,
+													"character": 9,
+													"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/presets/classic/index.ts#L19"
+												}
+											],
+											"signatures": [
+												{
+													"id": 32,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "presets/classic/index.ts",
+															"line": 19,
+															"character": 9,
+															"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/presets/classic/index.ts#L19"
+														}
+													],
+													"parameters": [
+														{
+															"id": 33,
+															"name": "context",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "union",
+																"types": [
+																	{
+																		"type": "literal",
+																		"value": "root"
+																	},
+																	{
+																		"type": "indexedAccess",
+																		"indexType": {
+																			"type": "literal",
+																			"value": "Node"
+																		},
+																		"objectType": {
+																			"type": "reference",
+																			"target": 29,
+																			"name": "Schemes",
+																			"package": "rete-context-menu-plugin",
+																			"refersToTypeParameter": true
+																		}
+																	}
+																]
+															}
+														},
+														{
+															"id": 34,
+															"name": "plugin",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "reference",
+																"target": 15,
+																"typeArguments": [
+																	{
+																		"type": "reference",
+																		"target": 29,
+																		"name": "Schemes",
+																		"package": "rete-context-menu-plugin",
+																		"refersToTypeParameter": true
+																	}
+																],
+																"name": "ContextMenuPlugin",
+																"package": "rete-context-menu-plugin"
+															}
+														}
+													],
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "reflection",
+																"declaration": {
+																	"id": 35,
+																	"name": "__type",
+																	"variant": "declaration",
+																	"kind": 65536,
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 37,
+																			"name": "list",
+																			"variant": "declaration",
+																			"kind": 1024,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "presets/classic/index.ts",
+																					"line": 26,
+																					"character": 8,
+																					"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/presets/classic/index.ts#L26"
+																				}
+																			],
+																			"type": {
+																				"type": "array",
+																				"elementType": {
+																					"type": "reference",
+																					"target": {
+																						"sourceFileName": "src/types.ts",
+																						"qualifiedName": "Item"
+																					},
+																					"name": "Item",
+																					"package": "rete-context-menu-plugin"
+																				}
+																			},
+																			"defaultValue": "..."
+																		},
+																		{
+																			"id": 36,
+																			"name": "searchBar",
+																			"variant": "declaration",
+																			"kind": 1024,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "presets/classic/index.ts",
+																					"line": 25,
+																					"character": 8,
+																					"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/presets/classic/index.ts#L25"
+																				}
+																			],
+																			"type": {
+																				"type": "literal",
+																				"value": true
+																			},
+																			"defaultValue": "true"
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Properties",
+																			"children": [
+																				37,
+																				36
+																			]
+																		}
+																	],
+																	"sources": [
+																		{
+																			"fileName": "presets/classic/index.ts",
+																			"line": 24,
+																			"character": 13,
+																			"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/presets/classic/index.ts#L24"
+																		}
+																	]
+																}
+															},
+															{
+																"type": "reflection",
+																"declaration": {
+																	"id": 38,
+																	"name": "__type",
+																	"variant": "declaration",
+																	"kind": 65536,
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 40,
+																			"name": "list",
+																			"variant": "declaration",
+																			"kind": 1024,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "presets/classic/index.ts",
+																					"line": 69,
+																					"character": 6,
+																					"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/presets/classic/index.ts#L69"
+																				}
+																			],
+																			"type": {
+																				"type": "array",
+																				"elementType": {
+																					"type": "reference",
+																					"target": {
+																						"sourceFileName": "src/types.ts",
+																						"qualifiedName": "Item"
+																					},
+																					"name": "Item",
+																					"package": "rete-context-menu-plugin"
+																				}
+																			},
+																			"defaultValue": "..."
+																		},
+																		{
+																			"id": 39,
+																			"name": "searchBar",
+																			"variant": "declaration",
+																			"kind": 1024,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "presets/classic/index.ts",
+																					"line": 68,
+																					"character": 6,
+																					"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/presets/classic/index.ts#L68"
+																				}
+																			],
+																			"type": {
+																				"type": "literal",
+																				"value": false
+																			},
+																			"defaultValue": "false"
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Properties",
+																			"children": [
+																				40,
+																				39
+																			]
+																		}
+																	],
+																	"sources": [
+																		{
+																			"fileName": "presets/classic/index.ts",
+																			"line": 67,
+																			"character": 11,
+																			"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/presets/classic/index.ts#L67"
+																		}
+																	]
+																}
+															}
+														]
+													}
+												}
+											]
+										}
 									}
 								}
 							]
@@ -164,7 +396,7 @@
 							"fileName": "presets/classic/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/presets/classic/index.ts#L1"
+							"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/presets/classic/index.ts#L1"
 						}
 					]
 				}
@@ -182,7 +414,7 @@
 					"fileName": "presets/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/presets/index.ts#L1"
+					"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/presets/index.ts#L1"
 				}
 			]
 		},
@@ -268,7 +500,7 @@
 							"fileName": "index.ts",
 							"line": 50,
 							"character": 2,
-							"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L50"
+							"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/index.ts#L50"
 						}
 					],
 					"signatures": [
@@ -283,10 +515,10 @@
 									"fileName": "index.ts",
 									"line": 50,
 									"character": 2,
-									"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L50"
+									"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/index.ts#L50"
 								}
 							],
-							"typeParameter": [
+							"typeParameters": [
 								{
 									"id": 18,
 									"name": "Schemes",
@@ -325,8 +557,10 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 18,
 												"name": "Schemes",
+												"package": "rete-context-menu-plugin",
+												"qualifiedName": "ContextMenuPlugin.Schemes",
 												"refersToTypeParameter": true
 											}
 										],
@@ -341,8 +575,10 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"target": -1,
+										"target": 18,
 										"name": "Schemes",
+										"package": "rete-context-menu-plugin",
+										"qualifiedName": "ContextMenuPlugin.Schemes",
 										"refersToTypeParameter": true
 									}
 								],
@@ -376,7 +612,7 @@
 					"fileName": "index.ts",
 					"line": 46,
 					"character": 13,
-					"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L46"
+					"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/index.ts#L46"
 				}
 			],
 			"typeParameters": [
@@ -424,8 +660,10 @@
 											"typeArguments": [
 												{
 													"type": "reference",
-													"target": -1,
+													"target": 18,
 													"name": "Schemes",
+													"package": "rete-context-menu-plugin",
+													"qualifiedName": "ContextMenuPlugin.Schemes",
 													"refersToTypeParameter": true
 												}
 											],
@@ -452,7 +690,7 @@
 			"id": 9,
 			"name": "ContextMenuExtra",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -478,7 +716,7 @@
 					"fileName": "index.ts",
 					"line": 24,
 					"character": 12,
-					"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L24"
+					"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/index.ts#L24"
 				}
 			],
 			"type": {
@@ -515,7 +753,7 @@
 													"fileName": "index.ts",
 													"line": 26,
 													"character": 4,
-													"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L26"
+													"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/index.ts#L26"
 												}
 											],
 											"type": {
@@ -544,7 +782,7 @@
 													"fileName": "index.ts",
 													"line": 28,
 													"character": 4,
-													"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L28"
+													"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/index.ts#L28"
 												}
 											],
 											"type": {
@@ -563,7 +801,7 @@
 													"fileName": "index.ts",
 													"line": 27,
 													"character": 4,
-													"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L27"
+													"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/index.ts#L27"
 												}
 											],
 											"signatures": [
@@ -578,7 +816,7 @@
 															"fileName": "index.ts",
 															"line": 27,
 															"character": 4,
-															"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L27"
+															"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/index.ts#L27"
 														}
 													],
 													"type": {
@@ -609,7 +847,7 @@
 											"fileName": "index.ts",
 											"line": 25,
 											"character": 32,
-											"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L25"
+											"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/index.ts#L25"
 										}
 									]
 								}
@@ -625,7 +863,7 @@
 			"id": 1,
 			"name": "Props",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -651,7 +889,7 @@
 					"fileName": "index.ts",
 					"line": 12,
 					"character": 12,
-					"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L12"
+					"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/index.ts#L12"
 				}
 			],
 			"typeParameters": [
@@ -702,7 +940,7 @@
 									"fileName": "index.ts",
 									"line": 14,
 									"character": 2,
-									"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L14"
+									"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/index.ts#L14"
 								}
 							],
 							"type": {
@@ -729,7 +967,7 @@
 									"fileName": "index.ts",
 									"line": 16,
 									"character": 2,
-									"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L16"
+									"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/index.ts#L16"
 								}
 							],
 							"type": {
@@ -741,8 +979,9 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"target": -1,
+										"target": 5,
 										"name": "Schemes",
+										"package": "rete-context-menu-plugin",
 										"refersToTypeParameter": true
 									}
 								],
@@ -765,7 +1004,7 @@
 							"fileName": "index.ts",
 							"line": 12,
 							"character": 49,
-							"url": "https://github.com/retejs/context-menu-plugin/blob/5dcf64e/src/index.ts#L12"
+							"url": "https://github.com/retejs/context-menu-plugin/blob/bafe4b966cbf8e0d86cb86267296c43164334887/src/index.ts#L12"
 						}
 					]
 				}
@@ -896,6 +1135,58 @@
 		"30": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": "nodes"
+		},
+		"31": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__function"
+		},
+		"32": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__function"
+		},
+		"33": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "context"
+		},
+		"34": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "plugin"
+		},
+		"35": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__object"
+		},
+		"36": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__object.searchBar"
+		},
+		"37": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__object.list"
+		},
+		"38": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__object"
+		},
+		"39": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__object.searchBar"
+		},
+		"40": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "__object.list"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/index.ts",
+			"2": "src/presets/index.ts",
+			"3": "src/presets/classic/index.ts"
+		},
+		"reflections": {
+			"1": 0,
+			"2": 25,
+			"3": 26
 		}
 	}
 }
