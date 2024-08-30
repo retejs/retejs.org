@@ -57,7 +57,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 274,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L274"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L274"
 								}
 							],
 							"signatures": [
@@ -72,10 +72,10 @@
 											"fileName": "presets/classic.ts",
 											"line": 274,
 											"character": 2,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L274"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L274"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 137,
 											"name": "Source",
@@ -99,7 +99,7 @@
 																	"fileName": "presets/classic.ts",
 																	"line": 174,
 																	"character": 48,
-																	"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L174"
+																	"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L174"
 																}
 															]
 														}
@@ -117,7 +117,7 @@
 																	"fileName": "presets/classic.ts",
 																	"line": 175,
 																	"character": 49,
-																	"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L175"
+																	"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L175"
 																}
 															]
 														}
@@ -135,16 +135,10 @@
 																	"fileName": "presets/classic.ts",
 																	"line": 176,
 																	"character": 51,
-																	"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L176"
+																	"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L176"
 																}
 															]
 														}
-													},
-													{
-														"type": "reference",
-														"target": -1,
-														"name": "Source",
-														"refersToTypeParameter": true
 													}
 												],
 												"name": "Node",
@@ -174,7 +168,7 @@
 																	"fileName": "presets/classic.ts",
 																	"line": 174,
 																	"character": 48,
-																	"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L174"
+																	"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L174"
 																}
 															]
 														}
@@ -192,7 +186,7 @@
 																	"fileName": "presets/classic.ts",
 																	"line": 175,
 																	"character": 49,
-																	"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L175"
+																	"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L175"
 																}
 															]
 														}
@@ -210,16 +204,10 @@
 																	"fileName": "presets/classic.ts",
 																	"line": 176,
 																	"character": 51,
-																	"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L176"
+																	"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L176"
 																}
 															]
 														}
-													},
-													{
-														"type": "reference",
-														"target": -1,
-														"name": "Target",
-														"refersToTypeParameter": true
 													}
 												],
 												"name": "Node",
@@ -244,8 +232,10 @@
 											},
 											"type": {
 												"type": "reference",
-												"target": -1,
+												"target": 137,
 												"name": "Source",
+												"package": "rete",
+												"qualifiedName": "Connection.Source",
 												"refersToTypeParameter": true
 											}
 										},
@@ -274,8 +264,10 @@
 													},
 													"objectType": {
 														"type": "reference",
-														"target": -1,
+														"target": 137,
 														"name": "Source",
+														"package": "rete",
+														"qualifiedName": "Connection.Source",
 														"refersToTypeParameter": true
 													}
 												}
@@ -297,8 +289,10 @@
 											},
 											"type": {
 												"type": "reference",
-												"target": -1,
+												"target": 141,
 												"name": "Target",
+												"package": "rete",
+												"qualifiedName": "Connection.Target",
 												"refersToTypeParameter": true
 											}
 										},
@@ -327,8 +321,10 @@
 													},
 													"objectType": {
 														"type": "reference",
-														"target": -1,
+														"target": 141,
 														"name": "Target",
+														"package": "rete",
+														"qualifiedName": "Connection.Target",
 														"refersToTypeParameter": true
 													}
 												}
@@ -341,14 +337,18 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 137,
 												"name": "Source",
+												"package": "rete",
+												"qualifiedName": "Connection.Source",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 141,
 												"name": "Target",
+												"package": "rete",
+												"qualifiedName": "Connection.Target",
 												"refersToTypeParameter": true
 											}
 										],
@@ -385,7 +385,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 257,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L257"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L257"
 								}
 							],
 							"type": {
@@ -417,7 +417,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 261,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L261"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L261"
 								}
 							],
 							"type": {
@@ -451,7 +451,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 276,
 									"character": 11,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L276"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L276"
 								}
 							],
 							"type": {
@@ -465,8 +465,10 @@
 									},
 									"objectType": {
 										"type": "reference",
-										"target": -1,
+										"target": 137,
 										"name": "Source",
+										"package": "rete",
+										"qualifiedName": "Connection.Source",
 										"refersToTypeParameter": true
 									}
 								}
@@ -491,7 +493,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 265,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L265"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L265"
 								}
 							],
 							"type": {
@@ -525,7 +527,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 278,
 									"character": 11,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L278"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L278"
 								}
 							],
 							"type": {
@@ -539,8 +541,10 @@
 									},
 									"objectType": {
 										"type": "reference",
-										"target": -1,
+										"target": 141,
 										"name": "Target",
+										"package": "rete",
+										"qualifiedName": "Connection.Target",
 										"refersToTypeParameter": true
 									}
 								}
@@ -570,7 +574,7 @@
 							"fileName": "presets/classic.ts",
 							"line": 250,
 							"character": 13,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L250"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L250"
 						}
 					],
 					"typeParameters": [
@@ -663,7 +667,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 115,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L115"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L115"
 								}
 							],
 							"type": {
@@ -696,7 +700,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 119,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L119"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L119"
 								}
 							],
 							"type": {
@@ -719,7 +723,7 @@
 							"fileName": "presets/classic.ts",
 							"line": 111,
 							"character": 13,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L111"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L111"
 						}
 					],
 					"extendedBy": [
@@ -767,7 +771,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 70,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L70"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L70"
 								}
 							],
 							"signatures": [
@@ -782,10 +786,10 @@
 											"fileName": "presets/classic.ts",
 											"line": 70,
 											"character": 2,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L70"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L70"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 23,
 											"name": "S",
@@ -795,14 +799,6 @@
 											"type": {
 												"type": "reference",
 												"target": 2,
-												"typeArguments": [
-													{
-														"type": "reference",
-														"target": -1,
-														"name": "S",
-														"refersToTypeParameter": true
-													}
-												],
 												"name": "Socket",
 												"package": "rete"
 											}
@@ -825,8 +821,10 @@
 											},
 											"type": {
 												"type": "reference",
-												"target": -1,
+												"target": 23,
 												"name": "S",
+												"package": "rete",
+												"qualifiedName": "Input.S",
 												"refersToTypeParameter": true
 											}
 										},
@@ -883,8 +881,10 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 23,
 												"name": "S",
+												"package": "rete",
+												"qualifiedName": "Input.S",
 												"refersToTypeParameter": true
 											}
 										],
@@ -923,14 +923,23 @@
 									"fileName": "presets/classic.ts",
 									"line": 58,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L58"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L58"
 								}
 							],
 							"type": {
-								"type": "reference",
-								"target": 53,
-								"name": "Control",
-								"package": "rete"
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": null
+									},
+									{
+										"type": "reference",
+										"target": 53,
+										"name": "Control",
+										"package": "rete"
+									}
+								]
 							},
 							"defaultValue": "null"
 						},
@@ -939,7 +948,9 @@
 							"name": "id",
 							"variant": "declaration",
 							"kind": 1024,
-							"flags": {},
+							"flags": {
+								"isInherited": true
+							},
 							"comment": {
 								"summary": [
 									{
@@ -961,7 +972,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 33,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L33"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L33"
 								}
 							],
 							"type": {
@@ -980,7 +991,8 @@
 							"variant": "declaration",
 							"kind": 1024,
 							"flags": {
-								"isOptional": true
+								"isOptional": true,
+								"isInherited": true
 							},
 							"comment": {
 								"summary": [
@@ -999,7 +1011,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 37,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L37"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L37"
 								}
 							],
 							"type": {
@@ -1019,7 +1031,8 @@
 							"kind": 1024,
 							"flags": {
 								"isPublic": true,
-								"isOptional": true
+								"isOptional": true,
+								"isInherited": true
 							},
 							"comment": {
 								"summary": [
@@ -1034,7 +1047,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 70,
 									"character": 39,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L70"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L70"
 								}
 							],
 							"type": {
@@ -1054,7 +1067,8 @@
 							"kind": 1024,
 							"flags": {
 								"isPublic": true,
-								"isOptional": true
+								"isOptional": true,
+								"isInherited": true
 							},
 							"comment": {
 								"summary": [
@@ -1073,7 +1087,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 70,
 									"character": 62,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L70"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L70"
 								}
 							],
 							"type": {
@@ -1109,7 +1123,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 62,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L62"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L62"
 								}
 							],
 							"type": {
@@ -1124,7 +1138,8 @@
 							"variant": "declaration",
 							"kind": 1024,
 							"flags": {
-								"isPublic": true
+								"isPublic": true,
+								"isInherited": true
 							},
 							"comment": {
 								"summary": [
@@ -1139,13 +1154,15 @@
 									"fileName": "presets/classic.ts",
 									"line": 70,
 									"character": 21,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L70"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L70"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": -1,
+								"target": 23,
 								"name": "S",
+								"package": "rete",
+								"qualifiedName": "Input.S",
 								"refersToTypeParameter": true
 							},
 							"inheritedFrom": {
@@ -1165,7 +1182,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 78,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L78"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L78"
 								}
 							],
 							"signatures": [
@@ -1188,7 +1205,7 @@
 											"fileName": "presets/classic.ts",
 											"line": 78,
 											"character": 2,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L78"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L78"
 										}
 									],
 									"parameters": [
@@ -1232,7 +1249,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 86,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L86"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L86"
 								}
 							],
 							"signatures": [
@@ -1255,7 +1272,7 @@
 											"fileName": "presets/classic.ts",
 											"line": 86,
 											"character": 2,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L86"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L86"
 										}
 									],
 									"type": {
@@ -1298,7 +1315,7 @@
 							"fileName": "presets/classic.ts",
 							"line": 54,
 							"character": 13,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L54"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L54"
 						}
 					],
 					"typeParameters": [
@@ -1323,8 +1340,10 @@
 							"typeArguments": [
 								{
 									"type": "reference",
-									"target": -1,
+									"target": 23,
 									"name": "S",
+									"package": "rete",
+									"qualifiedName": "Input.S",
 									"refersToTypeParameter": true
 								}
 							],
@@ -1370,7 +1389,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 150,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L150"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L150"
 								}
 							],
 							"signatures": [
@@ -1385,10 +1404,10 @@
 											"fileName": "presets/classic.ts",
 											"line": 150,
 											"character": 2,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L150"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L150"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 61,
 											"name": "T",
@@ -1419,8 +1438,10 @@
 												"type": "conditional",
 												"checkType": {
 													"type": "reference",
-													"target": -1,
+													"target": 61,
 													"name": "T",
+													"package": "rete",
+													"qualifiedName": "InputControl.T",
 													"refersToTypeParameter": true
 												},
 												"extendsType": {
@@ -1467,8 +1488,10 @@
 											},
 											"type": {
 												"type": "reference",
-												"target": -1,
+												"target": 61,
 												"name": "T",
+												"package": "rete",
+												"qualifiedName": "InputControl.T",
 												"refersToTypeParameter": true
 											}
 										},
@@ -1497,8 +1520,10 @@
 												"typeArguments": [
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 62,
 														"name": "N",
+														"package": "rete",
+														"qualifiedName": "InputControl.N",
 														"refersToTypeParameter": true
 													}
 												],
@@ -1513,14 +1538,18 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 61,
 												"name": "T",
+												"package": "rete",
+												"qualifiedName": "InputControl.T",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 62,
 												"name": "N",
+												"package": "rete",
+												"qualifiedName": "InputControl.N",
 												"refersToTypeParameter": true
 											}
 										],
@@ -1545,7 +1574,9 @@
 							"name": "id",
 							"variant": "declaration",
 							"kind": 1024,
-							"flags": {},
+							"flags": {
+								"isInherited": true
+							},
 							"comment": {
 								"summary": [
 									{
@@ -1567,7 +1598,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 115,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L115"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L115"
 								}
 							],
 							"type": {
@@ -1586,7 +1617,8 @@
 							"variant": "declaration",
 							"kind": 1024,
 							"flags": {
-								"isOptional": true
+								"isOptional": true,
+								"isInherited": true
 							},
 							"comment": {
 								"summary": [
@@ -1605,7 +1637,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 119,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L119"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L119"
 								}
 							],
 							"type": {
@@ -1640,7 +1672,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 150,
 									"character": 37,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L150"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L150"
 								}
 							],
 							"type": {
@@ -1652,8 +1684,10 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"target": -1,
+										"target": 62,
 										"name": "N",
+										"package": "rete",
+										"qualifiedName": "InputControl.N",
 										"refersToTypeParameter": true
 									}
 								],
@@ -1694,13 +1728,15 @@
 									"fileName": "presets/classic.ts",
 									"line": 150,
 									"character": 21,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L150"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L150"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": -1,
+								"target": 61,
 								"name": "T",
+								"package": "rete",
+								"qualifiedName": "InputControl.T",
 								"refersToTypeParameter": true
 							}
 						},
@@ -1715,7 +1751,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 162,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L162"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L162"
 								}
 							],
 							"signatures": [
@@ -1738,7 +1774,7 @@
 											"fileName": "presets/classic.ts",
 											"line": 162,
 											"character": 2,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L162"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L162"
 										}
 									],
 									"parameters": [
@@ -1760,8 +1796,10 @@
 											},
 											"type": {
 												"type": "reference",
-												"target": -1,
+												"target": 62,
 												"name": "N",
+												"package": "rete",
+												"qualifiedName": "InputControl.N",
 												"refersToTypeParameter": true
 											}
 										}
@@ -1802,7 +1840,7 @@
 							"fileName": "presets/classic.ts",
 							"line": 141,
 							"character": 13,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L141"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L141"
 						}
 					],
 					"typeParameters": [
@@ -1836,8 +1874,10 @@
 								"type": "conditional",
 								"checkType": {
 									"type": "reference",
-									"target": -1,
+									"target": 61,
 									"name": "T",
+									"package": "rete",
+									"qualifiedName": "InputControl.T",
 									"refersToTypeParameter": true
 								},
 								"extendsType": {
@@ -1918,13 +1958,15 @@
 									"fileName": "presets/classic.ts",
 									"line": 193,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L193"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L193"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": -1,
+								"target": 133,
 								"name": "Controls",
+								"package": "rete",
+								"qualifiedName": "Node.Controls",
 								"refersToTypeParameter": true
 							},
 							"defaultValue": "..."
@@ -1956,7 +1998,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 181,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L181"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L181"
 								}
 							],
 							"type": {
@@ -1988,7 +2030,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 185,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L185"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L185"
 								}
 							],
 							"type": {
@@ -2026,14 +2068,20 @@
 													"type": "indexedAccess",
 													"indexType": {
 														"type": "reference",
-														"target": -1,
+														"target": {
+															"sourceFileName": "src/presets/classic.ts",
+															"qualifiedName": "key"
+														},
 														"name": "key",
+														"package": "rete",
 														"refersToTypeParameter": true
 													},
 													"objectType": {
 														"type": "reference",
-														"target": -1,
+														"target": 131,
 														"name": "Inputs",
+														"package": "rete",
+														"qualifiedName": "Node.Inputs",
 														"refersToTypeParameter": true
 													}
 												},
@@ -2072,7 +2120,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 189,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L189"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L189"
 								}
 							],
 							"type": {
@@ -2110,14 +2158,20 @@
 													"type": "indexedAccess",
 													"indexType": {
 														"type": "reference",
-														"target": -1,
+														"target": {
+															"sourceFileName": "src/presets/classic.ts",
+															"qualifiedName": "key"
+														},
 														"name": "key",
+														"package": "rete",
 														"refersToTypeParameter": true
 													},
 													"objectType": {
 														"type": "reference",
-														"target": -1,
+														"target": 132,
 														"name": "Outputs",
+														"package": "rete",
+														"qualifiedName": "Node.Outputs",
 														"refersToTypeParameter": true
 													}
 												},
@@ -2162,7 +2216,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 197,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L197"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L197"
 								}
 							],
 							"type": {
@@ -2188,7 +2242,7 @@
 							"fileName": "presets/classic.ts",
 							"line": 173,
 							"character": 13,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L173"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L173"
 						}
 					],
 					"typeParameters": [
@@ -2350,7 +2404,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 102,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L102"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L102"
 								}
 							],
 							"signatures": [
@@ -2365,10 +2419,10 @@
 											"fileName": "presets/classic.ts",
 											"line": 102,
 											"character": 2,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L102"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L102"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 43,
 											"name": "S",
@@ -2378,14 +2432,6 @@
 											"type": {
 												"type": "reference",
 												"target": 2,
-												"typeArguments": [
-													{
-														"type": "reference",
-														"target": -1,
-														"name": "S",
-														"refersToTypeParameter": true
-													}
-												],
 												"name": "Socket",
 												"package": "rete"
 											}
@@ -2408,8 +2454,10 @@
 											},
 											"type": {
 												"type": "reference",
-												"target": -1,
+												"target": 43,
 												"name": "S",
+												"package": "rete",
+												"qualifiedName": "Output.S",
 												"refersToTypeParameter": true
 											}
 										},
@@ -2466,8 +2514,10 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 43,
 												"name": "S",
+												"package": "rete",
+												"qualifiedName": "Output.S",
 												"refersToTypeParameter": true
 											}
 										],
@@ -2492,7 +2542,9 @@
 							"name": "id",
 							"variant": "declaration",
 							"kind": 1024,
-							"flags": {},
+							"flags": {
+								"isInherited": true
+							},
 							"comment": {
 								"summary": [
 									{
@@ -2514,7 +2566,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 33,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L33"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L33"
 								}
 							],
 							"type": {
@@ -2533,7 +2585,8 @@
 							"variant": "declaration",
 							"kind": 1024,
 							"flags": {
-								"isOptional": true
+								"isOptional": true,
+								"isInherited": true
 							},
 							"comment": {
 								"summary": [
@@ -2552,7 +2605,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 37,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L37"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L37"
 								}
 							],
 							"type": {
@@ -2572,7 +2625,8 @@
 							"kind": 1024,
 							"flags": {
 								"isPublic": true,
-								"isOptional": true
+								"isOptional": true,
+								"isInherited": true
 							},
 							"comment": {
 								"summary": [
@@ -2587,7 +2641,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 45,
 									"character": 39,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L45"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L45"
 								}
 							],
 							"type": {
@@ -2607,7 +2661,8 @@
 							"kind": 1024,
 							"flags": {
 								"isPublic": true,
-								"isOptional": true
+								"isOptional": true,
+								"isInherited": true
 							},
 							"comment": {
 								"summary": [
@@ -2622,7 +2677,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 45,
 									"character": 62,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L45"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L45"
 								}
 							],
 							"type": {
@@ -2641,7 +2696,8 @@
 							"variant": "declaration",
 							"kind": 1024,
 							"flags": {
-								"isPublic": true
+								"isPublic": true,
+								"isInherited": true
 							},
 							"comment": {
 								"summary": [
@@ -2656,13 +2712,15 @@
 									"fileName": "presets/classic.ts",
 									"line": 45,
 									"character": 21,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L45"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L45"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": -1,
+								"target": 43,
 								"name": "S",
+								"package": "rete",
+								"qualifiedName": "Output.S",
 								"refersToTypeParameter": true
 							},
 							"inheritedFrom": {
@@ -2695,7 +2753,7 @@
 							"fileName": "presets/classic.ts",
 							"line": 95,
 							"character": 13,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L95"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L95"
 						}
 					],
 					"typeParameters": [
@@ -2720,8 +2778,10 @@
 							"typeArguments": [
 								{
 									"type": "reference",
-									"target": -1,
+									"target": 43,
 									"name": "S",
+									"package": "rete",
+									"qualifiedName": "Output.S",
 									"refersToTypeParameter": true
 								}
 							],
@@ -2756,7 +2816,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 45,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L45"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L45"
 								}
 							],
 							"signatures": [
@@ -2771,10 +2831,10 @@
 											"fileName": "presets/classic.ts",
 											"line": 45,
 											"character": 2,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L45"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L45"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 10,
 											"name": "S",
@@ -2784,14 +2844,6 @@
 											"type": {
 												"type": "reference",
 												"target": 2,
-												"typeArguments": [
-													{
-														"type": "reference",
-														"target": -1,
-														"name": "S",
-														"refersToTypeParameter": true
-													}
-												],
 												"name": "Socket",
 												"package": "rete"
 											}
@@ -2814,8 +2866,10 @@
 											},
 											"type": {
 												"type": "reference",
-												"target": -1,
+												"target": 10,
 												"name": "S",
+												"package": "rete",
+												"qualifiedName": "Port.S",
 												"refersToTypeParameter": true
 											}
 										},
@@ -2868,8 +2922,10 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 10,
 												"name": "S",
+												"package": "rete",
+												"qualifiedName": "Port.S",
 												"refersToTypeParameter": true
 											}
 										],
@@ -2906,7 +2962,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 33,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L33"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L33"
 								}
 							],
 							"type": {
@@ -2939,7 +2995,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 37,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L37"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L37"
 								}
 							],
 							"type": {
@@ -2969,7 +3025,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 45,
 									"character": 39,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L45"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L45"
 								}
 							],
 							"type": {
@@ -2999,7 +3055,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 45,
 									"character": 62,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L45"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L45"
 								}
 							],
 							"type": {
@@ -3028,13 +3084,15 @@
 									"fileName": "presets/classic.ts",
 									"line": 45,
 									"character": 21,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L45"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L45"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": -1,
+								"target": 10,
 								"name": "S",
+								"package": "rete",
+								"qualifiedName": "Port.S",
 								"refersToTypeParameter": true
 							}
 						}
@@ -3062,7 +3120,7 @@
 							"fileName": "presets/classic.ts",
 							"line": 29,
 							"character": 13,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L29"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L29"
 						}
 					],
 					"typeParameters": [
@@ -3130,7 +3188,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 21,
 									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L21"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L21"
 								}
 							],
 							"signatures": [
@@ -3145,7 +3203,7 @@
 											"fileName": "presets/classic.ts",
 											"line": 21,
 											"character": 2,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L21"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L21"
 										}
 									],
 									"parameters": [
@@ -3199,7 +3257,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 21,
 									"character": 21,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L21"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L21"
 								}
 							],
 							"type": {
@@ -3227,7 +3285,7 @@
 							"fileName": "presets/classic.ts",
 							"line": 16,
 							"character": 13,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L16"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L16"
 						}
 					]
 				}
@@ -3252,7 +3310,7 @@
 					"fileName": "presets/classic.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/rete/blob/baa7397/src/presets/classic.ts#L1"
+					"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/presets/classic.ts#L1"
 				}
 			]
 		},
@@ -3293,7 +3351,7 @@
 							"fileName": "editor.ts",
 							"line": 98,
 							"character": 8,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L98"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L98"
 						}
 					],
 					"signatures": [
@@ -3353,8 +3411,8 @@
 								{
 									"fileName": "editor.ts",
 									"line": 98,
-									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L98"
+									"character": 8,
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L98"
 								}
 							],
 							"parameters": [
@@ -3380,8 +3438,10 @@
 										},
 										"objectType": {
 											"type": "reference",
-											"target": -1,
+											"target": 359,
 											"name": "Scheme",
+											"package": "rete",
+											"qualifiedName": "NodeEditor.Scheme",
 											"refersToTypeParameter": true
 										}
 									}
@@ -3416,7 +3476,7 @@
 							"fileName": "editor.ts",
 							"line": 79,
 							"character": 8,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L79"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L79"
 						}
 					],
 					"signatures": [
@@ -3476,8 +3536,8 @@
 								{
 									"fileName": "editor.ts",
 									"line": 79,
-									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L79"
+									"character": 8,
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L79"
 								}
 							],
 							"parameters": [
@@ -3503,8 +3563,10 @@
 										},
 										"objectType": {
 											"type": "reference",
-											"target": -1,
+											"target": 359,
 											"name": "Scheme",
+											"package": "rete",
+											"qualifiedName": "NodeEditor.Scheme",
 											"refersToTypeParameter": true
 										}
 									}
@@ -3539,7 +3601,7 @@
 							"fileName": "editor.ts",
 							"line": 160,
 							"character": 8,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L160"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L160"
 						}
 					],
 					"signatures": [
@@ -3599,8 +3661,8 @@
 								{
 									"fileName": "editor.ts",
 									"line": 160,
-									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L160"
+									"character": 8,
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L160"
 								}
 							],
 							"type": {
@@ -3634,7 +3696,7 @@
 							"fileName": "editor.ts",
 							"line": 67,
 							"character": 9,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L67"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L67"
 						}
 					],
 					"signatures": [
@@ -3667,8 +3729,8 @@
 								{
 									"fileName": "editor.ts",
 									"line": 67,
-									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L67"
+									"character": 9,
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L67"
 								}
 							],
 							"parameters": [
@@ -3700,8 +3762,10 @@
 											},
 											"objectType": {
 												"type": "reference",
-												"target": -1,
+												"target": 359,
 												"name": "Scheme",
+												"package": "rete",
+												"qualifiedName": "NodeEditor.Scheme",
 												"refersToTypeParameter": true
 											}
 										}
@@ -3709,17 +3773,28 @@
 								}
 							],
 							"type": {
-								"type": "indexedAccess",
-								"indexType": {
-									"type": "literal",
-									"value": "Connection"
-								},
-								"objectType": {
-									"type": "reference",
-									"target": -1,
-									"name": "Scheme",
-									"refersToTypeParameter": true
-								}
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "Connection"
+										},
+										"objectType": {
+											"type": "reference",
+											"target": 359,
+											"name": "Scheme",
+											"package": "rete",
+											"qualifiedName": "NodeEditor.Scheme",
+											"refersToTypeParameter": true
+										}
+									}
+								]
 							}
 						}
 					]
@@ -3737,7 +3812,7 @@
 							"fileName": "editor.ts",
 							"line": 58,
 							"character": 9,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L58"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L58"
 						}
 					],
 					"signatures": [
@@ -3770,8 +3845,8 @@
 								{
 									"fileName": "editor.ts",
 									"line": 58,
-									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L58"
+									"character": 9,
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L58"
 								}
 							],
 							"type": {
@@ -3784,8 +3859,10 @@
 									},
 									"objectType": {
 										"type": "reference",
-										"target": -1,
+										"target": 359,
 										"name": "Scheme",
+										"package": "rete",
+										"qualifiedName": "NodeEditor.Scheme",
 										"refersToTypeParameter": true
 									}
 								}
@@ -3806,7 +3883,7 @@
 							"fileName": "editor.ts",
 							"line": 42,
 							"character": 9,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L42"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L42"
 						}
 					],
 					"signatures": [
@@ -3839,8 +3916,8 @@
 								{
 									"fileName": "editor.ts",
 									"line": 42,
-									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L42"
+									"character": 9,
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L42"
 								}
 							],
 							"parameters": [
@@ -3872,8 +3949,10 @@
 											},
 											"objectType": {
 												"type": "reference",
-												"target": -1,
+												"target": 359,
 												"name": "Scheme",
+												"package": "rete",
+												"qualifiedName": "NodeEditor.Scheme",
 												"refersToTypeParameter": true
 											}
 										}
@@ -3881,17 +3960,28 @@
 								}
 							],
 							"type": {
-								"type": "indexedAccess",
-								"indexType": {
-									"type": "literal",
-									"value": "Node"
-								},
-								"objectType": {
-									"type": "reference",
-									"target": -1,
-									"name": "Scheme",
-									"refersToTypeParameter": true
-								}
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "indexedAccess",
+										"indexType": {
+											"type": "literal",
+											"value": "Node"
+										},
+										"objectType": {
+											"type": "reference",
+											"target": 359,
+											"name": "Scheme",
+											"package": "rete",
+											"qualifiedName": "NodeEditor.Scheme",
+											"refersToTypeParameter": true
+										}
+									}
+								]
 							}
 						}
 					]
@@ -3909,7 +3999,7 @@
 							"fileName": "editor.ts",
 							"line": 50,
 							"character": 9,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L50"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L50"
 						}
 					],
 					"signatures": [
@@ -3942,8 +4032,8 @@
 								{
 									"fileName": "editor.ts",
 									"line": 50,
-									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L50"
+									"character": 9,
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L50"
 								}
 							],
 							"type": {
@@ -3956,8 +4046,10 @@
 									},
 									"objectType": {
 										"type": "reference",
-										"target": -1,
+										"target": 359,
 										"name": "Scheme",
+										"package": "rete",
+										"qualifiedName": "NodeEditor.Scheme",
 										"refersToTypeParameter": true
 									}
 								}
@@ -3976,7 +4068,7 @@
 							"fileName": "editor.ts",
 							"line": 139,
 							"character": 8,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L139"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L139"
 						}
 					],
 					"signatures": [
@@ -4036,8 +4128,8 @@
 								{
 									"fileName": "editor.ts",
 									"line": 139,
-									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L139"
+									"character": 8,
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L139"
 								}
 							],
 							"parameters": [
@@ -4069,8 +4161,10 @@
 											},
 											"objectType": {
 												"type": "reference",
-												"target": -1,
+												"target": 359,
 												"name": "Scheme",
+												"package": "rete",
+												"qualifiedName": "NodeEditor.Scheme",
 												"refersToTypeParameter": true
 											}
 										}
@@ -4106,7 +4200,7 @@
 							"fileName": "editor.ts",
 							"line": 117,
 							"character": 8,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L117"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L117"
 						}
 					],
 					"signatures": [
@@ -4166,8 +4260,8 @@
 								{
 									"fileName": "editor.ts",
 									"line": 117,
-									"character": 2,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L117"
+									"character": 8,
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L117"
 								}
 							],
 							"parameters": [
@@ -4199,8 +4293,10 @@
 											},
 											"objectType": {
 												"type": "reference",
-												"target": -1,
+												"target": 359,
 												"name": "Scheme",
+												"package": "rete",
+												"qualifiedName": "NodeEditor.Scheme",
 												"refersToTypeParameter": true
 											}
 										}
@@ -4247,7 +4343,7 @@
 					"fileName": "editor.ts",
 					"line": 29,
 					"character": 13,
-					"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L29"
+					"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L29"
 				}
 			],
 			"typeParameters": [
@@ -4284,8 +4380,10 @@
 							"typeArguments": [
 								{
 									"type": "reference",
-									"target": -1,
+									"target": 359,
 									"name": "Scheme",
+									"package": "rete",
+									"qualifiedName": "NodeEditor.Scheme",
 									"refersToTypeParameter": true
 								}
 							],
@@ -4315,9 +4413,9 @@
 			"sources": [
 				{
 					"fileName": "scope.ts",
-					"line": 85,
+					"line": 84,
 					"character": 13,
-					"url": "https://github.com/retejs/rete/blob/baa7397/src/scope.ts#L85"
+					"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/scope.ts#L84"
 				}
 			],
 			"typeParameters": [
@@ -4374,9 +4472,9 @@
 			"sources": [
 				{
 					"fileName": "scope.ts",
-					"line": 59,
+					"line": 60,
 					"character": 13,
-					"url": "https://github.com/retejs/rete/blob/baa7397/src/scope.ts#L59"
+					"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/scope.ts#L60"
 				}
 			],
 			"typeParameters": [
@@ -4401,7 +4499,7 @@
 			"id": 376,
 			"name": "BaseSchemes",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -4416,7 +4514,7 @@
 					"fileName": "types.ts",
 					"line": 33,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/baa7397/src/types.ts#L33"
+					"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/types.ts#L33"
 				}
 			],
 			"type": {
@@ -4444,7 +4542,7 @@
 			"id": 365,
 			"name": "ConnectionBase",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -4459,7 +4557,7 @@
 					"fileName": "types.ts",
 					"line": 20,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/baa7397/src/types.ts#L20"
+					"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/types.ts#L20"
 				}
 			],
 			"type": {
@@ -4482,7 +4580,7 @@
 									"fileName": "types.ts",
 									"line": 20,
 									"character": 31,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/types.ts#L20"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/types.ts#L20"
 								}
 							],
 							"type": {
@@ -4503,7 +4601,7 @@
 									"fileName": "types.ts",
 									"line": 20,
 									"character": 49,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/types.ts#L20"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/types.ts#L20"
 								}
 							],
 							"type": {
@@ -4524,7 +4622,7 @@
 									"fileName": "types.ts",
 									"line": 20,
 									"character": 65,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/types.ts#L20"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/types.ts#L20"
 								}
 							],
 							"type": {
@@ -4550,7 +4648,7 @@
 							"fileName": "types.ts",
 							"line": 20,
 							"character": 29,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/types.ts#L20"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/types.ts#L20"
 						}
 					]
 				}
@@ -4567,7 +4665,7 @@
 			"id": 361,
 			"name": "ConnectionId",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -4582,7 +4680,7 @@
 					"fileName": "types.ts",
 					"line": 9,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/baa7397/src/types.ts#L9"
+					"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/types.ts#L9"
 				}
 			],
 			"type": {
@@ -4594,7 +4692,7 @@
 			"id": 370,
 			"name": "GetSchemes",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -4620,7 +4718,7 @@
 					"fileName": "types.ts",
 					"line": 27,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/baa7397/src/types.ts#L27"
+					"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/types.ts#L27"
 				}
 			],
 			"typeParameters": [
@@ -4671,13 +4769,14 @@
 									"fileName": "types.ts",
 									"line": 27,
 									"character": 109,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/types.ts#L27"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/types.ts#L27"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": -1,
+								"target": 375,
 								"name": "ConnectionData",
+								"package": "rete",
 								"refersToTypeParameter": true
 							}
 						},
@@ -4692,13 +4791,14 @@
 									"fileName": "types.ts",
 									"line": 27,
 									"character": 93,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/types.ts#L27"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/types.ts#L27"
 								}
 							],
 							"type": {
 								"type": "reference",
-								"target": -1,
+								"target": 374,
 								"name": "NodeData",
+								"package": "rete",
 								"refersToTypeParameter": true
 							}
 						}
@@ -4717,7 +4817,7 @@
 							"fileName": "types.ts",
 							"line": 27,
 							"character": 91,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/types.ts#L27"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/types.ts#L27"
 						}
 					]
 				}
@@ -4727,7 +4827,7 @@
 			"id": 159,
 			"name": "NestedScope",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -4743,9 +4843,9 @@
 			"sources": [
 				{
 					"fileName": "scope.ts",
-					"line": 35,
+					"line": 36,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/baa7397/src/scope.ts#L35"
+					"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/scope.ts#L36"
 				}
 			],
 			"typeParameters": [
@@ -4807,8 +4907,9 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"target": -1,
+								"target": 161,
 								"name": "Current",
+								"package": "rete",
 								"refersToTypeParameter": true
 							},
 							{
@@ -4825,8 +4926,9 @@
 									},
 									"objectType": {
 										"type": "reference",
-										"target": -1,
+										"target": 160,
 										"name": "S",
+										"package": "rete",
 										"refersToTypeParameter": true
 									}
 								}
@@ -4842,8 +4944,9 @@
 				},
 				"trueType": {
 					"type": "reference",
-					"target": -1,
+					"target": 160,
 					"name": "S",
+					"package": "rete",
 					"refersToTypeParameter": true
 				},
 				"falseType": {
@@ -4856,7 +4959,7 @@
 			"id": 362,
 			"name": "NodeBase",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -4871,7 +4974,7 @@
 					"fileName": "types.ts",
 					"line": 15,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/baa7397/src/types.ts#L15"
+					"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/types.ts#L15"
 				}
 			],
 			"type": {
@@ -4894,7 +4997,7 @@
 									"fileName": "types.ts",
 									"line": 15,
 									"character": 25,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/types.ts#L15"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/types.ts#L15"
 								}
 							],
 							"type": {
@@ -4918,7 +5021,7 @@
 							"fileName": "types.ts",
 							"line": 15,
 							"character": 23,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/types.ts#L15"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/types.ts#L15"
 						}
 					]
 				}
@@ -4935,7 +5038,7 @@
 			"id": 360,
 			"name": "NodeId",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -4950,7 +5053,7 @@
 					"fileName": "types.ts",
 					"line": 4,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/baa7397/src/types.ts#L4"
+					"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/types.ts#L4"
 				}
 			],
 			"type": {
@@ -4962,14 +5065,45 @@
 			"id": 162,
 			"name": "Pipe",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "A middleware type that can modify the data"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@example",
+						"content": [
+							{
+								"kind": "code",
+								"text": "```ts\n(data) => data + 1\n```"
+							}
+						]
+					},
+					{
+						"tag": "@example",
+						"content": [
+							{
+								"kind": "code",
+								"text": "```ts\n(data) => undefined // will stop the execution\n@internal\n```"
+							}
+						]
+					}
+				],
+				"modifierTags": [
+					"@internal"
+				]
+			},
 			"sources": [
 				{
 					"fileName": "scope.ts",
-					"line": 17,
+					"line": 18,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/baa7397/src/scope.ts#L17"
+					"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/scope.ts#L18"
 				}
 			],
 			"typeParameters": [
@@ -5000,9 +5134,9 @@
 					"sources": [
 						{
 							"fileName": "scope.ts",
-							"line": 17,
+							"line": 18,
 							"character": 22,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/scope.ts#L17"
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/scope.ts#L18"
 						}
 					],
 					"signatures": [
@@ -5013,12 +5147,7 @@
 							"kind": 4096,
 							"flags": {},
 							"comment": {
-								"summary": [
-									{
-										"kind": "text",
-										"text": "A middleware type that can modify the data"
-									}
-								],
+								"summary": [],
 								"blockTags": [
 									{
 										"tag": "@returns",
@@ -5028,28 +5157,7 @@
 												"text": "The modified data or undefined"
 											}
 										]
-									},
-									{
-										"tag": "@example",
-										"content": [
-											{
-												"kind": "code",
-												"text": "```ts\n(data) => data + 1\n```"
-											}
-										]
-									},
-									{
-										"tag": "@example",
-										"content": [
-											{
-												"kind": "code",
-												"text": "```ts\n(data) => undefined // will stop the execution\n@internal\n```"
-											}
-										]
 									}
-								],
-								"modifierTags": [
-									"@internal"
 								]
 							},
 							"parameters": [
@@ -5069,8 +5177,9 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": -1,
+										"target": 166,
 										"name": "T",
+										"package": "rete",
 										"refersToTypeParameter": true
 									}
 								}
@@ -5094,8 +5203,9 @@
 													},
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 166,
 														"name": "T",
+														"package": "rete",
 														"refersToTypeParameter": true
 													}
 												]
@@ -5110,8 +5220,9 @@
 									},
 									{
 										"type": "reference",
-										"target": -1,
+										"target": 166,
 										"name": "T",
+										"package": "rete",
 										"refersToTypeParameter": true
 									}
 								]
@@ -5125,7 +5236,7 @@
 			"id": 229,
 			"name": "Root",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -5151,7 +5262,7 @@
 					"fileName": "editor.ts",
 					"line": 10,
 					"character": 12,
-					"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L10"
+					"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L10"
 				}
 			],
 			"typeParameters": [
@@ -5200,7 +5311,7 @@
 											"fileName": "editor.ts",
 											"line": 11,
 											"character": 26,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L11"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L11"
 										}
 									],
 									"type": {
@@ -5211,8 +5322,9 @@
 										},
 										"objectType": {
 											"type": "reference",
-											"target": -1,
+											"target": 260,
 											"name": "Scheme",
+											"package": "rete",
 											"refersToTypeParameter": true
 										}
 									}
@@ -5228,7 +5340,7 @@
 											"fileName": "editor.ts",
 											"line": 11,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L11"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L11"
 										}
 									],
 									"type": {
@@ -5251,7 +5363,7 @@
 									"fileName": "editor.ts",
 									"line": 11,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L11"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L11"
 								}
 							]
 						}
@@ -5276,7 +5388,7 @@
 											"fileName": "editor.ts",
 											"line": 12,
 											"character": 27,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L12"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L12"
 										}
 									],
 									"type": {
@@ -5287,8 +5399,9 @@
 										},
 										"objectType": {
 											"type": "reference",
-											"target": -1,
+											"target": 260,
 											"name": "Scheme",
+											"package": "rete",
 											"refersToTypeParameter": true
 										}
 									}
@@ -5304,7 +5417,7 @@
 											"fileName": "editor.ts",
 											"line": 12,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L12"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L12"
 										}
 									],
 									"type": {
@@ -5327,7 +5440,7 @@
 									"fileName": "editor.ts",
 									"line": 12,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L12"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L12"
 								}
 							]
 						}
@@ -5352,7 +5465,7 @@
 											"fileName": "editor.ts",
 											"line": 13,
 											"character": 26,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L13"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L13"
 										}
 									],
 									"type": {
@@ -5363,8 +5476,9 @@
 										},
 										"objectType": {
 											"type": "reference",
-											"target": -1,
+											"target": 260,
 											"name": "Scheme",
+											"package": "rete",
 											"refersToTypeParameter": true
 										}
 									}
@@ -5380,7 +5494,7 @@
 											"fileName": "editor.ts",
 											"line": 13,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L13"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L13"
 										}
 									],
 									"type": {
@@ -5403,7 +5517,7 @@
 									"fileName": "editor.ts",
 									"line": 13,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L13"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L13"
 								}
 							]
 						}
@@ -5428,7 +5542,7 @@
 											"fileName": "editor.ts",
 											"line": 14,
 											"character": 27,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L14"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L14"
 										}
 									],
 									"type": {
@@ -5439,8 +5553,9 @@
 										},
 										"objectType": {
 											"type": "reference",
-											"target": -1,
+											"target": 260,
 											"name": "Scheme",
+											"package": "rete",
 											"refersToTypeParameter": true
 										}
 									}
@@ -5456,7 +5571,7 @@
 											"fileName": "editor.ts",
 											"line": 14,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L14"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L14"
 										}
 									],
 									"type": {
@@ -5479,7 +5594,7 @@
 									"fileName": "editor.ts",
 									"line": 14,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L14"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L14"
 								}
 							]
 						}
@@ -5504,7 +5619,7 @@
 											"fileName": "editor.ts",
 											"line": 15,
 											"character": 32,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L15"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L15"
 										}
 									],
 									"type": {
@@ -5515,8 +5630,9 @@
 										},
 										"objectType": {
 											"type": "reference",
-											"target": -1,
+											"target": 260,
 											"name": "Scheme",
+											"package": "rete",
 											"refersToTypeParameter": true
 										}
 									}
@@ -5532,7 +5648,7 @@
 											"fileName": "editor.ts",
 											"line": 15,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L15"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L15"
 										}
 									],
 									"type": {
@@ -5555,7 +5671,7 @@
 									"fileName": "editor.ts",
 									"line": 15,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L15"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L15"
 								}
 							]
 						}
@@ -5580,7 +5696,7 @@
 											"fileName": "editor.ts",
 											"line": 16,
 											"character": 33,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L16"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L16"
 										}
 									],
 									"type": {
@@ -5591,8 +5707,9 @@
 										},
 										"objectType": {
 											"type": "reference",
-											"target": -1,
+											"target": 260,
 											"name": "Scheme",
+											"package": "rete",
 											"refersToTypeParameter": true
 										}
 									}
@@ -5608,7 +5725,7 @@
 											"fileName": "editor.ts",
 											"line": 16,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L16"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L16"
 										}
 									],
 									"type": {
@@ -5631,7 +5748,7 @@
 									"fileName": "editor.ts",
 									"line": 16,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L16"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L16"
 								}
 							]
 						}
@@ -5656,7 +5773,7 @@
 											"fileName": "editor.ts",
 											"line": 17,
 											"character": 32,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L17"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L17"
 										}
 									],
 									"type": {
@@ -5667,8 +5784,9 @@
 										},
 										"objectType": {
 											"type": "reference",
-											"target": -1,
+											"target": 260,
 											"name": "Scheme",
+											"package": "rete",
 											"refersToTypeParameter": true
 										}
 									}
@@ -5684,7 +5802,7 @@
 											"fileName": "editor.ts",
 											"line": 17,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L17"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L17"
 										}
 									],
 									"type": {
@@ -5707,7 +5825,7 @@
 									"fileName": "editor.ts",
 									"line": 17,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L17"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L17"
 								}
 							]
 						}
@@ -5732,7 +5850,7 @@
 											"fileName": "editor.ts",
 											"line": 18,
 											"character": 33,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L18"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L18"
 										}
 									],
 									"type": {
@@ -5743,8 +5861,9 @@
 										},
 										"objectType": {
 											"type": "reference",
-											"target": -1,
+											"target": 260,
 											"name": "Scheme",
+											"package": "rete",
 											"refersToTypeParameter": true
 										}
 									}
@@ -5760,7 +5879,7 @@
 											"fileName": "editor.ts",
 											"line": 18,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L18"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L18"
 										}
 									],
 									"type": {
@@ -5783,7 +5902,7 @@
 									"fileName": "editor.ts",
 									"line": 18,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L18"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L18"
 								}
 							]
 						}
@@ -5808,7 +5927,7 @@
 											"fileName": "editor.ts",
 											"line": 19,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L19"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L19"
 										}
 									],
 									"type": {
@@ -5830,7 +5949,7 @@
 									"fileName": "editor.ts",
 									"line": 19,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L19"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L19"
 								}
 							]
 						}
@@ -5855,7 +5974,7 @@
 											"fileName": "editor.ts",
 											"line": 20,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L20"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L20"
 										}
 									],
 									"type": {
@@ -5877,7 +5996,7 @@
 									"fileName": "editor.ts",
 									"line": 20,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L20"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L20"
 								}
 							]
 						}
@@ -5902,7 +6021,7 @@
 											"fileName": "editor.ts",
 											"line": 21,
 											"character": 6,
-											"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L21"
+											"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L21"
 										}
 									],
 									"type": {
@@ -5924,7 +6043,7 @@
 									"fileName": "editor.ts",
 									"line": 21,
 									"character": 4,
-									"url": "https://github.com/retejs/rete/blob/baa7397/src/editor.ts#L21"
+									"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/editor.ts#L21"
 								}
 							]
 						}
@@ -5941,9 +6060,9 @@
 			"sources": [
 				{
 					"fileName": "utils.ts",
-					"line": 10,
+					"line": 6,
 					"character": 16,
-					"url": "https://github.com/retejs/rete/blob/baa7397/src/utils.ts#L10"
+					"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/utils.ts#L6"
 				}
 			],
 			"signatures": [
@@ -5970,9 +6089,9 @@
 					"sources": [
 						{
 							"fileName": "utils.ts",
-							"line": 10,
-							"character": 0,
-							"url": "https://github.com/retejs/rete/blob/baa7397/src/utils.ts#L10"
+							"line": 6,
+							"character": 16,
+							"url": "https://github.com/retejs/rete/blob/ea7420fccac0c7705c9a1c2818174078730b3f46/src/utils.ts#L6"
 						}
 					],
 					"type": {
@@ -6806,6 +6925,16 @@
 		"378": {
 			"sourceFileName": "src/utils.ts",
 			"qualifiedName": "getUID"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/index.ts",
+			"2": "src/presets/classic.ts"
+		},
+		"reflections": {
+			"1": 0,
+			"2": 1
 		}
 	}
 }
