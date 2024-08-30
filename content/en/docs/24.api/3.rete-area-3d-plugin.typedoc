@@ -6,8 +6,8 @@
 	"flags": {},
 	"children": [
 		{
-			"id": 108,
-			"name": "Area3DExtensions",
+			"id": 112,
+			"name": "Extensions",
 			"variant": "declaration",
 			"kind": 4,
 			"flags": {},
@@ -32,8 +32,8 @@
 			},
 			"children": [
 				{
-					"id": 118,
-					"name": "forms",
+					"id": 122,
+					"name": "Extensions/Forms",
 					"variant": "declaration",
 					"kind": 4,
 					"flags": {},
@@ -47,10 +47,10 @@
 					},
 					"children": [
 						{
-							"id": 165,
+							"id": 169,
 							"name": "ClassicNodeOptions",
 							"variant": "declaration",
-							"kind": 4194304,
+							"kind": 2097152,
 							"flags": {},
 							"comment": {
 								"summary": [
@@ -62,23 +62,23 @@
 							},
 							"sources": [
 								{
-									"fileName": "extensions/forms/node/geometry.ts",
+									"fileName": "src/extensions/forms/node/geometry.ts",
 									"line": 10,
 									"character": 12,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/node/geometry.ts#L10"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/node/geometry.ts#L10"
 								}
 							],
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 166,
+									"id": 170,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
 									"flags": {},
 									"children": [
 										{
-											"id": 171,
+											"id": 175,
 											"name": "borderRadius",
 											"variant": "declaration",
 											"kind": 1024,
@@ -95,10 +95,10 @@
 											},
 											"sources": [
 												{
-													"fileName": "extensions/forms/node/geometry.ts",
+													"fileName": "src/extensions/forms/node/geometry.ts",
 													"line": 20,
 													"character": 2,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/node/geometry.ts#L20"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/node/geometry.ts#L20"
 												}
 											],
 											"type": {
@@ -107,7 +107,7 @@
 											}
 										},
 										{
-											"id": 169,
+											"id": 173,
 											"name": "inputsOffset",
 											"variant": "declaration",
 											"kind": 1024,
@@ -124,10 +124,10 @@
 											},
 											"sources": [
 												{
-													"fileName": "extensions/forms/node/geometry.ts",
+													"fileName": "src/extensions/forms/node/geometry.ts",
 													"line": 16,
 													"character": 2,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/node/geometry.ts#L16"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/node/geometry.ts#L16"
 												}
 											],
 											"type": {
@@ -136,7 +136,7 @@
 											}
 										},
 										{
-											"id": 170,
+											"id": 174,
 											"name": "outputsOffset",
 											"variant": "declaration",
 											"kind": 1024,
@@ -153,10 +153,10 @@
 											},
 											"sources": [
 												{
-													"fileName": "extensions/forms/node/geometry.ts",
+													"fileName": "src/extensions/forms/node/geometry.ts",
 													"line": 18,
 													"character": 2,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/node/geometry.ts#L18"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/node/geometry.ts#L18"
 												}
 											],
 											"type": {
@@ -165,7 +165,7 @@
 											}
 										},
 										{
-											"id": 168,
+											"id": 172,
 											"name": "socketMargin",
 											"variant": "declaration",
 											"kind": 1024,
@@ -182,10 +182,10 @@
 											},
 											"sources": [
 												{
-													"fileName": "extensions/forms/node/geometry.ts",
+													"fileName": "src/extensions/forms/node/geometry.ts",
 													"line": 14,
 													"character": 2,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/node/geometry.ts#L14"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/node/geometry.ts#L14"
 												}
 											],
 											"type": {
@@ -194,7 +194,7 @@
 											}
 										},
 										{
-											"id": 167,
+											"id": 171,
 											"name": "socketRadius",
 											"variant": "declaration",
 											"kind": 1024,
@@ -211,10 +211,10 @@
 											},
 											"sources": [
 												{
-													"fileName": "extensions/forms/node/geometry.ts",
+													"fileName": "src/extensions/forms/node/geometry.ts",
 													"line": 12,
 													"character": 2,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/node/geometry.ts#L12"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/node/geometry.ts#L12"
 												}
 											],
 											"type": {
@@ -227,30 +227,30 @@
 										{
 											"title": "Properties",
 											"children": [
-												171,
-												169,
-												170,
-												168,
-												167
+												175,
+												173,
+												174,
+												172,
+												171
 											]
 										}
 									],
 									"sources": [
 										{
-											"fileName": "extensions/forms/node/geometry.ts",
+											"fileName": "src/extensions/forms/node/geometry.ts",
 											"line": 10,
 											"character": 21,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/node/geometry.ts#L10"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/node/geometry.ts#L10"
 										}
 									]
 								}
 							}
 						},
 						{
-							"id": 124,
+							"id": 128,
 							"name": "ConnectionForm",
 							"variant": "declaration",
-							"kind": 4194304,
+							"kind": 2097152,
 							"flags": {},
 							"comment": {
 								"summary": [
@@ -262,71 +262,71 @@
 							},
 							"sources": [
 								{
-									"fileName": "extensions/forms/connection/index.ts",
+									"fileName": "src/extensions/forms/connection/index.ts",
 									"line": 18,
 									"character": 12,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/connection/index.ts#L18"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/connection/index.ts#L18"
 								}
 							],
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 125,
+									"id": 129,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
 									"flags": {},
 									"children": [
 										{
-											"id": 126,
+											"id": 130,
 											"name": "customize",
 											"variant": "declaration",
 											"kind": 1024,
 											"flags": {
 												"isOptional": true
 											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Customize connection geometry"
+													}
+												]
+											},
 											"sources": [
 												{
-													"fileName": "extensions/forms/connection/index.ts",
+													"fileName": "src/extensions/forms/connection/index.ts",
 													"line": 20,
 													"character": 2,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/connection/index.ts#L20"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/connection/index.ts#L20"
 												}
 											],
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 127,
+													"id": 131,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
 													"flags": {},
 													"sources": [
 														{
-															"fileName": "extensions/forms/connection/index.ts",
+															"fileName": "src/extensions/forms/connection/index.ts",
 															"line": 20,
 															"character": 14,
-															"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/connection/index.ts#L20"
+															"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/connection/index.ts#L20"
 														}
 													],
 													"signatures": [
 														{
-															"id": 128,
+															"id": 132,
 															"name": "__type",
 															"variant": "signature",
 															"kind": 4096,
 															"flags": {},
-															"comment": {
-																"summary": [
-																	{
-																		"kind": "text",
-																		"text": "Customize connection geometry"
-																	}
-																]
-															},
 															"parameters": [
 																{
-																	"id": 129,
+																	"id": 133,
 																	"name": "path",
 																	"variant": "param",
 																	"kind": 32768,
@@ -356,26 +356,26 @@
 										{
 											"title": "Properties",
 											"children": [
-												126
+												130
 											]
 										}
 									],
 									"sources": [
 										{
-											"fileName": "extensions/forms/connection/index.ts",
+											"fileName": "src/extensions/forms/connection/index.ts",
 											"line": 18,
 											"character": 20,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/connection/index.ts#L18"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/connection/index.ts#L18"
 										}
 									]
 								}
 							}
 						},
 						{
-							"id": 148,
+							"id": 152,
 							"name": "NodeForm",
 							"variant": "declaration",
-							"kind": 4194304,
+							"kind": 2097152,
 							"flags": {},
 							"comment": {
 								"summary": [
@@ -387,15 +387,15 @@
 							},
 							"sources": [
 								{
-									"fileName": "extensions/forms/node/index.ts",
+									"fileName": "src/extensions/forms/node/index.ts",
 									"line": 13,
 									"character": 12,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/node/index.ts#L13"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/node/index.ts#L13"
 								}
 							],
 							"typeParameters": [
 								{
-									"id": 154,
+									"id": 158,
 									"name": "S",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -414,62 +414,62 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 149,
+									"id": 153,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
 									"flags": {},
 									"children": [
 										{
-											"id": 150,
+											"id": 154,
 											"name": "customize",
 											"variant": "declaration",
 											"kind": 1024,
 											"flags": {
 												"isOptional": true
 											},
+											"comment": {
+												"summary": [
+													{
+														"kind": "text",
+														"text": "Customize node geometry"
+													}
+												]
+											},
 											"sources": [
 												{
-													"fileName": "extensions/forms/node/index.ts",
+													"fileName": "src/extensions/forms/node/index.ts",
 													"line": 15,
 													"character": 2,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/node/index.ts#L15"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/node/index.ts#L15"
 												}
 											],
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 151,
+													"id": 155,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
 													"flags": {},
 													"sources": [
 														{
-															"fileName": "extensions/forms/node/index.ts",
+															"fileName": "src/extensions/forms/node/index.ts",
 															"line": 15,
 															"character": 14,
-															"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/node/index.ts#L15"
+															"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/node/index.ts#L15"
 														}
 													],
 													"signatures": [
 														{
-															"id": 152,
+															"id": 156,
 															"name": "__type",
 															"variant": "signature",
 															"kind": 4096,
 															"flags": {},
-															"comment": {
-																"summary": [
-																	{
-																		"kind": "text",
-																		"text": "Customize node geometry"
-																	}
-																]
-															},
 															"parameters": [
 																{
-																	"id": 153,
+																	"id": 157,
 																	"name": "node",
 																	"variant": "param",
 																	"kind": 32768,
@@ -482,8 +482,9 @@
 																		},
 																		"objectType": {
 																			"type": "reference",
-																			"target": -1,
+																			"target": 158,
 																			"name": "S",
+																			"package": "rete-area-3d-plugin",
 																			"refersToTypeParameter": true
 																		}
 																	}
@@ -508,38 +509,38 @@
 										{
 											"title": "Properties",
 											"children": [
-												150
+												154
 											]
 										}
 									],
 									"sources": [
 										{
-											"fileName": "extensions/forms/node/index.ts",
+											"fileName": "src/extensions/forms/node/index.ts",
 											"line": 13,
 											"character": 45,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/node/index.ts#L13"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/node/index.ts#L13"
 										}
 									]
 								}
 							}
 						},
 						{
-							"id": 119,
+							"id": 123,
 							"name": "comment",
 							"variant": "declaration",
 							"kind": 64,
 							"flags": {},
 							"sources": [
 								{
-									"fileName": "extensions/forms/comment.ts",
+									"fileName": "src/extensions/forms/comment.ts",
 									"line": 40,
 									"character": 16,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/comment.ts#L40"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/comment.ts#L40"
 								}
 							],
 							"signatures": [
 								{
-									"id": 120,
+									"id": 124,
 									"name": "comment",
 									"variant": "signature",
 									"kind": 4096,
@@ -554,15 +555,15 @@
 									},
 									"sources": [
 										{
-											"fileName": "extensions/forms/comment.ts",
+											"fileName": "src/extensions/forms/comment.ts",
 											"line": 40,
-											"character": 0,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/comment.ts#L40"
+											"character": 16,
+											"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/comment.ts#L40"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
-											"id": 121,
+											"id": 125,
 											"name": "S",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -578,7 +579,7 @@
 											}
 										},
 										{
-											"id": 122,
+											"id": 126,
 											"name": "K",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -587,7 +588,7 @@
 									],
 									"parameters": [
 										{
-											"id": 123,
+											"id": 127,
 											"name": "scope",
 											"variant": "param",
 											"kind": 32768,
@@ -616,8 +617,9 @@
 														"typeArguments": [
 															{
 																"type": "reference",
-																"target": -1,
+																"target": 126,
 																"name": "K",
+																"package": "rete-area-3d-plugin",
 																"refersToTypeParameter": true
 															},
 															{
@@ -659,22 +661,22 @@
 							]
 						},
 						{
-							"id": 130,
+							"id": 134,
 							"name": "connection",
 							"variant": "declaration",
 							"kind": 64,
 							"flags": {},
 							"sources": [
 								{
-									"fileName": "extensions/forms/connection/index.ts",
+									"fileName": "src/extensions/forms/connection/index.ts",
 									"line": 28,
 									"character": 16,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/connection/index.ts#L28"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/connection/index.ts#L28"
 								}
 							],
 							"signatures": [
 								{
-									"id": 131,
+									"id": 135,
 									"name": "connection",
 									"variant": "signature",
 									"kind": 4096,
@@ -689,15 +691,15 @@
 									},
 									"sources": [
 										{
-											"fileName": "extensions/forms/connection/index.ts",
+											"fileName": "src/extensions/forms/connection/index.ts",
 											"line": 28,
-											"character": 0,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/connection/index.ts#L28"
+											"character": 16,
+											"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/connection/index.ts#L28"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
-											"id": 132,
+											"id": 136,
 											"name": "S",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -713,14 +715,14 @@
 											}
 										},
 										{
-											"id": 133,
+											"id": 137,
 											"name": "K",
 											"variant": "typeParam",
 											"kind": 131072,
 											"flags": {}
 										},
 										{
-											"id": 134,
+											"id": 138,
 											"name": "E",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -729,7 +731,7 @@
 									],
 									"parameters": [
 										{
-											"id": 135,
+											"id": 139,
 											"name": "scope",
 											"variant": "param",
 											"kind": 32768,
@@ -758,16 +760,18 @@
 														"typeArguments": [
 															{
 																"type": "reference",
-																"target": -1,
+																"target": 137,
 																"name": "K",
+																"package": "rete-area-3d-plugin",
 																"refersToTypeParameter": true
 															},
 															{
 																"type": "array",
 																"elementType": {
 																	"type": "reference",
-																	"target": -1,
+																	"target": 138,
 																	"name": "E",
+																	"package": "rete-area-3d-plugin",
 																	"refersToTypeParameter": true
 																}
 															}
@@ -781,37 +785,37 @@
 															{
 																"type": "reflection",
 																"declaration": {
-																	"id": 136,
+																	"id": 140,
 																	"name": "__type",
 																	"variant": "declaration",
 																	"kind": 65536,
 																	"flags": {},
 																	"children": [
 																		{
-																			"id": 138,
+																			"id": 142,
 																			"name": "data",
 																			"variant": "declaration",
 																			"kind": 1024,
 																			"flags": {},
 																			"sources": [
 																				{
-																					"fileName": "extensions/forms/connection/index.ts",
+																					"fileName": "src/extensions/forms/connection/index.ts",
 																					"line": 13,
 																					"character": 30,
-																					"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/connection/index.ts#L13"
+																					"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/connection/index.ts#L13"
 																				}
 																			],
 																			"type": {
 																				"type": "reflection",
 																				"declaration": {
-																					"id": 139,
+																					"id": 143,
 																					"name": "__type",
 																					"variant": "declaration",
 																					"kind": 65536,
 																					"flags": {},
 																					"children": [
 																						{
-																							"id": 141,
+																							"id": 145,
 																							"name": "path",
 																							"variant": "declaration",
 																							"kind": 1024,
@@ -820,10 +824,10 @@
 																							},
 																							"sources": [
 																								{
-																									"fileName": "extensions/forms/connection/index.ts",
+																									"fileName": "src/extensions/forms/connection/index.ts",
 																									"line": 13,
 																									"character": 70,
-																									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/connection/index.ts#L13"
+																									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/connection/index.ts#L13"
 																								}
 																							],
 																							"type": {
@@ -832,17 +836,17 @@
 																							}
 																						},
 																						{
-																							"id": 140,
+																							"id": 144,
 																							"name": "payload",
 																							"variant": "declaration",
 																							"kind": 1024,
 																							"flags": {},
 																							"sources": [
 																								{
-																									"fileName": "extensions/forms/connection/index.ts",
+																									"fileName": "src/extensions/forms/connection/index.ts",
 																									"line": 13,
 																									"character": 38,
-																									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/connection/index.ts#L13"
+																									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/connection/index.ts#L13"
 																								}
 																							],
 																							"type": {
@@ -853,24 +857,25 @@
 																								},
 																								"objectType": {
 																									"type": "reference",
-																									"target": -1,
+																									"target": 136,
 																									"name": "S",
+																									"package": "rete-area-3d-plugin",
 																									"refersToTypeParameter": true
 																								}
 																							}
 																						},
 																						{
-																							"id": 142,
+																							"id": 146,
 																							"name": "points",
 																							"variant": "declaration",
 																							"kind": 1024,
 																							"flags": {},
 																							"sources": [
 																								{
-																									"fileName": "extensions/forms/connection/index.ts",
+																									"fileName": "src/extensions/forms/connection/index.ts",
 																									"line": 13,
 																									"character": 85,
-																									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/connection/index.ts#L13"
+																									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/connection/index.ts#L13"
 																								}
 																							],
 																							"type": {
@@ -891,35 +896,35 @@
 																						{
 																							"title": "Properties",
 																							"children": [
-																								141,
-																								140,
-																								142
+																								145,
+																								144,
+																								146
 																							]
 																						}
 																					],
 																					"sources": [
 																						{
-																							"fileName": "extensions/forms/connection/index.ts",
+																							"fileName": "src/extensions/forms/connection/index.ts",
 																							"line": 13,
 																							"character": 36,
-																							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/connection/index.ts#L13"
+																							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/connection/index.ts#L13"
 																						}
 																					]
 																				}
 																			}
 																		},
 																		{
-																			"id": 137,
+																			"id": 141,
 																			"name": "type",
 																			"variant": "declaration",
 																			"kind": 1024,
 																			"flags": {},
 																			"sources": [
 																				{
-																					"fileName": "extensions/forms/connection/index.ts",
+																					"fileName": "src/extensions/forms/connection/index.ts",
 																					"line": 13,
 																					"character": 6,
-																					"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/connection/index.ts#L13"
+																					"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/connection/index.ts#L13"
 																				}
 																			],
 																			"type": {
@@ -932,17 +937,17 @@
 																		{
 																			"title": "Properties",
 																			"children": [
-																				138,
-																				137
+																				142,
+																				141
 																			]
 																		}
 																	],
 																	"sources": [
 																		{
-																			"fileName": "extensions/forms/connection/index.ts",
+																			"fileName": "src/extensions/forms/connection/index.ts",
 																			"line": 13,
 																			"character": 4,
-																			"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/connection/index.ts#L13"
+																			"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/connection/index.ts#L13"
 																		}
 																	]
 																}
@@ -955,7 +960,7 @@
 											}
 										},
 										{
-											"id": 143,
+											"id": 147,
 											"name": "props",
 											"variant": "param",
 											"kind": 32768,
@@ -972,7 +977,7 @@
 											},
 											"type": {
 												"type": "reference",
-												"target": 124,
+												"target": 128,
 												"name": "Props",
 												"package": "rete-area-3d-plugin"
 											}
@@ -986,22 +991,22 @@
 							]
 						},
 						{
-							"id": 144,
+							"id": 148,
 							"name": "createClassicConnectionGeometry",
 							"variant": "declaration",
 							"kind": 64,
 							"flags": {},
 							"sources": [
 								{
-									"fileName": "extensions/forms/connection/geometry.ts",
+									"fileName": "src/extensions/forms/connection/geometry.ts",
 									"line": 16,
 									"character": 16,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/connection/geometry.ts#L16"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/connection/geometry.ts#L16"
 								}
 							],
 							"signatures": [
 								{
-									"id": 145,
+									"id": 149,
 									"name": "createClassicConnectionGeometry",
 									"variant": "signature",
 									"kind": 4096,
@@ -1035,15 +1040,15 @@
 									},
 									"sources": [
 										{
-											"fileName": "extensions/forms/connection/geometry.ts",
+											"fileName": "src/extensions/forms/connection/geometry.ts",
 											"line": 16,
-											"character": 0,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/connection/geometry.ts#L16"
+											"character": 16,
+											"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/connection/geometry.ts#L16"
 										}
 									],
 									"parameters": [
 										{
-											"id": 146,
+											"id": 150,
 											"name": "path",
 											"variant": "param",
 											"kind": 32768,
@@ -1062,7 +1067,7 @@
 											}
 										},
 										{
-											"id": 147,
+											"id": 151,
 											"name": "width",
 											"variant": "param",
 											"kind": 32768,
@@ -1094,22 +1099,22 @@
 							]
 						},
 						{
-							"id": 155,
+							"id": 159,
 							"name": "createClassicNodeGeometry",
 							"variant": "declaration",
 							"kind": 64,
 							"flags": {},
 							"sources": [
 								{
-									"fileName": "extensions/forms/node/geometry.ts",
+									"fileName": "src/extensions/forms/node/geometry.ts",
 									"line": 30,
 									"character": 16,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/node/geometry.ts#L30"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/node/geometry.ts#L30"
 								}
 							],
 							"signatures": [
 								{
-									"id": 156,
+									"id": 160,
 									"name": "createClassicNodeGeometry",
 									"variant": "signature",
 									"kind": 4096,
@@ -1135,15 +1140,15 @@
 									},
 									"sources": [
 										{
-											"fileName": "extensions/forms/node/geometry.ts",
+											"fileName": "src/extensions/forms/node/geometry.ts",
 											"line": 30,
-											"character": 0,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/node/geometry.ts#L30"
+											"character": 16,
+											"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/node/geometry.ts#L30"
 										}
 									],
 									"parameters": [
 										{
-											"id": 157,
+											"id": 161,
 											"name": "size",
 											"variant": "param",
 											"kind": 32768,
@@ -1167,7 +1172,7 @@
 											}
 										},
 										{
-											"id": 158,
+											"id": 162,
 											"name": "params",
 											"variant": "param",
 											"kind": 32768,
@@ -1184,7 +1189,7 @@
 											},
 											"type": {
 												"type": "reference",
-												"target": 165,
+												"target": 169,
 												"name": "Params",
 												"package": "rete-area-3d-plugin"
 											}
@@ -1203,22 +1208,22 @@
 							]
 						},
 						{
-							"id": 159,
+							"id": 163,
 							"name": "node",
 							"variant": "declaration",
 							"kind": 64,
 							"flags": {},
 							"sources": [
 								{
-									"fileName": "extensions/forms/node/index.ts",
+									"fileName": "src/extensions/forms/node/index.ts",
 									"line": 23,
 									"character": 16,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/node/index.ts#L23"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/node/index.ts#L23"
 								}
 							],
 							"signatures": [
 								{
-									"id": 160,
+									"id": 164,
 									"name": "node",
 									"variant": "signature",
 									"kind": 4096,
@@ -1233,15 +1238,15 @@
 									},
 									"sources": [
 										{
-											"fileName": "extensions/forms/node/index.ts",
+											"fileName": "src/extensions/forms/node/index.ts",
 											"line": 23,
-											"character": 0,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/node/index.ts#L23"
+											"character": 16,
+											"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/node/index.ts#L23"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
-											"id": 161,
+											"id": 165,
 											"name": "S",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -1257,7 +1262,7 @@
 											}
 										},
 										{
-											"id": 162,
+											"id": 166,
 											"name": "K",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -1266,7 +1271,7 @@
 									],
 									"parameters": [
 										{
-											"id": 163,
+											"id": 167,
 											"name": "area",
 											"variant": "param",
 											"kind": 32768,
@@ -1285,14 +1290,16 @@
 												"typeArguments": [
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 165,
 														"name": "S",
+														"package": "rete-area-3d-plugin",
 														"refersToTypeParameter": true
 													},
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 166,
 														"name": "K",
+														"package": "rete-area-3d-plugin",
 														"refersToTypeParameter": true
 													}
 												],
@@ -1301,7 +1308,7 @@
 											}
 										},
 										{
-											"id": 164,
+											"id": 168,
 											"name": "props",
 											"variant": "param",
 											"kind": 32768,
@@ -1318,12 +1325,13 @@
 											},
 											"type": {
 												"type": "reference",
-												"target": 148,
+												"target": 152,
 												"typeArguments": [
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 165,
 														"name": "S",
+														"package": "rete-area-3d-plugin",
 														"refersToTypeParameter": true
 													}
 												],
@@ -1340,22 +1348,22 @@
 							]
 						},
 						{
-							"id": 172,
+							"id": 176,
 							"name": "reroute",
 							"variant": "declaration",
 							"kind": 64,
 							"flags": {},
 							"sources": [
 								{
-									"fileName": "extensions/forms/reroute.ts",
+									"fileName": "src/extensions/forms/reroute.ts",
 									"line": 26,
 									"character": 16,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/reroute.ts#L26"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/reroute.ts#L26"
 								}
 							],
 							"signatures": [
 								{
-									"id": 173,
+									"id": 177,
 									"name": "reroute",
 									"variant": "signature",
 									"kind": 4096,
@@ -1370,15 +1378,15 @@
 									},
 									"sources": [
 										{
-											"fileName": "extensions/forms/reroute.ts",
+											"fileName": "src/extensions/forms/reroute.ts",
 											"line": 26,
-											"character": 0,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/reroute.ts#L26"
+											"character": 16,
+											"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/reroute.ts#L26"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
-											"id": 174,
+											"id": 178,
 											"name": "S",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -1394,7 +1402,7 @@
 											}
 										},
 										{
-											"id": 175,
+											"id": 179,
 											"name": "K",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -1403,7 +1411,7 @@
 									],
 									"parameters": [
 										{
-											"id": 176,
+											"id": 180,
 											"name": "scope",
 											"variant": "param",
 											"kind": 32768,
@@ -1432,8 +1440,9 @@
 														"typeArguments": [
 															{
 																"type": "reference",
-																"target": -1,
+																"target": 179,
 																"name": "K",
+																"package": "rete-area-3d-plugin",
 																"refersToTypeParameter": true
 															},
 															{
@@ -1448,8 +1457,9 @@
 																		"typeArguments": [
 																			{
 																				"type": "reference",
-																				"target": -1,
+																				"target": 178,
 																				"name": "S",
+																				"package": "rete-area-3d-plugin",
 																				"refersToTypeParameter": true
 																			}
 																		],
@@ -1479,24 +1489,24 @@
 																	{
 																		"type": "reflection",
 																		"declaration": {
-																			"id": 177,
+																			"id": 181,
 																			"name": "__type",
 																			"variant": "declaration",
 																			"kind": 65536,
 																			"flags": {},
 																			"children": [
 																				{
-																					"id": 178,
+																					"id": 182,
 																					"name": "data",
 																					"variant": "declaration",
 																					"kind": 1024,
 																					"flags": {},
 																					"sources": [
 																						{
-																							"fileName": "extensions/forms/reroute.ts",
+																							"fileName": "src/extensions/forms/reroute.ts",
 																							"line": 20,
 																							"character": 35,
-																							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/reroute.ts#L20"
+																							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/reroute.ts#L20"
 																						}
 																					],
 																					"type": {
@@ -1514,16 +1524,16 @@
 																				{
 																					"title": "Properties",
 																					"children": [
-																						178
+																						182
 																					]
 																				}
 																			],
 																			"sources": [
 																				{
-																					"fileName": "extensions/forms/reroute.ts",
+																					"fileName": "src/extensions/forms/reroute.ts",
 																					"line": 20,
 																					"character": 33,
-																					"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/reroute.ts#L20"
+																					"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/reroute.ts#L20"
 																				}
 																			]
 																		}
@@ -1552,37 +1562,37 @@
 						{
 							"title": "Type Aliases",
 							"children": [
-								165,
-								124,
-								148
+								169,
+								128,
+								152
 							]
 						},
 						{
 							"title": "Functions",
 							"children": [
-								119,
-								130,
-								144,
-								155,
+								123,
+								134,
+								148,
 								159,
-								172
+								163,
+								176
 							]
 						}
 					],
 					"sources": [
 						{
-							"fileName": "extensions/forms/index.ts",
+							"fileName": "src/extensions/forms/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/forms/index.ts#L1"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/forms/index.ts#L1"
 						}
 					]
 				},
 				{
-					"id": 179,
+					"id": 183,
 					"name": "LookAt",
 					"variant": "declaration",
-					"kind": 4194304,
+					"kind": 2097152,
 					"flags": {},
 					"comment": {
 						"summary": [
@@ -1602,23 +1612,23 @@
 					},
 					"sources": [
 						{
-							"fileName": "extensions/lookAt.ts",
+							"fileName": "src/extensions/lookAt.ts",
 							"line": 10,
 							"character": 12,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/lookAt.ts#L10"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/lookAt.ts#L10"
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 180,
+							"id": 184,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
 							"flags": {},
 							"children": [
 								{
-									"id": 181,
+									"id": 185,
 									"name": "scale",
 									"variant": "declaration",
 									"kind": 1024,
@@ -1635,10 +1645,10 @@
 									},
 									"sources": [
 										{
-											"fileName": "extensions/lookAt.ts",
+											"fileName": "src/extensions/lookAt.ts",
 											"line": 12,
 											"character": 2,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/lookAt.ts#L12"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/lookAt.ts#L12"
 										}
 									],
 									"type": {
@@ -1651,38 +1661,38 @@
 								{
 									"title": "Properties",
 									"children": [
-										181
+										185
 									]
 								}
 							],
 							"sources": [
 								{
-									"fileName": "extensions/lookAt.ts",
+									"fileName": "src/extensions/lookAt.ts",
 									"line": 10,
 									"character": 21,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/lookAt.ts#L10"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/lookAt.ts#L10"
 								}
 							]
 						}
 					}
 				},
 				{
-					"id": 109,
+					"id": 113,
 					"name": "animate",
 					"variant": "declaration",
 					"kind": 64,
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "extensions/animate.ts",
+							"fileName": "src/extensions/animate.ts",
 							"line": 11,
 							"character": 16,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/animate.ts#L11"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/animate.ts#L11"
 						}
 					],
 					"signatures": [
 						{
-							"id": 110,
+							"id": 114,
 							"name": "animate",
 							"variant": "signature",
 							"kind": 4096,
@@ -1721,15 +1731,15 @@
 							},
 							"sources": [
 								{
-									"fileName": "extensions/animate.ts",
+									"fileName": "src/extensions/animate.ts",
 									"line": 11,
-									"character": 0,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/animate.ts#L11"
+									"character": 16,
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/animate.ts#L11"
 								}
 							],
-							"typeParameter": [
+							"typeParameters": [
 								{
-									"id": 111,
+									"id": 115,
 									"name": "S",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -1745,7 +1755,7 @@
 									}
 								},
 								{
-									"id": 112,
+									"id": 116,
 									"name": "K",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -1754,7 +1764,7 @@
 							],
 							"parameters": [
 								{
-									"id": 113,
+									"id": 117,
 									"name": "area",
 									"variant": "param",
 									"kind": 32768,
@@ -1773,14 +1783,16 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 115,
 												"name": "S",
+												"package": "rete-area-3d-plugin",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 116,
 												"name": "K",
+												"package": "rete-area-3d-plugin",
 												"refersToTypeParameter": true
 											}
 										],
@@ -1789,7 +1801,7 @@
 									}
 								},
 								{
-									"id": 114,
+									"id": 118,
 									"name": "tick",
 									"variant": "param",
 									"kind": 32768,
@@ -1807,37 +1819,37 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 115,
+											"id": 119,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"sources": [
 												{
-													"fileName": "extensions/animate.ts",
+													"fileName": "src/extensions/animate.ts",
 													"line": 11,
 													"character": 85,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/animate.ts#L11"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/animate.ts#L11"
 												}
 											],
 											"signatures": [
 												{
-													"id": 116,
+													"id": 120,
 													"name": "__type",
 													"variant": "signature",
 													"kind": 4096,
 													"flags": {},
 													"sources": [
 														{
-															"fileName": "extensions/animate.ts",
+															"fileName": "src/extensions/animate.ts",
 															"line": 11,
 															"character": 85,
-															"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/animate.ts#L11"
+															"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/animate.ts#L11"
 														}
 													],
 													"parameters": [
 														{
-															"id": 117,
+															"id": 121,
 															"name": "time",
 															"variant": "param",
 															"kind": 32768,
@@ -1866,22 +1878,22 @@
 					]
 				},
 				{
-					"id": 182,
+					"id": 186,
 					"name": "lookAt",
 					"variant": "declaration",
 					"kind": 64,
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "extensions/lookAt.ts",
+							"fileName": "src/extensions/lookAt.ts",
 							"line": 23,
 							"character": 16,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/lookAt.ts#L23"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/lookAt.ts#L23"
 						}
 					],
 					"signatures": [
 						{
-							"id": 183,
+							"id": 187,
 							"name": "lookAt",
 							"variant": "signature",
 							"kind": 4096,
@@ -1916,15 +1928,15 @@
 							},
 							"sources": [
 								{
-									"fileName": "extensions/lookAt.ts",
+									"fileName": "src/extensions/lookAt.ts",
 									"line": 23,
-									"character": 0,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/lookAt.ts#L23"
+									"character": 16,
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/lookAt.ts#L23"
 								}
 							],
-							"typeParameter": [
+							"typeParameters": [
 								{
-									"id": 184,
+									"id": 188,
 									"name": "S",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -1940,7 +1952,7 @@
 									}
 								},
 								{
-									"id": 185,
+									"id": 189,
 									"name": "K",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -1949,7 +1961,7 @@
 							],
 							"parameters": [
 								{
-									"id": 186,
+									"id": 190,
 									"name": "area",
 									"variant": "param",
 									"kind": 32768,
@@ -1968,14 +1980,16 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 188,
 												"name": "S",
+												"package": "rete-area-3d-plugin",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 189,
 												"name": "K",
+												"package": "rete-area-3d-plugin",
 												"refersToTypeParameter": true
 											}
 										],
@@ -1984,7 +1998,7 @@
 									}
 								},
 								{
-									"id": 187,
+									"id": 191,
 									"name": "nodes",
 									"variant": "param",
 									"kind": 32768,
@@ -2007,15 +2021,16 @@
 											},
 											"objectType": {
 												"type": "reference",
-												"target": -1,
+												"target": 188,
 												"name": "S",
+												"package": "rete-area-3d-plugin",
 												"refersToTypeParameter": true
 											}
 										}
 									}
 								},
 								{
-									"id": 188,
+									"id": 192,
 									"name": "params",
 									"variant": "param",
 									"kind": 32768,
@@ -2032,7 +2047,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": 179,
+										"target": 183,
 										"name": "Params",
 										"package": "rete-area-3d-plugin"
 									}
@@ -2050,34 +2065,34 @@
 				{
 					"title": "Namespaces",
 					"children": [
-						118
+						122
 					]
 				},
 				{
 					"title": "Type Aliases",
 					"children": [
-						179
+						183
 					]
 				},
 				{
 					"title": "Functions",
 					"children": [
-						109,
-						182
+						113,
+						186
 					]
 				}
 			],
 			"sources": [
 				{
-					"fileName": "extensions/index.ts",
+					"fileName": "src/extensions/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/extensions/index.ts#L1"
+					"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/extensions/index.ts#L1"
 				}
 			]
 		},
 		{
-			"id": 72,
+			"id": 76,
 			"name": "Area",
 			"variant": "declaration",
 			"kind": 128,
@@ -2092,7 +2107,7 @@
 			},
 			"children": [
 				{
-					"id": 88,
+					"id": 92,
 					"name": "getCanvas",
 					"variant": "declaration",
 					"kind": 2048,
@@ -2101,15 +2116,15 @@
 					},
 					"sources": [
 						{
-							"fileName": "area.ts",
-							"line": 53,
+							"fileName": "src/area.ts",
+							"line": 54,
 							"character": 9,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/area.ts#L53"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/area.ts#L54"
 						}
 					],
 					"signatures": [
 						{
-							"id": 89,
+							"id": 93,
 							"name": "getCanvas",
 							"variant": "signature",
 							"kind": 4096,
@@ -2124,10 +2139,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "area.ts",
-									"line": 53,
-									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/area.ts#L53"
+									"fileName": "src/area.ts",
+									"line": 54,
+									"character": 9,
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/area.ts#L54"
 								}
 							],
 							"type": {
@@ -2163,7 +2178,7 @@
 					]
 				},
 				{
-					"id": 102,
+					"id": 106,
 					"name": "resize",
 					"variant": "declaration",
 					"kind": 2048,
@@ -2172,15 +2187,15 @@
 					},
 					"sources": [
 						{
-							"fileName": "area.ts",
-							"line": 90,
+							"fileName": "src/area.ts",
+							"line": 91,
 							"character": 9,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/area.ts#L90"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/area.ts#L91"
 						}
 					],
 					"signatures": [
 						{
-							"id": 103,
+							"id": 107,
 							"name": "resize",
 							"variant": "signature",
 							"kind": 4096,
@@ -2195,15 +2210,15 @@
 							},
 							"sources": [
 								{
-									"fileName": "area.ts",
-									"line": 90,
+									"fileName": "src/area.ts",
+									"line": 91,
 									"character": 18,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/area.ts#L90"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/area.ts#L91"
 								}
 							],
 							"parameters": [
 								{
-									"id": 104,
+									"id": 108,
 									"name": "event",
 									"variant": "param",
 									"kind": 32768,
@@ -2235,7 +2250,7 @@
 					]
 				},
 				{
-					"id": 90,
+					"id": 94,
 					"name": "setPointerFrom",
 					"variant": "declaration",
 					"kind": 2048,
@@ -2244,15 +2259,15 @@
 					},
 					"sources": [
 						{
-							"fileName": "area.ts",
-							"line": 60,
+							"fileName": "src/area.ts",
+							"line": 61,
 							"character": 9,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/area.ts#L60"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/area.ts#L61"
 						}
 					],
 					"signatures": [
 						{
-							"id": 91,
+							"id": 95,
 							"name": "setPointerFrom",
 							"variant": "signature",
 							"kind": 4096,
@@ -2275,15 +2290,15 @@
 							},
 							"sources": [
 								{
-									"fileName": "area.ts",
-									"line": 60,
-									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/area.ts#L60"
+									"fileName": "src/area.ts",
+									"line": 61,
+									"character": 9,
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/area.ts#L61"
 								}
 							],
 							"parameters": [
 								{
-									"id": 92,
+									"id": 96,
 									"name": "event",
 									"variant": "param",
 									"kind": 32768,
@@ -2311,23 +2326,23 @@
 				{
 					"title": "Methods",
 					"children": [
-						88,
-						102,
-						90
+						92,
+						106,
+						94
 					]
 				}
 			],
 			"sources": [
 				{
-					"fileName": "area.ts",
-					"line": 25,
+					"fileName": "src/area.ts",
+					"line": 26,
 					"character": 13,
-					"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/area.ts#L25"
+					"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/area.ts#L26"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 107,
+					"id": 111,
 					"name": "Scope",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -2369,10 +2384,10 @@
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "index.ts",
+							"fileName": "src/index.ts",
 							"line": 46,
 							"character": 2,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L46"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L46"
 						}
 					],
 					"signatures": [
@@ -2384,13 +2399,13 @@
 							"flags": {},
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 46,
 									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L46"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L46"
 								}
 							],
-							"typeParameter": [
+							"typeParameters": [
 								{
 									"id": 23,
 									"name": "Schemes",
@@ -2451,14 +2466,18 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"target": -1,
+										"target": 23,
 										"name": "Schemes",
+										"package": "rete-area-3d-plugin",
+										"qualifiedName": "Area3DPlugin.Schemes",
 										"refersToTypeParameter": true
 									},
 									{
 										"type": "reference",
-										"target": -1,
+										"target": 24,
 										"name": "ExtraSignals",
+										"package": "rete-area-3d-plugin",
+										"qualifiedName": "Area3DPlugin.ExtraSignals",
 										"refersToTypeParameter": true
 									}
 								],
@@ -2496,15 +2515,15 @@
 					},
 					"sources": [
 						{
-							"fileName": "index.ts",
+							"fileName": "src/index.ts",
 							"line": 37,
 							"character": 9,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L37"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L37"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"target": 72,
+						"target": 76,
 						"typeArguments": [
 							{
 								"type": "reference",
@@ -2512,14 +2531,18 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"target": -1,
+										"target": 23,
 										"name": "Schemes",
+										"package": "rete-area-3d-plugin",
+										"qualifiedName": "Area3DPlugin.Schemes",
 										"refersToTypeParameter": true
 									},
 									{
 										"type": "reference",
-										"target": -1,
+										"target": 24,
 										"name": "ExtraSignals",
+										"package": "rete-area-3d-plugin",
+										"qualifiedName": "Area3DPlugin.ExtraSignals",
 										"refersToTypeParameter": true
 									}
 								],
@@ -2537,22 +2560,22 @@
 					}
 				},
 				{
-					"id": 68,
+					"id": 72,
 					"name": "destroy",
 					"variant": "declaration",
 					"kind": 2048,
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "index.ts",
-							"line": 213,
+							"fileName": "src/index.ts",
+							"line": 218,
 							"character": 2,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L213"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L218"
 						}
 					],
 					"signatures": [
 						{
-							"id": 69,
+							"id": 73,
 							"name": "destroy",
 							"variant": "signature",
 							"kind": 4096,
@@ -2567,10 +2590,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "index.ts",
-									"line": 213,
+									"fileName": "src/index.ts",
+									"line": 218,
 									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L213"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L218"
 								}
 							],
 							"type": {
@@ -2591,7 +2614,7 @@
 					}
 				},
 				{
-					"id": 59,
+					"id": 63,
 					"name": "resize",
 					"variant": "declaration",
 					"kind": 2048,
@@ -2600,15 +2623,15 @@
 					},
 					"sources": [
 						{
-							"fileName": "index.ts",
-							"line": 192,
+							"fileName": "src/index.ts",
+							"line": 197,
 							"character": 15,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L192"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L197"
 						}
 					],
 					"signatures": [
 						{
-							"id": 60,
+							"id": 64,
 							"name": "resize",
 							"variant": "signature",
 							"kind": 4096,
@@ -2623,15 +2646,15 @@
 							},
 							"sources": [
 								{
-									"fileName": "index.ts",
-									"line": 192,
-									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L192"
+									"fileName": "src/index.ts",
+									"line": 197,
+									"character": 15,
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L197"
 								}
 							],
 							"parameters": [
 								{
-									"id": 61,
+									"id": 65,
 									"name": "id",
 									"variant": "param",
 									"kind": 32768,
@@ -2650,7 +2673,7 @@
 									}
 								},
 								{
-									"id": 62,
+									"id": 66,
 									"name": "width",
 									"variant": "param",
 									"kind": 32768,
@@ -2669,7 +2692,7 @@
 									}
 								},
 								{
-									"id": 63,
+									"id": 67,
 									"name": "height",
 									"variant": "param",
 									"kind": 32768,
@@ -2726,22 +2749,22 @@
 					}
 				},
 				{
-					"id": 35,
+					"id": 39,
 					"name": "share",
 					"variant": "declaration",
 					"kind": 2048,
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "index.ts",
-							"line": 77,
+							"fileName": "src/index.ts",
+							"line": 82,
 							"character": 2,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L77"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L82"
 						}
 					],
 					"signatures": [
 						{
-							"id": 36,
+							"id": 40,
 							"name": "share",
 							"variant": "signature",
 							"kind": 4096,
@@ -2767,10 +2790,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "index.ts",
-									"line": 77,
+									"fileName": "src/index.ts",
+									"line": 82,
 									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L77"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L82"
 								}
 							],
 							"type": {
@@ -2779,14 +2802,18 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"target": -1,
+										"target": 23,
 										"name": "Schemes",
+										"package": "rete-area-3d-plugin",
+										"qualifiedName": "Area3DPlugin.Schemes",
 										"refersToTypeParameter": true
 									},
 									{
 										"type": "reference",
-										"target": -1,
+										"target": 24,
 										"name": "ExtraSignals",
+										"package": "rete-area-3d-plugin",
+										"qualifiedName": "Area3DPlugin.ExtraSignals",
 										"refersToTypeParameter": true
 									}
 								],
@@ -2797,7 +2824,7 @@
 					]
 				},
 				{
-					"id": 55,
+					"id": 59,
 					"name": "translate",
 					"variant": "declaration",
 					"kind": 2048,
@@ -2806,15 +2833,15 @@
 					},
 					"sources": [
 						{
-							"fileName": "index.ts",
-							"line": 180,
+							"fileName": "src/index.ts",
+							"line": 185,
 							"character": 15,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L180"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L185"
 						}
 					],
 					"signatures": [
 						{
-							"id": 56,
+							"id": 60,
 							"name": "translate",
 							"variant": "signature",
 							"kind": 4096,
@@ -2829,15 +2856,15 @@
 							},
 							"sources": [
 								{
-									"fileName": "index.ts",
-									"line": 180,
-									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L180"
+									"fileName": "src/index.ts",
+									"line": 185,
+									"character": 15,
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L185"
 								}
 							],
 							"parameters": [
 								{
-									"id": 57,
+									"id": 61,
 									"name": "id",
 									"variant": "param",
 									"kind": 32768,
@@ -2856,7 +2883,7 @@
 									}
 								},
 								{
-									"id": 58,
+									"id": 62,
 									"name": "position",
 									"variant": "param",
 									"kind": 32768,
@@ -2918,7 +2945,7 @@
 					}
 				},
 				{
-					"id": 64,
+					"id": 68,
 					"name": "update",
 					"variant": "declaration",
 					"kind": 2048,
@@ -2927,15 +2954,15 @@
 					},
 					"sources": [
 						{
-							"fileName": "index.ts",
-							"line": 204,
+							"fileName": "src/index.ts",
+							"line": 209,
 							"character": 15,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L204"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L209"
 						}
 					],
 					"signatures": [
 						{
-							"id": 65,
+							"id": 69,
 							"name": "update",
 							"variant": "signature",
 							"kind": 4096,
@@ -2961,15 +2988,15 @@
 							},
 							"sources": [
 								{
-									"fileName": "index.ts",
-									"line": 204,
-									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L204"
+									"fileName": "src/index.ts",
+									"line": 209,
+									"character": 15,
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L209"
 								}
 							],
 							"parameters": [
 								{
-									"id": 66,
+									"id": 70,
 									"name": "type",
 									"variant": "param",
 									"kind": 32768,
@@ -3002,8 +3029,10 @@
 												"typeArguments": [
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 24,
 														"name": "ExtraSignals",
+														"package": "rete-area-3d-plugin",
+														"qualifiedName": "Area3DPlugin.ExtraSignals",
 														"refersToTypeParameter": true
 													}
 												],
@@ -3014,7 +3043,7 @@
 									}
 								},
 								{
-									"id": 67,
+									"id": 71,
 									"name": "id",
 									"variant": "param",
 									"kind": 32768,
@@ -3078,25 +3107,25 @@
 				{
 					"title": "Methods",
 					"children": [
-						68,
+						72,
+						63,
+						39,
 						59,
-						35,
-						55,
-						64
+						68
 					]
 				}
 			],
 			"sources": [
 				{
-					"fileName": "index.ts",
+					"fileName": "src/index.ts",
 					"line": 33,
 					"character": 13,
-					"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L33"
+					"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L33"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 70,
+					"id": 74,
 					"name": "Schemes",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -3112,7 +3141,7 @@
 					}
 				},
 				{
-					"id": 71,
+					"id": 75,
 					"name": "ExtraSignals",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -3133,8 +3162,10 @@
 					"typeArguments": [
 						{
 							"type": "reference",
-							"target": -1,
+							"target": 23,
 							"name": "Schemes",
+							"package": "rete-area-3d-plugin",
+							"qualifiedName": "Area3DPlugin.Schemes",
 							"refersToTypeParameter": true
 						},
 						{
@@ -3146,8 +3177,10 @@
 									"typeArguments": [
 										{
 											"type": "reference",
-											"target": -1,
+											"target": 23,
 											"name": "Schemes",
+											"package": "rete-area-3d-plugin",
+											"qualifiedName": "Area3DPlugin.Schemes",
 											"refersToTypeParameter": true
 										}
 									],
@@ -3156,8 +3189,10 @@
 								},
 								{
 									"type": "reference",
-									"target": -1,
+									"target": 24,
 									"name": "ExtraSignals",
+									"package": "rete-area-3d-plugin",
+									"qualifiedName": "Area3DPlugin.ExtraSignals",
 									"refersToTypeParameter": true
 								}
 							]
@@ -3169,7 +3204,7 @@
 			]
 		},
 		{
-			"id": 234,
+			"id": 238,
 			"name": "HybridRenderer",
 			"variant": "declaration",
 			"kind": 128,
@@ -3184,7 +3219,7 @@
 			},
 			"children": [
 				{
-					"id": 237,
+					"id": 241,
 					"name": "css3d",
 					"variant": "declaration",
 					"kind": 1024,
@@ -3199,10 +3234,10 @@
 					},
 					"sources": [
 						{
-							"fileName": "scene/HybridRenderer.ts",
+							"fileName": "src/scene/HybridRenderer.ts",
 							"line": 9,
 							"character": 2,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/scene/HybridRenderer.ts#L9"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/scene/HybridRenderer.ts#L9"
 						}
 					],
 					"type": {
@@ -3216,7 +3251,7 @@
 					}
 				},
 				{
-					"id": 238,
+					"id": 242,
 					"name": "webgl",
 					"variant": "declaration",
 					"kind": 1024,
@@ -3231,10 +3266,10 @@
 					},
 					"sources": [
 						{
-							"fileName": "scene/HybridRenderer.ts",
+							"fileName": "src/scene/HybridRenderer.ts",
 							"line": 11,
 							"character": 2,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/scene/HybridRenderer.ts#L11"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/scene/HybridRenderer.ts#L11"
 						}
 					],
 					"type": {
@@ -3252,22 +3287,22 @@
 				{
 					"title": "Properties",
 					"children": [
-						237,
-						238
+						241,
+						242
 					]
 				}
 			],
 			"sources": [
 				{
-					"fileName": "scene/HybridRenderer.ts",
+					"fileName": "src/scene/HybridRenderer.ts",
 					"line": 7,
 					"character": 13,
-					"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/scene/HybridRenderer.ts#L7"
+					"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/scene/HybridRenderer.ts#L7"
 				}
 			]
 		},
 		{
-			"id": 189,
+			"id": 193,
 			"name": "HybridScene",
 			"variant": "declaration",
 			"kind": 128,
@@ -3282,7 +3317,7 @@
 			},
 			"children": [
 				{
-					"id": 216,
+					"id": 220,
 					"name": "render",
 					"variant": "declaration",
 					"kind": 2048,
@@ -3291,15 +3326,15 @@
 					},
 					"sources": [
 						{
-							"fileName": "scene/index.ts",
+							"fileName": "src/scene/index.ts",
 							"line": 115,
 							"character": 9,
-							"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/scene/index.ts#L115"
+							"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/scene/index.ts#L115"
 						}
 					],
 					"signatures": [
 						{
-							"id": 217,
+							"id": 221,
 							"name": "render",
 							"variant": "signature",
 							"kind": 4096,
@@ -3322,10 +3357,10 @@
 							},
 							"sources": [
 								{
-									"fileName": "scene/index.ts",
+									"fileName": "src/scene/index.ts",
 									"line": 115,
-									"character": 2,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/scene/index.ts#L115"
+									"character": 9,
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/scene/index.ts#L115"
 								}
 							],
 							"type": {
@@ -3340,21 +3375,21 @@
 				{
 					"title": "Methods",
 					"children": [
-						216
+						220
 					]
 				}
 			],
 			"sources": [
 				{
-					"fileName": "scene/index.ts",
+					"fileName": "src/scene/index.ts",
 					"line": 21,
 					"character": 13,
-					"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/scene/index.ts#L21"
+					"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/scene/index.ts#L21"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 233,
+					"id": 237,
 					"name": "Scope",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -3366,7 +3401,7 @@
 			"id": 4,
 			"name": "Area3D",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -3389,10 +3424,10 @@
 			},
 			"sources": [
 				{
-					"fileName": "index.ts",
+					"fileName": "src/index.ts",
 					"line": 21,
 					"character": 12,
-					"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L21"
+					"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L21"
 				}
 			],
 			"typeParameters": [
@@ -3425,8 +3460,9 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"target": -1,
+								"target": 16,
 								"name": "Schemes",
+								"package": "rete-area-3d-plugin",
 								"refersToTypeParameter": true
 							}
 						],
@@ -3450,10 +3486,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "index.ts",
+											"fileName": "src/index.ts",
 											"line": 23,
 											"character": 25,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L23"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L23"
 										}
 									],
 									"type": {
@@ -3474,10 +3510,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "index.ts",
+											"fileName": "src/index.ts",
 											"line": 23,
 											"character": 6,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L23"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L23"
 										}
 									],
 									"type": {
@@ -3497,10 +3533,10 @@
 							],
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 23,
 									"character": 4,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L23"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L23"
 								}
 							]
 						}
@@ -3522,10 +3558,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "index.ts",
+											"fileName": "src/index.ts",
 											"line": 24,
 											"character": 27,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L24"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L24"
 										}
 									],
 									"type": {
@@ -3546,10 +3582,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "index.ts",
+											"fileName": "src/index.ts",
 											"line": 24,
 											"character": 6,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L24"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L24"
 										}
 									],
 									"type": {
@@ -3569,10 +3605,10 @@
 							],
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 24,
 									"character": 4,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L24"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L24"
 								}
 							]
 						}
@@ -3594,10 +3630,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "index.ts",
+											"fileName": "src/index.ts",
 											"line": 25,
 											"character": 23,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L25"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L25"
 										}
 									],
 									"type": {
@@ -3617,10 +3653,10 @@
 													"flags": {},
 													"sources": [
 														{
-															"fileName": "index.ts",
+															"fileName": "src/index.ts",
 															"line": 25,
 															"character": 31,
-															"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L25"
+															"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L25"
 														}
 													],
 													"type": {
@@ -3644,10 +3680,10 @@
 											],
 											"sources": [
 												{
-													"fileName": "index.ts",
+													"fileName": "src/index.ts",
 													"line": 25,
 													"character": 29,
-													"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L25"
+													"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L25"
 												}
 											]
 										}
@@ -3661,10 +3697,10 @@
 									"flags": {},
 									"sources": [
 										{
-											"fileName": "index.ts",
+											"fileName": "src/index.ts",
 											"line": 25,
 											"character": 6,
-											"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L25"
+											"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L25"
 										}
 									],
 									"type": {
@@ -3684,10 +3720,10 @@
 							],
 							"sources": [
 								{
-									"fileName": "index.ts",
+									"fileName": "src/index.ts",
 									"line": 25,
 									"character": 4,
-									"url": "https://github.com/retejs/area-3d-plugin/blob/dbce796/src/index.ts#L25"
+									"url": "https://github.com/retejs/area-3d-plugin/blob/bb135409ee02f415ba1f39f1b393f578eb76062b/src/index.ts#L25"
 								}
 							]
 						}
@@ -3700,16 +3736,16 @@
 		{
 			"title": "Namespaces",
 			"children": [
-				108
+				112
 			]
 		},
 		{
 			"title": "Classes",
 			"children": [
-				72,
+				76,
 				20,
-				234,
-				189
+				238,
+				193
 			]
 		},
 		{
@@ -3811,37 +3847,21 @@
 			"sourceFileName": "src/index.ts",
 			"qualifiedName": "Area3DPlugin.area"
 		},
-		"35": {
+		"39": {
 			"sourceFileName": "src/index.ts",
 			"qualifiedName": "Area3DPlugin.share"
 		},
-		"36": {
+		"40": {
 			"sourceFileName": "src/index.ts",
 			"qualifiedName": "Area3DPlugin.share"
-		},
-		"55": {
-			"sourceFileName": "src/index.ts",
-			"qualifiedName": "Area3DPlugin.translate"
-		},
-		"56": {
-			"sourceFileName": "src/index.ts",
-			"qualifiedName": "Area3DPlugin.translate"
-		},
-		"57": {
-			"sourceFileName": "src/index.ts",
-			"qualifiedName": "id"
-		},
-		"58": {
-			"sourceFileName": "src/index.ts",
-			"qualifiedName": "__1"
 		},
 		"59": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "Area3DPlugin.resize"
+			"qualifiedName": "Area3DPlugin.translate"
 		},
 		"60": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "Area3DPlugin.resize"
+			"qualifiedName": "Area3DPlugin.translate"
 		},
 		"61": {
 			"sourceFileName": "src/index.ts",
@@ -3849,435 +3869,463 @@
 		},
 		"62": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "width"
+			"qualifiedName": "__1"
 		},
 		"63": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "height"
+			"qualifiedName": "Area3DPlugin.resize"
 		},
 		"64": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "Area3DPlugin.update"
+			"qualifiedName": "Area3DPlugin.resize"
 		},
 		"65": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "Area3DPlugin.update"
+			"qualifiedName": "id"
 		},
 		"66": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "type"
+			"qualifiedName": "width"
 		},
 		"67": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "id"
+			"qualifiedName": "height"
 		},
 		"68": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "Area3DPlugin.destroy"
+			"qualifiedName": "Area3DPlugin.update"
 		},
 		"69": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "Area3DPlugin.destroy"
+			"qualifiedName": "Area3DPlugin.update"
 		},
 		"70": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "Area3DPlugin.Schemes"
+			"qualifiedName": "type"
 		},
 		"71": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "Area3DPlugin.ExtraSignals"
+			"qualifiedName": "id"
 		},
 		"72": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Area3DPlugin.destroy"
+		},
+		"73": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Area3DPlugin.destroy"
+		},
+		"74": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Area3DPlugin.Schemes"
+		},
+		"75": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Area3DPlugin.ExtraSignals"
+		},
+		"76": {
 			"sourceFileName": "src/area.ts",
 			"qualifiedName": "Area"
 		},
-		"88": {
-			"sourceFileName": "src/area.ts",
-			"qualifiedName": "Area.getCanvas"
-		},
-		"89": {
-			"sourceFileName": "src/area.ts",
-			"qualifiedName": "Area.getCanvas"
-		},
-		"90": {
-			"sourceFileName": "src/area.ts",
-			"qualifiedName": "Area.setPointerFrom"
-		},
-		"91": {
-			"sourceFileName": "src/area.ts",
-			"qualifiedName": "Area.setPointerFrom"
-		},
 		"92": {
 			"sourceFileName": "src/area.ts",
+			"qualifiedName": "Area.getCanvas"
+		},
+		"93": {
+			"sourceFileName": "src/area.ts",
+			"qualifiedName": "Area.getCanvas"
+		},
+		"94": {
+			"sourceFileName": "src/area.ts",
+			"qualifiedName": "Area.setPointerFrom"
+		},
+		"95": {
+			"sourceFileName": "src/area.ts",
+			"qualifiedName": "Area.setPointerFrom"
+		},
+		"96": {
+			"sourceFileName": "src/area.ts",
 			"qualifiedName": "event"
 		},
-		"102": {
+		"106": {
 			"sourceFileName": "src/area.ts",
 			"qualifiedName": "Area.resize"
-		},
-		"103": {
-			"sourceFileName": "src/area.ts",
-			"qualifiedName": "Area.resize"
-		},
-		"104": {
-			"sourceFileName": "src/area.ts",
-			"qualifiedName": "event"
 		},
 		"107": {
 			"sourceFileName": "src/area.ts",
-			"qualifiedName": "Area.Scope"
+			"qualifiedName": "Area.resize"
 		},
 		"108": {
+			"sourceFileName": "src/area.ts",
+			"qualifiedName": "event"
+		},
+		"111": {
+			"sourceFileName": "src/area.ts",
+			"qualifiedName": "Area.Scope"
+		},
+		"112": {
 			"sourceFileName": "src/extensions/index.ts",
 			"qualifiedName": ""
 		},
-		"109": {
-			"sourceFileName": "src/extensions/animate.ts",
-			"qualifiedName": "animate"
-		},
-		"110": {
-			"sourceFileName": "src/extensions/animate.ts",
-			"qualifiedName": "animate"
-		},
-		"111": {
-			"sourceFileName": "src/extensions/animate.ts",
-			"qualifiedName": "S"
-		},
-		"112": {
-			"sourceFileName": "src/extensions/animate.ts",
-			"qualifiedName": "K"
-		},
 		"113": {
 			"sourceFileName": "src/extensions/animate.ts",
-			"qualifiedName": "area"
+			"qualifiedName": "animate"
 		},
 		"114": {
 			"sourceFileName": "src/extensions/animate.ts",
-			"qualifiedName": "tick"
+			"qualifiedName": "animate"
 		},
 		"115": {
 			"sourceFileName": "src/extensions/animate.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "S"
 		},
 		"116": {
 			"sourceFileName": "src/extensions/animate.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "K"
 		},
 		"117": {
 			"sourceFileName": "src/extensions/animate.ts",
-			"qualifiedName": "time"
+			"qualifiedName": "area"
 		},
 		"118": {
+			"sourceFileName": "src/extensions/animate.ts",
+			"qualifiedName": "tick"
+		},
+		"119": {
+			"sourceFileName": "src/extensions/animate.ts",
+			"qualifiedName": "__type"
+		},
+		"120": {
+			"sourceFileName": "src/extensions/animate.ts",
+			"qualifiedName": "__type"
+		},
+		"121": {
+			"sourceFileName": "src/extensions/animate.ts",
+			"qualifiedName": "time"
+		},
+		"122": {
 			"sourceFileName": "src/extensions/forms/index.ts",
 			"qualifiedName": ""
 		},
-		"119": {
+		"123": {
 			"sourceFileName": "src/extensions/forms/comment.ts",
 			"qualifiedName": "comment"
 		},
-		"120": {
+		"124": {
 			"sourceFileName": "src/extensions/forms/comment.ts",
 			"qualifiedName": "comment"
 		},
-		"121": {
+		"125": {
 			"sourceFileName": "src/extensions/forms/comment.ts",
 			"qualifiedName": "S"
 		},
-		"122": {
+		"126": {
 			"sourceFileName": "src/extensions/forms/comment.ts",
 			"qualifiedName": "K"
 		},
-		"123": {
+		"127": {
 			"sourceFileName": "src/extensions/forms/comment.ts",
 			"qualifiedName": "scope"
-		},
-		"124": {
-			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "Props"
-		},
-		"125": {
-			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "__type"
-		},
-		"126": {
-			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "__type.customize"
-		},
-		"127": {
-			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "__type"
 		},
 		"128": {
 			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "Props"
 		},
 		"129": {
 			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "path"
+			"qualifiedName": "__type"
 		},
 		"130": {
 			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "connection"
+			"qualifiedName": "__type.customize"
 		},
 		"131": {
 			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "connection"
+			"qualifiedName": "__type"
 		},
 		"132": {
 			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "S"
+			"qualifiedName": "__type"
 		},
 		"133": {
 			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "K"
+			"qualifiedName": "path"
 		},
 		"134": {
 			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "E"
+			"qualifiedName": "connection"
 		},
 		"135": {
 			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "scope"
+			"qualifiedName": "connection"
 		},
 		"136": {
 			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "S"
 		},
 		"137": {
 			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "__type.type"
+			"qualifiedName": "K"
 		},
 		"138": {
 			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "__type.data"
+			"qualifiedName": "E"
 		},
 		"139": {
 			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "scope"
 		},
 		"140": {
 			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "__type.payload"
+			"qualifiedName": "__type"
 		},
 		"141": {
 			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "__type.path"
+			"qualifiedName": "__type.type"
 		},
 		"142": {
 			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "__type.points"
+			"qualifiedName": "__type.data"
 		},
 		"143": {
 			"sourceFileName": "src/extensions/forms/connection/index.ts",
-			"qualifiedName": "props"
+			"qualifiedName": "__type"
 		},
 		"144": {
-			"sourceFileName": "src/extensions/forms/connection/geometry.ts",
-			"qualifiedName": "createClassicConnectionGeometry"
+			"sourceFileName": "src/extensions/forms/connection/index.ts",
+			"qualifiedName": "__type.payload"
 		},
 		"145": {
+			"sourceFileName": "src/extensions/forms/connection/index.ts",
+			"qualifiedName": "__type.path"
+		},
+		"146": {
+			"sourceFileName": "src/extensions/forms/connection/index.ts",
+			"qualifiedName": "__type.points"
+		},
+		"147": {
+			"sourceFileName": "src/extensions/forms/connection/index.ts",
+			"qualifiedName": "props"
+		},
+		"148": {
 			"sourceFileName": "src/extensions/forms/connection/geometry.ts",
 			"qualifiedName": "createClassicConnectionGeometry"
 		},
-		"146": {
+		"149": {
+			"sourceFileName": "src/extensions/forms/connection/geometry.ts",
+			"qualifiedName": "createClassicConnectionGeometry"
+		},
+		"150": {
 			"sourceFileName": "src/extensions/forms/connection/geometry.ts",
 			"qualifiedName": "path"
 		},
-		"147": {
+		"151": {
 			"sourceFileName": "src/extensions/forms/connection/geometry.ts",
 			"qualifiedName": "width"
 		},
-		"148": {
+		"152": {
 			"sourceFileName": "src/extensions/forms/node/index.ts",
 			"qualifiedName": "Props"
 		},
-		"149": {
-			"sourceFileName": "src/extensions/forms/node/index.ts",
-			"qualifiedName": "__type"
-		},
-		"150": {
-			"sourceFileName": "src/extensions/forms/node/index.ts",
-			"qualifiedName": "__type.customize"
-		},
-		"151": {
-			"sourceFileName": "src/extensions/forms/node/index.ts",
-			"qualifiedName": "__type"
-		},
-		"152": {
-			"sourceFileName": "src/extensions/forms/node/index.ts",
-			"qualifiedName": "__type"
-		},
 		"153": {
 			"sourceFileName": "src/extensions/forms/node/index.ts",
-			"qualifiedName": "node"
+			"qualifiedName": "__type"
 		},
 		"154": {
 			"sourceFileName": "src/extensions/forms/node/index.ts",
-			"qualifiedName": "S"
+			"qualifiedName": "__type.customize"
 		},
 		"155": {
-			"sourceFileName": "src/extensions/forms/node/geometry.ts",
-			"qualifiedName": "createClassicNodeGeometry"
+			"sourceFileName": "src/extensions/forms/node/index.ts",
+			"qualifiedName": "__type"
 		},
 		"156": {
+			"sourceFileName": "src/extensions/forms/node/index.ts",
+			"qualifiedName": "__type"
+		},
+		"157": {
+			"sourceFileName": "src/extensions/forms/node/index.ts",
+			"qualifiedName": "node"
+		},
+		"158": {
+			"sourceFileName": "src/extensions/forms/node/index.ts",
+			"qualifiedName": "S"
+		},
+		"159": {
 			"sourceFileName": "src/extensions/forms/node/geometry.ts",
 			"qualifiedName": "createClassicNodeGeometry"
 		},
-		"157": {
+		"160": {
+			"sourceFileName": "src/extensions/forms/node/geometry.ts",
+			"qualifiedName": "createClassicNodeGeometry"
+		},
+		"161": {
 			"sourceFileName": "src/extensions/forms/node/geometry.ts",
 			"qualifiedName": "size"
 		},
-		"158": {
+		"162": {
 			"sourceFileName": "src/extensions/forms/node/geometry.ts",
 			"qualifiedName": "params"
-		},
-		"159": {
-			"sourceFileName": "src/extensions/forms/node/index.ts",
-			"qualifiedName": "node"
-		},
-		"160": {
-			"sourceFileName": "src/extensions/forms/node/index.ts",
-			"qualifiedName": "node"
-		},
-		"161": {
-			"sourceFileName": "src/extensions/forms/node/index.ts",
-			"qualifiedName": "S"
-		},
-		"162": {
-			"sourceFileName": "src/extensions/forms/node/index.ts",
-			"qualifiedName": "K"
 		},
 		"163": {
 			"sourceFileName": "src/extensions/forms/node/index.ts",
-			"qualifiedName": "area"
+			"qualifiedName": "node"
 		},
 		"164": {
 			"sourceFileName": "src/extensions/forms/node/index.ts",
-			"qualifiedName": "props"
+			"qualifiedName": "node"
 		},
 		"165": {
-			"sourceFileName": "src/extensions/forms/node/geometry.ts",
-			"qualifiedName": "Params"
+			"sourceFileName": "src/extensions/forms/node/index.ts",
+			"qualifiedName": "S"
 		},
 		"166": {
-			"sourceFileName": "src/extensions/forms/node/geometry.ts",
-			"qualifiedName": "__type"
+			"sourceFileName": "src/extensions/forms/node/index.ts",
+			"qualifiedName": "K"
 		},
 		"167": {
-			"sourceFileName": "src/extensions/forms/node/geometry.ts",
-			"qualifiedName": "__type.socketRadius"
+			"sourceFileName": "src/extensions/forms/node/index.ts",
+			"qualifiedName": "area"
 		},
 		"168": {
-			"sourceFileName": "src/extensions/forms/node/geometry.ts",
-			"qualifiedName": "__type.socketMargin"
+			"sourceFileName": "src/extensions/forms/node/index.ts",
+			"qualifiedName": "props"
 		},
 		"169": {
 			"sourceFileName": "src/extensions/forms/node/geometry.ts",
-			"qualifiedName": "__type.inputsOffset"
+			"qualifiedName": "Params"
 		},
 		"170": {
 			"sourceFileName": "src/extensions/forms/node/geometry.ts",
-			"qualifiedName": "__type.outputsOffset"
+			"qualifiedName": "__type"
 		},
 		"171": {
 			"sourceFileName": "src/extensions/forms/node/geometry.ts",
-			"qualifiedName": "__type.borderRadius"
+			"qualifiedName": "__type.socketRadius"
 		},
 		"172": {
-			"sourceFileName": "src/extensions/forms/reroute.ts",
-			"qualifiedName": "reroute"
+			"sourceFileName": "src/extensions/forms/node/geometry.ts",
+			"qualifiedName": "__type.socketMargin"
 		},
 		"173": {
-			"sourceFileName": "src/extensions/forms/reroute.ts",
-			"qualifiedName": "reroute"
+			"sourceFileName": "src/extensions/forms/node/geometry.ts",
+			"qualifiedName": "__type.inputsOffset"
 		},
 		"174": {
-			"sourceFileName": "src/extensions/forms/reroute.ts",
-			"qualifiedName": "S"
+			"sourceFileName": "src/extensions/forms/node/geometry.ts",
+			"qualifiedName": "__type.outputsOffset"
 		},
 		"175": {
-			"sourceFileName": "src/extensions/forms/reroute.ts",
-			"qualifiedName": "K"
+			"sourceFileName": "src/extensions/forms/node/geometry.ts",
+			"qualifiedName": "__type.borderRadius"
 		},
 		"176": {
 			"sourceFileName": "src/extensions/forms/reroute.ts",
-			"qualifiedName": "scope"
+			"qualifiedName": "reroute"
 		},
 		"177": {
 			"sourceFileName": "src/extensions/forms/reroute.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "reroute"
 		},
 		"178": {
 			"sourceFileName": "src/extensions/forms/reroute.ts",
-			"qualifiedName": "__type.data"
+			"qualifiedName": "S"
 		},
 		"179": {
-			"sourceFileName": "src/extensions/lookAt.ts",
-			"qualifiedName": "Params"
+			"sourceFileName": "src/extensions/forms/reroute.ts",
+			"qualifiedName": "K"
 		},
 		"180": {
-			"sourceFileName": "src/extensions/lookAt.ts",
-			"qualifiedName": "__type"
+			"sourceFileName": "src/extensions/forms/reroute.ts",
+			"qualifiedName": "scope"
 		},
 		"181": {
-			"sourceFileName": "src/extensions/lookAt.ts",
-			"qualifiedName": "__type.scale"
+			"sourceFileName": "src/extensions/forms/reroute.ts",
+			"qualifiedName": "__type"
 		},
 		"182": {
-			"sourceFileName": "src/extensions/lookAt.ts",
-			"qualifiedName": "lookAt"
+			"sourceFileName": "src/extensions/forms/reroute.ts",
+			"qualifiedName": "__type.data"
 		},
 		"183": {
 			"sourceFileName": "src/extensions/lookAt.ts",
-			"qualifiedName": "lookAt"
+			"qualifiedName": "Params"
 		},
 		"184": {
 			"sourceFileName": "src/extensions/lookAt.ts",
-			"qualifiedName": "S"
+			"qualifiedName": "__type"
 		},
 		"185": {
 			"sourceFileName": "src/extensions/lookAt.ts",
-			"qualifiedName": "K"
+			"qualifiedName": "__type.scale"
 		},
 		"186": {
 			"sourceFileName": "src/extensions/lookAt.ts",
-			"qualifiedName": "area"
+			"qualifiedName": "lookAt"
 		},
 		"187": {
 			"sourceFileName": "src/extensions/lookAt.ts",
-			"qualifiedName": "nodes"
+			"qualifiedName": "lookAt"
 		},
 		"188": {
 			"sourceFileName": "src/extensions/lookAt.ts",
-			"qualifiedName": "params"
+			"qualifiedName": "S"
 		},
 		"189": {
+			"sourceFileName": "src/extensions/lookAt.ts",
+			"qualifiedName": "K"
+		},
+		"190": {
+			"sourceFileName": "src/extensions/lookAt.ts",
+			"qualifiedName": "area"
+		},
+		"191": {
+			"sourceFileName": "src/extensions/lookAt.ts",
+			"qualifiedName": "nodes"
+		},
+		"192": {
+			"sourceFileName": "src/extensions/lookAt.ts",
+			"qualifiedName": "params"
+		},
+		"193": {
 			"sourceFileName": "src/scene/index.ts",
 			"qualifiedName": "HybridScene"
 		},
-		"216": {
+		"220": {
 			"sourceFileName": "src/scene/index.ts",
 			"qualifiedName": "HybridScene.render"
 		},
-		"217": {
+		"221": {
 			"sourceFileName": "src/scene/index.ts",
 			"qualifiedName": "HybridScene.render"
 		},
-		"233": {
+		"237": {
 			"sourceFileName": "src/scene/index.ts",
 			"qualifiedName": "HybridScene.Scope"
 		},
-		"234": {
+		"238": {
 			"sourceFileName": "src/scene/HybridRenderer.ts",
 			"qualifiedName": "HybridRenderer"
 		},
-		"237": {
+		"241": {
 			"sourceFileName": "src/scene/HybridRenderer.ts",
 			"qualifiedName": "HybridRenderer.css3d"
 		},
-		"238": {
+		"242": {
 			"sourceFileName": "src/scene/HybridRenderer.ts",
 			"qualifiedName": "HybridRenderer.webgl"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/index.ts",
+			"2": "src/extensions/index.ts",
+			"3": "src/extensions/forms/index.ts"
+		},
+		"reflections": {
+			"1": 0,
+			"2": 112,
+			"3": 122
 		}
 	}
 }
