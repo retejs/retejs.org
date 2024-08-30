@@ -38,7 +38,7 @@
 									"fileName": "presets/classic/index.ts",
 									"line": 13,
 									"character": 16,
-									"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/presets/classic/index.ts#L13"
+									"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/presets/classic/index.ts#L13"
 								}
 							],
 							"signatures": [
@@ -116,8 +116,8 @@
 										{
 											"fileName": "presets/classic/index.ts",
 											"line": 13,
-											"character": 0,
-											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/presets/classic/index.ts#L13"
+											"character": 16,
+											"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/presets/classic/index.ts#L13"
 										}
 									],
 									"type": {
@@ -146,7 +146,7 @@
 							"fileName": "presets/classic/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/presets/classic/index.ts#L1"
+							"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/presets/classic/index.ts#L1"
 						}
 					]
 				}
@@ -164,7 +164,7 @@
 					"fileName": "presets/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/presets/index.ts#L1"
+					"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/presets/index.ts#L1"
 				}
 			]
 		},
@@ -241,9 +241,9 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 133,
+							"line": 136,
 							"character": 9,
-							"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L133"
+							"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L136"
 						}
 					],
 					"signatures": [
@@ -264,9 +264,9 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 133,
-									"character": 2,
-									"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L133"
+									"line": 136,
+									"character": 9,
+									"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L136"
 								}
 							],
 							"parameters": [
@@ -316,7 +316,7 @@
 					"fileName": "index.ts",
 					"line": 46,
 					"character": 13,
-					"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L46"
+					"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L46"
 				}
 			],
 			"typeParameters": [
@@ -374,8 +374,10 @@
 									"typeArguments": [
 										{
 											"type": "reference",
-											"target": -1,
+											"target": 70,
 											"name": "Schemes",
+											"package": "rete-scopes-plugin",
+											"qualifiedName": "ScopesPlugin.Schemes",
 											"refersToTypeParameter": true
 										}
 									],
@@ -391,8 +393,10 @@
 									"typeArguments": [
 										{
 											"type": "reference",
-											"target": -1,
+											"target": 70,
 											"name": "Schemes",
+											"package": "rete-scopes-plugin",
+											"qualifiedName": "ScopesPlugin.Schemes",
 											"refersToTypeParameter": true
 										}
 									],
@@ -411,7 +415,7 @@
 			"id": 5,
 			"name": "Props",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -434,7 +438,7 @@
 					"fileName": "index.ts",
 					"line": 17,
 					"character": 12,
-					"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L17"
+					"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L17"
 				}
 			],
 			"type": {
@@ -454,12 +458,24 @@
 							"flags": {
 								"isOptional": true
 							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Determines whether the nested node should be excluded from affecting the scope's size, etc. Default is "
+									},
+									{
+										"kind": "code",
+										"text": "`() => false`"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "index.ts",
 									"line": 21,
 									"character": 2,
-									"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L21"
+									"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L21"
 								}
 							],
 							"type": {
@@ -475,7 +491,7 @@
 											"fileName": "index.ts",
 											"line": 21,
 											"character": 12,
-											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L21"
+											"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L21"
 										}
 									],
 									"signatures": [
@@ -485,18 +501,6 @@
 											"variant": "signature",
 											"kind": 4096,
 											"flags": {},
-											"comment": {
-												"summary": [
-													{
-														"kind": "text",
-														"text": "Determines whether the nested node should be excluded from affecting the scope's size, etc. Default is "
-													},
-													{
-														"kind": "code",
-														"text": "`() => false`"
-													}
-												]
-											},
 											"parameters": [
 												{
 													"id": 14,
@@ -532,12 +536,24 @@
 							"flags": {
 								"isOptional": true
 							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Padding (space) between the scope's border and its children. Default is "
+									},
+									{
+										"kind": "code",
+										"text": "`() => ({ top: 40, left: 20, right: 20, bottom: 20 })`"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "index.ts",
 									"line": 19,
 									"character": 2,
-									"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L19"
+									"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L19"
 								}
 							],
 							"type": {
@@ -553,7 +569,7 @@
 											"fileName": "index.ts",
 											"line": 19,
 											"character": 12,
-											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L19"
+											"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L19"
 										}
 									],
 									"signatures": [
@@ -563,18 +579,6 @@
 											"variant": "signature",
 											"kind": 4096,
 											"flags": {},
-											"comment": {
-												"summary": [
-													{
-														"kind": "text",
-														"text": "Padding (space) between the scope's border and its children. Default is "
-													},
-													{
-														"kind": "code",
-														"text": "`() => ({ top: 40, left: 20, right: 20, bottom: 20 })`"
-													}
-												]
-											},
 											"parameters": [
 												{
 													"id": 10,
@@ -615,12 +619,24 @@
 							"flags": {
 								"isOptional": true
 							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Customizes the size of the node which is recognized as a parent. Default is "
+									},
+									{
+										"kind": "code",
+										"text": "`(id, size) => size`"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "index.ts",
 									"line": 23,
 									"character": 2,
-									"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L23"
+									"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L23"
 								}
 							],
 							"type": {
@@ -636,7 +652,7 @@
 											"fileName": "index.ts",
 											"line": 23,
 											"character": 9,
-											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L23"
+											"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L23"
 										}
 									],
 									"signatures": [
@@ -646,18 +662,6 @@
 											"variant": "signature",
 											"kind": 4096,
 											"flags": {},
-											"comment": {
-												"summary": [
-													{
-														"kind": "text",
-														"text": "Customizes the size of the node which is recognized as a parent. Default is "
-													},
-													{
-														"kind": "code",
-														"text": "`(id, size) => size`"
-													}
-												]
-											},
 											"parameters": [
 												{
 													"id": 18,
@@ -722,7 +726,7 @@
 							"fileName": "index.ts",
 							"line": 17,
 							"character": 20,
-							"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L17"
+							"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L17"
 						}
 					]
 				}
@@ -732,7 +736,7 @@
 			"id": 20,
 			"name": "Scopes",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -758,7 +762,7 @@
 					"fileName": "index.ts",
 					"line": 33,
 					"character": 12,
-					"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L33"
+					"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L33"
 				}
 			],
 			"type": {
@@ -784,7 +788,7 @@
 											"fileName": "index.ts",
 											"line": 34,
 											"character": 27,
-											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L34"
+											"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L34"
 										}
 									],
 									"type": {
@@ -807,7 +811,7 @@
 															"fileName": "index.ts",
 															"line": 34,
 															"character": 35,
-															"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L34"
+															"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L34"
 														}
 													],
 													"type": {
@@ -837,7 +841,7 @@
 													"fileName": "index.ts",
 													"line": 34,
 													"character": 33,
-													"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L34"
+													"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L34"
 												}
 											]
 										}
@@ -854,7 +858,7 @@
 											"fileName": "index.ts",
 											"line": 34,
 											"character": 6,
-											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L34"
+											"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L34"
 										}
 									],
 									"type": {
@@ -877,7 +881,7 @@
 									"fileName": "index.ts",
 									"line": 34,
 									"character": 4,
-									"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L34"
+									"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L34"
 								}
 							]
 						}
@@ -902,7 +906,7 @@
 											"fileName": "index.ts",
 											"line": 35,
 											"character": 29,
-											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L35"
+											"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L35"
 										}
 									],
 									"type": {
@@ -925,7 +929,7 @@
 															"fileName": "index.ts",
 															"line": 35,
 															"character": 37,
-															"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L35"
+															"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L35"
 														}
 													],
 													"type": {
@@ -955,7 +959,7 @@
 													"fileName": "index.ts",
 													"line": 35,
 													"character": 35,
-													"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L35"
+													"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L35"
 												}
 											]
 										}
@@ -972,7 +976,7 @@
 											"fileName": "index.ts",
 											"line": 35,
 											"character": 6,
-											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L35"
+											"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L35"
 										}
 									],
 									"type": {
@@ -995,7 +999,7 @@
 									"fileName": "index.ts",
 									"line": 35,
 									"character": 4,
-									"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L35"
+									"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L35"
 								}
 							]
 						}
@@ -1020,7 +1024,7 @@
 											"fileName": "index.ts",
 											"line": 36,
 											"character": 28,
-											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L36"
+											"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L36"
 										}
 									],
 									"type": {
@@ -1043,7 +1047,7 @@
 															"fileName": "index.ts",
 															"line": 36,
 															"character": 36,
-															"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L36"
+															"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L36"
 														}
 													],
 													"type": {
@@ -1070,7 +1074,7 @@
 													"fileName": "index.ts",
 													"line": 36,
 													"character": 34,
-													"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L36"
+													"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L36"
 												}
 											]
 										}
@@ -1087,7 +1091,7 @@
 											"fileName": "index.ts",
 											"line": 36,
 											"character": 6,
-											"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L36"
+											"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L36"
 										}
 									],
 									"type": {
@@ -1110,7 +1114,7 @@
 									"fileName": "index.ts",
 									"line": 36,
 									"character": 4,
-									"url": "https://github.com/retejs/scopes-plugin/blob/b5ee3a0/src/index.ts#L36"
+									"url": "https://github.com/retejs/scopes-plugin/blob/606dd5518c7326673eaec82b113fe502463d0cb5/src/index.ts#L36"
 								}
 							]
 						}
@@ -1144,7 +1148,16 @@
 	"readme": [
 		{
 			"kind": "text",
-			"text": "Rete.js Scopes plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js advanced plugin**\n\n## Key features\n\n- **Nested nodes**: nodes may have parent nodes at one or more levels of depth\n- **Drag-and-drop nesting**: user can easily re-organize nodes by drag-and-drop them to different parent nodes\n- **Presets**: predefined configuration for nesting nodes by drag and drop or other methods\n  -  **Classic**: assigning nodes by long-pressing a node and releasing over the parent node\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/scopes) and [example](https://retejs.org/examples/scopes) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[CC BY-NC-SA 4.0](./LICENSE)"
+			"text": "Rete.js Scopes plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js advanced plugin**\n\n## Key features\n\n- **Nested nodes**: nodes may have parent nodes at one or more levels of depth\n- **Drag-and-drop nesting**: user can easily re-organize nodes by drag-and-drop them to different parent nodes\n- **Presets**: predefined configuration for nesting nodes by drag and drop or other methods\n  -  **Classic**: assigning nodes by long-pressing a node and releasing over the parent node\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/scopes) and [example](https://retejs.org/examples/scopes) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[CC BY-NC-SA 4.0]("
+		},
+		{
+			"kind": "relative-link",
+			"text": "./LICENSE",
+			"target": 4
+		},
+		{
+			"kind": "text",
+			"text": ")"
 		}
 	],
 	"symbolIdMap": {
@@ -1315,6 +1328,19 @@
 		"75": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": "setup"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/index.ts",
+			"2": "src/presets/index.ts",
+			"3": "src/presets/classic/index.ts",
+			"4": "LICENSE"
+		},
+		"reflections": {
+			"1": 0,
+			"2": 72,
+			"3": 73
 		}
 	}
 }
