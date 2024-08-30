@@ -38,7 +38,7 @@
 									"fileName": "presets/classic.ts",
 									"line": 6,
 									"character": 16,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/presets/classic.ts#L6"
+									"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/presets/classic.ts#L6"
 								}
 							],
 							"signatures": [
@@ -68,8 +68,8 @@
 										{
 											"fileName": "presets/classic.ts",
 											"line": 6,
-											"character": 0,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/presets/classic.ts#L6"
+											"character": 16,
+											"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/presets/classic.ts#L6"
 										}
 									],
 									"type": {
@@ -85,7 +85,7 @@
 													"fileName": "presets/classic.ts",
 													"line": 7,
 													"character": 9,
-													"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/presets/classic.ts#L7"
+													"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/presets/classic.ts#L7"
 												}
 											],
 											"signatures": [
@@ -100,7 +100,7 @@
 															"fileName": "presets/classic.ts",
 															"line": 7,
 															"character": 9,
-															"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/presets/classic.ts#L7"
+															"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/presets/classic.ts#L7"
 														}
 													],
 													"type": {
@@ -148,7 +148,7 @@
 							"fileName": "presets/classic.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/presets/classic.ts#L1"
+							"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/presets/classic.ts#L1"
 						}
 					]
 				}
@@ -166,7 +166,7 @@
 					"fileName": "presets/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/presets/index.ts#L1"
+					"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/presets/index.ts#L1"
 				}
 			]
 		},
@@ -187,9 +187,9 @@
 			"sources": [
 				{
 					"fileName": "flow/builtin/bidirect.ts",
-					"line": 63,
+					"line": 64,
 					"character": 13,
-					"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/bidirect.ts#L63"
+					"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/flow/builtin/bidirect.ts#L64"
 				}
 			],
 			"typeParameters": [
@@ -234,14 +234,18 @@
 					"typeArguments": [
 						{
 							"type": "reference",
-							"target": -1,
+							"target": 133,
 							"name": "Schemes",
+							"package": "rete-connection-plugin",
+							"qualifiedName": "BidirectFlow.Schemes",
 							"refersToTypeParameter": true
 						},
 						{
 							"type": "reference",
-							"target": -1,
+							"target": 134,
 							"name": "K",
+							"package": "rete-connection-plugin",
+							"qualifiedName": "BidirectFlow.K",
 							"refersToTypeParameter": true
 						}
 					],
@@ -257,14 +261,18 @@
 					"typeArguments": [
 						{
 							"type": "reference",
-							"target": -1,
+							"target": 133,
 							"name": "Schemes",
+							"package": "rete-connection-plugin",
+							"qualifiedName": "BidirectFlow.Schemes",
 							"refersToTypeParameter": true
 						},
 						{
 							"type": "reference",
-							"target": -1,
+							"target": 134,
 							"name": "K",
+							"package": "rete-connection-plugin",
+							"qualifiedName": "BidirectFlow.K",
 							"refersToTypeParameter": true
 						}
 					],
@@ -290,9 +298,9 @@
 			"sources": [
 				{
 					"fileName": "flow/builtin/classic/index.ts",
-					"line": 135,
+					"line": 144,
 					"character": 13,
-					"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/classic/index.ts#L135"
+					"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/flow/builtin/classic/index.ts#L144"
 				}
 			],
 			"typeParameters": [
@@ -337,14 +345,18 @@
 					"typeArguments": [
 						{
 							"type": "reference",
-							"target": -1,
+							"target": 169,
 							"name": "Schemes",
+							"package": "rete-connection-plugin",
+							"qualifiedName": "ClassicFlow.Schemes",
 							"refersToTypeParameter": true
 						},
 						{
 							"type": "reference",
-							"target": -1,
+							"target": 170,
 							"name": "K",
+							"package": "rete-connection-plugin",
+							"qualifiedName": "ClassicFlow.K",
 							"refersToTypeParameter": true
 						}
 					],
@@ -360,14 +372,18 @@
 					"typeArguments": [
 						{
 							"type": "reference",
-							"target": -1,
+							"target": 169,
 							"name": "Schemes",
+							"package": "rete-connection-plugin",
+							"qualifiedName": "ClassicFlow.Schemes",
 							"refersToTypeParameter": true
 						},
 						{
 							"type": "reference",
-							"target": -1,
+							"target": 170,
 							"name": "K",
+							"package": "rete-connection-plugin",
+							"qualifiedName": "ClassicFlow.K",
 							"refersToTypeParameter": true
 						}
 					],
@@ -469,7 +485,7 @@
 							"fileName": "index.ts",
 							"line": 51,
 							"character": 9,
-							"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/index.ts#L51"
+							"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/index.ts#L51"
 						}
 					],
 					"signatures": [
@@ -491,8 +507,8 @@
 								{
 									"fileName": "index.ts",
 									"line": 51,
-									"character": 2,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/index.ts#L51"
+									"character": 9,
+									"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/index.ts#L51"
 								}
 							],
 							"parameters": [
@@ -519,8 +535,10 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 45,
 												"name": "Schemes",
+												"package": "rete-connection-plugin",
+												"qualifiedName": "ConnectionPlugin.Schemes",
 												"refersToTypeParameter": true
 											}
 										],
@@ -547,7 +565,7 @@
 							"fileName": "index.ts",
 							"line": 77,
 							"character": 2,
-							"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/index.ts#L77"
+							"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/index.ts#L77"
 						}
 					],
 					"signatures": [
@@ -581,7 +599,7 @@
 									"fileName": "index.ts",
 									"line": 77,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/index.ts#L77"
+									"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/index.ts#L77"
 								}
 							],
 							"type": {
@@ -606,7 +624,7 @@
 					"fileName": "index.ts",
 					"line": 35,
 					"character": 13,
-					"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/index.ts#L35"
+					"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/index.ts#L35"
 				}
 			],
 			"typeParameters": [
@@ -674,8 +692,10 @@
 										},
 										{
 											"type": "reference",
-											"target": -1,
+											"target": 46,
 											"name": "K",
+											"package": "rete-connection-plugin",
+											"qualifiedName": "ConnectionPlugin.K",
 											"refersToTypeParameter": true
 										}
 									]
@@ -692,7 +712,7 @@
 			"id": 103,
 			"name": "BidirectParams",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -705,9 +725,9 @@
 			"sources": [
 				{
 					"fileName": "flow/builtin/bidirect.ts",
-					"line": 8,
+					"line": 9,
 					"character": 12,
-					"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/bidirect.ts#L8"
+					"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/flow/builtin/bidirect.ts#L9"
 				}
 			],
 			"typeParameters": [
@@ -743,12 +763,20 @@
 							"variant": "declaration",
 							"kind": 1024,
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Custom function to make connection"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "flow/builtin/bidirect.ts",
-									"line": 12,
+									"line": 13,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/bidirect.ts#L12"
+									"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/flow/builtin/bidirect.ts#L13"
 								}
 							],
 							"type": {
@@ -762,9 +790,9 @@
 									"sources": [
 										{
 											"fileName": "flow/builtin/bidirect.ts",
-											"line": 12,
+											"line": 13,
 											"character": 18,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/bidirect.ts#L12"
+											"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/flow/builtin/bidirect.ts#L13"
 										}
 									],
 									"signatures": [
@@ -774,15 +802,7 @@
 											"variant": "signature",
 											"kind": 4096,
 											"flags": {},
-											"comment": {
-												"summary": [
-													{
-														"kind": "text",
-														"text": "Custom function to make connection"
-													}
-												]
-											},
-											"typeParameter": [
+											"typeParameters": [
 												{
 													"id": 112,
 													"name": "K",
@@ -846,14 +866,16 @@
 														"typeArguments": [
 															{
 																"type": "reference",
-																"target": -1,
+																"target": 113,
 																"name": "Schemes",
+																"package": "rete-connection-plugin",
 																"refersToTypeParameter": true
 															},
 															{
 																"type": "reference",
-																"target": -1,
+																"target": 112,
 																"name": "K",
+																"package": "rete-connection-plugin",
 																"refersToTypeParameter": true
 															}
 														],
@@ -897,9 +919,9 @@
 							"sources": [
 								{
 									"fileName": "flow/builtin/bidirect.ts",
-									"line": 10,
+									"line": 11,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/bidirect.ts#L10"
+									"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/flow/builtin/bidirect.ts#L11"
 								}
 							],
 							"type": {
@@ -920,9 +942,9 @@
 					"sources": [
 						{
 							"fileName": "flow/builtin/bidirect.ts",
-							"line": 8,
+							"line": 9,
 							"character": 60,
-							"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/bidirect.ts#L8"
+							"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/flow/builtin/bidirect.ts#L9"
 						}
 					]
 				}
@@ -932,7 +954,7 @@
 			"id": 135,
 			"name": "ClassicParams",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -945,9 +967,9 @@
 			"sources": [
 				{
 					"fileName": "flow/builtin/classic/index.ts",
-					"line": 12,
+					"line": 13,
 					"character": 12,
-					"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/classic/index.ts#L12"
+					"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/flow/builtin/classic/index.ts#L13"
 				}
 			],
 			"typeParameters": [
@@ -983,12 +1005,20 @@
 							"variant": "declaration",
 							"kind": 1024,
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Custom function to check if connection can be made"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "flow/builtin/classic/index.ts",
-									"line": 14,
+									"line": 15,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/classic/index.ts#L14"
+									"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/flow/builtin/classic/index.ts#L15"
 								}
 							],
 							"type": {
@@ -1002,9 +1032,9 @@
 									"sources": [
 										{
 											"fileName": "flow/builtin/classic/index.ts",
-											"line": 14,
+											"line": 15,
 											"character": 21,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/classic/index.ts#L14"
+											"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/flow/builtin/classic/index.ts#L15"
 										}
 									],
 									"signatures": [
@@ -1014,14 +1044,6 @@
 											"variant": "signature",
 											"kind": 4096,
 											"flags": {},
-											"comment": {
-												"summary": [
-													{
-														"kind": "text",
-														"text": "Custom function to check if connection can be made"
-													}
-												]
-											},
 											"parameters": [
 												{
 													"id": 140,
@@ -1080,12 +1102,20 @@
 							"variant": "declaration",
 							"kind": 1024,
 							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Custom function to make connection"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "flow/builtin/classic/index.ts",
-									"line": 16,
+									"line": 17,
 									"character": 2,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/classic/index.ts#L16"
+									"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/flow/builtin/classic/index.ts#L17"
 								}
 							],
 							"type": {
@@ -1099,9 +1129,9 @@
 									"sources": [
 										{
 											"fileName": "flow/builtin/classic/index.ts",
-											"line": 16,
+											"line": 17,
 											"character": 18,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/classic/index.ts#L16"
+											"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/flow/builtin/classic/index.ts#L17"
 										}
 									],
 									"signatures": [
@@ -1111,15 +1141,7 @@
 											"variant": "signature",
 											"kind": 4096,
 											"flags": {},
-											"comment": {
-												"summary": [
-													{
-														"kind": "text",
-														"text": "Custom function to make connection"
-													}
-												]
-											},
-											"typeParameter": [
+											"typeParameters": [
 												{
 													"id": 148,
 													"name": "K",
@@ -1183,14 +1205,16 @@
 														"typeArguments": [
 															{
 																"type": "reference",
-																"target": -1,
+																"target": 149,
 																"name": "Schemes",
+																"package": "rete-connection-plugin",
 																"refersToTypeParameter": true
 															},
 															{
 																"type": "reference",
-																"target": -1,
+																"target": 148,
 																"name": "K",
+																"package": "rete-connection-plugin",
 																"refersToTypeParameter": true
 															}
 														],
@@ -1230,9 +1254,9 @@
 					"sources": [
 						{
 							"fileName": "flow/builtin/classic/index.ts",
-							"line": 12,
+							"line": 13,
 							"character": 59,
-							"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/flow/builtin/classic/index.ts#L12"
+							"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/flow/builtin/classic/index.ts#L13"
 						}
 					]
 				}
@@ -1242,7 +1266,7 @@
 			"id": 74,
 			"name": "Connection",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -1268,7 +1292,7 @@
 					"fileName": "types.ts",
 					"line": 29,
 					"character": 12,
-					"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L29"
+					"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/types.ts#L29"
 				}
 			],
 			"type": {
@@ -1294,7 +1318,7 @@
 											"fileName": "types.ts",
 											"line": 30,
 											"character": 30,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L30"
+											"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/types.ts#L30"
 										}
 									],
 									"type": {
@@ -1317,7 +1341,7 @@
 															"fileName": "types.ts",
 															"line": 30,
 															"character": 38,
-															"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L30"
+															"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/types.ts#L30"
 														}
 													],
 													"type": {
@@ -1344,7 +1368,7 @@
 													"fileName": "types.ts",
 													"line": 30,
 													"character": 36,
-													"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L30"
+													"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/types.ts#L30"
 												}
 											]
 										}
@@ -1361,7 +1385,7 @@
 											"fileName": "types.ts",
 											"line": 30,
 											"character": 6,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L30"
+											"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/types.ts#L30"
 										}
 									],
 									"type": {
@@ -1384,7 +1408,7 @@
 									"fileName": "types.ts",
 									"line": 30,
 									"character": 4,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L30"
+									"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/types.ts#L30"
 								}
 							]
 						}
@@ -1409,7 +1433,7 @@
 											"fileName": "types.ts",
 											"line": 31,
 											"character": 30,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L31"
+											"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/types.ts#L31"
 										}
 									],
 									"type": {
@@ -1432,7 +1456,7 @@
 															"fileName": "types.ts",
 															"line": 31,
 															"character": 86,
-															"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L31"
+															"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/types.ts#L31"
 														}
 													],
 													"type": {
@@ -1451,7 +1475,7 @@
 															"fileName": "types.ts",
 															"line": 31,
 															"character": 38,
-															"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L31"
+															"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/types.ts#L31"
 														}
 													],
 													"type": {
@@ -1475,7 +1499,7 @@
 															"fileName": "types.ts",
 															"line": 31,
 															"character": 59,
-															"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L31"
+															"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/types.ts#L31"
 														}
 													],
 													"type": {
@@ -1513,7 +1537,7 @@
 													"fileName": "types.ts",
 													"line": 31,
 													"character": 36,
-													"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L31"
+													"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/types.ts#L31"
 												}
 											]
 										}
@@ -1530,7 +1554,7 @@
 											"fileName": "types.ts",
 											"line": 31,
 											"character": 6,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L31"
+											"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/types.ts#L31"
 										}
 									],
 									"type": {
@@ -1553,7 +1577,7 @@
 									"fileName": "types.ts",
 									"line": 31,
 									"character": 4,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/types.ts#L31"
+									"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/types.ts#L31"
 								}
 							]
 						}
@@ -1572,7 +1596,7 @@
 					"fileName": "pseudoconnection.ts",
 					"line": 11,
 					"character": 16,
-					"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L11"
+					"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/pseudoconnection.ts#L11"
 				}
 			],
 			"signatures": [
@@ -1602,11 +1626,11 @@
 						{
 							"fileName": "pseudoconnection.ts",
 							"line": 11,
-							"character": 0,
-							"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L11"
+							"character": 16,
+							"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/pseudoconnection.ts#L11"
 						}
 					],
-					"typeParameter": [
+					"typeParameters": [
 						{
 							"id": 55,
 							"name": "Schemes",
@@ -1663,8 +1687,9 @@
 										},
 										"objectType": {
 											"type": "reference",
-											"target": -1,
+											"target": 55,
 											"name": "Schemes",
+											"package": "rete-connection-plugin",
 											"refersToTypeParameter": true
 										}
 									}
@@ -1694,7 +1719,7 @@
 											"fileName": "pseudoconnection.ts",
 											"line": 31,
 											"character": 4,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L31"
+											"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/pseudoconnection.ts#L31"
 										}
 									],
 									"type": {
@@ -1710,7 +1735,7 @@
 													"fileName": "pseudoconnection.ts",
 													"line": 22,
 													"character": 11,
-													"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L22"
+													"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/pseudoconnection.ts#L22"
 												}
 											],
 											"signatures": [
@@ -1724,8 +1749,8 @@
 														{
 															"fileName": "pseudoconnection.ts",
 															"line": 22,
-															"character": 2,
-															"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L22"
+															"character": 11,
+															"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/pseudoconnection.ts#L22"
 														}
 													],
 													"parameters": [
@@ -1744,8 +1769,9 @@
 																"typeArguments": [
 																	{
 																		"type": "reference",
-																		"target": -1,
+																		"target": 55,
 																		"name": "Schemes",
+																		"package": "rete-connection-plugin",
 																		"refersToTypeParameter": true
 																	},
 																	{
@@ -1753,8 +1779,9 @@
 																		"types": [
 																			{
 																				"type": "reference",
-																				"target": -1,
+																				"target": 56,
 																				"name": "K",
+																				"package": "rete-connection-plugin",
 																				"refersToTypeParameter": true
 																			},
 																			{
@@ -1766,8 +1793,9 @@
 																				"typeArguments": [
 																					{
 																						"type": "reference",
-																						"target": -1,
+																						"target": 55,
 																						"name": "Schemes",
+																						"package": "rete-connection-plugin",
 																						"refersToTypeParameter": true
 																					}
 																				],
@@ -1800,9 +1828,9 @@
 									"sources": [
 										{
 											"fileName": "pseudoconnection.ts",
-											"line": 72,
+											"line": 82,
 											"character": 4,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L72"
+											"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/pseudoconnection.ts#L82"
 										}
 									],
 									"type": {
@@ -1818,7 +1846,7 @@
 													"fileName": "pseudoconnection.ts",
 													"line": 15,
 													"character": 11,
-													"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L15"
+													"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/pseudoconnection.ts#L15"
 												}
 											],
 											"signatures": [
@@ -1832,8 +1860,8 @@
 														{
 															"fileName": "pseudoconnection.ts",
 															"line": 15,
-															"character": 2,
-															"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L15"
+															"character": 11,
+															"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/pseudoconnection.ts#L15"
 														}
 													],
 													"parameters": [
@@ -1852,8 +1880,9 @@
 																"typeArguments": [
 																	{
 																		"type": "reference",
-																		"target": -1,
+																		"target": 55,
 																		"name": "Schemes",
+																		"package": "rete-connection-plugin",
 																		"refersToTypeParameter": true
 																	},
 																	{
@@ -1861,8 +1890,9 @@
 																		"types": [
 																			{
 																				"type": "reference",
-																				"target": -1,
+																				"target": 56,
 																				"name": "K",
+																				"package": "rete-connection-plugin",
 																				"refersToTypeParameter": true
 																			},
 																			{
@@ -1874,8 +1904,9 @@
 																				"typeArguments": [
 																					{
 																						"type": "reference",
-																						"target": -1,
+																						"target": 55,
 																						"name": "Schemes",
+																						"package": "rete-connection-plugin",
 																						"refersToTypeParameter": true
 																					}
 																				],
@@ -1910,7 +1941,7 @@
 											"fileName": "pseudoconnection.ts",
 											"line": 28,
 											"character": 4,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L28"
+											"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/pseudoconnection.ts#L28"
 										}
 									],
 									"signatures": [
@@ -1925,7 +1956,7 @@
 													"fileName": "pseudoconnection.ts",
 													"line": 28,
 													"character": 4,
-													"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L28"
+													"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/pseudoconnection.ts#L28"
 												}
 											],
 											"type": {
@@ -1944,9 +1975,9 @@
 									"sources": [
 										{
 											"fileName": "pseudoconnection.ts",
-											"line": 33,
+											"line": 32,
 											"character": 4,
-											"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L33"
+											"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/pseudoconnection.ts#L32"
 										}
 									],
 									"signatures": [
@@ -1959,9 +1990,9 @@
 											"sources": [
 												{
 													"fileName": "pseudoconnection.ts",
-													"line": 33,
+													"line": 32,
 													"character": 4,
-													"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L33"
+													"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/pseudoconnection.ts#L32"
 												}
 											],
 											"parameters": [
@@ -1980,8 +2011,9 @@
 														"typeArguments": [
 															{
 																"type": "reference",
-																"target": -1,
+																"target": 55,
 																"name": "Schemes",
+																"package": "rete-connection-plugin",
 																"refersToTypeParameter": true
 															},
 															{
@@ -1989,8 +2021,9 @@
 																"types": [
 																	{
 																		"type": "reference",
-																		"target": -1,
+																		"target": 56,
 																		"name": "K",
+																		"package": "rete-connection-plugin",
 																		"refersToTypeParameter": true
 																	},
 																	{
@@ -2002,8 +2035,9 @@
 																		"typeArguments": [
 																			{
 																				"type": "reference",
-																				"target": -1,
+																				"target": 55,
 																				"name": "Schemes",
+																				"package": "rete-connection-plugin",
 																				"refersToTypeParameter": true
 																			}
 																		],
@@ -2079,7 +2113,7 @@
 									"fileName": "pseudoconnection.ts",
 									"line": 27,
 									"character": 9,
-									"url": "https://github.com/retejs/connection-plugin/blob/7d951e9/src/pseudoconnection.ts#L27"
+									"url": "https://github.com/retejs/connection-plugin/blob/343ee308f26694b5f48083ce81201e72b4ecb4f9/src/pseudoconnection.ts#L27"
 								}
 							]
 						}
@@ -2449,6 +2483,18 @@
 		"170": {
 			"sourceFileName": "src/flow/builtin/classic/index.ts",
 			"qualifiedName": "ClassicFlow.K"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/index.ts",
+			"2": "src/presets/index.ts",
+			"3": "src/presets/classic.ts"
+		},
+		"reflections": {
+			"1": 0,
+			"2": 47,
+			"3": 48
 		}
 	}
 }
