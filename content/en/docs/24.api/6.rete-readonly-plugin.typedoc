@@ -95,7 +95,7 @@
 							"fileName": "index.ts",
 							"line": 28,
 							"character": 2,
-							"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L28"
+							"url": "https://github.com/retejs/readonly-plugin/blob/22310b7fa427fa71d3f794167745c5238c2f5146/src/index.ts#L28"
 						}
 					],
 					"type": {
@@ -117,7 +117,7 @@
 							"fileName": "index.ts",
 							"line": 59,
 							"character": 9,
-							"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L59"
+							"url": "https://github.com/retejs/readonly-plugin/blob/22310b7fa427fa71d3f794167745c5238c2f5146/src/index.ts#L59"
 						}
 					],
 					"signatures": [
@@ -139,8 +139,8 @@
 								{
 									"fileName": "index.ts",
 									"line": 59,
-									"character": 2,
-									"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L59"
+									"character": 9,
+									"url": "https://github.com/retejs/readonly-plugin/blob/22310b7fa427fa71d3f794167745c5238c2f5146/src/index.ts#L59"
 								}
 							],
 							"type": {
@@ -163,7 +163,7 @@
 							"fileName": "index.ts",
 							"line": 52,
 							"character": 9,
-							"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L52"
+							"url": "https://github.com/retejs/readonly-plugin/blob/22310b7fa427fa71d3f794167745c5238c2f5146/src/index.ts#L52"
 						}
 					],
 					"signatures": [
@@ -185,8 +185,8 @@
 								{
 									"fileName": "index.ts",
 									"line": 52,
-									"character": 2,
-									"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L52"
+									"character": 9,
+									"url": "https://github.com/retejs/readonly-plugin/blob/22310b7fa427fa71d3f794167745c5238c2f5146/src/index.ts#L52"
 								}
 							],
 							"type": {
@@ -217,7 +217,7 @@
 					"fileName": "index.ts",
 					"line": 20,
 					"character": 13,
-					"url": "https://github.com/retejs/readonly-plugin/blob/6e94be3/src/index.ts#L20"
+					"url": "https://github.com/retejs/readonly-plugin/blob/22310b7fa427fa71d3f794167745c5238c2f5146/src/index.ts#L20"
 				}
 			],
 			"typeParameters": [
@@ -287,6 +287,14 @@
 		"13": {
 			"sourceFileName": "src/index.ts",
 			"qualifiedName": "ReadonlyPlugin.Schemes"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/index.ts"
+		},
+		"reflections": {
+			"1": 0
 		}
 	}
 }
