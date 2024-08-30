@@ -84,7 +84,7 @@
 							"fileName": "sockets-position/base-socket-position.ts",
 							"line": 42,
 							"character": 2,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L42"
+							"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/base-socket-position.ts#L42"
 						}
 					],
 					"signatures": [
@@ -107,7 +107,7 @@
 									"fileName": "sockets-position/base-socket-position.ts",
 									"line": 42,
 									"character": 2,
-									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L42"
+									"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/base-socket-position.ts#L42"
 								}
 							],
 							"parameters": [
@@ -145,8 +145,10 @@
 												"elements": [
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 41,
 														"name": "K",
+														"package": "rete-render-utils",
+														"qualifiedName": "BaseSocketPosition.K",
 														"refersToTypeParameter": true
 													}
 												]
@@ -187,7 +189,7 @@
 							"fileName": "sockets-position/base-socket-position.ts",
 							"line": 36,
 							"character": 11,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L36"
+							"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/base-socket-position.ts#L36"
 						}
 					],
 					"signatures": [
@@ -209,8 +211,8 @@
 								{
 									"fileName": "sockets-position/base-socket-position.ts",
 									"line": 36,
-									"character": 2,
-									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L36"
+									"character": 11,
+									"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/base-socket-position.ts#L36"
 								}
 							],
 							"parameters": [
@@ -344,7 +346,7 @@
 							"fileName": "sockets-position/base-socket-position.ts",
 							"line": 94,
 							"character": 2,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L94"
+							"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/base-socket-position.ts#L94"
 						}
 					],
 					"signatures": [
@@ -370,7 +372,7 @@
 									"fileName": "sockets-position/base-socket-position.ts",
 									"line": 94,
 									"character": 2,
-									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L94"
+									"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/base-socket-position.ts#L94"
 								}
 							],
 							"parameters": [
@@ -472,9 +474,9 @@
 									"sources": [
 										{
 											"fileName": "utils.ts",
-											"line": 45,
+											"line": 47,
 											"character": 11,
-											"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L45"
+											"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/utils.ts#L47"
 										}
 									],
 									"signatures": [
@@ -487,9 +489,9 @@
 											"sources": [
 												{
 													"fileName": "utils.ts",
-													"line": 45,
+													"line": 47,
 													"character": 11,
-													"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L45"
+													"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/utils.ts#L47"
 												}
 											],
 											"type": {
@@ -529,7 +531,7 @@
 					"fileName": "sockets-position/base-socket-position.ts",
 					"line": 24,
 					"character": 22,
-					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L24"
+					"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/base-socket-position.ts#L24"
 				}
 			],
 			"typeParameters": [
@@ -585,8 +587,10 @@
 									"elements": [
 										{
 											"type": "reference",
-											"target": -1,
+											"target": 41,
 											"name": "K",
+											"package": "rete-render-utils",
+											"qualifiedName": "BaseSocketPosition.K",
 											"refersToTypeParameter": true
 										}
 									]
@@ -629,13 +633,15 @@
 					"name": "attach",
 					"variant": "declaration",
 					"kind": 2048,
-					"flags": {},
+					"flags": {
+						"isInherited": true
+					},
 					"sources": [
 						{
 							"fileName": "sockets-position/base-socket-position.ts",
 							"line": 42,
 							"character": 2,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L42"
+							"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/base-socket-position.ts#L42"
 						}
 					],
 					"signatures": [
@@ -644,7 +650,9 @@
 							"name": "attach",
 							"variant": "signature",
 							"kind": 4096,
-							"flags": {},
+							"flags": {
+								"isInherited": true
+							},
 							"comment": {
 								"summary": [
 									{
@@ -658,7 +666,7 @@
 									"fileName": "sockets-position/base-socket-position.ts",
 									"line": 42,
 									"character": 2,
-									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L42"
+									"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/base-socket-position.ts#L42"
 								}
 							],
 							"parameters": [
@@ -696,8 +704,10 @@
 												"elements": [
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 70,
 														"name": "K",
+														"package": "rete-render-utils",
+														"qualifiedName": "DOMSocketPosition.K",
 														"refersToTypeParameter": true
 													}
 												]
@@ -726,17 +736,186 @@
 					}
 				},
 				{
-					"id": 61,
-					"name": "listen",
+					"id": 49,
+					"name": "calculatePosition",
 					"variant": "declaration",
 					"kind": 2048,
 					"flags": {},
 					"sources": [
 						{
+							"fileName": "sockets-position/dom-socket-position.ts",
+							"line": 30,
+							"character": 8,
+							"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/dom-socket-position.ts#L30"
+						}
+					],
+					"signatures": [
+						{
+							"id": 50,
+							"name": "calculatePosition",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The method needs to be implemented that calculates the position of the socket."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "sockets-position/dom-socket-position.ts",
+									"line": 30,
+									"character": 8,
+									"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/dom-socket-position.ts#L30"
+								}
+							],
+							"parameters": [
+								{
+									"id": 51,
+									"name": "nodeId",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Node ID"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 52,
+									"name": "side",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Side of the socket, 'input' or 'output'"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/types.ts",
+											"qualifiedName": "Side"
+										},
+										"name": "Side",
+										"package": "rete-render-utils"
+									}
+								},
+								{
+									"id": 53,
+									"name": "key",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Socket key"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 54,
+									"name": "element",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Socket element"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+											"qualifiedName": "HTMLElement"
+										},
+										"name": "HTMLElement",
+										"package": "typescript"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "literal",
+												"value": null
+											},
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "Position"
+												},
+												"name": "Position",
+												"package": "rete-render-utils"
+											}
+										]
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							},
+							"overwrites": {
+								"type": "reference",
+								"target": 24,
+								"name": "BaseSocketPosition.calculatePosition"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"target": 23,
+						"name": "BaseSocketPosition.calculatePosition"
+					}
+				},
+				{
+					"id": 61,
+					"name": "listen",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isInherited": true
+					},
+					"sources": [
+						{
 							"fileName": "sockets-position/base-socket-position.ts",
 							"line": 94,
 							"character": 2,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L94"
+							"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/base-socket-position.ts#L94"
 						}
 					],
 					"signatures": [
@@ -745,7 +924,9 @@
 							"name": "listen",
 							"variant": "signature",
 							"kind": 4096,
-							"flags": {},
+							"flags": {
+								"isInherited": true
+							},
 							"comment": {
 								"summary": [
 									{
@@ -762,7 +943,7 @@
 									"fileName": "sockets-position/base-socket-position.ts",
 									"line": 94,
 									"character": 2,
-									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/base-socket-position.ts#L94"
+									"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/base-socket-position.ts#L94"
 								}
 							],
 							"parameters": [
@@ -864,9 +1045,9 @@
 									"sources": [
 										{
 											"fileName": "utils.ts",
-											"line": 45,
+											"line": 47,
 											"character": 11,
-											"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L45"
+											"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/utils.ts#L47"
 										}
 									],
 									"signatures": [
@@ -879,9 +1060,9 @@
 											"sources": [
 												{
 													"fileName": "utils.ts",
-													"line": 45,
+													"line": 47,
 													"character": 11,
-													"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L45"
+													"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/utils.ts#L47"
 												}
 											],
 											"type": {
@@ -911,6 +1092,7 @@
 					"title": "Methods",
 					"children": [
 						58,
+						49,
 						61
 					]
 				}
@@ -920,7 +1102,7 @@
 					"fileName": "sockets-position/dom-socket-position.ts",
 					"line": 25,
 					"character": 13,
-					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/dom-socket-position.ts#L25"
+					"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/dom-socket-position.ts#L25"
 				}
 			],
 			"typeParameters": [
@@ -955,14 +1137,18 @@
 					"typeArguments": [
 						{
 							"type": "reference",
-							"target": -1,
+							"target": 69,
 							"name": "Schemes",
+							"package": "rete-render-utils",
+							"qualifiedName": "DOMSocketPosition.Schemes",
 							"refersToTypeParameter": true
 						},
 						{
 							"type": "reference",
-							"target": -1,
+							"target": 70,
 							"name": "K",
+							"package": "rete-render-utils",
+							"qualifiedName": "DOMSocketPosition.K",
 							"refersToTypeParameter": true
 						}
 					],
@@ -975,7 +1161,7 @@
 			"id": 1,
 			"name": "SocketPositionWatcher",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -990,7 +1176,7 @@
 					"fileName": "sockets-position/types.ts",
 					"line": 10,
 					"character": 12,
-					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L10"
+					"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/types.ts#L10"
 				}
 			],
 			"typeParameters": [
@@ -1022,7 +1208,7 @@
 									"fileName": "sockets-position/types.ts",
 									"line": 12,
 									"character": 2,
-									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L12"
+									"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/types.ts#L12"
 								}
 							],
 							"signatures": [
@@ -1045,7 +1231,7 @@
 											"fileName": "sockets-position/types.ts",
 											"line": 12,
 											"character": 2,
-											"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L12"
+											"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/types.ts#L12"
 										}
 									],
 									"parameters": [
@@ -1057,8 +1243,9 @@
 											"flags": {},
 											"type": {
 												"type": "reference",
-												"target": -1,
+												"target": 14,
 												"name": "ChildScope",
+												"package": "rete-render-utils",
 												"refersToTypeParameter": true
 											}
 										}
@@ -1081,7 +1268,7 @@
 									"fileName": "sockets-position/types.ts",
 									"line": 21,
 									"character": 2,
-									"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L21"
+									"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/types.ts#L21"
 								}
 							],
 							"signatures": [
@@ -1115,7 +1302,7 @@
 											"fileName": "sockets-position/types.ts",
 											"line": 21,
 											"character": 2,
-											"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L21"
+											"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/types.ts#L21"
 										}
 									],
 									"parameters": [
@@ -1219,7 +1406,7 @@
 													"fileName": "sockets-position/types.ts",
 													"line": 21,
 													"character": 72,
-													"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L21"
+													"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/types.ts#L21"
 												}
 											],
 											"signatures": [
@@ -1234,7 +1421,7 @@
 															"fileName": "sockets-position/types.ts",
 															"line": 21,
 															"character": 72,
-															"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L21"
+															"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/types.ts#L21"
 														}
 													],
 													"type": {
@@ -1263,7 +1450,7 @@
 							"fileName": "sockets-position/types.ts",
 							"line": 10,
 							"character": 48,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/types.ts#L10"
+							"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/types.ts#L10"
 						}
 					]
 				}
@@ -1287,7 +1474,7 @@
 					"fileName": "connection.ts",
 					"line": 8,
 					"character": 16,
-					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/connection.ts#L8"
+					"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/connection.ts#L8"
 				}
 			],
 			"signatures": [
@@ -1309,8 +1496,8 @@
 						{
 							"fileName": "connection.ts",
 							"line": 8,
-							"character": 0,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/connection.ts#L8"
+							"character": 16,
+							"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/connection.ts#L8"
 						}
 					],
 					"parameters": [
@@ -1388,9 +1575,9 @@
 			"sources": [
 				{
 					"fileName": "sockets-position/dom-socket-position.ts",
-					"line": 49,
+					"line": 51,
 					"character": 16,
-					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/dom-socket-position.ts#L49"
+					"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/dom-socket-position.ts#L51"
 				}
 			],
 			"signatures": [
@@ -1419,12 +1606,12 @@
 					"sources": [
 						{
 							"fileName": "sockets-position/dom-socket-position.ts",
-							"line": 49,
-							"character": 0,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/sockets-position/dom-socket-position.ts#L49"
+							"line": 51,
+							"character": 16,
+							"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/sockets-position/dom-socket-position.ts#L51"
 						}
 					],
-					"typeParameter": [
+					"typeParameters": [
 						{
 							"id": 73,
 							"name": "Schemes",
@@ -1491,14 +1678,16 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"target": -1,
+								"target": 73,
 								"name": "Schemes",
+								"package": "rete-render-utils",
 								"refersToTypeParameter": true
 							},
 							{
 								"type": "reference",
-								"target": -1,
+								"target": 74,
 								"name": "K",
+								"package": "rete-render-utils",
 								"refersToTypeParameter": true
 							}
 						],
@@ -1519,7 +1708,7 @@
 					"fileName": "utils.ts",
 					"line": 11,
 					"character": 22,
-					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L11"
+					"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/utils.ts#L11"
 				}
 			],
 			"signatures": [
@@ -1565,8 +1754,8 @@
 						{
 							"fileName": "utils.ts",
 							"line": 11,
-							"character": 0,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L11"
+							"character": 22,
+							"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/utils.ts#L11"
 						}
 					],
 					"parameters": [
@@ -1646,7 +1835,7 @@
 													"fileName": "utils.ts",
 													"line": 31,
 													"character": 4,
-													"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L31"
+													"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/utils.ts#L31"
 												}
 											],
 											"type": {
@@ -1666,7 +1855,7 @@
 													"fileName": "utils.ts",
 													"line": 32,
 													"character": 4,
-													"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L32"
+													"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/utils.ts#L32"
 												}
 											],
 											"type": {
@@ -1690,7 +1879,7 @@
 											"fileName": "utils.ts",
 											"line": 30,
 											"character": 9,
-											"url": "https://github.com/retejs/render-utils/blob/f24f374/src/utils.ts#L30"
+											"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/utils.ts#L30"
 										}
 									]
 								}
@@ -1713,7 +1902,7 @@
 					"fileName": "connection.ts",
 					"line": 23,
 					"character": 16,
-					"url": "https://github.com/retejs/render-utils/blob/f24f374/src/connection.ts#L23"
+					"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/connection.ts#L23"
 				}
 			],
 			"signatures": [
@@ -1735,8 +1924,8 @@
 						{
 							"fileName": "connection.ts",
 							"line": 23,
-							"character": 0,
-							"url": "https://github.com/retejs/render-utils/blob/f24f374/src/connection.ts#L23"
+							"character": 16,
+							"url": "https://github.com/retejs/render-utils/blob/e9f163159b21e3c04cf70ec1d27873000d119927/src/connection.ts#L23"
 						}
 					],
 					"parameters": [
@@ -2065,6 +2254,30 @@
 			"sourceFileName": "src/sockets-position/dom-socket-position.ts",
 			"qualifiedName": "DOMSocketPosition"
 		},
+		"49": {
+			"sourceFileName": "src/sockets-position/dom-socket-position.ts",
+			"qualifiedName": "DOMSocketPosition.calculatePosition"
+		},
+		"50": {
+			"sourceFileName": "src/sockets-position/dom-socket-position.ts",
+			"qualifiedName": "DOMSocketPosition.calculatePosition"
+		},
+		"51": {
+			"sourceFileName": "src/sockets-position/dom-socket-position.ts",
+			"qualifiedName": "nodeId"
+		},
+		"52": {
+			"sourceFileName": "src/sockets-position/dom-socket-position.ts",
+			"qualifiedName": "side"
+		},
+		"53": {
+			"sourceFileName": "src/sockets-position/dom-socket-position.ts",
+			"qualifiedName": "key"
+		},
+		"54": {
+			"sourceFileName": "src/sockets-position/dom-socket-position.ts",
+			"qualifiedName": "element"
+		},
 		"58": {
 			"sourceFileName": "src/sockets-position/base-socket-position.ts",
 			"qualifiedName": "BaseSocketPosition.attach"
@@ -2200,6 +2413,14 @@
 		"91": {
 			"sourceFileName": "src/connection.ts",
 			"qualifiedName": "size"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/index.ts"
+		},
+		"reflections": {
+			"1": 0
 		}
 	}
 }
