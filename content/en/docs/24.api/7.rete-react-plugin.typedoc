@@ -38,7 +38,7 @@
 									"fileName": "src/presets/classic/index.tsx",
 									"line": 46,
 									"character": 16,
-									"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/classic/index.tsx#L46"
+									"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/classic/index.tsx#L46"
 								}
 							],
 							"signatures": [
@@ -60,11 +60,11 @@
 										{
 											"fileName": "src/presets/classic/index.tsx",
 											"line": 46,
-											"character": 0,
-											"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/classic/index.tsx#L46"
+											"character": 16,
+											"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/classic/index.tsx#L46"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 44,
 											"name": "Schemes",
@@ -96,8 +96,9 @@
 												"typeArguments": [
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 44,
 														"name": "Schemes",
+														"package": "rete-react-plugin",
 														"refersToTypeParameter": true
 													}
 												],
@@ -124,14 +125,16 @@
 												"typeArguments": [
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 44,
 														"name": "Schemes",
+														"package": "rete-react-plugin",
 														"refersToTypeParameter": true
 													},
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 45,
 														"name": "K",
+														"package": "rete-react-plugin",
 														"refersToTypeParameter": true
 													}
 												],
@@ -149,14 +152,16 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 44,
 												"name": "Schemes",
+												"package": "rete-react-plugin",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 45,
 												"name": "K",
+												"package": "rete-react-plugin",
 												"refersToTypeParameter": true
 											}
 										],
@@ -180,7 +185,7 @@
 							"fileName": "src/presets/classic/index.tsx",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/classic/index.tsx#L1"
+							"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/classic/index.tsx#L1"
 						}
 					]
 				},
@@ -200,9 +205,9 @@
 							"sources": [
 								{
 									"fileName": "src/presets/context-menu/index.tsx",
-									"line": 22,
+									"line": 21,
 									"character": 16,
-									"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/context-menu/index.tsx#L22"
+									"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/context-menu/index.tsx#L21"
 								}
 							],
 							"signatures": [
@@ -223,12 +228,12 @@
 									"sources": [
 										{
 											"fileName": "src/presets/context-menu/index.tsx",
-											"line": 22,
-											"character": 0,
-											"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/context-menu/index.tsx#L22"
+											"line": 21,
+											"character": 16,
+											"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/context-menu/index.tsx#L21"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 171,
 											"name": "Schemes",
@@ -282,7 +287,7 @@
 																			"fileName": "src/presets/context-menu/types.ts",
 																			"line": 11,
 																			"character": 34,
-																			"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/context-menu/types.ts#L11"
+																			"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/context-menu/types.ts#L11"
 																		}
 																	],
 																	"type": {
@@ -311,7 +316,7 @@
 																			"fileName": "src/presets/context-menu/types.ts",
 																			"line": 11,
 																			"character": 65,
-																			"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/context-menu/types.ts#L11"
+																			"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/context-menu/types.ts#L11"
 																		}
 																	],
 																	"type": {
@@ -330,7 +335,7 @@
 																			"fileName": "src/presets/context-menu/types.ts",
 																			"line": 11,
 																			"character": 49,
-																			"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/context-menu/types.ts#L11"
+																			"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/context-menu/types.ts#L11"
 																		}
 																	],
 																	"signatures": [
@@ -345,7 +350,7 @@
 																					"fileName": "src/presets/context-menu/types.ts",
 																					"line": 11,
 																					"character": 49,
-																					"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/context-menu/types.ts#L11"
+																					"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/context-menu/types.ts#L11"
 																				}
 																			],
 																			"type": {
@@ -376,7 +381,7 @@
 																	"fileName": "src/presets/context-menu/types.ts",
 																	"line": 11,
 																	"character": 32,
-																	"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/context-menu/types.ts#L11"
+																	"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/context-menu/types.ts#L11"
 																}
 															]
 														}
@@ -416,14 +421,16 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 171,
 												"name": "Schemes",
+												"package": "rete-react-plugin",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 172,
 												"name": "K",
+												"package": "rete-react-plugin",
 												"refersToTypeParameter": true
 											}
 										],
@@ -447,7 +454,7 @@
 							"fileName": "src/presets/context-menu/index.tsx",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/context-menu/index.tsx#L1"
+							"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/context-menu/index.tsx#L1"
 						}
 					]
 				},
@@ -467,9 +474,9 @@
 							"sources": [
 								{
 									"fileName": "src/presets/minimap/index.tsx",
-									"line": 12,
+									"line": 11,
 									"character": 16,
-									"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/minimap/index.tsx#L12"
+									"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/minimap/index.tsx#L11"
 								}
 							],
 							"signatures": [
@@ -490,12 +497,12 @@
 									"sources": [
 										{
 											"fileName": "src/presets/minimap/index.tsx",
-											"line": 12,
-											"character": 0,
-											"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/minimap/index.tsx#L12"
+											"line": 11,
+											"character": 16,
+											"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/minimap/index.tsx#L11"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 256,
 											"name": "Schemes",
@@ -549,7 +556,7 @@
 																			"fileName": "src/presets/minimap/types.ts",
 																			"line": 19,
 																			"character": 4,
-																			"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/minimap/types.ts#L19"
+																			"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/minimap/types.ts#L19"
 																		}
 																	],
 																	"type": {
@@ -576,7 +583,7 @@
 																			"fileName": "src/presets/minimap/types.ts",
 																			"line": 18,
 																			"character": 4,
-																			"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/minimap/types.ts#L18"
+																			"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/minimap/types.ts#L18"
 																		}
 																	],
 																	"type": {
@@ -595,7 +602,7 @@
 																			"fileName": "src/presets/minimap/types.ts",
 																			"line": 22,
 																			"character": 4,
-																			"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/minimap/types.ts#L22"
+																			"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/minimap/types.ts#L22"
 																		}
 																	],
 																	"type": {
@@ -619,7 +626,7 @@
 																			"fileName": "src/presets/minimap/types.ts",
 																			"line": 20,
 																			"character": 4,
-																			"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/minimap/types.ts#L20"
+																			"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/minimap/types.ts#L20"
 																		}
 																	],
 																	"type": {
@@ -643,7 +650,7 @@
 																			"fileName": "src/presets/minimap/types.ts",
 																			"line": 23,
 																			"character": 4,
-																			"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/minimap/types.ts#L23"
+																			"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/minimap/types.ts#L23"
 																		}
 																	],
 																	"signatures": [
@@ -658,7 +665,7 @@
 																					"fileName": "src/presets/minimap/types.ts",
 																					"line": 23,
 																					"character": 4,
-																					"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/minimap/types.ts#L23"
+																					"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/minimap/types.ts#L23"
 																				}
 																			],
 																			"parameters": [
@@ -703,7 +710,7 @@
 																			"fileName": "src/presets/minimap/types.ts",
 																			"line": 21,
 																			"character": 4,
-																			"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/minimap/types.ts#L21"
+																			"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/minimap/types.ts#L21"
 																		}
 																	],
 																	"signatures": [
@@ -718,7 +725,7 @@
 																					"fileName": "src/presets/minimap/types.ts",
 																					"line": 21,
 																					"character": 4,
-																					"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/minimap/types.ts#L21"
+																					"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/minimap/types.ts#L21"
 																				}
 																			],
 																			"type": {
@@ -757,7 +764,7 @@
 																	"fileName": "src/presets/minimap/types.ts",
 																	"line": 17,
 																	"character": 28,
-																	"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/minimap/types.ts#L17"
+																	"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/minimap/types.ts#L17"
 																}
 															]
 														}
@@ -797,9 +804,9 @@
 															"sources": [
 																{
 																	"fileName": "src/presets/minimap/index.tsx",
-																	"line": 12,
+																	"line": 11,
 																	"character": 86,
-																	"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/minimap/index.tsx#L12"
+																	"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/minimap/index.tsx#L11"
 																}
 															],
 															"type": {
@@ -819,9 +826,9 @@
 													"sources": [
 														{
 															"fileName": "src/presets/minimap/index.tsx",
-															"line": 12,
+															"line": 11,
 															"character": 84,
-															"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/minimap/index.tsx#L12"
+															"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/minimap/index.tsx#L11"
 														}
 													]
 												}
@@ -837,14 +844,16 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 256,
 												"name": "Schemes",
+												"package": "rete-react-plugin",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 257,
 												"name": "K",
+												"package": "rete-react-plugin",
 												"refersToTypeParameter": true
 											}
 										],
@@ -868,7 +877,7 @@
 							"fileName": "src/presets/minimap/index.tsx",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/minimap/index.tsx#L1"
+							"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/minimap/index.tsx#L1"
 						}
 					]
 				},
@@ -890,7 +899,7 @@
 									"fileName": "src/presets/reroute-pins/index.tsx",
 									"line": 20,
 									"character": 16,
-									"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/reroute-pins/index.tsx#L20"
+									"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/reroute-pins/index.tsx#L20"
 								}
 							],
 							"signatures": [
@@ -912,11 +921,11 @@
 										{
 											"fileName": "src/presets/reroute-pins/index.tsx",
 											"line": 20,
-											"character": 0,
-											"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/reroute-pins/index.tsx#L20"
+											"character": 16,
+											"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/reroute-pins/index.tsx#L20"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 275,
 											"name": "Schemes",
@@ -970,7 +979,7 @@
 																			"fileName": "src/presets/reroute-pins/types.ts",
 																			"line": 16,
 																			"character": 35,
-																			"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/reroute-pins/types.ts#L16"
+																			"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/reroute-pins/types.ts#L16"
 																		}
 																	],
 																	"type": {
@@ -997,7 +1006,7 @@
 																	"fileName": "src/presets/reroute-pins/types.ts",
 																	"line": 16,
 																	"character": 33,
-																	"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/reroute-pins/types.ts#L16"
+																	"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/reroute-pins/types.ts#L16"
 																}
 															]
 														}
@@ -1037,14 +1046,16 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 275,
 												"name": "Schemes",
+												"package": "rete-react-plugin",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 276,
 												"name": "K",
+												"package": "rete-react-plugin",
 												"refersToTypeParameter": true
 											}
 										],
@@ -1068,7 +1079,7 @@
 							"fileName": "src/presets/reroute-pins/index.tsx",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/reroute-pins/index.tsx#L1"
+							"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/reroute-pins/index.tsx#L1"
 						}
 					]
 				}
@@ -1089,7 +1100,7 @@
 					"fileName": "src/presets/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/presets/index.ts#L1"
+					"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/presets/index.ts#L1"
 				}
 			]
 		},
@@ -1159,7 +1170,7 @@
 							"fileName": "src/index.tsx",
 							"line": 109,
 							"character": 9,
-							"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/index.tsx#L109"
+							"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/index.tsx#L109"
 						}
 					],
 					"signatures": [
@@ -1181,11 +1192,11 @@
 								{
 									"fileName": "src/index.tsx",
 									"line": 109,
-									"character": 2,
-									"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/index.tsx#L109"
+									"character": 9,
+									"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/index.tsx#L109"
 								}
 							],
-							"typeParameter": [
+							"typeParameters": [
 								{
 									"id": 36,
 									"name": "K",
@@ -1218,8 +1229,10 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 38,
 												"name": "Schemes",
+												"package": "rete-react-plugin",
+												"qualifiedName": "ReactPlugin.Schemes",
 												"refersToTypeParameter": true
 											},
 											{
@@ -1233,8 +1246,10 @@
 													"typeArguments": [
 														{
 															"type": "reference",
-															"target": -1,
+															"target": 39,
 															"name": "T",
+															"package": "rete-react-plugin",
+															"qualifiedName": "ReactPlugin.T",
 															"refersToTypeParameter": true
 														},
 														{
@@ -1246,8 +1261,9 @@
 															"typeArguments": [
 																{
 																	"type": "reference",
-																	"target": -1,
+																	"target": 36,
 																	"name": "K",
+																	"package": "rete-react-plugin",
 																	"refersToTypeParameter": true
 																}
 															],
@@ -1264,8 +1280,9 @@
 												},
 												"trueType": {
 													"type": "reference",
-													"target": -1,
+													"target": 36,
 													"name": "K",
+													"package": "rete-react-plugin",
 													"refersToTypeParameter": true
 												},
 												"falseType": {
@@ -1300,7 +1317,7 @@
 					"fileName": "src/index.tsx",
 					"line": 43,
 					"character": 13,
-					"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/index.tsx#L43"
+					"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/index.tsx#L43"
 				}
 			],
 			"typeParameters": [
@@ -1335,8 +1352,10 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"target": -1,
+								"target": 38,
 								"name": "Schemes",
+								"package": "rete-react-plugin",
+								"qualifiedName": "ReactPlugin.Schemes",
 								"refersToTypeParameter": true
 							}
 						],
@@ -1359,8 +1378,10 @@
 							"typeArguments": [
 								{
 									"type": "reference",
-									"target": -1,
+									"target": 38,
 									"name": "Schemes",
+									"package": "rete-react-plugin",
+									"qualifiedName": "ReactPlugin.Schemes",
 									"refersToTypeParameter": true
 								}
 							],
@@ -1382,8 +1403,10 @@
 											"typeArguments": [
 												{
 													"type": "reference",
-													"target": -1,
+													"target": 38,
 													"name": "Schemes",
+													"package": "rete-react-plugin",
+													"qualifiedName": "ReactPlugin.Schemes",
 													"refersToTypeParameter": true
 												}
 											],
@@ -1392,8 +1415,10 @@
 										},
 										{
 											"type": "reference",
-											"target": -1,
+											"target": 39,
 											"name": "T",
+											"package": "rete-react-plugin",
+											"qualifiedName": "ReactPlugin.T",
 											"refersToTypeParameter": true
 										}
 									]
@@ -1410,7 +1435,7 @@
 			"id": 1,
 			"name": "Produces",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -1436,7 +1461,7 @@
 					"fileName": "src/index.tsx",
 					"line": 20,
 					"character": 12,
-					"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/index.tsx#L20"
+					"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/index.tsx#L20"
 				}
 			],
 			"typeParameters": [
@@ -1480,7 +1505,7 @@
 											"fileName": "src/index.tsx",
 											"line": 21,
 											"character": 30,
-											"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/index.tsx#L21"
+											"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/index.tsx#L21"
 										}
 									],
 									"type": {
@@ -1505,7 +1530,7 @@
 															"fileName": "src/index.tsx",
 															"line": 21,
 															"character": 70,
-															"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/index.tsx#L21"
+															"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/index.tsx#L21"
 														}
 													],
 													"type": {
@@ -1524,7 +1549,7 @@
 															"fileName": "src/index.tsx",
 															"line": 21,
 															"character": 38,
-															"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/index.tsx#L21"
+															"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/index.tsx#L21"
 														}
 													],
 													"type": {
@@ -1535,8 +1560,9 @@
 														},
 														"objectType": {
 															"type": "reference",
-															"target": -1,
+															"target": 9,
 															"name": "Schemes",
+															"package": "rete-react-plugin",
 															"refersToTypeParameter": true
 														}
 													}
@@ -1552,7 +1578,7 @@
 															"fileName": "src/index.tsx",
 															"line": 21,
 															"character": 85,
-															"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/index.tsx#L21"
+															"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/index.tsx#L21"
 														}
 													],
 													"type": {
@@ -1584,7 +1610,7 @@
 													"fileName": "src/index.tsx",
 													"line": 21,
 													"character": 36,
-													"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/index.tsx#L21"
+													"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/index.tsx#L21"
 												}
 											]
 										}
@@ -1601,7 +1627,7 @@
 											"fileName": "src/index.tsx",
 											"line": 21,
 											"character": 6,
-											"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/index.tsx#L21"
+											"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/index.tsx#L21"
 										}
 									],
 									"type": {
@@ -1624,7 +1650,7 @@
 									"fileName": "src/index.tsx",
 									"line": 21,
 									"character": 4,
-									"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/index.tsx#L21"
+									"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/index.tsx#L21"
 								}
 							]
 						}
@@ -1636,7 +1662,7 @@
 			"id": 10,
 			"name": "Props",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -1651,7 +1677,7 @@
 					"fileName": "src/index.tsx",
 					"line": 31,
 					"character": 12,
-					"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/index.tsx#L31"
+					"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/index.tsx#L31"
 				}
 			],
 			"type": {
@@ -1671,12 +1697,20 @@
 							"flags": {
 								"isOptional": true
 							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "root factory for React.js 18+"
+									}
+								]
+							},
 							"sources": [
 								{
 									"fileName": "src/index.tsx",
 									"line": 33,
 									"character": 2,
-									"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/index.tsx#L33"
+									"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/index.tsx#L33"
 								}
 							],
 							"type": {
@@ -1692,7 +1726,7 @@
 											"fileName": "src/index.tsx",
 											"line": 33,
 											"character": 15,
-											"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/index.tsx#L33"
+											"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/index.tsx#L33"
 										}
 									],
 									"signatures": [
@@ -1702,14 +1736,6 @@
 											"variant": "signature",
 											"kind": 4096,
 											"flags": {},
-											"comment": {
-												"summary": [
-													{
-														"kind": "text",
-														"text": "root factory for React.js 18+"
-													}
-												]
-											},
 											"parameters": [
 												{
 													"id": 15,
@@ -1765,7 +1791,7 @@
 							"fileName": "src/index.tsx",
 							"line": 31,
 							"character": 20,
-							"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/index.tsx#L31"
+							"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/index.tsx#L31"
 						}
 					]
 				}
@@ -1782,7 +1808,7 @@
 					"fileName": "src/ref-component.tsx",
 					"line": 9,
 					"character": 16,
-					"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/ref-component.tsx#L9"
+					"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/ref-component.tsx#L9"
 				}
 			],
 			"signatures": [
@@ -1804,11 +1830,11 @@
 						{
 							"fileName": "src/ref-component.tsx",
 							"line": 9,
-							"character": 0,
-							"url": "https://github.com/retejs/react-plugin/blob/7ac40f0/src/ref-component.tsx#L9"
+							"character": 16,
+							"url": "https://github.com/retejs/react-plugin/blob/1ee52bf295a9f12a29bc071774c5540d98573bde/src/ref-component.tsx#L9"
 						}
 					],
-					"typeParameter": [
+					"typeParameters": [
 						{
 							"id": 285,
 							"name": "Props",
@@ -1835,8 +1861,9 @@
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"target": -1,
+								"target": 285,
 								"name": "Props",
+								"package": "rete-react-plugin",
 								"refersToTypeParameter": true
 							}
 						}
@@ -1844,7 +1871,7 @@
 					"type": {
 						"type": "reference",
 						"target": {
-							"sourceFileName": "node_modules/@types/react/ts5.0/index.d.ts",
+							"sourceFileName": "node_modules/@types/react/index.d.ts",
 							"qualifiedName": "React.JSX.Element"
 						},
 						"name": "Element",
@@ -2201,6 +2228,26 @@
 		"286": {
 			"sourceFileName": "src/ref-component.tsx",
 			"qualifiedName": "__0"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/index.tsx",
+			"2": "src/presets/index.ts",
+			"3": "src/presets/classic/index.tsx",
+			"4": "src/presets/classic/vars.ts",
+			"5": "src/presets/context-menu/index.tsx",
+			"6": "src/presets/minimap/index.tsx",
+			"7": "src/presets/reroute-pins/index.tsx",
+			"8": "src/shared/drag.tsx"
+		},
+		"reflections": {
+			"1": 0,
+			"2": 40,
+			"3": 41,
+			"5": 168,
+			"6": 253,
+			"7": 272
 		}
 	}
 }
