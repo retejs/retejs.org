@@ -36,9 +36,9 @@
 							"sources": [
 								{
 									"fileName": "presets/classic/index.tsx",
-									"line": 41,
+									"line": 48,
 									"character": 16,
-									"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/classic/index.tsx#L41"
+									"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/classic/index.tsx#L48"
 								}
 							],
 							"signatures": [
@@ -59,12 +59,12 @@
 									"sources": [
 										{
 											"fileName": "presets/classic/index.tsx",
-											"line": 41,
-											"character": 0,
-											"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/classic/index.tsx#L41"
+											"line": 48,
+											"character": 16,
+											"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/classic/index.tsx#L48"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 53,
 											"name": "Schemes",
@@ -96,8 +96,9 @@
 												"typeArguments": [
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 53,
 														"name": "Schemes",
+														"package": "@retejs/lit-plugin",
 														"refersToTypeParameter": true
 													}
 												],
@@ -124,14 +125,16 @@
 												"typeArguments": [
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 53,
 														"name": "Schemes",
+														"package": "@retejs/lit-plugin",
 														"refersToTypeParameter": true
 													},
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 54,
 														"name": "K",
+														"package": "@retejs/lit-plugin",
 														"refersToTypeParameter": true
 													}
 												],
@@ -149,14 +152,16 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 53,
 												"name": "Schemes",
+												"package": "@retejs/lit-plugin",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 54,
 												"name": "K",
+												"package": "@retejs/lit-plugin",
 												"refersToTypeParameter": true
 											}
 										],
@@ -180,7 +185,7 @@
 							"fileName": "presets/classic/index.tsx",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/classic/index.tsx#L1"
+							"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/classic/index.tsx#L1"
 						}
 					]
 				},
@@ -200,9 +205,9 @@
 							"sources": [
 								{
 									"fileName": "presets/context-menu/index.ts",
-									"line": 14,
+									"line": 19,
 									"character": 16,
-									"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/index.ts#L14"
+									"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/context-menu/index.ts#L19"
 								}
 							],
 							"signatures": [
@@ -223,12 +228,12 @@
 									"sources": [
 										{
 											"fileName": "presets/context-menu/index.ts",
-											"line": 14,
-											"character": 0,
-											"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/index.ts#L14"
+											"line": 19,
+											"character": 16,
+											"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/context-menu/index.ts#L19"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 87,
 											"name": "Schemes",
@@ -282,7 +287,7 @@
 																			"fileName": "presets/context-menu/types.ts",
 																			"line": 11,
 																			"character": 34,
-																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/types.ts#L11"
+																			"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/context-menu/types.ts#L11"
 																		}
 																	],
 																	"type": {
@@ -311,7 +316,7 @@
 																			"fileName": "presets/context-menu/types.ts",
 																			"line": 11,
 																			"character": 65,
-																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/types.ts#L11"
+																			"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/context-menu/types.ts#L11"
 																		}
 																	],
 																	"type": {
@@ -330,7 +335,7 @@
 																			"fileName": "presets/context-menu/types.ts",
 																			"line": 11,
 																			"character": 49,
-																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/types.ts#L11"
+																			"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/context-menu/types.ts#L11"
 																		}
 																	],
 																	"signatures": [
@@ -345,7 +350,7 @@
 																					"fileName": "presets/context-menu/types.ts",
 																					"line": 11,
 																					"character": 49,
-																					"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/types.ts#L11"
+																					"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/context-menu/types.ts#L11"
 																				}
 																			],
 																			"type": {
@@ -376,7 +381,7 @@
 																	"fileName": "presets/context-menu/types.ts",
 																	"line": 11,
 																	"character": 32,
-																	"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/types.ts#L11"
+																	"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/context-menu/types.ts#L11"
 																}
 															]
 														}
@@ -416,9 +421,9 @@
 															"sources": [
 																{
 																	"fileName": "presets/context-menu/index.ts",
-																	"line": 14,
+																	"line": 19,
 																	"character": 90,
-																	"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/index.ts#L14"
+																	"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/context-menu/index.ts#L19"
 																}
 															],
 															"type": {
@@ -438,9 +443,9 @@
 													"sources": [
 														{
 															"fileName": "presets/context-menu/index.ts",
-															"line": 14,
+															"line": 19,
 															"character": 88,
-															"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/index.ts#L14"
+															"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/context-menu/index.ts#L19"
 														}
 													]
 												}
@@ -456,14 +461,16 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 87,
 												"name": "Schemes",
+												"package": "@retejs/lit-plugin",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 88,
 												"name": "K",
+												"package": "@retejs/lit-plugin",
 												"refersToTypeParameter": true
 											}
 										],
@@ -487,7 +494,7 @@
 							"fileName": "presets/context-menu/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/context-menu/index.ts#L1"
+							"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/context-menu/index.ts#L1"
 						}
 					]
 				},
@@ -507,9 +514,9 @@
 							"sources": [
 								{
 									"fileName": "presets/minimap/index.ts",
-									"line": 13,
+									"line": 17,
 									"character": 16,
-									"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/index.ts#L13"
+									"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/minimap/index.ts#L17"
 								}
 							],
 							"signatures": [
@@ -530,12 +537,12 @@
 									"sources": [
 										{
 											"fileName": "presets/minimap/index.ts",
-											"line": 13,
-											"character": 0,
-											"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/index.ts#L13"
+											"line": 17,
+											"character": 16,
+											"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/minimap/index.ts#L17"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 100,
 											"name": "Schemes",
@@ -589,7 +596,7 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 19,
 																			"character": 4,
-																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L19"
+																			"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/minimap/types.ts#L19"
 																		}
 																	],
 																	"type": {
@@ -616,7 +623,7 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 18,
 																			"character": 4,
-																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L18"
+																			"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/minimap/types.ts#L18"
 																		}
 																	],
 																	"type": {
@@ -635,7 +642,7 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 22,
 																			"character": 4,
-																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L22"
+																			"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/minimap/types.ts#L22"
 																		}
 																	],
 																	"type": {
@@ -659,7 +666,7 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 20,
 																			"character": 4,
-																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L20"
+																			"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/minimap/types.ts#L20"
 																		}
 																	],
 																	"type": {
@@ -683,7 +690,7 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 23,
 																			"character": 4,
-																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L23"
+																			"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/minimap/types.ts#L23"
 																		}
 																	],
 																	"signatures": [
@@ -698,7 +705,7 @@
 																					"fileName": "presets/minimap/types.ts",
 																					"line": 23,
 																					"character": 4,
-																					"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L23"
+																					"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/minimap/types.ts#L23"
 																				}
 																			],
 																			"parameters": [
@@ -743,7 +750,7 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 21,
 																			"character": 4,
-																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L21"
+																			"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/minimap/types.ts#L21"
 																		}
 																	],
 																	"signatures": [
@@ -758,7 +765,7 @@
 																					"fileName": "presets/minimap/types.ts",
 																					"line": 21,
 																					"character": 4,
-																					"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L21"
+																					"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/minimap/types.ts#L21"
 																				}
 																			],
 																			"type": {
@@ -797,7 +804,7 @@
 																	"fileName": "presets/minimap/types.ts",
 																	"line": 17,
 																	"character": 28,
-																	"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/types.ts#L17"
+																	"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/minimap/types.ts#L17"
 																}
 															]
 														}
@@ -837,9 +844,9 @@
 															"sources": [
 																{
 																	"fileName": "presets/minimap/index.ts",
-																	"line": 13,
+																	"line": 17,
 																	"character": 86,
-																	"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/index.ts#L13"
+																	"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/minimap/index.ts#L17"
 																}
 															],
 															"type": {
@@ -859,9 +866,9 @@
 													"sources": [
 														{
 															"fileName": "presets/minimap/index.ts",
-															"line": 13,
+															"line": 17,
 															"character": 84,
-															"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/index.ts#L13"
+															"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/minimap/index.ts#L17"
 														}
 													]
 												}
@@ -877,14 +884,16 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 100,
 												"name": "Schemes",
+												"package": "@retejs/lit-plugin",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 101,
 												"name": "K",
+												"package": "@retejs/lit-plugin",
 												"refersToTypeParameter": true
 											}
 										],
@@ -908,7 +917,7 @@
 							"fileName": "presets/minimap/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/minimap/index.ts#L1"
+							"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/minimap/index.ts#L1"
 						}
 					]
 				},
@@ -928,9 +937,9 @@
 							"sources": [
 								{
 									"fileName": "presets/reroute/index.ts",
-									"line": 19,
+									"line": 22,
 									"character": 16,
-									"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/reroute/index.ts#L19"
+									"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/reroute/index.ts#L22"
 								}
 							],
 							"signatures": [
@@ -951,12 +960,12 @@
 									"sources": [
 										{
 											"fileName": "presets/reroute/index.ts",
-											"line": 19,
-											"character": 0,
-											"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/reroute/index.ts#L19"
+											"line": 22,
+											"character": 16,
+											"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/reroute/index.ts#L22"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 119,
 											"name": "Schemes",
@@ -1010,7 +1019,7 @@
 																			"fileName": "presets/reroute/types.ts",
 																			"line": 23,
 																			"character": 35,
-																			"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/reroute/types.ts#L23"
+																			"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/reroute/types.ts#L23"
 																		}
 																	],
 																	"type": {
@@ -1037,7 +1046,7 @@
 																	"fileName": "presets/reroute/types.ts",
 																	"line": 23,
 																	"character": 33,
-																	"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/reroute/types.ts#L23"
+																	"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/reroute/types.ts#L23"
 																}
 															]
 														}
@@ -1077,14 +1086,16 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 119,
 												"name": "Schemes",
+												"package": "@retejs/lit-plugin",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 120,
 												"name": "K",
+												"package": "@retejs/lit-plugin",
 												"refersToTypeParameter": true
 											}
 										],
@@ -1108,7 +1119,7 @@
 							"fileName": "presets/reroute/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/reroute/index.ts#L1"
+							"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/reroute/index.ts#L1"
 						}
 					]
 				}
@@ -1129,7 +1140,7 @@
 					"fileName": "presets/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/presets/index.ts#L1"
+					"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/presets/index.ts#L1"
 				}
 			]
 		},
@@ -1199,7 +1210,7 @@
 							"fileName": "index.tsx",
 							"line": 117,
 							"character": 9,
-							"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L117"
+							"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/index.tsx#L117"
 						}
 					],
 					"signatures": [
@@ -1221,11 +1232,11 @@
 								{
 									"fileName": "index.tsx",
 									"line": 117,
-									"character": 2,
-									"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L117"
+									"character": 9,
+									"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/index.tsx#L117"
 								}
 							],
-							"typeParameter": [
+							"typeParameters": [
 								{
 									"id": 45,
 									"name": "K",
@@ -1258,8 +1269,10 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 47,
 												"name": "Schemes",
+												"package": "@retejs/lit-plugin",
+												"qualifiedName": "LitPlugin.Schemes",
 												"refersToTypeParameter": true
 											},
 											{
@@ -1273,8 +1286,10 @@
 													"typeArguments": [
 														{
 															"type": "reference",
-															"target": -1,
+															"target": 48,
 															"name": "T",
+															"package": "@retejs/lit-plugin",
+															"qualifiedName": "LitPlugin.T",
 															"refersToTypeParameter": true
 														},
 														{
@@ -1286,8 +1301,9 @@
 															"typeArguments": [
 																{
 																	"type": "reference",
-																	"target": -1,
+																	"target": 45,
 																	"name": "K",
+																	"package": "@retejs/lit-plugin",
 																	"refersToTypeParameter": true
 																}
 															],
@@ -1304,8 +1320,9 @@
 												},
 												"trueType": {
 													"type": "reference",
-													"target": -1,
+													"target": 45,
 													"name": "K",
+													"package": "@retejs/lit-plugin",
 													"refersToTypeParameter": true
 												},
 												"falseType": {
@@ -1338,9 +1355,9 @@
 			"sources": [
 				{
 					"fileName": "index.tsx",
-					"line": 31,
+					"line": 33,
 					"character": 13,
-					"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L31"
+					"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/index.tsx#L33"
 				}
 			],
 			"typeParameters": [
@@ -1375,8 +1392,10 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"target": -1,
+								"target": 47,
 								"name": "Schemes",
+								"package": "@retejs/lit-plugin",
+								"qualifiedName": "LitPlugin.Schemes",
 								"refersToTypeParameter": true
 							}
 						],
@@ -1399,8 +1418,10 @@
 							"typeArguments": [
 								{
 									"type": "reference",
-									"target": -1,
+									"target": 47,
 									"name": "Schemes",
+									"package": "@retejs/lit-plugin",
+									"qualifiedName": "LitPlugin.Schemes",
 									"refersToTypeParameter": true
 								}
 							],
@@ -1422,8 +1443,10 @@
 											"typeArguments": [
 												{
 													"type": "reference",
-													"target": -1,
+													"target": 47,
 													"name": "Schemes",
+													"package": "@retejs/lit-plugin",
+													"qualifiedName": "LitPlugin.Schemes",
 													"refersToTypeParameter": true
 												}
 											],
@@ -1432,8 +1455,10 @@
 										},
 										{
 											"type": "reference",
-											"target": -1,
+											"target": 48,
 											"name": "T",
+											"package": "@retejs/lit-plugin",
+											"qualifiedName": "LitPlugin.T",
 											"refersToTypeParameter": true
 										}
 									]
@@ -1450,7 +1475,7 @@
 			"id": 1,
 			"name": "Produces",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -1474,9 +1499,9 @@
 			"sources": [
 				{
 					"fileName": "index.tsx",
-					"line": 16,
+					"line": 18,
 					"character": 12,
-					"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L16"
+					"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/index.tsx#L18"
 				}
 			],
 			"typeParameters": [
@@ -1518,9 +1543,9 @@
 									"sources": [
 										{
 											"fileName": "index.tsx",
-											"line": 17,
+											"line": 19,
 											"character": 30,
-											"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L17"
+											"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/index.tsx#L19"
 										}
 									],
 									"type": {
@@ -1543,9 +1568,9 @@
 													"sources": [
 														{
 															"fileName": "index.tsx",
-															"line": 17,
+															"line": 19,
 															"character": 70,
-															"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L17"
+															"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/index.tsx#L19"
 														}
 													],
 													"type": {
@@ -1562,9 +1587,9 @@
 													"sources": [
 														{
 															"fileName": "index.tsx",
-															"line": 17,
+															"line": 19,
 															"character": 38,
-															"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L17"
+															"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/index.tsx#L19"
 														}
 													],
 													"type": {
@@ -1575,8 +1600,9 @@
 														},
 														"objectType": {
 															"type": "reference",
-															"target": -1,
+															"target": 9,
 															"name": "Schemes",
+															"package": "@retejs/lit-plugin",
 															"refersToTypeParameter": true
 														}
 													}
@@ -1590,9 +1616,9 @@
 													"sources": [
 														{
 															"fileName": "index.tsx",
-															"line": 17,
+															"line": 19,
 															"character": 85,
-															"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L17"
+															"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/index.tsx#L19"
 														}
 													],
 													"type": {
@@ -1622,9 +1648,9 @@
 											"sources": [
 												{
 													"fileName": "index.tsx",
-													"line": 17,
+													"line": 19,
 													"character": 36,
-													"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L17"
+													"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/index.tsx#L19"
 												}
 											]
 										}
@@ -1639,9 +1665,9 @@
 									"sources": [
 										{
 											"fileName": "index.tsx",
-											"line": 17,
+											"line": 19,
 											"character": 6,
-											"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L17"
+											"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/index.tsx#L19"
 										}
 									],
 									"type": {
@@ -1662,9 +1688,9 @@
 							"sources": [
 								{
 									"fileName": "index.tsx",
-									"line": 17,
+									"line": 19,
 									"character": 4,
-									"url": "https://github.com/retejs/lit-plugin/blob/469c798/src/index.tsx#L17"
+									"url": "https://github.com/retejs/lit-plugin/blob/ddeceb10255e98970504ff301033dc91b4e5fab6/src/index.tsx#L19"
 								}
 							]
 						}
@@ -1980,6 +2006,24 @@
 		"123": {
 			"sourceFileName": "src/presets/reroute/index.ts",
 			"qualifiedName": "props"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/index.tsx",
+			"2": "src/presets/index.ts",
+			"3": "src/presets/classic/index.tsx",
+			"4": "src/presets/context-menu/index.ts",
+			"5": "src/presets/minimap/index.ts",
+			"6": "src/presets/reroute/index.ts"
+		},
+		"reflections": {
+			"1": 0,
+			"2": 49,
+			"3": 50,
+			"4": 84,
+			"5": 97,
+			"6": 116
 		}
 	}
 }
