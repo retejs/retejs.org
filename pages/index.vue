@@ -87,7 +87,7 @@ export default {
     .origin img
       height: 26px
     .star iframe
-      width: 150px
+      width: 155px
       height: 30px
   .logo
     display: inline-block
