@@ -1,40 +1,30 @@
 import tseslint from 'typescript-eslint';
 import configs from 'rete-cli/configs/eslint.mjs';
-import eslintPluginVue from 'eslint-plugin-vue';
-import eslintPluginTypescript from '@typescript-eslint/eslint-plugin';
+import pluginVue from "eslint-plugin-vue";
+import vueTsEslintConfig from "@vue/eslint-config-typescript";
+import tsParser from '@typescript-eslint/parser';
 
 export default tseslint.config(
   ...configs,
+  ...pluginVue.configs["flat/essential"],
+  ...vueTsEslintConfig(),
   {
-    files: ['**/*.js', '**/*.ts', '**/*.vue'],
-    languageOptions: {
-      ecmaVersion: 2022,
-      sourceType: 'module',
-    },
-    plugins: {
-      vue: eslintPluginVue,
-      '@typescript-eslint': eslintPluginTypescript,
-    },
-    rules: {
-      'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-      'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-      'import/prefer-default-export': 'off',
-      '@typescript-eslint/no-empty-function': 'off',
-      'class-methods-use-this': 'off',
-      'no-mixed-operators': 'off',
-      'no-plusplus': 'off',
-      'no-param-reassign': 'off',
-      'import/no-unresolved': 'off',
-      'max-len': 'off',
-      'vue/multi-word-component-names': 'off',
-      'import/no-webpack-loader-syntax': 'off',
-      'import/no-named-as-default': 'off',
-      'max-classes-per-file': 'off',
-      'import/no-extraneous-dependencies': 'off',
-      'import/no-cycle': 'off',
-      'import/extensions': 'off',
-      'vue/no-reserved-component-names': 'warn',
-      'vue/require-default-prop': 'warn',
-    },
+    files: [ 'src/**/*.{ts,tsx,vue}', 'test/**/*.{ts,tsx}' ],
+    ...configs[configs.length - 2],
   },
-);
+  {
+    rules: {
+    '@stylistic/indent': [ 'error', 2 ],
+    }
+  },
+  {
+    files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.vue'],
+    languageOptions: {
+      parserOptions: {
+        parser: tsParser,
+        project: 'tsconfig.json',
+        extraFileExtensions: ['.vue']
+      },
+    }
+  }
+)
