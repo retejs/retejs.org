@@ -27,27 +27,27 @@
 </template>
 
 <script lang="ts">
-import { flat } from '../shared/navigation';
-import { getPreview } from '../shared/assets';
-import { usePathSanitizer } from '../shared/route';
+import { getPreview } from '../shared/assets'
+import { flat } from '../shared/navigation'
+import { usePathSanitizer } from '../shared/route'
 
 export default {
   setup() {
     return {
-      pathSanitizer: usePathSanitizer(),
-    };
+      pathSanitizer: usePathSanitizer()
+    }
   },
   methods: {
     getPreview,
     getList(navigation) {
-      const examples = flat(navigation.children);
+      const examples = flat(navigation.children)
 
       return examples
-        .filter((item) => item.showcase)
-        .sort((a, b) => a.showcase.order - b.showcase.order);
-    },
-  },
-};
+        .filter(item => item.showcase)
+        .sort((a, b) => a.showcase.order - b.showcase.order)
+    }
+  }
+}
 </script>
 
 <style lang="sass" scoped>

@@ -8,11 +8,11 @@ Button(
   | {{title}}
 </template>
 
-<script>
+<script lang="ts">
 
 export default {
-  props: ['title', 'link', 'icon'],
-};
+  props: ['title', 'link', 'icon']
+}
 </script>
 
 <style lang="sass" scoped>

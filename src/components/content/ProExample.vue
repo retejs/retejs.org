@@ -17,23 +17,23 @@ BaseExample
   )
 </template>
 
-<script>
-import sponsor from '../../consts/sponsor.json';
-import BaseExample from '../shared/BaseExample.vue';
+<script lang="ts">
+import sponsor from '../../consts/sponsor.json'
+import BaseExample from '../shared/BaseExample.vue'
 
 export default {
   props: {
-    src: String,
+    src: String
   },
   data() {
     return {
-      ...sponsor,
-    };
+      ...sponsor
+    }
   },
   components: {
-    BaseExample,
-  },
-};
+    BaseExample
+  }
+}
 </script>
 
 <style lang="sass" scoped>

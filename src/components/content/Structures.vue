@@ -7,52 +7,52 @@
   .container.structures-editor(ref="container")
 </template>
 
-<script>
+<script lang="ts">
 import {
-  defineComponent, onMounted, onUnmounted, ref,
-} from 'vue';
-import {
-  createEditor, structuresGraph, structuresSubGraph, methodApplicant,
-} from '../../shared/editor';
+  defineComponent, onMounted, onUnmounted, ref
+} from 'vue'
+
+import { createEditor, methodApplicant,
+  structuresGraph, structuresSubGraph } from '../../shared/editor'
 
 export default defineComponent({
   props: {
     id: {
       type: String,
-      required: true,
+      required: true
     },
     pick: {
-      type: String,
-    },
+      type: String
+    }
   },
   setup(props) {
-    const canva = ref(null);
-    const container = ref(null);
-    let resizeHandler = null;
-    let instance = null;
+    const canva = ref(null)
+    const container = ref(null)
+    let resizeHandler = null
+    let instance = null
 
     function concealNodes(editor, area, data) {
-      const nodes = data.nodes().map((n) => n.id);
-      const conns = data.connections().map((c) => c.id);
+      const nodes = data.nodes().map(n => n.id)
+      const conns = data.connections().map(c => c.id)
 
-      editor.getNodes().forEach((n) => {
-        const { classList: nodeClassList } = area.nodeViews.get(n.id).element;
+      editor.getNodes().forEach(n => {
+        const { classList: nodeClassList } = area.nodeViews.get(n.id).element
 
         if (nodes.includes(n.id)) {
-          nodeClassList.remove('conceal');
+          nodeClassList.remove('conceal')
         } else {
-          nodeClassList.add('conceal');
+          nodeClassList.add('conceal')
         }
-      });
-      editor.getConnections().forEach((c) => {
-        const { classList: connectionClassList } = area.connectionViews.get(c.id).element;
+      })
+      editor.getConnections().forEach(c => {
+        const { classList: connectionClassList } = area.connectionViews.get(c.id).element
 
         if (conns.includes(c.id)) {
-          connectionClassList.remove('conceal');
+          connectionClassList.remove('conceal')
         } else {
-          connectionClassList.add('conceal');
+          connectionClassList.add('conceal')
         }
-      });
+      })
     }
 
     onMounted(async () => {
@@ -60,42 +60,44 @@ export default defineComponent({
         multiselect: false,
         order: false,
         onSelect(label, id) {
-          // eslint-disable-next-line no-use-before-define
-          concealNodes(editor, area, method.execute(id));
-        },
-      });
+          concealNodes(editor, area, method.execute(id))
+        }
+      })
       const {
-        area, editor, resize, nodeSelector,
-      } = instance;
-      const method = methodApplicant(editor, props.id);
+        area, editor, resize, nodeSelector
+      } = instance
+      const method = methodApplicant(editor, props.id)
 
       const { nodes } = method.graphType === 'default'
         ? await structuresGraph(instance)
-        : await structuresSubGraph(instance);
-      resizeHandler = () => resize(canva.value.clientWidth, 900);
+        : await structuresSubGraph(instance)
 
-      area.area.setDragHandler(null);
-      resizeHandler();
+      resizeHandler = () => {
+        resize(canva.value.clientWidth, 900)
+      }
+
+      area.area.setDragHandler(null)
+      resizeHandler()
 
       if (props.pick) {
-        nodeSelector.select(nodes[props.pick].id);
+        nodeSelector.select(nodes[props.pick].id)
       } else {
-        concealNodes(editor, area, method.execute());
+        concealNodes(editor, area, method.execute())
       }
-      window.addEventListener('resize', resizeHandler);
-    });
+      window.addEventListener('resize', resizeHandler)
+    })
 
     onUnmounted(() => {
-      if (instance) instance.area.destroy();
-      if (resizeHandler) window.removeEventListener('resize', resizeHandler);
-    });
+      if (instance) instance.area.destroy()
+      if (resizeHandler) window.removeEventListener('resize', resizeHandler)
+    })
 
     return {
       canva,
-      container,
-    };
-  },
-});
+      container
+    }
+  }
+})
 </script>
 
 <style lang="sass" scoped>

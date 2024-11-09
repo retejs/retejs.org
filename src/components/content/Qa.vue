@@ -13,15 +13,15 @@ client-only
         slot
 </template>
 
-<script>
-import SsrPanel from '../ssr/SsrPanel.vue';
+<script lang="ts">
+import SsrPanel from '../ssr/SsrPanel.vue'
 
 export default {
   props: ['question', 'id'],
   components: {
-    SsrPanel,
-  },
-};
+    SsrPanel
+  }
+}
 </script>
 
 <style lang="sass" scoped>

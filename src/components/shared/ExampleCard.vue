@@ -12,21 +12,21 @@
   Card.stack.second(v-if="stack" :padding="0")
 </template>
 
-<script>
-import ProTag from './ProTag.vue';
-import Loading from './Loading.vue';
-import { getPreview } from '../../shared/assets';
+<script lang="ts">
+import { getPreview } from '../../shared/assets'
+import Loading from './Loading.vue'
+import ProTag from './ProTag.vue'
 
 export default {
   props: ['title', 'preview', 'pro', 'stack'],
   methods: {
-    getPreview,
+    getPreview
   },
   components: {
     ProTag,
-    Loading,
-  },
-};
+    Loading
+  }
+}
 </script>
 
 <style lang="sass">

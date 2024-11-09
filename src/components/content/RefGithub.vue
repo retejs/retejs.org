@@ -6,13 +6,13 @@ RefButton(
 )
 </template>
 
-<script>
-import RefButton from '../shared/RefButton.vue';
+<script lang="ts">
+import RefButton from '../shared/RefButton.vue'
 
 export default {
   components: {
-    RefButton,
+    RefButton
   },
-  props: ['title', 'link'],
-};
+  props: ['title', 'link']
+}
 </script>

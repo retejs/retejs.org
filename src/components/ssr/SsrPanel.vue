@@ -8,8 +8,8 @@
       slot(name="content")
 </template>
 
-<script>
+<script lang="ts">
 export default {
-  props: ['text'],
-};
+  props: ['text']
+}
 </script>

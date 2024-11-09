@@ -28,20 +28,21 @@
   Showcase
 </template>
 
-<script>
-import { ref } from 'vue';
-import { useI18n } from 'vue-i18n';
-import Logo from '@/components/Logo.vue';
-import Showcase from '@/components/Showcase.vue';
-import { mainPreview } from '../shared/assets';
+<script lang="ts">
+import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+import Logo from '@/components/Logo.vue'
+import Showcase from '@/components/Showcase.vue'
+
+import { mainPreview } from '../shared/assets'
 
 export default {
   setup() {
-    const { t } = useI18n();
-    const title = `${t('name')} - ${t('main.title')}`;
-    const description = t('main.description');
+    const { t } = useI18n()
+    const title = `${t('name')} - ${t('main.title')}`
+    const description = t('main.description')
 
-    // eslint-disable-next-line no-undef
     useSeoMeta({
       title,
       ogTitle: title,
@@ -50,26 +51,30 @@ export default {
       ogImage: mainPreview,
       twitterSite: 'rete_js',
       twitterCreator: 'rete_js',
-      twitterImageSrc: mainPreview,
-    });
+      twitterImageSrc: mainPreview
+    })
 
     return {
       title,
       intro: ref(false),
       logoIsHovered: ref(false),
       gitHubBadge: 'https://ghbtns.com/github-btn.html?user=retejs&repo=rete&type=star&count=true&size=large',
-      originBadge: 'https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7',
-    };
+      originBadge: 'https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7'
+    }
   },
   components: {
     Logo,
-    Showcase,
+    Showcase
   },
   mounted() {
-    setTimeout(() => { this.logoIsHovered = true; }, 1000);
-    setTimeout(() => { this.logoIsHovered = false; }, 3000);
-  },
-};
+    setTimeout(() => {
+      this.logoIsHovered = true
+    }, 1000)
+    setTimeout(() => {
+      this.logoIsHovered = false
+    }, 3000)
+  }
+}
 </script>
 
 <style lang="sass" scoped>

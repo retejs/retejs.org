@@ -8,26 +8,27 @@
   Footer
 </template>
 
-<script>
-import { defineComponent } from 'vue';
-import Header from '../components/Header.vue';
-import Content from '../components/Content.vue';
-import Footer from '../components/Footer.vue';
-import { seoLang } from '../shared/seoLang';
-import ShareThis from '../components/ShareThis.vue';
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+import Content from '../components/Content.vue'
+import Footer from '../components/Footer.vue'
+import Header from '../components/Header.vue'
+import ShareThis from '../components/ShareThis.vue'
+import { seoLang } from '../shared/seoLang'
 
 export default defineComponent({
   name: 'app',
   setup() {
-    seoLang();
+    seoLang()
   },
   components: {
     Header,
     Content,
     Footer,
-    ShareThis,
-  },
-});
+    ShareThis
+  }
+})
 </script>
 
 <style lang="sass" scoped>

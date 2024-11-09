@@ -6,15 +6,15 @@ Nav(:list="navigation.children" :active="$route.path")
       ProTag(v-if="data.pro")
 </template>
 
-<script>
-import ProTag from './shared/ProTag.vue';
+<script lang="ts">
+import ProTag from './shared/ProTag.vue'
 
 export default {
   props: ['navigation'],
   components: {
-    ProTag,
-  },
-};
+    ProTag
+  }
+}
 </script>
 
 <style lang="sass" scoped>

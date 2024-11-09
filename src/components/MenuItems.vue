@@ -14,18 +14,22 @@
 </style>
 
 <script setup lang="ts">
-import { useRoute } from 'vue-router';
-import { useI18n } from 'vue-i18n';
-import { omitLocale } from '../shared/route';
+import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
 
-const route = useRoute();
-const i18n = useI18n();
+import { omitLocale } from '../shared/route'
 
+const route = useRoute()
+const i18n = useI18n()
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function activeClass(name: string) {
-  return omitLocale(route.path, i18n.locale.value).startsWith(`/${name}`) ? {
-    'ivu-menu-item-active': true,
-    'ivu-menu-item-selected': true,
-  } : {};
+  return omitLocale(route.path, i18n.locale.value).startsWith(`/${name}`)
+    ? {
+      'ivu-menu-item-active': true,
+      'ivu-menu-item-selected': true
+    }
+    : {}
 }
 
 </script>

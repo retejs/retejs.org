@@ -1,15 +1,15 @@
-import { ref } from 'vue';
-import { useRouter } from 'vue-router';
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
 export function useDrawer() {
-  const router = useRouter();
-  const active = ref(false);
+  const router = useRouter()
+  const active = ref(false)
 
   router.beforeEach(() => {
-    active.value = false;
-  });
+    active.value = false
+  })
 
   return {
-    active,
-  };
+    active
+  }
 }

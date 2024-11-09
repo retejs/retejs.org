@@ -8,15 +8,16 @@ BaseExample
   )
 </template>
 
-<script>
-import { computed } from 'vue';
-import qs from 'qs';
-import BaseExample from '../shared/BaseExample.vue';
+<script lang="ts">
+import qs from 'qs'
+import { computed } from 'vue'
+
+import BaseExample from '../shared/BaseExample.vue'
 
 export default {
   props: {
     id: String,
-    module: String,
+    module: String
   },
   setup(props) {
     const params = {
@@ -26,18 +27,20 @@ export default {
       hidenavigation: 1,
       module: props.module,
       theme: 'light',
-      view: process.client && window.innerWidth <= 768 ? 'preview' : 'split',
-      verticallayout: 1,
-    };
+      view: process.client && window.innerWidth <= 768
+        ? 'preview'
+        : 'split',
+      verticallayout: 1
+    }
 
     return {
-      src: computed(() => `https://codesandbox.io/embed/${props.id}?${qs.stringify(params)}`),
-    };
+      src: computed(() => `https://codesandbox.io/embed/${props.id}?${qs.stringify(params)}`)
+    }
   },
   components: {
-    BaseExample,
-  },
-};
+    BaseExample
+  }
+}
 </script>
 
 <style lang="sass" scoped>

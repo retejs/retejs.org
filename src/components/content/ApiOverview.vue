@@ -12,36 +12,38 @@
             Icon.gh.icon(name="ion:logo-github")
 </template>
 
-<script>
-/* eslint-disable no-underscore-dangle */
-import ExampleCard from '../shared/ExampleCard.vue';
-import { usePathSanitizer } from '../../shared/route';
+<script lang="ts">
+
+import { usePathSanitizer } from '../../shared/route'
+import ExampleCard from '../shared/ExampleCard.vue'
 
 export default {
   props: ['filter'],
   setup(props) {
-    const { sanitize } = usePathSanitizer();
-    const filter = props.filter ? props.filter.split(',') : null;
+    const { sanitize } = usePathSanitizer()
+    const filter = props.filter
+      ? props.filter.split(',')
+      : null
 
     return {
       sanitize,
       getList(navigation) {
-        const api = navigation.children.find((n) => n._path.endsWith('/docs/api'));
+        const api = navigation.children.find(n => n._path.endsWith('/docs/api'))
 
-        if (!api) return [];
+        if (!api) return []
 
         const list = api.children
-          .filter((child) => !child.placeholder && !child.overview)
-          .filter((child) => !filter || filter.includes(child.title));
+          .filter(child => !child.placeholder && !child.overview)
+          .filter(child => !filter || filter.includes(child.title))
 
-        return list;
-      },
-    };
+        return list
+      }
+    }
   },
   components: {
-    ExampleCard,
-  },
-};
+    ExampleCard
+  }
+}
 </script>
 
 <style lang="sass">

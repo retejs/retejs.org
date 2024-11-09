@@ -8,17 +8,23 @@ Video(
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue';
-import Video from './shared/Video.vue';
-import media from '../consts/media.json';
+import { computed } from 'vue'
+
+import media from '../consts/media.json'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import Video from './shared/Video.vue'
 
 const props = defineProps({
   show: Boolean,
   scroll: Boolean,
-  autoplay: Boolean,
-});
+  autoplay: Boolean
+})
 
-const video = media.youtube.intro;
+const video = media.youtube.intro
 
-const url = computed(() => `https://www.youtube.com/embed/${video.id}?${props.autoplay ? 'autoplay=1' : ''}`);
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const url = computed(() => `https://www.youtube.com/embed/${video.id}?${props.autoplay
+  ? 'autoplay=1'
+  : ''}`)
+
 </script>

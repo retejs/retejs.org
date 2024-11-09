@@ -20,39 +20,41 @@ client-only
           .title {{ data.title }}
 </template>
 
-<script>
-import SsrNav from './ssr/SsrNav.vue';
-import { usePathSanitizer } from '../shared/route';
+<script lang="ts">
+import { usePathSanitizer } from '../shared/route'
+import SsrNav from './ssr/SsrNav.vue'
 
 export default {
   props: ['list', 'active'],
   setup() {
-    const { sanitize } = usePathSanitizer();
+    const { sanitize } = usePathSanitizer()
 
     return {
-      sanitize,
-    };
+      sanitize
+    }
   },
   computed: {
     cascadePaths() {
-      const pathSegments = this.active.split('/');
+      const pathSegments = this.active.split('/')
 
       const n = pathSegments.reduce((paths, curr, i) => {
-        const path = i === 0 ? curr : `${paths[i - 1]}/${curr}`;
+        const path = i === 0
+          ? curr
+          : `${paths[i - 1]}/${curr}`
 
-        return [...paths, path];
-      }, []);
+        return [...paths, path]
+      }, [])
 
-      return n;
+      return n
     },
     activeName() {
-      return this.active.replace(/\/$/, '');
-    },
+      return this.active.replace(/\/$/, '')
+    }
   },
   components: {
-    SsrNav,
-  },
-};
+    SsrNav
+  }
+}
 </script>
 
 <style lang="scss" scoped>

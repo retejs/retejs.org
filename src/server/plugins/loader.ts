@@ -1,9 +1,11 @@
-const id = `loader-${Math.random().toString(16).split('.')[1]}`;
+const id = `loader-${Math.random().toString(16)
+  .split('.')[1]}`
 
-export default defineNitroPlugin((nitroApp) => {
-  nitroApp.hooks.hook('render:html', (html) => {
-    html.head.unshift(
-      `<script>
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+export default defineNitroPlugin((nitroApp: any) => {
+  nitroApp.hooks.hook('render:html', (html: any) => {
+    html.head.unshift(`<script>
         window.addEventListener("beforeunload", function (event) {
           document.querySelector('#${id}').style.display = 'none';
         })
@@ -42,7 +44,6 @@ export default defineNitroPlugin((nitroApp) => {
             display: none;
           }
         </style>
-      </noscript>`,
-    );
-  });
-});
+      </noscript>`)
+  })
+})

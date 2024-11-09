@@ -18,63 +18,67 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   props: ['length', 'size', 'x', 'y', 'rotate', 'title', 'scale'],
   computed: {
     cx() {
-      return this.size / 2;
+      return this.size / 2
     },
     cy() {
-      return this.size / 2;
+      return this.size / 2
     },
     r() {
-      return this.size * 0.4;
+      return this.size * 0.4
     },
     offset() {
-      return this.size * 0.3;
+      return this.size * 0.3
     },
     path() {
-      return `M ${this.cx} ${this.offset} L ${this.cx} ${this.size - this.offset} L ${this.length * this.size} ${this.cy} Z`;
+      return `M ${this.cx} ${this.offset} L ${this.cx} ${this.size - this.offset} L ${this.length * this.size} ${this.cy} Z`
     },
     rootStyles() {
       return {
         left: `${this.x - this.cx * this.scale}px`,
         top: `${this.y - this.cy * this.scale}px`,
-        transform: `scale(${this.scale})`,
-      };
+        transform: `scale(${this.scale})`
+      }
     },
     svgStyles() {
       return {
         transformOrigin: `${this.cx}px ${this.cy}px`,
-        transform: `rotate(${this.rotate}deg)`,
-      };
+        transform: `rotate(${this.rotate}deg)`
+      }
     },
     titleStyles() {
-      const rotatePointAroundEllipse = (point, angle) => {
-        const [x1, y1] = point;
-        const theta = angle * Math.PI / 180;
-        const cos = Math.cos(theta);
-        const sin = Math.sin(theta);
-        const x2 = x1 * cos - y1 * sin;
-        const y2 = x1 * sin + y1 * cos;
-        return [x2, y2];
-      };
+      const rotatePointAroundEllipse = (point: any, angle: any) => {
+        const [x1, y1] = point
+        const theta = angle * Math.PI / 180
+        const cos = Math.cos(theta)
+        const sin = Math.sin(theta)
+        const x2 = x1 * cos - y1 * sin
+        const y2 = x1 * sin + y1 * cos
 
-      const x0 = this.length * this.size + 5;
-      const y0 = 0;
-      const [x1, y1] = rotatePointAroundEllipse([x0, y0], this.rotate);
-      const r = (this.rotate + 360) % 360;
-      const offset = r > 180 ? (360 - r) / 180 : r / 180;
+        return [x2, y2]
+      }
+
+      const x0 = this.length * this.size + 5
+      const y0 = 0
+      const [x1, y1] = rotatePointAroundEllipse([x0, y0], this.rotate)
+      // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
+      const r = (this.rotate + 360) % 360
+      const offset = r > 180
+        ? (360 - r) / 180
+        : r / 180
 
       return {
         left: `${x1}px`,
         top: `${y1}px`,
-        transform: `translate(${-offset * 100}%, 0%)`,
-      };
-    },
-  },
-};
+        transform: `translate(${-offset * 100}%, 0%)`
+      }
+    }
+  }
+}
 </script>
 
 <style lang="sass" scoped>

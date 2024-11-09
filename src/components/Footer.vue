@@ -7,9 +7,10 @@ IViewFooter.footer
     div Copyright © {{releaseYear}}-{{year}} {{author}}
 </template>
 
-<script>
-import { Footer as IViewFooter } from 'view-ui-plus-es';
-import { license, author, release as releaseYear } from '@/consts/product.json';
+<script lang="ts">
+import { Footer as IViewFooter } from 'view-ui-plus-es'
+
+import { author, license, release as releaseYear } from '@/consts/product.json'
 
 export default {
   data() {
@@ -17,13 +18,13 @@ export default {
       license,
       author,
       releaseYear,
-      year: new Date().getFullYear(),
-    };
+      year: new Date().getFullYear()
+    }
   },
   components: {
-    IViewFooter,
-  },
-};
+    IViewFooter
+  }
+}
 </script>
 
 <style lang="sass" scoped>

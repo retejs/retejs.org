@@ -16,103 +16,108 @@
     )
 </template>
 
-<script>
-import { onMounted, onUnmounted, ref } from 'vue';
-import { createEditor, introductionGraph } from '../../shared/editor';
-import Pointer from '@/components/shared/Pointer.vue';
+<script lang="ts">
+import { onMounted, onUnmounted, ref } from 'vue'
+
+import Pointer from '@/components/shared/Pointer.vue'
+
+import { createEditor, introductionGraph } from '../../shared/editor'
 
 export default {
   setup() {
-    const canva = ref(null);
-    const container = ref(null);
-    const pointers = ref([]);
-    const scale = ref(1);
+    const canva = ref(null)
+    const container = ref(null)
+    const pointers = ref([])
+    const scale = ref(1)
 
     function updatePointers(area, nodeA, nodeAdd) {
-      const aPosition = area.nodeViews.get(nodeA.id).position;
-      const addPosition = area.nodeViews.get(nodeAdd.id).position;
-      const { k, x, y } = area.area.transform;
+      const aPosition = area.nodeViews.get(nodeA.id).position
+      const addPosition = area.nodeViews.get(nodeAdd.id).position
+      const { k, x, y } = area.area.transform
 
-      pointers.value = [];
+      pointers.value = []
       pointers.value.push({
         len: 5,
         x: k * (aPosition.x + 65) + x,
         y: k * (aPosition.y + 92) + y,
         r: 125,
-        title: 'Control',
-      });
+        title: 'Control'
+      })
       pointers.value.push({
         len: 3,
         x: k * (aPosition.x + 185) + x,
         y: k * (aPosition.y + 60) + y,
         r: 45,
-        title: 'Socket',
-      });
+        title: 'Socket'
+      })
 
       pointers.value.push({
         len: 3,
         x: k * (addPosition.x + 185) + x,
         y: k * (addPosition.y + 50) + y,
         r: -50,
-        title: 'Output',
-      });
+        title: 'Output'
+      })
 
       pointers.value.push({
         len: 3,
         x: k * (addPosition.x + -5) + x,
         y: k * (addPosition.y + 135) + y,
         r: 150,
-        title: 'Input',
-      });
+        title: 'Input'
+      })
       pointers.value.push({
         len: 8,
         x: k * (addPosition.x + 120) + x,
         y: k * (addPosition.y + 165) + y,
         r: 120,
-        title: 'Node',
-      });
-      scale.value = k;
+        title: 'Node'
+      })
+      scale.value = k
     }
-    let resizeHandler = null;
-    let instance = null;
+    let resizeHandler = null
+    let instance = null
 
     onMounted(async () => {
       instance = await createEditor(container.value, {
         multiselect: true,
-        order: true,
-      });
-      const { area, resize, nodeSelector } = instance;
-      const { nodes } = await introductionGraph(instance);
-      resizeHandler = () => resize(canva.value.clientWidth, 706);
+        order: true
+      })
+      const { area, resize, nodeSelector } = instance
+      const { nodes } = await introductionGraph(instance)
 
-      nodeSelector.select(nodes.add.id);
-      resizeHandler();
-      updatePointers(area, nodes.a, nodes.add);
+      resizeHandler = () => {
+        resize(canva.value.clientWidth, 706)
+      }
 
-      area.addPipe((ctx) => {
+      nodeSelector.select(nodes.add.id)
+      resizeHandler()
+      updatePointers(area, nodes.a, nodes.add)
+
+      area.addPipe(ctx => {
         if (ctx.type === 'zoomed' || ctx.type === 'translated' || ctx.type === 'nodetranslated') {
-          updatePointers(area, nodes.a, nodes.add);
+          updatePointers(area, nodes.a, nodes.add)
         }
-        return ctx;
-      });
+        return ctx
+      })
 
-      window.addEventListener('resize', resizeHandler);
-    });
+      window.addEventListener('resize', resizeHandler)
+    })
     onUnmounted(() => {
-      if (instance) instance.area.destroy();
-      if (resizeHandler) window.removeEventListener('resize', resizeHandler);
-    });
+      if (instance) instance.area.destroy()
+      if (resizeHandler) window.removeEventListener('resize', resizeHandler)
+    })
     return {
       canva,
       container,
       pointers,
-      scale,
-    };
+      scale
+    }
   },
   components: {
-    Pointer,
-  },
-};
+    Pointer
+  }
+}
 
 </script>
 

@@ -8,19 +8,23 @@ SharedVideo.video(
 </template>
 
 <script lang="ts" setup>
-import SharedVideo from '../shared/Video.vue';
-import media from '../../consts/media.json';
+import media from '../../consts/media.json'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import SharedVideo from '../shared/Video.vue'
 
 const props = defineProps({
   name: {
     type: String as () => keyof typeof media.youtube,
-    required: true,
-  },
-});
+    required: true
+  }
+})
 
-const video = media.youtube[props.name];
-const { title } = video;
-const url = `https://www.youtube.com/embed/${video.id}?autoplay=0`;
+const video = media.youtube[props.name]
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const { title } = video
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const url = `https://www.youtube.com/embed/${video.id}?autoplay=0`
+
 </script>
 
 <style lang="sass" scoped>

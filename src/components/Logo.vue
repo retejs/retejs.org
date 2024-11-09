@@ -79,19 +79,19 @@
   </svg>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   props: {
     hover: {
       type: Boolean,
-      default: true,
+      default: true
     },
     zoomIn: {
       type: Boolean,
-      default: true,
-    },
-  },
-};
+      default: true
+    }
+  }
+}
 </script>
 
 <style scoped>

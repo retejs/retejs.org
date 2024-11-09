@@ -6,16 +6,16 @@
 
 </template>
 
-<script>
-import { social } from '@/consts/product.json';
+<script lang="ts">
+import { social } from '@/consts/product.json'
 
 export default {
   data() {
     return {
-      links: social,
-    };
-  },
-};
+      links: social
+    }
+  }
+}
 </script>
 
 <style lang="sass" scoped>

@@ -3,16 +3,16 @@
   span {{ text }}
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'SafetyTape',
   props: {
     text: {
       type: String,
-      required: true,
-    },
-  },
-};
+      required: true
+    }
+  }
+}
 </script>
 
 <style lang="sass" scoped>

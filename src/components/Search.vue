@@ -10,24 +10,25 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import '@docsearch/css';
+import '@docsearch/css'
 
-const appId = '47GZKZVKVE';
-const indexName = 'retejs';
-const apiKey = 'ab7a7d6c6c64359b03362fbbcf3d5135';
+import { defineComponent } from 'vue'
+
+const appId = '47GZKZVKVE'
+const indexName = 'retejs'
+const apiKey = 'ab7a7d6c6c64359b03362fbbcf3d5135'
 
 export default defineComponent({
   watch: {
     '$i18n.locale': function () {
-      this.refresh();
-    },
+      void this.refresh()
+    }
   },
   methods: {
     async refresh() {
-      const t = (key: string) => this.$t(['docsearch', key].join('.'));
+      const t = (key: string) => this.$t(['docsearch', key].join('.'))
 
-      const { default: docsearch } = await import('@docsearch/js');
+      const { default: docsearch } = await import('@docsearch/js')
 
       docsearch({
         container: this.$refs.container,
@@ -35,20 +36,20 @@ export default defineComponent({
         indexName,
         apiKey,
         searchParameters: {
-          facetFilters: [`lang:${this.$i18n.locale}`],
+          facetFilters: [`lang:${this.$i18n.locale}`]
         },
         placeholder: t('placeholder'),
         translations: {
           button: {
             buttonText: t('button.buttonText'),
-            buttonAriaLabel: t('button.buttonAriaLabel'),
+            buttonAriaLabel: t('button.buttonAriaLabel')
           },
           modal: {
             searchBox: {
               resetButtonTitle: t('modal.searchBox.resetButtonTitle'),
               resetButtonAriaLabel: t('modal.searchBox.resetButtonAriaLabel'),
               cancelButtonText: t('modal.searchBox.cancelButtonText'),
-              cancelButtonAriaLabel: t('modal.searchBox.cancelButtonAriaLabel'),
+              cancelButtonAriaLabel: t('modal.searchBox.cancelButtonAriaLabel')
             },
             startScreen: {
               recentSearchesTitle: t('modal.startScreen.recentSearchesTitle'),
@@ -56,11 +57,11 @@ export default defineComponent({
               saveRecentSearchButtonTitle: t('modal.startScreen.saveRecentSearchButtonTitle'),
               removeRecentSearchButtonTitle: t('modal.startScreen.removeRecentSearchButtonTitle'),
               favoriteSearchesTitle: t('modal.startScreen.favoriteSearchesTitle'),
-              removeFavoriteSearchButtonTitle: t('modal.startScreen.removeFavoriteSearchButtonTitle'),
+              removeFavoriteSearchButtonTitle: t('modal.startScreen.removeFavoriteSearchButtonTitle')
             },
             errorScreen: {
               titleText: t('modal.errorScreen.titleText'),
-              helpText: t('modal.errorScreen.helpText'),
+              helpText: t('modal.errorScreen.helpText')
             },
             footer: {
               selectText: t('modal.footer.selectText'),
@@ -70,23 +71,23 @@ export default defineComponent({
               navigateDownKeyAriaLabel: t('modal.footer.navigateDownKeyAriaLabel'),
               closeText: t('modal.footer.closeText'),
               closeKeyAriaLabel: t('modal.footer.closeKeyAriaLabel'),
-              searchByText: t('modal.footer.searchByText'),
+              searchByText: t('modal.footer.searchByText')
             },
             noResultsScreen: {
               noResultsText: t('modal.noResultsScreen.noResultsText'),
               suggestedQueryText: t('modal.noResultsScreen.suggestedQueryText'),
               reportMissingResultsText: t('modal.noResultsScreen.reportMissingResultsText'),
-              reportMissingResultsLinkText: t('modal.noResultsScreen.reportMissingResultsLinkText'),
-            },
-          },
-        },
-      });
-    },
+              reportMissingResultsLinkText: t('modal.noResultsScreen.reportMissingResultsLinkText')
+            }
+          }
+        }
+      })
+    }
   },
   mounted() {
-    this.refresh();
-  },
-});
+    void this.refresh()
+  }
+})
 </script>
 
 <style lang="sass">

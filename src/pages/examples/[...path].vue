@@ -20,34 +20,36 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import { useRoute } from 'vue-router';
-import Drawer from '@/components/shared/Drawer.vue';
-import ExamplesNav from '@/components/ExamplesNav.vue';
-import FetchNav from '@/components/FetchNav.vue';
-import RenderContent from '@/components/RenderContent.vue';
-import NavMenu from '@/components/shared/NavMenu.vue';
-import { useContentPath } from '../../shared/content';
-import { useDrawer } from '../../shared/drawer';
-import NotFound from '@/components/shared/NotFound.vue';
+import { defineComponent } from 'vue'
+import { useRoute } from 'vue-router'
+
+import ExamplesNav from '@/components/ExamplesNav.vue'
+import FetchNav from '@/components/FetchNav.vue'
+import RenderContent from '@/components/RenderContent.vue'
+import Drawer from '@/components/shared/Drawer.vue'
+import NavMenu from '@/components/shared/NavMenu.vue'
+import NotFound from '@/components/shared/NotFound.vue'
+
+import { useContentPath } from '../../shared/content'
+import { useDrawer } from '../../shared/drawer'
 
 export default defineComponent({
   setup() {
-    const route = useRoute();
-    const contentPath = useContentPath();
-    const drawer = useDrawer();
+    const route = useRoute()
+    const contentPath = useContentPath()
+    const drawer = useDrawer()
 
     return {
       preview: route.path.replace('/examples/', '/preview/'),
       contentPath,
-      drawer: drawer.active,
-    };
+      drawer: drawer.active
+    }
   },
   methods: {
     share(data) {
-      if (data.share) return data.share.title;
-      return `${data.title}, ${this.$t('share.example')}`;
-    },
+      if (data.share) return data.share.title
+      return `${data.title}, ${this.$t('share.example')}`
+    }
   },
   components: {
     Drawer,
@@ -55,9 +57,9 @@ export default defineComponent({
     FetchNav,
     NavMenu,
     RenderContent,
-    NotFound,
-  },
-});
+    NotFound
+  }
+})
 </script>
 
 <style lang="sass" scoped>

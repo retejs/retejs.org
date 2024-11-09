@@ -6,9 +6,11 @@ slot
 </template>
 
 <script lang="ts" setup>
-import { provideShareThis } from '../shared/sharethis';
+import { provideShareThis } from '../shared/sharethis'
 
-const sharethis = provideShareThis();
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const sharethis = provideShareThis()
+
 </script>
 
 <style lang="sass" scoped>

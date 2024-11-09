@@ -33,18 +33,18 @@
       a(href="mailto:info@retejs.org") info@retejs.org
 </template>
 
-<script>
-import { useI18n } from 'vue-i18n';
-import sponsor from '../../consts/sponsor.json';
-import { mainPreview } from '../../shared/assets';
+<script lang="ts">
+import { useI18n } from 'vue-i18n'
+
+import sponsor from '../../consts/sponsor.json'
+import { mainPreview } from '../../shared/assets'
 
 export default {
   setup() {
-    const { t } = useI18n();
-    const title = `${t('sponsor')} - ${t('name')}`;
-    const description = `${t('sponsorPage.subtitle1')} ${t('sponsorPage.subtitle2')}`;
+    const { t } = useI18n()
+    const title = `${t('sponsor')} - ${t('name')}`
+    const description = `${t('sponsorPage.subtitle1')} ${t('sponsorPage.subtitle2')}`
 
-    // eslint-disable-next-line no-undef
     useSeoMeta({
       title,
       ogTitle: title,
@@ -53,14 +53,14 @@ export default {
       ogImage: mainPreview,
       twitterSite: 'rete_js',
       twitterCreator: 'rete_js',
-      twitterImageSrc: mainPreview,
-    });
+      twitterImageSrc: mainPreview
+    })
 
     return {
-      ...sponsor,
-    };
-  },
-};
+      ...sponsor
+    }
+  }
+}
 </script>
 
 <style lang="sass" scoped>

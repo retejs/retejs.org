@@ -12,20 +12,21 @@
       SsrSelect {{ $i18n.locale }}
 </template>
 
-<script>
-import { defineComponent } from 'vue';
-import SsrSelect from './ssr/SsrSelect.vue';
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+import SsrSelect from './ssr/SsrSelect.vue'
 
 export default defineComponent({
   methods: {
     setLocale(lang) {
-      this.$router.push(this.switchLocalePath(lang));
-    },
+      this.$router.push(this.switchLocalePath(lang))
+    }
   },
   components: {
-    SsrSelect,
-  },
-});
+    SsrSelect
+  }
+})
 </script>
 
 <style lang="sass" scoped>

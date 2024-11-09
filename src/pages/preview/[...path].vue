@@ -1,22 +1,31 @@
+
 <template lang="pug">
 img(:src="src")
 </template>
 
-<script setup>
-import { useContentPath } from '../../shared/content';
-import { getPreview, mainPreview } from '../../shared/assets';
+<script setup lang="ts">
+import { getPreview, mainPreview } from '../../shared/assets'
+import { useContentPath } from '../../shared/content'
 
-const contentPath = useContentPath();
-const path = contentPath.value.replace('/preview/', '/examples/');
-// eslint-disable-next-line no-undef
-const { data } = await useAsyncData(path, () => queryContent(path).findOne());
+const contentPath = useContentPath()
+const path = contentPath.value.replace('/preview/', '/examples/')
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+const { data } = await useAsyncData(path, () => queryContent(path).findOne())
+
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 definePageMeta({
-  layout: 'preview',
-});
+  layout: 'preview'
+})
 
-const image = data.value?.image?.src;
-const src = image ? getPreview(image) : mainPreview;
+const image = data.value?.image?.src
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const src = image
+  ? getPreview(image)
+  : mainPreview
+
 </script>
 
 <style lang="sass" scoped>

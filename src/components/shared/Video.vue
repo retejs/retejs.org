@@ -11,24 +11,24 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, ref, watch } from 'vue';
+import { computed, ref, watch } from 'vue'
 
 const props = defineProps({
   show: Boolean,
   scroll: Boolean,
   title: String,
-  url: String,
-});
+  url: String
+})
 
-const introRef = ref<HTMLIFrameElement | null>(null);
+const introRef = ref<HTMLIFrameElement | null>(null)
 
 watch(computed(() => props.scroll && props.show && introRef.value), () => {
   if (props.scroll && props.show && introRef.value) {
-    const top = window.scrollY + introRef.value.getBoundingClientRect().top;
+    const top = window.scrollY + introRef.value.getBoundingClientRect().top
 
-    window.scrollTo({ top: top - 70, behavior: 'smooth' });
+    window.scrollTo({ top: top - 70, behavior: 'smooth' })
   }
-});
+})
 </script>
 
 <style lang="sass" scoped>

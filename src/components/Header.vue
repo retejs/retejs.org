@@ -24,33 +24,35 @@
       Links.links
 </template>
 
-<script>
-import { defineComponent, ref, onMounted } from 'vue';
-import { useDrawer } from '../shared/drawer';
-import Logo from './Logo.vue';
-import Language from './Language.vue';
-import MenuItems from './MenuItems.vue';
-import Links from './Links.vue';
-import Search from './Search.vue';
-import Drawer from './shared/Drawer.vue';
+<script lang="ts">
+import { defineComponent, onMounted, ref } from 'vue'
+
+import { useDrawer } from '../shared/drawer'
+import Language from './Language.vue'
+import Links from './Links.vue'
+import Logo from './Logo.vue'
+import MenuItems from './MenuItems.vue'
+import Search from './Search.vue'
+import Drawer from './shared/Drawer.vue'
 
 export default defineComponent({
   setup() {
-    const element = ref(null);
-    const drawer = useDrawer();
+    const element = ref(null)
+    const drawer = useDrawer()
 
     onMounted(() => {
       window.addEventListener('scroll', () => {
-        if (!element.value) return;
+        if (!element.value) return
 
-        const { bottom } = element.value.getBoundingClientRect();
-        document.body.style.setProperty('--header-offset', `${bottom}px`);
-      }, false);
-    });
+        const { bottom } = element.value.getBoundingClientRect()
+
+        document.body.style.setProperty('--header-offset', `${bottom}px`)
+      }, false)
+    })
     return {
       element,
-      drawer: drawer.active,
-    };
+      drawer: drawer.active
+    }
   },
   components: {
     Logo,
@@ -58,9 +60,9 @@ export default defineComponent({
     MenuItems,
     Search,
     Drawer,
-    Links,
-  },
-});
+    Links
+  }
+})
 </script>
 
 <style lang="sass" scoped>

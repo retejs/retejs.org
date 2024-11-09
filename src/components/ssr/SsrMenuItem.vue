@@ -6,8 +6,8 @@ NuxtLink.ivu-menu-item(
   slot
 </template>
 
-<script>
+<script lang="ts">
 export default {
-  props: ['to', 'active'],
-};
+  props: ['to', 'active']
+}
 </script>

@@ -9,10 +9,10 @@ Menu.menu(width="var(--menu-width)")
     slot
 </template>
 
-<script>
+<script lang="ts">
 export default {
-  props: ['open'],
-};
+  props: ['open']
+}
 
 </script>
 

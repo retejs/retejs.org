@@ -13,23 +13,23 @@
       SsrNav(v-if="item.children" :list="item.children" :active="active")
 </template>
 
-<script>
-import SsrMenuItem from './SsrMenuItem.vue';
-import SsrSubmenu from './SsrSubmenu.vue';
-import { usePathSanitizer } from '../../shared/route';
+<script lang="ts">
+import { usePathSanitizer } from '../../shared/route'
+import SsrMenuItem from './SsrMenuItem.vue'
+import SsrSubmenu from './SsrSubmenu.vue'
 
 export default {
   props: ['list', 'active'],
   setup() {
-    const { sanitize } = usePathSanitizer();
+    const { sanitize } = usePathSanitizer()
 
     return {
-      sanitize,
-    };
+      sanitize
+    }
   },
   components: {
     SsrMenuItem,
-    SsrSubmenu,
-  },
-};
+    SsrSubmenu
+  }
+}
 </script>
