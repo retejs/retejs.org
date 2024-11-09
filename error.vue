@@ -2,7 +2,7 @@
 NotFound
 </template>
 
-<script>
+<script lang="ts">
 import NotFound from '@/components/shared/NotFound.vue';
 
 export default {
