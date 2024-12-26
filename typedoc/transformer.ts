@@ -74,7 +74,7 @@ function getAnchor(data: ProjectReflection, id: number) {
 }
 
 function link(data, arg, text) {
-  return `[${text}](#${getAnchor(data, arg.target)})`;
+  return `[${sanitize(text)}](#${getAnchor(data, arg.target)})`;
 }
 
 function stringifyObject(type: ReflectionType) {
@@ -97,6 +97,15 @@ function getPriority(item: Reflection) {
   return +(tags.find((item) => item.tag === '@priority')?.content[0].text || 0);
 }
 
+function sanitize(text: string) {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 async function typedocToMarkdown(
   data: ProjectReflection,
   children: DeclarationReflection[] | undefined = [],
@@ -109,7 +118,7 @@ async function typedocToMarkdown(
     if (parameters && parameters.length) {
       markdown.push('| Parameter | Extends | Description |');
       markdown.push('| ---- | ---- | ----------- |');
-      parameters.forEach(({ name, type, comment }) => markdown.push(`| ${name} | \`${type || 'any'}\` | ${comment} |`));
+      parameters.forEach(({ name, type, comment }) => markdown.push(`| ${name} | \`${sanitize(type) || 'any'}\` | ${comment} |`));
     }
   }
   function throws(ref: Reflection) {
