@@ -38,7 +38,7 @@
 									"fileName": "presets/classic/index.ts",
 									"line": 37,
 									"character": 16,
-									"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/classic/index.ts#L37"
+									"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/classic/index.ts#L37"
 								}
 							],
 							"signatures": [
@@ -60,11 +60,11 @@
 										{
 											"fileName": "presets/classic/index.ts",
 											"line": 37,
-											"character": 0,
-											"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/classic/index.ts#L37"
+											"character": 16,
+											"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/classic/index.ts#L37"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 39,
 											"name": "Schemes",
@@ -96,8 +96,9 @@
 												"typeArguments": [
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 39,
 														"name": "Schemes",
+														"package": "rete-svelte-plugin",
 														"refersToTypeParameter": true
 													}
 												],
@@ -124,14 +125,16 @@
 												"typeArguments": [
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 39,
 														"name": "Schemes",
+														"package": "rete-svelte-plugin",
 														"refersToTypeParameter": true
 													},
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 40,
 														"name": "K",
+														"package": "rete-svelte-plugin",
 														"refersToTypeParameter": true
 													}
 												],
@@ -149,14 +152,16 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 39,
 												"name": "Schemes",
+												"package": "rete-svelte-plugin",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 40,
 												"name": "K",
+												"package": "rete-svelte-plugin",
 												"refersToTypeParameter": true
 											}
 										],
@@ -180,7 +185,7 @@
 							"fileName": "presets/classic/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/classic/index.ts#L1"
+							"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/classic/index.ts#L1"
 						}
 					]
 				},
@@ -202,7 +207,7 @@
 									"fileName": "presets/context-menu/index.ts",
 									"line": 10,
 									"character": 16,
-									"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/index.ts#L10"
+									"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/context-menu/index.ts#L10"
 								}
 							],
 							"signatures": [
@@ -224,11 +229,11 @@
 										{
 											"fileName": "presets/context-menu/index.ts",
 											"line": 10,
-											"character": 0,
-											"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/index.ts#L10"
+											"character": 16,
+											"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/context-menu/index.ts#L10"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 45,
 											"name": "Schemes",
@@ -282,7 +287,7 @@
 																			"fileName": "presets/context-menu/types.ts",
 																			"line": 11,
 																			"character": 34,
-																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/types.ts#L11"
+																			"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/context-menu/types.ts#L11"
 																		}
 																	],
 																	"type": {
@@ -311,7 +316,7 @@
 																			"fileName": "presets/context-menu/types.ts",
 																			"line": 11,
 																			"character": 65,
-																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/types.ts#L11"
+																			"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/context-menu/types.ts#L11"
 																		}
 																	],
 																	"type": {
@@ -330,7 +335,7 @@
 																			"fileName": "presets/context-menu/types.ts",
 																			"line": 11,
 																			"character": 49,
-																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/types.ts#L11"
+																			"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/context-menu/types.ts#L11"
 																		}
 																	],
 																	"signatures": [
@@ -345,7 +350,7 @@
 																					"fileName": "presets/context-menu/types.ts",
 																					"line": 11,
 																					"character": 49,
-																					"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/types.ts#L11"
+																					"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/context-menu/types.ts#L11"
 																				}
 																			],
 																			"type": {
@@ -376,7 +381,7 @@
 																	"fileName": "presets/context-menu/types.ts",
 																	"line": 11,
 																	"character": 32,
-																	"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/types.ts#L11"
+																	"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/context-menu/types.ts#L11"
 																}
 															]
 														}
@@ -418,7 +423,7 @@
 																	"fileName": "presets/context-menu/index.ts",
 																	"line": 10,
 																	"character": 90,
-																	"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/index.ts#L10"
+																	"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/context-menu/index.ts#L10"
 																}
 															],
 															"type": {
@@ -440,7 +445,7 @@
 															"fileName": "presets/context-menu/index.ts",
 															"line": 10,
 															"character": 88,
-															"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/index.ts#L10"
+															"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/context-menu/index.ts#L10"
 														}
 													]
 												}
@@ -456,14 +461,16 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 45,
 												"name": "Schemes",
+												"package": "rete-svelte-plugin",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 46,
 												"name": "K",
+												"package": "rete-svelte-plugin",
 												"refersToTypeParameter": true
 											}
 										],
@@ -487,7 +494,7 @@
 							"fileName": "presets/context-menu/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/context-menu/index.ts#L1"
+							"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/context-menu/index.ts#L1"
 						}
 					]
 				},
@@ -509,7 +516,7 @@
 									"fileName": "presets/minimap/index.ts",
 									"line": 10,
 									"character": 16,
-									"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/index.ts#L10"
+									"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/minimap/index.ts#L10"
 								}
 							],
 							"signatures": [
@@ -531,11 +538,11 @@
 										{
 											"fileName": "presets/minimap/index.ts",
 											"line": 10,
-											"character": 0,
-											"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/index.ts#L10"
+											"character": 16,
+											"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/minimap/index.ts#L10"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 58,
 											"name": "Schemes",
@@ -589,7 +596,7 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 19,
 																			"character": 4,
-																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L19"
+																			"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/minimap/types.ts#L19"
 																		}
 																	],
 																	"type": {
@@ -616,7 +623,7 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 18,
 																			"character": 4,
-																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L18"
+																			"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/minimap/types.ts#L18"
 																		}
 																	],
 																	"type": {
@@ -635,7 +642,7 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 22,
 																			"character": 4,
-																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L22"
+																			"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/minimap/types.ts#L22"
 																		}
 																	],
 																	"type": {
@@ -659,7 +666,7 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 20,
 																			"character": 4,
-																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L20"
+																			"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/minimap/types.ts#L20"
 																		}
 																	],
 																	"type": {
@@ -683,7 +690,7 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 23,
 																			"character": 4,
-																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L23"
+																			"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/minimap/types.ts#L23"
 																		}
 																	],
 																	"signatures": [
@@ -698,7 +705,7 @@
 																					"fileName": "presets/minimap/types.ts",
 																					"line": 23,
 																					"character": 4,
-																					"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L23"
+																					"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/minimap/types.ts#L23"
 																				}
 																			],
 																			"parameters": [
@@ -743,7 +750,7 @@
 																			"fileName": "presets/minimap/types.ts",
 																			"line": 21,
 																			"character": 4,
-																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L21"
+																			"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/minimap/types.ts#L21"
 																		}
 																	],
 																	"signatures": [
@@ -758,7 +765,7 @@
 																					"fileName": "presets/minimap/types.ts",
 																					"line": 21,
 																					"character": 4,
-																					"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L21"
+																					"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/minimap/types.ts#L21"
 																				}
 																			],
 																			"type": {
@@ -797,7 +804,7 @@
 																	"fileName": "presets/minimap/types.ts",
 																	"line": 17,
 																	"character": 28,
-																	"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/types.ts#L17"
+																	"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/minimap/types.ts#L17"
 																}
 															]
 														}
@@ -839,7 +846,7 @@
 																	"fileName": "presets/minimap/index.ts",
 																	"line": 10,
 																	"character": 86,
-																	"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/index.ts#L10"
+																	"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/minimap/index.ts#L10"
 																}
 															],
 															"type": {
@@ -861,7 +868,7 @@
 															"fileName": "presets/minimap/index.ts",
 															"line": 10,
 															"character": 84,
-															"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/index.ts#L10"
+															"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/minimap/index.ts#L10"
 														}
 													]
 												}
@@ -877,14 +884,16 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 58,
 												"name": "Schemes",
+												"package": "rete-svelte-plugin",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 59,
 												"name": "K",
+												"package": "rete-svelte-plugin",
 												"refersToTypeParameter": true
 											}
 										],
@@ -908,7 +917,7 @@
 							"fileName": "presets/minimap/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/minimap/index.ts#L1"
+							"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/minimap/index.ts#L1"
 						}
 					]
 				},
@@ -930,7 +939,7 @@
 									"fileName": "presets/reroute/index.ts",
 									"line": 17,
 									"character": 16,
-									"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/reroute/index.ts#L17"
+									"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/reroute/index.ts#L17"
 								}
 							],
 							"signatures": [
@@ -952,11 +961,11 @@
 										{
 											"fileName": "presets/reroute/index.ts",
 											"line": 17,
-											"character": 0,
-											"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/reroute/index.ts#L17"
+											"character": 16,
+											"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/reroute/index.ts#L17"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
 											"id": 77,
 											"name": "Schemes",
@@ -1010,7 +1019,7 @@
 																			"fileName": "presets/reroute/types.ts",
 																			"line": 22,
 																			"character": 35,
-																			"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/reroute/types.ts#L22"
+																			"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/reroute/types.ts#L22"
 																		}
 																	],
 																	"type": {
@@ -1037,7 +1046,7 @@
 																	"fileName": "presets/reroute/types.ts",
 																	"line": 22,
 																	"character": 33,
-																	"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/reroute/types.ts#L22"
+																	"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/reroute/types.ts#L22"
 																}
 															]
 														}
@@ -1077,14 +1086,16 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 77,
 												"name": "Schemes",
+												"package": "rete-svelte-plugin",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 78,
 												"name": "K",
+												"package": "rete-svelte-plugin",
 												"refersToTypeParameter": true
 											}
 										],
@@ -1108,7 +1119,7 @@
 							"fileName": "presets/reroute/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/reroute/index.ts#L1"
+							"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/reroute/index.ts#L1"
 						}
 					]
 				}
@@ -1129,7 +1140,7 @@
 					"fileName": "presets/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/presets/index.ts#L1"
+					"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/presets/index.ts#L1"
 				}
 			]
 		},
@@ -1197,9 +1208,9 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 118,
+							"line": 117,
 							"character": 9,
-							"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L118"
+							"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/index.ts#L117"
 						}
 					],
 					"signatures": [
@@ -1220,12 +1231,12 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 118,
-									"character": 2,
-									"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L118"
+									"line": 117,
+									"character": 9,
+									"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/index.ts#L117"
 								}
 							],
-							"typeParameter": [
+							"typeParameters": [
 								{
 									"id": 31,
 									"name": "K",
@@ -1258,8 +1269,10 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 33,
 												"name": "Schemes",
+												"package": "rete-svelte-plugin",
+												"qualifiedName": "SveltePlugin.Schemes",
 												"refersToTypeParameter": true
 											},
 											{
@@ -1273,8 +1286,10 @@
 													"typeArguments": [
 														{
 															"type": "reference",
-															"target": -1,
+															"target": 34,
 															"name": "T",
+															"package": "rete-svelte-plugin",
+															"qualifiedName": "SveltePlugin.T",
 															"refersToTypeParameter": true
 														},
 														{
@@ -1286,8 +1301,9 @@
 															"typeArguments": [
 																{
 																	"type": "reference",
-																	"target": -1,
+																	"target": 31,
 																	"name": "K",
+																	"package": "rete-svelte-plugin",
 																	"refersToTypeParameter": true
 																}
 															],
@@ -1304,8 +1320,9 @@
 												},
 												"trueType": {
 													"type": "reference",
-													"target": -1,
+													"target": 31,
 													"name": "K",
+													"package": "rete-svelte-plugin",
 													"refersToTypeParameter": true
 												},
 												"falseType": {
@@ -1338,9 +1355,9 @@
 			"sources": [
 				{
 					"fileName": "index.ts",
-					"line": 32,
+					"line": 31,
 					"character": 13,
-					"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L32"
+					"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/index.ts#L31"
 				}
 			],
 			"typeParameters": [
@@ -1375,8 +1392,10 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"target": -1,
+								"target": 33,
 								"name": "Schemes",
+								"package": "rete-svelte-plugin",
+								"qualifiedName": "SveltePlugin.Schemes",
 								"refersToTypeParameter": true
 							}
 						],
@@ -1399,8 +1418,10 @@
 							"typeArguments": [
 								{
 									"type": "reference",
-									"target": -1,
+									"target": 33,
 									"name": "Schemes",
+									"package": "rete-svelte-plugin",
+									"qualifiedName": "SveltePlugin.Schemes",
 									"refersToTypeParameter": true
 								}
 							],
@@ -1422,8 +1443,10 @@
 											"typeArguments": [
 												{
 													"type": "reference",
-													"target": -1,
+													"target": 33,
 													"name": "Schemes",
+													"package": "rete-svelte-plugin",
+													"qualifiedName": "SveltePlugin.Schemes",
 													"refersToTypeParameter": true
 												}
 											],
@@ -1432,8 +1455,10 @@
 										},
 										{
 											"type": "reference",
-											"target": -1,
+											"target": 34,
 											"name": "T",
+											"package": "rete-svelte-plugin",
+											"qualifiedName": "SveltePlugin.T",
 											"refersToTypeParameter": true
 										}
 									]
@@ -1450,7 +1475,7 @@
 			"id": 1,
 			"name": "Produces",
 			"variant": "declaration",
-			"kind": 4194304,
+			"kind": 2097152,
 			"flags": {},
 			"comment": {
 				"summary": [
@@ -1474,9 +1499,9 @@
 			"sources": [
 				{
 					"fileName": "index.ts",
-					"line": 17,
+					"line": 16,
 					"character": 12,
-					"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L17"
+					"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/index.ts#L16"
 				}
 			],
 			"typeParameters": [
@@ -1518,9 +1543,9 @@
 									"sources": [
 										{
 											"fileName": "index.ts",
-											"line": 18,
+											"line": 17,
 											"character": 30,
-											"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L18"
+											"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/index.ts#L17"
 										}
 									],
 									"type": {
@@ -1543,9 +1568,9 @@
 													"sources": [
 														{
 															"fileName": "index.ts",
-															"line": 18,
+															"line": 17,
 															"character": 70,
-															"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L18"
+															"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/index.ts#L17"
 														}
 													],
 													"type": {
@@ -1562,9 +1587,9 @@
 													"sources": [
 														{
 															"fileName": "index.ts",
-															"line": 18,
+															"line": 17,
 															"character": 38,
-															"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L18"
+															"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/index.ts#L17"
 														}
 													],
 													"type": {
@@ -1575,8 +1600,9 @@
 														},
 														"objectType": {
 															"type": "reference",
-															"target": -1,
+															"target": 9,
 															"name": "Schemes",
+															"package": "rete-svelte-plugin",
 															"refersToTypeParameter": true
 														}
 													}
@@ -1590,9 +1616,9 @@
 													"sources": [
 														{
 															"fileName": "index.ts",
-															"line": 18,
+															"line": 17,
 															"character": 85,
-															"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L18"
+															"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/index.ts#L17"
 														}
 													],
 													"type": {
@@ -1622,9 +1648,9 @@
 											"sources": [
 												{
 													"fileName": "index.ts",
-													"line": 18,
+													"line": 17,
 													"character": 36,
-													"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L18"
+													"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/index.ts#L17"
 												}
 											]
 										}
@@ -1639,9 +1665,9 @@
 									"sources": [
 										{
 											"fileName": "index.ts",
-											"line": 18,
+											"line": 17,
 											"character": 6,
-											"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L18"
+											"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/index.ts#L17"
 										}
 									],
 									"type": {
@@ -1662,9 +1688,9 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 18,
+									"line": 17,
 									"character": 4,
-									"url": "https://github.com/retejs/svelte-plugin/blob/66daa8a/src/index.ts#L18"
+									"url": "https://github.com/retejs/svelte-plugin/blob/db022db2aedf80595274cec50f42859a359d230f/src/index.ts#L17"
 								}
 							]
 						}
@@ -1980,6 +2006,24 @@
 		"81": {
 			"sourceFileName": "src/presets/reroute/index.ts",
 			"qualifiedName": "props"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/index.ts",
+			"2": "src/presets/index.ts",
+			"3": "src/presets/classic/index.ts",
+			"4": "src/presets/context-menu/index.ts",
+			"5": "src/presets/minimap/index.ts",
+			"6": "src/presets/reroute/index.ts"
+		},
+		"reflections": {
+			"1": 0,
+			"2": 35,
+			"3": 36,
+			"4": 42,
+			"5": 55,
+			"6": 74
 		}
 	}
 }
