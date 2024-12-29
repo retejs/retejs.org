@@ -16,6 +16,7 @@ IViewAlert.banner(show-icon)
     Button.button(
       v-if="action"
       :target="action.target"
+      :to="action.to"
       @click="$emit('action')"
     ) {{ action.label }}
   template(#icon)

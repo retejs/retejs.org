@@ -2,9 +2,8 @@
 Banner(
   icon="heroicons:rocket-launch"
   :tooltip="{ icon: 'tabler:clipboard-copy' }"
-  :action="{ label: $t('kit.banner.button') }"
+  :action="{ label: $t('kit.banner.button'), to: localePath(link) }"
   @tooltip="copyToClipboard"
-  @action="openDocs"
 )
   template(v-slot:text)
     i18n-t(keypath='kit.banner.text')
@@ -40,9 +39,6 @@ export default {
           title: this.$t('kit.banner.copyNotification.error')
         })
       }
-    },
-    openDocs() {
-      this.$router.push(this.localePath('/docs/development/rete-kit'))
     }
   },
   components: {

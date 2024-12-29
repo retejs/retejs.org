@@ -2,8 +2,7 @@
 Banner(
   icon="ion:finger-print"
   :tooltip="{ icon: 'f7:question-circle' }"
-  :action="{ label: $t('examplesPage.proExample.getAccess') }"
-  @action="openPatreon"
+  :action="{ label: $t('examplesPage.proExample.getAccess'), to: patreon.link, target: '_blank' }"
 )
   template(v-slot:text) {{ $t('examplesPage.proExample.alert') }}
   template(v-slot:tooltip) {{ $t('examplesPage.proExample.info') }}
@@ -27,11 +26,6 @@ export default {
   data() {
     return {
       ...sponsor
-    }
-  },
-  methods: {
-    openPatreon() {
-      window.open(this.patreon.link, '_blank')
     }
   },
   components: {
