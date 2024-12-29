@@ -103,5 +103,16 @@
   "share": {
     "docs": "docs for Rete.js",
     "example": "example powered by Rete.js"
+  },
+  "kit": {
+    "banner": {
+      "text": "Want to start faster? Use {link} to create a fully configured project in minutes!",
+      "tooltip": "Copy the command {command} to clipboard",
+      "copyNotification": {
+        "success": "Copied to clipboard",
+        "error": "Failed to copy to clipboard"
+      },
+      "button": "Learn More"
+    }
   }
 }

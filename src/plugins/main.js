@@ -1,7 +1,7 @@
 import {
   Menu, MenuItem, Select, Submenu, Dropdown, Option,
   Drawer, Button, Alert, Tag, Tooltip, Collapse, Panel,
-  Card, Spin, Modal, SkeletonItem
+  Card, Spin, Modal, SkeletonItem, Notice
 } from "view-ui-plus-es";
 
 // eslint-disable-next-line no-undef
@@ -77,6 +77,11 @@ export default defineNuxtPlugin((nuxtApp) => {
     "SkeletonItem",
     SkeletonItem
   );
+
+  app.config.globalProperties.$Notice = Notice;
+  Notice.config({
+    "top": 70
+  });
 
   nuxtApp.$router.options.scrollBehavior = (to, from, savedPosition) => {
 
