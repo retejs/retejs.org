@@ -38,7 +38,7 @@
 									"fileName": "src/presets/classic/index.ts",
 									"line": 29,
 									"character": 16,
-									"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/classic/index.ts#L29"
+									"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/classic/index.ts#L29"
 								}
 							],
 							"signatures": [
@@ -61,7 +61,7 @@
 											"fileName": "src/presets/classic/index.ts",
 											"line": 29,
 											"character": 0,
-											"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/classic/index.ts#L29"
+											"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/classic/index.ts#L29"
 										}
 									],
 									"typeParameter": [
@@ -180,7 +180,7 @@
 							"fileName": "src/presets/classic/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/classic/index.ts#L1"
+							"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/classic/index.ts#L1"
 						}
 					]
 				},
@@ -202,7 +202,7 @@
 									"fileName": "src/presets/context-menu/index.ts",
 									"line": 10,
 									"character": 16,
-									"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/index.ts#L10"
+									"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/context-menu/index.ts#L10"
 								}
 							],
 							"signatures": [
@@ -225,7 +225,7 @@
 											"fileName": "src/presets/context-menu/index.ts",
 											"line": 10,
 											"character": 0,
-											"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/index.ts#L10"
+											"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/context-menu/index.ts#L10"
 										}
 									],
 									"typeParameter": [
@@ -282,7 +282,7 @@
 																			"fileName": "src/presets/context-menu/types.ts",
 																			"line": 11,
 																			"character": 34,
-																			"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/types.ts#L11"
+																			"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/context-menu/types.ts#L11"
 																		}
 																	],
 																	"type": {
@@ -311,7 +311,7 @@
 																			"fileName": "src/presets/context-menu/types.ts",
 																			"line": 11,
 																			"character": 65,
-																			"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/types.ts#L11"
+																			"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/context-menu/types.ts#L11"
 																		}
 																	],
 																	"type": {
@@ -330,7 +330,7 @@
 																			"fileName": "src/presets/context-menu/types.ts",
 																			"line": 11,
 																			"character": 49,
-																			"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/types.ts#L11"
+																			"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/context-menu/types.ts#L11"
 																		}
 																	],
 																	"signatures": [
@@ -345,7 +345,7 @@
 																					"fileName": "src/presets/context-menu/types.ts",
 																					"line": 11,
 																					"character": 49,
-																					"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/types.ts#L11"
+																					"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/context-menu/types.ts#L11"
 																				}
 																			],
 																			"type": {
@@ -376,7 +376,7 @@
 																	"fileName": "src/presets/context-menu/types.ts",
 																	"line": 11,
 																	"character": 32,
-																	"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/types.ts#L11"
+																	"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/context-menu/types.ts#L11"
 																}
 															]
 														}
@@ -418,7 +418,7 @@
 																	"fileName": "src/presets/context-menu/index.ts",
 																	"line": 10,
 																	"character": 90,
-																	"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/index.ts#L10"
+																	"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/context-menu/index.ts#L10"
 																}
 															],
 															"type": {
@@ -440,7 +440,7 @@
 															"fileName": "src/presets/context-menu/index.ts",
 															"line": 10,
 															"character": 88,
-															"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/index.ts#L10"
+															"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/context-menu/index.ts#L10"
 														}
 													]
 												}
@@ -487,7 +487,7 @@
 							"fileName": "src/presets/context-menu/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/context-menu/index.ts#L1"
+							"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/context-menu/index.ts#L1"
 						}
 					]
 				},
@@ -509,7 +509,7 @@
 									"fileName": "src/presets/minimap/index.ts",
 									"line": 10,
 									"character": 16,
-									"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/minimap/index.ts#L10"
+									"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/minimap/index.ts#L10"
 								}
 							],
 							"signatures": [
@@ -532,7 +532,7 @@
 											"fileName": "src/presets/minimap/index.ts",
 											"line": 10,
 											"character": 0,
-											"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/minimap/index.ts#L10"
+											"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/minimap/index.ts#L10"
 										}
 									],
 									"typeParameter": [
@@ -615,7 +615,7 @@
 																	"fileName": "src/presets/minimap/index.ts",
 																	"line": 10,
 																	"character": 86,
-																	"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/minimap/index.ts#L10"
+																	"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/minimap/index.ts#L10"
 																}
 															],
 															"type": {
@@ -637,7 +637,7 @@
 															"fileName": "src/presets/minimap/index.ts",
 															"line": 10,
 															"character": 84,
-															"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/minimap/index.ts#L10"
+															"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/minimap/index.ts#L10"
 														}
 													]
 												}
@@ -684,7 +684,7 @@
 							"fileName": "src/presets/minimap/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/minimap/index.ts#L1"
+							"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/minimap/index.ts#L1"
 						}
 					]
 				},
@@ -706,7 +706,7 @@
 									"fileName": "src/presets/reroute/index.ts",
 									"line": 17,
 									"character": 16,
-									"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/reroute/index.ts#L17"
+									"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/reroute/index.ts#L17"
 								}
 							],
 							"signatures": [
@@ -729,7 +729,7 @@
 											"fileName": "src/presets/reroute/index.ts",
 											"line": 17,
 											"character": 0,
-											"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/reroute/index.ts#L17"
+											"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/reroute/index.ts#L17"
 										}
 									],
 									"typeParameter": [
@@ -786,7 +786,7 @@
 																			"fileName": "src/presets/reroute/types.ts",
 																			"line": 19,
 																			"character": 35,
-																			"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/reroute/types.ts#L19"
+																			"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/reroute/types.ts#L19"
 																		}
 																	],
 																	"type": {
@@ -813,7 +813,7 @@
 																	"fileName": "src/presets/reroute/types.ts",
 																	"line": 19,
 																	"character": 33,
-																	"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/reroute/types.ts#L19"
+																	"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/reroute/types.ts#L19"
 																}
 															]
 														}
@@ -884,7 +884,7 @@
 							"fileName": "src/presets/reroute/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/reroute/index.ts#L1"
+							"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/reroute/index.ts#L1"
 						}
 					]
 				}
@@ -905,12 +905,12 @@
 					"fileName": "src/presets/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/presets/index.ts#L1"
+					"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/presets/index.ts#L1"
 				}
 			]
 		},
 		{
-			"id": 470,
+			"id": 474,
 			"name": "AngularPlugin",
 			"variant": "declaration",
 			"kind": 128,
@@ -963,7 +963,7 @@
 			},
 			"children": [
 				{
-					"id": 471,
+					"id": 475,
 					"name": "constructor",
 					"variant": "declaration",
 					"kind": 512,
@@ -973,12 +973,12 @@
 							"fileName": "src/core.ts",
 							"line": 86,
 							"character": 2,
-							"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L86"
+							"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/core.ts#L86"
 						}
 					],
 					"signatures": [
 						{
-							"id": 472,
+							"id": 476,
 							"name": "new AngularPlugin",
 							"variant": "signature",
 							"kind": 16384,
@@ -988,12 +988,12 @@
 									"fileName": "src/core.ts",
 									"line": 86,
 									"character": 2,
-									"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L86"
+									"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/core.ts#L86"
 								}
 							],
 							"typeParameter": [
 								{
-									"id": 473,
+									"id": 477,
 									"name": "Schemes",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -1009,7 +1009,7 @@
 									}
 								},
 								{
-									"id": 474,
+									"id": 478,
 									"name": "T",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -1035,7 +1035,7 @@
 							],
 							"parameters": [
 								{
-									"id": 475,
+									"id": 479,
 									"name": "params",
 									"variant": "param",
 									"kind": 32768,
@@ -1051,14 +1051,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 476,
+											"id": 480,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 477,
+													"id": 481,
 													"name": "injector",
 													"variant": "declaration",
 													"kind": 1024,
@@ -1076,7 +1076,7 @@
 															"fileName": "src/core.ts",
 															"line": 86,
 															"character": 32,
-															"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L86"
+															"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/core.ts#L86"
 														}
 													],
 													"type": {
@@ -1094,7 +1094,7 @@
 												{
 													"title": "Properties",
 													"children": [
-														477
+														481
 													]
 												}
 											],
@@ -1103,7 +1103,7 @@
 													"fileName": "src/core.ts",
 													"line": 86,
 													"character": 30,
-													"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L86"
+													"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/core.ts#L86"
 												}
 											]
 										}
@@ -1112,7 +1112,7 @@
 							],
 							"type": {
 								"type": "reference",
-								"target": 470,
+								"target": 474,
 								"typeArguments": [
 									{
 										"type": "reference",
@@ -1144,7 +1144,7 @@
 					}
 				},
 				{
-					"id": 494,
+					"id": 498,
 					"name": "addPreset",
 					"variant": "declaration",
 					"kind": 2048,
@@ -1156,12 +1156,12 @@
 							"fileName": "src/core.ts",
 							"line": 160,
 							"character": 9,
-							"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L160"
+							"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/core.ts#L160"
 						}
 					],
 					"signatures": [
 						{
-							"id": 495,
+							"id": 499,
 							"name": "addPreset",
 							"variant": "signature",
 							"kind": 4096,
@@ -1179,12 +1179,12 @@
 									"fileName": "src/core.ts",
 									"line": 160,
 									"character": 2,
-									"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L160"
+									"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/core.ts#L160"
 								}
 							],
 							"typeParameter": [
 								{
-									"id": 496,
+									"id": 500,
 									"name": "K",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -1193,7 +1193,7 @@
 							],
 							"parameters": [
 								{
-									"id": 497,
+									"id": 501,
 									"name": "preset",
 									"variant": "param",
 									"kind": 32768,
@@ -1288,13 +1288,13 @@
 				{
 					"title": "Constructors",
 					"children": [
-						471
+						475
 					]
 				},
 				{
 					"title": "Methods",
 					"children": [
-						494
+						498
 					]
 				}
 			],
@@ -1303,12 +1303,12 @@
 					"fileName": "src/core.ts",
 					"line": 76,
 					"character": 13,
-					"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L76"
+					"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/core.ts#L76"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 498,
+					"id": 502,
 					"name": "Schemes",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -1324,7 +1324,7 @@
 					}
 				},
 				{
-					"id": 499,
+					"id": 503,
 					"name": "T",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -1358,7 +1358,7 @@
 					"typeArguments": [
 						{
 							"type": "reference",
-							"target": 461,
+							"target": 465,
 							"typeArguments": [
 								{
 									"type": "reference",
@@ -1410,7 +1410,7 @@
 			]
 		},
 		{
-			"id": 461,
+			"id": 465,
 			"name": "Produces",
 			"variant": "declaration",
 			"kind": 4194304,
@@ -1439,12 +1439,12 @@
 					"fileName": "src/core.ts",
 					"line": 61,
 					"character": 12,
-					"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L61"
+					"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/core.ts#L61"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 469,
+					"id": 473,
 					"name": "Schemes",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -1466,14 +1466,14 @@
 					{
 						"type": "reflection",
 						"declaration": {
-							"id": 462,
+							"id": 466,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
 							"flags": {},
 							"children": [
 								{
-									"id": 464,
+									"id": 468,
 									"name": "data",
 									"variant": "declaration",
 									"kind": 1024,
@@ -1483,20 +1483,20 @@
 											"fileName": "src/core.ts",
 											"line": 62,
 											"character": 30,
-											"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L62"
+											"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/core.ts#L62"
 										}
 									],
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 465,
+											"id": 469,
 											"name": "__type",
 											"variant": "declaration",
 											"kind": 65536,
 											"flags": {},
 											"children": [
 												{
-													"id": 467,
+													"id": 471,
 													"name": "path",
 													"variant": "declaration",
 													"kind": 1024,
@@ -1508,7 +1508,7 @@
 															"fileName": "src/core.ts",
 															"line": 62,
 															"character": 70,
-															"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L62"
+															"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/core.ts#L62"
 														}
 													],
 													"type": {
@@ -1517,7 +1517,7 @@
 													}
 												},
 												{
-													"id": 466,
+													"id": 470,
 													"name": "payload",
 													"variant": "declaration",
 													"kind": 1024,
@@ -1527,7 +1527,7 @@
 															"fileName": "src/core.ts",
 															"line": 62,
 															"character": 38,
-															"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L62"
+															"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/core.ts#L62"
 														}
 													],
 													"type": {
@@ -1545,7 +1545,7 @@
 													}
 												},
 												{
-													"id": 468,
+													"id": 472,
 													"name": "points",
 													"variant": "declaration",
 													"kind": 1024,
@@ -1555,7 +1555,7 @@
 															"fileName": "src/core.ts",
 															"line": 62,
 															"character": 85,
-															"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L62"
+															"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/core.ts#L62"
 														}
 													],
 													"type": {
@@ -1576,9 +1576,9 @@
 												{
 													"title": "Properties",
 													"children": [
-														467,
-														466,
-														468
+														471,
+														470,
+														472
 													]
 												}
 											],
@@ -1587,14 +1587,14 @@
 													"fileName": "src/core.ts",
 													"line": 62,
 													"character": 36,
-													"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L62"
+													"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/core.ts#L62"
 												}
 											]
 										}
 									}
 								},
 								{
-									"id": 463,
+									"id": 467,
 									"name": "type",
 									"variant": "declaration",
 									"kind": 1024,
@@ -1604,7 +1604,7 @@
 											"fileName": "src/core.ts",
 											"line": 62,
 											"character": 6,
-											"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L62"
+											"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/core.ts#L62"
 										}
 									],
 									"type": {
@@ -1617,8 +1617,8 @@
 								{
 									"title": "Properties",
 									"children": [
-										464,
-										463
+										468,
+										467
 									]
 								}
 							],
@@ -1627,7 +1627,7 @@
 									"fileName": "src/core.ts",
 									"line": 62,
 									"character": 4,
-									"url": "https://github.com/retejs/angular-plugin/blob/f6fca36/src/core.ts#L62"
+									"url": "https://github.com/retejs/angular-plugin/blob/93bcedb/src/core.ts#L62"
 								}
 							]
 						}
@@ -1646,13 +1646,13 @@
 		{
 			"title": "Classes",
 			"children": [
-				470
+				474
 			]
 		},
 		{
 			"title": "Type Aliases",
 			"children": [
-				461
+				465
 			]
 		}
 	],
@@ -1836,95 +1836,95 @@
 			"sourceFileName": "src/presets/reroute/index.ts",
 			"qualifiedName": "props"
 		},
-		"461": {
+		"465": {
 			"sourceFileName": "src/core.ts",
 			"qualifiedName": "Produces"
 		},
-		"462": {
-			"sourceFileName": "src/core.ts",
-			"qualifiedName": "__type"
-		},
-		"463": {
-			"sourceFileName": "src/core.ts",
-			"qualifiedName": "__type.type"
-		},
-		"464": {
-			"sourceFileName": "src/core.ts",
-			"qualifiedName": "__type.data"
-		},
-		"465": {
-			"sourceFileName": "src/core.ts",
-			"qualifiedName": "__type"
-		},
 		"466": {
 			"sourceFileName": "src/core.ts",
-			"qualifiedName": "__type.payload"
+			"qualifiedName": "__type"
 		},
 		"467": {
 			"sourceFileName": "src/core.ts",
-			"qualifiedName": "__type.path"
+			"qualifiedName": "__type.type"
 		},
 		"468": {
 			"sourceFileName": "src/core.ts",
-			"qualifiedName": "__type.points"
+			"qualifiedName": "__type.data"
 		},
 		"469": {
 			"sourceFileName": "src/core.ts",
-			"qualifiedName": "Schemes"
+			"qualifiedName": "__type"
 		},
 		"470": {
 			"sourceFileName": "src/core.ts",
-			"qualifiedName": "AngularPlugin"
+			"qualifiedName": "__type.payload"
 		},
 		"471": {
 			"sourceFileName": "src/core.ts",
-			"qualifiedName": "AngularPlugin.__constructor"
+			"qualifiedName": "__type.path"
 		},
 		"472": {
 			"sourceFileName": "src/core.ts",
-			"qualifiedName": "AngularPlugin"
+			"qualifiedName": "__type.points"
 		},
 		"473": {
 			"sourceFileName": "src/core.ts",
-			"qualifiedName": "AngularPlugin.Schemes"
+			"qualifiedName": "Schemes"
 		},
 		"474": {
 			"sourceFileName": "src/core.ts",
-			"qualifiedName": "AngularPlugin.T"
+			"qualifiedName": "AngularPlugin"
 		},
 		"475": {
 			"sourceFileName": "src/core.ts",
-			"qualifiedName": "params"
+			"qualifiedName": "AngularPlugin.__constructor"
 		},
 		"476": {
 			"sourceFileName": "src/core.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "AngularPlugin"
 		},
 		"477": {
 			"sourceFileName": "src/core.ts",
+			"qualifiedName": "AngularPlugin.Schemes"
+		},
+		"478": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "AngularPlugin.T"
+		},
+		"479": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "params"
+		},
+		"480": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "__type"
+		},
+		"481": {
+			"sourceFileName": "src/core.ts",
 			"qualifiedName": "__type.injector"
-		},
-		"494": {
-			"sourceFileName": "src/core.ts",
-			"qualifiedName": "AngularPlugin.addPreset"
-		},
-		"495": {
-			"sourceFileName": "src/core.ts",
-			"qualifiedName": "AngularPlugin.addPreset"
-		},
-		"496": {
-			"sourceFileName": "src/core.ts",
-			"qualifiedName": "K"
-		},
-		"497": {
-			"sourceFileName": "src/core.ts",
-			"qualifiedName": "preset"
 		},
 		"498": {
 			"sourceFileName": "src/core.ts",
-			"qualifiedName": "AngularPlugin.Schemes"
+			"qualifiedName": "AngularPlugin.addPreset"
 		},
 		"499": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "AngularPlugin.addPreset"
+		},
+		"500": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "K"
+		},
+		"501": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "preset"
+		},
+		"502": {
+			"sourceFileName": "src/core.ts",
+			"qualifiedName": "AngularPlugin.Schemes"
+		},
+		"503": {
 			"sourceFileName": "src/core.ts",
 			"qualifiedName": "AngularPlugin.T"
 		}
