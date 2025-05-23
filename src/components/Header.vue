@@ -49,7 +49,10 @@ export default defineComponent({
         document.body.style.setProperty('--header-offset', `${bottom}px`)
       }, false)
     })
+    const localePath = useLocalePath()
+
     return {
+      localePath,
       element,
       drawer: drawer.active
     }

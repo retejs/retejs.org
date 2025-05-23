@@ -1,7 +1,7 @@
 <template lang="pug">
 .showcase
   FetchNav(v-slot="{ navigation }" target="examples")
-    .item(v-for="item in getList(navigation)" :key="item._path" )
+    .item(v-for="item in getList(navigation)" :key="item.path" )
       .info
         h2.title {{ item.showcase.title }}
         .description {{ item.showcase.description }}
@@ -20,7 +20,7 @@
         client-only
           FrameExample(:src="item.showcase.source" :lazy="true")
           template(#placeholder)
-            NuxtLink(:to="pathSanitizer.sanitize(item._path)")
+            NuxtLink(:to="pathSanitizer.sanitize(item.path)")
               noscript
                 img(:src="getPreview(item.preview)" loading="lazy")
 
@@ -33,7 +33,9 @@ import { usePathSanitizer } from '../shared/route'
 
 export default {
   setup() {
+    const localePath = useLocalePath()
     return {
+      localePath,
       pathSanitizer: usePathSanitizer()
     }
   },

@@ -3,12 +3,12 @@
   div(v-for="item in list")
     SsrMenuItem(
       v-if="!item.children"
-      :name="sanitize(item._path)"
-      :to="sanitize(item._path)"
-      :active="$route.path === sanitize(item._path)"
+      :name="sanitize(item.path)"
+      :to="sanitize(item.path)"
+      :active="$route.path === sanitize(item.path)"
     )
       slot(name="item" :data="item") {{ item.title }}
-    SsrSubmenu.submenu(v-if="item.children" :name="sanitize(item._path)")
+    SsrSubmenu.submenu(v-if="item.children" :name="sanitize(item.path)")
       template(#title) {{ item.title }}
       SsrNav(v-if="item.children" :list="item.children" :active="active")
 </template>

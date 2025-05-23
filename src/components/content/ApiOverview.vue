@@ -1,9 +1,9 @@
 <template lang="pug">
 .api-overview(:class="{ top }")
   FetchNav(v-slot="{ navigation }" target="docs")
-    Card.item(v-for="data of getList(navigation)", :key="data._path")
+    Card.item(v-for="data of getList(navigation)", :key="data.path")
       template(#title)
-        NuxtLink(:to="sanitize(data._path)") {{ data.title }}
+        NuxtLink(:to="sanitize(data.path)") {{ data.title }}
         Tooltip(content="Open on NPM", placement="top")
           NuxtLink(:to="'https://www.npmjs.com/package/' + data.title", target="_blank", @click.stop="")
             Icon.npm.icon(name="ion:logo-npm")
@@ -28,7 +28,7 @@ export default {
     return {
       sanitize,
       getList(navigation) {
-        const api = navigation.children.find(n => n._path.endsWith('/docs/api'))
+        const api = navigation.children.find(n => n.path.endsWith('/docs/api'))
 
         if (!api) return []
 

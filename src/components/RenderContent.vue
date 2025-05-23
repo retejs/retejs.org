@@ -1,7 +1,6 @@
 <template lang="pug">
-ContentRenderer(:value="data")
-  template(#empty)
-    slot(name="not-found")
+ContentRenderer(v-if="data" :value="data")
+slot(v-else name="not-found")
 </template>
 
 <script setup lang="ts">
@@ -25,7 +24,7 @@ const dataRef = ref(null)
 
 if (props.share) useShareThis(computed(() => dataRef.value && props.share(dataRef.value)))
 
-const { data } = await useAsyncData(path, () => queryContent(path).findOne())
+const { data } = await useAsyncData(path, () => queryCollection('content').path(path).first())
 
 if (data.value) {
   const { image, description, keywords } = data.value

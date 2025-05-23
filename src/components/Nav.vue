@@ -4,12 +4,12 @@ client-only
     template(v-for="item in list")
       MenuItem(
         v-if="!item.children && !item.placeholder"
-        :name="sanitize(item._path)"
-        :to="sanitize(item._path)"
+        :name="sanitize(item.path)"
+        :to="sanitize(item.path)"
       )
         slot(name="item" :data="item")
           .title {{ item.title }}
-      Submenu.submenu(v-if="item.children" :name="sanitize(item._path)")
+      Submenu.submenu(v-if="item.children" :name="sanitize(item.path)")
         template(#title)
           .title {{ item.title }}
         Nav(:list="item.children" :active="activeName")

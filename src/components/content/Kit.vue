@@ -19,6 +19,13 @@ Banner(
 import Banner from '../shared/Banner.vue'
 
 export default {
+  setup() {
+    const localePath = useLocalePath()
+
+    return {
+      localePath
+    }
+  },
   data() {
     return {
       link: '/docs/development/rete-kit',

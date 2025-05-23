@@ -2,7 +2,7 @@
 .overview(:class="{ top }")
   FetchNav(v-slot="{ navigation }" :target="target")
     template(v-for="data of getList(navigation)")
-      NuxtLink(:to="sanitize(data._path)")
+      NuxtLink(:to="sanitize(data.path)")
         ExampleCard.item(
           :title="data.title"
           :preview="data.preview"
@@ -26,14 +26,14 @@ export default {
       return examples
         .filter(item => item.overviewGroup)
         .filter(item => props.filter
-          ? props.filter !== sanitize(item._path)
+          ? props.filter !== sanitize(item.path)
           : true)
     }
     function isGroup(item) {
       return item.overviewGroup
     }
     function isInsideGroup(item, group) {
-      return item._path !== group._path && item._path.startsWith(group._path)
+      return item.path !== group.path && item.path.startsWith(group.path)
     }
     function isInsideGroups(item, groups) {
       return groups.some(g => isInsideGroup(item, g))
@@ -47,7 +47,7 @@ export default {
         const groups = extractGroups(examples)
 
         const list = examples
-          .filter(item => !props.filter || sanitize(item._path).startsWith(props.filter))
+          .filter(item => !props.filter || sanitize(item.path).startsWith(props.filter))
           .filter(item => isGroup(item) || !item.noPreview && !item.placeholder)
           .filter(item => !isInsideGroups(item, groups))
           .filter(item => !isGroup(item) || groups.includes(item))

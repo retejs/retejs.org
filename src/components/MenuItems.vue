@@ -32,4 +32,5 @@ function activeClass(name: string) {
     : {}
 }
 
+const localePath = useLocalePath()
 </script>

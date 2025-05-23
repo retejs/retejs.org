@@ -12,8 +12,7 @@ const path = contentPath.value.replace('/preview/', '/examples/')
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-const { data } = await useAsyncData(path, () => queryContent(path).findOne())
-
+const { data } = await useAsyncData(path, () => queryCollection('content').path(path).first())
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 definePageMeta({

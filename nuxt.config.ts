@@ -2,14 +2,12 @@
 import { resolve } from 'path';
 import { isCI, isDevelopment } from 'std-env';
 import { splitVendorChunkPlugin } from 'vite';
-import TypeDoc from './typedoc/index.mjs';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   ssr: true,
   srcDir: 'src',
   modules: [
-    TypeDoc,
     '@nuxt/content',
     '@nuxtjs/i18n',
     'nuxt-purgecss',
@@ -40,11 +38,18 @@ export default defineNuxtConfig({
     },
   },
   content: {
-    highlight: {
-      theme: 'one-dark-pro',
-    },
-    markdown: {
-      remarkPlugins: ['remark-heading-id'],
+    build: {
+      transformers: [
+        './typedoc/transformer.ts',
+      ],
+      markdown: {
+        highlight: {
+          theme: 'one-dark-pro',
+        },
+        remarkPlugins: {
+          'remark-heading-id': {}
+        }
+      }
     },
   },
   purgecss: {
@@ -65,7 +70,6 @@ export default defineNuxtConfig({
     },
     lazy: true,
     defaultLocale: 'en',
-    langDir: 'locales',
   },
   app: {
     head: {
