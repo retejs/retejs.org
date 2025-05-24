@@ -7,16 +7,16 @@
         .description {{ item.showcase.description }}
         .links
           Button.button(:to="localePath('/examples')" shape="circle" type="primary")
-            Icon.icon(name="fa6-solid:code")
+            NuxtIcon.icon(name="fa6-solid:code")
             | {{t('examples')}}
           Button.button(:to="localePath('/docs/')" shape="circle" type="primary")
-            Icon.icon(name="fa6-solid:book-open")
+            NuxtIcon.icon(name="fa6-solid:book-open")
             | {{t('docs')}}
       Card.preview(:padding="0")
         .open
           Tooltip(:content="t('openNewTab')" placement="top-end")
             Button.link(:to="item.showcase.link || item.showcase.source" target="_blank")
-              Icon(name="f7:link")
+              NuxtIcon(name="f7:link")
         client-only
           FrameExample(:src="item.showcase.source" :lazy="true")
           template(#placeholder)

@@ -9,7 +9,7 @@ Drawer(
 
 <script setup lang="ts">
 import { onMounted } from 'vue'
-import { Drawer } from 'view-ui-plus-es'
+import { Drawer } from '../../../iview'
 import { useRouter } from 'vue-router'
 
 interface Props {

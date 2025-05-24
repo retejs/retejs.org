@@ -2,7 +2,7 @@
 .links
   a.link(v-for="{title, icon, to} of links" :href="to" target="_blank")
     Tooltip(:content="title", :key="to")
-      Icon.icon(:name="icon")
+      NuxtIcon.icon(:name="icon")
 
 </template>
 

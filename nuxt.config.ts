@@ -18,17 +18,29 @@ export default defineNuxtConfig({
   telemetry: false,
   css: [
     '~/assets/styles/global.css',
-    resolve(__dirname, 'node_modules/view-ui-plus-es/dist/styles/viewuiplus.css'),
+    './iview/styles/base.less'
+    // './iview/styles/index.less'
+    // resolve(__dirname, 'node_modules/view-ui-plus-es/dist/styles/viewuiplus.css'),
   ],
   typescript: {
     typeCheck: true,
     includeWorkspace: true,
+  },
+  icon: {
+    componentName: 'NuxtIcon',
   },
   site: {
     url: 'https://retejs.org',
     name: 'Rete.js'
   },
   vite: {
+    css: {
+      preprocessorOptions: {
+        less: {
+          javascriptEnabled: true,
+        },
+      },
+    },
     plugins: [
       splitVendorChunkPlugin(),
     ],
@@ -132,4 +144,12 @@ export default defineNuxtConfig({
     srcDir: 'src',
     filename: 'sw.ts',
   },
+  alias: {
+    'styled': resolve('./styled')
+  },
+  // postcss: {
+  //   plugins: {
+  //     '@pandacss/dev/postcss': {},
+  //   }
+  // }
 });

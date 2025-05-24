@@ -12,7 +12,7 @@
       img(:src="originBadge" alt="Stand with Ukraine")
   Logo.logo(v-if="!intro" :hover="logoIsHovered" :zoomIn="false")
   Button.intro-button(v-if="!intro" shape="circle" type="primary" @click="intro = true")
-    Icon.icon(name="fa6-brands:youtube")
+    NuxtIcon.icon(name="fa6-brands:youtube")
     | Intro
   Intro.intro(:show="intro" :scroll="true" :autoplay="true")
   .highlights.section

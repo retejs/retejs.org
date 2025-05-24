@@ -11,7 +11,7 @@
     .methods
       .patreon.payment
         a.button(:href="patreon.link" target="_blank")
-          Icon.icon(name="simple-icons:patreon")
+          NuxtIcon.icon(name="simple-icons:patreon")
           .text Become a patron
         p.description {{ t('sponsorPage.patreon.description') }}
         p.description
@@ -19,7 +19,7 @@
           | !{' '}
           | {{ t('sponsorPage.patreon.benefits') }}
       .opencollective.payment
-        a(:href="opencollective.link" target="_blank")
+        Link(:href="opencollective.link" target="_blank")
           img.button(:src="opencollective.link + '/button@2x.png?color=blue'")
         p.description {{ t('sponsorPage.opencollective.description') }}
         p.description
@@ -30,12 +30,13 @@
   .section
     p.contacts {{ t('sponsorPage.contacts') }}
       | !{' '}
-      a(href="mailto:info@retejs.org") info@retejs.org
+      Link(href="mailto:info@retejs.org") info@retejs.org
 </template>
 
 <script setup lang="ts">
 import { useSeoMeta } from '#imports'
 import { useI18n } from 'vue-i18n'
+import Link from '@/components/Link.vue'
 
 import sponsor from '../../consts/sponsor.json'
 import { mainPreview } from '../../shared/assets'
@@ -103,6 +104,7 @@ const { patreon, opencollective } = sponsor
   .button
     height: 45px
     width: 280px
+    margin: auto
 
 .contacts
   font-size: 0.95em

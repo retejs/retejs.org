@@ -2,7 +2,7 @@
 .overview(:class="{ top }")
   FetchNav(v-slot="{ navigation }" :target="target")
     template(v-for="data of getList(navigation)")
-      NuxtLink(:to="sanitize(data.path)")
+      Link(:href="sanitize(data.path)")
         ExampleCard.item(
           :title="data.title"
           :preview="data.preview"
@@ -15,6 +15,7 @@
 import { flat } from '../../shared/navigation'
 import { usePathSanitizer } from '../../shared/route'
 import ExampleCard from '../shared/ExampleCard.vue'
+import Link from '../Link.vue'
 
 interface Props {
   top?: boolean

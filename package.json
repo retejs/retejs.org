@@ -3,6 +3,7 @@
   "version": "0.2.1",
   "private": true,
   "scripts": {
+    "prepare": "panda codegen",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "analyze": "npx nuxi analyze",
@@ -13,6 +14,7 @@
     "update-diagrams:ci": "bash ./scripts/update-diagrams.bash"
   },
   "dependencies": {
+    "@ark-ui/vue": "^5.9.1",
     "@docsearch/css": "^3.5.2",
     "@docsearch/js": "^3.5.2",
     "@nuxt/content": "^3.5.1",
@@ -42,6 +44,7 @@
     "@nuxt/icon": "^1.13.0",
     "@nuxtjs/i18n": "^9.5.4",
     "@nuxtjs/sitemap": "^7.3.0",
+    "@pandacss/dev": "^0.53.6",
     "@vite-pwa/nuxt": "0.4.0",
     "@vue/cli-plugin-pwa": "~5.0.8",
     "@vue/cli-plugin-router": "~5.0.8",
@@ -51,6 +54,8 @@
     "@vue/language-plugin-pug": "^2.2.10",
     "eslint-plugin-vue": "^9.33.0",
     "eslint-plugin-vue-pug": "^0.6.2",
+    "less": "^4.3.0",
+    "less-loader": "^12.3.0",
     "nuxt": "^3.17.4",
     "nuxt-purgecss": "^2.0.0",
     "pug": "^3.0.2",

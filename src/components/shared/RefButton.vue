@@ -4,7 +4,7 @@ Button(
   size="small"
   :to="link"
 )
-  Icon.icon(:name="icon")
+  NuxtIcon.icon(:name="icon")
   | {{title}}
 </template>
 

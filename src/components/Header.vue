@@ -8,7 +8,7 @@
       Logo.icon.ivu-icon(:hover="true")
       span.title Rete.js
     .menu-burger(@click="drawer = true")
-      Icon(name="mdi:hamburger-menu" :size="20")
+      NuxtIcon(name="mdi:hamburger-menu" :size="20")
     .space
     Links.links
     Search.search

@@ -6,10 +6,10 @@
         NuxtLink(:to="sanitize(data.path)") {{ data.title }}
         Tooltip(content="Open on NPM", placement="top")
           NuxtLink(:to="'https://www.npmjs.com/package/' + data.title", target="_blank", @click.stop="")
-            Icon.npm.icon(name="ion:logo-npm")
+            NuxtIcon.npm.icon(name="ion:logo-npm")
         Tooltip(v-if="data.repository" content="Open repository", placement="top")
           NuxtLink(:to="data.repository", target="_blank", @click.stop="")
-            Icon.gh.icon(name="ion:logo-github")
+            NuxtIcon.gh.icon(name="ion:logo-github")
 </template>
 
 <script setup lang="ts">

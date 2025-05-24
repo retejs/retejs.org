@@ -4,7 +4,7 @@ Menu.menu(width="var(--menu-width)")
     .text
       slot(name="title")
     .menu-burger(@click="$emit('open')")
-      Icon(name="mdi:hamburger-menu" :size="20")
+      NuxtIcon(name="mdi:hamburger-menu" :size="20")
   .content-nav
     slot
 </template>

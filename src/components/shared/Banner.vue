@@ -12,7 +12,7 @@ IViewAlert.banner(show-icon)
         shape="circle"
         @click="$emit('tooltip')"
       )
-        Icon.icon(:name="tooltip.icon")
+        NuxtIcon.icon(:name="tooltip.icon")
     Button.button(
       v-if="action"
       :target="action.target"
@@ -20,7 +20,7 @@ IViewAlert.banner(show-icon)
       @click="$emit('action')"
     ) {{ action.label }}
   template(#icon)
-    Icon.icon(:name="icon")
+    NuxtIcon.icon(:name="icon")
 </template>
 
 <script setup lang="ts">
