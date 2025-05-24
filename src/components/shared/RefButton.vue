@@ -22,4 +22,5 @@ defineProps<Props>()
 .icon
   margin-right: 0.3em
   vertical-align: text-bottom
+  max-width: 14px
 </style>

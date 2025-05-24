@@ -24,11 +24,12 @@ defineProps<Props>()
     text-transform: uppercase
     color: #8f8f8f
     padding: 0.4em 0.8em
-    font-size: 0.65em
+    font-size: 0.65rem
+    font-family: Ubuntu, sans-serif
 
 pre
   padding: 1em
-  margin: 0.5em 0
+  margin: 16px 0px
   border-radius: 1em
   background: $code-background
   font-size: 0.9em
