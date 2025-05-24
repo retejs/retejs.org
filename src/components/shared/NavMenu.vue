@@ -9,11 +9,16 @@ Menu.menu(width="var(--menu-width)")
     slot
 </template>
 
-<script lang="ts">
-export default {
-  props: ['open']
+<script setup lang="ts">
+interface Props {
+  open?: boolean
 }
 
+defineProps<Props>()
+
+defineEmits<{
+  open: []
+}>()
 </script>
 
 <style lang="sass" scoped>

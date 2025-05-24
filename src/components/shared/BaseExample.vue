@@ -6,17 +6,14 @@
     slot
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import Loading from './Loading.vue'
 
-export default {
-  props: {
-    src: String
-  },
-  components: {
-    Loading
-  }
+interface Props {
+  src?: string
 }
+
+defineProps<Props>()
 </script>
 
 <style lang="sass" scoped>

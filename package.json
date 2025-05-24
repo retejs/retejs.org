@@ -39,6 +39,7 @@
     "vue-i18n": "^11.1.3"
   },
   "devDependencies": {
+    "@nuxt/icon": "^1.13.0",
     "@nuxtjs/i18n": "^9.5.4",
     "@vite-pwa/nuxt": "0.4.0",
     "@vue/cli-plugin-pwa": "~5.0.8",
@@ -46,9 +47,10 @@
     "@vue/cli-plugin-typescript": "~5.0.8",
     "@vue/cli-service": "~5.0.8",
     "@vue/eslint-config-typescript": "^14.1.3",
-    "eslint-plugin-vue": "^9.30.0",
+    "@vue/language-plugin-pug": "^2.2.10",
+    "eslint-plugin-vue": "^9.33.0",
+    "eslint-plugin-vue-pug": "^0.6.2",
     "nuxt": "^3.17.4",
-    "nuxt-icon": "^1.0.0-beta.7",
     "nuxt-purgecss": "^2.0.0",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
@@ -62,6 +64,7 @@
     "style-loader": "^3.3.4",
     "typedoc": "^0.24.8",
     "typescript": "^5.8.3",
+    "vue-tsc": "^2.2.10",
     "webpack-cdn-plugin": "^3.3.1",
     "webpack-pwa-manifest": "^4.3.0",
     "workbox-build": "^7.0.0",

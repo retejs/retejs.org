@@ -16,108 +16,97 @@
     )
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue'
-
 import Pointer from '@/components/shared/Pointer.vue'
 
 import { createEditor, introductionGraph } from '../../shared/editor'
 
-export default {
-  setup() {
-    const canva = ref(null)
-    const container = ref(null)
-    const pointers = ref([])
-    const scale = ref(1)
+const canva = ref<HTMLElement | null>(null)
+const container = ref<HTMLElement | null>(null)
+const pointers = ref<any[]>([])
+const scale = ref(1)
 
-    function updatePointers(area, nodeA, nodeAdd) {
-      const aPosition = area.nodeViews.get(nodeA.id).position
-      const addPosition = area.nodeViews.get(nodeAdd.id).position
-      const { k, x, y } = area.area.transform
+function updatePointers(area: any, nodeA: any, nodeAdd: any) {
+  const aPosition = area.nodeViews.get(nodeA.id).position
+  const addPosition = area.nodeViews.get(nodeAdd.id).position
+  const { k, x, y } = area.area.transform
 
-      pointers.value = []
-      pointers.value.push({
-        len: 5,
-        x: k * (aPosition.x + 65) + x,
-        y: k * (aPosition.y + 92) + y,
-        r: 125,
-        title: 'Control'
-      })
-      pointers.value.push({
-        len: 3,
-        x: k * (aPosition.x + 185) + x,
-        y: k * (aPosition.y + 60) + y,
-        r: 45,
-        title: 'Socket'
-      })
+  pointers.value = []
+  pointers.value.push({
+    len: 5,
+    x: k * (aPosition.x + 65) + x,
+    y: k * (aPosition.y + 92) + y,
+    r: 125,
+    title: 'Control'
+  })
+  pointers.value.push({
+    len: 3,
+    x: k * (aPosition.x + 185) + x,
+    y: k * (aPosition.y + 60) + y,
+    r: 45,
+    title: 'Socket'
+  })
 
-      pointers.value.push({
-        len: 3,
-        x: k * (addPosition.x + 185) + x,
-        y: k * (addPosition.y + 50) + y,
-        r: -50,
-        title: 'Output'
-      })
+  pointers.value.push({
+    len: 3,
+    x: k * (addPosition.x + 185) + x,
+    y: k * (addPosition.y + 50) + y,
+    r: -50,
+    title: 'Output'
+  })
 
-      pointers.value.push({
-        len: 3,
-        x: k * (addPosition.x + -5) + x,
-        y: k * (addPosition.y + 135) + y,
-        r: 150,
-        title: 'Input'
-      })
-      pointers.value.push({
-        len: 8,
-        x: k * (addPosition.x + 120) + x,
-        y: k * (addPosition.y + 165) + y,
-        r: 120,
-        title: 'Node'
-      })
-      scale.value = k
-    }
-    let resizeHandler = null
-    let instance = null
-
-    onMounted(async () => {
-      instance = await createEditor(container.value, {
-        multiselect: true,
-        order: true
-      })
-      const { area, resize, nodeSelector } = instance
-      const { nodes } = await introductionGraph(instance)
-
-      resizeHandler = () => {
-        resize(canva.value.clientWidth, 706)
-      }
-
-      nodeSelector.select(nodes.add.id)
-      resizeHandler()
-      updatePointers(area, nodes.a, nodes.add)
-
-      area.addPipe(ctx => {
-        if (ctx.type === 'zoomed' || ctx.type === 'translated' || ctx.type === 'nodetranslated') {
-          updatePointers(area, nodes.a, nodes.add)
-        }
-        return ctx
-      })
-
-      window.addEventListener('resize', resizeHandler)
-    })
-    onUnmounted(() => {
-      if (instance) instance.area.destroy()
-      if (resizeHandler) window.removeEventListener('resize', resizeHandler)
-    })
-    return {
-      canva,
-      container,
-      pointers,
-      scale
-    }
-  },
-  components: {
-    Pointer
-  }
+  pointers.value.push({
+    len: 3,
+    x: k * (addPosition.x + -5) + x,
+    y: k * (addPosition.y + 135) + y,
+    r: 150,
+    title: 'Input'
+  })
+  pointers.value.push({
+    len: 8,
+    x: k * (addPosition.x + 120) + x,
+    y: k * (addPosition.y + 165) + y,
+    r: 120,
+    title: 'Node'
+  })
+  scale.value = k
 }
+
+let resizeHandler: (() => void) | null = null
+let instance: any = null
+
+onMounted(async () => {
+  if (!container.value) return
+  instance = await createEditor(container.value, {
+    multiselect: true,
+    order: true
+  })
+  const { area, resize, nodeSelector } = instance
+  const { nodes } = await introductionGraph(instance)
+
+  resizeHandler = () => {
+    resize((canva.value as HTMLElement).clientWidth, 706)
+  }
+
+  nodeSelector.select(nodes.add.id)
+  resizeHandler()
+  updatePointers(area, nodes.a, nodes.add)
+
+  area.addPipe((ctx: any) => {
+    if (ctx.type === 'zoomed' || ctx.type === 'translated' || ctx.type === 'nodetranslated') {
+      updatePointers(area, nodes.a, nodes.add)
+    }
+    return ctx
+  })
+
+  window.addEventListener('resize', resizeHandler)
+})
+
+onUnmounted(() => {
+  if (instance) instance.area.destroy()
+  if (resizeHandler) window.removeEventListener('resize', resizeHandler)
+})
 
 </script>
 

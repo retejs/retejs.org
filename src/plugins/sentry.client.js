@@ -1,3 +1,4 @@
+import { defineNuxtPlugin } from "#app";
 import {
   init, browserTracingIntegration, BrowserProfilingIntegration, replayIntegration
 } from "@sentry/vue";

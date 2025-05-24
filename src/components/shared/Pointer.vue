@@ -18,67 +18,67 @@
   </div>
 </template>
 
-<script lang="ts">
-export default {
-  props: ['length', 'size', 'x', 'y', 'rotate', 'title', 'scale'],
-  computed: {
-    cx() {
-      return this.size / 2
-    },
-    cy() {
-      return this.size / 2
-    },
-    r() {
-      return this.size * 0.4
-    },
-    offset() {
-      return this.size * 0.3
-    },
-    path() {
-      return `M ${this.cx} ${this.offset} L ${this.cx} ${this.size - this.offset} L ${this.length * this.size} ${this.cy} Z`
-    },
-    rootStyles() {
-      return {
-        left: `${this.x - this.cx * this.scale}px`,
-        top: `${this.y - this.cy * this.scale}px`,
-        transform: `scale(${this.scale})`
-      }
-    },
-    svgStyles() {
-      return {
-        transformOrigin: `${this.cx}px ${this.cy}px`,
-        transform: `rotate(${this.rotate}deg)`
-      }
-    },
-    titleStyles() {
-      const rotatePointAroundEllipse = (point: any, angle: any) => {
-        const [x1, y1] = point
-        const theta = angle * Math.PI / 180
-        const cos = Math.cos(theta)
-        const sin = Math.sin(theta)
-        const x2 = x1 * cos - y1 * sin
-        const y2 = x1 * sin + y1 * cos
+<script setup lang="ts">
+import { computed } from 'vue'
 
-        return [x2, y2]
-      }
-
-      const x0 = this.length * this.size + 5
-      const y0 = 0
-      const [x1, y1] = rotatePointAroundEllipse([x0, y0], this.rotate)
-      // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
-      const r = (this.rotate + 360) % 360
-      const offset = r > 180
-        ? (360 - r) / 180
-        : r / 180
-
-      return {
-        left: `${x1}px`,
-        top: `${y1}px`,
-        transform: `translate(${-offset * 100}%, 0%)`
-      }
-    }
-  }
+interface Props {
+  length: number
+  size: number
+  x: number
+  y: number
+  rotate: number
+  title: string
+  scale: number
 }
+
+const props = defineProps<Props>()
+
+const cx = computed(() => props.size / 2)
+const cy = computed(() => props.size / 2)
+const r = computed(() => props.size * 0.4)
+const offset = computed(() => props.size * 0.3)
+
+const path = computed(() =>
+  `M ${cx.value} ${offset.value} L ${cx.value} ${props.size - offset.value} L ${props.length * props.size} ${cy.value} Z`
+)
+
+const rootStyles = computed(() => ({
+  left: `${props.x - cx.value * props.scale}px`,
+  top: `${props.y - cy.value * props.scale}px`,
+  transform: `scale(${props.scale})`
+}))
+
+const svgStyles = computed(() => ({
+  transformOrigin: `${cx.value}px ${cy.value}px`,
+  transform: `rotate(${props.rotate}deg)`
+}))
+
+const titleStyles = computed(() => {
+  const rotatePointAroundEllipse = (point: [number, number], angle: number) => {
+    const [x1, y1] = point
+    const theta = angle * Math.PI / 180
+    const cos = Math.cos(theta)
+    const sin = Math.sin(theta)
+    const x2 = x1 * cos - y1 * sin
+    const y2 = x1 * sin + y1 * cos
+
+    return [x2, y2]
+  }
+
+  const x0 = props.length * props.size + 5
+  const y0 = 0
+  const [x1, y1] = rotatePointAroundEllipse([x0, y0], props.rotate)
+  const r = (props.rotate + 360) % 360
+  const offsetValue = r > 180
+    ? (360 - r) / 180
+    : r / 180
+
+  return {
+    left: `${x1}px`,
+    top: `${y1}px`,
+    transform: `translate(${-offsetValue * 100}%, 0%)`
+  }
+})
 </script>
 
 <style lang="sass" scoped>

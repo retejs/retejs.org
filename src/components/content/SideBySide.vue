@@ -6,10 +6,11 @@
     slot(name="right")
 </template>
 
-<script lang="ts">
-export default {
-  props: ['left', 'right']
-}
+<script setup lang="ts">
+defineProps<{
+  left?: string
+  right?: string
+}>()
 </script>
 
 <style lang="sass" scoped>

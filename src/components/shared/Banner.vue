@@ -23,20 +23,29 @@ IViewAlert.banner(show-icon)
     Icon.icon(:name="icon")
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    icon: String,
-    tooltip: {
-      type: Object,
-      default: null
-    },
-    action: {
-      type: Object,
-      default: null
-    }
-  }
+<script setup lang="ts">
+interface TooltipConfig {
+  icon: string
 }
+
+interface ActionConfig {
+  label: string
+  to?: string
+  target?: string
+}
+
+interface Props {
+  icon: string
+  tooltip?: TooltipConfig | null
+  action?: ActionConfig | null
+}
+
+defineProps<Props>()
+
+defineEmits<{
+  tooltip: []
+  action: []
+}>()
 </script>
 
 <style lang="sass" scoped>

@@ -1,7 +1,7 @@
 <template lang="pug">
 client-only
-  .sharethis(:class="{ visible: sharethis.visible }")
-    .sharethis-sticky-share-buttons(v-bind="sharethis.data")
+  .sharethis(:class="{ visible: sharethis?.visible }")
+    .sharethis-sticky-share-buttons(v-bind="sharethis?.data")
 slot
 </template>
 

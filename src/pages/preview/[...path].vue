@@ -4,17 +4,15 @@ img(:src="src")
 </template>
 
 <script setup lang="ts">
+import { useAsyncData, queryCollection, definePageMeta } from '#imports'
 import { getPreview, mainPreview } from '../../shared/assets'
 import { useContentPath } from '../../shared/content'
 
 const contentPath = useContentPath()
 const path = contentPath.value.replace('/preview/', '/examples/')
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-const { data } = await useAsyncData(path, () => queryCollection('content').path(path).first())
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
+const { data } = await useAsyncData(path, () => queryCollection('content' as never).path(path).first())
+
 definePageMeta({
   layout: 'preview'
 })

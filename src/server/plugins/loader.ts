@@ -1,8 +1,8 @@
+import { defineNitroPlugin } from 'nitropack/runtime'
+
 const id = `loader-${Math.random().toString(16)
   .split('.')[1]}`
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 export default defineNitroPlugin((nitroApp: any) => {
   nitroApp.hooks.hook('render:html', (html: any) => {
     html.head.unshift(`<script>

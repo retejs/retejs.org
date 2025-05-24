@@ -2,17 +2,18 @@
 RefButton(
   :title="title"
   icon="fa6-solid:book-open"
-  :to="link"
+  :link="link"
 )
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import RefButton from '../shared/RefButton.vue'
 
-export default {
-  components: {
-    RefButton
-  },
-  props: ['title', 'link']
+interface Props {
+  title: string
+  link: string
 }
+
+defineProps<Props>()
 </script>

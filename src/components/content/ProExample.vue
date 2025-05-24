@@ -2,10 +2,10 @@
 Banner(
   icon="ion:finger-print"
   :tooltip="{ icon: 'f7:question-circle' }"
-  :action="{ label: $t('examplesPage.proExample.getAccess'), to: patreon.link, target: '_blank' }"
+  :action="{ label: t('examplesPage.proExample.getAccess'), to: patreon.link, target: '_blank' }"
 )
-  template(v-slot:text) {{ $t('examplesPage.proExample.alert') }}
-  template(v-slot:tooltip) {{ $t('examplesPage.proExample.info') }}
+  template(v-slot:text) {{ t('examplesPage.proExample.alert') }}
+  template(v-slot:tooltip) {{ t('examplesPage.proExample.info') }}
 
 BaseExample
   iframe(
@@ -14,25 +14,21 @@ BaseExample
   )
 </template>
 
-<script lang="ts">
-import sponsor from '../../consts/sponsor.json'
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import Banner from '../shared/Banner.vue'
 import BaseExample from '../shared/BaseExample.vue'
+import sponsor from '../../consts/sponsor.json'
 
-export default {
-  props: {
-    src: String
-  },
-  data() {
-    return {
-      ...sponsor
-    }
-  },
-  components: {
-    Banner,
-    BaseExample
-  }
+interface Props {
+  src: string
 }
+
+defineProps<Props>()
+
+const { t } = useI18n()
+
+const { patreon } = sponsor
 </script>
 
 <style lang="sass" scoped>

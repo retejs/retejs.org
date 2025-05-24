@@ -1,7 +1,7 @@
 {
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2017",
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
@@ -21,13 +21,24 @@
     "paths": {
       "@/*": [
         "src/*"
-      ]
+      ],
+      "#imports": [
+        "./.nuxt/imports"
+      ],
+      "#components": [
+        "./.nuxt/components"
+      ],
     },
     "lib": [
       "esnext",
       "dom",
       "dom.iterable",
       "scripthost"
+    ]
+  },
+  "vueCompilerOptions": {
+    "plugins": [
+      "@vue/language-plugin-pug"
     ]
   },
   "include": [

@@ -1,3 +1,4 @@
+import { defineNuxtPlugin } from "#app";
 import {
   Menu, MenuItem, Select, Submenu, Dropdown, Option,
   Drawer, Button, Alert, Tag, Tooltip, Collapse, Panel,

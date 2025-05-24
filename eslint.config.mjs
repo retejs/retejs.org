@@ -3,10 +3,12 @@ import configs from "rete-cli/configs/eslint.mjs";
 import pluginVue from "eslint-plugin-vue";
 import vueTsEslintConfig from "@vue/eslint-config-typescript";
 import tsParser from "@typescript-eslint/parser";
+import vuePug from "eslint-plugin-vue-pug";
 
 export default tseslint.config(
   ...configs,
   ...pluginVue.configs["flat/essential"],
+  ...vuePug.configs["vue3-recommended"],
   ...vueTsEslintConfig(),
   {
     ...configs[configs.length - 2],

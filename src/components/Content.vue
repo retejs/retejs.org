@@ -3,14 +3,8 @@ IViewContent.content
   slot
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { Content as IViewContent } from 'view-ui-plus-es'
-
-export default {
-  components: {
-    IViewContent
-  }
-}
 </script>
 
 <style lang="sass" scoped>

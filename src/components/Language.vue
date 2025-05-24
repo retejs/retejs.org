@@ -16,11 +16,13 @@
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 import SsrSelect from './ssr/SsrSelect.vue'
+import { useSwitchLocalePath } from '#imports'
 
 const i18n = useI18n()
 const router = useRouter()
 const switchLocalePath = useSwitchLocalePath()
 const locale = i18n.locale
+// @ts-ignore
 const locales = i18n.locales
 
 const setLocale = (lang: string) => {

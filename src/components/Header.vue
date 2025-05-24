@@ -24,10 +24,12 @@
       Links.links
 </template>
 
-<script lang="ts">
-import { defineComponent, onMounted, ref } from 'vue'
-
+<script setup lang="ts">
+import { onMounted, ref } from 'vue'
+import { useLocalePath } from '#imports'
 import { useDrawer } from '../shared/drawer'
+
+// Component imports are automatically available in template with script setup
 import Language from './Language.vue'
 import Links from './Links.vue'
 import Logo from './Logo.vue'
@@ -35,36 +37,23 @@ import MenuItems from './MenuItems.vue'
 import Search from './Search.vue'
 import Drawer from './shared/Drawer.vue'
 
-export default defineComponent({
-  setup() {
-    const element = ref(null)
-    const drawer = useDrawer()
 
-    onMounted(() => {
-      window.addEventListener('scroll', () => {
-        if (!element.value) return
+// Template refs and reactive data
+const element = ref<HTMLElement | null>(null)
+const { active: drawer } = useDrawer()
 
-        const { bottom } = element.value.getBoundingClientRect()
+// Nuxt i18n composable (auto-imported in Nuxt)
+// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
+const localePath = useLocalePath()
 
-        document.body.style.setProperty('--header-offset', `${bottom}px`)
-      }, false)
-    })
-    const localePath = useLocalePath()
+onMounted(() => {
+  window.addEventListener('scroll', () => {
+    if (!element.value) return
 
-    return {
-      localePath,
-      element,
-      drawer: drawer.active
-    }
-  },
-  components: {
-    Logo,
-    Language,
-    MenuItems,
-    Search,
-    Drawer,
-    Links
-  }
+    const { bottom } = element.value.getBoundingClientRect()
+
+    document.body.style.setProperty('--header-offset', `${bottom}px`)
+  }, false)
 })
 </script>
 

@@ -12,13 +12,17 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'nuxt-purgecss',
     '@vite-pwa/nuxt',
-    'nuxt-icon',
+    '@nuxt/icon',
   ],
   telemetry: false,
   css: [
     '~/assets/styles/global.css',
     resolve(__dirname, 'node_modules/view-ui-plus-es/dist/styles/viewuiplus.css'),
   ],
+  typescript: {
+    typeCheck: true,
+    includeWorkspace: true,
+  },
   vite: {
     plugins: [
       splitVendorChunkPlugin(),
@@ -36,6 +40,9 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+  imports: {
+    autoImport: false
   },
   content: {
     build: {

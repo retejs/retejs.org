@@ -1,26 +1,26 @@
 <template lang="pug">
 .examples
   FetchNav(v-slot="{ navigation }" target="examples")
-    NavMenu(@open="drawer = true")
-      template(#title) {{ $t('examples') }}
+    NavMenu(@open="drawer.setActive(true)")
+      template(#title) {{ t('examples') }}
       ExamplesNav(:navigation="navigation")
     NuxtLink(:href="preview")
     .content.markdown
       RenderContent(
         :path="contentPath"
         :share="share"
-        :title="data => !data.overview && $t('examplesPage.title', { title: data.title })"
+        :title="data => !data.overview && t('examplesPage.title', { title: data.title })"
         :largePreview="true"
       )
         template(#not-found)
           NotFound(:standalone="false")
-    Drawer(v-model="drawer")
+    Drawer(v-model="drawer.active")
       .drawer-content
         ExamplesNav(:navigation="navigation")
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 
 import ExamplesNav from '@/components/ExamplesNav.vue'
@@ -33,33 +33,18 @@ import NotFound from '@/components/shared/NotFound.vue'
 import { useContentPath } from '../../shared/content'
 import { useDrawer } from '../../shared/drawer'
 
-export default defineComponent({
-  setup() {
-    const route = useRoute()
-    const contentPath = useContentPath()
-    const drawer = useDrawer()
+const route = useRoute()
+const contentPath = useContentPath()
+const drawer = useDrawer()
 
-    return {
-      preview: route.path.replace('/examples/', '/preview/'),
-      contentPath,
-      drawer: drawer.active
-    }
-  },
-  methods: {
-    share(data) {
-      if (data.share) return data.share.title
-      return `${data.title}, ${this.$t('share.example')}`
-    }
-  },
-  components: {
-    Drawer,
-    ExamplesNav,
-    FetchNav,
-    NavMenu,
-    RenderContent,
-    NotFound
-  }
-})
+const { t } = useI18n()
+
+const preview = route.path.replace('/examples/', '/preview/')
+
+function share(data: any) {
+  if (data.share) return data.share.title
+  return `${data.title}, ${t('share.example')}`
+}
 </script>
 
 <style lang="sass" scoped>

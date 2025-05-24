@@ -6,15 +6,21 @@ Nav(:list="navigation.children" :active="$route.path")
       ProTag(v-if="data.pro")
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import { useRoute } from 'vue-router'
 import ProTag from './shared/ProTag.vue'
 
-export default {
-  props: ['navigation'],
-  components: {
-    ProTag
-  }
+interface Navigation {
+  children: any[]
 }
+
+interface Props {
+  navigation: Navigation
+}
+
+defineProps<Props>()
+
+const $route = useRoute()
 </script>
 
 <style lang="sass" scoped>

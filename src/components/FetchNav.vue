@@ -4,19 +4,27 @@ slot(:navigation="targetContent")
 
 <script setup lang="ts">
 import { computed } from 'vue'
+import { useAsyncData, queryCollectionNavigation } from '#imports'
+import { useI18n } from 'vue-i18n'
+
+interface Props {
+  target: string
+}
 
 const i18n = useI18n()
-const props = defineProps({
-  target: {
-    type: String,
-    required: true
-  }
-})
+const props = defineProps<Props>()
 
 const { data: navigation } = await useAsyncData('navigation', () => {
-  return queryCollectionNavigation('content')
+  return queryCollectionNavigation('content' as never)
 })
 
-const localeContent = computed(() => navigation.value.find(n => n.path === `/${i18n.locale.value}`))
-const targetContent = computed(() => localeContent.value.children.find(n => n.path === `/${i18n.locale.value}/${props.target}`))
+const localeContent = computed(() =>
+  navigation.value?.find((n: any) => n.path === `/${i18n.locale.value}`)
+)
+
+const targetContent = computed(() =>
+  localeContent.value?.children?.find((n: any) =>
+    n.path === `/${i18n.locale.value}/${props.target}`
+  )
+)
 </script>

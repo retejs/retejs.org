@@ -4,17 +4,12 @@ pre.block
   slot
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+interface Props {
+  language?: string | null
+}
 
-export default defineComponent({
-  props: {
-    language: {
-      type: String,
-      default: null
-    }
-  }
-})
+defineProps<Props>()
 </script>
 
 <style lang="sass" scoped>

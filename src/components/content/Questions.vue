@@ -3,21 +3,17 @@ Collapse.collapse(accordion v-model="target")
   slot
 </template>
 
-<script lang="ts">
-export default {
-  data() {
-    return {
-      target: this.$route.hash.split('#')[1]
-    }
-  },
-  watch: {
-    target(value) {
-      const name = value[0]
+<script setup lang="ts">
+import { ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 
-      window.history.pushState({}, '', `#${name}`)
-    }
-  }
-}
+const route = useRoute()
+const target = ref(route.hash.split('#')[1])
+
+watch(target, (value) => {
+  const name = value[0]
+  window.history.pushState({}, '', `#${name}`)
+})
 </script>
 
 <style lang="sass" scoped>

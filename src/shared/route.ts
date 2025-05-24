@@ -1,3 +1,4 @@
+import { useLocalePath } from '#imports'
 import { useI18n } from 'vue-i18n'
 
 export function omitLocale(path: string, locale: string) {
@@ -6,8 +7,7 @@ export function omitLocale(path: string, locale: string) {
 
 export function usePathSanitizer() {
   const { locale } = useI18n()
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
+
   const localePath = useLocalePath()
 
   return {

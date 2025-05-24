@@ -1,12 +1,18 @@
 <template lang="pug">
 .notice
   .text
-    | {{ $t('currentVersionNotice.youAreBrowsing') }}
-    | {{ $t('currentVersionNotice.checkOut') }}
+    | {{ t('currentVersionNotice.youAreBrowsing') }}
+    | {{ t('currentVersionNotice.checkOut') }}
     | !{' '}
-    a(href="https://rete.js.org" target="_blank") {{ $t('currentVersionNotice.docsV1') }}
-    | {{ $t('currentVersionNotice.orGetStarted' )}}
+    a(href="https://rete.js.org" target="_blank") {{ t('currentVersionNotice.docsV1') }}
+    | {{ t('currentVersionNotice.orGetStarted' )}}
 </template>
+
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+</script>
 
 <style lang="sass" scoped>
 @import '@/assets/styles/vars.sass'
