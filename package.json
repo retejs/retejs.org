@@ -41,6 +41,7 @@
   "devDependencies": {
     "@nuxt/icon": "^1.13.0",
     "@nuxtjs/i18n": "^9.5.4",
+    "@nuxtjs/sitemap": "^7.3.0",
     "@vite-pwa/nuxt": "0.4.0",
     "@vue/cli-plugin-pwa": "~5.0.8",
     "@vue/cli-plugin-router": "~5.0.8",

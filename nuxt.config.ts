@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     'nuxt-purgecss',
     '@vite-pwa/nuxt',
     '@nuxt/icon',
+    '@nuxtjs/sitemap'
   ],
   telemetry: false,
   css: [
@@ -22,6 +23,10 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
     includeWorkspace: true,
+  },
+  site: {
+    url: 'https://retejs.org',
+    name: 'Rete.js'
   },
   vite: {
     plugins: [
