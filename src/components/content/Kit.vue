@@ -22,6 +22,7 @@ import Banner from '../shared/Banner.vue'
 
 const { t } = useI18n()
 const localePath = useLocalePath()
+// TODO fix notification
 const { $Notice } = useNuxtApp()
 
 const link = '/docs/development/rete-kit'

@@ -147,9 +147,9 @@ export default defineNuxtConfig({
   alias: {
     'styled': resolve('./styled')
   },
-  // postcss: {
-  //   plugins: {
-  //     '@pandacss/dev/postcss': {},
-  //   }
-  // }
+  postcss: {
+    plugins: {
+      '@pandacss/dev/postcss': {},
+    }
+  }
 });
