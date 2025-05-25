@@ -18,8 +18,8 @@ export default defineNuxtConfig({
   telemetry: false,
   css: [
     '~/assets/styles/global.css',
-    './iview/styles/base.less'
-    // './iview/styles/index.less'
+    // './iview/styles/base.less',
+    // './iview/styles/index.less',
     // resolve(__dirname, 'node_modules/view-ui-plus-es/dist/styles/viewuiplus.css'),
   ],
   typescript: {

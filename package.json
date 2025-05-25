@@ -25,6 +25,7 @@
     "@vueuse/core": "^10.7.2",
     "case": "^1.6.3",
     "clipboard-copy": "^4.0.1",
+    "normalize.css": "^8.0.1",
     "prettier": "^3.2.5",
     "qs": "^6.11.2",
     "register-service-worker": "^1.7.2",

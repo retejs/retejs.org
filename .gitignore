@@ -28,7 +28,7 @@ node_modules
 .nuxt
 .nitro
 .cache
-.output
+.output*
 .env
 .data
 dist
