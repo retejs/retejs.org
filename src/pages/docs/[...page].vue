@@ -1,20 +1,21 @@
 <template lang="pug">
 .docs
   FetchNav(v-slot="{ navigation }" target="docs")
-    NavMenu(@open="drawer = true")
-      template(#title) {{ $t('documentation') }}
+    NavMenu(@open="drawer.setActive(true)")
+      template(#title) {{ t('documentation') }}
       Nav(:list="navigation.children" :active="$route.path")
     .content.markdown
       RenderContent(:path="contentPath" :share="share")
         template(#not-found)
           NotFound(:standalone="false")
-    Drawer(v-model="drawer")
+    Drawer(v-model="drawer.active")
       .drawer-content
         Nav(:list="navigation.children" :active="$route.path")
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
 
 import FetchNav from '@/components/FetchNav.vue'
 import Nav from '@/components/Nav.vue'
@@ -22,34 +23,17 @@ import RenderContent from '@/components/RenderContent.vue'
 import Drawer from '@/components/shared/Drawer.vue'
 import NavMenu from '@/components/shared/NavMenu.vue'
 import NotFound from '@/components/shared/NotFound.vue'
-
 import { useContentPath } from '../../shared/content'
 import { useDrawer } from '../../shared/drawer'
 
-export default defineComponent({
-  setup() {
-    const contentPath = useContentPath()
-    const drawer = useDrawer()
+const contentPath = useContentPath()
+const $route = useRoute()
+const drawer = useDrawer()
+const { t } = useI18n()
 
-    return {
-      contentPath,
-      drawer: drawer.active
-    }
-  },
-  methods: {
-    share(data) {
-      return `${data.title}, ${this.$t('share.docs')}`
-    }
-  },
-  components: {
-    Drawer,
-    Nav,
-    FetchNav,
-    NavMenu,
-    RenderContent,
-    NotFound
-  }
-})
+function share(data: any) {
+  return `${data.title}, ${t('share.docs')}`
+}
 </script>
 
 <style lang="sass" scoped>

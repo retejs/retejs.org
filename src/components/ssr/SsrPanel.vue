@@ -8,8 +8,10 @@
       slot(name="content")
 </template>
 
-<script lang="ts">
-export default {
-  props: ['text']
+<script setup lang="ts">
+interface Props {
+  text?: string
 }
+
+defineProps<Props>()
 </script>

@@ -3,8 +3,8 @@
   Head
     Title {{ title }}
   .section
-    p.title {{ $t('main.title') }}
-    p.description {{ $t('main.description') }}
+    p.title {{ t('main.title') }}
+    p.description {{ t('main.description') }}
   .links
     .star
       iframe(:src="gitHubBadge" frameborder="0" scrolling="0")
@@ -17,64 +17,54 @@
   Intro.intro(:show="intro" :scroll="true" :autoplay="true")
   .highlights.section
     .highlight
-      .title {{ $t('main.highlights.ts.title')}}
-      .description {{ $t('main.highlights.ts.description') }}
+      .title {{ t('main.highlights.ts.title')}}
+      .description {{ t('main.highlights.ts.description') }}
     .highlight
-      .title {{ $t('main.highlights.processing.title')}}
-      .description {{ $t('main.highlights.processing.description') }}
+      .title {{ t('main.highlights.processing.title')}}
+      .description {{ t('main.highlights.processing.description') }}
     .highlight
-      .title {{ $t('main.highlights.tailorable.title')}}
-      .description {{ $t('main.highlights.tailorable.description') }}
+      .title {{ t('main.highlights.tailorable.title')}}
+      .description {{ t('main.highlights.tailorable.description') }}
   Showcase
 </template>
 
-<script lang="ts">
-import { ref } from 'vue'
+<script setup lang="ts">
+import { onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useSeoMeta } from '#imports'
 
 import Logo from '@/components/Logo.vue'
 import Showcase from '@/components/Showcase.vue'
-
 import { mainPreview } from '../shared/assets'
 
-export default {
-  setup() {
-    const { t } = useI18n()
-    const title = `${t('name')} - ${t('main.title')}`
-    const description = t('main.description')
+const { t } = useI18n()
+const title = `${t('name')} - ${t('main.title')}`
+const description = t('main.description')
 
-    useSeoMeta({
-      title,
-      ogTitle: title,
-      description,
-      ogDescription: description,
-      ogImage: mainPreview,
-      twitterSite: 'rete_js',
-      twitterCreator: 'rete_js',
-      twitterImageSrc: mainPreview
-    })
+useSeoMeta({
+  title,
+  ogTitle: title,
+  description,
+  ogDescription: description,
+  ogImage: mainPreview,
+  twitterSite: 'rete_js',
+  twitterCreator: 'rete_js',
+  twitterImageSrc: mainPreview
+})
 
-    return {
-      title,
-      intro: ref(false),
-      logoIsHovered: ref(false),
-      gitHubBadge: 'https://ghbtns.com/github-btn.html?user=retejs&repo=rete&type=star&count=true&size=large',
-      originBadge: 'https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7'
-    }
-  },
-  components: {
-    Logo,
-    Showcase
-  },
-  mounted() {
-    setTimeout(() => {
-      this.logoIsHovered = true
-    }, 1000)
-    setTimeout(() => {
-      this.logoIsHovered = false
-    }, 3000)
-  }
-}
+const intro = ref(false)
+const logoIsHovered = ref(false)
+const gitHubBadge = 'https://ghbtns.com/github-btn.html?user=retejs&repo=rete&type=star&count=true&size=large'
+const originBadge = 'https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7'
+
+onMounted(() => {
+  setTimeout(() => {
+    logoIsHovered.value = true
+  }, 1000)
+  setTimeout(() => {
+    logoIsHovered.value = false
+  }, 3000)
+})
 </script>
 
 <style lang="sass" scoped>

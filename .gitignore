@@ -30,6 +30,7 @@ node_modules
 .cache
 .output
 .env
+.data
 dist
 
 _export

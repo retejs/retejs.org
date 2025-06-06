@@ -8,15 +8,19 @@ Button(
   | {{title}}
 </template>
 
-<script lang="ts">
-
-export default {
-  props: ['title', 'link', 'icon']
+<script setup lang="ts">
+interface Props {
+  title: string
+  link: string
+  icon: string
 }
+
+defineProps<Props>()
 </script>
 
 <style lang="sass" scoped>
 .icon
   margin-right: 0.3em
   vertical-align: text-bottom
+  max-width: 14px
 </style>

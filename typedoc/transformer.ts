@@ -1,14 +1,19 @@
 /* eslint-disable no-await-in-loop */
 /* eslint-disable no-shadow */
-import { defineTransformer } from '@nuxt/content/transformers/utils';
-import markdownParser from '@nuxt/content/transformers/markdown';
-import remarkHeadingPlugin from 'remark-heading-id';
+import { defineTransformer } from '@nuxt/content'
+import { createShikiHighlighter, rehypeHighlight } from '@nuxtjs/mdc/runtime'
+import { parseMarkdown } from '@nuxtjs/mdc/runtime'
 import {
   makeRecursiveVisitor, Deserializer, Application, TypeContext, DeclarationReflection,
   ReflectionType, Type, ProjectReflection, ContainerReflection, Reflection, CommentDisplayPart,
   SourceReference,
 } from 'typedoc';
 import prettier from 'prettier';
+import type { LanguageRegistration } from 'shiki'
+import { createOnigurumaEngine } from 'shiki/engine/oniguruma'
+import { MdcConfig, ModuleOptions as MDCModuleOptions } from '@nuxtjs/mdc';
+import { visit } from 'unist-util-visit'
+import { hash } from 'ohash'
 
 function findChildren(root: ContainerReflection, id: number) {
   if (!root.children) return [];
@@ -291,11 +296,73 @@ function extractRepositoryURL(project: ProjectReflection): string | null {
   return getRepositoryURL(someSourceUrl);
 }
 
+type HighlighterOptions = Exclude<MDCModuleOptions['highlight'], false | undefined> & { compress: boolean }
+type HighlightedNode = { type: 'element', properties?: Record<string, string | undefined> }
+
+// https://github.com/nuxt/content/blob/v3.5.1/src/utils/content/index.ts
+
+async function _getHighlightPlugin(key: string, options: HighlighterOptions) {
+  const langs = Array.from(new Set(['bash', 'html', 'mdc', 'vue', 'yml', 'scss', 'ts', 'typescript', ...(options.langs || [])]))
+  const themesObject = typeof options.theme === 'string' ? { default: options.theme } : options.theme || { default: 'material-theme-palenight' }
+  const bundledThemes = await Promise.all(Object.entries(themesObject)
+    .map(async ([name, theme]) => [
+      name,
+      typeof theme === 'string' ? (await import(`shiki/themes/${theme}.mjs`).then(m => m.default || m)) : theme,
+    ]))
+  const bundledLangs = await Promise.all(langs.map(async lang => [
+    typeof lang === 'string' ? lang : (lang as unknown as LanguageRegistration).name,
+    typeof lang === 'string' ? await import(`@shikijs/langs/${lang}`).then(m => m.default || m) : lang,
+  ]))
+
+  const highlighter = createShikiHighlighter({
+    bundledThemes: Object.fromEntries(bundledThemes),
+    // Configure the bundled languages
+    bundledLangs: Object.fromEntries(bundledLangs),
+    engine: createOnigurumaEngine(import('shiki/wasm')),
+    getMdcConfigs: () => Promise.resolve([] as MdcConfig[]),
+  })
+
+  const highlightPlugin = {
+    key,
+    instance: rehypeHighlight,
+    ...options,
+    options: {
+      highlighter: async (code, lang, theme, opts) => {
+        const result = await highlighter(code, lang, theme, opts)
+        const visitTree = {
+          type: 'element',
+          children: result.tree as Array<unknown>,
+        }
+        if (options.compress) {
+          const stylesMap: Record<string, string> = {}
+          visit(
+            visitTree,
+            node => !!(node as HighlightedNode).properties?.style,
+            (_node) => {
+              const node = _node as HighlightedNode
+              const style = node.properties!.style!
+              stylesMap[style] = stylesMap[style] || 's' + hash(style).substring(0, 4)
+              node.properties!.class = `${node.properties!.class || ''} ${stylesMap[style]}`.trim()
+              node.properties!.style = undefined
+            },
+          )
+
+          result.style = Object.entries(stylesMap).map(([style, cls]) => `html pre.shiki code .${cls}, html code.shiki .${cls}{${style}}`).join('') + result.style
+        }
+
+        return result
+      },
+      theme: Object.fromEntries(bundledThemes),
+    },
+  }
+  return highlightPlugin
+}
+
 export default defineTransformer({
   name: 'typedoc-transformer',
   extensions: ['.typedoc'],
-  async parse(_id, rawContent) {
-    const data = typeof rawContent === 'object' ? rawContent : JSON.parse(rawContent);
+  async parse(file) {
+    const data = typeof file.body === 'object' ? file.body : JSON.parse(file.body);
 
     const app = new Application();
     const d = new Deserializer(app);
@@ -307,17 +374,36 @@ export default defineTransformer({
 
     await typedocToMarkdown(reflection, reflection.children, markdown, 1);
 
-    const md = await markdownParser.parse('id', markdown.join('\n'), {
-      remarkPlugins: [{ instance: remarkHeadingPlugin }],
-    });
+    // const parsed = await parseMarkdown(markdown.join('\n'))
+
+    const parsed = await parseMarkdown(markdown.join('\n'), {
+      remark: { plugins: { 'remark-heading-id': {} } },
+      rehype: {
+        plugins: {
+          hightlight: await _getHighlightPlugin('typedoc', {
+            theme: 'one-dark-pro',
+          })
+        }
+        // plugins: config.rehypePlugins,
+        // options: { handlers: { link } },
+      },
+    }, {
+      fileOptions: file,
+    })
+
 
     return {
-      ...md,
+      ...parsed.data,
+      excerpt: parsed.excerpt,
       navigation: {
         title: data.name,
         repository: extractRepositoryURL(reflection),
       },
-      _id,
-    };
+      extension: 'md',
+      body: parsed.body,
+      // body: markdown.join('\n'),
+      // id: file.id.replace(/\.typedoc$/, '.md'),
+      id: file.id,
+    }
   },
 });

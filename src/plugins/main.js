@@ -1,3 +1,4 @@
+import { defineNuxtPlugin } from "#app";
 import {
   Menu, MenuItem, Select, Submenu, Dropdown, Option,
   Drawer, Button, Alert, Tag, Tooltip, Collapse, Panel,
@@ -78,10 +79,10 @@ export default defineNuxtPlugin((nuxtApp) => {
     SkeletonItem
   );
 
-  app.config.globalProperties.$Notice = Notice;
   Notice.config({
     "top": 70
   });
+  nuxtApp.vueApp.provide("$Notice", Notice);
 
   nuxtApp.$router.options.scrollBehavior = (to, from, savedPosition) => {
 

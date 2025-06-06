@@ -4,12 +4,12 @@ client-only
     template(v-for="item in list")
       MenuItem(
         v-if="!item.children && !item.placeholder"
-        :name="sanitize(item._path)"
-        :to="sanitize(item._path)"
+        :name="sanitize(item.path)"
+        :to="sanitize(item.path)"
       )
         slot(name="item" :data="item")
           .title {{ item.title }}
-      Submenu.submenu(v-if="item.children" :name="sanitize(item._path)")
+      Submenu.submenu(v-if="item.children" :name="sanitize(item.path)")
         template(#title)
           .title {{ item.title }}
         Nav(:list="item.children" :active="activeName")
@@ -20,41 +20,35 @@ client-only
           .title {{ data.title }}
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import { computed } from 'vue'
 import { usePathSanitizer } from '../shared/route'
 import SsrNav from './ssr/SsrNav.vue'
 
-export default {
-  props: ['list', 'active'],
-  setup() {
-    const { sanitize } = usePathSanitizer()
-
-    return {
-      sanitize
-    }
-  },
-  computed: {
-    cascadePaths() {
-      const pathSegments = this.active.split('/')
-
-      const n = pathSegments.reduce((paths, curr, i) => {
-        const path = i === 0
-          ? curr
-          : `${paths[i - 1]}/${curr}`
-
-        return [...paths, path]
-      }, [])
-
-      return n
-    },
-    activeName() {
-      return this.active.replace(/\/$/, '')
-    }
-  },
-  components: {
-    SsrNav
-  }
+interface Props {
+  list: any[]
+  active: string
 }
+
+const props = defineProps<Props>()
+
+const { sanitize } = usePathSanitizer()
+
+const cascadePaths = computed(() => {
+  const pathSegments = props.active.split('/')
+
+  return pathSegments.reduce<string[]>((paths, curr, i) => {
+    const path = i === 0
+      ? curr
+      : `${paths[i - 1]}/${curr}`
+
+    return [...paths, path]
+  }, [])
+})
+
+const activeName = computed(() => {
+  return props.active.replace(/\/$/, '')
+})
 </script>
 
 <style lang="scss" scoped>

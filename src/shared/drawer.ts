@@ -10,6 +10,9 @@ export function useDrawer() {
   })
 
   return {
-    active
+    active,
+    setActive: (value: boolean) => {
+      active.value = value
+    }
   }
 }

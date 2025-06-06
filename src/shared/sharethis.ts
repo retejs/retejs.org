@@ -1,7 +1,5 @@
-/* eslint-disable @typescript-eslint/naming-convention */
-/* eslint-disable init-declarations */
-/* eslint-disable no-undefined */
-import { computed, inject, onMounted, onUnmounted, provide, reactive, type Ref, ref } from 'vue'
+import { useHead } from '#imports'
+import { computed, type ComputedRef, inject, onMounted, onUnmounted, provide, reactive, type Ref, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
 import host from '../consts/host.json'
@@ -19,8 +17,7 @@ export const key = Symbol('sharethis-di-key')
 
 export function provideShareThis(): undefined | Context {
   if (!process.client) return undefined
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
+
   useHead({
     script: [
       {
@@ -50,16 +47,16 @@ export function provideShareThis(): undefined | Context {
   return data
 }
 
-export function useShareThis(title: string | Ref<string>) {
+export function useShareThis(title: string | null | Ref<string | null> | ComputedRef<string | null>): void {
   if (!process.client) return
   const sharethis: Context | undefined = inject(key)
 
   if (!sharethis) throw new Error('cannot inject sharethis')
 
   onMounted(() => {
-    sharethis.title = typeof title === 'string'
+    sharethis.title = title ? (typeof title === 'string'
       ? title
-      : title.value
+      : title.value) : ''
     sharethis.consumers++
   })
   onUnmounted(() => {

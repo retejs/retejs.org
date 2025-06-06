@@ -79,19 +79,16 @@
   </svg>
 </template>
 
-<script lang="ts">
-export default {
-  props: {
-    hover: {
-      type: Boolean,
-      default: true
-    },
-    zoomIn: {
-      type: Boolean,
-      default: true
-    }
-  }
+<script setup lang="ts">
+interface Props {
+  hover?: boolean
+  zoomIn?: boolean
 }
+
+withDefaults(defineProps<Props>(), {
+  hover: true,
+  zoomIn: true
+})
 </script>
 
 <style scoped>

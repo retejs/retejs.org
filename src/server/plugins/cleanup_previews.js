@@ -1,4 +1,5 @@
 // remove unnecessary script and assets from /preview/ pages
+import { defineNitroPlugin } from 'nitropack/runtime'
 
 // eslint-disable-next-line no-undef
 export default defineNitroPlugin((nitroApp) => {

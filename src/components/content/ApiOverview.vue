@@ -1,9 +1,9 @@
 <template lang="pug">
 .api-overview(:class="{ top }")
   FetchNav(v-slot="{ navigation }" target="docs")
-    Card.item(v-for="data of getList(navigation)", :key="data._path")
+    Card.item(v-for="data of getList(navigation)", :key="data.path")
       template(#title)
-        NuxtLink(:to="sanitize(data._path)") {{ data.title }}
+        NuxtLink(:to="sanitize(data.path)") {{ data.title }}
         Tooltip(content="Open on NPM", placement="top")
           NuxtLink(:to="'https://www.npmjs.com/package/' + data.title", target="_blank", @click.stop="")
             Icon.npm.icon(name="ion:logo-npm")
@@ -12,37 +12,32 @@
             Icon.gh.icon(name="ion:logo-github")
 </template>
 
-<script lang="ts">
-
+<script setup lang="ts">
 import { usePathSanitizer } from '../../shared/route'
 import ExampleCard from '../shared/ExampleCard.vue'
 
-export default {
-  props: ['filter'],
-  setup(props) {
-    const { sanitize } = usePathSanitizer()
-    const filter = props.filter
-      ? props.filter.split(',')
-      : null
+interface Props {
+  filter?: string
+  top?: boolean
+}
 
-    return {
-      sanitize,
-      getList(navigation) {
-        const api = navigation.children.find(n => n._path.endsWith('/docs/api'))
+const props = defineProps<Props>()
 
-        if (!api) return []
+const { sanitize } = usePathSanitizer()
+const filter = props.filter
+  ? props.filter.split(',')
+  : null
 
-        const list = api.children
-          .filter(child => !child.placeholder && !child.overview)
-          .filter(child => !filter || filter.includes(child.title))
+function getList(navigation: any) {
+  const api = navigation.children.find((n: any) => n.path.endsWith('/docs/api'))
 
-        return list
-      }
-    }
-  },
-  components: {
-    ExampleCard
-  }
+  if (!api) return []
+
+  const list = api.children
+    .filter((child: any) => !child.placeholder && !child.overview)
+    .filter((child: any) => !filter || filter.includes(child.title))
+
+  return list
 }
 </script>
 

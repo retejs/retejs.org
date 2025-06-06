@@ -2,13 +2,11 @@
 NotFound
 </template>
 
-<script lang="ts">
-import NotFound from '@/components/shared/NotFound.vue';
+<script setup lang="ts">
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import NotFound from '@/components/shared/NotFound.vue'
 
-export default {
-  layout: 'error',
-  components: {
-    NotFound,
-  },
-};
+definePageMeta({
+  layout: 'error'
+})
 </script>

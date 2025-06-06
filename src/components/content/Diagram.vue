@@ -5,10 +5,13 @@ figure.diagram
   figcaption.caption {{ caption }}
 </template>
 
-<script lang="ts">
-export default {
-  props: ['name', 'caption']
+<script setup lang="ts">
+interface Props {
+  name: string
+  caption: string
 }
+
+defineProps<Props>()
 </script>
 
 <style lang="sass" scoped>

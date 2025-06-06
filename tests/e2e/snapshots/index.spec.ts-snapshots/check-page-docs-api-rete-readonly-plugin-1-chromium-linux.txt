@@ -1,0 +1,1 @@
+API for rete-readonly-plugin package - Rete.js

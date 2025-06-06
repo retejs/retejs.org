@@ -2,7 +2,7 @@
 Banner(
   icon="heroicons:rocket-launch"
   :tooltip="{ icon: 'tabler:clipboard-copy' }"
-  :action="{ label: $t('kit.banner.button'), to: localePath(link) }"
+  :action="{ label: t('kit.banner.button'), to: localePath(link) }"
   @tooltip="copyToClipboard"
 )
   template(v-slot:text)
@@ -15,34 +15,34 @@ Banner(
         .command {{ command }}
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import { inject } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useLocalePath } from '#imports'
 import Banner from '../shared/Banner.vue'
 
-export default {
-  data() {
-    return {
-      link: '/docs/development/rete-kit',
-      command: 'npx rete-kit app'
-    }
-  },
-  methods: {
-    async copyToClipboard() {
-      try {
-        await navigator.clipboard.writeText(this.command)
-        this.$Notice.success({
-          title: this.$t('kit.banner.copyNotification.success')
-        })
-      } catch (error) {
-        console.error(error)
+const { t } = useI18n()
+const localePath = useLocalePath()
+const $Notice = inject('$Notice') as {
+  success: (options: { title: string }) => void
+  error: (options: { title: string }) => void
+}
 
-        this.$Notice.error({
-          title: this.$t('kit.banner.copyNotification.error')
-        })
-      }
-    }
-  },
-  components: {
-    Banner
+const link = '/docs/development/rete-kit'
+const command = 'npx rete-kit app'
+
+async function copyToClipboard() {
+  try {
+    await navigator.clipboard.writeText(command)
+    $Notice.success({
+      title: t('kit.banner.copyNotification.success')
+    })
+  } catch (error) {
+    console.error(error)
+
+    $Notice.error({
+      title: t('kit.banner.copyNotification.error')
+    })
   }
 }
 </script>

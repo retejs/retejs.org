@@ -7,24 +7,11 @@ IViewFooter.footer
     div Copyright © {{releaseYear}}-{{year}} {{author}}
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { Footer as IViewFooter } from 'view-ui-plus-es'
-
 import { author, license, release as releaseYear } from '@/consts/product.json'
 
-export default {
-  data() {
-    return {
-      license,
-      author,
-      releaseYear,
-      year: new Date().getFullYear()
-    }
-  },
-  components: {
-    IViewFooter
-  }
-}
+const year = new Date().getFullYear()
 </script>
 
 <style lang="sass" scoped>

@@ -15,7 +15,7 @@
   "dependencies": {
     "@docsearch/css": "^3.5.2",
     "@docsearch/js": "^3.5.2",
-    "@nuxt/content": "^2.11.0",
+    "@nuxt/content": "^3.5.1",
     "@sentry/browser": "^7.100.1",
     "@sentry/integrations": "^7.100.1",
     "@sentry/tracing": "^7.100.1",
@@ -26,6 +26,8 @@
     "prettier": "^3.2.5",
     "qs": "^6.11.2",
     "register-service-worker": "^1.7.2",
+    "rehype-stringify": "^10.0.1",
+    "remark-custom-heading-id": "^2.0.0",
     "rete": "^2.0.3",
     "rete-area-plugin": "^2.0.2",
     "rete-engine": "^2.0.1",
@@ -33,19 +35,23 @@
     "rete-structures": "^2.0.1",
     "rete-vue-plugin": "^2.1.0",
     "view-ui-plus-es": "^1.3.16",
-    "vue": "^3.4.18"
+    "vue": "^3.5.14",
+    "vue-i18n": "^11.1.3"
   },
   "devDependencies": {
-    "@nuxtjs/i18n": "^8.1.0",
+    "@nuxt/icon": "^1.13.0",
+    "@nuxtjs/i18n": "^9.5.4",
+    "@nuxtjs/sitemap": "^7.3.0",
     "@vite-pwa/nuxt": "0.4.0",
     "@vue/cli-plugin-pwa": "~5.0.8",
     "@vue/cli-plugin-router": "~5.0.8",
     "@vue/cli-plugin-typescript": "~5.0.8",
     "@vue/cli-service": "~5.0.8",
     "@vue/eslint-config-typescript": "^14.1.3",
-    "eslint-plugin-vue": "^9.30.0",
-    "nuxt": "^3.10.1",
-    "nuxt-icon": "^0.6.8",
+    "@vue/language-plugin-pug": "^2.2.10",
+    "eslint-plugin-vue": "^9.33.0",
+    "eslint-plugin-vue-pug": "^0.6.2",
+    "nuxt": "^3.17.4",
     "nuxt-purgecss": "^2.0.0",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
@@ -58,7 +64,8 @@
     "std-env": "^3.7.0",
     "style-loader": "^3.3.4",
     "typedoc": "^0.24.8",
-    "typescript": "^5.1",
+    "typescript": "^5.8.3",
+    "vue-tsc": "^2.2.10",
     "webpack-cdn-plugin": "^3.3.1",
     "webpack-pwa-manifest": "^4.3.0",
     "workbox-build": "^7.0.0",
@@ -66,5 +73,10 @@
     "workbox-routing": "^7.0.0",
     "workbox-strategies": "^7.0.0",
     "workbox-webpack-plugin": "^7.0.0"
+  },
+  "overrides": {
+    "typedoc": {
+      "typescript": "^5.8.3"
+    }
   }
 }

@@ -2,25 +2,32 @@
 import { resolve } from 'path';
 import { isCI, isDevelopment } from 'std-env';
 import { splitVendorChunkPlugin } from 'vite';
-import TypeDoc from './typedoc/index.mjs';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   ssr: true,
   srcDir: 'src',
   modules: [
-    TypeDoc,
     '@nuxt/content',
     '@nuxtjs/i18n',
     'nuxt-purgecss',
     '@vite-pwa/nuxt',
-    'nuxt-icon',
+    '@nuxt/icon',
+    '@nuxtjs/sitemap'
   ],
   telemetry: false,
   css: [
     '~/assets/styles/global.css',
     resolve(__dirname, 'node_modules/view-ui-plus-es/dist/styles/viewuiplus.css'),
   ],
+  typescript: {
+    typeCheck: true,
+    includeWorkspace: true,
+  },
+  site: {
+    url: 'https://retejs.org',
+    name: 'Rete.js'
+  },
   vite: {
     plugins: [
       splitVendorChunkPlugin(),
@@ -39,12 +46,22 @@ export default defineNuxtConfig({
       },
     },
   },
+  imports: {
+    autoImport: false
+  },
   content: {
-    highlight: {
-      theme: 'one-dark-pro',
-    },
-    markdown: {
-      remarkPlugins: ['remark-heading-id'],
+    build: {
+      transformers: [
+        './typedoc/transformer.ts',
+      ],
+      markdown: {
+        highlight: {
+          theme: 'one-dark-pro',
+        },
+        remarkPlugins: {
+          'remark-heading-id': {}
+        }
+      }
     },
   },
   purgecss: {
@@ -65,7 +82,6 @@ export default defineNuxtConfig({
     },
     lazy: true,
     defaultLocale: 'en',
-    langDir: 'locales',
   },
   app: {
     head: {

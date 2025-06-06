@@ -1,31 +1,33 @@
 <template lang="pug">
-ContentRenderer(:value="data")
-  template(#empty)
-    slot(name="not-found")
+ContentRenderer(v-if="data" :value="data")
+slot(v-else name="not-found")
 </template>
 
 <script setup lang="ts">
 // workaround for https://github.com/nuxt/nuxt/issues/23074
 import { computed, ref } from 'vue'
+import { useSeoMeta, useAsyncData, queryCollection } from '#imports'
 
 import host from '../consts/host.json'
 import { getPreview, mainPreview } from '../shared/assets'
 import { useShareThis } from '../shared/sharethis'
 
-const props = defineProps({
-  path: String,
-  share: Function,
-  title: Function,
-  largePreview: Boolean
-})
+type Props = {
+  path?: string
+  share: (data: any) => string | undefined
+  title?: (data: any) => string | boolean | undefined
+  largePreview?: boolean
+}
 
-const path = props.path.replace(/\/$/, '')
+const props = defineProps<Props>()
+
+const path = props.path!.replace(/\/$/, '')
 const dataRef = ref(null)
 // workaround for https://github.com/vuejs/core/issues/1409
 
 if (props.share) useShareThis(computed(() => dataRef.value && props.share(dataRef.value)))
 
-const { data } = await useAsyncData(path, () => queryContent(path).findOne())
+const { data } = await useAsyncData(path, () => queryCollection('content' as never).path(path).first())
 
 if (data.value) {
   const { image, description, keywords } = data.value

@@ -2,31 +2,32 @@
 .lang
   client-only
     Select.select.upper(
-      :model-value="$i18n.locale"
-      @on-change="setLocale($event)"
+      :model-value="locale"
+      @on-change="setLocale"
       size="small"
     )
-      Option.upper(v-for="lang in $i18n.locales" :value="lang.code" :key="lang.code")
+      Option.upper(v-for="lang in locales" :value="lang.code" :key="lang.code")
         | {{lang.code}}
     template(#placeholder)
-      SsrSelect {{ $i18n.locale }}
+      SsrSelect {{ locale }}
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 import SsrSelect from './ssr/SsrSelect.vue'
+import { useSwitchLocalePath } from '#imports'
 
-export default defineComponent({
-  methods: {
-    setLocale(lang) {
-      this.$router.push(this.switchLocalePath(lang))
-    }
-  },
-  components: {
-    SsrSelect
-  }
-})
+const i18n = useI18n()
+const router = useRouter()
+const switchLocalePath = useSwitchLocalePath()
+const locale = i18n.locale
+// @ts-ignore
+const locales = i18n.locales
+
+const setLocale = (lang: string) => {
+  router.push(switchLocalePath(lang))
+}
 </script>
 
 <style lang="sass" scoped>

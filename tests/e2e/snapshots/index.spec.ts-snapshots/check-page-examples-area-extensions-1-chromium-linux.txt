@@ -1,0 +1,1 @@
+Area extensions example - Rete.js

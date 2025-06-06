@@ -7,26 +7,27 @@
         ProTag(v-if="pro")
     .preview
       Loading
-      img(:src="getPreview(preview)")
+      img(:src="getPreviewUrl(preview)")
   Card.stack.first(v-if="stack" :padding="0")
   Card.stack.second(v-if="stack" :padding="0")
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { getPreview } from '../../shared/assets'
 import Loading from './Loading.vue'
 import ProTag from './ProTag.vue'
 
-export default {
-  props: ['title', 'preview', 'pro', 'stack'],
-  methods: {
-    getPreview
-  },
-  components: {
-    ProTag,
-    Loading
-  }
+interface Props {
+  title: string
+  preview: string
+  pro?: boolean
+  stack?: boolean
 }
+
+defineProps<Props>()
+
+// Make getPreview available in template
+const getPreviewUrl = getPreview
 </script>
 
 <style lang="sass">
