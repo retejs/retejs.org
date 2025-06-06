@@ -27,11 +27,27 @@ export default defineNuxtConfig({
   },
   llms: {
     domain: 'https://retejs.org',
-    title: 'Rete.js Documentation',
-    sections: [],
+    title: 'Rete.js',
+    sections: [
+      {
+        title: 'Documentation',
+        contentCollection: 'content',
+        contentFilters: [
+          { field: 'extension', operator: '=', value: 'md' },
+          { field: 'path', operator: 'LIKE', value: '/en/docs%' },
+        ]
+      },
+      {
+        title: 'Examples',
+        contentCollection: 'content',
+        contentFilters: [
+          { field: 'extension', operator: '=', value: 'md' },
+          { field: 'path', operator: 'LIKE', value: '/en/examples%' },
+        ]
+      },
+    ],
     full: {
-      title: 'Rete.js Full Documentation',
-      description: 'Complete documentation for Rete.js - a modular framework for visual programming'
+      title: 'Rete.js Full'
     }
   },
   site: {
