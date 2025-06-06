@@ -79,10 +79,10 @@ export default defineNuxtPlugin((nuxtApp) => {
     SkeletonItem
   );
 
-  app.config.globalProperties.$Notice = Notice;
   Notice.config({
     "top": 70
   });
+  nuxtApp.vueApp.provide("$Notice", Notice);
 
   nuxtApp.$router.options.scrollBehavior = (to, from, savedPosition) => {
 

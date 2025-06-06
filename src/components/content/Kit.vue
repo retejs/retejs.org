@@ -16,13 +16,17 @@ Banner(
 </template>
 
 <script setup lang="ts">
+import { inject } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { useLocalePath, useNuxtApp } from '#imports'
+import { useLocalePath } from '#imports'
 import Banner from '../shared/Banner.vue'
 
 const { t } = useI18n()
 const localePath = useLocalePath()
-const { $Notice } = useNuxtApp()
+const $Notice = inject('$Notice') as {
+  success: (options: { title: string }) => void
+  error: (options: { title: string }) => void
+}
 
 const link = '/docs/development/rete-kit'
 const command = 'npx rete-kit app'
