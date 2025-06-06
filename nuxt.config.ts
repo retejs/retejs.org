@@ -13,7 +13,8 @@ export default defineNuxtConfig({
     'nuxt-purgecss',
     '@vite-pwa/nuxt',
     '@nuxt/icon',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    'nuxt-llms'
   ],
   telemetry: false,
   css: [
@@ -23,6 +24,15 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
     includeWorkspace: true,
+  },
+  llms: {
+    domain: 'https://retejs.org',
+    title: 'Rete.js Documentation',
+    sections: [],
+    full: {
+      title: 'Rete.js Full Documentation',
+      description: 'Complete documentation for Rete.js - a modular framework for visual programming'
+    }
   },
   site: {
     url: 'https://retejs.org',
