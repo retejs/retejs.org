@@ -158,4 +158,10 @@ export default defineNuxtConfig({
     srcDir: 'src',
     filename: 'sw.ts',
   },
+  routeRules: {
+    // Redirect old LLMs.txt route to new location
+    '/docs/llms': { redirect: '/docs/development/ai-assistance/llms' },
+    '/en/docs/llms': { redirect: '/en/docs/development/ai-assistance/llms' },
+    '/uk/docs/llms': { redirect: '/uk/docs/development/ai-assistance/llms' },
+  },
 });
