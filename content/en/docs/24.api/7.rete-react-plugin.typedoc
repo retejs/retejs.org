@@ -1,0 +1,2263 @@
+{
+	"id": 0,
+	"name": "rete-react-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 41,
+			"name": "Presets",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Built-in presets, responsible for rendering different parts of the editor."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 42,
+					"name": "classic",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 43,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/presets/classic/index.tsx",
+									"line": 46,
+									"character": 16,
+									"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/classic/index.tsx#L46"
+								}
+							],
+							"signatures": [
+								{
+									"id": 44,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Classic preset for rendering nodes, connections, controls and sockets."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/presets/classic/index.tsx",
+											"line": 46,
+											"character": 16,
+											"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/classic/index.tsx#L46"
+										}
+									],
+									"typeParameters": [
+										{
+											"id": 45,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/types.ts",
+													"qualifiedName": "ClassicScheme"
+												},
+												"name": "ClassicScheme",
+												"package": "rete-react-plugin"
+											}
+										},
+										{
+											"id": 46,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/types.ts",
+													"qualifiedName": "ReactArea2D"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": 45,
+														"name": "Schemes",
+														"package": "rete-react-plugin",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "ReactArea2D",
+												"package": "rete-react-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 47,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/index.tsx",
+													"qualifiedName": "ClassicProps"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": 45,
+														"name": "Schemes",
+														"package": "rete-react-plugin",
+														"refersToTypeParameter": true
+													},
+													{
+														"type": "reference",
+														"target": 46,
+														"name": "K",
+														"package": "rete-react-plugin",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "ClassicProps",
+												"package": "rete-react-plugin"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 45,
+												"name": "Schemes",
+												"package": "rete-react-plugin",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": 46,
+												"name": "K",
+												"package": "rete-react-plugin",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-react-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								43
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/presets/classic/index.tsx",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/classic/index.tsx#L1"
+						}
+					]
+				},
+				{
+					"id": 136,
+					"name": "contextMenu",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 137,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/presets/context-menu/index.tsx",
+									"line": 21,
+									"character": 16,
+									"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/context-menu/index.tsx#L21"
+								}
+							],
+							"signatures": [
+								{
+									"id": 138,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset for rendering context menu."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/presets/context-menu/index.tsx",
+											"line": 21,
+											"character": 16,
+											"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/context-menu/index.tsx#L21"
+										}
+									],
+									"typeParameters": [
+										{
+											"id": 139,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											}
+										},
+										{
+											"id": 140,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "RenderSignal"
+												},
+												"typeArguments": [
+													{
+														"type": "literal",
+														"value": "contextmenu"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 141,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"children": [
+																{
+																	"id": 142,
+																	"name": "items",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "src/presets/context-menu/types.ts",
+																			"line": 11,
+																			"character": 34,
+																			"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/context-menu/types.ts#L11"
+																		}
+																	],
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "reference",
+																			"target": {
+																				"sourceFileName": "src/presets/context-menu/types.ts",
+																				"qualifiedName": "Item"
+																			},
+																			"name": "Item",
+																			"package": "rete-react-plugin"
+																		}
+																	}
+																},
+																{
+																	"id": 145,
+																	"name": "searchBar",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {
+																		"isOptional": true
+																	},
+																	"sources": [
+																		{
+																			"fileName": "src/presets/context-menu/types.ts",
+																			"line": 11,
+																			"character": 65,
+																			"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/context-menu/types.ts#L11"
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "boolean"
+																	}
+																},
+																{
+																	"id": 143,
+																	"name": "onHide",
+																	"variant": "declaration",
+																	"kind": 2048,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "src/presets/context-menu/types.ts",
+																			"line": 11,
+																			"character": 49,
+																			"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/context-menu/types.ts#L11"
+																		}
+																	],
+																	"signatures": [
+																		{
+																			"id": 144,
+																			"name": "onHide",
+																			"variant": "signature",
+																			"kind": 4096,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/presets/context-menu/types.ts",
+																					"line": 11,
+																					"character": 49,
+																					"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/context-menu/types.ts#L11"
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "void"
+																			}
+																		}
+																	]
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"children": [
+																		142,
+																		145
+																	]
+																},
+																{
+																	"title": "Methods",
+																	"children": [
+																		143
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "src/presets/context-menu/types.ts",
+																	"line": 11,
+																	"character": 32,
+																	"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/context-menu/types.ts#L11"
+																}
+															]
+														}
+													}
+												],
+												"name": "RenderSignal",
+												"package": "rete-react-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 146,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/context-menu/index.tsx",
+													"qualifiedName": "Props"
+												},
+												"name": "Props",
+												"package": "rete-react-plugin"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 139,
+												"name": "Schemes",
+												"package": "rete-react-plugin",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": 140,
+												"name": "K",
+												"package": "rete-react-plugin",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-react-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								137
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/presets/context-menu/index.tsx",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/context-menu/index.tsx#L1"
+						}
+					]
+				},
+				{
+					"id": 172,
+					"name": "minimap",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 173,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/presets/minimap/index.tsx",
+									"line": 11,
+									"character": 16,
+									"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/minimap/index.tsx#L11"
+								}
+							],
+							"signatures": [
+								{
+									"id": 174,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset for rendering minimap."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/presets/minimap/index.tsx",
+											"line": 11,
+											"character": 16,
+											"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/minimap/index.tsx#L11"
+										}
+									],
+									"typeParameters": [
+										{
+											"id": 175,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											}
+										},
+										{
+											"id": 176,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "RenderSignal"
+												},
+												"typeArguments": [
+													{
+														"type": "literal",
+														"value": "minimap"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 177,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"children": [
+																{
+																	"id": 179,
+																	"name": "nodes",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "src/presets/minimap/types.ts",
+																			"line": 19,
+																			"character": 4,
+																			"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/minimap/types.ts#L19"
+																		}
+																	],
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "reference",
+																			"target": {
+																				"sourceFileName": "src/presets/minimap/types.ts",
+																				"qualifiedName": "Rect"
+																			},
+																			"name": "Rect",
+																			"package": "rete-react-plugin"
+																		}
+																	}
+																},
+																{
+																	"id": 178,
+																	"name": "ratio",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "src/presets/minimap/types.ts",
+																			"line": 18,
+																			"character": 4,
+																			"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/minimap/types.ts#L18"
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	}
+																},
+																{
+																	"id": 183,
+																	"name": "translate",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "src/presets/minimap/types.ts",
+																			"line": 22,
+																			"character": 4,
+																			"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/minimap/types.ts#L22"
+																		}
+																	],
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "src/presets/minimap/types.ts",
+																			"qualifiedName": "Translate"
+																		},
+																		"name": "Translate",
+																		"package": "rete-react-plugin"
+																	}
+																},
+																{
+																	"id": 180,
+																	"name": "viewport",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "src/presets/minimap/types.ts",
+																			"line": 20,
+																			"character": 4,
+																			"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/minimap/types.ts#L20"
+																		}
+																	],
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "src/presets/minimap/types.ts",
+																			"qualifiedName": "Rect"
+																		},
+																		"name": "Rect",
+																		"package": "rete-react-plugin"
+																	}
+																},
+																{
+																	"id": 184,
+																	"name": "point",
+																	"variant": "declaration",
+																	"kind": 2048,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "src/presets/minimap/types.ts",
+																			"line": 23,
+																			"character": 4,
+																			"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/minimap/types.ts#L23"
+																		}
+																	],
+																	"signatures": [
+																		{
+																			"id": 185,
+																			"name": "point",
+																			"variant": "signature",
+																			"kind": 4096,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/presets/minimap/types.ts",
+																					"line": 23,
+																					"character": 4,
+																					"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/minimap/types.ts#L23"
+																				}
+																			],
+																			"parameters": [
+																				{
+																					"id": 186,
+																					"name": "x",
+																					"variant": "param",
+																					"kind": 32768,
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "number"
+																					}
+																				},
+																				{
+																					"id": 187,
+																					"name": "y",
+																					"variant": "param",
+																					"kind": 32768,
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "number"
+																					}
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "void"
+																			}
+																		}
+																	]
+																},
+																{
+																	"id": 181,
+																	"name": "start",
+																	"variant": "declaration",
+																	"kind": 2048,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "src/presets/minimap/types.ts",
+																			"line": 21,
+																			"character": 4,
+																			"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/minimap/types.ts#L21"
+																		}
+																	],
+																	"signatures": [
+																		{
+																			"id": 182,
+																			"name": "start",
+																			"variant": "signature",
+																			"kind": 4096,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/presets/minimap/types.ts",
+																					"line": 21,
+																					"character": 4,
+																					"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/minimap/types.ts#L21"
+																				}
+																			],
+																			"type": {
+																				"type": "reference",
+																				"target": {
+																					"sourceFileName": "src/presets/minimap/types.ts",
+																					"qualifiedName": "Transform"
+																				},
+																				"name": "Transform",
+																				"package": "rete-react-plugin"
+																			}
+																		}
+																	]
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"children": [
+																		179,
+																		178,
+																		183,
+																		180
+																	]
+																},
+																{
+																	"title": "Methods",
+																	"children": [
+																		184,
+																		181
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "src/presets/minimap/types.ts",
+																	"line": 17,
+																	"character": 28,
+																	"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/minimap/types.ts#L17"
+																}
+															]
+														}
+													}
+												],
+												"name": "RenderSignal",
+												"package": "rete-react-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 188,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 189,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 190,
+															"name": "size",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"sources": [
+																{
+																	"fileName": "src/presets/minimap/index.tsx",
+																	"line": 11,
+																	"character": 86,
+																	"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/minimap/index.tsx#L11"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																190
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "src/presets/minimap/index.tsx",
+															"line": 11,
+															"character": 84,
+															"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/minimap/index.tsx#L11"
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 175,
+												"name": "Schemes",
+												"package": "rete-react-plugin",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": 176,
+												"name": "K",
+												"package": "rete-react-plugin",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-react-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								173
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/presets/minimap/index.tsx",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/minimap/index.tsx#L1"
+						}
+					]
+				},
+				{
+					"id": 191,
+					"name": "reroute",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 192,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/presets/reroute-pins/index.tsx",
+									"line": 20,
+									"character": 16,
+									"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/reroute-pins/index.tsx#L20"
+								}
+							],
+							"signatures": [
+								{
+									"id": 193,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset for rendering pins."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "src/presets/reroute-pins/index.tsx",
+											"line": 20,
+											"character": 16,
+											"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/reroute-pins/index.tsx#L20"
+										}
+									],
+									"typeParameters": [
+										{
+											"id": 194,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											}
+										},
+										{
+											"id": 195,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "RenderSignal"
+												},
+												"typeArguments": [
+													{
+														"type": "literal",
+														"value": "reroute-pins"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 196,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"children": [
+																{
+																	"id": 197,
+																	"name": "data",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "src/presets/reroute-pins/types.ts",
+																			"line": 16,
+																			"character": 35,
+																			"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/reroute-pins/types.ts#L16"
+																		}
+																	],
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "src/presets/reroute-pins/types.ts",
+																			"qualifiedName": "PinData"
+																		},
+																		"name": "PinData",
+																		"package": "rete-react-plugin"
+																	}
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"children": [
+																		197
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "src/presets/reroute-pins/types.ts",
+																	"line": 16,
+																	"character": 33,
+																	"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/reroute-pins/types.ts#L16"
+																}
+															]
+														}
+													}
+												],
+												"name": "RenderSignal",
+												"package": "rete-react-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 198,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/reroute-pins/index.tsx",
+													"qualifiedName": "Props"
+												},
+												"name": "Props",
+												"package": "rete-react-plugin"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 194,
+												"name": "Schemes",
+												"package": "rete-react-plugin",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": 195,
+												"name": "K",
+												"package": "rete-react-plugin",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-react-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								192
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/presets/reroute-pins/index.tsx",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/reroute-pins/index.tsx#L1"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Namespaces",
+					"children": [
+						42,
+						136,
+						172,
+						191
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/presets/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/presets/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 15,
+			"name": "ReactPlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "React plugin. Renders nodes, connections and other elements using React."
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "10"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "connectionpath"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "render"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "unmount"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 35,
+					"name": "addPreset",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.tsx",
+							"line": 111,
+							"character": 9,
+							"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/index.tsx#L111"
+						}
+					],
+					"signatures": [
+						{
+							"id": 36,
+							"name": "addPreset",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a preset to the plugin."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/index.tsx",
+									"line": 111,
+									"character": 9,
+									"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/index.tsx#L111"
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 37,
+									"name": "K",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 38,
+									"name": "preset",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset that can render nodes, connections and other elements."
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 39,
+												"name": "Schemes",
+												"package": "rete-react-plugin",
+												"qualifiedName": "ReactPlugin.Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "conditional",
+												"checkType": {
+													"type": "reference",
+													"target": {
+														"sourceFileName": "src/utility-types.ts",
+														"qualifiedName": "CanAssignEachTupleElemmentToAnyOf"
+													},
+													"typeArguments": [
+														{
+															"type": "reference",
+															"target": 40,
+															"name": "T",
+															"package": "rete-react-plugin",
+															"qualifiedName": "ReactPlugin.T",
+															"refersToTypeParameter": true
+														},
+														{
+															"type": "reference",
+															"target": {
+																"sourceFileName": "src/utility-types.ts",
+																"qualifiedName": "UnionToTuple"
+															},
+															"typeArguments": [
+																{
+																	"type": "reference",
+																	"target": 37,
+																	"name": "K",
+																	"package": "rete-react-plugin",
+																	"refersToTypeParameter": true
+																}
+															],
+															"name": "UnionToTuple",
+															"package": "rete"
+														}
+													],
+													"name": "CanAssignEachTupleElemmentToAnyOf",
+													"package": "rete"
+												},
+												"extendsType": {
+													"type": "literal",
+													"value": true
+												},
+												"trueType": {
+													"type": "reference",
+													"target": 37,
+													"name": "K",
+													"package": "rete-react-plugin",
+													"refersToTypeParameter": true
+												},
+												"falseType": {
+													"type": "literal",
+													"value": "Cannot apply preset. Provided signals are not compatible"
+												}
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-react-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"children": [
+						35
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.tsx",
+					"line": 45,
+					"character": 13,
+					"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/index.tsx#L45"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 39,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				},
+				{
+					"id": 40,
+					"name": "T",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"default": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/index.tsx",
+							"qualifiedName": "Requires"
+						},
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": 39,
+								"name": "Schemes",
+								"package": "rete-react-plugin",
+								"qualifiedName": "ReactPlugin.Schemes",
+								"refersToTypeParameter": true
+							}
+						],
+						"name": "Requires",
+						"package": "rete-react-plugin"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "src/scope.ts",
+						"qualifiedName": "Scope"
+					},
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": 1,
+							"typeArguments": [
+								{
+									"type": "reference",
+									"target": 39,
+									"name": "Schemes",
+									"package": "rete-react-plugin",
+									"qualifiedName": "ReactPlugin.Schemes",
+									"refersToTypeParameter": true
+								}
+							],
+							"name": "Produces",
+							"package": "rete-react-plugin"
+						},
+						{
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "union",
+									"types": [
+										{
+											"type": "reference",
+											"target": {
+												"sourceFileName": "src/index.tsx",
+												"qualifiedName": "Requires"
+											},
+											"typeArguments": [
+												{
+													"type": "reference",
+													"target": 39,
+													"name": "Schemes",
+													"package": "rete-react-plugin",
+													"qualifiedName": "ReactPlugin.Schemes",
+													"refersToTypeParameter": true
+												}
+											],
+											"name": "Requires",
+											"package": "rete-react-plugin"
+										},
+										{
+											"type": "reference",
+											"target": 40,
+											"name": "T",
+											"package": "rete-react-plugin",
+											"qualifiedName": "ReactPlugin.T",
+											"refersToTypeParameter": true
+										}
+									]
+								}
+							]
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "Produces",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Signals that can be emitted by the plugin"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "9"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/index.tsx",
+					"line": 20,
+					"character": 12,
+					"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/index.tsx#L20"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 9,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 2,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 4,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.tsx",
+											"line": 21,
+											"character": 30,
+											"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/index.tsx#L21"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 5,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 7,
+													"name": "path",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "src/index.tsx",
+															"line": 21,
+															"character": 70,
+															"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/index.tsx#L21"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 6,
+													"name": "payload",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/index.tsx",
+															"line": 21,
+															"character": 38,
+															"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/index.tsx#L21"
+														}
+													],
+													"type": {
+														"type": "indexedAccess",
+														"indexType": {
+															"type": "literal",
+															"value": "Connection"
+														},
+														"objectType": {
+															"type": "reference",
+															"target": 9,
+															"name": "Schemes",
+															"package": "rete-react-plugin",
+															"refersToTypeParameter": true
+														}
+													}
+												},
+												{
+													"id": 8,
+													"name": "points",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "src/index.tsx",
+															"line": 21,
+															"character": 85,
+															"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/index.tsx#L21"
+														}
+													],
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "reference",
+															"target": {
+																"sourceFileName": "src/types.ts",
+																"qualifiedName": "Position"
+															},
+															"name": "Position",
+															"package": "rete-react-plugin"
+														}
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														7,
+														6,
+														8
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "src/index.tsx",
+													"line": 21,
+													"character": 36,
+													"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/index.tsx#L21"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 3,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.tsx",
+											"line": 21,
+											"character": 6,
+											"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/index.tsx#L21"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "connectionpath"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										4,
+										3
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.tsx",
+									"line": 21,
+									"character": 4,
+									"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/index.tsx#L21"
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": 10,
+			"name": "Props",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Plugin props"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "src/index.tsx",
+					"line": 31,
+					"character": 12,
+					"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/index.tsx#L31"
+				}
+			],
+			"type": {
+				"type": "conditional",
+				"checkType": {
+					"type": "reference",
+					"target": {
+						"sourceFileName": "src/renderer.ts",
+						"qualifiedName": "HasLegacyRender"
+					},
+					"name": "HasLegacyRender",
+					"package": "rete-react-plugin"
+				},
+				"extendsType": {
+					"type": "literal",
+					"value": true
+				},
+				"trueType": {
+					"type": "reflection",
+					"declaration": {
+						"id": 11,
+						"name": "__type",
+						"variant": "declaration",
+						"kind": 65536,
+						"flags": {},
+						"children": [
+							{
+								"id": 12,
+								"name": "createRoot",
+								"variant": "declaration",
+								"kind": 1024,
+								"flags": {
+									"isOptional": true
+								},
+								"comment": {
+									"summary": [
+										{
+											"kind": "text",
+											"text": "root factory for React.js 18+"
+										}
+									]
+								},
+								"sources": [
+									{
+										"fileName": "src/index.tsx",
+										"line": 33,
+										"character": 2,
+										"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/index.tsx#L33"
+									}
+								],
+								"type": {
+									"type": "reference",
+									"target": {
+										"sourceFileName": "src/renderer.ts",
+										"qualifiedName": "CreateRoot"
+									},
+									"name": "CreateRoot",
+									"package": "rete-react-plugin"
+								}
+							}
+						],
+						"groups": [
+							{
+								"title": "Properties",
+								"children": [
+									12
+								]
+							}
+						],
+						"sources": [
+							{
+								"fileName": "src/index.tsx",
+								"line": 31,
+								"character": 51,
+								"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/index.tsx#L31"
+							}
+						]
+					}
+				},
+				"falseType": {
+					"type": "reflection",
+					"declaration": {
+						"id": 13,
+						"name": "__type",
+						"variant": "declaration",
+						"kind": 65536,
+						"flags": {},
+						"children": [
+							{
+								"id": 14,
+								"name": "createRoot",
+								"variant": "declaration",
+								"kind": 1024,
+								"flags": {},
+								"sources": [
+									{
+										"fileName": "src/index.tsx",
+										"line": 35,
+										"character": 2,
+										"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/index.tsx#L35"
+									}
+								],
+								"type": {
+									"type": "reference",
+									"target": {
+										"sourceFileName": "src/renderer.ts",
+										"qualifiedName": "CreateRoot"
+									},
+									"name": "CreateRoot",
+									"package": "rete-react-plugin"
+								}
+							}
+						],
+						"groups": [
+							{
+								"title": "Properties",
+								"children": [
+									14
+								]
+							}
+						],
+						"sources": [
+							{
+								"fileName": "src/index.tsx",
+								"line": 34,
+								"character": 4,
+								"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/index.tsx#L34"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"id": 202,
+			"name": "RefComponent",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/ref-component.tsx",
+					"line": 9,
+					"character": 16,
+					"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/ref-component.tsx#L9"
+				}
+			],
+			"signatures": [
+				{
+					"id": 203,
+					"name": "RefComponent",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Component for rendering various elements embedded in the React.js component tree."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/ref-component.tsx",
+							"line": 9,
+							"character": 16,
+							"url": "https://github.com/retejs/react-plugin/blob/7f2244a105c98b04127c34f8890c40a34376a80a/src/ref-component.tsx#L9"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 204,
+							"name": "Props",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "src/ref-component.tsx",
+									"qualifiedName": "BaseProps"
+								},
+								"name": "BaseProps",
+								"package": "rete-react-plugin"
+							}
+						}
+					],
+					"parameters": [
+						{
+							"id": 205,
+							"name": "__namedParameters",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": 204,
+								"name": "Props",
+								"package": "rete-react-plugin",
+								"refersToTypeParameter": true
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/@types/react/index.d.ts",
+							"qualifiedName": "React.JSX.Element"
+						},
+						"name": "Element",
+						"package": "@types/react",
+						"qualifiedName": "React.JSX.Element"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"children": [
+				41
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				15
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				1,
+				10
+			]
+		},
+		{
+			"title": "Functions",
+			"children": [
+				202
+			]
+		}
+	],
+	"packageName": "rete-react-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js React plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Render elements**: visualize an elements such as nodes and connections using React.js components\n- **Customization**: modify appearance and behavior for a personalized workflow\n- **Presets**: predefined React.js components for different types of features\n  -  **[Classic](https://retejs.org/docs/guides/renderers/react#connect-plugin)**: provides a classic visualization of nodes, connections, and controls\n  -  **[Context menu](https://retejs.org/docs/guides/context-menu#render-context-menu)**: provides a classic appearance for "
+		},
+		{
+			"kind": "code",
+			"text": "`rete-context-menu-plugin`"
+		},
+		{
+			"kind": "text",
+			"text": "\n  -  **[Minimap](https://retejs.org/docs/guides/minimap#render)**: provides a classic appearance for "
+		},
+		{
+			"kind": "code",
+			"text": "`rete-minimap-plugin`"
+		},
+		{
+			"kind": "text",
+			"text": "\n  -  **[Reroute](https://retejs.org/docs/guides/reroute#rendering)**: provides a classic appearance for "
+		},
+		{
+			"kind": "code",
+			"text": "`rete-connection-reroute-plugin`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/renderers/react) and [example](https://retejs.org/examples/react) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/react-plugin/blob/main/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "Produces"
+		},
+		"2": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type"
+		},
+		"3": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type.type"
+		},
+		"4": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type.data"
+		},
+		"5": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type"
+		},
+		"6": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type.payload"
+		},
+		"7": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type.path"
+		},
+		"8": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type.points"
+		},
+		"9": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "Schemes"
+		},
+		"10": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "Props"
+		},
+		"11": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type"
+		},
+		"12": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type.createRoot"
+		},
+		"13": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type"
+		},
+		"14": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "__type.createRoot"
+		},
+		"15": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "ReactPlugin"
+		},
+		"35": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "ReactPlugin.addPreset"
+		},
+		"36": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "ReactPlugin.addPreset"
+		},
+		"37": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "K"
+		},
+		"38": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "preset"
+		},
+		"39": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "ReactPlugin.Schemes"
+		},
+		"40": {
+			"sourceFileName": "src/index.tsx",
+			"qualifiedName": "ReactPlugin.T"
+		},
+		"41": {
+			"sourceFileName": "src/presets/index.ts",
+			"qualifiedName": ""
+		},
+		"42": {
+			"sourceFileName": "src/presets/classic/index.tsx",
+			"qualifiedName": ""
+		},
+		"43": {
+			"sourceFileName": "src/presets/classic/index.tsx",
+			"qualifiedName": "setup"
+		},
+		"44": {
+			"sourceFileName": "src/presets/classic/index.tsx",
+			"qualifiedName": "setup"
+		},
+		"45": {
+			"sourceFileName": "src/presets/classic/index.tsx",
+			"qualifiedName": "Schemes"
+		},
+		"46": {
+			"sourceFileName": "src/presets/classic/index.tsx",
+			"qualifiedName": "K"
+		},
+		"47": {
+			"sourceFileName": "src/presets/classic/index.tsx",
+			"qualifiedName": "props"
+		},
+		"136": {
+			"sourceFileName": "src/presets/context-menu/index.tsx",
+			"qualifiedName": ""
+		},
+		"137": {
+			"sourceFileName": "src/presets/context-menu/index.tsx",
+			"qualifiedName": "setup"
+		},
+		"138": {
+			"sourceFileName": "src/presets/context-menu/index.tsx",
+			"qualifiedName": "setup"
+		},
+		"139": {
+			"sourceFileName": "src/presets/context-menu/index.tsx",
+			"qualifiedName": "Schemes"
+		},
+		"140": {
+			"sourceFileName": "src/presets/context-menu/index.tsx",
+			"qualifiedName": "K"
+		},
+		"141": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type"
+		},
+		"142": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.items"
+		},
+		"143": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.onHide"
+		},
+		"144": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.onHide"
+		},
+		"145": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.searchBar"
+		},
+		"146": {
+			"sourceFileName": "src/presets/context-menu/index.tsx",
+			"qualifiedName": "props"
+		},
+		"172": {
+			"sourceFileName": "src/presets/minimap/index.tsx",
+			"qualifiedName": ""
+		},
+		"173": {
+			"sourceFileName": "src/presets/minimap/index.tsx",
+			"qualifiedName": "setup"
+		},
+		"174": {
+			"sourceFileName": "src/presets/minimap/index.tsx",
+			"qualifiedName": "setup"
+		},
+		"175": {
+			"sourceFileName": "src/presets/minimap/index.tsx",
+			"qualifiedName": "Schemes"
+		},
+		"176": {
+			"sourceFileName": "src/presets/minimap/index.tsx",
+			"qualifiedName": "K"
+		},
+		"177": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type"
+		},
+		"178": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.ratio"
+		},
+		"179": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.nodes"
+		},
+		"180": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.viewport"
+		},
+		"181": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.start"
+		},
+		"182": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.start"
+		},
+		"183": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.translate"
+		},
+		"184": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.point"
+		},
+		"185": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.point"
+		},
+		"186": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "x"
+		},
+		"187": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "y"
+		},
+		"188": {
+			"sourceFileName": "src/presets/minimap/index.tsx",
+			"qualifiedName": "props"
+		},
+		"189": {
+			"sourceFileName": "src/presets/minimap/index.tsx",
+			"qualifiedName": "__type"
+		},
+		"190": {
+			"sourceFileName": "src/presets/minimap/index.tsx",
+			"qualifiedName": "__type.size"
+		},
+		"191": {
+			"sourceFileName": "src/presets/reroute-pins/index.tsx",
+			"qualifiedName": ""
+		},
+		"192": {
+			"sourceFileName": "src/presets/reroute-pins/index.tsx",
+			"qualifiedName": "setup"
+		},
+		"193": {
+			"sourceFileName": "src/presets/reroute-pins/index.tsx",
+			"qualifiedName": "setup"
+		},
+		"194": {
+			"sourceFileName": "src/presets/reroute-pins/index.tsx",
+			"qualifiedName": "Schemes"
+		},
+		"195": {
+			"sourceFileName": "src/presets/reroute-pins/index.tsx",
+			"qualifiedName": "K"
+		},
+		"196": {
+			"sourceFileName": "src/presets/reroute-pins/types.ts",
+			"qualifiedName": "__type"
+		},
+		"197": {
+			"sourceFileName": "src/presets/reroute-pins/types.ts",
+			"qualifiedName": "__type.data"
+		},
+		"198": {
+			"sourceFileName": "src/presets/reroute-pins/index.tsx",
+			"qualifiedName": "props"
+		},
+		"202": {
+			"sourceFileName": "src/ref-component.tsx",
+			"qualifiedName": "RefComponent"
+		},
+		"203": {
+			"sourceFileName": "src/ref-component.tsx",
+			"qualifiedName": "RefComponent"
+		},
+		"204": {
+			"sourceFileName": "src/ref-component.tsx",
+			"qualifiedName": "Props"
+		},
+		"205": {
+			"sourceFileName": "src/ref-component.tsx",
+			"qualifiedName": "__0"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/index.tsx",
+			"2": "src/presets/index.ts",
+			"3": "src/presets/classic/index.tsx",
+			"4": "src/presets/classic/vars.ts",
+			"5": "src/presets/context-menu/index.tsx",
+			"6": "src/presets/minimap/index.tsx",
+			"7": "src/presets/reroute-pins/index.tsx",
+			"8": "src/shared/drag.tsx"
+		},
+		"reflections": {
+			"1": 0,
+			"2": 41,
+			"3": 42,
+			"5": 136,
+			"6": 172,
+			"7": 191
+		}
+	}
+}
