@@ -6,7 +6,7 @@
 	"flags": {},
 	"children": [
 		{
-			"id": 44,
+			"id": 54,
 			"name": "HistoryExtensions",
 			"variant": "declaration",
 			"kind": 4,
@@ -21,22 +21,22 @@
 			},
 			"children": [
 				{
-					"id": 45,
+					"id": 55,
 					"name": "keyboard",
 					"variant": "declaration",
 					"kind": 64,
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "extensions/keyboard.ts",
-							"line": 10,
+							"fileName": "extensions/keyboard/index.ts",
+							"line": 11,
 							"character": 16,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/extensions/keyboard.ts#L10"
+							"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/extensions/keyboard/index.ts#L11"
 						}
 					],
 					"signatures": [
 						{
-							"id": 46,
+							"id": 56,
 							"name": "keyboard",
 							"variant": "signature",
 							"kind": 4096,
@@ -51,15 +51,15 @@
 							},
 							"sources": [
 								{
-									"fileName": "extensions/keyboard.ts",
-									"line": 10,
-									"character": 0,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/extensions/keyboard.ts#L10"
+									"fileName": "extensions/keyboard/index.ts",
+									"line": 11,
+									"character": 16,
+									"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/extensions/keyboard/index.ts#L11"
 								}
 							],
-							"typeParameter": [
+							"typeParameters": [
 								{
-									"id": 47,
+									"id": 57,
 									"name": "Schemes",
 									"variant": "typeParam",
 									"kind": 131072,
@@ -75,14 +75,14 @@
 									}
 								},
 								{
-									"id": 48,
+									"id": 58,
 									"name": "A",
 									"variant": "typeParam",
 									"kind": 131072,
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"target": 39,
+										"target": 49,
 										"name": "Action",
 										"package": "rete-history-plugin"
 									}
@@ -90,7 +90,7 @@
 							],
 							"parameters": [
 								{
-									"id": 49,
+									"id": 59,
 									"name": "plugin",
 									"variant": "param",
 									"kind": 32768,
@@ -109,14 +109,16 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 57,
 												"name": "Schemes",
+												"package": "rete-history-plugin",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 58,
 												"name": "A",
+												"package": "rete-history-plugin",
 												"refersToTypeParameter": true
 											}
 										],
@@ -137,7 +139,7 @@
 				{
 					"title": "Functions",
 					"children": [
-						45
+						55
 					]
 				}
 			],
@@ -146,12 +148,12 @@
 					"fileName": "extensions/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/extensions/index.ts#L1"
+					"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/extensions/index.ts#L1"
 				}
 			]
 		},
 		{
-			"id": 50,
+			"id": 60,
 			"name": "Presets",
 			"variant": "declaration",
 			"kind": 4,
@@ -166,14 +168,14 @@
 			},
 			"children": [
 				{
-					"id": 51,
+					"id": 61,
 					"name": "classic",
 					"variant": "declaration",
 					"kind": 4,
 					"flags": {},
 					"children": [
 						{
-							"id": 52,
+							"id": 62,
 							"name": "setup",
 							"variant": "declaration",
 							"kind": 64,
@@ -181,14 +183,14 @@
 							"sources": [
 								{
 									"fileName": "presets/classic/index.ts",
-									"line": 121,
+									"line": 129,
 									"character": 16,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/classic/index.ts#L121"
+									"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/presets/classic/index.ts#L129"
 								}
 							],
 							"signatures": [
 								{
-									"id": 53,
+									"id": 63,
 									"name": "setup",
 									"variant": "signature",
 									"kind": 4096,
@@ -204,14 +206,14 @@
 									"sources": [
 										{
 											"fileName": "presets/classic/index.ts",
-											"line": 121,
-											"character": 0,
-											"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/classic/index.ts#L121"
+											"line": 129,
+											"character": 16,
+											"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/presets/classic/index.ts#L129"
 										}
 									],
-									"typeParameter": [
+									"typeParameters": [
 										{
-											"id": 54,
+											"id": 64,
 											"name": "S",
 											"variant": "typeParam",
 											"kind": 131072,
@@ -229,7 +231,7 @@
 									],
 									"parameters": [
 										{
-											"id": 55,
+											"id": 65,
 											"name": "props",
 											"variant": "param",
 											"kind": 32768,
@@ -239,14 +241,14 @@
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 56,
+													"id": 66,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
 													"flags": {},
 													"children": [
 														{
-															"id": 57,
+															"id": 67,
 															"name": "timing",
 															"variant": "declaration",
 															"kind": 1024,
@@ -256,9 +258,9 @@
 															"sources": [
 																{
 																	"fileName": "presets/classic/index.ts",
-																	"line": 121,
+																	"line": 129,
 																	"character": 55,
-																	"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/classic/index.ts#L121"
+																	"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/presets/classic/index.ts#L129"
 																}
 															],
 															"type": {
@@ -271,16 +273,16 @@
 														{
 															"title": "Properties",
 															"children": [
-																57
+																67
 															]
 														}
 													],
 													"sources": [
 														{
 															"fileName": "presets/classic/index.ts",
-															"line": 121,
+															"line": 129,
 															"character": 53,
-															"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/classic/index.ts#L121"
+															"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/presets/classic/index.ts#L129"
 														}
 													]
 												}
@@ -296,8 +298,9 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 64,
 												"name": "S",
+												"package": "rete-history-plugin",
 												"refersToTypeParameter": true
 											},
 											{
@@ -309,8 +312,9 @@
 												"typeArguments": [
 													{
 														"type": "reference",
-														"target": -1,
+														"target": 64,
 														"name": "S",
+														"package": "rete-history-plugin",
 														"refersToTypeParameter": true
 													}
 												],
@@ -329,7 +333,7 @@
 						{
 							"title": "Functions",
 							"children": [
-								52
+								62
 							]
 						}
 					],
@@ -338,7 +342,191 @@
 							"fileName": "presets/classic/index.ts",
 							"line": 1,
 							"character": 0,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/classic/index.ts#L1"
+							"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/presets/classic/index.ts#L1"
+						}
+					]
+				},
+				{
+					"id": 155,
+					"name": "comments",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 156,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/comments/index.ts",
+									"line": 195,
+									"character": 16,
+									"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/presets/comments/index.ts#L195"
+								}
+							],
+							"signatures": [
+								{
+									"id": 157,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Comments preset for the history plugin. Tracks comment add/remove/drag/edit.\n\nRegister together with "
+											},
+											{
+												"kind": "code",
+												"text": "`Presets.classic.setup()`"
+											},
+											{
+												"kind": "text",
+												"text": " so node drags that change frame\nmembership replace the classic "
+											},
+											{
+												"kind": "code",
+												"text": "`DragNodeAction`"
+											},
+											{
+												"kind": "text",
+												"text": " with "
+											},
+											{
+												"kind": "code",
+												"text": "`NodeFrameMembershipAction`"
+											},
+											{
+												"kind": "text",
+												"text": "."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/comments/index.ts",
+											"line": 195,
+											"character": 16,
+											"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/presets/comments/index.ts#L195"
+										}
+									],
+									"parameters": [
+										{
+											"id": 158,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 159,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 160,
+															"name": "comment",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "presets/comments/index.ts",
+																	"line": 196,
+																	"character": 2,
+																	"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/presets/comments/index.ts#L196"
+																}
+															],
+															"type": {
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "src/index.ts",
+																	"qualifiedName": "CommentPlugin"
+																},
+																"typeArguments": [
+																	{
+																		"type": "intrinsic",
+																		"name": "any"
+																	},
+																	{
+																		"type": "intrinsic",
+																		"name": "any"
+																	}
+																],
+																"name": "CommentPlugin",
+																"package": "rete-comment-plugin"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																160
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "presets/comments/index.ts",
+															"line": 195,
+															"character": 29,
+															"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/presets/comments/index.ts#L195"
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "Preset"
+										},
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											},
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/comments/index.ts",
+													"qualifiedName": "CommentHistoryActions"
+												},
+												"name": "CommentHistoryActions",
+												"package": "rete-history-plugin"
+											}
+										],
+										"name": "Preset",
+										"package": "rete-history-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								156
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/comments/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/presets/comments/index.ts#L1"
 						}
 					]
 				}
@@ -347,7 +535,8 @@
 				{
 					"title": "Namespaces",
 					"children": [
-						51
+						61,
+						155
 					]
 				}
 			],
@@ -356,7 +545,7 @@
 					"fileName": "presets/index.ts",
 					"line": 1,
 					"character": 0,
-					"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/presets/index.ts#L1"
+					"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/presets/index.ts#L1"
 				}
 			]
 		},
@@ -384,9 +573,9 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 30,
+							"line": 31,
 							"character": 2,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L30"
+							"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L31"
 						}
 					],
 					"signatures": [
@@ -399,12 +588,12 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 30,
+									"line": 31,
 									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L30"
+									"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L31"
 								}
 							],
-							"typeParameter": [
+							"typeParameters": [
 								{
 									"id": 4,
 									"name": "Schemes",
@@ -429,13 +618,13 @@
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"target": 39,
+										"target": 49,
 										"name": "Action",
 										"package": "rete-history-plugin"
 									},
 									"default": {
 										"type": "reference",
-										"target": 39,
+										"target": 49,
 										"name": "Action",
 										"package": "rete-history-plugin"
 									}
@@ -486,9 +675,9 @@
 													"sources": [
 														{
 															"fileName": "index.ts",
-															"line": 30,
+															"line": 31,
 															"character": 24,
-															"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L30"
+															"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L31"
 														}
 													],
 													"type": {
@@ -508,9 +697,9 @@
 											"sources": [
 												{
 													"fileName": "index.ts",
-													"line": 30,
+													"line": 31,
 													"character": 22,
-													"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L30"
+													"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L31"
 												}
 											]
 										}
@@ -523,14 +712,18 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"target": -1,
+										"target": 4,
 										"name": "Schemes",
+										"package": "rete-history-plugin",
+										"qualifiedName": "HistoryPlugin.Schemes",
 										"refersToTypeParameter": true
 									},
 									{
 										"type": "reference",
-										"target": -1,
+										"target": 5,
 										"name": "A",
+										"package": "rete-history-plugin",
+										"qualifiedName": "HistoryPlugin.A",
 										"refersToTypeParameter": true
 									}
 								],
@@ -561,9 +754,9 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 65,
+							"line": 68,
 							"character": 9,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L65"
+							"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L68"
 						}
 					],
 					"signatures": [
@@ -584,9 +777,9 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 65,
-									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L65"
+									"line": 68,
+									"character": 9,
+									"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L68"
 								}
 							],
 							"parameters": [
@@ -606,8 +799,10 @@
 									},
 									"type": {
 										"type": "reference",
-										"target": -1,
+										"target": 5,
 										"name": "A",
+										"package": "rete-history-plugin",
+										"qualifiedName": "HistoryPlugin.A",
 										"refersToTypeParameter": true
 									}
 								}
@@ -630,9 +825,9 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 56,
+							"line": 59,
 							"character": 9,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L56"
+							"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L59"
 						}
 					],
 					"signatures": [
@@ -653,12 +848,12 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 56,
-									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L56"
+									"line": 59,
+									"character": 9,
+									"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L59"
 								}
 							],
-							"typeParameter": [
+							"typeParameters": [
 								{
 									"id": 19,
 									"name": "T",
@@ -667,7 +862,7 @@
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"target": 39,
+										"target": 49,
 										"name": "Action",
 										"package": "rete-history-plugin"
 									}
@@ -697,14 +892,17 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 4,
 												"name": "Schemes",
+												"package": "rete-history-plugin",
+												"qualifiedName": "HistoryPlugin.Schemes",
 												"refersToTypeParameter": true
 											},
 											{
 												"type": "reference",
-												"target": -1,
+												"target": 19,
 												"name": "T",
+												"package": "rete-history-plugin",
 												"refersToTypeParameter": true
 											}
 										],
@@ -721,7 +919,7 @@
 					]
 				},
 				{
-					"id": 29,
+					"id": 39,
 					"name": "clear",
 					"variant": "declaration",
 					"kind": 2048,
@@ -731,14 +929,14 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 89,
+							"line": 99,
 							"character": 9,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L89"
+							"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L99"
 						}
 					],
 					"signatures": [
 						{
-							"id": 30,
+							"id": 40,
 							"name": "clear",
 							"variant": "signature",
 							"kind": 4096,
@@ -754,9 +952,9 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 89,
-									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L89"
+									"line": 99,
+									"character": 9,
+									"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L99"
 								}
 							],
 							"type": {
@@ -777,9 +975,9 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 73,
+							"line": 76,
 							"character": 9,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L73"
+							"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L76"
 						}
 					],
 					"signatures": [
@@ -811,9 +1009,9 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 73,
-									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L73"
+									"line": 76,
+									"character": 9,
+									"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L76"
 								}
 							],
 							"type": {
@@ -827,8 +1025,10 @@
 									"typeArguments": [
 										{
 											"type": "reference",
-											"target": -1,
+											"target": 5,
 											"name": "A",
+											"package": "rete-history-plugin",
+											"qualifiedName": "HistoryPlugin.A",
 											"refersToTypeParameter": true
 										}
 									],
@@ -850,9 +1050,9 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 82,
+							"line": 85,
 							"character": 9,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L82"
+							"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L85"
 						}
 					],
 					"signatures": [
@@ -900,9 +1100,9 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 82,
-									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L82"
+									"line": 85,
+									"character": 9,
+									"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L85"
 								}
 							],
 							"parameters": [
@@ -937,8 +1137,10 @@
 									"typeArguments": [
 										{
 											"type": "reference",
-											"target": -1,
+											"target": 5,
 											"name": "A",
+											"package": "rete-history-plugin",
+											"qualifiedName": "HistoryPlugin.A",
 											"refersToTypeParameter": true
 										}
 									],
@@ -950,7 +1152,7 @@
 					]
 				},
 				{
-					"id": 35,
+					"id": 45,
 					"name": "redo",
 					"variant": "declaration",
 					"kind": 2048,
@@ -960,14 +1162,14 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 120,
+							"line": 130,
 							"character": 15,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L120"
+							"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L130"
 						}
 					],
 					"signatures": [
 						{
-							"id": 36,
+							"id": 46,
 							"name": "redo",
 							"variant": "signature",
 							"kind": 4096,
@@ -999,9 +1201,9 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 120,
-									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L120"
+									"line": 130,
+									"character": 15,
+									"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L130"
 								}
 							],
 							"type": {
@@ -1023,7 +1225,218 @@
 					]
 				},
 				{
-					"id": 31,
+					"id": 29,
+					"name": "removeRecent",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 92,
+							"character": 9,
+							"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L92"
+						}
+					],
+					"signatures": [
+						{
+							"id": 30,
+							"name": "removeRecent",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Removes the most recent history record matching the predicate within the time window"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 92,
+									"character": 9,
+									"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L92"
+								}
+							],
+							"parameters": [
+								{
+									"id": 31,
+									"name": "predicate",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 32,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 92,
+													"character": 33,
+													"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L92"
+												}
+											],
+											"signatures": [
+												{
+													"id": 33,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 92,
+															"character": 33,
+															"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L92"
+														}
+													],
+													"parameters": [
+														{
+															"id": 34,
+															"name": "record",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {},
+															"type": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 35,
+																	"name": "__type",
+																	"variant": "declaration",
+																	"kind": 65536,
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 37,
+																			"name": "action",
+																			"variant": "declaration",
+																			"kind": 1024,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "index.ts",
+																					"line": 92,
+																					"character": 58,
+																					"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L92"
+																				}
+																			],
+																			"type": {
+																				"type": "reference",
+																				"target": 5,
+																				"name": "A",
+																				"package": "rete-history-plugin",
+																				"qualifiedName": "HistoryPlugin.A",
+																				"refersToTypeParameter": true
+																			}
+																		},
+																		{
+																			"id": 36,
+																			"name": "time",
+																			"variant": "declaration",
+																			"kind": 1024,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "index.ts",
+																					"line": 92,
+																					"character": 44,
+																					"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L92"
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "number"
+																			}
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Properties",
+																			"children": [
+																				37,
+																				36
+																			]
+																		}
+																	],
+																	"sources": [
+																		{
+																			"fileName": "index.ts",
+																			"line": 92,
+																			"character": 42,
+																			"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L92"
+																		}
+																	]
+																}
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "boolean"
+													}
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 38,
+									"name": "ms",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/history.ts",
+											"qualifiedName": "HistoryRecord"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 5,
+												"name": "A",
+												"package": "rete-history-plugin",
+												"qualifiedName": "HistoryPlugin.A",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "HistoryRecord",
+										"package": "rete-history-plugin"
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"id": 41,
 					"name": "separate",
 					"variant": "declaration",
 					"kind": 2048,
@@ -1033,14 +1446,14 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 96,
+							"line": 106,
 							"character": 9,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L96"
+							"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L106"
 						}
 					],
 					"signatures": [
 						{
-							"id": 32,
+							"id": 42,
 							"name": "separate",
 							"variant": "signature",
 							"kind": 4096,
@@ -1048,9 +1461,9 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 96,
-									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L96"
+									"line": 106,
+									"character": 9,
+									"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L106"
 								}
 							],
 							"type": {
@@ -1061,7 +1474,7 @@
 					]
 				},
 				{
-					"id": 33,
+					"id": 43,
 					"name": "undo",
 					"variant": "declaration",
 					"kind": 2048,
@@ -1071,14 +1484,14 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 105,
+							"line": 115,
 							"character": 15,
-							"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L105"
+							"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L115"
 						}
 					],
 					"signatures": [
 						{
-							"id": 34,
+							"id": 44,
 							"name": "undo",
 							"variant": "signature",
 							"kind": 4096,
@@ -1110,9 +1523,9 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 105,
-									"character": 2,
-									"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L105"
+									"line": 115,
+									"character": 15,
+									"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L115"
 								}
 							],
 							"type": {
@@ -1146,26 +1559,27 @@
 					"children": [
 						21,
 						17,
-						29,
+						39,
 						24,
 						26,
-						35,
-						31,
-						33
+						45,
+						29,
+						41,
+						43
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "index.ts",
-					"line": 17,
+					"line": 18,
 					"character": 13,
-					"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/index.ts#L17"
+					"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/index.ts#L18"
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 37,
+					"id": 47,
 					"name": "Schemes",
 					"variant": "typeParam",
 					"kind": 131072,
@@ -1181,20 +1595,20 @@
 					}
 				},
 				{
-					"id": 38,
+					"id": 48,
 					"name": "A",
 					"variant": "typeParam",
 					"kind": 131072,
 					"flags": {},
 					"type": {
 						"type": "reference",
-						"target": 39,
+						"target": 49,
 						"name": "Action",
 						"package": "rete-history-plugin"
 					},
 					"default": {
 						"type": "reference",
-						"target": 39,
+						"target": 49,
 						"name": "Action",
 						"package": "rete-history-plugin"
 					}
@@ -1218,14 +1632,16 @@
 								{
 									"type": "reference",
 									"target": {
-										"sourceFileName": "node_modules/src/base.ts",
+										"sourceFileName": "src/base.ts",
 										"qualifiedName": "BaseArea"
 									},
 									"typeArguments": [
 										{
 											"type": "reference",
-											"target": -1,
+											"target": 4,
 											"name": "Schemes",
+											"package": "rete-history-plugin",
+											"qualifiedName": "HistoryPlugin.Schemes",
 											"refersToTypeParameter": true
 										}
 									],
@@ -1241,8 +1657,10 @@
 									"typeArguments": [
 										{
 											"type": "reference",
-											"target": -1,
+											"target": 4,
 											"name": "Schemes",
+											"package": "rete-history-plugin",
+											"qualifiedName": "HistoryPlugin.Schemes",
 											"refersToTypeParameter": true
 										}
 									],
@@ -1258,7 +1676,7 @@
 			]
 		},
 		{
-			"id": 39,
+			"id": 49,
 			"name": "HistoryAction",
 			"variant": "declaration",
 			"kind": 256,
@@ -1276,7 +1694,7 @@
 						"content": [
 							{
 								"kind": "code",
-								"text": "```ts\nexport class CustomAction<S extends BaseSchemes> implements HistoryAction {\n async undo() {\n   // undo logic\n }\n async redo() {\n   // redo logic\n }\n}\n```"
+								"text": "```ts\nexport class CustomAction<S extends BaseSchemes> implements HistoryAction {\nasync undo() {\n // undo logic\n}\nasync redo() {\n // redo logic\n}\n}\n```"
 							}
 						]
 					}
@@ -1287,7 +1705,7 @@
 					"fileName": "types.ts",
 					"line": 12,
 					"character": 17,
-					"url": "https://github.com/retejs/history-plugin/blob/a678dfb/src/types.ts#L12"
+					"url": "https://github.com/retejs/history-plugin/blob/865e485e66fb3544cab00dec92ac6d76c6b1e9fe/src/types.ts#L12"
 				}
 			]
 		}
@@ -1296,8 +1714,8 @@
 		{
 			"title": "Namespaces",
 			"children": [
-				44,
-				50
+				54,
+				60
 			]
 		},
 		{
@@ -1309,7 +1727,7 @@
 		{
 			"title": "Interfaces",
 			"children": [
-				39
+				49
 			]
 		}
 	],
@@ -1407,103 +1825,183 @@
 		},
 		"29": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "HistoryPlugin.clear"
+			"qualifiedName": "HistoryPlugin.removeRecent"
 		},
 		"30": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "HistoryPlugin.clear"
+			"qualifiedName": "HistoryPlugin.removeRecent"
 		},
 		"31": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "HistoryPlugin.separate"
+			"qualifiedName": "predicate"
 		},
 		"32": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "HistoryPlugin.separate"
+			"qualifiedName": "__type"
 		},
 		"33": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "HistoryPlugin.undo"
+			"qualifiedName": "__type"
 		},
 		"34": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "HistoryPlugin.undo"
+			"qualifiedName": "record"
 		},
 		"35": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "HistoryPlugin.redo"
+			"qualifiedName": "__type"
 		},
 		"36": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "HistoryPlugin.redo"
+			"qualifiedName": "__type.time"
 		},
 		"37": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "HistoryPlugin.Schemes"
+			"qualifiedName": "__type.action"
 		},
 		"38": {
 			"sourceFileName": "src/index.ts",
-			"qualifiedName": "HistoryPlugin.A"
+			"qualifiedName": "ms"
 		},
 		"39": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.clear"
+		},
+		"40": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.clear"
+		},
+		"41": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.separate"
+		},
+		"42": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.separate"
+		},
+		"43": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.undo"
+		},
+		"44": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.undo"
+		},
+		"45": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.redo"
+		},
+		"46": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.redo"
+		},
+		"47": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.Schemes"
+		},
+		"48": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "HistoryPlugin.A"
+		},
+		"49": {
 			"sourceFileName": "src/types.ts",
 			"qualifiedName": "Action"
 		},
-		"44": {
+		"54": {
 			"sourceFileName": "src/extensions/index.ts",
 			"qualifiedName": ""
 		},
-		"45": {
-			"sourceFileName": "src/extensions/keyboard.ts",
+		"55": {
+			"sourceFileName": "src/extensions/keyboard/index.ts",
 			"qualifiedName": "keyboard"
 		},
-		"46": {
-			"sourceFileName": "src/extensions/keyboard.ts",
+		"56": {
+			"sourceFileName": "src/extensions/keyboard/index.ts",
 			"qualifiedName": "keyboard"
 		},
-		"47": {
-			"sourceFileName": "src/extensions/keyboard.ts",
+		"57": {
+			"sourceFileName": "src/extensions/keyboard/index.ts",
 			"qualifiedName": "Schemes"
 		},
-		"48": {
-			"sourceFileName": "src/extensions/keyboard.ts",
+		"58": {
+			"sourceFileName": "src/extensions/keyboard/index.ts",
 			"qualifiedName": "A"
 		},
-		"49": {
-			"sourceFileName": "src/extensions/keyboard.ts",
+		"59": {
+			"sourceFileName": "src/extensions/keyboard/index.ts",
 			"qualifiedName": "plugin"
 		},
-		"50": {
+		"60": {
 			"sourceFileName": "src/presets/index.ts",
 			"qualifiedName": ""
 		},
-		"51": {
+		"61": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": ""
 		},
-		"52": {
+		"62": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": "setup"
 		},
-		"53": {
+		"63": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": "setup"
 		},
-		"54": {
+		"64": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": "S"
 		},
-		"55": {
+		"65": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": "props"
 		},
-		"56": {
+		"66": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": "__type"
 		},
-		"57": {
+		"67": {
 			"sourceFileName": "src/presets/classic/index.ts",
 			"qualifiedName": "__type.timing"
+		},
+		"155": {
+			"sourceFileName": "src/presets/comments/index.ts",
+			"qualifiedName": ""
+		},
+		"156": {
+			"sourceFileName": "src/presets/comments/index.ts",
+			"qualifiedName": "setup"
+		},
+		"157": {
+			"sourceFileName": "src/presets/comments/index.ts",
+			"qualifiedName": "setup"
+		},
+		"158": {
+			"sourceFileName": "src/presets/comments/index.ts",
+			"qualifiedName": "props"
+		},
+		"159": {
+			"sourceFileName": "src/presets/comments/index.ts",
+			"qualifiedName": "__type"
+		},
+		"160": {
+			"sourceFileName": "src/presets/comments/index.ts",
+			"qualifiedName": "__type.comment"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/index.ts",
+			"2": "src/extensions/index.ts",
+			"3": "src/presets/index.ts",
+			"4": "src/presets/classic/index.ts",
+			"5": "src/presets/comments/index.ts"
+		},
+		"reflections": {
+			"1": 0,
+			"2": 54,
+			"3": 60,
+			"4": 61,
+			"5": 155
 		}
 	}
 }
