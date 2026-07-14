@@ -1,0 +1,2206 @@
+{
+	"id": 0,
+	"name": "rete-vue-plugin",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 41,
+			"name": "Presets",
+			"variant": "declaration",
+			"kind": 4,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Built-in presets, responsible for rendering different parts of the editor."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 42,
+					"name": "classic",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 43,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/classic/index.ts",
+									"line": 37,
+									"character": 16,
+									"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/classic/index.ts#L37"
+								}
+							],
+							"signatures": [
+								{
+									"id": 44,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Classic preset for rendering nodes, connections, controls and sockets."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/classic/index.ts",
+											"line": 37,
+											"character": 16,
+											"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/classic/index.ts#L37"
+										}
+									],
+									"typeParameters": [
+										{
+											"id": 45,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/types.ts",
+													"qualifiedName": "ClassicScheme"
+												},
+												"name": "ClassicScheme",
+												"package": "rete-vue-plugin"
+											}
+										},
+										{
+											"id": 46,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/types.ts",
+													"qualifiedName": "VueArea2D"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": 45,
+														"name": "Schemes",
+														"package": "rete-vue-plugin",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "VueArea2D",
+												"package": "rete-vue-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 47,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/classic/index.ts",
+													"qualifiedName": "ClassicProps"
+												},
+												"typeArguments": [
+													{
+														"type": "reference",
+														"target": 45,
+														"name": "Schemes",
+														"package": "rete-vue-plugin",
+														"refersToTypeParameter": true
+													},
+													{
+														"type": "reference",
+														"target": 46,
+														"name": "K",
+														"package": "rete-vue-plugin",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "ClassicProps",
+												"package": "rete-vue-plugin"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 45,
+												"name": "Schemes",
+												"package": "rete-vue-plugin",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": 46,
+												"name": "K",
+												"package": "rete-vue-plugin",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-vue-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								43
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/classic/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/classic/index.ts#L1"
+						}
+					]
+				},
+				{
+					"id": 52,
+					"name": "contextMenu",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 53,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/context-menu/index.ts",
+									"line": 10,
+									"character": 16,
+									"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/context-menu/index.ts#L10"
+								}
+							],
+							"signatures": [
+								{
+									"id": 54,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset for rendering context menu."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/context-menu/index.ts",
+											"line": 10,
+											"character": 16,
+											"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/context-menu/index.ts#L10"
+										}
+									],
+									"typeParameters": [
+										{
+											"id": 55,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											}
+										},
+										{
+											"id": 56,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "RenderSignal"
+												},
+												"typeArguments": [
+													{
+														"type": "literal",
+														"value": "contextmenu"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 57,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"children": [
+																{
+																	"id": 58,
+																	"name": "items",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/context-menu/types.ts",
+																			"line": 11,
+																			"character": 34,
+																			"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/context-menu/types.ts#L11"
+																		}
+																	],
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "reference",
+																			"target": {
+																				"sourceFileName": "src/presets/context-menu/types.ts",
+																				"qualifiedName": "Item"
+																			},
+																			"name": "Item",
+																			"package": "rete-vue-plugin"
+																		}
+																	}
+																},
+																{
+																	"id": 61,
+																	"name": "searchBar",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {
+																		"isOptional": true
+																	},
+																	"sources": [
+																		{
+																			"fileName": "presets/context-menu/types.ts",
+																			"line": 11,
+																			"character": 65,
+																			"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/context-menu/types.ts#L11"
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "boolean"
+																	}
+																},
+																{
+																	"id": 59,
+																	"name": "onHide",
+																	"variant": "declaration",
+																	"kind": 2048,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/context-menu/types.ts",
+																			"line": 11,
+																			"character": 49,
+																			"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/context-menu/types.ts#L11"
+																		}
+																	],
+																	"signatures": [
+																		{
+																			"id": 60,
+																			"name": "onHide",
+																			"variant": "signature",
+																			"kind": 4096,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "presets/context-menu/types.ts",
+																					"line": 11,
+																					"character": 49,
+																					"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/context-menu/types.ts#L11"
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "void"
+																			}
+																		}
+																	]
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"children": [
+																		58,
+																		61
+																	]
+																},
+																{
+																	"title": "Methods",
+																	"children": [
+																		59
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "presets/context-menu/types.ts",
+																	"line": 11,
+																	"character": 32,
+																	"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/context-menu/types.ts#L11"
+																}
+															]
+														}
+													}
+												],
+												"name": "RenderSignal",
+												"package": "rete-vue-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 62,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 63,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 64,
+															"name": "delay",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"sources": [
+																{
+																	"fileName": "presets/context-menu/index.ts",
+																	"line": 10,
+																	"character": 90,
+																	"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/context-menu/index.ts#L10"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																64
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "presets/context-menu/index.ts",
+															"line": 10,
+															"character": 88,
+															"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/context-menu/index.ts#L10"
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 55,
+												"name": "Schemes",
+												"package": "rete-vue-plugin",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": 56,
+												"name": "K",
+												"package": "rete-vue-plugin",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-vue-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								53
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/context-menu/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/context-menu/index.ts#L1"
+						}
+					]
+				},
+				{
+					"id": 65,
+					"name": "minimap",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 66,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/minimap/index.ts",
+									"line": 10,
+									"character": 16,
+									"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/minimap/index.ts#L10"
+								}
+							],
+							"signatures": [
+								{
+									"id": 67,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset for rendering minimap."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/minimap/index.ts",
+											"line": 10,
+											"character": 16,
+											"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/minimap/index.ts#L10"
+										}
+									],
+									"typeParameters": [
+										{
+											"id": 68,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											}
+										},
+										{
+											"id": 69,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "RenderSignal"
+												},
+												"typeArguments": [
+													{
+														"type": "literal",
+														"value": "minimap"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 70,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"children": [
+																{
+																	"id": 72,
+																	"name": "nodes",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 19,
+																			"character": 4,
+																			"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/minimap/types.ts#L19"
+																		}
+																	],
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "reference",
+																			"target": {
+																				"sourceFileName": "src/presets/minimap/types.ts",
+																				"qualifiedName": "Rect"
+																			},
+																			"name": "Rect",
+																			"package": "rete-vue-plugin"
+																		}
+																	}
+																},
+																{
+																	"id": 71,
+																	"name": "ratio",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 18,
+																			"character": 4,
+																			"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/minimap/types.ts#L18"
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	}
+																},
+																{
+																	"id": 76,
+																	"name": "translate",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 22,
+																			"character": 4,
+																			"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/minimap/types.ts#L22"
+																		}
+																	],
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "src/presets/minimap/types.ts",
+																			"qualifiedName": "Translate"
+																		},
+																		"name": "Translate",
+																		"package": "rete-vue-plugin"
+																	}
+																},
+																{
+																	"id": 73,
+																	"name": "viewport",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 20,
+																			"character": 4,
+																			"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/minimap/types.ts#L20"
+																		}
+																	],
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "src/presets/minimap/types.ts",
+																			"qualifiedName": "Rect"
+																		},
+																		"name": "Rect",
+																		"package": "rete-vue-plugin"
+																	}
+																},
+																{
+																	"id": 77,
+																	"name": "point",
+																	"variant": "declaration",
+																	"kind": 2048,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 23,
+																			"character": 4,
+																			"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/minimap/types.ts#L23"
+																		}
+																	],
+																	"signatures": [
+																		{
+																			"id": 78,
+																			"name": "point",
+																			"variant": "signature",
+																			"kind": 4096,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "presets/minimap/types.ts",
+																					"line": 23,
+																					"character": 4,
+																					"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/minimap/types.ts#L23"
+																				}
+																			],
+																			"parameters": [
+																				{
+																					"id": 79,
+																					"name": "x",
+																					"variant": "param",
+																					"kind": 32768,
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "number"
+																					}
+																				},
+																				{
+																					"id": 80,
+																					"name": "y",
+																					"variant": "param",
+																					"kind": 32768,
+																					"flags": {},
+																					"type": {
+																						"type": "intrinsic",
+																						"name": "number"
+																					}
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "void"
+																			}
+																		}
+																	]
+																},
+																{
+																	"id": 74,
+																	"name": "start",
+																	"variant": "declaration",
+																	"kind": 2048,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/minimap/types.ts",
+																			"line": 21,
+																			"character": 4,
+																			"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/minimap/types.ts#L21"
+																		}
+																	],
+																	"signatures": [
+																		{
+																			"id": 75,
+																			"name": "start",
+																			"variant": "signature",
+																			"kind": 4096,
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "presets/minimap/types.ts",
+																					"line": 21,
+																					"character": 4,
+																					"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/minimap/types.ts#L21"
+																				}
+																			],
+																			"type": {
+																				"type": "reference",
+																				"target": {
+																					"sourceFileName": "src/presets/minimap/types.ts",
+																					"qualifiedName": "Transform"
+																				},
+																				"name": "Transform",
+																				"package": "rete-vue-plugin"
+																			}
+																		}
+																	]
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"children": [
+																		72,
+																		71,
+																		76,
+																		73
+																	]
+																},
+																{
+																	"title": "Methods",
+																	"children": [
+																		77,
+																		74
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "presets/minimap/types.ts",
+																	"line": 17,
+																	"character": 28,
+																	"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/minimap/types.ts#L17"
+																}
+															]
+														}
+													}
+												],
+												"name": "RenderSignal",
+												"package": "rete-vue-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 81,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 82,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 83,
+															"name": "size",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isOptional": true
+															},
+															"sources": [
+																{
+																	"fileName": "presets/minimap/index.ts",
+																	"line": 10,
+																	"character": 86,
+																	"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/minimap/index.ts#L10"
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "number"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																83
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "presets/minimap/index.ts",
+															"line": 10,
+															"character": 84,
+															"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/minimap/index.ts#L10"
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 68,
+												"name": "Schemes",
+												"package": "rete-vue-plugin",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": 69,
+												"name": "K",
+												"package": "rete-vue-plugin",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-vue-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								66
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/minimap/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/minimap/index.ts#L1"
+						}
+					]
+				},
+				{
+					"id": 84,
+					"name": "reroute",
+					"variant": "declaration",
+					"kind": 4,
+					"flags": {},
+					"children": [
+						{
+							"id": 85,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 64,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "presets/reroute/index.ts",
+									"line": 17,
+									"character": 16,
+									"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/reroute/index.ts#L17"
+								}
+							],
+							"signatures": [
+								{
+									"id": 86,
+									"name": "setup",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset for rendering pins."
+											}
+										]
+									},
+									"sources": [
+										{
+											"fileName": "presets/reroute/index.ts",
+											"line": 17,
+											"character": 16,
+											"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/reroute/index.ts#L17"
+										}
+									],
+									"typeParameters": [
+										{
+											"id": 87,
+											"name": "Schemes",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/src/types.ts",
+													"qualifiedName": "BaseSchemes"
+												},
+												"name": "BaseSchemes",
+												"package": "rete"
+											}
+										},
+										{
+											"id": 88,
+											"name": "K",
+											"variant": "typeParam",
+											"kind": 131072,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/types.ts",
+													"qualifiedName": "RenderSignal"
+												},
+												"typeArguments": [
+													{
+														"type": "literal",
+														"value": "reroute-pins"
+													},
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 89,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {},
+															"children": [
+																{
+																	"id": 90,
+																	"name": "data",
+																	"variant": "declaration",
+																	"kind": 1024,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "presets/reroute/types.ts",
+																			"line": 20,
+																			"character": 35,
+																			"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/reroute/types.ts#L20"
+																		}
+																	],
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "src/presets/reroute/types.ts",
+																			"qualifiedName": "PinData"
+																		},
+																		"name": "PinData",
+																		"package": "rete-vue-plugin"
+																	}
+																}
+															],
+															"groups": [
+																{
+																	"title": "Properties",
+																	"children": [
+																		90
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "presets/reroute/types.ts",
+																	"line": 20,
+																	"character": 33,
+																	"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/reroute/types.ts#L20"
+																}
+															]
+														}
+													}
+												],
+												"name": "RenderSignal",
+												"package": "rete-vue-plugin"
+											}
+										}
+									],
+									"parameters": [
+										{
+											"id": 91,
+											"name": "props",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/presets/reroute/index.ts",
+													"qualifiedName": "Props"
+												},
+												"name": "Props",
+												"package": "rete-vue-plugin"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 87,
+												"name": "Schemes",
+												"package": "rete-vue-plugin",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "reference",
+												"target": 88,
+												"name": "K",
+												"package": "rete-vue-plugin",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-vue-plugin"
+									}
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Functions",
+							"children": [
+								85
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "presets/reroute/index.ts",
+							"line": 1,
+							"character": 0,
+							"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/reroute/index.ts#L1"
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Namespaces",
+					"children": [
+						42,
+						52,
+						65,
+						84
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "presets/index.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/presets/index.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 16,
+			"name": "VuePlugin",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Vue plugin. Renders nodes, connections and other elements using React."
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "9"
+							}
+						]
+					},
+					{
+						"tag": "@emits",
+						"content": [
+							{
+								"kind": "text",
+								"text": "connectionpath"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "render"
+							}
+						]
+					},
+					{
+						"tag": "@listens",
+						"content": [
+							{
+								"kind": "text",
+								"text": "unmount"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 35,
+					"name": "addPreset",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 127,
+							"character": 9,
+							"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/index.ts#L127"
+						}
+					],
+					"signatures": [
+						{
+							"id": 36,
+							"name": "addPreset",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Adds a preset to the plugin."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 127,
+									"character": 9,
+									"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/index.ts#L127"
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 37,
+									"name": "K",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {}
+								}
+							],
+							"parameters": [
+								{
+									"id": 38,
+									"name": "preset",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Preset that can render nodes, connections and other elements."
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "src/presets/types.ts",
+											"qualifiedName": "RenderPreset"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 39,
+												"name": "Schemes",
+												"package": "rete-vue-plugin",
+												"qualifiedName": "VuePlugin.Schemes",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "conditional",
+												"checkType": {
+													"type": "reference",
+													"target": {
+														"sourceFileName": "node_modules/src/utility-types.ts",
+														"qualifiedName": "CanAssignEachTupleElemmentToAnyOf"
+													},
+													"typeArguments": [
+														{
+															"type": "reference",
+															"target": 40,
+															"name": "T",
+															"package": "rete-vue-plugin",
+															"qualifiedName": "VuePlugin.T",
+															"refersToTypeParameter": true
+														},
+														{
+															"type": "reference",
+															"target": {
+																"sourceFileName": "node_modules/src/utility-types.ts",
+																"qualifiedName": "UnionToTuple"
+															},
+															"typeArguments": [
+																{
+																	"type": "reference",
+																	"target": 37,
+																	"name": "K",
+																	"package": "rete-vue-plugin",
+																	"refersToTypeParameter": true
+																}
+															],
+															"name": "UnionToTuple",
+															"package": "rete"
+														}
+													],
+													"name": "CanAssignEachTupleElemmentToAnyOf",
+													"package": "rete"
+												},
+												"extendsType": {
+													"type": "literal",
+													"value": true
+												},
+												"trueType": {
+													"type": "reference",
+													"target": 37,
+													"name": "K",
+													"package": "rete-vue-plugin",
+													"refersToTypeParameter": true
+												},
+												"falseType": {
+													"type": "literal",
+													"value": "Cannot apply preset. Provided signals are not compatible"
+												}
+											}
+										],
+										"name": "RenderPreset",
+										"package": "rete-vue-plugin"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"children": [
+						35
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 44,
+					"character": 13,
+					"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/index.ts#L44"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 39,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				},
+				{
+					"id": 40,
+					"name": "T",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"default": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/index.ts",
+							"qualifiedName": "Requires"
+						},
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": 39,
+								"name": "Schemes",
+								"package": "rete-vue-plugin",
+								"qualifiedName": "VuePlugin.Schemes",
+								"refersToTypeParameter": true
+							}
+						],
+						"name": "Requires",
+						"package": "rete-vue-plugin"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/src/scope.ts",
+						"qualifiedName": "Scope"
+					},
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": 1,
+							"typeArguments": [
+								{
+									"type": "reference",
+									"target": 39,
+									"name": "Schemes",
+									"package": "rete-vue-plugin",
+									"qualifiedName": "VuePlugin.Schemes",
+									"refersToTypeParameter": true
+								}
+							],
+							"name": "Produces",
+							"package": "rete-vue-plugin"
+						},
+						{
+							"type": "tuple",
+							"elements": [
+								{
+									"type": "union",
+									"types": [
+										{
+											"type": "reference",
+											"target": {
+												"sourceFileName": "src/index.ts",
+												"qualifiedName": "Requires"
+											},
+											"typeArguments": [
+												{
+													"type": "reference",
+													"target": 39,
+													"name": "Schemes",
+													"package": "rete-vue-plugin",
+													"qualifiedName": "VuePlugin.Schemes",
+													"refersToTypeParameter": true
+												}
+											],
+											"name": "Requires",
+											"package": "rete-vue-plugin"
+										},
+										{
+											"type": "reference",
+											"target": 40,
+											"name": "T",
+											"package": "rete-vue-plugin",
+											"qualifiedName": "VuePlugin.T",
+											"refersToTypeParameter": true
+										}
+									]
+								}
+							]
+						}
+					],
+					"name": "Scope",
+					"package": "rete"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "Produces",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Signals that can be emitted by the plugin"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@priority",
+						"content": [
+							{
+								"kind": "text",
+								"text": "10"
+							}
+						]
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 17,
+					"character": 12,
+					"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/index.ts#L17"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 9,
+					"name": "Schemes",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/src/types.ts",
+							"qualifiedName": "BaseSchemes"
+						},
+						"name": "BaseSchemes",
+						"package": "rete"
+					}
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 2,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"children": [
+								{
+									"id": 4,
+									"name": "data",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 18,
+											"character": 30,
+											"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/index.ts#L18"
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 5,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {},
+											"children": [
+												{
+													"id": 7,
+													"name": "path",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {
+														"isOptional": true
+													},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 18,
+															"character": 70,
+															"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/index.ts#L18"
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 6,
+													"name": "payload",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 18,
+															"character": 38,
+															"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/index.ts#L18"
+														}
+													],
+													"type": {
+														"type": "indexedAccess",
+														"indexType": {
+															"type": "literal",
+															"value": "Connection"
+														},
+														"objectType": {
+															"type": "reference",
+															"target": 9,
+															"name": "Schemes",
+															"package": "rete-vue-plugin",
+															"refersToTypeParameter": true
+														}
+													}
+												},
+												{
+													"id": 8,
+													"name": "points",
+													"variant": "declaration",
+													"kind": 1024,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 18,
+															"character": 85,
+															"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/index.ts#L18"
+														}
+													],
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "reference",
+															"target": {
+																"sourceFileName": "src/types.ts",
+																"qualifiedName": "Position"
+															},
+															"name": "Position",
+															"package": "rete-vue-plugin"
+														}
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														7,
+														6,
+														8
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 18,
+													"character": 36,
+													"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/index.ts#L18"
+												}
+											]
+										}
+									}
+								},
+								{
+									"id": 3,
+									"name": "type",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 18,
+											"character": 6,
+											"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/index.ts#L18"
+										}
+									],
+									"type": {
+										"type": "literal",
+										"value": "connectionpath"
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										4,
+										3
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 18,
+									"character": 4,
+									"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/index.ts#L18"
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": 10,
+			"name": "Props",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Vue plugin options used to setup vue instance(s) used by retejs."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 28,
+					"character": 12,
+					"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/index.ts#L28"
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 11,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"children": [
+						{
+							"id": 12,
+							"name": "setup",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Use this to setup vue."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 34,
+									"character": 2,
+									"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/index.ts#L34"
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 13,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "index.ts",
+											"line": 34,
+											"character": 10,
+											"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/index.ts#L34"
+										}
+									],
+									"signatures": [
+										{
+											"id": 14,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"comment": {
+												"summary": [],
+												"blockTags": [
+													{
+														"tag": "@returns",
+														"content": [
+															{
+																"kind": "text",
+																"text": "app / vue instance."
+															}
+														]
+													}
+												]
+											},
+											"parameters": [
+												{
+													"id": 15,
+													"name": "context",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"comment": {
+														"summary": [
+															{
+																"kind": "text",
+																"text": "to be used for createApp({ ...context }) or new Vue({ ...context })"
+															}
+														]
+													},
+													"type": {
+														"type": "reference",
+														"target": {
+															"sourceFileName": "src/vuecompat/types.ts",
+															"qualifiedName": "Context"
+														},
+														"name": "Context",
+														"package": "rete-vue-plugin"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "src/vuecompat/types.ts",
+													"qualifiedName": "Instance"
+												},
+												"name": "Instance",
+												"package": "rete-vue-plugin"
+											}
+										}
+									]
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								12
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 28,
+							"character": 20,
+							"url": "https://github.com/retejs/vue-plugin/blob/1872025c4d99e1dc95fc64dfadec2643b943f34d/src/index.ts#L28"
+						}
+					]
+				}
+			}
+		}
+	],
+	"groups": [
+		{
+			"title": "Namespaces",
+			"children": [
+				41
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				16
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				1,
+				10
+			]
+		}
+	],
+	"packageName": "rete-vue-plugin",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "Rete.js Vue plugin\n====\n[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)\n[![Discord](https://img.shields.io/discord/1081223198055604244?color=%237289da&label=Discord)](https://discord.gg/cxSFkPZdsV)\n\n**Rete.js plugin**\n\n## Key features\n\n- **Render elements**: visualize an elements such as nodes and connections using Vue.js components\n- **Customization**: modify appearance and behavior for a personalized workflow\n- **Presets**: predefined Vue.js components for different types of features\n  -  **[Classic](https://retejs.org/docs/guides/renderers/vue#connect-plugin)**: provides a classic visualization of nodes, connections, and controls\n  -  **[Context menu](https://retejs.org/docs/guides/context-menu#render-context-menu)**: provides a classic appearance for "
+		},
+		{
+			"kind": "code",
+			"text": "`rete-context-menu-plugin`"
+		},
+		{
+			"kind": "text",
+			"text": "\n  -  **[Minimap](https://retejs.org/docs/guides/minimap#render)**: provides a classic appearance for "
+		},
+		{
+			"kind": "code",
+			"text": "`rete-minimap-plugin`"
+		},
+		{
+			"kind": "text",
+			"text": "\n  -  **[Reroute](https://retejs.org/docs/guides/reroute#rendering)**: provides a classic appearance for "
+		},
+		{
+			"kind": "code",
+			"text": "`rete-connection-reroute-plugin`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## Getting Started\n\nPlease refer to the [guide](https://retejs.org/docs/guides/renderers/vue) and [example](https://retejs.org/examples/vue) using this plugin\n\n## Contribution\n\nPlease refer to the [Contribution](https://retejs.org/docs/contribution) guide\n\n## License\n\n[MIT](https://github.com/retejs/vue-plugin/blob/main/LICENSE)"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Produces"
+		},
+		"2": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"3": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.type"
+		},
+		"4": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.data"
+		},
+		"5": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"6": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.payload"
+		},
+		"7": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.path"
+		},
+		"8": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.points"
+		},
+		"9": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"10": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "Props"
+		},
+		"11": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"12": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type.setup"
+		},
+		"13": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"14": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"15": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "context"
+		},
+		"16": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "VuePlugin"
+		},
+		"35": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "VuePlugin.addPreset"
+		},
+		"36": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "VuePlugin.addPreset"
+		},
+		"37": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "K"
+		},
+		"38": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "preset"
+		},
+		"39": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "VuePlugin.Schemes"
+		},
+		"40": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "VuePlugin.T"
+		},
+		"41": {
+			"sourceFileName": "src/presets/index.ts",
+			"qualifiedName": ""
+		},
+		"42": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": ""
+		},
+		"43": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "setup"
+		},
+		"44": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "setup"
+		},
+		"45": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"46": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "K"
+		},
+		"47": {
+			"sourceFileName": "src/presets/classic/index.ts",
+			"qualifiedName": "props"
+		},
+		"52": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": ""
+		},
+		"53": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "setup"
+		},
+		"54": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "setup"
+		},
+		"55": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"56": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "K"
+		},
+		"57": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type"
+		},
+		"58": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.items"
+		},
+		"59": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.onHide"
+		},
+		"60": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.onHide"
+		},
+		"61": {
+			"sourceFileName": "src/presets/context-menu/types.ts",
+			"qualifiedName": "__type.searchBar"
+		},
+		"62": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "props"
+		},
+		"63": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "__type"
+		},
+		"64": {
+			"sourceFileName": "src/presets/context-menu/index.ts",
+			"qualifiedName": "__type.delay"
+		},
+		"65": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": ""
+		},
+		"66": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "setup"
+		},
+		"67": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "setup"
+		},
+		"68": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"69": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "K"
+		},
+		"70": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type"
+		},
+		"71": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.ratio"
+		},
+		"72": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.nodes"
+		},
+		"73": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.viewport"
+		},
+		"74": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.start"
+		},
+		"75": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.start"
+		},
+		"76": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.translate"
+		},
+		"77": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.point"
+		},
+		"78": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "__type.point"
+		},
+		"79": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "x"
+		},
+		"80": {
+			"sourceFileName": "src/presets/minimap/types.ts",
+			"qualifiedName": "y"
+		},
+		"81": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "props"
+		},
+		"82": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "__type"
+		},
+		"83": {
+			"sourceFileName": "src/presets/minimap/index.ts",
+			"qualifiedName": "__type.size"
+		},
+		"84": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": ""
+		},
+		"85": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "setup"
+		},
+		"86": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "setup"
+		},
+		"87": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "Schemes"
+		},
+		"88": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "K"
+		},
+		"89": {
+			"sourceFileName": "src/presets/reroute/types.ts",
+			"qualifiedName": "__type"
+		},
+		"90": {
+			"sourceFileName": "src/presets/reroute/types.ts",
+			"qualifiedName": "__type.data"
+		},
+		"91": {
+			"sourceFileName": "src/presets/reroute/index.ts",
+			"qualifiedName": "props"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/index.ts",
+			"2": "src/presets/index.ts",
+			"3": "src/presets/classic/index.ts",
+			"4": "src/presets/context-menu/index.ts",
+			"5": "src/presets/minimap/index.ts",
+			"6": "src/presets/reroute/index.ts"
+		},
+		"reflections": {
+			"1": 0,
+			"2": 41,
+			"3": 42,
+			"4": 52,
+			"5": 65,
+			"6": 84
+		}
+	}
+}
