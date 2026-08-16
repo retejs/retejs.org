@@ -1,0 +1,107 @@
+{
+  "name": "Rete.js",
+  "docs": "Документация",
+  "documentation": "Документация",
+  "examples": "Примеры",
+  "components": "Компоненты",
+  "issues": "Проблемы",
+  "sponsor": "Спонсор",
+  "learn": "Изучение",
+  "ecosystem": "Экосистема",
+  "report-bug": "Сообщить об ошибке",
+  "benefits": "Преимущества",
+  "openNewTab": "Открыть в новой вкладке",
+  "main": {
+    "title": "JavaScript фреймворк для визуального программирования",
+    "description": "Адаптивный TypeScript-first фреймворк для создания ориентированных на обработку редакторов узлов",
+    "highlights": {
+      "ts": {
+        "title": "TypeScript-first",
+        "description": "Расширенный опыт разработчика и облегченное создание поддерживаемого кода"
+      },
+      "processing": {
+        "title": "Ориентированный на обработку",
+        "description": "Помимо визуализации, фреймворк предоставляет Engine и другие модули для обработки графов"
+      },
+      "tailorable": {
+        "title": "Адаптивный",
+        "description": "Настраивается разнообразными плагинами и интегрируется с Angular, Vue.js, React.js и т.д."
+      }
+    }
+  },
+  "examplesPage": {
+    "title": "Пример {title}",
+    "proExample": {
+      "getAccess": "Получить доступ",
+      "info": "Подпишитесь на уровень Contributor на Patreon и отправьте свой GitHub username",
+      "alert": "Исходный код для этого Pro примера доступен только подписчикам"
+    }
+  },
+  "docsearch": {
+    "placeholder": "Искать",
+    "button": {
+      "buttonText": "Поиск",
+      "buttonAriaLabel": "Поиск"
+    },
+    "modal": {
+      "searchBox": {
+        "resetButtonTitle": "Очистить запрос",
+        "resetButtonAriaLabel": "Очистить запрос",
+        "cancelButtonText": "Отменить",
+        "cancelButtonAriaLabel": "Отменить"
+      },
+      "startScreen": {
+        "recentSearchesTitle": "Последние",
+        "noRecentSearchesText": "Нет последних поисков",
+        "saveRecentSearchButtonTitle": "Сохранить этот поиск",
+        "removeRecentSearchButtonTitle": "Удалить этот поиск из истории",
+        "favoriteSearchesTitle": "Избранное",
+        "removeFavoriteSearchButtonTitle": "Удалить этот поисковый запрос из избранного"
+      },
+      "errorScreen": {
+        "titleText": "Не удалось получить результаты",
+        "helpText": "Вам может потребоваться проверить ваше сетевое соединение."
+      },
+      "footer": {
+        "selectText": "выбрать",
+        "selectKeyAriaLabel": "Введите ключ",
+        "navigateText": "для навигации",
+        "navigateUpKeyAriaLabel": "Стрелка вверх",
+        "navigateDownKeyAriaLabel": "Стрелка вниз",
+        "closeText": "закрыть",
+        "closeKeyAriaLabel": "Клавиша Escape",
+        "searchByText": "Поиск от"
+      },
+      "noResultsScreen": {
+        "noResultsText": "Нет результатов для",
+        "suggestedQueryText": "Попробуйте найти",
+        "reportMissingResultsText": "Считаете, что этот запрос должен возвращать результаты?",
+        "reportMissingResultsLinkText": "Дайте нам знать."
+      }
+    }
+  },
+  "currentVersionNotice": {
+    "youAreBrowsing": "Вы просматриваете документацию для Rete.js 2 Beta.",
+    "checkOut": "Проверьте",
+    "docsV1": "документацию для Rete.js v1",
+    "orGetStarted": ", или начните с текущей беты"
+  },
+  "sponsorPage": {
+    "title": "Спонсируйте нас",
+    "subtitle1": "Спасибо, что рассматриваете возможность стать спонсором Rete.js!",
+    "subtitle2": "Ваше спонсорство помогает нам поддерживать и улучшать наш фреймворк, чтобы мы могли и дальше предоставлять высококачественный инструмент для разработчиков.",
+    "patreon": {
+      "description": "Став патроном на Patreon, вы можете ежемесячно поддерживать нас и получать доступ к эксклюзивному контенту и бонусам.",
+      "benefits": "доступ к исходному коду Pro примеров, приоритетная обратная связь по проблемам"
+    },
+    "opencollective": {
+      "description": "Если вы желаете делать одноразовые или регулярные пожертвования с прозрачностью, вы можете сделать это через OpenCollective.",
+      "benefits": "размещение логотипа в файле README репозитория retejs/rete, приоритетная обратная связь по проблемам"
+    },
+    "contacts": "Если у вас есть вопросы касательно способов оплаты, преимуществ или признания спонсоров, свяжитесь с нами через"
+  },
+  "share": {
+    "docs": "документация Rete.js",
+    "example": "пример на базе Rete.js"
+  }
+}
